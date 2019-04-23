@@ -1,0 +1,1786 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chiu Yu Ko</title>
+    <link>/</link>
+    <description>Recent content on Chiu Yu Ko</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>2018</copyright>
+    <lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0800</lastBuildDate>
+    
+	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example Talk</title>
+      <link>/talk/example/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0800</pubDate>
+      
+      <guid>/talk/example/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decentralized one-to-many Bargaining (with Duozhe Li), R&amp;R at International Economic Review</title>
+      <link>/workingpaper/many-to-one-bargaining/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/workingpaper/many-to-one-bargaining/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>From win-win to winner-take-all (with Bo Shen), R&amp;R at Economic Inquiry</title>
+      <link>/workingpaper/win-win/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/workingpaper/win-win/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Research Joint Venture with Technology Transfer</title>
+      <link>/publication/rjv-transfer/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/rjv-transfer/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Technical Analysis with R</title>
+      <link>/book/technical-trading-r/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/book/technical-trading-r/</guid>
+      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R*&amp;rdquo;&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;data manipulation (dyplr package),&lt;/li&gt;
+&lt;li&gt;conduct econometric analysis (regression, time series),&lt;/li&gt;
+&lt;li&gt;plotting (ggplot2 package, dygraphs package),&lt;/li&gt;
+&lt;li&gt;webscrapping (rvest package, wbstat package, quantmod package), and&lt;/li&gt;
+&lt;li&gt;financial analysis (quantmod package, quantstrat package).&lt;/li&gt;
+&lt;li&gt;backtest a complex trading strategy and evaluate the performance.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The book is available through &lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or &lt;a href=&#34;https://gumroad.com/l/R-TA&#34; target=&#34;_blank&#34;&gt;Gumroad&lt;/a&gt; (name-your-own-price offline pdf and epub). You can read the whole book through bookdown. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
+
+&lt;p&gt;(Note: After purchasing through Gumroad, you can download pdf and epub.)&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TikZ Cookbook</title>
+      <link>/book/tikz-cookbook/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/book/tikz-cookbook/</guid>
+      <description>&lt;p&gt;TikZ is a drawing package in LaTeX. It is very useful to draw a professional-looking diagram. However, the learning curve is a little bit steep for a beginner. I have recently compiled a 629-page cookbook that provides step-by-step illustrations on how to use TikZ to draw various diagrams in economics:&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The book is available through &lt;a href=&#34;https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ&#34; target=&#34;_blank&#34;&gt;Google Play&lt;/a&gt; or &lt;a href=&#34;https://books.google.com.sg/books?id=t3ZZDwAAQBAJ&amp;amp;source=gbs_navlinks_s&#34; target=&#34;_blank&#34;&gt;Google book&lt;/a&gt;. You can read the whole book through free sampling and preview. If you think that I have done a good or bad job, please feel free to drop me an email with comments/suggestions or write a short review here. Of course, you are very welcome to consider buying me a cup of coffee through purchasing the ebook.&lt;/p&gt;
+
+&lt;p&gt;Note: After purchasing, you may copy code directly through Google Play (only benefit of spending your money) and you can download a pdf file of the book but the pdf file does not allow search nor copy.&lt;/p&gt;
+
+&lt;p&gt;(Note: After purchasing through Gumroad, you can download pdf and epub.)&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Job Market Tips</title>
+      <link>/others/tips/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/others/tips/</guid>
+      <description>
+
+&lt;p&gt;This tips is for economic academic job market. This note was prepared based on information adapted from many different sources and experiences of me and others. Now I can no longer tell which part is mine and which part is other. Good luck!&lt;/p&gt;
+
+&lt;h2 id=&#34;timeline&#34;&gt;Timeline&lt;/h2&gt;
+
+&lt;p&gt;Job Market Process usually starts from summer until the April the year after.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Summer: Get approval from advisor&lt;/li&gt;
+&lt;li&gt;September: Final version of paper&lt;/li&gt;
+&lt;li&gt;October: Register for AEA conference and get ready for application&lt;/li&gt;
+&lt;li&gt;November: Send applications&lt;/li&gt;
+&lt;li&gt;December: Schedule and prepare for interviews&lt;/li&gt;
+&lt;li&gt;January: AEA meeting and flyout&lt;/li&gt;
+&lt;li&gt;February-April: Flyout and offers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;summer-get-approval-from-advisor&#34;&gt;Summer: Get approval from advisor&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Get one main paper ready (Job market paper; JMP)&lt;/li&gt;
+&lt;li&gt;Polish the paper and send it to your committee.&lt;/li&gt;
+&lt;li&gt;Only plan to go to the market if your advisor says yes.&lt;/li&gt;
+&lt;li&gt;Start preparation of application materials:
+
+&lt;ol&gt;
+&lt;li&gt;Personal website&lt;/li&gt;
+&lt;li&gt;Professional picture (U-Town has photo taking service)&lt;/li&gt;
+&lt;li&gt;CV (1-page)&lt;/li&gt;
+&lt;li&gt;Research statement&lt;/li&gt;
+&lt;li&gt;Teaching statement (with teaching evaluation)&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;september-final-polishing-of-paper&#34;&gt;September: Final Polishing of Paper&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Job Openings for Economists (JOE): &lt;a href=&#34;http://www.aeaweb.org/joe/&#34; target=&#34;_blank&#34;&gt;http://www.aeaweb.org/joe/&lt;/a&gt; contains almost all job information for Ph.D. economists&lt;/li&gt;
+&lt;li&gt;EconJobMarket (EJM): &lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34;&gt;https://econjobmarket.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Final polishing of the JMP, especially your abstract and introduction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;october-register-for-aea-and-get-ready-for-application&#34;&gt;October: Register for AEA and get ready for application&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Register for the AEA conference
+
+&lt;ul&gt;
+&lt;li&gt;Make flight and hotel reservations.&lt;/li&gt;
+&lt;li&gt;Choose a hotel closet to the Head-Quarters (HQ) hotel but NOT in the HQ hotel. (because HQ hotel has too many people!)&lt;/li&gt;
+&lt;li&gt;Aim to arrive at AEAs for Wednesday night or Thursday morning.&lt;/li&gt;
+&lt;li&gt;Make hotel arrangements immediately as rooms get booked really quick&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;JOE: LOTS of openings
+
+&lt;ul&gt;
+&lt;li&gt;Look specifically at openings in
+
+&lt;ol&gt;
+&lt;li&gt;Within your field&lt;/li&gt;
+&lt;li&gt;Any Fields: check with your network to see any insider information&lt;/li&gt;
+&lt;li&gt;General Economics/Teaching&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;Check for late October/early November deadlines. Most are mid or late November or December.
+
+&lt;ul&gt;
+&lt;li&gt;Create an spread document to organize openings and their dead- lines. (share with your classmates!)&lt;/li&gt;
+&lt;li&gt;Compile a list of schools you plan to apply  Do NOT apply jobs not in your field or to places you would never go.&lt;/li&gt;
+&lt;li&gt;This wastes your and others time and bad for your fellow class- mates.&lt;/li&gt;
+&lt;li&gt;To aim too high or too low as other schools may know you are not making serious applications
+– Run the list with your advisors.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Get ready for your application material:
+
+&lt;ul&gt;
+&lt;li&gt;Check information of the schools you want to apply (You will need need it to mention it in your cover letter.)&lt;/li&gt;
+&lt;li&gt;Upload your website (with JMP, photo, CV, research/teaching state- ments)&lt;/li&gt;
+&lt;li&gt;Complete your CV&lt;/li&gt;
+&lt;li&gt;Polish your research and teaching statements.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;november-send-application-packages&#34;&gt;November: Send Application Packages&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JOE: LOTS of openings here. Some will repeat from October JOE.
+
+&lt;ul&gt;
+&lt;li&gt;Many will have deadlines of November 15th, 30th, December 1st or 15th&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;During this month, only do applications&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Do all or almost all applications before the end of third week (Thanksgiving in US)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Pay attention to the deadline for the AEA 2 job signals you get to send. Details on &lt;a href=&#34;http://www.aeaweb.org/joe/signal/signaling.pdf&#34; target=&#34;_blank&#34;&gt;AEA signaling&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Most applications are done online at econjobmarket.org or via the institu- tions website.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A typical application packet for mailing includes:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Cover letter. Different letters for research, teaching and non-academic jobs. Customize for a few places you are most interested in.&lt;/li&gt;
+&lt;li&gt;JMP.&lt;/li&gt;
+&lt;li&gt;Other research papers only if well-polished and approved by your advi- sor&lt;/li&gt;
+&lt;li&gt;3–4 letters of recommendation. Perhaps a teaching letter as well.&lt;/li&gt;
+&lt;li&gt;Your CV (modify the ordering of your research fields depending on the listed opening).&lt;/li&gt;
+&lt;li&gt;Teaching evaluations (if academic).&lt;/li&gt;
+&lt;li&gt;Teaching statement (if academic, particularly liberal arts schools).&lt;/li&gt;
+&lt;li&gt;Research statement (summary of your papers, and your ongoing re- search)&lt;/li&gt;
+&lt;li&gt;An unofficial or official graduate transcript (sometimes).&lt;/li&gt;
+&lt;li&gt;Chinese CV (for chinese schools)&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Keep your advisors/secretary posted on where to send e-mail, upload or mail reference letters. Let them know your deadlines.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;december-schedule-and-prepare-interviews&#34;&gt;December: Schedule and Prepare Interviews&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;December JOE: some relevant openings here but not as many as in the prior 2 months.&lt;/li&gt;
+&lt;li&gt;Places start calling or e-mailing to set up interviews at the AEAs (before Christmas).&lt;/li&gt;
+&lt;li&gt;Be polite (and sound happy they called!) and ask for the following informa- tion:
+
+&lt;ol&gt;
+&lt;li&gt;Institution 2.&lt;/li&gt;
+&lt;li&gt;Person who called/e-mailed and their contact information.&lt;/li&gt;
+&lt;li&gt;The name and contact information for the contact person at the AEA meetings.&lt;/li&gt;
+&lt;li&gt;Day and time of the interview and hotel it will take place in.&lt;/li&gt;
+&lt;li&gt;Disclosure code (this is the code you will get and look up online during the meetings to find out the exact room the interview takes place in).&lt;/li&gt;
+&lt;li&gt;Other people who will be at the interview&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;Scheduling of interviews:
+
+&lt;ul&gt;
+&lt;li&gt;Act quickly! Good spots fill up quickly. o&lt;/li&gt;
+&lt;li&gt;Put less important interviews on Thursday night or early Friday morn- ing as warm up.&lt;/li&gt;
+&lt;li&gt;Put the most important ones at the times you are in the best shape!&lt;/li&gt;
+&lt;li&gt;AT LEAST 15 minutes between interviews, especially for switching ho- tels.&lt;/li&gt;
+&lt;li&gt;Look at a map when you are scheduling (Game is over if you are late for interview)&lt;/li&gt;
+&lt;li&gt;Try to have a string of interviews in the same hotel.&lt;/li&gt;
+&lt;li&gt;Try to leave a little bit of room for lunch if you can.&lt;/li&gt;
+&lt;li&gt;If you do not have enough (less than 10) interviews, talk to your advi- sors.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Interview Preparation:
+
+&lt;ul&gt;
+&lt;li&gt;In late December, set up mock interviews with faculty members.&lt;/li&gt;
+&lt;li&gt;Do 6-8 and mix and match faculty so that you have 2 faculty members in different fields.&lt;/li&gt;
+&lt;li&gt;Prepare 2-, 5-, and 15-minute versions about your JMP!
+
+&lt;ul&gt;
+&lt;li&gt;Embed them into each other.&lt;/li&gt;
+&lt;li&gt;Be flexible and be prepared to be derailed.&lt;/li&gt;
+&lt;li&gt;Dont sounding like you are memorizing!  No one like to talk to machine.&lt;/li&gt;
+&lt;li&gt;2-minute version: simple enough for people outside your field to understanding; give people a big picture; make your idea interesting to people outside your field&lt;/li&gt;
+&lt;li&gt;5-minute version: Go into greater details of what you are doing; you should tell how your work different from existing literature&lt;/li&gt;
+&lt;li&gt;15-minute version: Let the expert in your field to know what you are doing and let people outside you field to also feel that they know you are doing something seems interesting and useful&lt;/li&gt;
+&lt;li&gt;Questions:
+
+&lt;ul&gt;
+&lt;li&gt;Have you submitted the paper?&lt;/li&gt;
+&lt;li&gt;Where you are going to submit it?&lt;/li&gt;
+&lt;li&gt;How you come up with this idea?&lt;/li&gt;
+&lt;li&gt;Prepare to talk to other papers
+
+&lt;ul&gt;
+&lt;li&gt;What’s next in terms of research?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Teaching questions:
+
+&lt;ul&gt;
+&lt;li&gt;What classes can you teach?&lt;/li&gt;
+&lt;li&gt;Which textbook you are going to use?&lt;/li&gt;
+&lt;li&gt;What topics you are going to cover?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Do research on the school you are going to interview.
+
+&lt;ul&gt;
+&lt;li&gt;Why you would like to come to our place?&lt;/li&gt;
+&lt;li&gt;Try to understand the research of the people who are in the inter- view&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Get your suits ready:
+
+&lt;ul&gt;
+&lt;li&gt;2 suits, 4 shirts, 1 handbag and 2 good shoes.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Have a good hair cut&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;early-january-aea-meetings&#34;&gt;Early January: AEA Meetings!&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you followed the advice, you should have:
+
+&lt;ul&gt;
+&lt;li&gt;Booked a hotel that is very close to but not in the headquarters&lt;/li&gt;
+&lt;li&gt;Arrive Wednesday night. (or before)&lt;/li&gt;
+&lt;li&gt;Have 1-2 suits and comfortable shoes.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;In your handbag, you should have
+
+&lt;ul&gt;
+&lt;li&gt;Snacks (energy bars)&lt;/li&gt;
+&lt;li&gt;Some bottle of water.&lt;/li&gt;
+&lt;li&gt;Bring change for paying cab drivers, so that you are not running around with a $100 bill unable to get change.&lt;/li&gt;
+&lt;li&gt;Some copies of CV (especially for walk-in interviews for industry jobs)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;During interview (usually 30-45 minutes)
+
+&lt;ul&gt;
+&lt;li&gt;Usually in a hotel room&lt;/li&gt;
+&lt;li&gt;Talk about your JMP for 15-20 minutes&lt;/li&gt;
+&lt;li&gt;Asked questions related to research and teaching for 5 to 10 minutes&lt;/li&gt;
+&lt;li&gt;You are introduced with the institutions and place&lt;/li&gt;
+&lt;li&gt;Last 2-5 minutes, you will be asked to ask questions.
+
+&lt;ul&gt;
+&lt;li&gt;Do have some good questions (dont ask question that you can an- swer from the website)&lt;/li&gt;
+&lt;li&gt;You might ask research support, quality of students&lt;/li&gt;
+&lt;li&gt;Tell them if your spouse/partner is also looking for academic jobs&lt;/li&gt;
+&lt;li&gt;NEVER talk about salary&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mid-january-through-march-flyout&#34;&gt;Mid-January through March: FLYOUT&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you passed interviews, you will get to visit the place.&lt;/li&gt;
+&lt;li&gt;Scheduling flyout:
+
+&lt;ul&gt;
+&lt;li&gt;Try not to put the most important the first one.&lt;/li&gt;
+&lt;li&gt;You should call the other nearby schools you have interviewed so that costs can be shared.&lt;/li&gt;
+&lt;li&gt;You usually pay for transport and get reimbursed later but hotel is usually covered by the school.&lt;/li&gt;
+&lt;li&gt;Keep all original receipts.&lt;/li&gt;
+&lt;li&gt;Make copies and mail the originals.&lt;/li&gt;
+&lt;li&gt;Never check your baggage! Bring a carry-on with your suits.&lt;/li&gt;
+&lt;li&gt;A typical fly-out:
+
+&lt;ul&gt;
+&lt;li&gt;Arrive the afternoon/night before.&lt;/li&gt;
+&lt;li&gt;Morning:
+
+&lt;ul&gt;
+&lt;li&gt;Someone may pick you up for an informal breakfast.&lt;/li&gt;
+&lt;li&gt;When you arrive, you will be given a schedule with a list of people to meet.&lt;/li&gt;
+&lt;li&gt;Most of time, you talk about your research.&lt;/li&gt;
+&lt;li&gt;Some of the times, you listen their research or even something unrelated.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Lunch:
+
+&lt;ul&gt;
+&lt;li&gt;Usually at the faculty dining hall with a large number of faculty, and not many within your field.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Afternoon:
+
+&lt;ul&gt;
+&lt;li&gt;Job talk: usually 1.5 hrs, make sure that most people understand the first 30 minutes&lt;/li&gt;
+&lt;li&gt;Meet more people&lt;/li&gt;
+&lt;li&gt;The last one to meet is either the department chair or the Dean.
+– Dinner:&lt;/li&gt;
+&lt;li&gt;Typically with the search committee and department head.&lt;/li&gt;
+&lt;li&gt;A chance to show that you are good person to be colleague.&lt;/li&gt;
+&lt;li&gt;Be relaxed, polite and engage in conversation during these dinners.
+– Some questions to ask during flyout:&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;What are the tenure requirements?&lt;/li&gt;
+&lt;li&gt;What has the tenure success rate been in the last few years?&lt;/li&gt;
+&lt;li&gt;Do you find the department to be collegial?&lt;/li&gt;
+&lt;li&gt;Where would you recommend living?&lt;/li&gt;
+&lt;li&gt;Is there any housing subsidy/allowance?&lt;/li&gt;
+&lt;li&gt;Does the department do a good job of supporting new faculty?&lt;/li&gt;
+&lt;li&gt;In terms of research support, mentorship, shielding from service duties, minimizing teaching preps, etc.?&lt;/li&gt;
+&lt;li&gt;Living environments: Are there good schools nearby? Good restau- rants?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;february-april-flyout-and-offers&#34;&gt;February-April: Flyout and Offers&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Congratulation! You get an offer after 6-month search process!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Most of offers are verbal.  Written formal offers need to get to the administration so they take a lot of time.&lt;/li&gt;
+&lt;li&gt;Offer always come with deadline. Usual case is two weeks.&lt;/li&gt;
+&lt;li&gt;Ask other schools that you have done a flyout to see if they would also like to make you an offer before the deadline.&lt;/li&gt;
+&lt;li&gt;Try to extend deadline for a few days if necessary but should avoid asking for too many days.&lt;/li&gt;
+&lt;li&gt;Bargaining is usually ONLY possible if you have another offer.&lt;/li&gt;
+&lt;li&gt;Make sure you dont bargain too hard.&lt;/li&gt;
+&lt;li&gt;Make sure you are aware of allowance (education, housing, and medi- cal).&lt;/li&gt;
+&lt;li&gt;Check if you are offered a standard package or not.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;JOE: Post-docs and other teaching positions are posted&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;additional-reading&#34;&gt;Additional Reading:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cawley (2012) guide (Must read! Can also read earlier version). Available at &lt;a href=&#34;http://www.aeaweb.org/joe/articles/2011/job market guide.pdf&#34; target=&#34;_blank&#34;&gt;AEA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;William Thomson (2012): Being a graduate student in economics published in A Guide for the Young Economist, MIT Press. Available in working paper version&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;supplemetary-information-links-to-job-positing&#34;&gt;Supplemetary information: Links to Job Positing&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;AEA JOE: &lt;a href=&#34;http://www.aeaweb.org/joe/&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Econ Job Market: &lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ERN Job: &lt;a href=&#34;http://www.ssrn.com/update/ern/ernjob/ern job.html&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chronicle of Higher Education (For teaching jobs): &lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Royal Economic Society (For Europe Jobs): &lt;a href=&#34;http://www.res.org.uk/&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Academy of Management (For management jobs): &lt;a href=&#34;http://www.aomonline.org&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Harvard Abridge List (Useful): &lt;a href=&#34;http://www.economics.harvard.edu/jobmarket/abridgedJOElist&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;supplemetary-information-other-job-market-advice&#34;&gt;Supplemetary information: other Job Market Advice&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bluwiki: &lt;a href=&#34;http://bluwiki.com/go/Econjobmarket&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Econ Job Rumors: &lt;a href=&#34;http://www.econjobrumors.com/&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cawley Review of Job Market Outcome: &lt;a href=&#34;http://www.aeaweb.org/joe/articles/2011/jobmarketguide.pdf&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;David Levines Cheap Advice: &lt;a href=&#34;http://faculty.haas.berkeley.edu/levine/cheapadvice.html&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Harvard Job Market Information: &lt;a href=&#34;http://www.economics.harvard.edu/jobmarket&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stanford Ph.D placement Guide: &lt;a href=&#34;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011- 120.pdf&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chicago Students Econ Job Market Advice: &lt;a href=&#34;http://www.dinhvutrangngan.com/teaching/Advice/JobMarket/Chicago&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Berekely Job Market Packet: &lt;a href=&#34;http://econ.berkeley.edu/sites/default/files/placementinfopacket2011-12.pdf&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;University of Pitt Job Market Information: &lt;a href=&#34;http://www.pitt.edu/coen/graduate/job market guide 2011.pdf&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Luigi Pistaferri Job Market Advice: &lt;a href=&#34;http://www.stanford.edu/pista/placement.html&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;David Laibsons Job Market Note: &lt;a href=&#34;http://www.economics.harvard.edu/files/David%20Laibson%20Tips.pdf&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Navin Kartiks Job Market Tips: &lt;a href=&#34;http://econ.ucsd.edu/vramey/placement/nk tips.doc&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pedagogy</title>
+      <link>/others/pedagogy/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/others/pedagogy/</guid>
+      <description>
+
+&lt;h2 id=&#34;grant&#34;&gt;GRANT&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&amp;ldquo;I hear I forget, I see I remember, I do I understand - Development of large number templates of visual organizers and graphical illustrations&amp;rdquo;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Teaching Enhancement Grant (TEG), AY2014/2015, National University of Singapore.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;teaching-articles&#34;&gt;TEACHING ARTICLES&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Using formative feedback, peer review, and online video-recorded presentations to enhance students&amp;rsquo; research reports. CDTL Brief, 19(1), 3-9. &lt;a href=&#34;https://blog.nus.edu.sg/cdtlbrief/2016/04/26/using-formative-feedback-peer-review-and-online-video-recorded-presentations-to-enhance-students-research-reports/#.V5nLEYSriko&#34; target=&#34;_blank&#34;&gt;HTML&lt;/a&gt; &lt;a href=&#34;https://cpb-us-w2.wpmucdn.com/blog.nus.edu.sg/dist/c/4884/files/2016/05/Brief_AprilMay2016_CYKo-12kd6e9.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Invited Presentation at FASS Teaching Seminar, NUS, 16 Aug 2016. &lt;a href=&#34;https://docs.google.com/viewer?a=v&amp;amp;pid=sites&amp;amp;srcid=ZGVmYXVsdGRvbWFpbnxrb2NoaXV5dXxneDoyZGUxZTZhZmM5MTc2Mw&#34; target=&#34;_blank&#34;&gt;Slide&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Supervision</title>
+      <link>/others/supervision/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/others/supervision/</guid>
+      <description>
+
+&lt;p&gt;I am the main advisor of dissertation for two Ph.D. students, and honor thesis for 17 undergraduate students. Besides, between 2015 and 2018, I have been helping Ph.D. students prepare their academic job market.&lt;/p&gt;
+
+&lt;h2 id=&#34;phd-students&#34;&gt;PHD STUDENTS&lt;/h2&gt;
+
+&lt;p&gt;I am the main advisor for two Ph.D. students, and serve in dissertation committees for four Ph.D. students. I also hosted three visiting Ph.D. students.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-advisor&#34;&gt;Main Advisor&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lu Zhiqi (2019 Expected)&lt;/li&gt;
+&lt;li&gt;Zhang Xuyao (2017, Deputy Director, Asia Competitiveness Institute, Lee Kuen Yew School of Public Policy, National University of Singapore)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;committee-member&#34;&gt;Committee Member&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Liu Xuyuan (2014, Research Fellow, Risk Management Institute, National University of Singapore)&lt;/li&gt;
+&lt;li&gt;Ding Rong (2015, Assistant Professor, University of International Business and Economics)&lt;/li&gt;
+&lt;li&gt;Liu Bin (2015, Assistant Professor, Chinese University of Hong Kong Shenzhen)&lt;/li&gt;
+&lt;li&gt;Wang Zhe (2017, Post-doc Fellow, Lee Kuen Yew School of Public Policy, National University of Singapore)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;short-term-visting-students&#34;&gt;Short-term Visting Students&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Yujia Cao (Lingnan (University) College, Sun Yat Sen University, 2016-2017)&lt;/li&gt;
+&lt;li&gt;Xu Luyuan (Guangxi University, 2016-2017)&lt;/li&gt;
+&lt;li&gt;Chen Yaqi (Beijing Jiaotong University, 2015-2016)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;undergraduate&#34;&gt;UNDERGRADUATE&lt;/h2&gt;
+
+&lt;p&gt;I have supervised 17 honor students, 5 independent studies and 2 UROP since 2012.&lt;/p&gt;
+
+&lt;h3 id=&#34;honor-thesis&#34;&gt;HONOR THESIS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Chew Pheeraphol (2018 Spring, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;Quantifying Trading Behavior Of Cryptocurrencies Using Online Search Interest - How Do They React To Speculation And Do They All Behave Similarly?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Mudit Kedia (2018 Spring, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;The Impact Of Prospectus Conservatism On Share Price And Operating Performance: Evidence From Hong Kong.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Shiang Chen Ting (2018 Spring, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;Effect Of News Sentiment On Stock Returns: A Textual Analysis.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Lim Si Min Sally (2018 Spring, Economics and Accounting)
+
+&lt;ul&gt;
+&lt;li&gt;Do Investors Value Tax Avoidance In Singapore-Listed Firms?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Soh Giap Hong Daniel (2017 Fall, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;An Empirical Investigation of the IPO Underpricing Phenomenon: Evidence from the Singapore IPO Market&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Chia Keat Loong (2016 Fall, Economics and Finance)
+
+&lt;ul&gt;
+&lt;li&gt;Profitability of Trading Strategies Based on Google Trends&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Evelyn Chew Yu Hui (2016 Spring, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;Profiting from the Singapore Stock Market&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Lim Cai Jie (2015 Fall, Economics and Finance)
+
+&lt;ul&gt;
+&lt;li&gt;The Term Structure of Stock Return Continuation&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Zhao Yin (2015 Fall, Economics,  NUS-ANU JDP)
+
+&lt;ul&gt;
+&lt;li&gt;The Dynamics of Global Housing Attainability&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Nguyen Hoang Diem An (2015 Spring, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;Are Family Firms Better? Looking from the Firm Profitability and Market Perception Perspective&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Chew Yi Peng Lisa (2015 Spring, Economics and Business)
+
+&lt;ul&gt;
+&lt;li&gt;What Value Do Shareholders Place on Firm-held Cash? An Empirical Study of the Singapore Stock Market&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Oon Wei Ying (2014 Fall, Economics NUS-ANU JDP)
+
+&lt;ul&gt;
+&lt;li&gt;An Economics Analysis of Multi-Level Marketing&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Ngiaw Kee Ann (2014 Fall, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;Explaining Price Anomalies in Simultaneous Ascending Auctions for Coffee&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Edmund Chua Zheng Hong (2014 Spring, Economics and Business)
+
+&lt;ul&gt;
+&lt;li&gt;To Race or To Wait? An Analysis of the Trade-offs Between Uncertainty and First Mover Advantage in a Strategic Setting&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Anushiya Arunan (2014 Spring, Economics and Environment Engineering)
+
+&lt;ul&gt;
+&lt;li&gt;A Multi-Disciplinary Perspective on Reducing the Carbon Footprint of Wastewater Treatment Plants&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Zhe Michelle Dong (2014 Spring, Economics, NUS-ANU JDP)
+
+&lt;ul&gt;
+&lt;li&gt;Too Big to Fail? An Empirical Study on the Default Risk of Leveraged Financial Firms&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Jonathan Ne Win (2013 Spring, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;What&amp;rsquo;s in a Dividend? Re–examination of Dividend Theory with U.S. Technology Companies&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;independent-study&#34;&gt;INDEPENDENT STUDY&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Shi Huilin (2018 Spring, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;Analysis On Hong Kong IPO Pricing From A Sentimental Prospective.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Wu Jieli (2016 Spring, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;Predicting Stock Returns in China&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Koh Zhi Xing (2015 Spring, USP)
+
+&lt;ul&gt;
+&lt;li&gt;Evidence on Dividend Clienteles: US Technology Stocks&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;urop&#34;&gt;UROP&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Lin Jia He (2015 Spring, Economics-Statistics)
+
+&lt;ul&gt;
+&lt;li&gt;Chinese Political System&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Lim Hysen (2015 Spring, Economics)
+
+&lt;ul&gt;
+&lt;li&gt;Election System in Hong Kong&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Display Jupyter Notebooks with Academic</title>
+      <link>/post/jupyter/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/jupyter/</guid>
+      <description>
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
+Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;./academic_0_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Welcome to Academic!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;install-python-and-jupyter&#34;&gt;Install Python and Jupyter&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and Jupyter notebook.&lt;/p&gt;
+
+&lt;p&gt;Otherwise, for advanced users, install Jupyter notebook with &lt;code&gt;pip3 install jupyter&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;create-a-new-blog-post-as-usual-https-sourcethemes-com-academic-docs-managing-content-create-a-blog-post&#34;&gt;Create a new blog post &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-blog-post&#34; target=&#34;_blank&#34;&gt;as usual&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY_WEBSITE_FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;my-post&lt;/code&gt; with the file path to your Academic website folder and a name for your blog post (without spaces), respectively:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;
+hugo new  --kind post post/my-post
+cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;/content/post/my-post/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
+
+&lt;p&gt;Run the following command to start Jupyter within your new blog post folder. Then create a new Jupyter notebook (&lt;em&gt;New &amp;gt; Python Notebook&lt;/em&gt;) or upload a notebook.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert Untitled.ipynb --to markdown --NbConvertApp.output_files_dir=.
+
+# Copy the contents of Untitled.md and append it to index.md:
+cat Untitled.md | tee -a index.md
+
+# Remove the temporary file:
+rm Untitled.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
+
+&lt;p&gt;Open &lt;code&gt;index.md&lt;/code&gt; in your text editor and edit the title etc. in the &lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34;&gt;front matter&lt;/a&gt; according to your preference.&lt;/p&gt;
+
+&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
+
+&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decentralized mechanisms for river sharing</title>
+      <link>/publication/river-sharing/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/river-sharing/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On the Role of Outside Options in Wage Renegotiation</title>
+      <link>/publication/outside-option-bargaining/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/outside-option-bargaining/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Candle Stick</title>
+      <link>/r/package/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/r/package/</guid>
+      <description>
+
+
+&lt;p&gt;I have developed the following R package to determine candle stick patterns. You can check out more at &lt;a href=&#34;https://github.com/kochiuyu/CandleStickPattern/&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;candlestickpattern&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;CandleStickPattern&lt;/h1&gt;
+&lt;p&gt;This package finds common candle stick patterns using daily data (OHLC data).&lt;/p&gt;
+&lt;div id=&#34;overview&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The current version package covers the following patterns:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Doji family (1-day pattern)
+&lt;ul&gt;
+&lt;li&gt;Doji &lt;code&gt;doji()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Dragonfly Doji &lt;code&gt;dragonfly.doji()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Gravestone Doji &lt;code&gt;gravestone.doji()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Hammer family (2-day pattern)
+&lt;ul&gt;
+&lt;li&gt;Hammer/Hangman &lt;code&gt;hammer()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Inverted Hammer/Shooting Star &lt;code&gt;inverted.hammer&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Engulfing family (2-day pattern)
+&lt;ul&gt;
+&lt;li&gt;Bullish Engulfing &lt;code&gt;bullish.engulf()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Bearish Engulfing &lt;code&gt;bearish.engulf()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Harami family (2-day pattern)
+&lt;ul&gt;
+&lt;li&gt;Bullish Harami &lt;code&gt;bullish.engulf()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Bearish Harami &lt;code&gt;bearish.harami()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Reversal family (2-day pattern)
+&lt;ul&gt;
+&lt;li&gt;Piercing line &lt;code&gt;piercing.line()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Dark cloud Cover &lt;code&gt;dark.cloud.cover()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Kicking family (2-day pattern)
+&lt;ul&gt;
+&lt;li&gt;Kick up &lt;code&gt;kick.up()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Kick down &lt;code&gt;kick.down()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Three-in-a-row (3-day pattern)
+&lt;ul&gt;
+&lt;li&gt;Three white soldiers &lt;code&gt;three.white.soliders()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Three Black crows &lt;code&gt;three.black.crows()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Star (3-day pattern)
+&lt;ul&gt;
+&lt;li&gt;Morning star &lt;code&gt;morning.star()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Evening star &lt;code&gt;evening.star()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Three Method (5-day pattern)
+&lt;ul&gt;
+&lt;li&gt;Rising three &lt;code&gt;rising.three()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Falling three &lt;code&gt;falling.three()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Moreover, it captures trends using exponential moving average (EMA):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;EMA trends
+&lt;ul&gt;
+&lt;li&gt;up trend &lt;code&gt;up.trend()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;down trend &lt;code&gt;down.trend()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;installation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;To install this package, it is the easist to install &lt;code&gt;devtools&lt;/code&gt; package first:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;devtools&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now load the package using &lt;code&gt;library()&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(devtools)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we can use the &lt;code&gt;install_github&lt;/code&gt; to get the package directly:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install_github(&amp;quot;kochiuyu/CandleStickPattern&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, we load the package using &lt;code&gt;library()&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(CandleStickPattern)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;usage&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Usage&lt;/h2&gt;
+&lt;p&gt;You can see the details of how each function works in &lt;a href=&#34;http://htmlpreview.github.io/?https://github.com/kochiuyu/CandleStickPattern/blob/master/vignettes/CandleStick.html&#34;&gt;vignette&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The following demonstrates the usage of the function &lt;code&gt;doji()&lt;/code&gt; using Microsoft (ticker: MSFT). We use &lt;strong&gt;quantmod&lt;/strong&gt; package to download data:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(quantmod)
+getSymbols(&amp;quot;MSFT&amp;quot;, from = &amp;quot;2011-07-08&amp;quot; , to = &amp;quot;2011-07-19&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We first plot the candle chart first:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;candleChart(MSFT,theme=&amp;#39;white&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/r/package_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can see that July 11, 12, 13, and 18 are likely to follow &lt;strong&gt;doji&lt;/strong&gt; pattern. Let us see if we can capture using the function &lt;code&gt;doji&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;doji(MSFT)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##             doji
+## 2011-07-08 FALSE
+## 2011-07-11  TRUE
+## 2011-07-12  TRUE
+## 2011-07-13  TRUE
+## 2011-07-14 FALSE
+## 2011-07-15 FALSE
+## 2011-07-18  TRUE
+## 2011-07-19 FALSE&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Candle Stick</title>
+      <link>/r/testing/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/r/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sharing sequential values in a network</title>
+      <link>/publication/network-sharing/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/network-sharing/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PhD Conference</title>
+      <link>/others/phdconference/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/others/phdconference/</guid>
+      <description>&lt;p&gt;I am the coordinator the Second Singapore Economics PhD Conference (2nd SEPC) will be held at the National University of Singapore on 18th November, 2016 (Friday). The first conference (1st SEPC) was organized by the Division of Economics at Nanyang Technological University on 22nd April, 2016.  This conference series aims to feature the collective works of Economics PhD students based in Singapore.&lt;/p&gt;
+
+&lt;p&gt;For details, please visit &lt;a href=&#34;https://sites.google.com/site/sgeconphdcon/&#34; target=&#34;_blank&#34;&gt;https://sites.google.com/site/sgeconphdcon/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reading Group</title>
+      <link>/others/readinggroup/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/others/readinggroup/</guid>
+      <description>&lt;p&gt;I am currently the coordinator for the reading group. Please email me if you want to be included into the mailing list or present in our workshop.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Time: Monday 12:00nn-1:00pm&lt;/li&gt;
+&lt;li&gt;Venue: AS2-05-10, National University of Singapore, 1 Arts Link, Singapore 117570&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Note on Budget Constraints and Outside Options in Common Agency</title>
+      <link>/publication/common-agency/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/common-agency/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Applied Financial Economics</title>
+      <link>/teaching/applied-financial-economics/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/teaching/applied-financial-economics/</guid>
+      <description>&lt;p&gt;Overview&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We cover how theoretical models and the associated empirical analysis can be applied in practice&lt;/li&gt;
+&lt;li&gt;We first review classical stock market analysis techniques: fundamental analysis and technical analysis.&lt;/li&gt;
+&lt;li&gt;We investigate various trading strategies adopted by market participants.&lt;/li&gt;
+&lt;li&gt;We continue to study how modern time series models can help to analyze and predict future stock price.&lt;/li&gt;
+&lt;li&gt;Then we examine several market microstructure models. trading models. to understand trading behavior such as bid-ask spread, liquidity, trading volume, and trading behaviors,&lt;/li&gt;
+&lt;li&gt;Finanly, to understand increasingly popular computerized trading, we cover programming and econometric software such as Excel VBA and R.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Topics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Equity research&lt;/li&gt;
+&lt;li&gt;Technical trading&lt;/li&gt;
+&lt;li&gt;Investor trading behavior&lt;/li&gt;
+&lt;li&gt;Excel VBA programming&lt;/li&gt;
+&lt;li&gt;R programming
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>External Project</title>
+      <link>/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fair Sharing</title>
+      <link>/project/fair-sharing/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/project/fair-sharing/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Financial Market Microsturcture</title>
+      <link>/teaching/financial-market-microstructure/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/teaching/financial-market-microstructure/</guid>
+      <description>&lt;p&gt;Overview:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Market microstructure studies price movement and how trading takes place in financial markets.&lt;/li&gt;
+&lt;li&gt;First, We analyze the movement of security prices by fundamental analysis, technical analysis, time series, trade price and factor price models.&lt;/li&gt;
+&lt;li&gt;Second, we investigate models of trading: inventory models, sequential trading models, strategic trading and behavioral models.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Topics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fundamental analysis&lt;/li&gt;
+&lt;li&gt;Technical analysis&lt;/li&gt;
+&lt;li&gt;Time series analysis&lt;/li&gt;
+&lt;li&gt;Event study methdology&lt;/li&gt;
+&lt;li&gt;Factor pricing models&lt;/li&gt;
+&lt;li&gt;Inventory models&lt;/li&gt;
+&lt;li&gt;Sequential trade models&lt;/li&gt;
+&lt;li&gt;Strategic tarde models&lt;/li&gt;
+&lt;li&gt;Behavorial models&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Industrial Organization</title>
+      <link>/teaching/industrial-organization/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/teaching/industrial-organization/</guid>
+      <description>&lt;p&gt;Overview:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Review Basic concepts of the non-cooperative game theory&lt;/li&gt;
+&lt;li&gt;Build foundation to study various applications of game-theoretic models in the field of industrial organization.&lt;/li&gt;
+&lt;li&gt;in-depth analysis and understand various theoretical issues of the modern industrial organization.&lt;/li&gt;
+&lt;li&gt;the approach of this course is game theoretic
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Topics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Monopoly pricing&lt;/li&gt;
+&lt;li&gt;Monopoly dynamic decision&lt;/li&gt;
+&lt;li&gt;Competition with homogeneous good&lt;/li&gt;
+&lt;li&gt;Competitio with produce differentiation&lt;/li&gt;
+&lt;li&gt;Network externality&lt;/li&gt;
+&lt;li&gt;Consmer Search&lt;/li&gt;
+&lt;li&gt;Innovation and technology&lt;/li&gt;
+&lt;li&gt;Entry deterence&lt;/li&gt;
+&lt;li&gt;Collusion&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Academic: the website builder for Hugo</title>
+      <link>/post/getting-started/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/post/getting-started/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Setup Academic&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;View the documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34; target=&#34;_blank&#34;&gt;Ask a question&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;Request a feature or report a bug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updating? View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support development of Academic:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34;&gt;Donate a coffee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34;&gt;Become a backer on Patreon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34;&gt;Decorate your laptop or journal with an Academic sticker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34;&gt;Wear the T-shirt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
+
+&lt;p&gt;Academic comes with &lt;strong&gt;day (light) and night (dark) mode&lt;/strong&gt; built-in. Click the sun/moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt; to see it in action!&lt;/p&gt;
+
+&lt;p&gt;Choose a stunning color and font theme for your site. Themes are fully customizable and include:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-1950s.png&#34; data-caption=&#34;1950s&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-1950s_huaf5482f8cea0c5a703a328640e3b7509_21614_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-apogee.png&#34; data-caption=&#34;Apogee&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-apogee_hu4b45d99db97150df01464c393bfd17d4_24119_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-coffee-playfair.png&#34; data-caption=&#34;Coffee theme with Playfair font&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-coffee-playfair_hu446a8f670cc5622adcc77b97ba95f6c5_22462_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-cupcake.png&#34; data-caption=&#34;Cupcake&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-cupcake_hueba8cfa8cfbc7543924fcbf387a99e92_23986_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-dark.png&#34; data-caption=&#34;Dark&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-dark_hu1e8601ecc47f58eada7743fdcd709d3d_21456_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-default.png&#34; data-caption=&#34;Default&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-default_huba6228b7bdf30e2f03f12ea91b2cba0d_21751_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-forest.png&#34; data-caption=&#34;Forest&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-forest_hu4f093a1c683134431456584193ea41ee_21797_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-ocean.png&#34; data-caption=&#34;Ocean&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-ocean_hu14831ccafc2219f30a7a096fa7617e01_21760_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+
+&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unified China and Divided Europe</title>
+      <link>/publication/europe-china/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/europe-china/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>
+
+
+&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R Markdown&lt;/h1&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &amp;lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Including Plots&lt;/h1&gt;
+&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
+  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
+  init.angle = -50, border = NA
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: A fancy pie chart.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Regional Dependence and Political Centralization in Imperial China</title>
+      <link>/publication/dependence-china/</link>
+      <pubDate>Sat, 17 Aug 2013 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/dependence-china/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Choosing a licensee from heterogeneous rivals</title>
+      <link>/publication/choosing-rivals/</link>
+      <pubDate>Sat, 13 Jul 2013 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/choosing-rivals/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microeconomics Analysis III</title>
+      <link>/teaching/microeconomics/</link>
+      <pubDate>Fri, 27 Apr 2012 00:00:00 +0800</pubDate>
+      
+      <guid>/teaching/microeconomics/</guid>
+      <description>&lt;p&gt;Overview&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Begin with a normative perspective and ask how consumers derive their choices from preferences and what allocations are efficient&lt;/li&gt;
+&lt;li&gt;Then turn to a positive study focusing on competitive markets and strategic interactions.&lt;/li&gt;
+&lt;li&gt;the development of analytical tools and the understanding of how the theories are constructed and&lt;/li&gt;
+&lt;li&gt;the working and failure cases of the market system.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Topics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Consumer theory&lt;/li&gt;
+&lt;li&gt;Production theory&lt;/li&gt;
+&lt;li&gt;General equilibrium&lt;/li&gt;
+&lt;li&gt;Uncertainty&lt;/li&gt;
+&lt;li&gt;Game theory&lt;/li&gt;
+&lt;li&gt;Information economics&lt;/li&gt;
+&lt;li&gt;Auction&lt;/li&gt;
+&lt;li&gt;Matching&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Profit-maximizing Matchmaker</title>
+      <link>/publication/matchmaker/</link>
+      <pubDate>Wed, 17 Aug 2011 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/matchmaker/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Service</title>
+      <link>/others/service/</link>
+      <pubDate>Wed, 21 Apr 2010 00:00:00 +0800</pubDate>
+      
+      <guid>/others/service/</guid>
+      <description>
+
+&lt;h2 id=&#34;departmental&#34;&gt;Departmental&lt;/h2&gt;
+
+&lt;p&gt;Committee works for the Department of Economics, National University of Singapore:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Coordinator, Applied Theory and Industrial Organization Workshop,  2013-Present.&lt;/li&gt;
+&lt;li&gt;Co-organizer, Multi-sided Platform Workshop, 2013.&lt;/li&gt;
+&lt;li&gt;Applied Economics Program,2014-2015, 2017-2018.&lt;/li&gt;
+&lt;li&gt;Graduate Program Committee, 2013-2014, 2015-Present.&lt;/li&gt;
+&lt;li&gt;Subcommittee on collaborative programs (double degree programs), 2018-Present.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;professional&#34;&gt;Professional&lt;/h2&gt;
+
+&lt;p&gt;Ad-hoc referees for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Australian Economic Papers&lt;/li&gt;
+&lt;li&gt;Economic Bulletin&lt;/li&gt;
+&lt;li&gt;Economic Record&lt;/li&gt;
+&lt;li&gt;Games and Economic Behavior&lt;/li&gt;
+&lt;li&gt;International Economic Review&lt;/li&gt;
+&lt;li&gt;International Journal of Game Theory&lt;/li&gt;
+&lt;li&gt;Journal of Economic and Behavior Organization&lt;/li&gt;
+&lt;li&gt;Journal of Mathematical Economics&lt;/li&gt;
+&lt;li&gt;Journal of Public Economic Theory&lt;/li&gt;
+&lt;li&gt;Mathematical Social Science&lt;/li&gt;
+&lt;li&gt;Review of Network Economics&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/slides/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides/example/</guid>
+      <description>
+
+&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Code block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+
+&lt;p&gt;Block math:&lt;/p&gt;
+
+&lt;p&gt;$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+   One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   Three
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/aside&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

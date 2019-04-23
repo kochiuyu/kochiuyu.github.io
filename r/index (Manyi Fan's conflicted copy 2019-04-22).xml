@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Overview on Chiu Yu Ko</title>
+    <link>/r/</link>
+    <description>Recent content in R Overview on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018</copyright>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Candle Stick</title>
+      <link>/r/package/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/r/package/</guid>
+      <description>I have developed the following R package to determine candle stick patterns. You can check out more at GitHub.
+CandleStickPatternThis package finds common candle stick patterns using daily data (OHLC data).
+OverviewThe current version package covers the following patterns:
+Doji family (1-day pattern)Doji doji()Dragonfly Doji dragonfly.doji()Gravestone Doji gravestone.doji()Hammer family (2-day pattern)Hammer/Hangman hammer()Inverted Hammer/Shooting Star inverted.hammerEngulfing family (2-day pattern)Bullish Engulfing bullish.</description>
+    </item>
+    
+    <item>
+      <title>Candle Stick</title>
+      <link>/r/testing/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/r/testing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

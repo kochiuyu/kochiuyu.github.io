@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Overview on Chiu Yu Ko</title>
+    <link>/rprogram/</link>
+    <description>Recent content in R Overview on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018</copyright>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/rprogram/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Candle Stick</title>
+      <link>/rprogram/package/package/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/rprogram/package/package/</guid>
+      <description>trueI have developed the following R package to determine candle stick patterns. You can check out more at GitHub.
+CandleStickPatternThis package finds common candle stick patterns using daily data (OHLC data).
+OverviewThe current version package covers the following patterns:
+Doji family (1-day pattern)Doji doji()Dragonfly Doji dragonfly.doji()Gravestone Doji gravestone.doji()Hammer family (2-day pattern)Hammer/Hangman hammer()Inverted Hammer/Shooting Star inverted.hammerEngulfing family (2-day pattern)Bullish Engulfing bullish.</description>
+    </item>
+    
+    <item>
+      <title>Candle Stick</title>
+      <link>/rprogram/package/package/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/rprogram/package/package/</guid>
+      <description>I have developed the following R package to determine candle stick patterns. You can check out more at GitHub.
+knitr::opts_chunk$set(echo = TRUE) library(quantmod) library(CandleStickPattern) MSFT &amp;lt;- MSFT[&#39;2011-07-08/2011-07-19&#39;] #getSymbols(&amp;quot;MSFT&amp;quot;, from = &amp;quot;2011-07-08&amp;quot; , to = &amp;quot;2011-07-19&amp;quot;)  CandleStickPattern This package finds common candle stick patterns using daily data (OHLC data).
+Overview The current version package covers the following patterns:
+ Doji family (1-day pattern)
+ Doji doji() Dragonfly Doji dragonfly.doji() Gravestone Doji gravestone.</description>
+    </item>
+    
+  </channel>
+</rss>

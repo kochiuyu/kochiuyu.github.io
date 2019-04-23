@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chiu Yu Ko</title>
+    <link>/tikz/</link>
+    <description>Recent content on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018</copyright>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tikz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Consumer Theory</title>
+      <link>/tikz/consumer/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/consumer/</guid>
+      <description>Indifference Curve\begin{tikzpicture}[scale=.7]% Axis\draw [-&amp;gt;] (0,0) node [below] {0} -- (0,0) -- (5.5,0) node [below] {Good 1};\draw [-&amp;gt;] (0,0) node [below] {0} -- (0,0) -- (0,5.5) node [above] {Good 2};% Indifference curve\draw (0.3,5) to [out=280,in=175] (5.5,0.5);\draw (1,5) to [out=280,in=175] (5.5,1.2);\draw (1.6,5) to [out=280,in=175] (5.5,1.8);\end{tikzpicture}Utility Maximization\begin{tikzpicture}[scale=.7]\draw[thick,&amp;lt;-&amp;gt;] (0,10) node[above]{$y$}--(0,0)--(10,0) node[right]{$x$};\node [below left] at (0,0) {$0$};\node [below] at (5,0) {$x^{*}$};\node [left] at (0,5) {$y^{*}$};\draw(1,9)--(9,1) node[right]{$p_xx+p_yy=I$};\draw(0,5)--(5,5)--(5,0);\draw(2,10) .</description>
+    </item>
+    
+    <item>
+      <title>Demand and Supply</title>
+      <link>/tikz/demand-and-supply/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/demand-and-supply/</guid>
+      <description>Monopoly\begin{tikzpicture}[scale=1]\draw (0,5.8) node [left] {$Y$} --(0,0) node [left] {$O$} --(4.8,0) node [right] {$X$};\node [below] at (1.5,0) {$A$};\node [below] at (2.4,0) {$B$};\node [below] at (3.6,0) {$C$};\node [left] at (0,2) {$H$};\node [left] at (0,3) {$K$};\node [right] at (1.5,1.5) {$E$};\node [above left] at (0.8,3) {$F$};\node [above] at (2.4,2) {$P$};\node [above right] at (1.5,3) {$Q$};%line M\draw (1.53,0)--(1.53,4.8) node [above] {$M$} ;% Line GEA\draw (0,1.</description>
+    </item>
+    
+    <item>
+      <title>Game Theory</title>
+      <link>/tikz/game-theory/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/game-theory/</guid>
+      <description>Best Reply\begin{tikzpicture}[scale=0.7]\tiny\draw (0,0) -- (6,0) node [below] {$s_B$};\draw (0,0) -- (0,6) node [left] {$s_A$};\node [below] at (0,0) {$O$};\draw(0,0.7) to [out=15,in=230] (5.5,4);\node [below] at (5.4,3.3) {$R_A(s_B)$};\draw [-&amp;gt;] (3,0.5) -- (3,1.4);\draw [xshift=7cm](0,0) -- (6,0) node [below] {$s_B$};\draw [xshift=7cm] (0,0) -- (0,6) node [left] {$s_A$};\node [xshift=4.7cm][below] at (0,0) {$O$};\draw [xshift=7cm] (1,0) to [out=40,in=260] (3.5,3);\draw [xshift=7cm] (3.5,3) to [out=85,in=220] (5.5,5);\node [xshift=6cm][below] at (4.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>/tikz/introduction/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/introduction/</guid>
+      <description>Learning Objectives:
+ What is LaTeX? Why LaTeX? What is TikZ? Installation of LaTeX Hello world  What is LaTeX? Why LaTeX? LaTeX is a markup language to write documents. In a common word processor, we have what you see is what you get (WYSIWYG). Howver, in LaTeX, What you see is what you mean (WYSIWYM). This manes that
+ No need to bother with formatting, LaTeX will do it for you Easy to include math/graphics/tables  Therefore, it becomes a standard for academic publishing.</description>
+    </item>
+    
+    <item>
+      <title>Labor Economics</title>
+      <link>/tikz/labour-economics/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/labour-economics/</guid>
+      <description>Labor Supply Decision\begin{tikzpicture}[scale=0.7]\draw [&amp;lt;-&amp;gt;] (0,10.4) node [above] {\small $Daily\ Income$} --(0,0) node [left] {$O$} --(9,0);\node [below] at (8.6, -0.6) {\small $House\ of\ Leisure$};\node [left] at (0,3.2) {$A$};\node [left] at (0,5.9) {$B$};\node [left] at (0,9.1) {$C$};\node [below] at (8.6,0) {$D$};\node [below] at (6.4,0.8) {$a$};\node [above] at (5.5,2.2) {$b$};\node [right] at (6.4,2.4) {$c$};% Slope OW\draw (0,3.2)--(8.6,0);\draw (0,5.9)--(8.6,0);\draw (0,9.</description>
+    </item>
+    
+    <item>
+      <title>Macroeconomics</title>
+      <link>/tikz/macroeconomics/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/macroeconomics/</guid>
+      <description>AS-AD\begin{tikzpicture}[scale=0.8]\draw[thick] (0,9) node[above]{$P$}--(0,0) node[below right]{$0$}--(12,0) node[below]{$Y$};\draw(1,1.5) ..controls (5,2) and (8,3) .. (8.5,9) node[above]{$AS$};\draw (2,9) node[above]{$AD$}--(8.5,1.3);\draw(8,9)--(8,0) node[below]{$Y_f$};\draw[dashed](6.53,3.6)--(6.53,0) node[below] {$Y_e$};\end{tikzpicture}Keyesnian Cross\begin{tikzpicture}[scale=0.5]\scriptsize\draw[thick] (0,12) node[above]{$E$}--(0,0) node[below right]{$0$}--(12,0) node[below]{$Y$};\draw(0,2)--(12,11) node[right]{$C(Y)+I+G+X-M(Y)$};\draw(0,0)--(12,12) node[right]{$E(Y)=Y$};\draw[dashed](8,8)--(8,0) node[below]{$Y_e$};\draw[dashed](10,9.5)--(10,0) node[below]{$Y_f$};\draw (0,0) ++(0:2) arc(0:45:2);\node [right] at (0.5,0.5) {45$^{\circ}$};\end{tikzpicture}IS-LM\begin{tikzpicture}[scale=0.5]\scriptsize\draw[thick] (0,9) node[left]{$i$}--(0,0) node[below left]{$0$}--(11,0) node[below]{$Y$};\draw(6,9) node[left]{$IS_0$} ..controls (8,8) and (10,7) .</description>
+    </item>
+    
+    <item>
+      <title>Produer Theory</title>
+      <link>/tikz/producer/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/producer/</guid>
+      <description>Isoquant\begin{tikzpicture}[scale=1.2]\draw (0,0) -- (5.5,0);\draw (0,0) -- (0,5.5);\node [left] at (-0.2,5.3) {$\texttt{K}$};\node [below] at (5.3,-0.1) {$\texttt{L}$};\draw [thick] (1.7,4.8) to [out=275,in=180] (5,1.3);\node [right] at (1.5,5) {$I$};\node [right] at (5,1.3) {$I$};\draw [thick] (0,0) -- (2.7,4.5);\draw [thick] (0,0) -- (4,3.7);\draw[dotted, thick](1,4.05)--(4.1,0.95);\draw[dotted, thick](1.15,5.1)--(3.35,0.8);\node [right] at (0.7,4.4) {$C^1$};\node [below] at (4.2,0.9) {$C^1$};\node [above] at (1.1,5.2) {$C^2$};\node [below] at (3.3,0.8) {$C^2$};\node [right] at (2,3.</description>
+    </item>
+    
+    <item>
+      <title>TikZ Cookbook Companion</title>
+      <link>/tikz/tikz-cookbook-companion/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/tikz-cookbook-companion/</guid>
+      <description>Related to the first book (TikZ Cookbook), I have compiled a companion textbook with more examples. The book shows 100 diagrams that can be found in textbooks of introductory principle classes.
+  The book is available through Google Play or Google book. You can read the whole book through free sampling and preview. If you think that I have done a good or bad job, please feel free to drop me an email with comments/suggestions.</description>
+    </item>
+    
+    <item>
+      <title>Tikz CookBook</title>
+      <link>/tikz/tikz-cookbook/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/tikz-cookbook/</guid>
+      <description>TikZ is a drawing package in LaTeX. It is very useful to draw a professional-looking diagram. However, the learning curve is a little bit steep for a beginner. I have recently compiled a 629-page cookbook that provides step-by-step illustrations on how to use TikZ to draw various diagrams in economics:
+  The book is available through Google Play or Google Book. You can read the whole book through free sampling.</description>
+    </item>
+    
+  </channel>
+</rss>

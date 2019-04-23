@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fair Sharing on Chiu Yu Ko</title>
+    <link>/tags/fair-sharing/</link>
+    <description>Recent content in Fair Sharing on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018</copyright>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/fair-sharing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Decentralized mechanisms for river sharing</title>
+      <link>/publication/river-sharing/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/river-sharing/</guid>
+      <description>We study the decentralized implementation of efficient outcomes through multilateral bargaining in the river sharing problem. We consider a class of mechanisms where agents first announce consumption levels and then bargain over monetary compensation. We first determine which mechanisms give incentives to always allocate the water efficiently. Among these, we take an axiomatic approach to single out three mechanisms that guarantee a fair division of the welfare gain.</description>
+    </item>
+    
+    <item>
+      <title>Sharing sequential values in a network</title>
+      <link>/publication/network-sharing/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/network-sharing/</guid>
+      <description>We study the decentralized implementation of efficient outcomes through multilateral bargaining in the river sharing problem. We consider a class of mechanisms where agents first announce consumption levels and then bargain over monetary compensation. We first determine which mechanisms give incentives to always allocate the water efficiently. Among these, we take an axiomatic approach to single out three mechanisms that guarantee a fair division of the welfare gain.</description>
+    </item>
+    
+    <item>
+      <title>Fair Sharing</title>
+      <link>/project/fair-sharing/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/project/fair-sharing/</guid>
+      <description>An example of using the in-built project page.</description>
+    </item>
+    
+  </channel>
+</rss>

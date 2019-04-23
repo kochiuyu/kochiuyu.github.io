@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tuan-Hwee Sng on Chiu Yu Ko</title>
+    <link>/authors/tuan-hwee-sng/</link>
+    <description>Recent content in Tuan-Hwee Sng on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018</copyright>
+    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/authors/tuan-hwee-sng/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unified China and Divided Europe</title>
+      <link>/publication/europe-china/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/europe-china/</guid>
+      <description>Severe and unidirectional threat of external invasion fostered political centralization in China. Europe faced a wider variety of smaller external threats and remained politically fragmented. Political centralization in China led to lower taxation and hence faster population growth during peacetime than in Europe. China was relatively fragile in the event of an external invasion.</description>
+    </item>
+    
+    <item>
+      <title>Regional Dependence and Political Centralization in Imperial China</title>
+      <link>/publication/dependence-china/</link>
+      <pubDate>Sat, 17 Aug 2013 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/dependence-china/</guid>
+      <description>Eurasian geography created significant and persistent defense externalities between the Chinese regions. Centralized state is required to enforce cooperation. Building of the national capital in the region where the externality originate. Explain why China’s capitals in strategically important north and west instead of the economically productive south and east.</description>
+    </item>
+    
+  </channel>
+</rss>

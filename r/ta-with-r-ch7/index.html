@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.2.4">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="QuantmodQuantmod stands for ``quantitative financial modelling framework’’. It has three main functions:
+download data,charting, andtechnical indicator.Then we can conduct simple test on trading strategies. We will learn how to test more complicated strategies.
+Before we start, let us use the following code install and load quantmod.
+library(quantmod)install.packages(&quot;quantmod&quot;)library(quantmod)Learning Objectives:
+Use quantmod package to download stock prices
+create chart of stock prices and add technical indicators">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/r/ta-with-r-ch7/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/r/ta-with-r-ch7/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/r/ta-with-r-ch7/">
+  <meta property="og:title" content=" | Chiu Yu Ko">
+  <meta property="og:description" content="QuantmodQuantmod stands for ``quantitative financial modelling framework’’. It has three main functions:
+download data,charting, andtechnical indicator.Then we can conduct simple test on trading strategies. We will learn how to test more complicated strategies.
+Before we start, let us use the following code install and load quantmod.
+library(quantmod)install.packages(&quot;quantmod&quot;)library(quantmod)Learning Objectives:
+Use quantmod package to download stock prices
+create chart of stock prices and add technical indicators"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+  <meta property="article:modified_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+
+  
+
+  
+
+  <title> | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/files/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#featured">
+            
+            <span>Publication</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#workingpaper">
+            
+            <span>Working Paper</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#book">
+            
+            <span>Book</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/r/">
+            
+            <span>R</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tikz/">
+            
+            <span>TikZ</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/others/">
+            
+            <span>Others</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/r/installation/">Installation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/technical-analysis-with-r/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/r/technical-analysis-with-r/">Technical analysis with R</a>
+      </li>
+      
+      <li >
+        <a href="/r/excel-vba-r/">Financial programming with Excel VBA R</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/package/">R-Package</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/r/package/">Candle Sticks</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/ta-with-r/">Technical Analysis with R</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/r/ta-with-r-ch1/">Chapter 1 Introduction</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch2/">Chapter 2 Working with Data</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch3/">Chapter 3 Plotting</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch4/">Chapter 4 Statistics</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch5/">Chapter 5 Programming</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch6/">Chapter 6 Scrapping</a>
+      </li>
+      
+      <li class="active">
+        <a href="/r/ta-with-r-ch7/">Chapter 7 Quantmod</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch8/">Chapter 8 Quanstrat</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/"></a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name"></h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+
+<div id="quantmod" class="section level1">
+<h1>Quantmod</h1>
+<p>Quantmod stands for ``quantitative financial modelling framework’’. It has three main functions:</p>
+<ol style="list-style-type: decimal">
+<li>download data,</li>
+<li>charting, and</li>
+<li>technical indicator.</li>
+</ol>
+<p>Then we can conduct simple test on trading strategies. We will learn how to test more complicated strategies.</p>
+<p>Before we start, let us use the following code install and load <strong>quantmod</strong>.</p>
+<pre class="r"><code>library(quantmod)</code></pre>
+<pre class="r"><code>install.packages(&quot;quantmod&quot;)
+library(quantmod)</code></pre>
+<p>Learning Objectives:</p>
+<ul>
+<li><p>Use <strong>quantmod</strong> package to download stock prices</p></li>
+<li><p>create chart of stock prices and add technical indicators</p></li>
+<li><p>construct simple trading indicator and apply it into trading</p></li>
+<li><p>evaluate the performance of a trading rule based on return data</p></li>
+</ul>
+<div id="downloading-data" class="section level2">
+<h2>Downloading data</h2>
+<p>Use <strong>getSymbols</strong> to get data from yahoo or Google (default is yahoo)</p>
+<pre class="r"><code>getSymbols(&quot;AAPL&quot;)</code></pre>
+<p>Let see what is inside the data.</p>
+<pre class="r"><code>head(AAPL)</code></pre>
+<pre><code>##            AAPL.Open AAPL.High  AAPL.Low AAPL.Close AAPL.Volume
+## 2003-01-02 0.4816753 0.5004593 0.4813400  0.4964343    45357200
+## 2003-01-03 0.4964343 0.5007950 0.4893903  0.4997887    36863400
+## 2003-01-06 0.5041489 0.5158889 0.4991176  0.4997887    97633200
+## 2003-01-07 0.4960990 0.5031430 0.4853649  0.4981113    85586200
+## 2003-01-08 0.4890550 0.4934153 0.4843590  0.4880487    57411200
+## 2003-01-09 0.4903967 0.5004593 0.4863713  0.4924089    53813200
+##            AAPL.Adjusted
+## 2003-01-02      0.704906
+## 2003-01-03      0.709669
+## 2003-01-06      0.709669
+## 2003-01-07      0.707287
+## 2003-01-08      0.692999
+## 2003-01-09      0.699191</code></pre>
+<p>To extract columns, we use Op, Hi, Lo, Cl, Vo and Ad</p>
+<pre class="r"><code>Open &lt;- Op(AAPL)   #Open Price
+High &lt;- Hi(AAPL)    # High price
+Low &lt;- Lo(AAPL)  # Low price
+Close&lt;- Cl(AAPL)   #Close Price
+Volume &lt;- Vo(AAPL)   #Volume
+AdjClose &lt;- Ad(AAPL) # Adjusted close</code></pre>
+<p>If you wish to only import at a certain date e.g.,. 2000-01-01 to 2015-09-25, we can restrict the set the data to download.</p>
+<pre class="r"><code>getSymbols(&quot;AAPL&quot;, from=&#39;2000-01-01&#39;,to=&#39;2015-09-25&#39;)</code></pre>
+<pre><code>## [1] &quot;AAPL&quot;</code></pre>
+<p>Alternatively, we can load the whole series and restrict using xts function <strong>last()</strong></p>
+<pre class="r"><code>getSymbols(&quot;AAPL&quot;)</code></pre>
+<pre><code>## [1] &quot;AAPL&quot;</code></pre>
+<pre class="r"><code>AAPL &lt;- last(AAPL,&#39;1 year&#39;)
+head(AAPL)</code></pre>
+<pre><code>##            AAPL.Open AAPL.High AAPL.Low AAPL.Close AAPL.Volume
+## 2019-01-02    154.89    158.85   154.23     157.92    37039700
+## 2019-01-03    143.98    145.72   142.00     142.19    91244100
+## 2019-01-04    144.53    148.55   143.80     148.26    58607100
+## 2019-01-07    148.70    148.83   145.90     147.93    54777800
+## 2019-01-08    149.56    151.82   148.52     150.75    41025300
+## 2019-01-09    151.29    154.53   149.63     153.31    45099100
+##            AAPL.Adjusted
+## 2019-01-02      157.2456
+## 2019-01-03      141.5828
+## 2019-01-04      147.6268
+## 2019-01-07      147.2983
+## 2019-01-08      150.1062
+## 2019-01-09      152.6553</code></pre>
+<p>Alternatively, we can take the first 3 years by using <strong>first()</strong>:</p>
+<pre class="r"><code>getSymbols(&quot;AAPL&quot;)</code></pre>
+<pre><code>## [1] &quot;AAPL&quot;</code></pre>
+<pre class="r"><code>AAPL &lt;- first(AAPL,&#39;3 years&#39;)
+head(AAPL)</code></pre>
+<pre><code>##            AAPL.Open AAPL.High AAPL.Low AAPL.Close AAPL.Volume
+## 2007-01-03  12.32714  12.36857 11.70000   11.97143   309579900
+## 2007-01-04  12.00714  12.27857 11.97429   12.23714   211815100
+## 2007-01-05  12.25286  12.31428 12.05714   12.15000   208685400
+## 2007-01-08  12.28000  12.36143 12.18286   12.21000   199276700
+## 2007-01-09  12.35000  13.28286 12.16429   13.22429   837324600
+## 2007-01-10  13.53571  13.97143 13.35000   13.85714   738220000
+##            AAPL.Adjusted
+## 2007-01-03      7.982585
+## 2007-01-04      8.159763
+## 2007-01-05      8.101658
+## 2007-01-08      8.141665
+## 2007-01-09      8.817995
+## 2007-01-10      9.239983</code></pre>
+<p>We can also import three stocks at the same time by using a vector.</p>
+<pre class="r"><code>getSymbols(c(&quot;AAPL&quot;,&quot;GOOG&quot;))</code></pre>
+<pre><code>## [1] &quot;AAPL&quot; &quot;GOOG&quot;</code></pre>
+<p>Alternatively, we can assign a vector of stocks and import based on the vector.</p>
+<pre class="r"><code>stocklist &lt;- c(&quot;AAPL&quot;,&quot;GOOG&quot;)
+getSymbols(stocklist)</code></pre>
+<p>The package can also import non-US stocks.</p>
+<pre class="r"><code>getSymbols(&quot;0941.hk&quot;)
+#If error, try instead the following:
+#getSymbols(&quot;0941.HK&quot;,src=&quot;yahoo&quot;, auto.assign=FALSE)</code></pre>
+<pre class="r"><code>head(`0941.HK`)</code></pre>
+<pre><code>##            0941.HK.Open 0941.HK.High 0941.HK.Low 0941.HK.Close
+## 2007-01-02        67.25        70.00       67.10          69.6
+## 2007-01-03        69.90        71.80       69.50          70.7
+## 2007-01-04        70.60        70.95       67.30          68.2
+## 2007-01-05        67.50        69.50       66.30          69.5
+## 2007-01-08        67.50        68.40       67.45          67.7
+## 2007-01-09        68.00        68.60       65.55          66.3
+##            0941.HK.Volume 0941.HK.Adjusted
+## 2007-01-02       35293388         46.17351
+## 2007-01-03       41163203         46.90325
+## 2007-01-04       37286533         45.24471
+## 2007-01-05       24502496         46.10715
+## 2007-01-08       15584163         44.91301
+## 2007-01-09       17861491         43.98424</code></pre>
+<p>Besides prices, very often we are interested in the trading volume. Moreover, we would like to find volume over time: weekly, monthly, quarterly and yearly. We can use apply and sum to calculate the rolling sum of volume to each distinct period.</p>
+<pre class="r"><code>WeekVoYa&lt;- apply.weekly(Vo(AAPL),sum)
+# sum from Monday to Friday
+MonthVoYa &lt;- apply.monthly(Vo(AAPL),sum)
+# sum to month
+QuarterVoYa &lt;- apply.quarterly(Vo(AAPL),sum)
+# sum to quarter
+YearVoYa &lt;- apply.yearly(Vo(AAPL),sum)
+# sum to year</code></pre>
+<p>In some case, we are interested in average than the sum. Then we can use apply and mean.</p>
+<pre class="r"><code>WeekAveVoClYa&lt;- apply.weekly(Vo(AAPL),mean)
+# weekly average volume</code></pre>
+</div>
+<div id="charting" class="section level2">
+<h2>Charting</h2>
+<p>Quantmod draw nice charts of following common types:</p>
+<ol style="list-style-type: decimal">
+<li>line</li>
+<li>bars</li>
+<li>candlesticks</li>
+</ol>
+<p>We can use <strong>chartSeries()</strong> and specify the types directly.</p>
+<p>The line chart displays stock price of AAPL in 2007 by using the <strong>subset</strong> option. The option <strong>theme</strong> is set to be <strong>chartTheme(‘white’)</strong> as the default option <strong>chartTheme(‘black’)</strong> is not printer-friendly.</p>
+<pre class="r"><code>chartSeries(AAPL,
+            type=&quot;line&quot;,
+            subset=&#39;2007&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>The bar chart displays stock price of AAPL in May to June 2007 by using the <strong>subset</strong> option.</p>
+<pre class="r"><code>chartSeries(AAPL,
+            type=&quot;bar&quot;,
+            subset=&#39;2007-05::2007-06&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>The following candle stick chart displays stock price of AAPL in May only.</p>
+<pre class="r"><code>chartSeries(AAPL,
+            type=&quot;candlesticks&quot;,
+            subset=&#39;2007-05&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>Finally The following candle stick chart displays stock price of AAPL a few days in May.</p>
+<pre class="r"><code>chartSeries(AAPL,
+            type=&quot;auto&quot;,
+            subset=&#39;2007-05-10::2007-05-30&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<!-- ### Bar Chart -->
+<!-- ```{r} -->
+<!-- barChart(AAPL,subset='2007-09') -->
+<!-- ``` -->
+<!-- ### Candle chart -->
+<!-- ```{r} -->
+<!-- candleChart(AAPL,subset='2007-09') -->
+<!-- ``` -->
+</div>
+<div id="technical-indicators" class="section level2">
+<h2>Technical Indicators</h2>
+<p>Technical trading rule (<strong>TTR</strong>) package is loaded when we load <strong>quantmod</strong> package.</p>
+<p>If you want to use it separately, then just load the package as usual:</p>
+<pre class="r"><code>install.packages(&quot;TTR&quot;)
+library(TTR)</code></pre>
+<div id="simple-moving-average" class="section level3">
+<h3>Simple Moving Average</h3>
+<pre class="r"><code>sma &lt;-SMA(Cl(AAPL),n=20)
+tail(sma,n=5)</code></pre>
+<pre><code>##                 SMA
+## 2019-04-12 193.1430
+## 2019-04-15 193.7035
+## 2019-04-16 194.3395
+## 2019-04-17 195.0880
+## 2019-04-18 195.5265</code></pre>
+</div>
+<div id="exponential-moving-average" class="section level3">
+<h3>Exponential moving average</h3>
+<pre class="r"><code>ema &lt;-EMA(Cl(AAPL),n=20)
+tail(ema,n=5)</code></pre>
+<pre><code>##                 EMA
+## 2019-04-12 192.8688
+## 2019-04-15 193.4747
+## 2019-04-16 194.0247
+## 2019-04-17 194.8919
+## 2019-04-18 195.7460</code></pre>
+</div>
+<div id="bollinger-band" class="section level3">
+<h3>Bollinger band</h3>
+<pre class="r"><code>bb &lt;-BBands(Cl(AAPL),s.d=2)
+tail(bb,n=5)</code></pre>
+<pre><code>##                  dn     mavg       up      pctB
+## 2019-04-12 183.5912 193.1430 202.6948 0.7997868
+## 2019-04-15 184.1045 193.7035 203.3025 0.7878678
+## 2019-04-16 185.0452 194.3395 203.6338 0.7641672
+## 2019-04-17 185.4984 195.0880 204.6776 0.9193088
+## 2019-04-18 185.2027 195.5265 205.8503 0.9036062</code></pre>
+</div>
+<div id="momentum" class="section level3">
+<h3>Momentum</h3>
+<p>We calculate 2-day momentum based on closing price of AAPL.</p>
+<pre class="r"><code>M &lt;- momentum(Cl(AAPL), n=2)
+head (M,n=5)</code></pre>
+<pre><code>##            AAPL.Close
+## 2007-01-03         NA
+## 2007-01-04         NA
+## 2007-01-05   0.178571
+## 2007-01-08  -0.027143
+## 2007-01-09   1.074286</code></pre>
+</div>
+<div id="roc" class="section level3">
+<h3>ROC</h3>
+<pre class="r"><code>ROC &lt;- ROC(Cl(AAPL),n=2)
+# 2-day ROC
+head(ROC,n=5)</code></pre>
+<pre><code>##              AAPL.Close
+## 2007-01-03           NA
+## 2007-01-04           NA
+## 2007-01-05  0.014806276
+## 2007-01-08 -0.002220547
+## 2007-01-09  0.084725818</code></pre>
+</div>
+<div id="macd" class="section level3">
+<h3>MACD</h3>
+<pre class="r"><code>macd &lt;- MACD(Cl(AAPL), nFast=12, nSlow=26,
+             nSig=9, maType=SMA)
+tail(macd,n=5)</code></pre>
+<pre><code>##                macd   signal
+## 2019-04-12 2.921857 3.255855
+## 2019-04-15 2.835048 3.159183
+## 2019-04-16 2.819491 3.074543
+## 2019-04-17 2.877608 3.000341
+## 2019-04-18 2.848482 2.935672</code></pre>
+</div>
+<div id="rsi" class="section level3">
+<h3>RSI</h3>
+<pre class="r"><code>rsi = RSI(Cl(AAPL), n=14)
+tail(rsi,n=5)</code></pre>
+<pre><code>##                 rsi
+## 2019-04-12 70.33177
+## 2019-04-15 70.82741
+## 2019-04-16 70.85654
+## 2019-04-17 75.88680
+## 2019-04-18 76.70159</code></pre>
+</div>
+</div>
+<div id="charting-with-indicators" class="section level2">
+<h2>Charting with Indicators</h2>
+<div id="charting-sma" class="section level3">
+<h3>Charting SMA</h3>
+<p>We use the function <strong>addSMA()</strong> to put</p>
+<pre class="r"><code>chartSeries(AAPL,
+            subset=&#39;2007-05::2009-01&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<pre class="r"><code>addSMA(n=30,on=1,col = &quot;blue&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
+<pre class="r"><code>addSMA(n=200,on=1,col = &quot;red&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-27-3.png" width="672" /></p>
+</div>
+<div id="charting-ema" class="section level3">
+<h3>Charting EMA</h3>
+<pre class="r"><code>chartSeries(AAPL,
+            subset=&#39;2007-05::2009-01&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<pre class="r"><code>addEMA(n=30,on=1,col = &quot;blue&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-28-2.png" width="672" /></p>
+<pre class="r"><code>addEMA(n=200,on=1,col = &quot;red&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-28-3.png" width="672" /></p>
+</div>
+<div id="charting-bollinger-band" class="section level3">
+<h3>Charting Bollinger band</h3>
+<pre class="r"><code>chartSeries(AAPL,
+            subset=&#39;2007-05::2009-01&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<pre class="r"><code>addBBands(n=20,sd=2)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-29-2.png" width="672" /></p>
+</div>
+<div id="charting-momentum" class="section level3">
+<h3>Charting Momentum</h3>
+<pre class="r"><code>chartSeries(AAPL,
+            subset=&#39;2007-05::2009-01&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<pre class="r"><code>addMomentum(n=1)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-30-2.png" width="672" /></p>
+</div>
+<div id="charting-roc" class="section level3">
+<h3>Charting ROC</h3>
+<pre class="r"><code>chartSeries(AAPL,
+            subset=&#39;2007-05::2008-01&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<pre class="r"><code>addROC(n=7)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-31-2.png" width="672" /></p>
+</div>
+<div id="charting-macd" class="section level3">
+<h3>Charting MACD</h3>
+<pre class="r"><code>chartSeries(AAPL,
+            subset=&#39;2007-05::2008-01&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<pre class="r"><code>addMACD(fast=12,slow=26,signal=9,type=&quot;EMA&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-32-2.png" width="672" /></p>
+</div>
+<div id="charting-rsi" class="section level3">
+<h3>Charting RSI</h3>
+<pre class="r"><code>chartSeries(AAPL,
+            subset=&#39;2007-05::2009-01&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
+<pre class="r"><code>addRSI(n=14,maType=&quot;EMA&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-33-2.png" width="672" /></p>
+</div>
+<div id="charting-custom-ta" class="section level3">
+<h3>Charting Custom TA</h3>
+<pre class="r"><code>sma &lt;- SMA(Cl(AAPL),n=14)
+chartSeries(AAPL,
+            subset=&#39;2007-05::2009-01&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<pre class="r"><code>addTA(sma, on=1, col=&quot;red&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-34-2.png" width="672" /></p>
+</div>
+</div>
+<div id="charting-price-changes-of-two-stocks" class="section level2">
+<h2>Charting Price changes of two stocks</h2>
+<p>To compare prices fo different stocks, we need to calculat the price change:</p>
+<pre class="r"><code>NS &lt;- function(xdat) xdat / coredata(xdat)[1]
+a &lt;- NS(Cl(AAPL))-1
+g &lt;- NS(Cl(GOOG))-1
+m &lt;- NS(Cl(MSFT))-1
+chartSeries(a,
+            subset = &#39;2007&#39;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
+<pre class="r"><code>addTA(g, on=1, col=&quot;red&quot;, lty=&quot;dotted&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-35-2.png" width="672" /></p>
+<pre class="r"><code>addTA(m, on=1, col=&quot;blue&quot;, lty=&quot;dashed&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-35-3.png" width="672" /></p>
+<p>The option <strong>lty</strong> is to make the line becomes other line styles where <strong>dotted</strong> means dotted line and <strong>dashed</strong> means dashed line.</p>
+<!-- ### Candle Sticks -->
+<!-- ```{r} -->
+<!-- chartSeries(AAPL,type="candlesticks",theme="white", -->
+<!--             subset='2007-09::2008-01') -->
+<!-- ``` -->
+<!-- ###  Candle Sticks with technical indicators -->
+<!-- ```{r} -->
+<!-- chartSeries(AAPL, -->
+<!--             type="candlesticks", -->
+<!--             theme=chartTheme('white'), -->
+<!--             subset='2007-09::2008-01', -->
+<!--             TA="addMACD();addRSI();addBBands()") -->
+<!-- ``` -->
+</div>
+<div id="performance-evaluation" class="section level2">
+<h2>Performance Evaluation</h2>
+<p>The package is a collection of econometric functions for performance and risk analysis.</p>
+<p>We first install and load <strong>PerformanceAnalytics</strong> package.</p>
+<pre class="r"><code>install.packages(&quot;PerformanceAnalytics&quot;)
+library(PerformanceAnalytics)</code></pre>
+</div>
+<div id="evaluating-trading-rules" class="section level2">
+<h2>Evaluating Trading Rules</h2>
+<p>To simplify, we first evaluate several trading rules based on day trading:</p>
+<ol style="list-style-type: decimal">
+<li>buy signal based on simple filter rule</li>
+<li>buy and sell signals based on simple filter rule</li>
+<li>buy signal based on RSI</li>
+<li>buy signal based on EMA and sell signal based on RSI</li>
+<li>buy signal based on RSI but trading size depends on price history</li>
+</ol>
+<p>Finally, we consider the rule that does non-day trading. In this case, we need to keep track of both cash and stock holdings.</p>
+<div id="simple-filter-buy" class="section level3">
+<h3>Simple filter Buy</h3>
+Here we create trading signal based on simple filter rule. Recall that simple filter rule suggests buying when the price increases a lot compared to the yesterday price:
+<span class="math display">\[\begin{align*}
+  \text{Buy}&amp;:\frac{P_t}{P_{t-1}}&gt;1+\delta \\
+\end{align*}\]</span>
+<p>where <span class="math inline">\(P_t\)</span> is the closing price at time <span class="math inline">\(t\)</span> and <span class="math inline">\(\delta&gt;0\)</span> is an arbitrary threshold</p>
+<p>We illustrate using Microsoft with ticker MSFT.</p>
+<p>We first download the data using <strong>getSymbols(“MSFT”)</strong>.</p>
+<pre class="r"><code>library(quantmod)
+getSymbols(&quot;MSFT&quot;)</code></pre>
+<pre><code>## [1] &quot;MSFT&quot;</code></pre>
+<p>We first will use closing price to perform calculation. We calculate the percentage price change by dividing the current close price by its own lag and then minus 1.</p>
+<p>Now we generate buying signal based on filter rule:</p>
+<pre class="r"><code>price &lt;- Cl(MSFT) # close price
+r &lt;- price/Lag(price) - 1 # % price change
+delta &lt;-0.005 #threshold
+signal &lt;-c(0) # first date has no signal
+
+#Loop over all trading days (except the first)
+for (i in 2: length(price)){
+  if (r[i] &gt; delta){
+    signal[i]&lt;- 1
+  } else
+    signal[i]&lt;- 0
+}</code></pre>
+<p>Note that signal is just a vector without time stamp. We use the function <strong>reclass</strong> to convert it into an <strong>xts</strong> object.</p>
+<pre class="r"><code># Each data is not attached with time
+head(signal, n=3)</code></pre>
+<pre><code>## [1] 0 0 0</code></pre>
+<pre class="r"><code># Assign time to action variable using reclass;
+signal&lt;-reclass(signal,price)
+
+# Each point is now attached with time
+tail(signal, n=3)</code></pre>
+<pre><code>##            [,1]
+## 2019-04-16    0
+## 2019-04-17    1
+## 2019-04-18    1</code></pre>
+<p>We are now ready to chart the trading indicators:</p>
+<pre class="r"><code># Charting with Trading rule
+chartSeries(MSFT,
+            type = &#39;line&#39;,
+            subset=&quot;2009-08::2009-09-15&quot;,
+            theme=chartTheme(&#39;white&#39;))</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
+<pre class="r"><code>addTA(signal,type=&#39;S&#39;,col=&#39;red&#39;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-40-2.png" width="672" /></p>
+<p>We consider trading based on yesterday indicator:</p>
+<pre class="r"><code>trade &lt;- Lag(signal,1) # trade based on yesterday signal</code></pre>
+<p>To keep it simple, we evaluate using day trading:</p>
+<ul>
+<li>buy at open</li>
+<li>sell at close</li>
+<li>trading size: all in</li>
+</ul>
+<p>Then daily profit rate is <span class="math inline">\(dailyReturn=\frac{Close - Open}{open}\)</span></p>
+<pre class="r"><code>ret&lt;-dailyReturn(MSFT)*trade
+names(ret)&lt;-&quot;filter&quot;</code></pre>
+<p>Based on daily return, we can see the summary of performance using <strong>charts.PerformanceSummary()</strong> to evaluate the performance.</p>
+<pre class="r"><code>#Performance Summary
+charts.PerformanceSummary(ret, main=&quot;Naive Buy Rule&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-43-1.png" width="672" /></p>
+</div>
+<div id="simple-fiter-buy-sell" class="section level3">
+<h3>Simple fiter buy-sell</h3>
+Here we create trading signal based on simple filter rule. Recall that simple filter rule suggests buying when the price increases a lot compared to the yesterday price and selling when price decreases a lot:
+<span class="math display">\[\begin{align*}
+  \text{Buy}&amp;:\frac{P_t}{P_{t-1}}&gt;1+\delta \\
+  \text{Sell}&amp;:\frac{P_t}{P_{t-1}}&lt;1-\delta
+\end{align*}\]</span>
+<p>where <span class="math inline">\(P_t\)</span> is the closing price at time <span class="math inline">\(t\)</span> and <span class="math inline">\(\delta&gt;0\)</span> is an arbitrary threshold</p>
+<p>We first download the data:</p>
+<pre class="r"><code>library(quantmod)
+getSymbols(&quot;MSFT&quot;)</code></pre>
+<pre><code>## [1] &quot;MSFT&quot;</code></pre>
+<pre class="r"><code>price &lt;- Cl(MSFT)
+r &lt;- price/Lag(price) - 1
+delta&lt;-0.005
+signal &lt;-c(NA) # first signal is NA
+
+for (i in 2: length(Cl(MSFT))){
+  if (r[i] &gt; delta){
+    signal[i]&lt;- 1
+  } else if (r[i]&lt; -delta){
+    signal[i]&lt;- -1
+  } else
+    signal[i]&lt;- 0
+}
+signal&lt;-reclass(signal,Cl(MSFT))
+
+trade1 &lt;- Lag(signal)
+ret1&lt;-dailyReturn(MSFT)*trade1
+names(ret1) &lt;- &#39;Naive&#39;
+charts.PerformanceSummary(ret1)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-45-1.png" width="672" /></p>
+</div>
+<div id="exercise" class="section level3 unnumbered">
+<h3>Exercise</h3>
+<p>Test the following strategy based on EMA: - Buy/Sell signal based on EMA rule. - Day trading based on yesterday signal: - buy at open and - sell at close on the same day</p>
+</div>
+<div id="an-example-using-rsi" class="section level3">
+<h3>An example using RSI</h3>
+<p>Consider following day-trading strategy based on 14-day RSI:</p>
+<ul>
+<li>buy one unit if RSI &lt;30 and</li>
+<li>otherwise no trade.</li>
+</ul>
+<p>Evaluate this based on day trading and compare it with simple filter rule:</p>
+<pre class="r"><code>day &lt;-14
+price &lt;- Cl(MSFT)
+signal &lt;- c()                    #initialize vector
+rsi &lt;- RSI(price, day)     #rsi is the lag of RSI
+signal [1:day+1] &lt;- 0            #0 because no signal until day+1
+
+for (i in (day+1): length(price)){
+  if (rsi[i] &lt; 30){             #buy if rsi &lt; 30
+    signal[i] &lt;- 1
+  }else {                       #no trade all if rsi &gt; 30
+    signal[i] &lt;- 0
+  }
+}
+signal&lt;-reclass(signal,Cl(MSFT))
+trade2 &lt;- Lag(signal)
+
+#construct a new variable ret1
+ret1 &lt;- dailyReturn(MSFT)*trade1
+names(ret1) &lt;- &#39;Naive&#39;
+# construct a new variable ret2
+ret2 &lt;- dailyReturn(MSFT)*trade2
+names(ret2) &lt;- &#39;RSI&#39;</code></pre>
+<p>Now compare strategies with the filter rule:</p>
+<pre class="r"><code>retall &lt;- cbind(ret1, ret2)
+charts.PerformanceSummary(retall, 
+                          main=&quot;Naive v.s. RSI&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-47-1.png" width="672" /></p>
+</div>
+<div id="more-efficient-code" class="section level3">
+<h3>More efficient code</h3>
+<p>In the RSI code above, we have written that:</p>
+<pre class="r"><code>signal [1:day+1] &lt;- 0            
+
+for (i in (day+1): length(price)){
+  if (rsi[i] &lt; 30){             
+    signal[i] &lt;- 1
+  }else {                       
+    signal[i] &lt;- 0
+  }
+}</code></pre>
+<p>A more efficient but less readable code is to avoid counting:</p>
+<pre class="r"><code>for (i in 1:length(price)){
+  signal[i] &lt;- 0
+  if (isTRUE(rsi[i] &lt; 30)){             
+    signal[i] &lt;- 1
+  }
+}</code></pre>
+</div>
+</div>
+<div id="combining-two-indicators-ema-and-rsi" class="section level2">
+<h2>Combining two indicators: EMA and RSI</h2>
+<p>Test the following strategy using EMA and RSI based on day trading:</p>
+<ul>
+<li><p>Buy signal based on EMA rule.</p></li>
+<li><p>Sell signal based on RSI rule.</p></li>
+<li><p>Tie-breaking: buy-signal has priority</p></li>
+<li><p>We use 14-day RSI and use 70 as threshold for selling.</p></li>
+</ul>
+<pre class="r"><code>n &lt;- 14
+delta&lt;-0.005
+price &lt;- Cl(MSFT)         
+r &lt;- price/Lag(price) - 1    
+rsi &lt;- RSI(price, n) 
+signal &lt;-c()    # first signal is NA
+signal[1:n] &lt;-0
+
+
+# Generate Trading Signal
+for (i in (n+1):length(price)){
+    if (r[i] &gt; delta){
+         signal[i]&lt;- 1
+    } else if (rsi[i] &gt; 70){
+         signal[i]&lt;- -1
+    } else
+         signal[i]&lt;- 0
+}
+signal&lt;-reclass(signal,price)
+
+## Apply Trading Rule
+trade3 &lt;- Lag(signal)
+ret3&lt;-dailyReturn(MSFT)*trade3 
+names(ret3) &lt;- &#39;Combine&#39;
+retall &lt;- cbind(ret1, ret2, ret3)</code></pre>
+<p>To draw trade performance summary with different colors, we use the option <strong>colorset</strong>. Common options includes redfocus, bluefocus, greenfocus, rainbow4equal andrich12equal.</p>
+<pre class="r"><code>charts.PerformanceSummary(
+  retall, main=&quot;Naive v.s. RSI v.s. Combine&quot;,
+  colorset=bluefocus)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-51-1.png" width="672" /></p>
+<div id="exercise-1" class="section level3 unnumbered">
+<h3>Exercise</h3>
+<p>Test the following strategy based on EMA and RSI</p>
+<ul>
+<li><p>Buy signal based on EMA rule.</p></li>
+<li><p>Sell signal based on RSI rule</p></li>
+<li><p>Day trading based on yesterday signal: buy at open and sell at close</p></li>
+</ul>
+</div>
+</div>
+<div id="trading-size" class="section level2">
+<h2>Trading Size</h2>
+<p>Wealth: 1 million</p>
+<p>Trade unit: 1000 stocks per trade</p>
+<p>Test the following strategy based on 14-day RSI :</p>
+<ul>
+<li><p>Buy one more unit if RSI &lt;30.</p></li>
+<li><p>Keep buying the same if 30 &lt; RSI &lt; 50</p></li>
+<li><p>Stop trading if RSI &gt;= 50</p></li>
+</ul>
+<p>Evaluate based on day trading</p>
+<p>To take trade size into account, we need to keep track of wealth:</p>
+<pre class="r"><code>qty &lt;-1000
+day &lt;-14
+
+signal &lt;- c()    #trade signal with size
+signal[1:(day+1)] &lt;- 0 
+
+price &lt;- Cl(MSFT)
+
+wealth &lt;-c()
+wealth[1:(day+1)] &lt;- 1000000  
+
+return&lt;-c()                  
+return[1:(day+1)] &lt;- 0
+
+profit &lt;-c()
+profit[1:(day+1)] &lt;- 0</code></pre>
+<p>We now generate trading signal with size:</p>
+<pre class="r"><code>rsi &lt;- RSI(price, day)  #rsi is the lag of RSI
+for (i in (day+1): length(price)){
+  if (rsi[i] &lt; 30){  #buy one more unit if rsi &lt; 30
+    signal[i] &lt;- signal[i-1]+1
+  } else if (rsi[i] &lt; 50){  #no change if rsi &lt; 50
+    signal[i] &lt;- signal[i-1] 
+  } else {         #sell  if rsi &gt; 50
+    signal[i] &lt;- 0
+  }
+}
+signal&lt;-reclass(signal,price)</code></pre>
+<p>Now we are ready to apply Trade Rule</p>
+<pre class="r"><code>Close &lt;- Cl(MSFT)
+Open &lt;- Op(MSFT)
+trade &lt;- Lag(signal)
+for (i in (day+1):length(price)){
+  profit[i] &lt;- qty * trade[i] * (Close[i] - Open[i])  
+  wealth[i] &lt;- wealth[i-1] + profit[i]
+  return[i] &lt;- (wealth[i] / wealth[i-1]) -1  
+}
+ret3&lt;-reclass(return,price)
+
+charts.PerformanceSummary(ret3, main=&quot;Trade Size&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-54-1.png" width="672" /></p>
+</div>
+<div id="non-day-trading" class="section level2">
+<h2>Non-Day Trading</h2>
+<p>Trading signal:</p>
+<ul>
+<li><p>Buy signal arises if 14-day RSI &lt; 30</p></li>
+<li><p>Sell signal arises if 14-day RSI &gt; 50</p></li>
+</ul>
+<p>Trading Rule</p>
+<ul>
+<li><p>Buy 300 units under buy signal</p></li>
+<li><p>Sell all when sell signal appears</p></li>
+</ul>
+<p>Initial wealth: 10,000</p>
+<p>Note that we need to keep track of both cash and stock holdings.</p>
+<pre class="r"><code>qty &lt;-300
+day &lt;-14
+
+signal &lt;- c()   #trade signal
+signal[1:(day+1)] &lt;- 0 
+
+price &lt;- Cl(MSFT)
+
+stock &lt;- c()  #stock holding
+stock[1:(day+1)] &lt;-0
+
+cash &lt;-c()
+cash[1:(day+1)] &lt;- 10000  </code></pre>
+<p>Trading signal is based on simple RSI:</p>
+<pre class="r"><code>rsi &lt;- RSI(price, day)  #rsi is the lag of RSI
+for (i in (day+1): length(price)){
+  if (rsi[i] &lt; 30){  #buy one more unit if rsi &lt; 30
+    signal[i] &lt;- 1
+  } else if (rsi[i] &lt; 50){ #no change if rsi &lt; 50
+    signal[i] &lt;- 0
+  } else {         #sell  if rsi &gt; 50
+    signal[i] &lt;- -1
+  }
+}
+signal&lt;-reclass(signal,price)</code></pre>
+<p>Assume buying at closing price. We keep track of how cash and stock changes:</p>
+<pre class="r"><code>trade &lt;- Lag(signal)    #rsi is the lag of RSI
+for (i in (day+1): length(price)){
+  if (trade[i]&gt;=0){
+    stock[i] &lt;- stock[i-1] + qty*trade[i]
+    cash[i] &lt;- cash[i-1] - 
+      qty*trade[i]*price[i]
+  } else{
+    stock[i] &lt;- 0
+    cash[i] &lt;- cash[i-1] + 
+      stock[i-1]*price[i]
+  }
+}
+stock&lt;-reclass(stock,price)
+cash&lt;-reclass(cash,price)</code></pre>
+<p>To evaluate performance, we calculate equity using cash and stock holdings.</p>
+<pre class="r"><code>equity &lt;-c()
+equity[1:(day+1)] &lt;- 10000 
+
+return&lt;-c()                  
+return[1:(day+1)] &lt;- 0
+
+for (i in (day+1): length(price)){
+  equity[i] &lt;- stock[i] * price[i] + cash[i]
+  return[i] &lt;- equity[i]/equity[i-1]-1
+}
+equity&lt;-reclass(equity,price)
+return&lt;-reclass(return,price)</code></pre>
+<p>Performance Charts</p>
+<pre class="r"><code>charts.PerformanceSummary(return, 
+                          main=&quot;Non-Day-Trading&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-59-1.png" width="672" /></p>
+<p>We can plot the equity line showing how the performance of the strategy:</p>
+<pre class="r"><code>chart_Series(equity, main=&quot;equity line&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-60-1.png" width="672" /></p>
+<p>We can check the cash account over time:</p>
+<pre class="r"><code>chart_Series(cash, name=&quot;Cash Holding&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-61-1.png" width="672" /></p>
+<!-- {r,echo=FALSE, out.width='.49\\linewidth', fig.width=3, fig.height=3,fig.show='hold',fig.align='center'}-->
+<!-- if we want side by side -->
+<p>Finall, We can stock holdings:</p>
+<pre class="r"><code>chart_Series(stock, name=&quot;Stock Holding&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch7_files/figure-html/unnamed-chunk-62-1.png" width="672" /></p>
+<div id="exercise-2" class="section level3 unnumbered">
+<h3>Exercise</h3>
+<p>Trading signal:</p>
+<ul>
+<li><p>Buy signal arises if RSI &lt; 30</p></li>
+<li><p>Sell signal arises if RSI &gt;50</p></li>
+</ul>
+<p>Trading Rule</p>
+<ul>
+<li><p>Buy 1000 units under buy signal</p></li>
+<li><p>Sell 1000 units under sell signal</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Sep 9, 2018
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.b82789348bc9b927834992b317787f39.js"></script>
+
+  </body>
+</html>
+
+
