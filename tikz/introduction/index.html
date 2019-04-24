@@ -500,6 +500,51 @@
     </div>
 
     
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#what-is-latex-why-latex">What is LaTeX? Why LaTeX?</a></li>
+<li><a href="#what-is-tikz">What is TikZ?</a></li>
+<li><a href="#installation-of-latex">Installation of LaTeX</a>
+<ul>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#mac">Mac</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#latex">LaTeX</a>
+<ul>
+<li><a href="#hello-world">Hello World</a></li>
+<li><a href="#front-matter">Front Matter</a></li>
+<li><a href="#sectioning">Sectioning</a></li>
+<li><a href="#appendix">Appendix</a></li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#table">Table</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#mathematics">Mathematics</a></li>
+<li><a href="#page-margin">Page Margin</a></li>
+<li><a href="#line-spacing">Line spacing</a></li>
+</ul></li>
+<li><a href="#tikz">TikZ</a>
+<ul>
+<li><a href="#loading-package">Loading Package</a></li>
+<li><a href="#drawing-your-first-tikz-diagram">Drawing your first TikZ diagram</a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
 
@@ -623,7 +668,9 @@
 
 </figure>
 
-<h2 id="hello-world-your-first-latex-program">Hello World - your first LaTeX program</h2>
+<h1 id="latex">LaTeX</h1>
+
+<h2 id="hello-world">Hello World</h2>
 
 <p>Since we are producing a document, we start to tell the program so by using the command <strong>\documentclass{article}</strong>. Then we need to tell which section should be included in the output file by using <strong>\begin{document}</strong> and <strong>\end{document}</strong>.</p>
 
@@ -648,6 +695,185 @@ Hello World!
 
 
 </figure>
+
+<h2 id="front-matter">Front Matter</h2>
+
+<p>Usually a document would start with a title. We just need to tell the program by <strong>\title{}</strong>.</p>
+
+<p>Similarly, we will usually have author after title. We only need to say  <strong>\author{}</strong></p>
+
+<p>Moreover, we often put a time stamp to the document. To do so, we use <strong>\date{}</strong>. Often we use <strong>\today</strong> to represent the date to set this up.</p>
+
+<p>Finally, we need to tell the program where to put these information by using <strong>\maketitle</strong>.</p>
+
+<p>An example is as follows:</p>
+
+<pre><code class="language-nohighlight">\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+\end{document}
+</code></pre>
+
+<h2 id="sectioning">Sectioning</h2>
+
+<p>Next, we move on to sections and subsections. This is important if you wish to divide your text into nice, separate sections for readability.</p>
+
+<p>When you include sections by using <strong>\section{}</strong>, LaTex automatically numbers each section for you. You might have seen this in academic papers, this is why people use LaTex when writing their papers. Subsections will take on that particular section’s number, and then include a second number behind to indicate that it is a subsection. We use <strong>\subsection{}</strong> here. You can also use <strong>\subsubsection{}</strong> if you wish.</p>
+
+<p>You code will look like this:</p>
+
+<pre><code class="language-nohighlight">\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+
+\section{Introduction}
+This is my best paper
+\section{Model}
+We will have a lot of math.
+\subsection{Basic Model}
+Math here is simplier.
+\subsection{Full Model}
+Math here is crazy.
+\section{Conclusion}
+My paper is great!
+\end{document}
+</code></pre>
+
+<h2 id="appendix">Appendix</h2>
+
+<p>Appendix is another section that does not following numeric numbering (but alphabetical ordering). We just need to say <strong>\appendix</strong> where the appendix starts.</p>
+
+<pre><code class="language-nohighlight">\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+
+\section{Introduction}
+This is my best paper
+\section{Model}
+We will have a lot of math.
+...
+\section{Conclusion}
+My paper is great!
+
+\appendix
+\section{Data Description}
+Here is the appendix.
+\end{document}
+</code></pre>
+
+<h2 id="lists">Lists</h2>
+
+<p>Undered lists are enclosed by <strong>\begin{itemize}</strong> and <strong>\end{itemize}</strong> and we use <strong>\item</strong> to tell it is an item. A typical example is:</p>
+
+<pre><code class="language-nohighlight">\begin{itemize}
+  \item I have an apple.
+  \item You have an orange.
+\end{itemize}
+</code></pre>
+
+<p>Likewise, the <strong>\begin{enumerate}</strong> and <strong>\end{enumerate}</strong> also works the same way, and we also use <strong>\item</strong> to create items. The only difference is that enumerate uses numbers, and itemize uses bullet points.</p>
+
+<pre><code class="language-nohighlight">\begin{enumerate}
+  \item I have an apple.
+  \item You have an orange.
+\end{enumerate}
+</code></pre>
+
+<h2 id="table">Table</h2>
+
+<p>Tables are created using the <strong>\begin{tabular}{}</strong> and <strong>\end{tabular}</strong> format. We can specify what type of table we want, and LaTex will create it for us.</p>
+
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>l</td>
+<td>left-justified column</td>
+</tr>
+
+<tr>
+<td>c</td>
+<td>centered column</td>
+</tr>
+
+<tr>
+<td>r</td>
+<td>right-justified column</td>
+</tr>
+</tbody>
+</table>
+
+<p>An example is</p>
+
+<pre><code class="language-r">\begin{tabular}{l c r}
+   1 &amp; 2 &amp; 3 \\ \hline
+   40 &amp; 50 &amp; 60 \\
+   700 &amp; 800 &amp; 900 \\
+\end{tabular}
+</code></pre>
+
+<p>In the example above, we have used “l c r”, so LaTex creates a table with 3 columns, with the corresponding directional justifications.</p>
+
+<h2 id="graphics">Graphics</h2>
+
+<p>To include graphics files (e.g., jpg and png) in the document, we need to make use of the graphicx package, which is done by using <strong>\usepackage{graphicx}</strong>. Note that package has to put before <strong>\begin{document}</strong>.</p>
+
+<p>To include a graphic file, we use the command <strong>\includegraphics{filename}</strong>. Note that the file has to be in the same file as the tex file for this code to work.</p>
+
+<h2 id="mathematics">Mathematics</h2>
+
+<p>Mathematics is one of the main reasons to use LaTeX over other word processors. To let the program know that you are working on math, enclose your expression with dollar sign <em>$</em>:</p>
+
+<pre><code class="language-nohighlight">$ 3^2 + 4^2 = 5^2$
+</code></pre>
+
+<p>If we want a display equation, simply use double dollar sign <em>$$</em>:</p>
+
+<pre><code class="language-nohighlight">$$ 3^2 + 4^2 = 5^2$$
+</code></pre>
+
+<h2 id="page-margin">Page Margin</h2>
+
+<p>The <strong>geometry</strong> package allows you to change the margins of the page, if you wish to.</p>
+
+<pre><code class="language-nohighlight">\usepackage{geometry}
+</code></pre>
+
+<p>To change the individual sides’ margins, simply use <strong>\geometry{margin=1.1in}</strong>. Take note that this should be put before the <strong>\begin{document}</strong> since it is for the whole document. For example, we have</p>
+
+<pre><code class="language-nohighlight">\usepackage{geometry}
+\geometry{maring=1.1in}
+</code></pre>
+
+<p>To specify margins on four sides, we use <strong>\geometry{left=2.5in, right=2.5in, top=2.5in, bottom=2.5in}</strong></p>
+
+<h2 id="line-spacing">Line spacing</h2>
+
+<p>The <strong>setspace</strong> package allows you to edit the line spacing between each line, similar to Word’s function. Options include <strong>\singlespacing</strong>, <strong>\onehalfspacing</strong>, <strong>\doublespacing</strong>.</p>
+
+<pre><code class="language-nohighlight">\usepackage{setspace}
+\singlespacing
+</code></pre>
+
+<h1 id="tikz">TikZ</h1>
 
 <h2 id="loading-package">Loading Package</h2>
 
