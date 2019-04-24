@@ -79,7 +79,7 @@
       <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
       
       <guid>/book/technical-trading-r/</guid>
-      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R*&amp;rdquo;&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
+      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R&amp;rdquo;&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;data manipulation (dyplr package),&lt;/li&gt;
@@ -104,11 +104,9 @@
 
 &lt;p&gt;The book is available through &lt;a href=&#34;/r/ta-with-r/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; (this website), &lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or &lt;a href=&#34;https://gumroad.com/l/R-TA&#34; target=&#34;_blank&#34;&gt;Gumroad&lt;/a&gt; (name-your-own-price offline pdf and epub). You can read the whole book through bookdown. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
 
-&lt;p&gt;(Note: After purchasing through Gumroad, you can download pdf and epub.)&lt;/p&gt;
-
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+    After purchasing through Gumroad, you can download pdf and epub.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -138,13 +136,51 @@
 
 &lt;p&gt;Note: After purchasing, you may copy code directly through Google Play (only benefit of spending your money) and you can download a pdf file of the book but the pdf file does not allow search nor copy.&lt;/p&gt;
 
-&lt;p&gt;(Note: After purchasing through Gumroad, you can download pdf and epub.)&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Gumroad, you can download pdf and epub.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TikZ Cookbook Companion</title>
+      <link>/book/tikz-cookbook-companion/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/book/tikz-cookbook-companion/</guid>
+      <description>&lt;p&gt;Related to the first book (TikZ Cookbook), I have compiled a companion textbook with more examples. The book shows 100 diagrams that can be found in textbooks of introductory principle classes.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;/img/Cover-TikZ-Cookbook-Companion.png&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The book is available through &lt;a href=&#34;https://play.google.com/store/books/details?id=WfF5DwAAQBAJ&#34; target=&#34;_blank&#34;&gt;Google Play&lt;/a&gt; or &lt;a href=&#34;http://books.google.com/books/about?id=WfF5DwAAQBAJ&#34; target=&#34;_blank&#34;&gt;Google book&lt;/a&gt;. You can read the whole book through free sampling and preview. If you think that I have done a good or bad job, please feel free to drop me an email with comments/suggestions. Of course, you are very welcome to consider buying me a cup of coffee through purchasing the ebook.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.
+    After purchasing through Google Play, you may download acsm file to be opened by specialized software such as Adobe Digital Edition. The software will download the pdf file to be read offline.
   &lt;/div&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Book Review</title>
+      <link>/others/bookreview/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/others/bookreview/</guid>
+      <description>&lt;p&gt;Book Review for &lt;em&gt;Market Design: Auction and Matching&lt;/em&gt; by Guillaume Haeringer, Accepted in &lt;em&gt;Economic Record&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -3645,6 +3681,31 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Media</title>
+      <link>/others/media/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/others/media/</guid>
+      <description>
+
+&lt;h2 id=&#34;healthcare-reform-in-singapore&#34;&gt;Healthcare Reform In Singapore&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Fee guidelines for healthcare helpful, but won&amp;rsquo;t curb costs&amp;rdquo;, The Straits Times, Opinion, 9 Nov, 2016.  &lt;a href=&#34;http://www.straitstimes.com/opinion/fee-guidelines-for-healthcare-helpful-but-wont-curb-costs&#34; target=&#34;_blank&#34;&gt;Link&lt;/a&gt; &lt;a href=&#34;https://docs.google.com/viewer?a=v&amp;amp;pid=sites&amp;amp;srcid=ZGVmYXVsdGRvbWFpbnxrb2NoaXV5dXxneDozNTQxZTdiYTQyYmI1NjQ2&#34; target=&#34;_blank&#34;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Some insurers taking steps to contain claims costs&amp;rdquo;,  Interviewed by Kelly Ng as in Today, 14 Oct 2016. &lt;a href=&#34;http://www.todayonline.com/singapore/some-insurers-taking-steps-contain-claims-costs&#34; target=&#34;_blank&#34;&gt;Link&lt;/a&gt; &lt;a href=&#34;https://docs.google.com/viewer?a=v&amp;amp;pid=sites&amp;amp;srcid=ZGVmYXVsdGRvbWFpbnxrb2NoaXV5dXxneDoxOWYxNGVkNjA3Y2NlN2E&#34; target=&#34;_blank&#34;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;unified-europe-and-divided-china&#34;&gt;Unified Europe and Divided China&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;The Lack of Major Wars May Be Hurting Economic Growth&amp;rdquo;, The New York Times, by Tyler Cowen on 13 June, 2014. &lt;a href=&#34;http://www.nytimes.com/2014/06/14/upshot/the-lack-of-major-wars-may-be-hurting-economic-growth.html&#34; target=&#34;_blank&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;How come China became one country but Europe became lots of countries?&amp;rdquo;, Slates.com, by Joshua Keating, 24 Jan, 2014. &lt;a href=&#34;http://www.slate.com/blogs/the_world_/2014/01/24/how_come_china_became_one_country_but_europe_became_lots_of_countries.html&#34; target=&#34;_blank&#34;&gt;Link&lt;/a&gt;
+Marginal Revolution, 24 Jan, 2014. &lt;a href=&#34;http://marginalrevolution.com/marginalrevolution/2014/01/unified-china-and-divided-europe.html&#34; target=&#34;_blank&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -8295,7 +8356,11 @@ updateEndEq(account.st)&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The book is available through &lt;a href=&#34;https://play.google.com/store/books/details?id=GVxnDwAAQBAJ&#34; target=&#34;_blank&#34;&gt;Google Play&lt;/a&gt; or &lt;a href=&#34;https://books.google.com.sg/books/about?id=GVxnDwAAQBAJ&amp;amp;redir_esc=y&#34; target=&#34;_blank&#34;&gt;Google book&lt;/a&gt;. You can read the whole book through free sampling and preview. If you think that I have done a good or bad job, please feel free to drop me an email with comments/suggestions. Of course, you are very welcome to consider buying me a cup of coffee through purchasing the ebook.&lt;/p&gt;
 
-&lt;p&gt;(Note: After purchasing through Google Play, you may download acsm file to be opened by specialized software such as Adobe Digital Edition. The software will download the pdf file to be read offline.)&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Google Play, you may download acsm file to be opened by specialized software such as Adobe Digital Edition. The software will download the pdf file to be read offline.
+  &lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -9332,7 +9397,12 @@ Hello World!
 
 &lt;p&gt;The book is available through &lt;a href=&#34;/r/ta-with-r/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; (this website), &lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or &lt;a href=&#34;https://gumroad.com/l/R-TA&#34; target=&#34;_blank&#34;&gt;Gumroad&lt;/a&gt; (name-your-own-price offline pdf and epub). You can read the whole book through bookdown. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
 
-&lt;p&gt;(Note: After purchasing through Gumroad, you can download pdf and epub.)&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Gumroad, you can download pdf and epub.
+  &lt;/div&gt;
+&lt;/div&gt;
+ 
 </description>
     </item>
     
@@ -9367,7 +9437,12 @@ Hello World!
 
 &lt;p&gt;The book is available through &lt;a href=&#34;/r/ta-with-r/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; (this website), &lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or &lt;a href=&#34;https://gumroad.com/l/R-TA&#34; target=&#34;_blank&#34;&gt;Gumroad&lt;/a&gt; (name-your-own-price offline pdf and epub). You can read the whole book through bookdown. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
 
-&lt;p&gt;(Note: After purchasing through Gumroad, you can download pdf and epub.)&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Gumroad, you can download pdf and epub.
+  &lt;/div&gt;
+&lt;/div&gt;
+ 
 </description>
     </item>
     
@@ -9393,7 +9468,11 @@ Hello World!
 
 &lt;p&gt;The book is available through &lt;a href=&#34;https://play.google.com/store/books/details?id=WfF5DwAAQBAJ&#34; target=&#34;_blank&#34;&gt;Google Play&lt;/a&gt; or &lt;a href=&#34;http://books.google.com/books/about?id=WfF5DwAAQBAJ&#34; target=&#34;_blank&#34;&gt;Google book&lt;/a&gt;. You can read the whole book through free sampling and preview. If you think that I have done a good or bad job, please feel free to drop me an email with comments/suggestions. Of course, you are very welcome to consider buying me a cup of coffee through purchasing the ebook.&lt;/p&gt;
 
-&lt;p&gt;(Note: After purchasing through Google Play, you may download acsm file to be opened by specialized software such as Adobe Digital Edition. The software will download the pdf file to be read offline.)&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Google Play, you may download acsm file to be opened by specialized software such as Adobe Digital Edition. The software will download the pdf file to be read offline.
+  &lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -9419,7 +9498,11 @@ Hello World!
 
 &lt;p&gt;The book is available through &lt;a href=&#34;https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ&#34; target=&#34;_blank&#34;&gt;Google Play&lt;/a&gt; or &lt;a href=&#34;https://books.google.com.sg/books?id=t3ZZDwAAQBAJ&amp;amp;source=gbs_navlinks_s&#34; target=&#34;_blank&#34;&gt;Google Book&lt;/a&gt;. You can read the whole book through free sampling. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
 
-&lt;p&gt;(Note: After purchasing, you may copy code directly through Google Play (only benefit of spending your money) and you can download a pdf file of the book but the pdf file does not allow search nor copy.)&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing, you may copy code directly through Google Play (only benefit of spending your money) and you can download a pdf file of the book but the pdf file does not allow search nor copy.
+  &lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -10062,7 +10145,7 @@ Figure 1: A fancy pie chart.
 &lt;ul&gt;
 &lt;li&gt;Coordinator, Applied Theory and Industrial Organization Workshop,  2013-Present.&lt;/li&gt;
 &lt;li&gt;Co-organizer, Multi-sided Platform Workshop, 2013.&lt;/li&gt;
-&lt;li&gt;Applied Economics Program,2014-2015, 2017-2018.&lt;/li&gt;
+&lt;li&gt;Applied Economics Program, 2014-2015, 2017-2018.&lt;/li&gt;
 &lt;li&gt;Graduate Program Committee, 2013-2014, 2015-Present.&lt;/li&gt;
 &lt;li&gt;Subcommittee on collaborative programs (double degree programs), 2018-Present.&lt;/li&gt;
 &lt;/ul&gt;

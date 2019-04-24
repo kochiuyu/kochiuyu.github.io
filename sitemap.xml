@@ -103,6 +103,11 @@
   </url>
   
   <url>
+    <loc>/book/tikz-cookbook-companion/</loc>
+    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/book/</loc>
     <lastmod>2019-08-17T00:00:00+08:00</lastmod>
   </url>
@@ -125,6 +130,11 @@
   </url>
   
   <url>
+    <loc>/others/bookreview/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/others/tips/</loc>
     <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
@@ -136,6 +146,11 @@
   
   <url>
     <loc>/others/journalfee/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/media/</loc>
     <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
   
