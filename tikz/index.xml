@@ -13,6 +13,64 @@
     
     
     <item>
+      <title>Basic TikZ</title>
+      <link>/tikz/basictikz/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/basictikz/</guid>
+      <description>Learning Objectives:
+Basic TikZ technique to draw:
+ Straight Line Node Curve Shape Fill  Setup Loading Package To load the TikZ package, we just need to use the function \usepackage{tikz}
+\documentclass{article} \usepacakage{tikz} \begin{document} ... \end{document}  TikZ Environment First, we need to tell which part of code should be included in the drawing by using begin{tikzpicture} and \end{tikzpiture}.
+\begin{tikzpicture} ... \end{tikzpiture}  Straight line We first discuss simple straight line and then we discuss its decoration.</description>
+    </item>
+    
+    <item>
+      <title>Intermediate TikZ</title>
+      <link>/tikz/intermediate-tikz/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/intermediate-tikz/</guid>
+      <description>Learning Objectives:
+Intermediate techniques of TikZ:
+ Tree Grouping Plotting Calculate Coordinates For loop  Tree General Tree \begin{tikzpicture} \node(0){a} child{node{b}} child{node{c} child{node{d}} child{node{e}} }; \end{tikzpicture}  Game Tree Since nodes in game trees are often defined by dots, we need to specify them.
+\begin{tikzpicture} \tikzstyle{hollow node}=[circle,draw,inner sep=1.5] \tikzstyle{solid node}=[circle,draw,inner sep=1.5,fill=black] \node[hollow node]{} child{node[solid node]{}} child{node[solid node]{}} child{node[solid node]{}} ; \end{tikzpicture}  Grouping We can apply decoration to multiple lines.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to LaTeX and TikZ</title>
+      <link>/tikz/introduction/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/introduction/</guid>
+      <description>Learning Objectives:
+ What is LaTeX? Why LaTeX? What is TikZ? Installation of LaTeX Hello world Basic setup of TikZ Demand and Supply Diagram  What is LaTeX? Why LaTeX? LaTeX is a markup language to write documents. In a common word processor, we have what you see is what you get (WYSIWYG). Howver, in LaTeX, What you see is what you mean (WYSIWYM). This manes that
+ No need to bother with formatting, LaTeX will do it for you Easy to include math/graphics/tables  Therefore, it becomes a standard for academic publishing.</description>
+    </item>
+    
+    <item>
+      <title>Basic LaTeX</title>
+      <link>/tikz/basiclatex/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/basiclatex/</guid>
+      <description>Learning Objectives:
+ What is LaTeX? Hello World Title Page Sectioning/Appendix/List Reference Font/Page Layout/Line Spacing Mathematics Table/Graphics/Figures Page Margin Line spacing Font Size  What is LaTeX? LaTeX is a program that writes document using programming. It is What you see is what you mean (WYSIWYM). Hence, you should not need to bother with formatting when you create the content. You write a document by focusing on the content instead of how it looks.</description>
+    </item>
+    
+    <item>
+      <title>Beamer</title>
+      <link>/tikz/beamer/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/tikz/beamer/</guid>
+      <description>Learning Objectives:
+Beamer package to make slides:
+ Title Page Content Slide List Figure  First page Presentation slides can be easily created using documentclass bemaer. The first page introduction slides is exactly the same as when we write an article.
+\documentclass{beamer} \title{Hello} \author{VIP \and VVIP} \date{\today} \begin{document} \maketitle \end{document}  Content For the rest of document, the only difference is to specify from where to where a slide starts and ends.</description>
+    </item>
+    
+    <item>
       <title>Consumer Theory</title>
       <link>/tikz/consumer/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
@@ -40,14 +98,13 @@
     </item>
     
     <item>
-      <title>Introduction</title>
-      <link>/tikz/introduction/</link>
+      <title>LaTeX Programming</title>
+      <link>/tikz/latexprogramming/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
-      <guid>/tikz/introduction/</guid>
+      <guid>/tikz/latexprogramming/</guid>
       <description>Learning Objectives:
- What is LaTeX? Why LaTeX? What is TikZ? Installation of LaTeX Hello world  What is LaTeX? Why LaTeX? LaTeX is a markup language to write documents. In a common word processor, we have what you see is what you get (WYSIWYG). Howver, in LaTeX, What you see is what you mean (WYSIWYM). This manes that
- No need to bother with formatting, LaTeX will do it for you Easy to include math/graphics/tables  Therefore, it becomes a standard for academic publishing.</description>
+ Variable: \newcommand, newenvironment Conditional: if Iteration: for loop  Newcommand Basic Newcommand \newcommand\NUS{National University of Singapore} I like \NUS{}. Do you like \NUS{}?  Newcommand with argument \newcommand\poem[1]{#1 eats an apple.} \poem{Peter} \poem{Mary} \newcommand\poems[2]{#1 eats #2.} \poems{Peter}{apple} \poems{John}{banana}  Math newcommand \newcommand\sumx{\ensuremath{x_1+\cdots+x_n}} I like \sumx{}.  Math newcommand with argument \newcommand\sumint[1]{\ensuremath{1+\cdots+#1}} I like to do \sumint{3} and \sumint{n}. \newcommand\sumints[2]{\ensuremath{#1+\cdots+#2}} I like to do \sumints{1}{2} and \sumints{3}{n}.  New Environment Baisc newenvironment \newenvironment{important} {\begin{center}\color{red}} {\end{center}} I like think the following is important: \begin{important} I eat an apple.</description>
     </item>
     
     <item>

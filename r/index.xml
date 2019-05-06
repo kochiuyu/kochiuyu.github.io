@@ -73,11 +73,16 @@ Learning objectives:
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>/r/ta-with-r-ch4/</guid>
-      <description>PlottingR is capable of giving very nice graphical plots. We will go over the most popular package ggplot2 for drawing static graphics and dygraphs for dynamic graphs
+      <description>Statistical AnalysisWe first review some basic function of statistics: central tendency and dispersion before going into regression analysis.
 Learning objectives:
-Use ggplot2 to draw basic plots (scatter plot, boxplot, line chart, histogram, frequency polygon, and barchart)
-Use ggtheme to improve appearance
-Use dygraphs to draw interactive graphs</description>
+summary statics
+generate random numbers
+estimate OLS
+estimate time series models (ARIMA using arima, GARCH using rugarch, VAR using vars)
+estimate panel data (plm package)
+Simulation on random walk model and Roll model
+Basic StatisticsCentral Tendency
+x &amp;lt;- 1:40mean(x) ## [1] 20.</description>
     </item>
     
     <item>
