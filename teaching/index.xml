@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teachings on Chiu Yu Ko</title>
+    <link>/teaching/</link>
+    <description>Recent content in Teachings on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Applied Financial Economics</title>
+      <link>/teaching/applied-financial-economics/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/teaching/applied-financial-economics/</guid>
+      <description>Master (Spring 2017, Spring 2018, Spring 2019)</description>
+    </item>
+    
+    <item>
+      <title>Financial Market Microsturcture</title>
+      <link>/teaching/financial-market-microstructure/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/teaching/financial-market-microstructure/</guid>
+      <description>Undergraduate (Fall 2015, Fall 2016, Fall 2017, Spring 2018, Fall 2018, Spring 2019)</description>
+    </item>
+    
+    <item>
+      <title>Industrial Organization</title>
+      <link>/teaching/industrial-organization/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/teaching/industrial-organization/</guid>
+      <description>Ph.D. (Fall 2012, Fall 2013, Fall 2014, Fall 2015, Fall 2016)</description>
+    </item>
+    
+    <item>
+      <title>Microeconomics Analysis III</title>
+      <link>/teaching/microeconomics/</link>
+      <pubDate>Fri, 27 Apr 2012 00:00:00 +0800</pubDate>
+      
+      <guid>/teaching/microeconomics/</guid>
+      <description>Undergraduate (Fall 2012, Fall 2013, Spring 2015)</description>
+    </item>
+    
+  </channel>
+</rss>

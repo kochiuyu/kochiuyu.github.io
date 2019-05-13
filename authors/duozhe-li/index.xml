@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Duozhe Li on Chiu Yu Ko</title>
+    <link>/authors/duozhe-li/</link>
+    <description>Recent content in Duozhe Li on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019</copyright>
+    <lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/authors/duozhe-li/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Decentralized one-to-many Bargaining (with Duozhe Li), R&amp;R at International Economic Review</title>
+      <link>/workingpaper/many-to-one-bargaining/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/workingpaper/many-to-one-bargaining/</guid>
+      <description>An industry-wide research joint venture (RJV) does not lead to better technological development or a higher consumer surplus. In contrast, every non-industry-wide RJV leads to strict improvements in both measures. Our results continue to hold when technology transfer is possible. Independent collaboration with technology transfer is an alternative to establishing industry-wide research consortiums.</description>
+    </item>
+    
+    <item>
+      <title>On the Role of Outside Options in Wage Renegotiation</title>
+      <link>/publication/outside-option-bargaining/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/outside-option-bargaining/</guid>
+      <description>A worker with a superior outside offer starts a wage renegotiation with his current employer. The worker may exercise the outside option whenever a proposal is rejected. Entire surplus may be extracted by the worker. Opting out can arise in equilibrium under complete information.</description>
+    </item>
+    
+  </channel>
+</rss>

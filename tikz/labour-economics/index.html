@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.2.4">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Labor Supply Decision\begin{tikzpicture}[scale=0.7]\draw [&lt;-&gt;] (0,10.4) node [above] {\small $Daily\ Income$} --(0,0) node [left] {$O$} --(9,0);\node [below] at (8.6, -0.6) {\small $House\ of\ Leisure$};\node [left] at (0,3.2) {$A$};\node [left] at (0,5.9) {$B$};\node [left] at (0,9.1) {$C$};\node [below] at (8.6,0) {$D$};\node [below] at (6.4,0.8) {$a$};\node [above] at (5.5,2.2) {$b$};\node [right] at (6.4,2.4) {$c$};% Slope OW\draw (0,3.2)--(8.6,0);\draw (0,5.9)--(8.6,0);\draw (0,9.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/tikz/labour-economics/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-7442008-8', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/tikz/labour-economics/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/tikz/labour-economics/">
+  <meta property="og:title" content="Labor Economics | Chiu Yu Ko">
+  <meta property="og:description" content="Labor Supply Decision\begin{tikzpicture}[scale=0.7]\draw [&lt;-&gt;] (0,10.4) node [above] {\small $Daily\ Income$} --(0,0) node [left] {$O$} --(9,0);\node [below] at (8.6, -0.6) {\small $House\ of\ Leisure$};\node [left] at (0,3.2) {$A$};\node [left] at (0,5.9) {$B$};\node [left] at (0,9.1) {$C$};\node [below] at (8.6,0) {$D$};\node [below] at (6.4,0.8) {$a$};\node [above] at (5.5,2.2) {$b$};\node [right] at (6.4,2.4) {$c$};% Slope OW\draw (0,3.2)--(8.6,0);\draw (0,5.9)--(8.6,0);\draw (0,9."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+  <meta property="article:modified_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+
+  
+
+  
+
+  <title>Labor Economics | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/files/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#featured">
+            
+            <span>Publication</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#workingpaper">
+            
+            <span>Working Paper</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#book">
+            
+            <span>Book</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/r/">
+            
+            <span>R</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tikz/">
+            
+            <span>TikZ</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/vba/">
+            
+            <span>VBA</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/others/">
+            
+            <span>Others</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/">TikZ</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/introduction/">Tutorial</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tikz/introduction/">Introduction to LaTeX and TikZ</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/basiclatex/">Basic LaTeX</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/latexprogramming/">LaTeX Programming</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/beamer/">Beamer</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/basictikz/">Basic TikZ</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/intermediate-tikz/">Intermediate TikZ</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/tikz-cookbook/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tikz/tikz-cookbook/">Tikz CookBook</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/tikz-cookbook-companion/">TikZ Cookbook Companion</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/consumer/">Example</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tikz/consumer/">Consumer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/producer/">Producer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/demand-and-supply/">Demand and Supply</a>
+      </li>
+      
+      <li class="active">
+        <a href="/tikz/labour-economics/">Labor Economics</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/game-theory/">Game Theory</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/macroeconomics/">Macroeconomics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/"></a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Labor Economics</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+
+
+<div id="labor-supply-decision" class="section level2">
+<h2>Labor Supply Decision</h2>
+<p><img src="/tikz/labour-economics_files/figure-html/unnamed-chunk-1-1.png" width="90%" /></p>
+<pre class="nohighlight"><code>\begin{tikzpicture}[scale=0.7]
+\draw [&lt;-&gt;] (0,10.4) node [above] {\small $Daily\ Income$} --(0,0) node [left] {$O$} --(9,0);
+\node [below] at (8.6, -0.6) {\small $House\ of\ Leisure$};
+\node [left] at (0,3.2) {$A$};
+\node [left] at (0,5.9) {$B$};
+\node [left] at (0,9.1) {$C$};
+\node [below] at (8.6,0) {$D$};
+\node [below] at (6.4,0.8) {$a$};
+\node [above] at (5.5,2.2) {$b$};
+\node [right] at (6.4,2.4) {$c$};
+% Slope OW
+\draw (0,3.2)--(8.6,0);
+\draw (0,5.9)--(8.6,0);
+\draw (0,9.1)--(8.6,0);
+\draw [-&gt;] (0.75,2) node [below] {\footnotesize$Slope = OW_1$}--(0.8,2.7);
+\draw [-&gt;] (0.75,4.5) node [below] {\footnotesize$Slope = OW^*$} --(0.8,5.3);
+\draw [-&gt;] (0.75,7.2) node [below] {\footnotesize$Slope = OW_2$} --(0.8,8.1);
+% ICs
+\draw (1.3,8.7) node [above] {\footnotesize$IC_1$} ..controls (2.6,2.4) and (6,0.1) ..(8.3,0.7);
+\draw (2.2,8.5) node [right] {\footnotesize$IC_2$} ..controls (3.8,3.2) and (5.2,1.8) ..(6.8,1.7);
+\draw (3.2,8.3) node [right] {\footnotesize$IC_3$} ..controls (4.7,3.7) and (6.4,2.1) ..(7.3,1.8);
+\end{tikzpicture}</code></pre>
+</div>
+<div id="labor-supply-curve" class="section level2">
+<h2>Labor Supply Curve</h2>
+<p><img src="/tikz/labour-economics_files/figure-html/unnamed-chunk-2-1.png" width="90%" /></p>
+<pre class="nohighlight"><code>\begin{tikzpicture}[scale=0.7]
+\draw [&lt;-&gt;] (0,10.2) node [above] {\small $Real\ Wage\ Rate$} --(0,0) node [below left] {$O$}--(9.5,0) node [below left] {\small $House\ of\ Work$};
+\node [left] at (0,3.4) {$W_1$};
+\node [left] at (0,5.6) {$W_*$};
+\node [left] at (0,7.6) {$W_2$};
+\node [right] at (7.3,3.4) {$a$};
+\node [right] at (8.2,5.6) {$b$};
+\node [right] at (7.5,7.6) {$c$};
+\draw [dashed] (0,3.4)--(7.3,3.4);
+\draw [dashed] (0,5.6)--(8.2,5.6);
+\draw [dashed] (0,7.6)--(7.4,7.6);
+\draw (3.8,1.7) node [below] {$S_L$} to [out=20, in=-90] (8.2,5.6) to [out=90, in=-20] (4.3,9.2) node [below left] {$S_L$};
+\end{tikzpicture}</code></pre>
+</div>
+<div id="backward-bending-labor-supply-curve" class="section level2">
+<h2>Backward Bending Labor Supply Curve</h2>
+<p><img src="/tikz/labour-economics_files/figure-html/unnamed-chunk-3-1.png" width="90%" /></p>
+<pre class="nohighlight"><code>\begin{tikzpicture}[scale=0.8]
+\draw [&lt;-&gt;] (0,8.3) node [above] {\small $Real \ Wage \ Rate$} --(0,0) node [below] {$O$}--(7.6,0) node [below] {\small $Hours \ of \ Work$};
+\node [left] at (0,4.7){$W_*$};
+\draw (6,8.2)node [below] {$S_L$} to [out=-165, in=90] (2.4, 4.7) to [out=-90, in=180] (6.6,2) node [below] {$S_L$};
+\end{tikzpicture}</code></pre>
+</div>
+<div id="labor-demand-and-supply" class="section level2">
+<h2>Labor Demand and Supply</h2>
+<p><img src="/tikz/labour-economics_files/figure-html/unnamed-chunk-4-1.png" width="90%" /></p>
+<pre class="nohighlight"><code>\begin{tikzpicture}[scale=0.8]
+\draw (0,0) -- (6,0) node [right] {$L$};
+\draw (0,0) -- (0,6) node [left] {$P_L$};
+\node at (-0.5,-0.5) {O};
+\draw (0,3)--(5.5,3);
+\node at (5.9,3) {$s_L$};
+\node at (-0.5,3) {$w$};
+\draw (0,5.7)--(5.6,1);
+\node at (6.8,0.8) {$D_L=MP_L$};
+\draw[dashed](3.2,0)--(3.2,3.1);
+\node at (3.2,-0.5) {$L^{*}$};
+\end{tikzpicture}</code></pre>
+</div>
+<div id="income-distribution" class="section level2">
+<h2>Income distribution</h2>
+<p><img src="/tikz/labour-economics_files/figure-html/unnamed-chunk-5-1.png" width="90%" /></p>
+<pre class="nohighlight"><code>\begin{tikzpicture}[scale=0.8]
+\tiny
+\draw (0,0) -- (6,0) node [right] {$L$};
+\draw (0,0) -- (0,6) node [left] {$P_L$};
+\node at (-0.3,-0.3) {O};
+\draw (0,3)--(6,3);
+\node at (6.2,3) {$S_L$};
+\node at (-0.5,3) {$W$};
+\draw (0,5.4)--(5.6,1.27);
+\node at (3.4,3.4) {$A$};
+\node at (6.4,0.8) {$MP_L$};
+\draw[dashed](3.2,0)--(3.2,3.85);
+\node at (-0.5,3.85) {$C$};
+\node at (3.2,4.3) {$B$};
+\draw[dashed](0,3.85)--(3.2,3.85);
+\node at (3.2,-0.5) {$L_0$};
+\draw (0,5.4)--(5.5,2.8);
+\node at (5.8,2.5) {$AP_L$};
+\end{tikzpicture}</code></pre>
+</div>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Sep 9, 2018
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.b82789348bc9b927834992b317787f39.js"></script>
+
+  </body>
+</html>
+
+

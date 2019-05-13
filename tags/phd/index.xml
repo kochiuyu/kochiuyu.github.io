@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PhD on Chiu Yu Ko</title>
+    <link>/tags/phd/</link>
+    <description>Recent content in PhD on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/phd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Industrial Organization</title>
+      <link>/teaching/industrial-organization/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      
+      <guid>/teaching/industrial-organization/</guid>
+      <description>Ph.D. (Fall 2012, Fall 2013, Fall 2014, Fall 2015, Fall 2016)</description>
+    </item>
+    
+  </channel>
+</rss>

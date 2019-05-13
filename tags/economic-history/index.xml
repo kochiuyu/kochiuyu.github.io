@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Economic History on Chiu Yu Ko</title>
+    <link>/tags/economic-history/</link>
+    <description>Recent content in Economic History on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019</copyright>
+    <lastBuildDate>Sat, 17 Aug 2013 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/economic-history/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Regional Dependence and Political Centralization in Imperial China</title>
+      <link>/publication/dependence-china/</link>
+      <pubDate>Sat, 17 Aug 2013 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/dependence-china/</guid>
+      <description>Eurasian geography created significant and persistent defense externalities between the Chinese regions. Centralized state is required to enforce cooperation. Building of the national capital in the region where the externality originate. Explain why China’s capitals in strategically important north and west instead of the economically productive south and east.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.2.4">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Learning Objectives:
+Use TikZ to draw:
+ Straight Line Node Curve Shape Fill  Use for loop to simplify code
+Setup Loading Package To load the TikZ package, we just need to use the function \usepackage{tikz}
+\documentclass{article} \usepacakage{tikz} \begin{document} ... \end{document}  TikZ Environment First, we need to tell which part of code should be included in the drawing by using begin{tikzpicture} and \end{tikzpiture}.
+\begin{tikzpicture} ... \end{tikzpiture}  Straight line We first discuss simple straight line and then we discuss its decoration.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/tikz/tikz/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-7442008-8', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/tikz/tikz/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/tikz/tikz/">
+  <meta property="og:title" content="Basic TikZ | Chiu Yu Ko">
+  <meta property="og:description" content="Learning Objectives:
+Use TikZ to draw:
+ Straight Line Node Curve Shape Fill  Use for loop to simplify code
+Setup Loading Package To load the TikZ package, we just need to use the function \usepackage{tikz}
+\documentclass{article} \usepacakage{tikz} \begin{document} ... \end{document}  TikZ Environment First, we need to tell which part of code should be included in the drawing by using begin{tikzpicture} and \end{tikzpiture}.
+\begin{tikzpicture} ... \end{tikzpiture}  Straight line We first discuss simple straight line and then we discuss its decoration."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+  <meta property="article:modified_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+
+  
+
+  
+
+  <title>Basic TikZ | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/files/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#featured">
+            
+            <span>Publication</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#workingpaper">
+            
+            <span>Working Paper</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#book">
+            
+            <span>Book</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/r/">
+            
+            <span>R</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tikz/">
+            
+            <span>TikZ</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/others/">
+            
+            <span>Others</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tikz/introduction/">Introduction</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/basiclatex/">Basic LaTeX</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/latexprogramming/">LaTeX Programming</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/beamer/">Beamer</a>
+      </li>
+      
+      <li class="active">
+        <a href="/tikz/tikz/">Basic TikZ</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/tikz-cookbook/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tikz/tikz-cookbook/">Tikz CookBook</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/tikz-cookbook-companion/">TikZ Cookbook Companion</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/consumer/">Example</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tikz/consumer/">Consumer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/producer/">Producer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/demand-and-supply/">Demand and Supply</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/labour-economics/">Labor Economics</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/game-theory/">Game Theory</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/macroeconomics/">Macroeconomics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/"></a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#setup">Setup</a>
+<ul>
+<li><a href="#loading-package">Loading Package</a></li>
+<li><a href="#tikz-environment">TikZ Environment</a></li>
+</ul></li>
+<li><a href="#straight-line">Straight line</a>
+<ul>
+<li><a href="#draw-a-line">Draw a line</a></li>
+<li><a href="#line-pattern">Line Pattern</a></li>
+<li><a href="#line-thickness">Line Thickness</a></li>
+<li><a href="#line-color">Line Color</a></li>
+<li><a href="#line-cap">Line Cap</a></li>
+<li><a href="#braces">Braces</a></li>
+</ul></li>
+<li><a href="#node">Node</a>
+<ul>
+<li><a href="#draw-a-node">Draw a node</a></li>
+<li><a href="#shift-location">Shift location</a></li>
+</ul></li>
+<li><a href="#curves">Curves</a>
+<ul>
+<li><a href="#bending-straight-line">Bending straight line</a></li>
+<li><a href="#in-and-out-degree">In and out degree</a></li>
+<li><a href="#right-angle-bend">Right angle bend</a></li>
+<li><a href="#arc">Arc</a></li>
+<li><a href="#smooth-coordinate">Smooth coordinate</a></li>
+<li><a href="#beizer-curve">Beizer curve</a></li>
+</ul></li>
+<li><a href="#basic-shapes">Basic Shapes</a>
+<ul>
+<li><a href="#circle">Circle</a></li>
+<li><a href="#ellipse">Ellipse</a></li>
+<li><a href="#rectange">Rectange</a></li>
+<li><a href="#grid">Grid</a></li>
+</ul></li>
+<li><a href="#fill">Fill</a>
+<ul>
+<li><a href="#fill-color">Fill Color</a></li>
+<li><a href="#fill-pattern">Fill pattern</a></li>
+</ul></li>
+<li><a href="#tree">Tree</a>
+<ul>
+<li><a href="#general-tree">General Tree</a></li>
+<li><a href="#game-tree">Game Tree</a></li>
+</ul></li>
+<li><a href="#grouping">Grouping</a>
+<ul>
+<li><a href="#scope">Scope</a></li>
+<li><a href="#style">Style</a></li>
+<li><a href="#tikzset">tikzset</a></li>
+</ul></li>
+<li><a href="#plotting">Plotting</a>
+<ul>
+<li><a href="#mathematical-expression">Mathematical Expression</a></li>
+<li><a href="#data-plot">Data plot</a></li>
+</ul></li>
+<li><a href="#scale">Scale</a>
+<ul>
+<li><a href="#zoom-out">Zoom out</a></li>
+<li><a href="#zoom-in">Zoom in</a></li>
+</ul></li>
+<li><a href="#find-coordinates">Find coordinates</a>
+<ul>
+<li><a href="#grid-1">Grid</a></li>
+<li><a href="#relative-to-two-points">Relative to two points</a></li>
+<li><a href="#average-of-two-points">Average of two points</a></li>
+<li><a href="#intersection-of-two-named-paths">Intersection of two named paths</a></li>
+<li><a href="#multiple-intersections-of-two-named-paths">Multiple intersections of two named paths</a></li>
+<li><a href="#example-demand-and-supply">Example: Demand and Supply</a></li>
+</ul></li>
+<li><a href="#programming">Programming</a>
+<ul>
+<li><a href="#for-loop">For Loop</a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Basic TikZ</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<p>Learning Objectives:</p>
+
+<p>Use TikZ to draw:</p>
+
+<ul>
+<li>Straight Line</li>
+<li>Node</li>
+<li>Curve</li>
+<li>Shape</li>
+<li>Fill</li>
+</ul>
+
+<p>Use for loop to simplify code</p>
+
+<h1 id="setup">Setup</h1>
+
+<h2 id="loading-package">Loading Package</h2>
+
+<p>To load the TikZ package, we just need to use the function <code>\usepackage{tikz}</code></p>
+
+<pre><code class="language-latex">\documentclass{article}
+\usepacakage{tikz}
+\begin{document}
+...
+\end{document}
+</code></pre>
+
+<h2 id="tikz-environment">TikZ Environment</h2>
+
+<p>First, we need to tell which part of code should be included in the drawing by using <code>begin{tikzpicture}</code> and <code>\end{tikzpiture}</code>.</p>
+
+<pre><code class="language-latex">\begin{tikzpicture}
+...
+\end{tikzpiture}
+</code></pre>
+
+<h1 id="straight-line">Straight line</h1>
+
+<p>We first discuss simple straight line and then we discuss its decoration.</p>
+
+<h2 id="draw-a-line">Draw a line</h2>
+
+<p>To draw a straight line, use <code>\draw</code>, and specify the coordinates. To end drawing, we must end with a semicolon.</p>
+
+<pre><code class="language-latex">\draw(0,0)--(3,3);
+</code></pre>
+
+<p>To draw connected lines, we specify all the coordinates. Below draws a square:</p>
+
+<pre><code class="language-latex">\draw(0,0)--(4,4)--(4,0)--(0,0);
+</code></pre>
+
+<h2 id="line-pattern">Line Pattern</h2>
+
+<p>To draw a dashed line, we use the option <code>[dashed]</code>:</p>
+
+<pre><code class="language-latex">\draw[dashed] (0,0)--(4,4);
+</code></pre>
+
+<p>To draw a dotted line, we use the option <code>[dotted]</code>:</p>
+
+<pre><code class="language-latex">\draw[dotted] (4,0)--(0,4);
+</code></pre>
+
+<h2 id="line-thickness">Line Thickness</h2>
+
+<p>We can specify relative thickness:</p>
+
+<pre><code class="language-latex">\draw[ultra thin] (0,6)--(4,6);
+\draw[very thin] (0,5)--(4,5);
+\draw[thin] (0,4)--(4,4);
+\draw[semithick] (0,3)--(4,3);
+\draw[thick] (0,2)--(4,2);
+\draw[very thick] (0,1)--(4,1);
+\draw[ultra thick] (0,0)--(4,0);
+</code></pre>
+
+<p>We can also specify thickness directly:</p>
+
+<pre><code class="language-latex">\draw[line width=11] (0,1)--(4,1);
+\draw[line width=5mm] (0,0)--(4,0);
+</code></pre>
+
+<h2 id="line-color">Line Color</h2>
+
+<pre><code class="language-latex">\draw[red] (0,2)--(4,2);
+\draw[blue] (0,1)--(4,1);
+\draw[green] (0,0)--(4,0);
+</code></pre>
+
+<h2 id="line-cap">Line Cap</h2>
+
+<p>Now we add arrow to the tip.</p>
+
+<pre><code class="language-latex">\draw[-&gt;] (0,5)--(4,5);
+\draw[&lt;-&gt;] (0,4)--(4,4);
+\draw[|-&gt;] (0,3)--(4,3);
+\draw[&lt;-|] (0,2)--(4,2);
+\draw[|-|] (0,1)--(4,1);
+\draw[|&lt;-&gt;|] (0,0)--(4,0);
+</code></pre>
+
+<h2 id="braces">Braces</h2>
+
+<pre><code class="language-latex">\usetikzlibrary{decorations.pathreplacing}
+\draw [decorate,
+          decoration={brace,amplitude=4pt,         
+          mirror},xshift=0pt,yshift=-3pt]
+          (1.4,0) -- (2.4,0) 
+          node [black,midway,yshift=-.5cm]
+          {abc};
+</code></pre>
+
+<h1 id="node">Node</h1>
+
+<p>Node is to add description to the graph.</p>
+
+<h2 id="draw-a-node">Draw a node</h2>
+
+<p>To write description, use <code>\node</code> and put the coordinate after <code>at</code>.</p>
+
+<pre><code class="language-latex">\node at (0,0)  {$\alpha$};
+\node at (1,1)  {$\beta$};
+</code></pre>
+
+<h2 id="shift-location">Shift location</h2>
+
+<p>To shift the relative location of the nodes, we use  <code>\node[location]</code> where location can be below/left/right/above/below left.</p>
+
+<pre><code class="language-latex">\node[above] at (1,1)  {$\gamma$};
+\node[below] at (1,1)  {$\gamma$};
+\node[left] at (1,1)  {$\gamma$};
+\node[right] at (1,1)  {$\gamma$};
+</code></pre>
+
+<p>To shift the relative location of the nodes, we use <code>\node[xshift=1cm, yshift=3cm]</code>:</p>
+
+<pre><code class="language-latex">\node[xshift=3mm] at (1,1) {$\gamma$};
+\node[yshift=3mm] at (1,1) {$\gamma$};
+</code></pre>
+
+<h1 id="curves">Curves</h1>
+
+<p>There are many ways to draw a curve:</p>
+
+<ul>
+<li>Bending a straight line</li>
+<li>In and out</li>
+<li>Right angle bend</li>
+<li>Arc</li>
+<li>Smoothing coordinate</li>
+<li>Beizer Curve</li>
+</ul>
+
+<h2 id="bending-straight-line">Bending straight line</h2>
+
+<p>One way to do is to bend a straight line</p>
+
+<pre><code class="language-latex">\draw (0,0) to [bend right] (3,3);
+\draw (1,1) to [bend left] (4,4)
+</code></pre>
+
+<h2 id="in-and-out-degree">In and out degree</h2>
+
+<p>To more accurate control the bending, one way to do is to specify outgoing and incoming coordinates to bend a straight line</p>
+
+<pre><code class="language-latex">\draw (0,0) to [out =90, in =180] (4,4);
+</code></pre>
+
+<h2 id="right-angle-bend">Right angle bend</h2>
+
+<p>Very often, we need a 90 degree bend to draw digram:</p>
+
+<pre><code class="language-latex">\draw (0,0) -| (3,3);
+\draw (1,1) |- (4,4);
+</code></pre>
+
+<h2 id="arc">Arc</h2>
+
+<p>Forth method is by drawing an arc.</p>
+
+<pre><code class="language-latex">\draw (1,0) arc (0:145:2cm);
+</code></pre>
+
+<h2 id="smooth-coordinate">Smooth coordinate</h2>
+
+<p>Fifth method is by smoothing over multiple coordinates:</p>
+
+<pre><code class="language-latex">\draw plot [smooth] coordinates {(0,0) (1,3) (3,2) (4,4)};
+</code></pre>
+
+<h2 id="beizer-curve">Beizer curve</h2>
+
+<p>Sixth method is by Beizer curve. It is very common in programming language.</p>
+
+<pre><code class="language-latex">\draw (0,0) .. controls (1,3) and (3,5) .. (4,4);
+</code></pre>
+
+<h1 id="basic-shapes">Basic Shapes</h1>
+
+<h2 id="circle">Circle</h2>
+
+<p>To draw a circle, we specify the center and the radius.</p>
+
+<pre><code class="language-latex">\draw (0,0) circle [radius =0.6cm];
+</code></pre>
+
+<p>If we fill the circle with color, then we have dots:</p>
+
+<pre><code class="language-latex">\draw[fill] (0,0) circle [radius =0.06];
+</code></pre>
+
+<h2 id="ellipse">Ellipse</h2>
+
+<pre><code class="language-latex">\draw (0,0) ellipse (2 and 1);
+</code></pre>
+
+<h2 id="rectange">Rectange</h2>
+
+<pre><code class="language-latex">\draw (0,0) rectangle (4,4);
+</code></pre>
+
+<h2 id="grid">Grid</h2>
+
+<pre><code class="language-latex">\draw[step=1,gray,very thin] (0,0) grid (4,4);
+</code></pre>
+
+<h1 id="fill">Fill</h1>
+
+<p>To emphasize the area, we often use color and pattern. Color is good for electronic version and pattern is good for printed version.</p>
+
+<h2 id="fill-color">Fill Color</h2>
+
+<pre><code class="language-latex">\draw[fill=red] (0,0) rectangle (2,2);
+\draw[fill=blue] (2,2) rectangle (4,4);
+</code></pre>
+
+<p>To change opacity, use the option <code>fill opacity</code>.</p>
+
+<pre><code class="language-latex">\draw[fill=red, fill opacity=0.2] (0,0) rectangle (2,2);
+\draw[fill=blue, fill opacity=0.2] (2,2) rectangle (4,4);
+</code></pre>
+
+<h2 id="fill-pattern">Fill pattern</h2>
+
+<p>To fill pattern, we need to use a library. To do so we need <code>\usetikzlibrary{patterns}</code></p>
+
+<pre><code class="language-latex">\usetikzlibrary{patterns}
+\draw[pattern=horizontal lines] (0,0) rectangle (1,1);
+\draw[pattern=vertical lines] (1,1) rectangle (2,2);
+\draw[pattern=north east lines] (2,2) rectangle (3,3);
+\draw[pattern=north west lines] (3,3) rectangle (4,4);
+\draw[pattern=grid] (4,4) rectangle (5,5);
+\draw[pattern=crosshatch] (5,5) rectangle (6,6);
+\draw[pattern=dots] (6,6) rectangle (7,7);
+</code></pre>
+
+<h1 id="tree">Tree</h1>
+
+<h2 id="general-tree">General Tree</h2>
+
+<pre><code class="language-latex">\begin{tikzpicture}
+    \node(0){a}
+        child{node{b}}
+        child{node{c}
+            child{node{d}}
+            child{node{e}}
+        };
+\end{tikzpicture}
+</code></pre>
+
+<h2 id="game-tree">Game Tree</h2>
+
+<p>Since nodes in game trees are often defined by dots, we need to specify them.</p>
+
+<pre><code class="language-latex">\begin{tikzpicture}
+\tikzstyle{hollow node}=[circle,draw,inner sep=1.5]
+\tikzstyle{solid node}=[circle,draw,inner sep=1.5,fill=black]
+\node[hollow node]{}
+    child{node[solid node]{}}
+    child{node[solid node]{}}
+    child{node[solid node]{}}
+;
+\end{tikzpicture}
+</code></pre>
+
+<h1 id="grouping">Grouping</h1>
+
+<p>We can apply decoration to multiple lines.</p>
+
+<h2 id="scope">Scope</h2>
+
+<p>Using scope is to allow decorations to be applied to multiple lines.</p>
+
+<pre><code class="language-latex">\begin{tikzpicture}
+\begin{scope} [red, thick]
+    \draw (0,0)--(3,3);
+    \draw (0,3)--(3,0);
+\end{scope}
+\end{tikzpicture}
+</code></pre>
+
+<h2 id="style">Style</h2>
+
+<p>Using style is to allow decorations to be applied with flexibility:</p>
+
+<pre><code class="language-latex">\begin{tikzpicture}[marked/.style = {red, very thick}]
+\draw[marked] (0,0)--(3,3);
+\draw[marked] (0,3)--(3,0);
+\end{tikzpicture}
+</code></pre>
+
+<h2 id="tikzset">tikzset</h2>
+
+<p>Using style is to allow decorations to be applied to multiple figures.</p>
+
+<pre><code class="language-latex">\tikzset[marked/.style = {red, very thick}]
+\tikzset[trivial/.style = {blue, thin}]
+\begin{tikzpicture}
+\draw[marked] (0,0)--(3,3);
+\draw[trivial] (0,3)--(3,0);
+\end{tikzpicture}
+</code></pre>
+
+<h1 id="plotting">Plotting</h1>
+
+<h2 id="mathematical-expression">Mathematical Expression</h2>
+
+<pre><code class="language-latex">\begin{tikzpicture}
+\draw[blue,&lt;-&gt;] (4,0) -| (0,4); 
+\draw[red, domain=0:2] plot (\x,\x*\x);
+\end{tikzpicture}
+</code></pre>
+
+<h2 id="data-plot">Data plot</h2>
+
+<p>For data plot, we need to load the package <code>\usepackage{pgfplots}</code>.</p>
+
+<pre><code class="language-latex">\usepackage{tikz}
+\usepackage{pgfplots}
+\begin{tikzpicture}
+\begin{axis}[xlabel=x,ylabel=y]
+    \addplot coordinates {(1,1) (2,0) (3,3) (4,2)};
+\end{axis}
+</code></pre>
+
+<h1 id="scale">Scale</h1>
+
+<h2 id="zoom-out">Zoom out</h2>
+
+<p>We can use <code>scale=0.5</code> to make the zoom out.</p>
+
+<pre><code class="language-latex">\begin{tikzpicture}[scale=0.5]
+    \draw (0,0)--(1,1);
+    \draw (0,1)--(1,0);
+\end{tikzpicture}
+</code></pre>
+
+<h2 id="zoom-in">Zoom in</h2>
+
+<p>We can use <code>scale=2</code> to make the zoom in.</p>
+
+<pre><code class="language-latex">\begin{tikzpicture}[scale=2]
+    \draw (0,0)--(1,1);
+    \draw (0,1)--(1,0);
+\end{tikzpicture}
+</code></pre>
+
+<h1 id="find-coordinates">Find coordinates</h1>
+
+<h2 id="grid-1">Grid</h2>
+
+<p>One of the main difficulties in using TikZ to draw diagram is to find the appropriate coordinates. One way to see where is should put the coordinate is by using <code>grid</code></p>
+
+<pre><code class="language-latex">\begin{tikzpicture}
+\draw[step=1,gray,very thin] (0,0) grid (4,4);
+\end{tikzpicture}
+</code></pre>
+
+<h2 id="relative-to-two-points">Relative to two points</h2>
+
+<p>To calculate new coordinates based on $(a,b)$ and $(c,d)$, we can use <code>|-</code> and <code>-|</code>. We have $(a,d)$ if we have <code>(a,b|-c,d)</code> and $(c,b)$ if we have <code>(a,b-|c,d)</code></p>
+
+<pre><code class="language-latex">\begin{tikzpicture}
+\node[circle, fill=red] at (1,1) {};
+\node[circle, fill=blue] at (3,3){};
+\node[circle, fill=green] at (1,1|- 3,3){};
+\node[circle, fill=purple] at (1,1-| 3,3){};
+\end{tikzpicture}
+</code></pre>
+
+<h2 id="average-of-two-points">Average of two points</h2>
+
+<p>To calculate mid point of based on $(a,b)$ and $(c,d)$, we can use <code>($(a,b)!0.5!(c,d)$)</code>.</p>
+
+<pre><code class="language-latex">\begin{tikzpicture}
+\node[circle, fill=red] at (1,1) {};
+\node[circle, fill=blue] at (3,3){};
+\node[circle, fill=green] at ($(1,1)!0.5!(3,3)$){};
+\node[circle, fill=purple] at ($(1,1)!0.25!(3,3)$){};
+\end{tikzpicture}
+</code></pre>
+
+<h2 id="intersection-of-two-named-paths">Intersection of two named paths</h2>
+
+<p>To calculate in intersections, we need to use <code>\usetikzlibrary{intersections}</code>.</p>
+
+<pre><code class="language-latex">\usetikzlibrary{intersections}
+\begin{tikzpicture}
+\draw[name path=Demand] (0,3) -- (3,0);
+\draw[name path=Supply] (0,0) -- (3,3);
+\path [name intersections={of=Demand and Supply,by=E}];
+\fill [red] (E) circle (2pt);
+\end{tikzpicture}
+</code></pre>
+
+<h2 id="multiple-intersections-of-two-named-paths">Multiple intersections of two named paths</h2>
+
+<pre><code class="language-latex">\usepackage{tikz}
+\usetikzlibrary{intersections}
+\begin{tikzpicture}
+\draw[name path=circle] (0,0) circle (2);
+\draw[name path=line] (-3,-3) -- (3,3);
+\fill [red, name intersections={of = circle and line}] (intersection-1) circle (4pt);
+\fill [blue, name intersections={of =circle and line}] (intersection-2) circle (4pt);
+\end{tikzpicture}
+</code></pre>
+
+<h2 id="example-demand-and-supply">Example: Demand and Supply</h2>
+
+<p>We illustrate how to draw demand and supply curve using the techniques presented above:</p>
+
+<pre><code class="language-latex">\usepackage{tikz}
+\usetikzlibrary{calc,intersections}
+\begin{tikzpicture}[scale=0.8]
+\draw [thick](0,6) node [left] {P} |- (6,0) node [below] {Q};
+\draw[thick,blue!90, name path =Supply](1,1)--(5,5) node[right]{Supply};
+\draw[thick,blue!90, name path=Demand](1,5)--(5,1) node[right]{Demand};
+\path [name intersections={of=Demand and Supply,by=E}];
+\draw[dashed] (E -| 0,0) node[left]{$P^*$}--(E)--(E |- 0,0) node[below]{$Q^*$};
+\draw[black,fill] (E) circle [radius=0.15];
+\end{tikzpicture}
+</code></pre>
+
+<h1 id="programming">Programming</h1>
+
+<h2 id="for-loop">For Loop</h2>
+
+<p>The syntax to write a for loop is <code>\foreach</code> and variable would be <code>\x</code>.</p>
+
+<pre><code class="language-latex">\draw (0,0)--(6,0);
+\foreach \x in {0,...,6}{
+    \draw (\x,-1)--(\x,1);
+}
+</code></pre>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Sep 9, 2018
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.b82789348bc9b927834992b317787f39.js"></script>
+
+  </body>
+</html>
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Working Paper on Chiu Yu Ko</title>
+    <link>/book/</link>
+    <description>Recent content in Working Paper on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019</copyright>
+    <lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/book/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Technical Analysis with R</title>
+      <link>/book/technical-trading-r/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/book/technical-trading-r/</guid>
+      <description>This is an introductory textbook that focuses on how to use R to test a technical trading strategy. No prior programming knowledge is needed..</description>
+    </item>
+    
+    <item>
+      <title>TikZ Cookbook</title>
+      <link>/book/tikz-cookbook/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/book/tikz-cookbook/</guid>
+      <description>TikZ is a drawing package in LaTeX. It is very useful to draw a professional-looking diagram. However, the learning curve is a little bit steep for a beginner. This is a cookbook that provides step-by-step illustrations on how to use TikZ to draw various diagrams in economics.</description>
+    </item>
+    
+    <item>
+      <title>TikZ Cookbook Companion</title>
+      <link>/book/tikz-cookbook-companion/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/book/tikz-cookbook-companion/</guid>
+      <description>TikZ is a drawing package in LaTeX. It is very useful to draw a professional-looking diagram. However, the learning curve is a little bit steep for a beginner. This is a cookbook that provides step-by-step illustrations on how to use TikZ to draw various diagrams in economics.</description>
+    </item>
+    
+  </channel>
+</rss>
