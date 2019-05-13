@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chiu Yu Ko</title>
+    <link>/vba/</link>
+    <description>Recent content on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019</copyright>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/vba/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Advanced Excel</title>
+      <link>/vba/advanced-excel/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/vba/advanced-excel/</guid>
+      <description>Learning Objectives:
+ Add-in Analysis Toolpak Sorting Filtering Pivot Table Freeze plane Charting Conditional Statement  Useful tools Add-in If you see Analysis Toolpak under the Active Application Add-Ins section, you do not need to do anything. Otherwise, you need to activate it.
+    
+If you want to enable Analysis toolpak, go to Options &amp;gt; Add-Ins &amp;gt; Analysis Toolpak. The same goes for Solver.
+Analysis Toolpak: Regression Analysis Toolpak lets you run multiple regressions in Excel.</description>
+    </item>
+    
+    <item>
+      <title>Advanced VBA</title>
+      <link>/vba/advanced-vba/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/vba/advanced-vba/</guid>
+      <description>Learning Objectives:
+ Conditional Statements Iterative Statements  Conditionals There are 4 main types of conditionals that we will use in VBA:
+ If, If-else, If-ElseIf-else, and Select Case.  Relational Operator Conditional statement are executed based on logical statement (true/false). The most basic logical statement is by relational operators. VBA uses the same relational operator as those in Excel spreadsheet.
+   Operator Meaning     &amp;gt; greater than   &amp;lt; less than   = equal to   &amp;gt;= greater than or equal to   &amp;lt;= less than or equal to    If How do conditionals work?</description>
+    </item>
+    
+    <item>
+      <title>Basic Excel</title>
+      <link>/vba/basic-excel/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/vba/basic-excel/</guid>
+      <description>Learning Objectives:
+ Why Excel? Basic Excel Worksheet Functions  What is Excel? Why Excel? Excel is a spreadsheet program. It is widely used in the industry because they are simple, and also allow you to view data visually.
+Since Excel is widely used, it is usually the basic requirement for many jobs.
+Here, we will go into the basics of Excel, and how to use them.
+Cells The basic element of spreadsheet is a cell.</description>
+    </item>
+    
+    <item>
+      <title>Basic VBA</title>
+      <link>/vba/basic-vba/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/vba/basic-vba/</guid>
+      <description>Learning Objectives:
+ What is VBA? Why VBA? Hello World What is function? What is subroutine? How to define variable? VBA Objects Record Macro  What is VBA? Why VBA? VBA stands for Visual Basic Application. It shares the same syntax as Basic language. Every operation you can perform in Excel using keyboard and mouse can be represented by VBA code. Hence, it allows a lot of flexibility and functionality when using Excel.</description>
+    </item>
+    
+    <item>
+      <title>Financial programming with Excel VBA R</title>
+      <link>/vba/excel-vba-r/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/vba/excel-vba-r/</guid>
+      <description>In this book, we learn how to do financial programming in two steps. We first cover Excel that requires minimum programming technique, it is desirable to start learning it first. Excel VBA is covered to provide a smooth transition to more complicated R programming. In particular, students first learn how to use Excel to generate a simple trading system and this builds the foundation for the more complicated trading system in R.</description>
+    </item>
+    
+  </channel>
+</rss>

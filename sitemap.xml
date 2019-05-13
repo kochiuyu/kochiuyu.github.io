@@ -130,7 +130,27 @@
   </url>
   
   <url>
+    <loc>/vba/advanced-excel/</loc>
+    <lastmod>2019-05-04T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vba/advanced-vba/</loc>
+    <lastmod>2019-05-04T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vba/basic-excel/</loc>
+    <lastmod>2019-05-04T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tikz/basictikz/</loc>
+    <lastmod>2019-05-04T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vba/basic-vba/</loc>
     <lastmod>2019-05-04T00:00:00+08:00</lastmod>
   </url>
   
@@ -246,6 +266,11 @@
   </url>
   
   <url>
+    <loc>/vba/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tikz/basiclatex/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
@@ -312,6 +337,11 @@
   
   <url>
     <loc>/r/excel-vba-r/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vba/excel-vba-r/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
