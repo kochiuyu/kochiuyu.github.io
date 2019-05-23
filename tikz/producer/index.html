@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.2.4">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Isoquant\begin{tikzpicture}[scale=1.2]\draw (0,0) -- (5.5,0);\draw (0,0) -- (0,5.5);\node [left] at (-0.2,5.3) {$\texttt{K}$};\node [below] at (5.3,-0.1) {$\texttt{L}$};\draw [thick] (1.7,4.8) to [out=275,in=180] (5,1.3);\node [right] at (1.5,5) {$I$};\node [right] at (5,1.3) {$I$};\draw [thick] (0,0) -- (2.7,4.5);\draw [thick] (0,0) -- (4,3.7);\draw[dotted, thick](1,4.05)--(4.1,0.95);\draw[dotted, thick](1.15,5.1)--(3.35,0.8);\node [right] at (0.7,4.4) {$C^1$};\node [below] at (4.2,0.9) {$C^1$};\node [above] at (1.1,5.2) {$C^2$};\node [below] at (3.3,0.8) {$C^2$};\node [right] at (2,3.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/tikz/producer/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-7442008-8', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/tikz/producer/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/tikz/producer/">
+  <meta property="og:title" content="Produer Theory | Chiu Yu Ko">
+  <meta property="og:description" content="Isoquant\begin{tikzpicture}[scale=1.2]\draw (0,0) -- (5.5,0);\draw (0,0) -- (0,5.5);\node [left] at (-0.2,5.3) {$\texttt{K}$};\node [below] at (5.3,-0.1) {$\texttt{L}$};\draw [thick] (1.7,4.8) to [out=275,in=180] (5,1.3);\node [right] at (1.5,5) {$I$};\node [right] at (5,1.3) {$I$};\draw [thick] (0,0) -- (2.7,4.5);\draw [thick] (0,0) -- (4,3.7);\draw[dotted, thick](1,4.05)--(4.1,0.95);\draw[dotted, thick](1.15,5.1)--(3.35,0.8);\node [right] at (0.7,4.4) {$C^1$};\node [below] at (4.2,0.9) {$C^1$};\node [above] at (1.1,5.2) {$C^2$};\node [below] at (3.3,0.8) {$C^2$};\node [right] at (2,3."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+  <meta property="article:modified_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+
+  
+
+  
+
+  <title>Produer Theory | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/files/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#featured">
+            
+            <span>Publication</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#workingpaper">
+            
+            <span>Working Paper</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#book">
+            
+            <span>Book</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/r-programming/">
+            
+            <span>R</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tikz/">
+            
+            <span>TikZ</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/vba/">
+            
+            <span>VBA</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/others/">
+            
+            <span>Others</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/">TikZ</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/introduction/">Tutorial</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tikz/introduction/">Introduction to LaTeX and TikZ</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/basiclatex/">Basic LaTeX</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/latexprogramming/">LaTeX Programming</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/beamer/">Beamer</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/basictikz/">Basic TikZ</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/intermediate-tikz/">Intermediate TikZ</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/tikz-cookbook/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tikz/tikz-cookbook/">Tikz CookBook</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/tikz-cookbook-companion/">TikZ Cookbook Companion</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/consumer/">Example</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tikz/consumer/">Consumer Theory</a>
+      </li>
+      
+      <li class="active">
+        <a href="/tikz/producer/">Producer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/demand-and-supply/">Demand and Supply</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/labour-economics/">Labor Economics</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/game-theory/">Game Theory</a>
+      </li>
+      
+      <li >
+        <a href="/tikz/macroeconomics/">Macroeconomics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tikz/"></a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Produer Theory</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+
+
+<div id="isoquant" class="section level2">
+<h2>Isoquant</h2>
+<p><img src="/tikz/producer_files/figure-html/unnamed-chunk-1-1.png" width="90%" /></p>
+<pre class="nohighlight"><code>\begin{tikzpicture}[scale=1.2]
+\draw (0,0) -- (5.5,0);
+\draw (0,0) -- (0,5.5);
+\node [left] at (-0.2,5.3) {$\texttt{K}$};
+\node [below] at (5.3,-0.1) {$\texttt{L}$};
+\draw [thick] (1.7,4.8) to [out=275,in=180] (5,1.3);
+\node [right] at (1.5,5) {$I$};
+\node [right] at (5,1.3) {$I$};
+\draw [thick] (0,0) -- (2.7,4.5);
+\draw [thick] (0,0) -- (4,3.7);
+\draw[dotted, thick](1,4.05)--(4.1,0.95);
+\draw[dotted, thick](1.15,5.1)--(3.35,0.8);
+\node [right] at (0.7,4.4) {$C^1$};
+\node [below] at (4.2,0.9) {$C^1$};
+\node [above] at (1.1,5.2) {$C^2$};
+\node [below] at (3.3,0.8) {$C^2$};
+\node [right] at (2,3.4) {$B$};
+\node [right] at (2.7,2.4) {$A$};
+\end{tikzpicture}</code></pre>
+</div>
+<div id="cost-minimization" class="section level2">
+<h2>Cost Minimization</h2>
+<p><img src="/tikz/producer_files/figure-html/unnamed-chunk-2-1.png" width="90%" /></p>
+<pre class="nohighlight"><code>\begin{tikzpicture}[scale=.9]
+\draw (0,7.7) node [left] {$K$} -- (0,0) node [below left] {$0_1$} -- (8.2,0) node [below right] {$L$};
+\node [left] at (0,6.1) {$C/r$};
+\node [below] at (5.75,0) {$C/w$};
+\node [below] at (2.9,0) {$L_1$};
+\node [left] at (0,3) {$K_1$};
+\node [right] at (6,1.4) {$x_1$};
+\node [right] at (2.9,.9) {\tiny $|slope|=w/r$};
+\draw [dotted, thick] (0,3) -- (2.9,3) -- (2.9,0);
+\draw (1.5,6.4) to [out=-90, in=130] (2.9,3) to [out=-50, in=170] (6,1.4);
+\draw (0,6.1) -- (5.75,0);
+\end{tikzpicture}</code></pre>
+</div>
+<div id="short-run-cost-curves" class="section level2">
+<h2>Short-run Cost Curves</h2>
+<p><img src="/tikz/producer_files/figure-html/unnamed-chunk-3-1.png" width="90%" /></p>
+<pre class="nohighlight"><code>\begin{tikzpicture}[scale=0.8]
+\tiny
+\draw (0,0) -- (8,0) node [below] {Quantity, units};
+\draw (0,-0.5) -- (0,5) node [above] {Cost per unit, \$};
+\draw (0.2,5) to [out=270,in=172] (2.6,0.4);
+\draw (2.6,0.4) to [out=350.5,in=178] (7,0.1);
+\node [right] at (7,0.5) {$AFC$};
+\draw (0.3,5) to [out=280,in=150] (2,2.1);
+\draw (2,2.1) to [out=330,in=200] (7,2);
+\node [right] at (7,2.3) {$ATC$};
+\draw (0,2) to [out=340,in=200] (7,1.8);
+\node [right] at (7,1.8) {$AVC$};
+\draw (0,2) to [out=315,in=240] (7,5);
+\node [right] at (7,5) {$MC$};
+\end{tikzpicture}</code></pre>
+</div>
+<div id="long-run-cost-curves" class="section level2">
+<h2>Long-run Cost Curves</h2>
+<p><img src="/tikz/producer_files/figure-html/unnamed-chunk-4-1.png" width="90%" /></p>
+<pre class="nohighlight"><code>\begin{tikzpicture}[scale=0.8]
+\tiny
+\draw (-0.3,0)-- (0,0) -- (8,0) node [below] {Quantity, units};
+\draw (0,-0.5)-- (0,0) -- (0,5) node [above] {Average total cost, \$};
+\draw (0.2,3.7) to [out=290,in=180] (3.75,1);
+\draw (3.75,1) to [out=360,in=260] (7.6,3.9);
+\node [above] at (7.5,4) {$LRAC$};
+\draw (0.5,3.3) to [out=280,in=180] (1.5,2.2);
+\draw (1.5,2.2) to [out=360,in=255] (2.8,3.3);
+\draw [fill] (0.75,2.65) circle [radius =0.06];
+\node [below] at (0.75,2.55){$a$};
+\node [left] at (2.8,3.3){$SRAC$};
+\draw (2,2.6) to [out=280,in=180] (3.75,1);
+\draw (3.75,1) to [out=360,in=255] (5.3,2.6);
+\draw [fill] (3.75,1) circle [radius =0.06];
+\node [below] at (3.75,1) {$b$};
+\node [left] at (5.1,2) {$SRAC$};
+\draw (4.8,3.4) to [out=280,in=180] (6,2.3);
+\draw (6,2.3) to [out=360,in=270] (7.4,3.5);
+\draw [fill] (7.32,3) circle [radius =0.06];
+\node [below] at (7.32,3) {$c$};
+\node [left] at (7.22,3.2) {$SRAC$};
+\end{tikzpicture}</code></pre>
+</div>
+<div id="production-possibility-frontier" class="section level2">
+<h2>Production Possibility Frontier</h2>
+<p><img src="/tikz/producer_files/figure-html/unnamed-chunk-5-1.png" width="90%" /></p>
+<pre class="nohighlight"><code>\begin{tikzpicture}[scale=1.2]
+\draw (0,5.1) node [left] {$Y$} -- (0,0) node [below left] {$0$} -- (4,0) node [below] {$X$};
+\draw (0,4.1) to [out=-15, in=120] (2.8,2) to [out=-60, in=95] (3.4,0);
+\draw [-&gt;] (2.8,2) -- (3.3,2.2);
+\draw [dashed] (1.2,3.6) -- (3.1,1.3);
+\draw [dashed] (1.2,3.6) -- (2.9,3.2);
+\node [right] at (3.3,2.2) {$E$};
+\node [right] at (3.1,1.3) {$B$};
+\node [left] at (0,4.1) {$F$};
+\draw [fill] (0,4.1) circle [radius=.05];
+\node [right] at (0,4.5) {$H$};
+\draw [fill] (0,4.5) circle [radius=.05];
+\node [above left] at (3.4,0) {$G$};
+\draw [fill] (3.4,0) circle [radius=.05];
+\node [right] at (2.5,2.5) {$I$};
+\draw [fill] (2.5,2.5) circle [radius=.05];
+\node [above] at (2.9,2) {$D$};
+\draw [fill] (2.8,2) circle [radius=.05];
+\node [right] at (2.9,3.2) {$C$};
+\draw [fill] (2.9,3.2) circle [radius=.05];
+\node [above right] at (1.2,3.6) {$A$};
+\draw [fill] (1.2,3.6) circle [radius=.05];
+\end{tikzpicture}</code></pre>
+</div>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Sep 9, 2018
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.b82789348bc9b927834992b317787f39.js"></script>
+
+  </body>
+</html>
+
+

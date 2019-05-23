@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Political Economy on Chiu Yu Ko</title>
+    <link>/tags/political-economy/</link>
+    <description>Recent content in Political Economy on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019</copyright>
+    <lastBuildDate>Thu, 17 Aug 2017 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/political-economy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Note on Budget Constraints and Outside Options in Common Agency</title>
+      <link>/publication/common-agency/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/common-agency/</guid>
+      <description>In common agency games without budget constraints and outside option, Bernheim and Whinston (1986) show that CPNE=TNE=Principal-optimal core in the payoff space. With budget constraints or outside options, CPNE and TNE may not exist and may not be equivalent to each other. TNEs can be Pareto ranked, contrary to Dixit, Grossman, and Helpman (1996). CPNEs do not avoid a coordination problem, as they can be Pareto dominated by a TNE.</description>
+    </item>
+    
+    <item>
+      <title>Unified China and Divided Europe</title>
+      <link>/publication/europe-china/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/europe-china/</guid>
+      <description>Severe and unidirectional threat of external invasion fostered political centralization in China. Europe faced a wider variety of smaller external threats and remained politically fragmented. Political centralization in China led to lower taxation and hence faster population growth during peacetime than in Europe. China was relatively fragile in the event of an external invasion.</description>
+    </item>
+    
+    <item>
+      <title>Regional Dependence and Political Centralization in Imperial China</title>
+      <link>/publication/dependence-china/</link>
+      <pubDate>Sat, 17 Aug 2013 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/dependence-china/</guid>
+      <description>Eurasian geography created significant and persistent defense externalities between the Chinese regions. Centralized state is required to enforce cooperation. Building of the national capital in the region where the externality originate. Explain why China’s capitals in strategically important north and west instead of the economically productive south and east.</description>
+    </item>
+    
+  </channel>
+</rss>

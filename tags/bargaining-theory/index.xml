@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bargaining Theory on Chiu Yu Ko</title>
+    <link>/tags/bargaining-theory/</link>
+    <description>Recent content in Bargaining Theory on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019</copyright>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/bargaining-theory/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On the Role of Outside Options in Wage Renegotiation</title>
+      <link>/publication/outside-option-bargaining/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/publication/outside-option-bargaining/</guid>
+      <description>A worker with a superior outside offer starts a wage renegotiation with his current employer. The worker may exercise the outside option whenever a proposal is rejected. Entire surplus may be extracted by the worker. Opting out can arise in equilibrium under complete information.</description>
+    </item>
+    
+  </channel>
+</rss>
