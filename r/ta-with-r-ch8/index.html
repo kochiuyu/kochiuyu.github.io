@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.2.4">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="QuanstratSince quantstrat is not standard package, we first learn how to install custom package.
+We will illustrate the usage of the quantstrat package by showing how four different rules be applied:
+naive filter rule,buy and hold,simple SMA rule,SMA rule with a volatility filter.Since the coding is complicated, we first overview the structure of the code. There are five parts:
+InitializationIndicator: filter rule/SMA ruleSignals: buy/sell signalsRule: buy or sell?">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/r/ta-with-r-ch8/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-7442008-8', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/r/ta-with-r-ch8/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/r/ta-with-r-ch8/">
+  <meta property="og:title" content=" | Chiu Yu Ko">
+  <meta property="og:description" content="QuanstratSince quantstrat is not standard package, we first learn how to install custom package.
+We will illustrate the usage of the quantstrat package by showing how four different rules be applied:
+naive filter rule,buy and hold,simple SMA rule,SMA rule with a volatility filter.Since the coding is complicated, we first overview the structure of the code. There are five parts:
+InitializationIndicator: filter rule/SMA ruleSignals: buy/sell signalsRule: buy or sell?"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+  <meta property="article:modified_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+
+  
+
+  
+
+  <title> | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/files/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#featured">
+            
+            <span>Publication</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#workingpaper">
+            
+            <span>Working Paper</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#book">
+            
+            <span>Book</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/r/">
+            
+            <span>R</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tikz/">
+            
+            <span>TikZ</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/vba/">
+            
+            <span>VBA</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/others/">
+            
+            <span>Others</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/">R</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/technical-analysis-with-r/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/r/technical-analysis-with-r/">Technical analysis with R</a>
+      </li>
+      
+      <li >
+        <a href="/r/excel-vba-r/">Financial programming with Excel VBA R</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/package/">R-Package</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/r/package/">Candle Sticks</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/ta-with-r/">Technical Analysis with R</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/r/ta-with-r-ch1/">Chapter 1 Introduction</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch2/">Chapter 2 Working with Data</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch3/">Chapter 3 Plotting</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch4/">Chapter 4 Statistics</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch5/">Chapter 5 Programming</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch6/">Chapter 6 Scrapping</a>
+      </li>
+      
+      <li >
+        <a href="/r/ta-with-r-ch7/">Chapter 7 Quantmod</a>
+      </li>
+      
+      <li class="active">
+        <a href="/r/ta-with-r-ch8/">Chapter 8 Quanstrat</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/"></a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r/installation/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/r/installation/">Installation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name"></h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+
+<div id="quanstrat" class="section level1">
+<h1>Quanstrat</h1>
+<p>Since <strong>quantstrat</strong> is not standard package, we first learn how to install custom package.</p>
+<p>We will illustrate the usage of the <strong>quantstrat</strong> package by showing how four different rules be applied:</p>
+<ol style="list-style-type: decimal">
+<li>naive filter rule,</li>
+<li>buy and hold,</li>
+<li>simple SMA rule,</li>
+<li>SMA rule with a volatility filter.</li>
+</ol>
+<p>Since the coding is complicated, we first overview the structure of the code. There are five parts:</p>
+<ol style="list-style-type: decimal">
+<li>Initialization</li>
+<li>Indicator: filter rule/SMA rule</li>
+<li>Signals: buy/sell signals</li>
+<li>Rule: buy or sell? quantity?</li>
+<li>Evaluation of results.</li>
+</ol>
+<p>Before we start, let us make sure that we have installed the following four standard packages:</p>
+<ol style="list-style-type: decimal">
+<li><strong>quantmod</strong>,</li>
+<li><strong>PerformanceAnalytics</strong>,</li>
+<li><strong>FinancialInstrument</strong>, and</li>
+<li><strong>foreach</strong>.</li>
+</ol>
+<p>If your R does not have them, please run the following code:</p>
+<pre class="r"><code>install.packages(&quot;quantmod&quot;)
+install.packages(&quot;FinancialInstrument&quot;)
+install.packages(&quot;PerformanceAnalytics&quot;)
+install.packages(&quot;foreach&quot;)</code></pre>
+<p><strong>FinancialInstrument</strong> allows you to specify your assets class (e.g., stock, derivatives, currency) and <strong>foreach</strong> is a package that allow fast computation (i.e., parallel computation).</p>
+<div id="install-custom-packages" class="section level2">
+<h2>Install custom packages</h2>
+<p>Since blotter and quanstrat are still under development, they are not yet available at CRAN. We need to install the two package from github. We need to install <strong>devtools</strong> package first.</p>
+<p>Then we use the function <strong>install_github</strong> to download the packages, and then we load them into the system.</p>
+<pre class="r"><code>install.packages(&quot;devtools&quot;)
+library(devtools)
+# Install from github directly
+install_github(&quot;braverock/blotter&quot;)
+install_github(&quot;braverock/quanstrat&quot;)
+library(blotter)
+library(quantstrat)</code></pre>
+<p>IF there is an error during installation process, try again after installing the latest R and update all packages.</p>
+<!-- First we download them from the internet. Then we can install custom package using the following code: -->
+<!-- %\verb|https://r-forge.r-project.org/R/?group_id=316|. -->
+<!-- \begin{lstlisting}[caption=Install custom Package] -->
+<!-- # put the file in your working directory -->
+<!-- install.packages("blotter_0.9.1741.zip",  -->
+<!--                  repos = NULL,  -->
+<!--                  type="source") -->
+<!-- install.packages("quantstrat_0.9.1739.zip",  -->
+<!--                  repos = NULL,  -->
+<!--                  type="source") -->
+<!-- ``` -->
+</div>
+<div id="blotter-package" class="section level2">
+<h2>Blotter Package</h2>
+<p>Since working through <strong>quanstrat</strong> package requires the <strong>blotter</strong> package, which is rather complicated, we demostrate first how the <strong>blotter</strong> pacakge works first.</p>
+<p>As we have seen, recording tranasction of stocks, keeping track of cash and stock holding, and evaluate return is rather messy. The <strong>blotter</strong> package is mainly for this purpose.</p>
+<p>We first need to setup the working space.</p>
+<p>We need to setup the currency and declare the data is the stock (using <strong>FinancialInstrument</strong> package).</p>
+<p>The multipler is always one for stock, and currency is USD for US stock.</p>
+<pre class="r"><code>options(&quot;getSymbols.warning4.0&quot;=FALSE)
+from =&quot;2008-01-01&quot;
+to =&quot;2012-12-31&quot;
+symbols = c(&quot;AAPL&quot;, &quot;IBM&quot;)
+currency(&quot;USD&quot;)
+getSymbols(symbols, from=from, to=to, 
+           adjust=TRUE)
+stock(symbols, currency=&quot;USD&quot;, multiplier=1)
+initEq=10^6</code></pre>
+<p>To start, we initialize account and portfolio where:</p>
+<ul>
+<li><p>Porfolio: stores which stocks to be traded</p></li>
+<li><p>Account: stores which money transactions</p></li>
+</ul>
+<pre class="r"><code>rm(&quot;account.buyHold&quot;,pos=.blotter)
+rm(&quot;portfolio.buyHold&quot;,pos=.blotter)
+
+initPortf(&quot;buyHold&quot;, symbol=symbols)
+initAcct(&quot;buyHold&quot;, portfolios = &quot;buyHold&quot;,
+         initEq = initEq)</code></pre>
+<div id="buy-and-hold" class="section level3">
+<h3>Buy and hold</h3>
+<p>To illustrate, we just consider buy and hold strategy:</p>
+<ul>
+<li>Buy on the first day at closing price</li>
+<li>Sell on the last day at closing price</li>
+</ul>
+<p>We first get the price and timing data:</p>
+<pre class="r"><code>Apple.Buy.Date &lt;- first(time(AAPL))
+Apple.Buy.Price &lt;- as.numeric(Cl(AAPL[Apple.Buy.Date,]))
+Apple.Sell.Date &lt;- last(time(AAPL))
+Apple.Sell.Price &lt;- as.numeric(Cl(AAPL[Apple.Sell.Date,]))
+Apple.Qty &lt;- trunc(initEq/(2*Apple.Buy.Price))
+
+IBM.Buy.Date &lt;- first(time(IBM))
+IBM.Buy.Price &lt;- as.numeric(Cl(IBM[IBM.Buy.Date,]))
+IBM.Sell.Date &lt;- last(time(IBM))
+IBM.Sell.Price &lt;- as.numeric(Cl(IBM[IBM.Sell.Date,]))
+IBM.Qty &lt;- trunc(initEq/(2*IBM.Buy.Price))</code></pre>
+<p>We first add buy transactions to the system using the function <strong>addTxn</strong>:</p>
+<pre class="r"><code>addTxn(Portfolio = &quot;buyHold&quot;, 
+       Symbol = &quot;AAPL&quot;, 
+       TxnDate = Apple.Buy.Date, 
+       TxnQty = Apple.Qty,
+       TxnPrice = Apple.Buy.Price,
+       TxnFees = 0)
+
+addTxn(Portfolio = &quot;buyHold&quot;, 
+       Symbol = &quot;IBM&quot;, 
+       TxnDate = IBM.Buy.Date, 
+       TxnQty = IBM.Qty,
+       TxnPrice = IBM.Buy.Price,
+       TxnFees = 0)</code></pre>
+<p>Then we add the sell transactions:</p>
+<pre class="r"><code>addTxn(Portfolio = &quot;buyHold&quot;, 
+       Symbol = &quot;AAPL&quot;, 
+       TxnDate = Apple.Sell.Date, 
+       TxnQty = -Apple.Qty,
+       TxnPrice = Apple.Sell.Price,
+       TxnFees = 0)
+
+addTxn(Portfolio = &quot;buyHold&quot;, 
+       Symbol = &quot;IBM&quot;, 
+       TxnDate = IBM.Sell.Date, 
+       TxnQty = -IBM.Qty,
+       TxnPrice = IBM.Sell.Price,
+       TxnFees = 0)</code></pre>
+<p>Now we can update the account based on the added transactions:</p>
+<pre class="r"><code>updatePortf(Portfolio = &quot;buyHold&quot;)</code></pre>
+<pre><code>## [1] &quot;buyHold&quot;</code></pre>
+<pre class="r"><code>updateAcct(name = &quot;buyHold&quot;)</code></pre>
+<pre><code>## [1] &quot;buyHold&quot;</code></pre>
+<pre class="r"><code>updateEndEq(Account = &quot;buyHold&quot;)</code></pre>
+<pre><code>## [1] &quot;buyHold&quot;</code></pre>
+<p>We can chart our trading positions:</p>
+<pre class="r"><code>chart.Posn(&quot;buyHold&quot;, Symbol = &quot;AAPL&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<pre class="r"><code>chart.Posn(&quot;buyHold&quot;, Symbol = &quot;IBM&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-10-2.png" width="672" /></p>
+<p>We can see the trading statistics</p>
+<pre class="r"><code>out &lt;- perTradeStats(&quot;buyHold&quot;, &quot;IBM&quot;)
+t(out)</code></pre>
+<pre><code>##                     [,1]                 
+## Start               &quot;2008-01-02 08:00:00&quot;
+## End                 &quot;2012-12-28 08:00:00&quot;
+## Init.Qty            &quot;5223&quot;               
+## Init.Pos            &quot;5223&quot;               
+## Max.Pos             &quot;5223&quot;               
+## End.Pos             &quot;0&quot;                  
+## Closing.Txn.Qty     &quot;-5223&quot;              
+## Num.Txns            &quot;2&quot;                  
+## Max.Notional.Cost   &quot;499963.2&quot;           
+## Net.Trading.PL      &quot;491518.9&quot;           
+## MAE                 &quot;-151359.1&quot;          
+## MFE                 &quot;597287.7&quot;           
+## Pct.Net.Trading.PL  &quot;0.98311&quot;            
+## Pct.MAE             &quot;-0.3027405&quot;         
+## Pct.MFE             &quot;1.194663&quot;           
+## tick.Net.Trading.PL &quot;9410.662&quot;           
+## tick.MAE            &quot;-15135911&quot;          
+## tick.MFE            &quot;59728767&quot;           
+## duration            &quot;157420800 secs&quot;</code></pre>
+<pre class="r"><code>out &lt;- perTradeStats(&quot;buyHold&quot;, &quot;AAPL&quot;)
+t(out)</code></pre>
+<pre><code>##                     [,1]                 
+## Start               &quot;2008-01-02 08:00:00&quot;
+## End                 &quot;2012-12-28 08:00:00&quot;
+## Init.Qty            &quot;19126&quot;              
+## Init.Pos            &quot;19126&quot;              
+## Max.Pos             &quot;19126&quot;              
+## End.Pos             &quot;0&quot;                  
+## Closing.Txn.Qty     &quot;-19126&quot;             
+## Num.Txns            &quot;2&quot;                  
+## Max.Notional.Cost   &quot;499991.1&quot;           
+## Net.Trading.PL      &quot;892354.3&quot;           
+## MAE                 &quot;-299317.2&quot;          
+## MFE                 &quot;1357293&quot;            
+## Pct.Net.Trading.PL  &quot;1.78474&quot;            
+## Pct.MAE             &quot;-0.598645&quot;          
+## Pct.MFE             &quot;2.714634&quot;           
+## tick.Net.Trading.PL &quot;4665.661&quot;           
+## tick.MAE            &quot;-29931721&quot;          
+## tick.MFE            &quot;135729299&quot;          
+## duration            &quot;157420800 secs&quot;</code></pre>
+</div>
+<div id="buy-filter-rule" class="section level3">
+<h3>Buy Filter Rule</h3>
+<p>We use blotter package to apply simple filter rule</p>
+<ul>
+<li><p>buy 1000 units signal if buy signal</p></li>
+<li><p>hold otherwise</p></li>
+</ul>
+<p>We first Download Data:</p>
+<pre class="r"><code>from =&quot;2009-01-01&quot;
+to =&quot;2012-12-31&quot;
+symbols = c(&quot;MSFT&quot;)
+currency(&quot;USD&quot;)
+getSymbols(symbols, from=from, to=to, 
+           adjust=TRUE)
+stock(symbols, currency=&quot;USD&quot;, multiplier=1)
+initEq=10^6</code></pre>
+<p>Then setup the account and portfolio:</p>
+<pre class="r"><code>rm(&quot;account.filter&quot;,pos=.blotter)
+rm(&quot;portfolio.filter&quot;,pos=.blotter)
+
+initPortf(&quot;filter&quot;, symbol=symbols)
+initAcct(&quot;filter&quot;, portfolios = &quot;filter&quot;,
+         initEq = initEq)</code></pre>
+<p>Here we generate trading indicator:</p>
+<pre class="r"><code>price &lt;- Cl(MSFT)         
+r &lt;- price/Lag(price) - 1    
+delta&lt;-0.03
+signal &lt;-c(NA)
+for (i in 2: length(price)){
+    if (r[i] &gt; delta){
+         signal[i]&lt;- 1
+    } else if (r[i]&lt; -delta){
+         signal[i]&lt;- -1
+    } else
+         signal[i]&lt;- 0
+}
+signal&lt;-reclass(signal,Cl(MSFT))</code></pre>
+<p>This convert trading indicator to trading signal:</p>
+<pre class="r"><code>trade &lt;- Lag(signal)
+trade &lt;- na.fill(trade,0)</code></pre>
+<p>Now we are ready to apply trading signal into trading action:</p>
+<pre class="r"><code>for (i in 1:length(price)){
+  if (as.numeric(trade[i]) == 1){
+    addTxn(Portfolio = &quot;filter&quot;,
+           Symbol = &quot;MSFT&quot;, 
+           TxnDate = time(price[i]), 
+           TxnQty = 1000,
+           TxnPrice = price[i],
+           TxnFees = 0)    
+  }
+    if (as.numeric(trade[i]) == -1){
+    addTxn(Portfolio = &quot;filter&quot;,
+           Symbol = &quot;MSFT&quot;, 
+           TxnDate = time(price[i]), 
+           TxnQty = -1000,
+           TxnPrice = price[i],
+           TxnFees = 0)    
+  }
+}</code></pre>
+<p>Finally, we update the account and do charting:</p>
+<pre class="r"><code>updatePortf(Portfolio = &quot;filter&quot;)
+updateAcct(name = &quot;filter&quot;)
+updateEndEq(Account = &quot;filter&quot;)
+chart.Posn(&quot;filter&quot;, Symbol = &quot;MSFT&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+</div>
+</div>
+<div id="simple-filter-rule" class="section level2">
+<h2>Simple Filter Rule</h2>
+<div id="step-1-initialization" class="section level3">
+<h3>Step 1: Initialization</h3>
+<p>We need to install standard packages and custom packages. After loading all the packages, we initialize are variables and then download data.</p>
+<p>Then we need to get the data and define initial variables.Download using <strong>getSybmols()</strong></p>
+<pre class="r"><code>options(&quot;getSymbols.warning4.0&quot;=FALSE)
+from =&quot;2003-01-01&quot;
+to =&quot;2012-12-31&quot;
+symbols = c(&quot;MSFT&quot;, &quot;IBM&quot;)
+getSymbols(symbols, from=from, to=to, 
+           adjust=TRUE)</code></pre>
+<p>Currency is USD for US stocks and the multiplier is always 1 for stocks.</p>
+<pre class="r"><code>currency(&quot;USD&quot;)
+stock(symbols, currency=&quot;USD&quot;, multiplier=1)</code></pre>
+<p>We first define our strategy, portfolio and account name.</p>
+<pre class="r"><code>strategy.st &lt;- &quot;filter&quot;
+portfolio.st &lt;- &quot;filter&quot;
+account.st &lt;- &quot;filter&quot;</code></pre>
+<p>Remove any old variables</p>
+<pre class="r"><code>rm.strat(&quot;filter&quot;)</code></pre>
+<p>After naming strategy, portfolio and account, we initialize them:</p>
+<pre class="r"><code>initEq=100000
+initDate=&quot;1990-01-01&quot;
+
+initPortf(name=portfolio.st, 
+          symbols=symbols, 
+          initDate=initDate, 
+          currency=&#39;USD&#39;)
+initAcct(name=account.st, 
+         portfolios=portfolio.st,    
+         initDate=initDate, 
+         currency=&#39;USD&#39;, 
+         initEq=initEq)
+initOrders(portfolio=portfolio.st, 
+           symbols=symbols,
+           initDate=initDate)
+
+strategy(strategy.st, store=TRUE)</code></pre>
+</div>
+<div id="step-2-define-indicator" class="section level3">
+<h3>Step 2: Define indicator</h3>
+<p>Indicator is just a function based on price. Since simple filter is not a standard technical indicator, we need to define it first.</p>
+<pre class="r"><code>filter &lt;- function(price) {
+  lagprice &lt;- lag(price,1)
+  temp&lt;-price/lagprice - 1
+  colnames(temp) &lt;- &quot;filter&quot;
+  return(temp)
+} </code></pre>
+<p>We add the simple filter as an indicator. Here the name is the indicator function we have defined. We need to specify what data to be used by the indicator. Since we have defined that the simple filter rule takes price as input, we need to tell the problem we are using the closing price. Note that the label filter is the variable assigned to this indicator, which implies it must be unique.</p>
+<pre class="r"><code>add.indicator(
+  strategy=strategy.st,
+  name = &quot;filter&quot;, 
+  arguments = list(price = quote(Cl(mktdata))), 
+  label= &quot;filter&quot;)</code></pre>
+<p>To check if the indicator is defined correctly, use <strong>applyindicators</strong> to see if it works. The function <strong>try()</strong> is to allow the program continue to run even if there is an error.</p>
+<pre class="r"><code>test &lt;-try(applyIndicators(strategy.st, 
+                           mktdata=OHLC(AAPL)))
+head(test, n=4)</code></pre>
+</div>
+<div id="step-3-trading-signals" class="section level3">
+<h3>Step 3: Trading Signals</h3>
+<p>Trading signals is generated from the trading indicators. For example, simple trading rule dictates that there is a buy signal when the filter exceeds certain threshold.</p>
+<p>In <strong>quantstrat</strong>, there are three ways one can use a signal. It is refer to as <strong>name</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>sigThreshold: more or less than a fixed value</li>
+<li>sigCrossover: when two signals cross over</li>
+<li>sigComparsion: compare two signals</li>
+</ol>
+<p>The <strong>column</strong> refers to the data for calculation of signal. There are five possible <strong>relationship</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>gt = greater than</li>
+<li>gte = greater than or equal to</li>
+<li>lt = less than</li>
+<li>lte = less than or equal to</li>
+<li>eq = equal to</li>
+</ol>
+<p>Buy Signal under simple trading rule with threshold <span class="math inline">\(\delta=0.05\)</span></p>
+<pre class="r"><code># enter when filter &gt; 1+\delta
+add.signal(strategy.st, 
+           name=&quot;sigThreshold&quot;,
+           arguments = list(threshold=0.05,   
+                            column=&quot;filter&quot;,
+                            relationship=&quot;gt&quot;,   
+                            cross=TRUE),
+           label=&quot;filter.buy&quot;)</code></pre>
+<p>Sell Signal under simple trading rule with threshold <span class="math inline">\(\delta=-0.05\)</span></p>
+<pre class="r"><code># exit when filter &lt; 1-delta
+add.signal(strategy.st, 
+           name=&quot;sigThreshold&quot;,
+           arguments = list(threshold=-0.05, 
+                            column=&quot;filter&quot;,
+                            relationship=&quot;lt&quot;,
+                            cross=TRUE),
+           label=&quot;filter.sell&quot;) </code></pre>
+</div>
+<div id="step-4.-trading-rules" class="section level3">
+<h3>Step 4. Trading Rules</h3>
+<p>While trading signals tell us buy or sell, but it does not specify the execution details.</p>
+<p>Trading rules will specify the following seven elements:</p>
+<ol style="list-style-type: decimal">
+<li>SigCol: Name of Signal</li>
+<li>SigVal: implement when there is signal (or reverse)</li>
+<li>Ordertype: market, stoplimit</li>
+<li>Orderside: long, short</li>
+<li>Pricemethod: market</li>
+<li>Replace: whether to replace other others</li>
+<li>Type: enter or exit the order</li>
+</ol>
+<p>Buy rule specifies that when a buy signal appears, place a buy market order with quantity size.</p>
+<pre class="r"><code>add.rule(strategy.st, 
+         name=&#39;ruleSignal&#39;, 
+         arguments = list(sigcol=&quot;filter.buy&quot;, 
+                          sigval=TRUE,  
+                          orderqty=1000,
+                          ordertype=&#39;market&#39;, 
+                          orderside=&#39;long&#39;,
+                          pricemethod=&#39;market&#39;,
+                          replace=FALSE), 
+         type=&#39;enter&#39;, 
+         path.dep=TRUE)</code></pre>
+<p>Sell rule specifies that when a sell signal appears, place a sell market order with quantity size.</p>
+<pre class="r"><code>add.rule(strategy.st, 
+         name=&#39;ruleSignal&#39;, 
+         arguments = list(sigcol=&quot;filter.sell&quot;,
+                          sigval=TRUE, 
+                          orderqty=-1000,  
+                          ordertype=&#39;market&#39;,  
+                          orderside=&#39;long&#39;, 
+                          pricemethod=&#39;market&#39;,  
+                          replace=FALSE), 
+         type=&#39;enter&#39;, 
+         path.dep=TRUE) </code></pre>
+</div>
+<div id="step-5.-evaluation-results" class="section level3">
+<h3>Step 5. Evaluation Results</h3>
+<p>We will apply the our trading strategy, and the we update the portfolio, account and equity.</p>
+<pre class="r"><code>out&lt;-try(applyStrategy(strategy=strategy.st,
+                       portfolios=portfolio.st))</code></pre>
+<pre><code>## [1] &quot;2003-01-21 08:00:00 IBM -1000 @ 69.9146713309017&quot;
+## [1] &quot;2005-04-18 08:00:00 IBM -1000 @ 67.691321496698&quot;
+## [1] &quot;2007-11-12 08:00:00 IBM -1000 @ 92.7608829720924&quot;
+## [1] &quot;2008-01-15 08:00:00 IBM 1000 @ 93.1083408368158&quot;
+## [1] &quot;2008-10-02 08:00:00 IBM -1000 @ 96.9042005511082&quot;
+## [1] &quot;2008-10-09 08:00:00 IBM -1000 @ 82.3417415861382&quot;
+## [1] &quot;2008-10-14 08:00:00 IBM 1000 @ 86.5976050312253&quot;
+## [1] &quot;2008-10-16 08:00:00 IBM -1000 @ 84.6732128420016&quot;
+## [1] &quot;2008-10-23 08:00:00 IBM -1000 @ 78.0396150349132&quot;
+## [1] &quot;2008-10-29 08:00:00 IBM 1000 @ 81.6015883244063&quot;
+## [1] &quot;2008-11-14 08:00:00 IBM 1000 @ 74.7358386209428&quot;
+## [1] &quot;2008-11-20 08:00:00 IBM -1000 @ 66.7440405789453&quot;
+## [1] &quot;2008-11-25 08:00:00 IBM 1000 @ 75.0335538924886&quot;
+## [1] &quot;2008-12-02 08:00:00 IBM -1000 @ 74.279956529227&quot;
+## [1] &quot;2008-12-09 08:00:00 IBM 1000 @ 76.9314887485928&quot;
+## [1] &quot;2009-01-22 08:00:00 IBM 1000 @ 83.7975453378965&quot;
+## [1] &quot;2009-03-24 08:00:00 IBM 1000 @ 91.9519343052697&quot;
+## [1] &quot;2011-07-20 08:00:00 IBM 1000 @ 179.10642184081&quot;
+## [1] &quot;2003-01-21 08:00:00 MSFT -1000 @ 10.8197639696167&quot;
+## [1] &quot;2003-02-19 08:00:00 MSFT 1000 @ 20.7490524234055&quot;
+## [1] &quot;2003-03-14 08:00:00 MSFT 1000 @ 21.0281876464217&quot;
+## [1] &quot;2003-04-03 08:00:00 MSFT 1000 @ 21.7640887521457&quot;
+## [1] &quot;2003-10-27 08:00:00 MSFT -1000 @ 22.889906865699&quot;
+## [1] &quot;2004-04-26 08:00:00 MSFT 1000 @ 23.170608064721&quot;
+## [1] &quot;2004-11-16 08:00:00 MSFT -1000 @ 23.1985091453065&quot;
+## [1] &quot;2006-05-01 08:00:00 MSFT -1000 @ 21.1026943697531&quot;
+## [1] &quot;2007-10-29 08:00:00 MSFT 1000 @ 30.6765128730564&quot;
+## [1] &quot;2008-02-04 08:00:00 MSFT -1000 @ 26.8783911230083&quot;
+## [1] &quot;2008-04-28 08:00:00 MSFT -1000 @ 25.9103071615352&quot;
+## [1] &quot;2008-07-21 08:00:00 MSFT -1000 @ 23.0005500775628&quot;
+## [1] &quot;2008-09-18 08:00:00 MSFT -1000 @ 22.7500449360055&quot;
+## [1] &quot;2008-09-30 08:00:00 MSFT -1000 @ 24.037954160413&quot;
+## [1] &quot;2008-10-01 08:00:00 MSFT 1000 @ 23.8488198695735&quot;
+## [1] &quot;2008-10-07 08:00:00 MSFT -1000 @ 20.9217554973638&quot;
+## [1] &quot;2008-10-14 08:00:00 MSFT 1000 @ 21.7053081139245&quot;
+## [1] &quot;2008-10-15 08:00:00 MSFT -1000 @ 20.4083934382378&quot;
+## [1] &quot;2008-10-17 08:00:00 MSFT 1000 @ 21.5522001313782&quot;
+## [1] &quot;2008-10-22 08:00:00 MSFT -1000 @ 19.3906765725354&quot;
+## [1] &quot;2008-10-29 08:00:00 MSFT 1000 @ 20.7146094033305&quot;
+## [1] &quot;2008-11-06 08:00:00 MSFT -1000 @ 18.8052618968231&quot;
+## [1] &quot;2008-11-17 08:00:00 MSFT -1000 @ 17.4002718987976&quot;
+## [1] &quot;2008-11-20 08:00:00 MSFT -1000 @ 15.8950903484207&quot;
+## [1] &quot;2008-11-24 08:00:00 MSFT 1000 @ 18.7603774354557&quot;
+## [1] &quot;2008-12-02 08:00:00 MSFT -1000 @ 17.3640024419997&quot;
+## [1] &quot;2008-12-09 08:00:00 MSFT 1000 @ 18.6787702509239&quot;
+## [1] &quot;2008-12-12 08:00:00 MSFT -1000 @ 17.5544179969251&quot;
+## [1] &quot;2008-12-17 08:00:00 MSFT 1000 @ 17.826438016173&quot;
+## [1] &quot;2009-01-08 08:00:00 MSFT -1000 @ 18.2435376760854&quot;
+## [1] &quot;2009-01-21 08:00:00 MSFT -1000 @ 17.5725509118512&quot;
+## [1] &quot;2009-01-23 08:00:00 MSFT -1000 @ 15.595867329838&quot;
+## [1] &quot;2009-03-06 08:00:00 MSFT -1000 @ 13.9499293968326&quot;
+## [1] &quot;2009-03-11 08:00:00 MSFT 1000 @ 15.6206352048257&quot;
+## [1] &quot;2009-03-24 08:00:00 MSFT 1000 @ 16.369256157409&quot;
+## [1] &quot;2009-03-27 08:00:00 MSFT 1000 @ 16.5518459433669&quot;
+## [1] &quot;2009-04-01 08:00:00 MSFT 1000 @ 17.6291310669443&quot;
+## [1] &quot;2009-04-27 08:00:00 MSFT 1000 @ 18.624251288965&quot;
+## [1] &quot;2009-07-27 08:00:00 MSFT -1000 @ 21.2323467096564&quot;
+## [1] &quot;2009-10-26 08:00:00 MSFT 1000 @ 26.4979519060214&quot;
+## [1] &quot;2010-09-14 08:00:00 MSFT 1000 @ 23.5668456416348&quot;
+## [1] &quot;2011-08-11 08:00:00 MSFT -1000 @ 24.161608834081&quot;
+## [1] &quot;2012-01-23 08:00:00 MSFT 1000 @ 28.912330972876&quot;</code></pre>
+<p>Now we can update the portfolio, account and equity.</p>
+<pre class="r"><code>updatePortf(portfolio.st)</code></pre>
+<pre><code>## [1] &quot;filter&quot;</code></pre>
+<pre class="r"><code>updateAcct(portfolio.st)</code></pre>
+<pre><code>## [1] &quot;filter&quot;</code></pre>
+<pre class="r"><code>updateEndEq(account.st)</code></pre>
+<pre><code>## [1] &quot;filter&quot;</code></pre>
+<p>We can visualize the trading position, profit and loss, and drawdown in graph.</p>
+<pre class="r"><code>for(symbol in symbols) {
+  chart.Posn(Portfolio=portfolio.st,
+              Symbol=symbol,
+              log=TRUE)
+}</code></pre>
+<p><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-31-1.png" width="672" /><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-31-2.png" width="672" /></p>
+<p>We can also look at the details of the trading statistics of trading strategies such as the number for trades, and profitability of trades.</p>
+<pre class="r"><code>tstats &lt;- tradeStats(portfolio.st)
+t(tstats) #transpose tstats</code></pre>
+<pre><code>##                    IBM           MSFT         
+## Portfolio          &quot;filter&quot;      &quot;filter&quot;     
+## Symbol             &quot;IBM&quot;         &quot;MSFT&quot;       
+## Num.Txns           &quot;18&quot;          &quot;43&quot;         
+## Num.Trades         &quot; 9&quot;          &quot;20&quot;         
+## Net.Trading.PL     &quot;-129514.67&quot;  &quot; -44813.39&quot; 
+## Avg.Trade.PL       &quot;-14390.519&quot;  &quot; -1240.858&quot; 
+## Med.Trade.PL       &quot;-3391.6402&quot;  &quot;  637.4789&quot; 
+## Largest.Winner     &quot;7730.306&quot;    &quot;2144.921&quot;   
+## Largest.Loser      &quot;-101634.719&quot; &quot;  -9929.288&quot;
+## Gross.Profits      &quot;12637.14&quot;    &quot;13124.34&quot;   
+## Gross.Losses       &quot;-142151.81&quot;  &quot; -37941.49&quot; 
+## Std.Dev.Trade.PL   &quot;33664.545&quot;   &quot; 3795.541&quot;  
+## Std.Err.Trade.PL   &quot;11221.5151&quot;  &quot;  848.7089&quot; 
+## Percent.Positive   &quot;44.44444&quot;    &quot;65.00000&quot;   
+## Percent.Negative   &quot;55.55556&quot;    &quot;35.00000&quot;   
+## Profit.Factor      &quot;0.08889891&quot;  &quot;0.34590998&quot; 
+## Avg.Win.Trade      &quot;3159.285&quot;    &quot;1009.565&quot;   
+## Med.Win.Trade      &quot;2183.3104&quot;   &quot; 994.9941&quot;  
+## Avg.Losing.Trade   &quot;-28430.363&quot;  &quot; -5420.214&quot; 
+## Med.Losing.Trade   &quot;-14480.231&quot;  &quot; -5107.931&quot; 
+## Avg.Daily.PL       &quot;-14390.519&quot;  &quot; -1240.858&quot; 
+## Med.Daily.PL       &quot;-3391.6402&quot;  &quot;  637.4789&quot; 
+## Std.Dev.Daily.PL   &quot;33664.545&quot;   &quot; 3795.541&quot;  
+## Std.Err.Daily.PL   &quot;11221.5151&quot;  &quot;  848.7089&quot; 
+## Ann.Sharpe         &quot;-6.785846&quot;   &quot;-5.189775&quot;  
+## Max.Drawdown       &quot;-167086.24&quot;  &quot; -90367.58&quot; 
+## Profit.To.Max.Draw &quot;-0.7751367&quot;  &quot;-0.4959011&quot; 
+## Avg.WinLoss.Ratio  &quot;0.1111236&quot;   &quot;0.1862592&quot;  
+## Med.WinLoss.Ratio  &quot;0.1507787&quot;   &quot;0.1947940&quot;  
+## Max.Equity         &quot;36050.15&quot;    &quot;28733.70&quot;   
+## Min.Equity         &quot;-131036.09&quot;  &quot; -61633.88&quot; 
+## End.Equity         &quot;-129514.67&quot;  &quot; -44813.39&quot;</code></pre>
+<p>Then we can evaluate the performance using <strong>PerfomanceAnalytics</strong> package to see how is the return of the trading strategy.</p>
+<pre class="r"><code>rets &lt;- PortfReturns(Account = account.st)
+rownames(rets) &lt;- NULL
+tab &lt;- table.Arbitrary(rets,
+                       metrics=c(
+                         &quot;Return.cumulative&quot;,
+                         &quot;Return.annualized&quot;,
+                         &quot;SharpeRatio.annualized&quot;,
+                         &quot;CalmarRatio&quot;),
+                       metricsNames=c(
+                         &quot;Cumulative Return&quot;,
+                         &quot;Annualized Return&quot;,
+                         &quot;Annualized Sharpe Ratio&quot;,
+                         &quot;Calmar Ratio&quot;))
+tab</code></pre>
+<pre><code>##                         IBM.DailyEqPL MSFT.DailyEqPL
+## Cumulative Return          -0.8776990    -0.48531918
+## Annualized Return          -0.1897894    -0.06436181
+## Annualized Sharpe Ratio    -0.4801946    -0.31095346
+## Calmar Ratio               -0.2135370    -0.10181890</code></pre>
+<p>We can visualize the performance of the trading rule</p>
+<pre class="r"><code>charts.PerformanceSummary(rets, colorset = bluefocus)</code></pre>
+<p><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+</div>
+</div>
+<div id="buy-and-hold-1" class="section level2">
+<h2>Buy and Hold</h2>
+<p>We want to compare buy and hold strategy.</p>
+<p>We first get the data</p>
+<pre class="r"><code>getSymbols(&quot;SPY&quot;, from=from, to=to, adjust=TRUE)</code></pre>
+<div id="step-1-initialization-1" class="section level3">
+<h3>Step 1: Initialization</h3>
+<pre class="r"><code>rm.strat(&quot;buyHold&quot;)
+
+#Initial Setup
+initPortf(&quot;buyHold&quot;, &quot;SPY&quot;, initDate = initDate)
+initAcct(&quot;buyHold&quot;, portfolios = &quot;buyHold&quot;,
+         initDate = initDate, initEq = initEq)</code></pre>
+</div>
+<div id="steps-2-4-applying-trading-rule" class="section level3">
+<h3>Steps 2-4: Applying trading rule</h3>
+<p>Since buy and sell are not given by trading rule, we directly add transaction to it.</p>
+<p>We first add the transaction to buy at the beginning:</p>
+<pre class="r"><code>FirstDate &lt;- first(time(SPY))
+# Enter order on the first date
+BuyDate &lt;- FirstDate
+equity = getEndEq(&quot;buyHold&quot;, FirstDate)
+FirstPrice &lt;- as.numeric(Cl(SPY[BuyDate,]))
+UnitSize = as.numeric(trunc(equity/FirstPrice))
+addTxn(&quot;buyHold&quot;, Symbol = &quot;SPY&quot;, 
+       TxnDate = BuyDate, TxnPrice = FirstPrice,
+       TxnQty = UnitSize, TxnFees = 0)</code></pre>
+<p>We first add the transaction to sell at the end:</p>
+<pre class="r"><code>LastDate &lt;- last(time(SPY))
+# Exit order on the Last Date
+LastPrice &lt;- as.numeric(Cl(SPY[LastDate,]))
+addTxn(&quot;buyHold&quot;, Symbol = &quot;SPY&quot;, 
+       TxnDate = LastDate, TxnPrice = LastPrice,
+       TxnQty = -UnitSize , TxnFees = 0)</code></pre>
+</div>
+<div id="step-5-evaluation" class="section level3">
+<h3>Step 5: Evaluation</h3>
+<p>After updates, we can plot the trading position.</p>
+<pre class="r"><code>updatePortf(Portfolio = &quot;buyHold&quot;)</code></pre>
+<pre><code>## [1] &quot;buyHold&quot;</code></pre>
+<pre class="r"><code>updateAcct(name = &quot;buyHold&quot;)</code></pre>
+<pre><code>## [1] &quot;buyHold&quot;</code></pre>
+<pre class="r"><code>updateEndEq(Account = &quot;buyHold&quot;)</code></pre>
+<pre><code>## [1] &quot;buyHold&quot;</code></pre>
+<pre class="r"><code>chart.Posn(&quot;buyHold&quot;, Symbol = &quot;SPY&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
+<p>Now we are ready to compare buy-hold and the simple trading rule.</p>
+<pre class="r"><code># Compare strategy and market
+rets &lt;- PortfReturns(Account = account.st)
+rets.bh &lt;- PortfReturns(Account = &quot;buyHold&quot;)
+returns &lt;- cbind(rets, rets.bh)
+charts.PerformanceSummary(
+  returns, geometric = FALSE,
+  wealth.index = TRUE, 
+  main = &quot;Strategy vs. Market&quot;)</code></pre>
+<p><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
+</div>
+</div>
+<div id="sma-rule" class="section level2">
+<h2>SMA Rule</h2>
+<p>We will show how to apply the following SMA Rule:</p>
+<ul>
+<li><p>Buy every day when SMA30 SMA200</p></li>
+<li><p>Sell everything when SMA30 SMA200</p></li>
+</ul>
+<div id="step-1-initialization-2" class="section level3">
+<h3>Step 1: Initialization</h3>
+<p>We first initialize the setup.</p>
+<pre class="r"><code>options(&quot;getSymbols.warning4.0&quot;=FALSE)
+from =&quot;2012-01-01&quot;
+to =&quot;2012-12-31&quot;
+symbols = c(&quot;IBM&quot;,&quot;MSFT&quot;)
+getSymbols(symbols, from=from, to=to, 
+           adjust=TRUE)</code></pre>
+<p>Now we initilized setup:</p>
+<pre class="r"><code>currency(&quot;USD&quot;)
+strategy.st &lt;- portfolio.st &lt;- account.st &lt;- &quot;SMA&quot;
+rm.strat(strategy.st)
+
+initPortf(portfolio.st, symbols)
+initAcct(account.st, portfolios=portfolio.st, 
+         initEq = initEq)
+initOrders(portfolio.st)
+strategy(strategy.st, store=TRUE)</code></pre>
+</div>
+<div id="step-2-indicator" class="section level3">
+<h3>Step 2: Indicator</h3>
+<p>Now we add two indicators: SMA30 and SMA200. Here, the argument is different from simple trading rule. For the SMA function, we need to tell the price vector and the number of period.</p>
+<pre class="r"><code>add.indicator(
+  strategy.st, name=&quot;SMA&quot;,
+  arguments=list(x=quote(Cl(mktdata)), n=30),
+  label=&quot;sma30&quot;)
+
+add.indicator(
+  strategy.st, name=&quot;SMA&quot;,
+  arguments=list(x=quote(Cl(mktdata)), n=200),
+  label=&quot;sma200&quot;)</code></pre>
+</div>
+<div id="step-3-signals" class="section level3">
+<h3>Step 3: Signals</h3>
+<p>Now we add two signals: Buy signal appears when SMA30 is greater than SMA200. Sell signals appears when SMA30 is less than SMA200. Hence, this is different from simple trading rule.</p>
+<p>Here, we are going to do signal comparison so that we set name to sigComparison. We will compare two signals: sma30 and sma200. Then the relationship is greater than for buy and less than for less. We name the former to be a buy signal and the latter for a sell signal.</p>
+<pre class="r"><code># Bull market if SMA30&gt;SMA200
+add.signal(
+  strategy.st, 
+  name=&quot;sigComparison&quot;,
+  arguments=list(columns=c(&quot;sma30&quot;,&quot;sma200&quot;),
+                 relationship=&quot;gt&quot;),
+  label=&quot;buy&quot;)
+
+# Sell market if SMA30&lt;SMA200
+add.signal(
+  strategy.st, 
+  name=&quot;sigComparison&quot;,
+  arguments=list(columns=c(&quot;sma30&quot;,&quot;sma200&quot;), 
+                 relationship=&quot;lt&quot;), 
+  label=&quot;sell&quot;)</code></pre>
+<p>Note that here we use <strong>SigComparsion</strong> instead of <strong>SigCrossover</strong>. It is because <strong>SigComparsion</strong> will generate signals all the time but <strong>SigCrossover</strong> will generate signal only at cross.</p>
+</div>
+<div id="step-4-rules" class="section level3">
+<h3>Step 4: Rules</h3>
+<p>We will consider buy and sell rules using market order. Note that we sell everything when sell signal arise. Hence, the order quantity is all and the type is exit.</p>
+<pre class="r"><code># Buy Rule
+add.rule(strategy.st, 
+         name=&#39;ruleSignal&#39;, 
+         arguments = list(sigcol=&quot;buy&quot;, 
+                          sigval=TRUE,  
+                          orderqty=1000, 
+                          ordertype=&#39;market&#39;, 
+                          orderside=&#39;long&#39;, 
+                          pricemethod=&#39;market&#39;, 
+                          replace=FALSE), 
+         type=&#39;enter&#39;, 
+         path.dep=TRUE)
+
+# Sell Rule
+add.rule(strategy.st, 
+         name=&#39;ruleSignal&#39;, 
+         arguments = list(sigcol=&quot;sell&quot;, 
+                          sigval=TRUE,  
+                          orderqty=&#39;all&#39;, 
+                          ordertype=&#39;market&#39;, 
+                          orderside=&#39;long&#39;, 
+                          pricemethod=&#39;market&#39;, 
+                          replace=FALSE), 
+         type=&#39;exit&#39;, 
+         path.dep=TRUE) </code></pre>
+</div>
+<div id="step-5-evaluation-1" class="section level3">
+<h3>Step 5: Evaluation</h3>
+<p>We first try to apply the trading rule.</p>
+<pre class="r"><code>out&lt;-try(applyStrategy(strategy.st, 
+                       portfolios=portfolio.st))</code></pre>
+<pre><code>## [1] &quot;2012-10-17 08:00:00 IBM 1000 @ 199.755777809092&quot;
+## [1] &quot;2012-10-18 08:00:00 IBM 1000 @ 194.1104863151&quot;
+## [1] &quot;2012-10-19 08:00:00 IBM 1000 @ 192.517452197251&quot;
+## [1] &quot;2012-10-22 08:00:00 IBM 1000 @ 193.552913521349&quot;
+## [1] &quot;2012-10-23 08:00:00 IBM 1000 @ 190.416645336717&quot;
+## [1] &quot;2012-10-24 08:00:00 IBM 1000 @ 189.888955759662&quot;
+## [1] &quot;2012-10-25 08:00:00 IBM 1000 @ 190.765126217072&quot;
+## [1] &quot;2012-10-26 08:00:00 IBM 1000 @ 192.42784735108&quot;
+## [1] &quot;2012-10-31 08:00:00 IBM 1000 @ 193.682352036262&quot;
+## [1] &quot;2012-11-01 08:00:00 IBM 1000 @ 196.290930643838&quot;
+## [1] &quot;2012-11-02 08:00:00 IBM 1000 @ 192.58713921341&quot;
+## [1] &quot;2012-11-05 08:00:00 IBM 1000 @ 193.294051426163&quot;
+## [1] &quot;2012-11-06 08:00:00 IBM 1000 @ 194.220007&quot;
+## [1] &quot;2012-11-07 08:00:00 IBM 1000 @ 191.160004&quot;
+## [1] &quot;2012-11-08 08:00:00 IBM 1000 @ 190.100006&quot;
+## [1] &quot;2012-11-09 08:00:00 IBM 1000 @ 189.639999&quot;
+## [1] &quot;2012-11-12 08:00:00 IBM 1000 @ 189.25&quot;
+## [1] &quot;2012-11-13 08:00:00 IBM 1000 @ 188.320007&quot;
+## [1] &quot;2012-11-14 08:00:00 IBM 1000 @ 185.509995&quot;
+## [1] &quot;2012-11-15 08:00:00 IBM 1000 @ 185.850006&quot;
+## [1] &quot;2012-11-16 08:00:00 IBM 1000 @ 186.940002&quot;
+## [1] &quot;2012-11-19 08:00:00 IBM -21000 @ 190.350006&quot;
+## [1] &quot;2012-10-17 08:00:00 MSFT 1000 @ 29.3488341516242&quot;
+## [1] &quot;2012-10-18 08:00:00 MSFT 1000 @ 29.2595676739748&quot;
+## [1] &quot;2012-10-19 08:00:00 MSFT 1000 @ 28.4065758956973&quot;
+## [1] &quot;2012-10-22 08:00:00 MSFT -3000 @ 27.7717930464845&quot;</code></pre>
+<p>Then we can update the accounts.</p>
+<pre class="r"><code>updatePortf(portfolio.st)
+updateAcct(portfolio.st)
+updateEndEq(account.st)</code></pre>
+<p>We can also plot the trading positions.</p>
+<pre class="r"><code>for(symbol in symbols) {
+  chart.Posn(Portfolio=portfolio.st,
+             Symbol=symbol,log=TRUE)
+}</code></pre>
+<p><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-45-1.png" width="672" /><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-45-2.png" width="672" /></p>
+</div>
+</div>
+<div id="sma-rule-with-volatility-filter" class="section level2">
+<h2>SMA rule with volatility filter</h2>
+<p>We will consider the following rule:</p>
+<ul>
+<li>Buy every day when
+<ul>
+<li>SMA30 SMA200 and</li>
+<li>52 period standard deviation of close prices is less than its median over the last N periods.</li>
+</ul></li>
+<li>Sell everything when
+<ul>
+<li>SMA30  SMA200</li>
+</ul></li>
+</ul>
+<div id="step-1-initialization-3" class="section level3">
+<h3>Step 1: Initialization</h3>
+<p>We first download data</p>
+<pre class="r"><code>from =&quot;2009-01-01&quot;
+to =&quot;2012-12-31&quot;
+symbols = c(&quot;IBM&quot;)
+currency(&quot;USD&quot;)
+getSymbols(symbols, from=from, to=to, adjust=TRUE)
+stock(symbols, currency=&quot;USD&quot;, multiplier=1)
+initEq=10^6</code></pre>
+<p>We first initialize the setup.</p>
+<pre class="r"><code>strategy.st &lt;- portfolio.st &lt;- account.st &lt;- &quot;SMAv&quot;
+rm.strat(&quot;SMAv&quot;)
+
+initPortf(portfolio.st, symbols=symbols,
+          initDate=initDate, currency=&#39;USD&#39;)
+initAcct(account.st, portfolios=portfolio.st, 
+         initDate=initDate, currency=&#39;USD&#39;,
+         initEq=initEq)
+initOrders(portfolio.st, initDate=initDate)
+strategy(strategy.st, store=TRUE)</code></pre>
+</div>
+<div id="step-2-indicator-1" class="section level3">
+<h3>Step 2: Indicator</h3>
+<p>Besides SMA, we will need a new indicator to give buy signal. Since it is combination of SMA and volatility, we need to construct our own indicator, RB:</p>
+<pre class="r"><code>RB &lt;- function(x,n){
+  x &lt;- x
+  sd &lt;- runSD(x, n, sample= FALSE)
+  med &lt;- runMedian(sd,n)
+  mavg &lt;- SMA(x,n)
+  signal &lt;- ifelse(sd &lt; med &amp; x &gt; mavg,1,0)
+  colnames(signal) &lt;- &quot;RB&quot;
+  reclass(signal,x)
+  }</code></pre>
+<p>Now we are ready to define our indicators:</p>
+<pre class="r"><code>add.indicator(
+  strategy.st, name=&quot;SMA&quot;,
+  arguments=list(x=quote(Cl(mktdata)), n=30),
+  label=&quot;sma30&quot;)
+
+add.indicator(
+  strategy.st, name=&quot;SMA&quot;,
+  arguments=list(x=quote(Cl(mktdata)), n=200),
+  label=&quot;sma200&quot;)
+
+add.indicator(
+  strategy.st, name=&quot;RB&quot;,
+  arguments=list(x=quote(Cl(mktdata)), n=200),
+  label=&quot;RB&quot;)</code></pre>
+</div>
+<div id="step-3-signals-1" class="section level3">
+<h3>Step 3: Signals</h3>
+<p>Now we add two signals: Buy signal appears when RB is greater than or equal to 1. Sell signals appears when SMA30 is less than SMA200. Hence, this is different from simple trading rule. Here, we are going to do signal comparison. There are two price lists: sma200 and sma30. Then the relationship is greater than for buy and less than for less.</p>
+<pre class="r"><code># Bull market if RB&gt;=1
+add.signal(strategy.st, 
+           name=&quot;sigThreshold&quot;, 
+           arguments = list(threshold=1, column=&quot;RB&quot;,
+                            relationship=&quot;gte&quot;,
+                            cross=TRUE),
+           label=&quot;buy&quot;)
+
+# Sell market if SMA30&lt;SMA200
+add.signal(strategy.st, 
+           name=&quot;sigComparison&quot;,
+           arguments=list(columns=c(&quot;sma30&quot;,&quot;sma200&quot;), 
+                          relationship=&quot;lt&quot;), 
+           label=&quot;sell&quot;)</code></pre>
+</div>
+<div id="step-4-rules-1" class="section level3">
+<h3>Step 4: Rules</h3>
+<p>We now consider buy and sell rules using market order. Note that this is the same as the case for simple SMA rule.</p>
+<pre class="r"><code># Buy Rule
+add.rule(strategy.st, 
+         name=&#39;ruleSignal&#39;, 
+         arguments = list(sigcol=&quot;buy&quot;, 
+                          sigval=TRUE,  
+                          orderqty=1000, 
+                          ordertype=&#39;market&#39;, 
+                          orderside=&#39;long&#39;, 
+                          pricemethod=&#39;market&#39;, 
+                          replace=FALSE), 
+         type=&#39;enter&#39;, 
+         path.dep=TRUE)
+
+# Sell Rule
+add.rule(strategy.st, 
+         name=&#39;ruleSignal&#39;, 
+         arguments = list(sigcol=&quot;sell&quot;, 
+                          sigval=TRUE,  
+                          orderqty=&#39;all&#39;, 
+                          ordertype=&#39;market&#39;, 
+                          orderside=&#39;long&#39;, 
+                          pricemethod=&#39;market&#39;, 
+                          replace=FALSE), 
+         type=&#39;exit&#39;, 
+         path.dep=TRUE) </code></pre>
+</div>
+<div id="step-5-evaluation-2" class="section level3">
+<h3>Step 5: Evaluation</h3>
+<p>We first try to apply the trading rule.</p>
+<pre class="r"><code>out&lt;-try(applyStrategy(strategy.st,
+                       portfolios=portfolio.st))</code></pre>
+<pre><code>## [1] &quot;2010-09-07 08:00:00 IBM 1000 @ 121.265927698413&quot;
+## [1] &quot;2010-09-13 08:00:00 IBM 1000 @ 124.789816471828&quot;
+## [1] &quot;2011-07-14 08:00:00 IBM 1000 @ 169.919478248927&quot;
+## [1] &quot;2011-08-08 08:00:00 IBM 1000 @ 162.813574456635&quot;
+## [1] &quot;2011-08-24 08:00:00 IBM 1000 @ 163.342502099495&quot;
+## [1] &quot;2011-09-13 08:00:00 IBM 1000 @ 160.080743434437&quot;
+## [1] &quot;2012-07-06 08:00:00 IBM 1000 @ 189.765720727769&quot;
+## [1] &quot;2012-07-20 08:00:00 IBM 1000 @ 190.796779800297&quot;
+## [1] &quot;2012-07-26 08:00:00 IBM -8000 @ 192.283894241252&quot;
+## [1] &quot;2012-07-27 08:00:00 IBM 1000 @ 194.702935714691&quot;
+## [1] &quot;2012-07-30 08:00:00 IBM -1000 @ 194.990438558152&quot;</code></pre>
+<p>Then we can update the accounts.</p>
+<pre class="r"><code>updatePortf(portfolio.st)
+updateAcct(portfolio.st)
+updateEndEq(account.st)</code></pre>
+<p>We can also plot the trading positions.</p>
+<pre class="r"><code>chart.Posn(Portfolio=portfolio.st,
+           Symbol=&quot;IBM&quot;,
+           log=TRUE)</code></pre>
+<p><img src="/r/ta-with-r-Ch8_files/figure-html/unnamed-chunk-53-1.png" width="672" /></p>
+</div>
+</div>
+</div>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Sep 9, 2018
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.b82789348bc9b927834992b317787f39.js"></script>
+
+  </body>
+</html>
+
+
