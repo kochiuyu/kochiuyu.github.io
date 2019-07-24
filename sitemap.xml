@@ -3,6 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/courses/overview/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/fundamental/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/technical/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/factor/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/event/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/spread/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/inventory/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/sequential/</loc>
+    <lastmod>2019-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/behavioral/</loc>
+    <lastmod>2019-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2030-06-01T13:00:00+08:00</lastmod>
     <priority>0</priority>
@@ -253,6 +298,11 @@
     <loc>/tags/water-sharing/</loc>
     <lastmod>2019-01-01T00:00:00+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>

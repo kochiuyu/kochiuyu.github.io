@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chiu Yu Ko</title>
+    <link>/courses/</link>
+    <description>Recent content on Chiu Yu Ko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2019</copyright>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview</title>
+      <link>/courses/overview/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/overview/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.     </description>
+    </item>
+    
+    <item>
+      <title>Fundamental Analysis</title>
+      <link>/courses/fundamental/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/fundamental/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introudction   Dividend Discount Model   PE Ratio   Financial Statements   Ratio Analysis   Conclusion   </description>
+    </item>
+    
+    <item>
+      <title>Technical Analysis</title>
+      <link>/courses/technical/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/technical/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Trending Indicator   Momentum Indicator   Volatility Indicator   Conclusion   </description>
+    </item>
+    
+    <item>
+      <title>Factor model</title>
+      <link>/courses/factor/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/factor/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Single Factor   Three Factor   More Factor   Conclusion   </description>
+    </item>
+    
+    <item>
+      <title>Event Study</title>
+      <link>/courses/event/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/event/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Basic   Hypothesis Testing   Regression   Difference in Difference   Market Anomalies   Conclusion   </description>
+    </item>
+    
+    <item>
+      <title>Bid Ask Spread</title>
+      <link>/courses/spread/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/spread/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Liquidity   Formula   Roll   Roll - Math   Conclusion   </description>
+    </item>
+    
+    <item>
+      <title>Inventory Model</title>
+      <link>/courses/inventory/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/inventory/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Setup   Math Review   Garman Model   Ruin Probability   Bid-Ask Spread   Conclusion   </description>
+    </item>
+    
+    <item>
+      <title>Sequential Trade</title>
+      <link>/courses/sequential/</link>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/sequential/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Bayes Rule   Model   First Bid Ask Prices   Second Bid Ask Prices   General Model   Conclusion   </description>
+    </item>
+    
+    <item>
+      <title>Behavioral</title>
+      <link>/courses/behavioral/</link>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/behavioral/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Conditional Normal   Overconfidence   Self-Attribution   Conclusion   </description>
+    </item>
+    
+  </channel>
+</rss>
