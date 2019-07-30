@@ -22,7 +22,7 @@
 Basic TikZ technique to draw:
  Straight Line Node Curve Shape Fill  Setup Loading Package To load the TikZ package, we just need to use the function \usepackage{tikz}
 \documentclass{article} \usepacakage{tikz} \begin{document} ... \end{document}  TikZ Environment First, we need to tell which part of code should be included in the drawing by using begin{tikzpicture} and \end{tikzpiture}.
-\begin{tikzpicture} ... \end{tikzpiture}  Straight line We first discuss simple straight line and then we discuss its decoration.</description>
+\begin{tikzpicture} ... \end{tikzpiture}    Straight line We first discuss simple straight line and then we discuss its decoration.</description>
     </item>
     
     <item>
@@ -104,7 +104,7 @@ Beamer package to make slides:
       
       <guid>/tikz/latexprogramming/</guid>
       <description>Learning Objectives:
- Variable: \newcommand, newenvironment Conditional: if Iteration: for loop  Newcommand Basic Newcommand \newcommand\NUS{National University of Singapore} I like \NUS{}. Do you like \NUS{}?  Newcommand with argument \newcommand\poem[1]{#1 eats an apple.} \poem{Peter} \poem{Mary} \newcommand\poems[2]{#1 eats #2.} \poems{Peter}{apple} \poems{John}{banana}  Math newcommand \newcommand\sumx{\ensuremath{x_1+\cdots+x_n}} I like \sumx{}.  Math newcommand with argument \newcommand\sumint[1]{\ensuremath{1+\cdots+#1}} I like to do \sumint{3} and \sumint{n}. \newcommand\sumints[2]{\ensuremath{#1+\cdots+#2}} I like to do \sumints{1}{2} and \sumints{3}{n}.  New Environment Baisc newenvironment \newenvironment{important} {\begin{center}\color{red}} {\end{center}} I like think the following is important: \begin{important} I eat an apple.</description>
+ Variable: \newcommand, newenvironment Conditional: if Iteration: for loop  Newcommand Basic Newcommand \newcommand\NUS{National University of Singapore} I like \NUS{}. Do you like \NUS{}?  Math newcommand \newcommand\sumx{\ensuremath{x_1+\cdots+x_n}} I like \sumx{}.    Newcommand with argument \newcommand\poem[1]{#1 eats an apple.} \poem{Peter} \poem{Mary} \newcommand\poems[2]{#1 eats #2.} \poems{Peter}{apple} \poems{John}{banana}  Math newcommand with argument \newcommand\sumint[1]{\ensuremath{1+\cdots+#1}} I like to do \sumint{3} and \sumint{n}. \newcommand\sumints[2]{\ensuremath{#1+\cdots+#2}} I like to do \sumints{1}{2} and \sumints{3}{n}.</description>
     </item>
     
     <item>

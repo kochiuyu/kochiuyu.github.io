@@ -765,22 +765,22 @@ t(out)</code></pre>
 <pre><code>##                     [,1]                 
 ## Start               &quot;2008-01-02 08:00:00&quot;
 ## End                 &quot;2012-12-28 08:00:00&quot;
-## Init.Qty            &quot;19126&quot;              
-## Init.Pos            &quot;19126&quot;              
-## Max.Pos             &quot;19126&quot;              
+## Init.Qty            &quot;18122&quot;              
+## Init.Pos            &quot;18122&quot;              
+## Max.Pos             &quot;18122&quot;              
 ## End.Pos             &quot;0&quot;                  
-## Closing.Txn.Qty     &quot;-19126&quot;             
+## Closing.Txn.Qty     &quot;-18122&quot;             
 ## Num.Txns            &quot;2&quot;                  
-## Max.Notional.Cost   &quot;499991.1&quot;           
-## Net.Trading.PL      &quot;892354.3&quot;           
-## MAE                 &quot;-299317.2&quot;          
-## MFE                 &quot;1357293&quot;            
-## Pct.Net.Trading.PL  &quot;1.78474&quot;            
+## Max.Notional.Cost   &quot;499972.9&quot;           
+## Net.Trading.PL      &quot;819282.7&quot;           
+## MAE                 &quot;-299306.3&quot;          
+## MFE                 &quot;1309400&quot;            
+## Pct.Net.Trading.PL  &quot;1.638654&quot;           
 ## Pct.MAE             &quot;-0.598645&quot;          
-## Pct.MFE             &quot;2.714634&quot;           
-## tick.Net.Trading.PL &quot;4665.661&quot;           
-## tick.MAE            &quot;-29931721&quot;          
-## tick.MFE            &quot;135729299&quot;          
+## Pct.MFE             &quot;2.618941&quot;           
+## tick.Net.Trading.PL &quot;4520.929&quot;           
+## tick.MAE            &quot;-29930631&quot;          
+## tick.MFE            &quot;130939964&quot;          
 ## duration            &quot;157420800 secs&quot;</code></pre>
 </div>
 <div id="buy-filter-rule" class="section level3">
@@ -1007,13 +1007,12 @@ add.signal(strategy.st,
 ## [1] &quot;2009-01-22 08:00:00 IBM 1000 @ 83.7975453378965&quot;
 ## [1] &quot;2009-03-24 08:00:00 IBM 1000 @ 91.9519343052697&quot;
 ## [1] &quot;2011-07-20 08:00:00 IBM 1000 @ 179.10642184081&quot;
-## [1] &quot;2003-01-21 08:00:00 MSFT -1000 @ 10.8197639696167&quot;
-## [1] &quot;2003-02-19 08:00:00 MSFT 1000 @ 20.7490524234055&quot;
-## [1] &quot;2003-03-14 08:00:00 MSFT 1000 @ 21.0281876464217&quot;
-## [1] &quot;2003-04-03 08:00:00 MSFT 1000 @ 21.7640887521457&quot;
-## [1] &quot;2003-10-27 08:00:00 MSFT -1000 @ 22.889906865699&quot;
-## [1] &quot;2004-04-26 08:00:00 MSFT 1000 @ 23.170608064721&quot;
-## [1] &quot;2004-11-16 08:00:00 MSFT -1000 @ 23.1985091453065&quot;
+## [1] &quot;2003-01-21 08:00:00 MSFT -1000 @ 9.73380568942909&quot;
+## [1] &quot;2003-02-19 08:00:00 MSFT 1000 @ 18.666511126893&quot;
+## [1] &quot;2003-03-14 08:00:00 MSFT 1000 @ 18.9176301004257&quot;
+## [1] &quot;2003-04-03 08:00:00 MSFT 1000 @ 19.5796702696815&quot;
+## [1] &quot;2003-10-27 08:00:00 MSFT -1000 @ 20.5924922489539&quot;
+## [1] &quot;2004-04-26 08:00:00 MSFT 1000 @ 20.8450200245821&quot;
 ## [1] &quot;2006-05-01 08:00:00 MSFT -1000 @ 21.1026943697531&quot;
 ## [1] &quot;2007-10-29 08:00:00 MSFT 1000 @ 30.6765128730564&quot;
 ## [1] &quot;2008-02-04 08:00:00 MSFT -1000 @ 26.8783911230083&quot;
@@ -1070,36 +1069,36 @@ t(tstats) #transpose tstats</code></pre>
 <pre><code>##                    IBM           MSFT         
 ## Portfolio          &quot;filter&quot;      &quot;filter&quot;     
 ## Symbol             &quot;IBM&quot;         &quot;MSFT&quot;       
-## Num.Txns           &quot;18&quot;          &quot;43&quot;         
+## Num.Txns           &quot;18&quot;          &quot;42&quot;         
 ## Num.Trades         &quot; 9&quot;          &quot;20&quot;         
-## Net.Trading.PL     &quot;-129514.67&quot;  &quot; -44813.39&quot; 
-## Avg.Trade.PL       &quot;-14390.519&quot;  &quot; -1240.858&quot; 
-## Med.Trade.PL       &quot;-3391.6402&quot;  &quot;  637.4789&quot; 
-## Largest.Winner     &quot;7730.306&quot;    &quot;2144.921&quot;   
-## Largest.Loser      &quot;-101634.719&quot; &quot;  -9929.288&quot;
-## Gross.Profits      &quot;12637.14&quot;    &quot;13124.34&quot;   
-## Gross.Losses       &quot;-142151.81&quot;  &quot; -37941.49&quot; 
-## Std.Dev.Trade.PL   &quot;33664.545&quot;   &quot; 3795.541&quot;  
-## Std.Err.Trade.PL   &quot;11221.5151&quot;  &quot;  848.7089&quot; 
-## Percent.Positive   &quot;44.44444&quot;    &quot;65.00000&quot;   
-## Percent.Negative   &quot;55.55556&quot;    &quot;35.00000&quot;   
-## Profit.Factor      &quot;0.08889891&quot;  &quot;0.34590998&quot; 
-## Avg.Win.Trade      &quot;3159.285&quot;    &quot;1009.565&quot;   
-## Med.Win.Trade      &quot;2183.3104&quot;   &quot; 994.9941&quot;  
-## Avg.Losing.Trade   &quot;-28430.363&quot;  &quot; -5420.214&quot; 
-## Med.Losing.Trade   &quot;-14480.231&quot;  &quot; -5107.931&quot; 
-## Avg.Daily.PL       &quot;-14390.519&quot;  &quot; -1240.858&quot; 
-## Med.Daily.PL       &quot;-3391.6402&quot;  &quot;  637.4789&quot; 
-## Std.Dev.Daily.PL   &quot;33664.545&quot;   &quot; 3795.541&quot;  
-## Std.Err.Daily.PL   &quot;11221.5151&quot;  &quot;  848.7089&quot; 
-## Ann.Sharpe         &quot;-6.785846&quot;   &quot;-5.189775&quot;  
-## Max.Drawdown       &quot;-167086.24&quot;  &quot; -90367.58&quot; 
-## Profit.To.Max.Draw &quot;-0.7751367&quot;  &quot;-0.4959011&quot; 
-## Avg.WinLoss.Ratio  &quot;0.1111236&quot;   &quot;0.1862592&quot;  
-## Med.WinLoss.Ratio  &quot;0.1507787&quot;   &quot;0.1947940&quot;  
-## Max.Equity         &quot;36050.15&quot;    &quot;28733.70&quot;   
-## Min.Equity         &quot;-131036.09&quot;  &quot; -61633.88&quot; 
-## End.Equity         &quot;-129514.67&quot;  &quot; -44813.39&quot;</code></pre>
+## Net.Trading.PL     &quot;-129514.67&quot;  &quot; -36142.16&quot; 
+## Avg.Trade.PL       &quot;-14390.519&quot;  &quot; -1178.172&quot; 
+## Med.Trade.PL       &quot;-3391.6402&quot;  &quot;  257.6423&quot; 
+## Largest.Winner     &quot;7730.306&quot;    &quot;1715.447&quot;   
+## Largest.Loser      &quot;-101634.719&quot; &quot;  -8932.705&quot;
+## Gross.Profits      &quot;12637.141&quot;   &quot; 9785.414&quot;  
+## Gross.Losses       &quot;-142151.81&quot;  &quot; -33348.85&quot; 
+## Std.Dev.Trade.PL   &quot;33664.545&quot;   &quot; 3514.473&quot;  
+## Std.Err.Trade.PL   &quot;11221.52&quot;    &quot;  785.86&quot;   
+## Percent.Positive   &quot;44.44444&quot;    &quot;60.00000&quot;   
+## Percent.Negative   &quot;55.55556&quot;    &quot;40.00000&quot;   
+## Profit.Factor      &quot;0.08889891&quot;  &quot;0.29342583&quot; 
+## Avg.Win.Trade      &quot;3159.2852&quot;   &quot; 815.4511&quot;  
+## Med.Win.Trade      &quot;2183.3104&quot;   &quot; 780.7065&quot;  
+## Avg.Losing.Trade   &quot;-28430.363&quot;  &quot; -4168.606&quot; 
+## Med.Losing.Trade   &quot;-14480.231&quot;  &quot; -3272.433&quot; 
+## Avg.Daily.PL       &quot;-14390.519&quot;  &quot; -1178.172&quot; 
+## Med.Daily.PL       &quot;-3391.6402&quot;  &quot;  257.6423&quot; 
+## Std.Dev.Daily.PL   &quot;33664.545&quot;   &quot; 3514.473&quot;  
+## Std.Err.Daily.PL   &quot;11221.52&quot;    &quot;  785.86&quot;   
+## Ann.Sharpe         &quot;-6.785846&quot;   &quot;-5.321679&quot;  
+## Max.Drawdown       &quot;-167086.24&quot;  &quot; -72041.99&quot; 
+## Profit.To.Max.Draw &quot;-0.7751367&quot;  &quot;-0.5016819&quot; 
+## Avg.WinLoss.Ratio  &quot;0.1111236&quot;   &quot;0.1956172&quot;  
+## Med.WinLoss.Ratio  &quot;0.1507787&quot;   &quot;0.2385707&quot;  
+## Max.Equity         &quot;36050.15&quot;    &quot;24686.16&quot;   
+## Min.Equity         &quot;-131036.09&quot;  &quot; -47355.83&quot; 
+## End.Equity         &quot;-129514.67&quot;  &quot; -36142.16&quot;</code></pre>
 <p>Then we can evaluate the performance using <strong>PerfomanceAnalytics</strong> package to see how is the return of the trading strategy.</p>
 <pre class="r"><code>rets &lt;- PortfReturns(Account = account.st)
 rownames(rets) &lt;- NULL
@@ -1116,10 +1115,10 @@ tab &lt;- table.Arbitrary(rets,
                          &quot;Calmar Ratio&quot;))
 tab</code></pre>
 <pre><code>##                         IBM.DailyEqPL MSFT.DailyEqPL
-## Cumulative Return          -0.8776990    -0.48531918
-## Annualized Return          -0.1897894    -0.06436181
-## Annualized Sharpe Ratio    -0.4801946    -0.31095346
-## Calmar Ratio               -0.2135370    -0.10181890</code></pre>
+## Cumulative Return          -0.8776990    -0.39612665
+## Annualized Return          -0.1897894    -0.04926439
+## Annualized Sharpe Ratio    -0.4801946    -0.29236267
+## Calmar Ratio               -0.2135370    -0.09109193</code></pre>
 <p>We can visualize the performance of the trading rule</p>
 <pre class="r"><code>charts.PerformanceSummary(rets, colorset = bluefocus)</code></pre>
 <p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>

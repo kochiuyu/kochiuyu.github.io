@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2019</copyright>
-    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2019 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Excel Basic</title>
+      <link>/courses/spreadsheetbasic/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/spreadsheetbasic/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide, and the excel files used.   Introduction   Basics Operation   Sum SumProduct Average   Math and Stat Functions   Condition   Combine Conditions   Vlookup   Offset   Filter and Subtotal   Pivot Table   Text Functions   Addin - Analysis Toolpak   Addin - Solver    </description>
+    </item>
+    
+    <item>
+      <title>Latex Basic</title>
+      <link>/courses/latexbasic/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/latexbasic/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide and the tex files used in the presentation.   Introduction (3:20)   Hello World (2:47)   Title (4:05)   Sectioning (2:29)   Appendix (2:40)   Reference   List (5:14)   Font Size, Color and Alignment (5:35)   Line Spacing   Page Layout (3:17)   Inline math (2:30)   Displayed math (3:32)   Theorem (3:18)   Tabular (2:37)   Table (2:12)   Graphics (2:04)   Figure (1:46)   More Font Size (2:04)   Font Decoration (1:12)   Font Emphasis (1:54)   Paragraph Spacing (1:42)   Text Alignment (0:58)    </description>
+    </item>
     
     <item>
       <title>Overview</title>
@@ -18,7 +36,25 @@
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>/courses/overview/</guid>
-      <description> After purchasing through Gumroad, you can download pdf files of the slide.     </description>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Overview of the class    </description>
+    </item>
+    
+    <item>
+      <title>Latex Advanced</title>
+      <link>/courses/latexadvanced/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/latexadvanced/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide and the tex files used in the presentation.   Introduction   Newcommand   Newcommand with input   Newenvironment   Conditional   Loop   Beamer Introduciton   TikZ introduction   TikZ line basics   TikZ line decoration   TikZ line thickness   TikZ line color   TikZ line Cap   TikZ Node   TikZ Curve   TikZ Circle and Dot   TikZ Ellipse and Rectangle   TikZ Grid   TikZ Fill   TikZ For   TikZ Example    </description>
+    </item>
+    
+    <item>
+      <title>VBA Basic</title>
+      <link>/courses/vbabasic/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/vbabasic/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide, and the excel files used.   Introduction   Editor   Hello World Subroutine   ABC Function   EMA   VBA Object   Range   Application   Record Macro    </description>
     </item>
     
     <item>
@@ -27,7 +63,16 @@
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>/courses/fundamental/</guid>
-      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introudction   Dividend Discount Model   PE Ratio   Financial Statements   Ratio Analysis   Conclusion   </description>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introudction   Dividend Discount Model   PE Ratio   Financial Statements   Ratio Analysis   Conclusion    </description>
+    </item>
+    
+    <item>
+      <title>VBA Programming</title>
+      <link>/courses/vbaprogramming/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/vbaprogramming/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide, and the excel files used.   Introduction   Conditional If   PassFail   Grading   Select Case   SMA   SMA Rule   While Loop   For loop   RSI   Array Function   Bollinger Bands    </description>
     </item>
     
     <item>
@@ -36,7 +81,7 @@
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>/courses/technical/</guid>
-      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Trending Indicator   Momentum Indicator   Volatility Indicator   Conclusion   </description>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Trending Indicator   Momentum Indicator   Volatility Indicator   Conclusion    </description>
     </item>
     
     <item>
@@ -45,7 +90,7 @@
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>/courses/factor/</guid>
-      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Single Factor   Three Factor   More Factor   Conclusion   </description>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Single Factor   Three Factor   More Factor   Conclusion    </description>
     </item>
     
     <item>
@@ -54,7 +99,7 @@
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>/courses/event/</guid>
-      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Basic   Hypothesis Testing   Regression   Difference in Difference   Market Anomalies   Conclusion   </description>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Basic   Hypothesis Testing   Regression   Difference in Difference   Market Anomalies   Conclusion    </description>
     </item>
     
     <item>
@@ -63,7 +108,7 @@
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>/courses/spread/</guid>
-      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Liquidity   Formula   Roll   Roll - Math   Conclusion   </description>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Liquidity   Formula   Roll   Roll - Math   Conclusion    </description>
     </item>
     
     <item>
@@ -72,7 +117,7 @@
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>/courses/inventory/</guid>
-      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Setup   Math Review   Garman Model   Ruin Probability   Bid-Ask Spread   Conclusion   </description>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Setup   Math Review   Garman Model   Ruin Probability   Bid-Ask Spread   Conclusion    </description>
     </item>
     
     <item>
@@ -81,16 +126,16 @@
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0800</pubDate>
       
       <guid>/courses/sequential/</guid>
-      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Bayes Rule   Model   First Bid Ask Prices   Second Bid Ask Prices   General Model   Conclusion   </description>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Bayes Rule   Model   First Bid Ask Prices   Second Bid Ask Prices   General Model   Conclusion    </description>
     </item>
     
     <item>
-      <title>Behavioral</title>
+      <title>Behavioral Models</title>
       <link>/courses/behavioral/</link>
       <pubDate>Mon, 09 Sep 2019 00:00:00 +0800</pubDate>
       
       <guid>/courses/behavioral/</guid>
-      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Conditional Normal   Overconfidence   Self-Attribution   Conclusion   </description>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Conditional Normal   Overconfidence   Self-Attribution   Conclusion    </description>
     </item>
     
   </channel>

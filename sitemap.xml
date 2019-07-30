@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/courses/spreadsheetbasic/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/latexbasic/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/courses/overview/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
+    <loc>/courses/latexadvanced/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/vbabasic/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/courses/fundamental/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/vbaprogramming/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
@@ -175,6 +200,11 @@
   </url>
   
   <url>
+    <loc>/courses/</loc>
+    <lastmod>2019-08-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/vba/advanced-excel/</loc>
     <lastmod>2019-05-04T00:00:00+08:00</lastmod>
   </url>
@@ -298,11 +328,6 @@
     <loc>/tags/water-sharing/</loc>
     <lastmod>2019-01-01T00:00:00+08:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/courses/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>

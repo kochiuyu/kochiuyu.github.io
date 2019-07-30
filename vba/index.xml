@@ -32,7 +32,7 @@ Analysis Toolpak: Regression Analysis Toolpak lets you run multiple regressions 
       
       <guid>/vba/advanced-vba/</guid>
       <description>Learning Objectives:
- Conditional Statements Iterative Statements  Conditionals There are 4 main types of conditionals that we will use in VBA:
+ Conditional Statements Iterative Statements    Conditionals There are 4 main types of conditionals that we will use in VBA:
  If, If-else, If-ElseIf-else, and Select Case.  Relational Operator Conditional statement are executed based on logical statement (true/false). The most basic logical statement is by relational operators. VBA uses the same relational operator as those in Excel spreadsheet.
    Operator Meaning     &amp;gt; greater than   &amp;lt; less than   = equal to   &amp;gt;= greater than or equal to   &amp;lt;= less than or equal to    If How do conditionals work?</description>
     </item>
@@ -47,7 +47,7 @@ Analysis Toolpak: Regression Analysis Toolpak lets you run multiple regressions 
  Why Excel? Basic Excel Worksheet Functions  What is Excel? Why Excel? Excel is a spreadsheet program. It is widely used in the industry because they are simple, and also allow you to view data visually.
 Since Excel is widely used, it is usually the basic requirement for many jobs.
 Here, we will go into the basics of Excel, and how to use them.
-Cells The basic element of spreadsheet is a cell.</description>
+  Cells The basic element of spreadsheet is a cell.</description>
     </item>
     
     <item>
