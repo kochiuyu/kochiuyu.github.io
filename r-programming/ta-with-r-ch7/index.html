@@ -620,6 +620,11 @@ library(quantmod)</code></pre>
 <li><p>construct simple trading indicator and apply it into trading</p></li>
 <li><p>evaluate the performance of a trading rule based on return data</p></li>
 </ul>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/mHOlMJQ1BlU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 <div id="downloading-data" class="section level2">
 <h2>Downloading data</h2>
 <p>Use <strong>getSymbols</strong> to get data from yahoo or Google (default is yahoo)</p>
@@ -725,6 +730,11 @@ YearVoYa &lt;- apply.yearly(Vo(AAPL),sum)
 <p>In some case, we are interested in average than the sum. Then we can use apply and mean.</p>
 <pre class="r"><code>WeekAveVoClYa&lt;- apply.weekly(Vo(AAPL),mean)
 # weekly average volume</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/etoTLd4kR7A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 <div id="charting" class="section level2">
 <h2>Charting</h2>
@@ -740,25 +750,25 @@ YearVoYa &lt;- apply.yearly(Vo(AAPL),sum)
             type=&quot;line&quot;,
             subset=&#39;2007&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 <p>The bar chart displays stock price of AAPL in May to June 2007 by using the <strong>subset</strong> option.</p>
 <pre class="r"><code>chartSeries(AAPL,
             type=&quot;bar&quot;,
             subset=&#39;2007-05::2007-06&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 <p>The following candle stick chart displays stock price of AAPL in May only.</p>
 <pre class="r"><code>chartSeries(AAPL,
             type=&quot;candlesticks&quot;,
             subset=&#39;2007-05&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <p>Finally The following candle stick chart displays stock price of AAPL a few days in May.</p>
 <pre class="r"><code>chartSeries(AAPL,
             type=&quot;auto&quot;,
             subset=&#39;2007-05-10::2007-05-30&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 <!-- ### Bar Chart -->
 <!-- ```{r} -->
 <!-- barChart(AAPL,subset='2007-09') -->
@@ -767,6 +777,11 @@ YearVoYa &lt;- apply.yearly(Vo(AAPL),sum)
 <!-- ```{r} -->
 <!-- candleChart(AAPL,subset='2007-09') -->
 <!-- ``` -->
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/FVQN0sEC5As" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 <div id="technical-indicators" class="section level2">
 <h2>Technical Indicators</h2>
@@ -778,34 +793,34 @@ library(TTR)</code></pre>
 <h3>Simple Moving Average</h3>
 <pre class="r"><code>sma &lt;-SMA(Cl(AAPL),n=20)
 tail(sma,n=5)</code></pre>
-<pre><code>##                SMA
-## 2019-07-23 202.643
-## 2019-07-24 203.298
-## 2019-07-25 203.659
-## 2019-07-26 204.059
-## 2019-07-29 204.647</code></pre>
+<pre><code>##                 SMA
+## 2019-07-25 203.6590
+## 2019-07-26 204.0590
+## 2019-07-29 204.6470
+## 2019-07-30 205.0085
+## 2019-07-31 205.5240</code></pre>
 </div>
 <div id="exponential-moving-average" class="section level3">
 <h3>Exponential moving average</h3>
 <pre class="r"><code>ema &lt;-EMA(Cl(AAPL),n=20)
 tail(ema,n=5)</code></pre>
 <pre><code>##                 EMA
-## 2019-07-23 202.4606
-## 2019-07-24 203.0520
 ## 2019-07-25 203.4299
 ## 2019-07-26 203.8404
-## 2019-07-29 204.3965</code></pre>
+## 2019-07-29 204.3965
+## 2019-07-30 204.8140
+## 2019-07-31 205.5974</code></pre>
 </div>
 <div id="bollinger-band" class="section level3">
 <h3>Bollinger band</h3>
 <pre class="r"><code>bb &lt;-BBands(Cl(AAPL),s.d=2)
 tail(bb,n=5)</code></pre>
-<pre><code>##                  dn    mavg       up      pctB
-## 2019-07-23 196.5585 202.643 208.7275 1.0092469
-## 2019-07-24 197.5915 203.298 209.0045 0.9706909
-## 2019-07-25 197.9699 203.659 209.3481 0.7953875
-## 2019-07-26 198.4034 204.059 209.7146 0.8254313
-## 2019-07-29 199.2263 204.647 210.0677 0.9642364</code></pre>
+<pre><code>##                  dn     mavg       up      pctB
+## 2019-07-25 197.9699 203.6590 209.3481 0.7953875
+## 2019-07-26 198.4034 204.0590 209.7146 0.8254313
+## 2019-07-29 199.2263 204.6470 210.0677 0.9642364
+## 2019-07-30 199.4986 205.0085 210.5185 0.8422443
+## 2019-07-31 199.1085 205.5240 211.9395 1.0857640</code></pre>
 </div>
 <div id="momentum" class="section level3">
 <h3>Momentum</h3>
@@ -837,22 +852,27 @@ head(ROC,n=5)</code></pre>
              nSig=9, maType=SMA)
 tail(macd,n=5)</code></pre>
 <pre><code>##                macd   signal
-## 2019-07-23 1.178428 1.595421
-## 2019-07-24 1.250507 1.515830
 ## 2019-07-25 1.323582 1.453901
 ## 2019-07-26 1.319240 1.410081
-## 2019-07-29 1.448455 1.389803</code></pre>
+## 2019-07-29 1.448455 1.389803
+## 2019-07-30 1.481109 1.371400
+## 2019-07-31 1.524268 1.362328</code></pre>
 </div>
 <div id="rsi" class="section level3">
 <h3>RSI</h3>
 <pre class="r"><code>rsi = RSI(Cl(AAPL), n=14)
 tail(rsi,n=5)</code></pre>
 <pre><code>##                 rsi
-## 2019-07-23 64.28672
-## 2019-07-24 63.88881
 ## 2019-07-25 60.00658
 ## 2019-07-26 61.11691
-## 2019-07-29 64.01577</code></pre>
+## 2019-07-29 64.01577
+## 2019-07-30 61.71700
+## 2019-07-31 67.64034</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/UojVc8_rG44" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 </div>
 <div id="charting-with-indicators" class="section level2">
@@ -863,67 +883,72 @@ tail(rsi,n=5)</code></pre>
 <pre class="r"><code>chartSeries(AAPL,
             subset=&#39;2007-05::2009-01&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
 <pre class="r"><code>addSMA(n=30,on=1,col = &quot;blue&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-31-2.png" width="672" /></p>
 <pre class="r"><code>addSMA(n=200,on=1,col = &quot;red&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-27-3.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-31-3.png" width="672" /></p>
 </div>
 <div id="charting-ema" class="section level3">
 <h3>Charting EMA</h3>
 <pre class="r"><code>chartSeries(AAPL,
             subset=&#39;2007-05::2009-01&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
 <pre class="r"><code>addEMA(n=30,on=1,col = &quot;blue&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-28-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-32-2.png" width="672" /></p>
 <pre class="r"><code>addEMA(n=200,on=1,col = &quot;red&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-28-3.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-32-3.png" width="672" /></p>
 </div>
 <div id="charting-bollinger-band" class="section level3">
 <h3>Charting Bollinger band</h3>
 <pre class="r"><code>chartSeries(AAPL,
             subset=&#39;2007-05::2009-01&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
 <pre class="r"><code>addBBands(n=20,sd=2)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-29-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-33-2.png" width="672" /></p>
 </div>
 <div id="charting-momentum" class="section level3">
 <h3>Charting Momentum</h3>
 <pre class="r"><code>chartSeries(AAPL,
             subset=&#39;2007-05::2009-01&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
 <pre class="r"><code>addMomentum(n=1)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-30-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-34-2.png" width="672" /></p>
 </div>
 <div id="charting-roc" class="section level3">
 <h3>Charting ROC</h3>
 <pre class="r"><code>chartSeries(AAPL,
             subset=&#39;2007-05::2008-01&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
 <pre class="r"><code>addROC(n=7)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-31-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-35-2.png" width="672" /></p>
 </div>
 <div id="charting-macd" class="section level3">
 <h3>Charting MACD</h3>
 <pre class="r"><code>chartSeries(AAPL,
             subset=&#39;2007-05::2008-01&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
 <pre class="r"><code>addMACD(fast=12,slow=26,signal=9,type=&quot;EMA&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-32-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-36-2.png" width="672" /></p>
 </div>
 <div id="charting-rsi" class="section level3">
 <h3>Charting RSI</h3>
 <pre class="r"><code>chartSeries(AAPL,
             subset=&#39;2007-05::2009-01&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
 <pre class="r"><code>addRSI(n=14,maType=&quot;EMA&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-33-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-37-2.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/RcPsZgPv6XI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 <div id="charting-custom-ta" class="section level3">
 <h3>Charting Custom TA</h3>
@@ -931,9 +956,9 @@ tail(rsi,n=5)</code></pre>
 chartSeries(AAPL,
             subset=&#39;2007-05::2009-01&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
 <pre class="r"><code>addTA(sma, on=1, col=&quot;red&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-34-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-39-2.png" width="672" /></p>
 </div>
 </div>
 <div id="charting-price-changes-of-two-stocks" class="section level2">
@@ -946,11 +971,11 @@ m &lt;- NS(Cl(MSFT))-1
 chartSeries(a,
             subset = &#39;2007&#39;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
 <pre class="r"><code>addTA(g, on=1, col=&quot;red&quot;, lty=&quot;dotted&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-35-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-40-2.png" width="672" /></p>
 <pre class="r"><code>addTA(m, on=1, col=&quot;blue&quot;, lty=&quot;dashed&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-35-3.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-40-3.png" width="672" /></p>
 <p>The option <strong>lty</strong> is to make the line becomes other line styles where <strong>dotted</strong> means dotted line and <strong>dashed</strong> means dashed line.</p>
 <!-- ### Candle Sticks -->
 <!-- ```{r} -->
@@ -1020,18 +1045,18 @@ signal&lt;-reclass(signal,price)
 # Each point is now attached with time
 tail(signal, n=3)</code></pre>
 <pre><code>##            [,1]
-## 2019-07-25    0
-## 2019-07-26    1
-## 2019-07-29    0</code></pre>
+## 2019-07-29    0
+## 2019-07-30    0
+## 2019-07-31    0</code></pre>
 <p>We are now ready to chart the trading indicators:</p>
 <pre class="r"><code># Charting with Trading rule
 chartSeries(MSFT,
             type = &#39;line&#39;,
             subset=&quot;2009-08::2009-09-15&quot;,
             theme=chartTheme(&#39;white&#39;))</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-45-1.png" width="672" /></p>
 <pre class="r"><code>addTA(signal,type=&#39;S&#39;,col=&#39;red&#39;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-40-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-45-2.png" width="672" /></p>
 <p>We consider trading based on yesterday indicator:</p>
 <pre class="r"><code>trade &lt;- Lag(signal,1) # trade based on yesterday signal</code></pre>
 <p>To keep it simple, we evaluate using day trading:</p>
@@ -1046,7 +1071,17 @@ names(ret)&lt;-&quot;filter&quot;</code></pre>
 <p>Based on daily return, we can see the summary of performance using <strong>charts.PerformanceSummary()</strong> to evaluate the performance.</p>
 <pre class="r"><code>#Performance Summary
 charts.PerformanceSummary(ret, main=&quot;Naive Buy Rule&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-43-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-48-1.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/m_t9Ja99xOw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/GoRwJs6D0sc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 <div id="simple-fiter-buy-sell" class="section level3">
 <h3>Simple fiter buy-sell</h3>
@@ -1079,7 +1114,7 @@ trade1 &lt;- Lag(signal)
 ret1&lt;-dailyReturn(MSFT)*trade1
 names(ret1) &lt;- &#39;Naive&#39;
 charts.PerformanceSummary(ret1)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-45-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-52-1.png" width="672" /></p>
 </div>
 <div id="exercise" class="section level3 unnumbered">
 <h3>Exercise</h3>
@@ -1119,7 +1154,12 @@ names(ret2) &lt;- &#39;RSI&#39;</code></pre>
 <pre class="r"><code>retall &lt;- cbind(ret1, ret2)
 charts.PerformanceSummary(retall, 
                           main=&quot;Naive v.s. RSI&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-47-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-54-1.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/FyxmS4UDPJk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 <div id="more-efficient-code" class="section level3">
 <h3>More efficient code</h3>
@@ -1142,11 +1182,11 @@ for (i in (day+1): length(price)){
 }</code></pre>
 </div>
 </div>
-<div id="combining-two-indicators-ema-and-rsi" class="section level2">
-<h2>Combining two indicators: EMA and RSI</h2>
-<p>Test the following strategy using EMA and RSI based on day trading:</p>
+<div id="combining-two-indicators-filter-and-rsi" class="section level2">
+<h2>Combining two indicators: filter and RSI</h2>
+<p>Test the following strategy using filter and RSI based on day trading:</p>
 <ul>
-<li><p>Buy signal based on EMA rule.</p></li>
+<li><p>Buy signal based on filter rule.</p></li>
 <li><p>Sell signal based on RSI rule.</p></li>
 <li><p>Tie-breaking: buy-signal has priority</p></li>
 <li><p>We use 14-day RSI and use 70 as threshold for selling.</p></li>
@@ -1180,7 +1220,12 @@ retall &lt;- cbind(ret1, ret2, ret3)</code></pre>
 <pre class="r"><code>charts.PerformanceSummary(
   retall, main=&quot;Naive v.s. RSI v.s. Combine&quot;,
   colorset=bluefocus)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-51-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-59-1.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/Sp8pWmO5OvQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 <div id="exercise-1" class="section level3 unnumbered">
 <h3>Exercise</h3>
 <p>Test the following strategy based on EMA and RSI</p>
@@ -1189,6 +1234,11 @@ retall &lt;- cbind(ret1, ret2, ret3)</code></pre>
 <li><p>Sell signal based on RSI rule</p></li>
 <li><p>Day trading based on yesterday signal: buy at open and sell at close</p></li>
 </ul>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/PgK0UghE06o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 </div>
 <div id="trading-size" class="section level2">
@@ -1243,7 +1293,12 @@ for (i in (day+1):length(price)){
 ret3&lt;-reclass(return,price)
 
 charts.PerformanceSummary(ret3, main=&quot;Trade Size&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-54-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-64-1.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/TZo6wRI0Ku4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 <div id="non-day-trading" class="section level2">
 <h2>Non-Day Trading</h2>
@@ -1315,18 +1370,23 @@ return&lt;-reclass(return,price)</code></pre>
 <p>Performance Charts</p>
 <pre class="r"><code>charts.PerformanceSummary(return, 
                           main=&quot;Non-Day-Trading&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-59-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-70-1.png" width="672" /></p>
 <p>We can plot the equity line showing how the performance of the strategy:</p>
 <pre class="r"><code>chart_Series(equity, main=&quot;equity line&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-60-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-71-1.png" width="672" /></p>
 <p>We can check the cash account over time:</p>
 <pre class="r"><code>chart_Series(cash, name=&quot;Cash Holding&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-61-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-72-1.png" width="672" /></p>
 <!-- {r,echo=FALSE, out.width='.49\\linewidth', fig.width=3, fig.height=3,fig.show='hold',fig.align='center'}-->
 <!-- if we want side by side -->
 <p>Finall, We can stock holdings:</p>
 <pre class="r"><code>chart_Series(stock, name=&quot;Stock Holding&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-62-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch7_files/figure-html/unnamed-chunk-73-1.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/B-85G-IPP6g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 <div id="exercise-2" class="section level3 unnumbered">
 <h3>Exercise</h3>
 <p>Trading signal:</p>

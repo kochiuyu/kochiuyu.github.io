@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>R introduction</title>
+      <link>/courses/rintro/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/rintro/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide and the R files used in the presentation.   Overview   RStudio   Basic   Data Type   Data Structure   Vector   Dataframe   Matrix    </description>
+    </item>
+    
+    <item>
       <title>Latex Advanced</title>
       <link>/courses/latexadvanced/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
@@ -49,12 +58,39 @@
     </item>
     
     <item>
+      <title>R Working with data</title>
+      <link>/courses/rdata/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/rdata/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide and the R files used in the presentation.   Introduction   Function   Basic Data Management   dplyr   tidyr   time series    </description>
+    </item>
+    
+    <item>
+      <title>R Programming</title>
+      <link>/courses/rprogramming/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/rprogramming/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide and the R files used in the presentation.   Introduction   Conditions   Conditonal Statement   Looping   Technical Analysis    </description>
+    </item>
+    
+    <item>
       <title>VBA Basic</title>
       <link>/courses/vbabasic/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>/courses/vbabasic/</guid>
       <description> After purchasing through Gumroad, you can download pdf files of the slide, and the excel files used.   Introduction   Editor   Hello World Subroutine   ABC Function   EMA   VBA Object   Range   Application   Record Macro    </description>
+    </item>
+    
+    <item>
+      <title>R Quantmod</title>
+      <link>/courses/rquantmod/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/rquantmod/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide and the R files used in the presentation.   Introduction   Download Data   Charting   Technical Indicator   Charting with indicators   Trading signal based on simple filter rule   Evaluation of day trading based on simple filter rule   Trading based on SMA rule   Trading based on RSI rule   Download Data Advanced   Trading based on filter and RSI rule   Trading based on EMA and RSI rule   Trading rule with trading size   Trading rule with non-day trading    </description>
     </item>
     
     <item>

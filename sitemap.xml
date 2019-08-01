@@ -18,12 +18,32 @@
   </url>
   
   <url>
+    <loc>/courses/rintro/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/courses/latexadvanced/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
+    <loc>/courses/rdata/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/rprogramming/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/courses/vbabasic/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/rquantmod/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   

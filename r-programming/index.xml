@@ -107,10 +107,9 @@ x &amp;lt;- 1:40mean(x) ## [1] 20.</description>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
       
       <guid>/r-programming/ta-with-r-ch6/</guid>
-      <description>ScrappingWe will cover two common ways to extract files that is not from database directly:
+      <description>---date: &#39;2018-09-09T00:00:00+08:00&#39;draft: nolinktitle: Chapter 6 Scrappingmenu:r-programming:parent: Technical Analysis with Rtoc: notype: docs---ScrappingWe will cover two common ways to extract files that is not from database directly:
 pdf files, andhtml files.PDF filesWe will cover how to scrap data from:
-extract pdf files stored in offlinedownload pdf file and extractmassive download and extactOffline pdf fileWe need to install and load pdftools package to do the extraction.
-install.packages(&amp;quot;pdftools&amp;quot;)library(pdftools)To read pdf as textfile, use pdf_text().</description>
+extract pdf files stored in offlinedownload pdf file and extractmassive download and extactOffline pdf fileWe need to install and load pdftools package to do the extraction.</description>
     </item>
     
     <item>
