@@ -33,6 +33,11 @@
   </url>
   
   <url>
+    <loc>/courses/rplotting/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/courses/rprogramming/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
@@ -44,6 +49,16 @@
   
   <url>
     <loc>/courses/rquantmod/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/rcandlestick/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/rquantstrat/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
@@ -64,6 +79,11 @@
   
   <url>
     <loc>/courses/factor/</loc>
+    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/rmarkdown/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   

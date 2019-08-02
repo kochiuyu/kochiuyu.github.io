@@ -782,6 +782,11 @@ t(out)</code></pre>
 ## tick.MAE            &quot;-29930631&quot;          
 ## tick.MFE            &quot;130939964&quot;          
 ## duration            &quot;157420800 secs&quot;</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/_BUoEMOg5Pc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 <div id="buy-filter-rule" class="section level3">
 <h3>Buy Filter Rule</h3>
@@ -847,11 +852,16 @@ trade &lt;- na.fill(trade,0)</code></pre>
 updateAcct(name = &quot;filter&quot;)
 updateEndEq(Account = &quot;filter&quot;)
 chart.Posn(&quot;filter&quot;, Symbol = &quot;MSFT&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/MUO2WioLxP0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 </div>
-<div id="simple-filter-rule" class="section level2">
-<h2>Simple Filter Rule</h2>
+<div id="quanstrat-simple-filter-rule" class="section level2">
+<h2>Quanstrat Simple Filter Rule</h2>
 <div id="step-1-initialization" class="section level3">
 <h3>Step 1: Initialization</h3>
 <p>We need to install standard packages and custom packages. After loading all the packages, we initialize are variables and then download data.</p>
@@ -1062,7 +1072,7 @@ add.signal(strategy.st,
               Symbol=symbol,
               log=TRUE)
 }</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-31-1.png" width="672" /><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-31-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-33-1.png" width="672" /><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-33-2.png" width="672" /></p>
 <p>We can also look at the details of the trading statistics of trading strategies such as the number for trades, and profitability of trades.</p>
 <pre class="r"><code>tstats &lt;- tradeStats(portfolio.st)
 t(tstats) #transpose tstats</code></pre>
@@ -1121,7 +1131,12 @@ tab</code></pre>
 ## Calmar Ratio               -0.2135370    -0.09109193</code></pre>
 <p>We can visualize the performance of the trading rule</p>
 <pre class="r"><code>charts.PerformanceSummary(rets, colorset = bluefocus)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/ZVIIU_4eZnI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 </div>
 <div id="buy-and-hold-1" class="section level2">
@@ -1169,7 +1184,7 @@ addTxn(&quot;buyHold&quot;, Symbol = &quot;SPY&quot;,
 <pre class="r"><code>updateEndEq(Account = &quot;buyHold&quot;)</code></pre>
 <pre><code>## [1] &quot;buyHold&quot;</code></pre>
 <pre class="r"><code>chart.Posn(&quot;buyHold&quot;, Symbol = &quot;SPY&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
 <p>Now we are ready to compare buy-hold and the simple trading rule.</p>
 <pre class="r"><code># Compare strategy and market
 rets &lt;- PortfReturns(Account = account.st)
@@ -1179,7 +1194,12 @@ charts.PerformanceSummary(
   returns, geometric = FALSE,
   wealth.index = TRUE, 
   main = &quot;Strategy vs. Market&quot;)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-42-1.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/F5lhPFo2Er0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 </div>
 <div id="sma-rule" class="section level2">
@@ -1312,7 +1332,12 @@ updateEndEq(account.st)</code></pre>
   chart.Posn(Portfolio=portfolio.st,
              Symbol=symbol,log=TRUE)
 }</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-45-1.png" width="672" /><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-45-2.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-49-1.png" width="672" /><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-49-2.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/g7vjiLU5-y8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 </div>
 <div id="sma-rule-with-volatility-filter" class="section level2">
@@ -1450,7 +1475,12 @@ updateEndEq(account.st)</code></pre>
 <pre class="r"><code>chart.Posn(Portfolio=portfolio.st,
            Symbol=&quot;IBM&quot;,
            log=TRUE)</code></pre>
-<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-53-1.png" width="672" /></p>
+<p><img src="/r-programming/ta-with-r-Ch8_files/figure-html/unnamed-chunk-58-1.png" width="672" /></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/a0mO8ve04PY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 </div>
 </div>
 </div>

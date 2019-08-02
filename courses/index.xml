@@ -67,6 +67,15 @@
     </item>
     
     <item>
+      <title>R ggplot</title>
+      <link>/courses/rplotting/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/rplotting/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide and the R files used in the presentation.   Basic Plot   Aesthetic   Decoration   Multiple Plots   Basic Themes   ggthemes    </description>
+    </item>
+    
+    <item>
       <title>R Programming</title>
       <link>/courses/rprogramming/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
@@ -91,6 +100,24 @@
       
       <guid>/courses/rquantmod/</guid>
       <description> After purchasing through Gumroad, you can download pdf files of the slide and the R files used in the presentation.   Introduction   Download Data   Charting   Technical Indicator   Charting with indicators   Trading signal based on simple filter rule   Evaluation of day trading based on simple filter rule   Trading based on SMA rule   Trading based on RSI rule   Download Data Advanced   Trading based on filter and RSI rule   Trading based on EMA and RSI rule   Trading rule with trading size   Trading rule with non-day trading    </description>
+    </item>
+    
+    <item>
+      <title>R Candlestick</title>
+      <link>/courses/rcandlestick/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/rcandlestick/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide and the R files used in the presentation.   Introduction   Doji   Dragon Doji   Hammer   Engulfing   Harami   Pierce Line   Kick up    </description>
+    </item>
+    
+    <item>
+      <title>R Quantstrat</title>
+      <link>/courses/rquantstrat/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/rquantstrat/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide and the R files used in the presentation.   Blotter Basic   Blotter filter rule   Quantstrat filter rule   Quantstrat buyhold   Quanstrat SMA   Quanstrat SMA volalitilty    </description>
     </item>
     
     <item>
@@ -127,6 +154,15 @@
       
       <guid>/courses/factor/</guid>
       <description> After purchasing through Gumroad, you can download pdf files of the slide.   Introduction   Single Factor   Three Factor   More Factor   Conclusion    </description>
+    </item>
+    
+    <item>
+      <title>R Markdown</title>
+      <link>/courses/rmarkdown/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      
+      <guid>/courses/rmarkdown/</guid>
+      <description> After purchasing through Gumroad, you can download pdf files of the slide and the R files used in the presentation.   Introduction   Sweave   Markdown    </description>
     </item>
     
     <item>
