@@ -3156,12 +3156,12 @@ End Sub
 
 &lt;pre&gt;&lt;code&gt;Function Grade2(Mark As Integer)
 Select Case Mark
-    Case Is &amp;gt;= 80
-        Grade2 = &amp;quot;A&amp;quot;
-    Case Is &amp;gt;= 70
-         Grade2 = &amp;quot;B&amp;quot;
-    Case Else
-         Grade2 = &amp;quot;C&amp;quot;
+	Case Is &amp;gt;= 80
+		Grade2 = &amp;quot;A&amp;quot;
+ 	Case Is &amp;gt;= 70
+		 Grade2 = &amp;quot;B&amp;quot;
+	Case Else
+		 Grade2 = &amp;quot;C&amp;quot;
 End Select
 End Function
 &lt;/code&gt;&lt;/pre&gt;
@@ -3966,7 +3966,7 @@ Dim day As Range
    count = 1
 
    For Each day In Prices
-     If count &amp;gt; 1 Then
+	 If count &amp;gt; 1 Then
          If day.Value &amp;gt; day.Offset(-1, 0).Value Then
            up = up+ 1
          ElseIf day.Value &amp;lt; day.Offset(-1, 0).Value Then
@@ -5683,8 +5683,8 @@ End Sub
 &lt;p&gt;Inside a subroutine, we can call other subroutine. The following subroutine calls HelloWorld subroutine twice.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Sub CallAnotherSub()
-    Call HelloWorld
-    Call HelloWorld
+	Call HelloWorld
+	Call HelloWorld
 End Sub
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -5716,7 +5716,7 @@ End Function
 &lt;p&gt;We can also call function inside a subroutine. The following subroutine calls the hypotenus function.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Sub MsgFunction()
-    Msgbox(&amp;quot;Secret is &amp;quot; &amp;amp; ABC(3,4))
+	Msgbox(&amp;quot;Secret is &amp;quot; &amp;amp; ABC(3,4))
 End Sub
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -6345,12 +6345,12 @@ Click on the Visual Basic button (access to VBE) to see your recorded actions in
 &lt;h2 id=&#34;general-tree&#34;&gt;General Tree&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}
-    \node(0){a}
-        child{node{b}}
-        child{node{c}
-            child{node{d}}
-            child{node{e}}
-        };
+	\node(0){a}
+		child{node{b}}
+		child{node{c}
+			child{node{d}}
+			child{node{e}}
+		};
 \end{tikzpicture}
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -6362,9 +6362,9 @@ Click on the Visual Basic button (access to VBE) to see your recorded actions in
 \tikzstyle{hollow node}=[circle,draw,inner sep=1.5]
 \tikzstyle{solid node}=[circle,draw,inner sep=1.5,fill=black]
 \node[hollow node]{}
-    child{node[solid node]{}}
-    child{node[solid node]{}}
-    child{node[solid node]{}}
+	child{node[solid node]{}}
+	child{node[solid node]{}}
+	child{node[solid node]{}}
 ;
 \end{tikzpicture}
 &lt;/code&gt;&lt;/pre&gt;
@@ -6379,8 +6379,8 @@ Click on the Visual Basic button (access to VBE) to see your recorded actions in
 
 &lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}
 \begin{scope} [red, thick]
-    \draw (0,0)--(3,3);
-    \draw (0,3)--(3,0);
+	\draw (0,0)--(3,3);
+	\draw (0,3)--(3,0);
 \end{scope}
 \end{tikzpicture}
 &lt;/code&gt;&lt;/pre&gt;
@@ -6425,7 +6425,7 @@ Click on the Visual Basic button (access to VBE) to see your recorded actions in
 \usepackage{pgfplots}
 \begin{tikzpicture}
 \begin{axis}[xlabel=x,ylabel=y]
-    \addplot coordinates {(1,1) (2,0) (3,3) (4,2)};
+	\addplot coordinates {(1,1) (2,0) (3,3) (4,2)};
 \end{axis}
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -6436,8 +6436,8 @@ Click on the Visual Basic button (access to VBE) to see your recorded actions in
 &lt;p&gt;We can use &lt;code&gt;scale=0.5&lt;/code&gt; to make the zoom out.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}[scale=0.5]
-    \draw (0,0)--(1,1);
-    \draw (0,1)--(1,0);
+	\draw (0,0)--(1,1);
+	\draw (0,1)--(1,0);
 \end{tikzpicture}
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -6446,8 +6446,8 @@ Click on the Visual Basic button (access to VBE) to see your recorded actions in
 &lt;p&gt;We can use &lt;code&gt;scale=2&lt;/code&gt; to make the zoom in.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}[scale=2]
-    \draw (0,0)--(1,1);
-    \draw (0,1)--(1,0);
+	\draw (0,0)--(1,1);
+	\draw (0,1)--(1,0);
 \end{tikzpicture}
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -6541,7 +6541,7 @@ Click on the Visual Basic button (access to VBE) to see your recorded actions in
 
 &lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw (0,0)--(6,0);
 \foreach \x in {0,...,6}{
-    \draw (\x,-1)--(\x,1);
+	\draw (\x,-1)--(\x,1);
 }
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -11246,19 +11246,20 @@ I like Theorem \ref{NiceThm} very much.
 &lt;ul&gt;
 &lt;li&gt;For centered text, enclosed &lt;code&gt;\begin{center}&lt;/code&gt; and &lt;code&gt;\end{center}&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;For right-aligned text, enclosed &lt;code&gt;\begin{flushright}&lt;/code&gt; and &lt;code&gt;\end{flushright}&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;For left-aligned text, enclosed &lt;code&gt;\begin{flushleft}&lt;/code&gt; and &lt;code&gt;\end{flushleft}&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+
+&lt;li&gt;&lt;p&gt;For left-aligned text, enclosed &lt;code&gt;\begin{flushleft}&lt;/code&gt; and &lt;code&gt;\end{flushleft}&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{center}
-    I am centered text.
+	I am centered text.
 \end{center}
 \begin{flushright}
-    I am right-aligned text.
+	I am right-aligned text.
 \end{flushright} 
 \begin{flushleft}
-    I am left-aligned text.
+	I am left-aligned text.
 \end{flushleft}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -11665,8 +11666,8 @@ The first page introduction slides is exactly the same as when we write an artic
 &lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{beamer}
 \begin{document}
 \begin{frame}
-    \frametitle{Happy}
-    Hello World!
+	\frametitle{Happy}
+	Hello World!
 \end{frame}
 \end{document}
 &lt;/code&gt;&lt;/pre&gt;
@@ -11676,11 +11677,11 @@ The first page introduction slides is exactly the same as when we write an artic
 &lt;p&gt;Very often, bullet points are used in slides. We can use &lt;strong&gt;itemize&lt;/strong&gt;, &lt;strong&gt;enumerate&lt;/strong&gt;, and &lt;strong&gt;description&lt;/strong&gt; lists.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{frame}
-    \frametitle{Conclusion}
-    \begin{itemize}
-        \item lalala
-        \item hahaha
-    \end{itemize}
+	\frametitle{Conclusion}
+	\begin{itemize}
+		\item lalala
+		\item hahaha
+	\end{itemize}
 \end{frame}
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -11689,8 +11690,8 @@ The first page introduction slides is exactly the same as when we write an artic
 &lt;p&gt;To include picture, we also use &lt;code&gt;includegraphics{}&lt;/code&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{frame}
-    \frametitle{Visual}
-    \includegraphics{haha.jpg}
+	\frametitle{Visual}
+	\includegraphics{haha.jpg}
 \end{frame}
 &lt;/code&gt;&lt;/pre&gt;
 

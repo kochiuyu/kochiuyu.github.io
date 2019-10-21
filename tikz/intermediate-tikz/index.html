@@ -662,12 +662,12 @@ Intermediate techniques of TikZ:
 <h2 id="general-tree">General Tree</h2>
 
 <pre><code class="language-latex">\begin{tikzpicture}
-    \node(0){a}
-        child{node{b}}
-        child{node{c}
-            child{node{d}}
-            child{node{e}}
-        };
+	\node(0){a}
+		child{node{b}}
+		child{node{c}
+			child{node{d}}
+			child{node{e}}
+		};
 \end{tikzpicture}
 </code></pre>
 
@@ -679,9 +679,9 @@ Intermediate techniques of TikZ:
 \tikzstyle{hollow node}=[circle,draw,inner sep=1.5]
 \tikzstyle{solid node}=[circle,draw,inner sep=1.5,fill=black]
 \node[hollow node]{}
-    child{node[solid node]{}}
-    child{node[solid node]{}}
-    child{node[solid node]{}}
+	child{node[solid node]{}}
+	child{node[solid node]{}}
+	child{node[solid node]{}}
 ;
 \end{tikzpicture}
 </code></pre>
@@ -696,8 +696,8 @@ Intermediate techniques of TikZ:
 
 <pre><code class="language-latex">\begin{tikzpicture}
 \begin{scope} [red, thick]
-    \draw (0,0)--(3,3);
-    \draw (0,3)--(3,0);
+	\draw (0,0)--(3,3);
+	\draw (0,3)--(3,0);
 \end{scope}
 \end{tikzpicture}
 </code></pre>
@@ -742,7 +742,7 @@ Intermediate techniques of TikZ:
 \usepackage{pgfplots}
 \begin{tikzpicture}
 \begin{axis}[xlabel=x,ylabel=y]
-    \addplot coordinates {(1,1) (2,0) (3,3) (4,2)};
+	\addplot coordinates {(1,1) (2,0) (3,3) (4,2)};
 \end{axis}
 </code></pre>
 
@@ -753,8 +753,8 @@ Intermediate techniques of TikZ:
 <p>We can use <code>scale=0.5</code> to make the zoom out.</p>
 
 <pre><code class="language-latex">\begin{tikzpicture}[scale=0.5]
-    \draw (0,0)--(1,1);
-    \draw (0,1)--(1,0);
+	\draw (0,0)--(1,1);
+	\draw (0,1)--(1,0);
 \end{tikzpicture}
 </code></pre>
 
@@ -763,8 +763,8 @@ Intermediate techniques of TikZ:
 <p>We can use <code>scale=2</code> to make the zoom in.</p>
 
 <pre><code class="language-latex">\begin{tikzpicture}[scale=2]
-    \draw (0,0)--(1,1);
-    \draw (0,1)--(1,0);
+	\draw (0,0)--(1,1);
+	\draw (0,1)--(1,0);
 \end{tikzpicture}
 </code></pre>
 
@@ -858,7 +858,7 @@ Intermediate techniques of TikZ:
 
 <pre><code class="language-latex">\draw (0,0)--(6,0);
 \foreach \x in {0,...,6}{
-    \draw (\x,-1)--(\x,1);
+	\draw (\x,-1)--(\x,1);
 }
 </code></pre>
 
@@ -1008,7 +1008,7 @@ Intermediate techniques of TikZ:
     
     
     
-    <script src="/js/academic.min.b82789348bc9b927834992b317787f39.js"></script>
+    <script src="/js/academic.min.97c51fbf3ac7e4c453f084310db1b0cb.js"></script>
 
   </body>
 </html>
