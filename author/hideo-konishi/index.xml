@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hideo Konishi | Chiu Yu Ko</title>
+    <link>/author/hideo-konishi/</link>
+      <atom:link href="/author/hideo-konishi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hideo Konishi</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2020. All Rights Reserved.</copyright><lastBuildDate>Sat, 13 Jul 2013 00:00:00 +0800</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <title>Hideo Konishi</title>
+      <link>/author/hideo-konishi/</link>
+    </image>
+    
+    <item>
+      <title>Choosing a licensee from heterogeneous rivals</title>
+      <link>/publication/choosing-rivals/</link>
+      <pubDate>Sat, 13 Jul 2013 00:00:00 +0800</pubDate>
+      <guid>/publication/choosing-rivals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Profit-maximizing Matchmaker</title>
+      <link>/publication/matchmaker/</link>
+      <pubDate>Wed, 17 Aug 2011 00:00:00 +0800</pubDate>
+      <guid>/publication/matchmaker/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,16 @@
+# VBA
+
+[[menu.vba]]
+  name = "Excel Tutorial"
+  weight = 6
+  identifier = "ExcelTutorial"
+
+[[menu.vba]]
+  name = "VBA Tutorial"
+  weight = 8
+  identifier = "VBATutorial"
+
+[[menu.vba]]
+  name = "Book"
+  weight = 10
+  identifier = "vbaBook"

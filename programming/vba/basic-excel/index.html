@@ -1,0 +1,2109 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Learning Objectives:
+ Why Excel? Basic Excel Worksheet Functions  What is Excel? Why Excel? Excel is a spreadsheet program. It is widely used in the industry because they are simple, and also allow you to view data visually.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/programming/vba/basic-excel/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/programming/vba/basic-excel/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/programming/vba/basic-excel/">
+  <meta property="og:title" content="Basic Excel | Chiu Yu Ko">
+  <meta property="og:description" content="Learning Objectives:
+ Why Excel? Basic Excel Worksheet Functions  What is Excel? Why Excel? Excel is a spreadsheet program. It is widely used in the industry because they are simple, and also allow you to view data visually."><meta property="og:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-05-04T00:00:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2019-05-04T00:00:00&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Basic Excel | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#book"><span>Book</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/programming/"><span>Programming</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/vba/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/vba/basic-excel/">Excel Tutorial</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/programming/vba/basic-excel/">Basic Excel</a>
+      </li>
+      
+      <li >
+        <a href="/programming/vba/advanced-excel/">Advanced Excel</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/vba/basic-vba/">VBA Tutorial</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/programming/vba/basic-vba/">Basic VBA</a>
+      </li>
+      
+      <li >
+        <a href="/programming/vba/advanced-vba/">Advanced VBA</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/vba/excel-vba-r/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/programming/vba/excel-vba-r/">VBA and R</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-excel-why-excel">What is Excel? Why Excel?</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#another-cell-in-the-same-sheet">Another cell in the same sheet</a></li>
+    <li><a href="#range-worksheet-and-workbook">Range, Worksheet and Workbook</a></li>
+    <li><a href="#copy-and-paste-iteration">Copy and Paste: Iteration</a></li>
+    <li><a href="#referencing-absolute-vs-relative">Referencing: Absolute vs. Relative</a></li>
+    <li><a href="#naming">Naming</a></li>
+    <li><a href="#dividend-discount-model">dividend discount model</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#arithmetic-operators">Arithmetic Operators</a></li>
+    <li><a href="#basic-math-functions">Basic Math Functions</a></li>
+    <li><a href="#basic-statistic-functions">Basic Statistic Functions</a></li>
+    <li><a href="#advanced-statistic-functions">Advanced Statistic Functions</a></li>
+    <li><a href="#lookup">Lookup</a></li>
+    <li><a href="#cell-referencing-function">Cell Referencing Function</a></li>
+    <li><a href="#hyperlink">Hyperlink</a></li>
+    <li><a href="#text-function">Text Function</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Basic Excel</h1>
+
+          <div class="article-style">
+            <p>Learning Objectives:</p>
+<ul>
+<li>Why Excel?</li>
+<li>Basic Excel</li>
+<li>Worksheet Functions</li>
+</ul>
+<h2 id="what-is-excel-why-excel">What is Excel? Why Excel?</h2>
+<p>Excel is a spreadsheet program. It is widely used in the industry because they are simple, and also allow you to view data visually.</p>
+<p>Since Excel is widely used, it is usually the basic requirement for many jobs.</p>
+<p>Here, we will go into the basics of Excel, and how to use them.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/-N-aqfuMuas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="cells">Cells</h1>
+<p>The basic element of spreadsheet is a cell. We often work with multiple cells. Some cells will be data, some cells will be calculation steps and some cells contains results that require calculations.</p>
+<h2 id="another-cell-in-the-same-sheet">Another cell in the same sheet</h2>
+<p>The first thing to learn in excel is how to refer to another cell. There are 2 ways to reference cells:</p>
+<ol>
+<li><strong>A1</strong> method and</li>
+<li><strong>R1C1</strong> method.</li>
+</ol>
+<p>The <strong>A1</strong> method is more commonly used, since the columns are already labeled with letters, and the rows are labeled by numbers.</p>
+<p>However, if your dataset has many columns (more than 26), it might be a good idea to use the <strong>R1C1</strong> method.</p>
+<p>To calculate the sum of 2 cells A1 and B1, simply type in the equation box:
+<code>= A1 + B1</code>.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_AddingCell.png" >
+
+
+  <img src="/img/Excel/Excel_AddingCell.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>Pressing the Enter key will then give you the following result.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_AddingCell_Result.png" >
+
+
+  <img src="/img/Excel/Excel_AddingCell_Result.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>This is assuming that both A1 and B1 contain numerical values. Otherwise, you will get a <code>\#VALUE!</code> Error.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_AddingCell_Error.png" >
+
+
+  <img src="/img/Excel/Excel_AddingCell_Error.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>If you place your mouse cursor on the yellow diamond box, it will tell you what error has occurred.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_AddingCell_ErrorAlert.png" >
+
+
+  <img src="/img/Excel/Excel_AddingCell_ErrorAlert.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>Because A1 contains a numerical value, and B1 contains text, you cannot apply the Sum function, hence Excel raises an error.
+We then show an example of multiplication as below.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Multiplication.png" >
+
+
+  <img src="/img/Excel/Excel_Multiplication.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<h2 id="range-worksheet-and-workbook">Range, Worksheet and Workbook</h2>
+<p>We sometimes need to refer to a group of cells for calculation. Range is always rectangular, hence, we just need the top left cell and bottom right cell. For example, <code>A1:B2</code> implies cells A1, A2, B1, and B2.</p>
+<p>To refer to cells in other worksheet in the same workbook (xlsx file), we use the name and exclamation mark. For example, <code>=Sheet1!A1</code></p>
+<p>To refers to cells in the other worksheet in the different workbook, we use squared bracket. For example, <code>=[appl.xlsx]Sheet1!A1</code> for workbook that is currently open in Excel. Alternatively,  <code>='C:\\document\\[appl.xlsx]'Sheet1!A1</code> for workbook that is not open.</p>
+<h2 id="copy-and-paste-iteration">Copy and Paste: Iteration</h2>
+<p>Copy and Paste is the most commonly used operation in Excel. It is very powerful tools to perform calculation repetitively. In programming terminology, it is called <strong>iteration</strong>.</p>
+<h2 id="referencing-absolute-vs-relative">Referencing: Absolute vs. Relative</h2>
+<p>You can use absolute referencing, or relative referencing. We start by explaining relative referencing.</p>
+<p>Say I have the following values for columns A, B, and C, and I want to calculate D as their product. If I simply copy D1 and paste it in D2, by default Excel will take it as relative referencing, and D2 = <code>A2*B2*C2 = 210</code>.</p>
+<p>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Multiplication_relativeaddress.png" >
+
+
+  <img src="/img/Excel/Excel_Multiplication_relativeaddress.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Multiplication_relativeaddress2.png" >
+
+
+  <img src="/img/Excel/Excel_Multiplication_relativeaddress2.png" alt=""  >
+</a>
+
+
+
+</figure>
+</p>
+<p>What if I want to reuse the value of A1, say I want D2 = <code>A1*B2*C2</code>? We then use the <code>$</code> sign to indicate absolute referencing. Placing the <code>$</code> sign in front of the row or column of the cell will tell Excel to always take that particular row or column even when the formula is copied.</p>
+<p>Tips: Pressing F2 will change between relative address and absolute address.</p>
+<p>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Multiplication_absoluteaddress.png" >
+
+
+  <img src="/img/Excel/Excel_Multiplication_absoluteaddress.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Multiplication_absoluteaddress2.png" >
+
+
+  <img src="/img/Excel/Excel_Multiplication_absoluteaddress2.png" alt=""  >
+</a>
+
+
+
+</figure>
+</p>
+<p>We see that D2=<code>A1*B2*C2</code> even when we copied the formula from D1. Because of the <code>$</code> in <code>$A$1</code>, Excel did not use relative referencing for that row/column.</p>
+<p>The following example shows how relative address can be used effectively to reduce typing when we create multiplication table. We just need to enter the formula in B2. Then copy and paste the rest of the cells.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>x</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td><code>=$A2*B$1</code></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>2</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="naming">Naming</h2>
+<p>Usually, we will label our rows and/or columns, to let the user know what kind of data or variables are in the spreadsheet. This is for convenience so that the user can follow what you are doing easily.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Label.png" >
+
+
+  <img src="/img/Excel/Excel_Label.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>Moreover, we give a name to a cell. In the ribbon, choose FORMULAS tab and then choose to define the name. Then you can refer a cell by its name. This is particularly useful to make your spreadsheet easy to read and understand by other users.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Define_Name.png" >
+
+
+  <img src="/img/Excel/Excel_Define_Name.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<h2 id="dividend-discount-model">dividend discount model</h2>
+<p>Let us illustrate the idea of relative address using the dividend discount model(DDM) example.  Consider stock which pays out a fixed dividend of $1 per year for the next 10 years. The rate of inflation is going to be constant at <code>3%</code> per year. We want to find out how much the future dividend payouts are worth in present values.</p>
+<p>The discount factor is equal to <code>1/1.03</code>, which is approximately 0.9709. How do we do this calculation efficiently in Excel? We make use of both relative and absolute referencing.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_DDM.png" >
+
+
+  <img src="/img/Excel/Excel_DDM.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>The only thing that changes here is the overall discount factor, which depends on the number of years ahead. Hence we use absolute referencing for the dividend payout amount, and the yearly discount factor, and then multiply the yearly discount factor accordingly with the number of years. Lastly, we sum up the values to get 8.53.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Qy-Bl_gWRKI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="worksheet-functions">Worksheet Functions</h1>
+<p>Excel spreadsheet is very convenient because it has a large number of built-in functions that perform calculation without programming. We will learn how to write these functions by yourself in the next class using VBA.</p>
+<h2 id="arithmetic-operators">Arithmetic Operators</h2>
+<p>We first cover some basic arithmetic operators and some basic mathematics functions.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>Addition</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Substraction</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>Division</td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>Power</td>
+</tr>
+<tr>
+<td>SQRT()</td>
+<td>Square Root</td>
+</tr>
+<tr>
+<td>ABS()</td>
+<td>Absolute number</td>
+</tr>
+</tbody>
+</table>
+<h2 id="basic-math-functions">Basic Math Functions</h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COUNT(range)</td>
+<td>Counts the number of cells in a range that contain numbers</td>
+</tr>
+<tr>
+<td>SUM(range)</td>
+<td>Adds all the numbers in a range of cells</td>
+</tr>
+<tr>
+<td>PRODUCT(range)</td>
+<td>Multiplies all the numbers given as arguments</td>
+</tr>
+<tr>
+<td>SUMPRODUCT(range1, range2)</td>
+<td>Sum of products of the first elements in both ranges, the second elements,&hellip;.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="basic-statistic-functions">Basic Statistic Functions</h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIN(range)</td>
+<td>Returns the smallest number in a set of values. Ignores logical values and text</td>
+</tr>
+<tr>
+<td>MAX(range)</td>
+<td>Returns the largest number in a set of values. Ignores logical values and text</td>
+</tr>
+<tr>
+<td>MEDIAN(range)</td>
+<td>Returns the median, or the number in the middle of the set of given numbers</td>
+</tr>
+<tr>
+<td>VAR.P(range)</td>
+<td>Calculates population variance</td>
+</tr>
+<tr>
+<td>VAR.S(range)</td>
+<td>Calculates sample variance</td>
+</tr>
+<tr>
+<td>STDEV.P(range)</td>
+<td>Calculate population standard deviation</td>
+</tr>
+<tr>
+<td>STDEV.S(range)</td>
+<td>Calculate sample standard deviation</td>
+</tr>
+</tbody>
+</table>
+<p>The following example shows <code>AVERAGE</code> is used to calculate simple moving average.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>n</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>beta</td>
+<td><code>=2/(A1+1)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Date</td>
+<td>Price</td>
+<td>SMA(n)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>02-May-16</td>
+<td>19</td>
+<td></td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>06-May-16</td>
+<td>30</td>
+<td><code>=AVERAGE(B3:B7)</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>07-May-16</td>
+<td>56</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The following example shows <code>AVERAGE</code> and recursive formula is used to calculate exponential moving average. Note that initial EMA is SMA. And the recursive formula is $$EMA_{t}(n) = \beta P_{t}(n) + (1-\beta) EMA_{t-1}(n)$$
+where $\beta=2/(n+1)$.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>n</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>beta</td>
+<td><code>=2/(A1+1)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Date</td>
+<td>Price</td>
+<td>EMA(n)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>02-May-16</td>
+<td>19</td>
+<td></td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>06-May-16</td>
+<td>30</td>
+<td><code>=AVERAGE(B3:B7)</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>07-May-16</td>
+<td>56</td>
+<td><code>=$B$2*B9+(1-$B$2)*C8</code></td>
+</tr>
+</tbody>
+</table>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/WmHTKO7OHpw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="advanced-statistic-functions">Advanced Statistic Functions</h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COVARIANCE.P(range1 ,range2)</td>
+<td>Calculate population covariance using data in range 1 and range 2</td>
+</tr>
+<tr>
+<td>COVARIANCE.S(range1, range2)</td>
+<td>Calculate sample covariance using data in range 1 and range 2</td>
+</tr>
+<tr>
+<td>INTERCEPT(yrange,xrange)</td>
+<td>Returns the intercept of simple linear regression of y on x</td>
+</tr>
+<tr>
+<td>SLOPE(yrange, xrange)</td>
+<td>Returns the slope of simple linear regression of y on x</td>
+</tr>
+<tr>
+<td>STEYX(yrange, xrange)</td>
+<td>Returns the standard error of simple linear regression of y on x</td>
+</tr>
+<tr>
+<td>RAND()</td>
+<td>Returns a random number greater than or equal to 0 and less than 1, evenly distributed</td>
+</tr>
+<tr>
+<td>RANDBETWEEN(integer1, integer2)</td>
+<td>Returns a random number between integer1 and integer 2 where integer1 is less than integer2</td>
+</tr>
+<tr>
+<td>NORM.INV(probability, mean, standard deviation)</td>
+<td>Returns the inverse of the normal cumulative distribution at the given probability under the specified mean and standard deviation.</td>
+</tr>
+</tbody>
+</table>
+<p>How to generate normal distribution? We will use a method called inversion. Use <code>RAND</code> to generate uniform distribution and then use <code>NORM.INV</code> is to generate a normal variable.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/btcb-j-wrXg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="lookup">Lookup</h2>
+<p>Lookup functions allow you to get data from another table. Two basic lookup functions are <code>VLOOKUP</code> or <code>HLOOKUP</code>. They help to locate particular cells in table. Using <code>MATCH</code> and <code>INDEX</code> together allows us to have a flexible vlookup and hlookup, when we have 2 different types of data. 
+For example, we could use <code>=INDEX(range1, MATCH(key, range2))</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VLOOKUP(key, range, column, FALSE)</td>
+<td>Looks for <em>key</em> in the leftmost column of a table (given by the range), and then returns a value in the same row from a column you specify.</td>
+</tr>
+<tr>
+<td>HLOOKUP(key, range, column, FALSE)</td>
+<td>Looks for <em>key</em> in the top row of a table (given by the range) and returns the value in the same column from a row you specify.</td>
+</tr>
+<tr>
+<td>MATCH(key, range)</td>
+<td>This helps you search for a particular value within a dataset. The output returned is the relative position of the value in the dataset, for example, D8.  The key is the value that you want to find, and the range is the range of data that you are searching for.</td>
+</tr>
+<tr>
+<td>INDEX(range, index)</td>
+<td>Returns a value or reference of the cell at the intersection of a particular row and column, in a given range.  The output will be the content of that particular cell at that index.</td>
+</tr>
+</tbody>
+</table>
+<p>The following example shows how vlookup can be used to merge two tables.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Stock</td>
+<td>Price</td>
+<td>Stock</td>
+<td>Volume</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Apple</td>
+<td>10</td>
+<td>IBM</td>
+<td>10</td>
+</tr>
+<tr>
+<td>3</td>
+<td>IBM</td>
+<td>20</td>
+<td>Google</td>
+<td>20</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Google</td>
+<td>30</td>
+<td>Apple</td>
+<td>30</td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Stock</td>
+<td>Price</td>
+<td>Volume</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Apple</td>
+<td><code>=VLOOKUP(A7,$A$1:$B$4,2,FALSE)</code></td>
+<td><code>=VLOOKUP(A7,$C$1:$D$4,2,FALSE)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>IBM</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Google</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The following example shows how index and match can be used to merge two tables.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Stock</td>
+<td>Price</td>
+<td>Stock</td>
+<td>Volume</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Apple</td>
+<td>10</td>
+<td>IBM</td>
+<td>10</td>
+</tr>
+<tr>
+<td>3</td>
+<td>IBM</td>
+<td>20</td>
+<td>Google</td>
+<td>20</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Google</td>
+<td>30</td>
+<td>Apple</td>
+<td>30</td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Stock</td>
+<td>Price</td>
+<td>Volume</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Apple</td>
+<td><code>=INDEX(B2:B4,MATCH(A7, A2:A4,0))</code></td>
+<td><code>=INDEX(D2:D4, MATCH(A7,C2:C4,0))</code></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>IBM</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Google</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/LswL0tvxxBI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="cell-referencing-function">Cell Referencing Function</h2>
+<p>The following cell referencing functions are very useful to make the code clean and tidy. <code>Offset</code> moves the cell reference to another cell or range of cells. <code>Indirect</code> convert text to cell reference and <code>Address</code> convert cell reference to text.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OFFSET(cell, row, column,height and width)</td>
+<td>Returns a reference to a range that is a given number of rows and columns from a given reference. Cell refers to the reference cell that you are taking reference from. For row, positive values will mean cells downwards from the reference cell, and negative values will mean cells above the reference cell.  For column, positive values will mean cells to the right of the reference cell, while negative values will mean cells to the left of the reference cell.</td>
+</tr>
+<tr>
+<td>INDIRECT(address string)</td>
+<td>Returns the reference specified by a text string.  One example would be <code>INDIRECT(&quot;A1&quot;)</code>, which returns the contents of the cell A1.</td>
+</tr>
+<tr>
+<td>ADDRESS(row, column)</td>
+<td>Creates a cell reference as text, given specified row and column numbers.  For example, <code>ADDRESS(2, 7)</code> will return <code>$G$2</code> as output.</td>
+</tr>
+</tbody>
+</table>
+<p>Combination of <code>INDIRECT</code> and <code>ADDRESS</code> is useful if you do not want to type out the address string, or you have very large datasets. We can use <code>INDIRECT(ADDRESS(1,2))</code>.</p>
+<p>The following example shows offset can be used to make spreadsheet customization. We consider K-day momentum where K allow the user to input. While <code>OFFSET</code> is rather simple, we need to take care the case when momentum cannot be calculate in the first K days.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>K</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Date</td>
+<td>Price</td>
+<td>K-Momentum</td>
+</tr>
+<tr>
+<td>3</td>
+<td>02-May-16</td>
+<td>10</td>
+<td><code>=IF(COUNT($A$3:A3)&gt;=$B$1+1,B3-OFFSET(B3,-$B$1), &quot;&quot;)</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>03-May-16</td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>04-May-16</td>
+<td>8</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The following sample shows more advanced use of <code>OFFSET</code>. We consider n-day simple moving average where n allows the user to input. We only start the calculation when on the n-th day.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>n</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Date</td>
+<td>Price</td>
+<td>SMA(n)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>02-May-16</td>
+<td>10</td>
+<td><code>=IF(COUNT($A$3:A3)&gt;=$B$1,average(Offset(B3,0,0,-$B1$)), &quot;&quot;)</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>03-May-16</td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>04-May-16</td>
+<td>8</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The following sample shows more advanced use of <code>OFFSET</code>. We consider n-day simple moving average where n allows the user to input. We only start the calculation of EMA when on the n-th day. The first EMA is SMA. Then the rest is by the updating recursive formula.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>n</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>beta</td>
+<td><code>=2/(A1+1)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Date</td>
+<td>Price</td>
+<td>EMA(n)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>02-May-16</td>
+<td>19</td>
+<td><code>=IF(COUNT($A$4:A4)=$B$1,average(Offset(B4,0,0,-$B1$)),IF(COUNT($A$4:A4)&gt;$B$1,=$B$2*B4+(1-$B$2)*C3, &quot;&quot;)</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>03-May-16</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="hyperlink">Hyperlink</h2>
+<p>The following function refers the external link. <code>Hyperlink</code> connects to external file or internet address.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HYPERLINK(location, text)</td>
+<td>Creates a shortcut or jump that opens a document stored on your hard drive, a network server, or on the internet.  For location, you could use places on your computer such as Desktop or C:, or use internet address such as <code>http://www.google.com</code>.  The text will be shown as a hyperlink, for example, you could put <code>Click to open Google search'</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="text-function">Text Function</h2>
+<p>The following shows some basic text functions. <code>Len</code> is to find the length. <code>Trim</code> and <code>Clean</code> is to clean up the text. <code>Concatenate</code> is to combine text.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LEN(text)</td>
+<td>Short form for length. Returns the number of characters in a text string. For example, <code>LEN(apple)</code> returns 5.</td>
+</tr>
+<tr>
+<td>TRIM(text)</td>
+<td>Removes all spaces from a text string except for single spaces between words.</td>
+</tr>
+<tr>
+<td>CLEAN(text)</td>
+<td>Removes all nonprintable characters from text.</td>
+</tr>
+<tr>
+<td>CONCATENATE(text1, text2, &hellip;)</td>
+<td>Joins all text strings into one text string. For example, <code>CONCATENATE(&quot;I am&quot;, &quot;a boy&quot;, ...)</code> returns <code>I ama boy</code>. Note that space is not automatically added between text.</td>
+</tr>
+</tbody>
+</table>
+<p>There are some advanced text functions: <code>Left</code>, <code>Right</code> and <code>Mid</code> extract part of text. <code>Find</code> and <code>Search</code> are to look for string and <code>Substitute</code> is to replace text.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LEFT(text, number)</td>
+<td>Returns the specified number of characters from the left of the text string.  For example, <code>LEFT(&quot;testing&quot;, 2)</code> will return you <code>te</code>.</td>
+</tr>
+<tr>
+<td>RIGHT (text, number)</td>
+<td>Returns the specified number of characters from the right of the text string.  For example, <code>RIGHT(&quot;testing&quot;, 2)</code> will return you <code>ng</code>.</td>
+</tr>
+<tr>
+<td>MID (text, start position, number)</td>
+<td>Returns the specified number of characters from the start position of the text string.  For example, <code>MID(&quot;testing&quot;, 3,2)</code> will return you <code>st</code></td>
+</tr>
+<tr>
+<td>FIND(text, target)</td>
+<td>Returns the starting position of one text string within the target text string. For example, <code>FIND(&quot;apple&quot;, &quot;I like apple&quot;)</code> returns 8. Note that FIND is case-sensitive, meaning that upper-case letters are not the same as lower-case letters. For example, <code>FIND(&quot;APPLE&quot;, &quot;I like apple&quot;)</code> returns an error.</td>
+</tr>
+<tr>
+<td>SEARCH(text, target)</td>
+<td>Same as FIND but not case-sensitive. For example For example, <code>SEARCH(&quot;APPLE&quot;, &quot;I like apple&quot;)</code> returns 8</td>
+</tr>
+<tr>
+<td>SUBSTITUTE(target, new text, old text)</td>
+<td>Replaces existing text with new text in a text string. For example, <code>SUBSTITUTE(&quot;I like apple&quot;, &quot;apple&quot;, &quot;banana&quot;)</code> returns <code>I like banana</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/HQW2l9x6ZO8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/programming/vba/advanced-vba/" rel="next">Advanced VBA</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/programming/vba/basic-vba/" rel="prev">Basic VBA</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on May 4, 2019</p>
+
+          
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/programming%5cvba%5cBasic-Excel.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    2012-2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

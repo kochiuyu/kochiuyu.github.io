@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game Theory | Chiu Yu Ko</title>
+    <link>/tag/game-theory/</link>
+      <atom:link href="/tag/game-theory/index.xml" rel="self" type="application/rss+xml" />
+    <description>Game Theory</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2020. All Rights Reserved.</copyright><lastBuildDate>Mon, 17 Aug 2020 00:00:00 +0800</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <title>Game Theory</title>
+      <link>/tag/game-theory/</link>
+    </image>
+    
+    <item>
+      <title>Decentralized one-to-many Bargaining</title>
+      <link>/publication/many-to-one-bargaining/</link>
+      <pubDate>Mon, 17 Aug 2020 00:00:00 +0800</pubDate>
+      <guid>/publication/many-to-one-bargaining/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Research Joint Venture with Technology Transfer</title>
+      <link>/publication/rjv-transfer/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      <guid>/publication/rjv-transfer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technical Analysis with R</title>
+      <link>/book/technical-trading-r/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      <guid>/book/technical-trading-r/</guid>
+      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R&amp;rdquo;&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;data manipulation (dyplr package),&lt;/li&gt;
+&lt;li&gt;conduct econometric analysis (regression, time series),&lt;/li&gt;
+&lt;li&gt;plotting (ggplot2 package, dygraphs package),&lt;/li&gt;
+&lt;li&gt;webscrapping (rvest package, wbstat package, quantmod package), and&lt;/li&gt;
+&lt;li&gt;financial analysis (quantmod package, quantstrat package).&lt;/li&gt;
+&lt;li&gt;backtest a complex trading strategy and evaluate the performance.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The book is available through 
+&lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or 
+&lt;a href=&#34;https://gumroad.com/l/R-TA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gumroad&lt;/a&gt; (name-your-own-price offline pdf and epub). You can read the whole book through bookdown. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Gumroad, you can download pdf and epub.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TikZ Cookbook</title>
+      <link>/book/tikz-cookbook/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      <guid>/book/tikz-cookbook/</guid>
+      <description>&lt;p&gt;TikZ is a drawing package in LaTeX. It is very useful to draw a professional-looking diagram. However, the learning curve is a little bit steep for a beginner. I have recently compiled a 629-page cookbook that provides step-by-step illustrations on how to use TikZ to draw various diagrams in economics:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The book is available through 
+&lt;a href=&#34;https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Play&lt;/a&gt; or 
+&lt;a href=&#34;https://books.google.com.sg/books?id=t3ZZDwAAQBAJ&amp;amp;source=gbs_navlinks_s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google book&lt;/a&gt;. You can read the whole book through free sampling and preview. If you think that I have done a good or bad job, please feel free to drop me an email with comments/suggestions or write a short review here. Of course, you are very welcome to consider buying me a cup of coffee through purchasing the ebook.&lt;/p&gt;
+&lt;p&gt;Note: After purchasing, you may copy code directly through Google Play (only benefit of spending your money) and you can download a pdf file of the book but the pdf file does not allow search nor copy.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Gumroad, you can download pdf and epub.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TikZ Cookbook Companion</title>
+      <link>/book/tikz-cookbook-companion/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
+      <guid>/book/tikz-cookbook-companion/</guid>
+      <description>&lt;p&gt;Related to the first book (TikZ Cookbook), I have compiled a companion textbook with more examples. The book shows 100 diagrams that can be found in textbooks of introductory principle classes.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook-Companion.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Cover-TikZ-Cookbook-Companion.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The book is available through 
+&lt;a href=&#34;https://play.google.com/store/books/details?id=WfF5DwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Play&lt;/a&gt; or 
+&lt;a href=&#34;http://books.google.com/books/about?id=WfF5DwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google book&lt;/a&gt;. You can read the whole book through free sampling and preview. If you think that I have done a good or bad job, please feel free to drop me an email with comments/suggestions. Of course, you are very welcome to consider buying me a cup of coffee through purchasing the ebook.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Google Play, you may download acsm file to be opened by specialized software such as Adobe Digital Edition. The software will download the pdf file to be read offline.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decentralized mechanisms for river sharing</title>
+      <link>/publication/river-sharing/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0800</pubDate>
+      <guid>/publication/river-sharing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Role of Outside Options in Wage Renegotiation</title>
+      <link>/publication/outside-option-bargaining/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0800</pubDate>
+      <guid>/publication/outside-option-bargaining/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sharing sequential values in a network</title>
+      <link>/publication/network-sharing/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/publication/network-sharing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Note on Budget Constraints and Outside Options in Common Agency</title>
+      <link>/publication/common-agency/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0800</pubDate>
+      <guid>/publication/common-agency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unified China and Divided Europe</title>
+      <link>/publication/europe-china/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0800</pubDate>
+      <guid>/publication/europe-china/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Choosing a licensee from heterogeneous rivals</title>
+      <link>/publication/choosing-rivals/</link>
+      <pubDate>Sat, 13 Jul 2013 00:00:00 +0800</pubDate>
+      <guid>/publication/choosing-rivals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Profit-maximizing Matchmaker</title>
+      <link>/publication/matchmaker/</link>
+      <pubDate>Wed, 17 Aug 2011 00:00:00 +0800</pubDate>
+      <guid>/publication/matchmaker/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

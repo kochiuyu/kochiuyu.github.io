@@ -1,0 +1,1837 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Learning Objectives:
+ What is LaTeX? Hello World Title Page Sectioning/Appendix/List Reference Font/Page Layout/Line Spacing Mathematics Table/Graphics/Figures Page Margin Line spacing Font Size  What is LaTeX? LaTeX is a program that writes document using programming.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/tikz/basiclatex/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/tikz/basiclatex/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/courses/tikz/basiclatex/">
+  <meta property="og:title" content="Basic LaTeX | Chiu Yu Ko">
+  <meta property="og:description" content="Learning Objectives:
+ What is LaTeX? Hello World Title Page Sectioning/Appendix/List Reference Font/Page Layout/Line Spacing Mathematics Table/Graphics/Figures Page Margin Line spacing Font Size  What is LaTeX? LaTeX is a program that writes document using programming."><meta property="og:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-09-09T00:00:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Basic LaTeX | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#book"><span>Book</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/tikz/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/tikz/introduction/">Tutorial</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/tikz/introduction/">Introduction to LaTeX and TikZ</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/tikz/basiclatex/">Basic LaTeX</a>
+      </li>
+      
+      <li >
+        <a href="/courses/tikz/latexprogramming/">LaTeX Programming</a>
+      </li>
+      
+      <li >
+        <a href="/courses/tikz/beamer/">Beamer</a>
+      </li>
+      
+      <li >
+        <a href="/courses/tikz/basictikz/">Basic TikZ</a>
+      </li>
+      
+      <li >
+        <a href="/courses/tikz/intermediate-tikz/">Intermediate TikZ</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/tikz/tikz-cookbook/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/tikz/tikz-cookbook/">Tikz CookBook</a>
+      </li>
+      
+      <li >
+        <a href="/courses/tikz/tikz-cookbook-companion/">TikZ Cookbook Companion</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/tikz/consumer/">Example</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/tikz/consumer/">Consumer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/courses/tikz/producer/">Producer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/courses/tikz/demand-and-supply/">Demand and Supply</a>
+      </li>
+      
+      <li >
+        <a href="/courses/tikz/labour-economics/">Labor Economics</a>
+      </li>
+      
+      <li >
+        <a href="/courses/tikz/game-theory/">Game Theory</a>
+      </li>
+      
+      <li >
+        <a href="/courses/tikz/macroeconomics/">Macroeconomics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-latex">What is LaTeX?</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#hello-world">Hello World</a></li>
+    <li><a href="#front-matter">Front Matter</a></li>
+    <li><a href="#sectioning">Sectioning</a></li>
+    <li><a href="#appendix">Appendix</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#unordered-list">Unordered List</a></li>
+    <li><a href="#ordered-list">Ordered List</a></li>
+    <li><a href="#deescription-list">Deescription List</a></li>
+    <li><a href="#nested-list">Nested List</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#tablular">Tablular</a></li>
+    <li><a href="#table">Table</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#includegraphics">Includegraphics</a></li>
+    <li><a href="#figure">Figure</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#inline-mathmatics">Inline Mathmatics</a></li>
+    <li><a href="#greek-letters">Greek Letters</a></li>
+    <li><a href="#displayed-equation">Displayed equation</a></li>
+    <li><a href="#numbered-equation">Numbered equation</a></li>
+    <li><a href="#multi-line-equation">Multi-line equation</a></li>
+    <li><a href="#theorem">Theorem</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#page-margin">Page Margin</a></li>
+    <li><a href="#vertical-spacing">Vertical spacing</a></li>
+    <li><a href="#horizontal-spacing">Horizontal spacing</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#line-spacing">Line spacing</a></li>
+    <li><a href="#text-alignment">Text Alignment</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#global-font-size">Global font Size</a></li>
+    <li><a href="#local-font-size">Local font size</a></li>
+    <li><a href="#font-color">Font color</a></li>
+    <li><a href="#basic-font-transformation">Basic font transformation</a></li>
+    <li><a href="#font-emphasis">Font emphasis</a></li>
+    <li><a href="#font-family">Font Family</a></li>
+    <li><a href="#font-series">Font Series</a></li>
+    <li><a href="#font-shape">Font shape</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Basic LaTeX</h1>
+
+          <div class="article-style">
+            <p>Learning Objectives:</p>
+<ul>
+<li>What is LaTeX?</li>
+<li>Hello World</li>
+<li>Title Page</li>
+<li>Sectioning/Appendix/List</li>
+<li>Reference</li>
+<li>Font/Page Layout/Line Spacing</li>
+<li>Mathematics</li>
+<li>Table/Graphics/Figures</li>
+<li>Page Margin</li>
+<li>Line spacing</li>
+<li>Font Size</li>
+</ul>
+<h2 id="what-is-latex">What is LaTeX?</h2>
+<p>LaTeX is a program that writes document using programming. It is What you see is what you mean (WYSIWYM). Hence, you should not need to bother with formatting when you create the content. You write a document by focusing on the content instead of how it looks. The appearance would be taken care by the software.</p>
+<p>The program will do it for you or you tell how it should be done. It is standard for academic publishing, and it is also very easy to include mathematics, graphics and tables with professional look.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ejGA_ZWiZT4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="basic-setup">Basic setup</h1>
+<h2 id="hello-world">Hello World</h2>
+<p>Since we are producing a document, we start to tell the program so by using the command <code>\documentclass{article}</code>. We need to tell what document we are producing. For our purpose, we are focusing on simple documents so that <strong>article</strong> would suffice. Other frequently used options for documentclass are <strong>book</strong> and <strong>beamer</strong> for producing books and presentation slides.</p>
+<p>Then we need to tell which section should be included in the output file by using <code>\begin{document}</code> and <code>\end{document}</code>.</p>
+<p>Finally, type the words “Hello World!” between the <code>\begin{document}</code> and <code>\end{document}</code>. Whatever text, pictures, or tables is included in between the 2 commands will appear on the document itself, and you can see this on the right-hand side.</p>
+<pre><code class="language-latex">\documentclass{article}
+\begin{document}
+Hello World!
+\end{document}
+</code></pre>
+<p>If you compile the file, you should get the following pdf output:</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/tikz/LaTeX-hello-world.png" >
+
+
+  <img src="/img/tikz/LaTeX-hello-world.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/3bh0LXP427o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="front-matter">Front Matter</h2>
+<p>Usually a document would start with a title. We just need to tell the program by <code>\title{}</code>.</p>
+<p>Similarly, we will usually have author after title. We only need to say  <code>\author{}</code></p>
+<p>Moreover, we often put a time stamp to the document. To do so, we use <code>\date{}</code>. Often we use <code>\today</code> to represent the date to set this up.</p>
+<p>Finally, we need to tell the program where to put these information by using <code>\maketitle</code>.</p>
+<p>An example is as follows:</p>
+<pre><code class="language-nohighlight">\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+\end{document}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/LVPHG7Khs-A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="sectioning">Sectioning</h2>
+<p>Next, we move on to sections and subsections. This is important if you wish to divide your text into nice, separate sections for readability.</p>
+<p>When you include sections by using <code>\section{}</code>, LaTex automatically numbers each section for you. You might have seen this in academic papers, this is why people use LaTex when writing their papers. Subsections will take on that particular section’s number, and then include a second number behind to indicate that it is a subsection. We use <code>\subsection{}</code> here. You can also use <code>\subsubsection{}</code> if you wish.</p>
+<p>You code will look like this:</p>
+<pre><code class="language-nohighlight">\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+
+\section{Introduction}
+This is my best paper
+\section{Model}
+We will have a lot of math.
+\subsection{Basic Model}
+Math here is simplier.
+\subsection{Full Model}
+Math here is crazy.
+\section{Conclusion}
+My paper is great!
+\end{document}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/N1meTnloNNM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="appendix">Appendix</h2>
+<p>Appendix is another section that does not following numeric numbering (but alphabetical ordering). We just need to say <code>\appendix</code> where the appendix starts.</p>
+<pre><code class="language-nohighlight">\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+
+\section{Introduction}
+This is my best paper
+\section{Model}
+We will have a lot of math.
+...
+\section{Conclusion}
+My paper is great!
+
+\appendix
+\section{Data Description}
+Here is the appendix.
+\end{document}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Vl0PjKsdtQc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="reference">Reference</h2>
+<p>Reference is very easy to manage under latex. Use <code>\cite{key}</code> to cite paper in the bibligrpahy section enclosed by <code>\begin{thebibliography}</code> and <code>\end{thebibliography}</code>:</p>
+<pre><code class="language-latex">\cite{key1} says lalala 
+\cite{key2} says blahblahblah
+\begin{thebibliography}{99}
+\bibitem{key1} Me, My paper, Trash Bin, P1-100.
+\bibitem{key2} You, My paper 2, Trash Bin, P2-200.
+\end{thebibliography}
+</code></pre>
+<p>The argument to <code>\begin{thebibliography}{}</code> is used for setting the hanging indentation of the bibliography items. If you use numeric labels, then the argument should be a single digit (9 is commonly used) if there are less than ten items; two digits (commonly 99) if there are from 10 to 99 items and so on.</p>
+<p>To create items in the bibliography, we use <code>\bibitem{}</code>, where the name in the brackets is what you use when you cite in the main text.
+<code>\bibitem{key}</code> Name, Year, Journal, Page Number.</p>
+<p>The <code>\cite{key}</code> command will automatically extract information from the bibliography where<br>
+<strong>key</strong> is the name defined in the <strong>thebibliography</strong>.</p>
+<p>If there is no such information in the bibliography, the citations will simply show a question mark ?.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Bli8vDHK9sM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="lists">Lists</h1>
+<p>There are three types of list:</p>
+<ul>
+<li><strong>Itemize</strong> is unnumbered list: each item is denoted by a bullet or a dot. Commonly used for unordered items</li>
+<li><strong>Enumerate</strong> is numbered list or ordered list: each item is denoted by number or letter. Commonly used for ordered items</li>
+<li><strong>Description</strong> is descriptive list: each item is denoted by customized description.</li>
+</ul>
+<h2 id="unordered-list">Unordered List</h2>
+<p>Undered lists are enclosed by <code>\begin{itemize}</code> and <code>\end{itemize}</code> and we use <code>\item</code> to tell it is an item. A typical example is:</p>
+<pre><code class="language-latex">\begin{itemize}
+  \item I have an apple.
+  \item You have an orange.
+\end{itemize}
+</code></pre>
+<h2 id="ordered-list">Ordered List</h2>
+<p>Likewise, the <code>\begin{enumerate}</code> and <code>\end{enumerate}</code> also works the same way, and we also use <code>\item</code> to create items. The only difference is that enumerate uses numbers, and itemize uses bullet points.</p>
+<pre><code class="language-latex">\begin{enumerate}
+  \item I have an apple.
+  \item You have an orange.
+\end{enumerate}
+</code></pre>
+<h2 id="deescription-list">Deescription List</h2>
+<p>Likewise, the <code>\begin{decription}</code> and <code>\end{description}</code> also works the same way, and we also use <code>\item[name]</code> to create items. The only difference is that we have to tell the name for each item.</p>
+<pre><code class="language-latex">\begin{description}
+  \item[First] I have an apple.
+  \item[Second] You have an apple.
+  \item[Third] We have two. 
+</code></pre>
+<h2 id="nested-list">Nested List</h2>
+<p>Nested lists can be easily created by nesting one list over the other. The below show how one numbered list put inside another numbered list. One can also put an unnumbered list insider another unnumbered list. Moreover, one can also cross-over.</p>
+<p>First, we nest an unordered list inside another unordered list:</p>
+<pre><code class="language-latex">\begin{itemize}
+  \item I have an apple.
+  \item You have an orange.
+  \begin{itemize}
+    \item I have an apple.
+    \item You have an orange.
+  \end{itemize}
+\end{itemize}
+</code></pre>
+<p>Second, we nest an ordered list inside another ordered list:</p>
+<pre><code class="language-latex">\begin{enumerate}
+  \item I have an apple.
+  \item You have an orange.
+  \begin{enumerate}
+    \item I have an apple.
+    \item You have an orange.
+  \end{enumerate}
+\end{enumerate}
+</code></pre>
+<p>Or even mix them together:</p>
+<pre><code class="language-latex">\begin{enumerate}
+  \item I have an apple.
+  \item You have an orange.
+  \begin{itemize}
+    \item I have an apple.
+    \item You have an orange.
+  \end{itemize}
+\end{enumerate}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/im-8BWtEKnY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="tables">Tables</h1>
+<p>There are two types of table: (1) tabular and (2) table. Tabular environment is to display information in table form while table environment is to allow tabular to float.</p>
+<h2 id="tablular">Tablular</h2>
+<p>Tables are created using the <code>\begin{tabular}{}</code> and <code>\end{tabular}</code> format. We can specify what type of table we want, and LaTex will create it for us.</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>l</td>
+<td>left-justified column</td>
+</tr>
+<tr>
+<td>c</td>
+<td>centered column</td>
+</tr>
+<tr>
+<td>r</td>
+<td>right-justified column</td>
+</tr>
+</tbody>
+</table>
+<p>An example is</p>
+<pre><code class="language-latex">\begin{tabular}{l c r}
+   1 &amp; 2 &amp; 3 \\ \hline
+   40 &amp; 50 &amp; 60 \\
+   700 &amp; 800 &amp; 900 \\
+\end{tabular}
+</code></pre>
+<p>In the example above, we have used “l c r”, so LaTex creates a table with 3 columns, with the corresponding directional justifications.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/__RJL26KaIg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="table">Table</h2>
+<p>LaTeX can help you to determine the location of the table automatically. We start with <code>\begin{table}</code> and end with <code>\end{table}</code></p>
+<p>There are several choices for placement options after <code>\begin{table}</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Specifier</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>h</td>
+<td>Place the float here</td>
+</tr>
+<tr>
+<td>t</td>
+<td>Position at the top of the page.</td>
+</tr>
+<tr>
+<td>b</td>
+<td>Position at the bottom of the page.</td>
+</tr>
+</tbody>
+</table>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/7UOJgNtEjnU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="graphics">Graphics</h1>
+<p>Similar to table, there are two ways to display graphics: inline or floating.</p>
+<h2 id="includegraphics">Includegraphics</h2>
+<p>To include graphics files (e.g., jpg and png) in the document, we need to make use of the graphicx package, which is done by using <code>\usepackage{graphicx}</code>. Note that package has to put before <code>\begin{document}</code>.</p>
+<p>To include a graphic file, we use the command <code>\includegraphics{filename}</code>. Note that the file has to be in the same file as the tex file for this code to work.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/mLmHIIqtO-E" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="figure">Figure</h2>
+<p>To float the graphics, we start with using <code>\begin{figure}[placement option]</code> and ends with <code>\end{figure}</code>. You also need to write down the caption. You may use <code>\centering</code> to center the graphics.</p>
+<pre><code class="language-latex">\begin{figure}[htp]
+\centering
+\includegraphics[width=\textwidth]{picture.jpg}
+\caption{I am a figure.}
+\end{figure}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/wp-rQEeb9Kc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="mathematics">Mathematics</h1>
+<h2 id="inline-mathmatics">Inline Mathmatics</h2>
+<p>Mathematics is one of the main reasons to use LaTeX over other word processors. To let the program know that you are working on math, enclose your expression with dollar sign <code>$</code>:</p>
+<pre><code class="language-latex">$ 3^2 + 4^2 = 5^2$
+</code></pre>
+<p>Why dollar sign? Typesetting with math was expensive in the old days.</p>
+<p>Alternatively, we can enclose our expression by <code>\(</code> and <code>\)</code>. The latter way of writing improves readability if we have a complicated mathematical expression.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/xN_Ce2pnC7w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="greek-letters">Greek Letters</h2>
+<p>We can write symbols by using symbol name, for example <code>\alpha</code> for $\alpha$, <code>\beta</code> for $\beta$ etc.</p>
+<h2 id="displayed-equation">Displayed equation</h2>
+<p>If we want a display equation, simply use double dollar sign <code>$$</code>:</p>
+<pre><code class="language-latex">$$ 3^2 + 4^2 = 5^2$$
+</code></pre>
+<p>Why dobule dollar sign? Typesetting with displayed math was even expensive in the old days.</p>
+<p>Alternatively, we can enclose our expression by <code>\[</code> and <code>\]</code>. The latter way of writing improves readability if we have a complicated mathematical expression.</p>
+<h2 id="numbered-equation">Numbered equation</h2>
+<p>If you want the equation to be numbered, enclose it with <code>\begin{equation}</code> and <code>\end{equation}</code>:</p>
+<pre><code class="language-latex">\begin{equation}
+3^2 + 4^2 = 5^2
+\end{equation}
+</code></pre>
+<p>If you want it to be referenced, then add an <code>\label{key}</code> and use <code>\ref{key}</code> later.</p>
+<pre><code class="language-latex">\begin{equation}\label{NiceEq}
+3^2 + 4^2 = 5^2
+\end{equation}
+
+I like Eq (\ref{NiceEq}) very much. 
+</code></pre>
+<p>Note that the bracket has to be manually added.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/TKmLKZPYNdU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="multi-line-equation">Multi-line equation</h2>
+<p>To use multi-line equation, we enclose the set of equations by <code>\begin{align}</code> and <code>\end{align}</code>. For multi-line equations, we need to separate each line by <code>\\</code> and specify where equations should align by <code>&amp;</code>:</p>
+<pre><code class="language-latex">\begin{align}
+x +y  &amp;= 1 \\
+x - y &amp;= 2  
+\end{align}
+</code></pre>
+<h2 id="theorem">Theorem</h2>
+<p>To write a formal statement, it is convenient to use amsthm package by <code>\usepacakge{amsthm}</code>:</p>
+<pre><code class="language-latex">\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+
+\begin{theorem}\label{NiceThm}
+One plus one is two! $$1+1=2.$$
+\end{theorem}
+I like Theorem \ref{NiceThm} very much. 
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/fITw64ezi3Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="page-layout">Page Layout</h1>
+<h2 id="page-margin">Page Margin</h2>
+<p>The <strong>geometry</strong> package allows you to change the margins of the page, if you wish to.</p>
+<pre><code class="language-nohighlight">\usepackage{geometry}
+</code></pre>
+<p>To change the individual sides’ margins, simply use <code>\geometry{margin=1.1in}</code>. Take note that this should be put before the <code>\begin{document}</code> since it is for the whole document. For example, we have</p>
+<pre><code class="language-nohighlight">\usepackage{geometry}
+\geometry{maring=1.1in}
+</code></pre>
+<p>To specify margins on four sides, we use <code>\geometry{left=2.5in, right=2.5in, top=2.5in, bottom=2.5in}</code></p>
+<pre><code class="language-nohighlight">\usepackage{geometry}
+\geometry{left=2.5in, right=2.5in, top=2.5in, bottom=2.5in}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/y-3prHXSA8E" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="vertical-spacing">Vertical spacing</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\</td>
+<td>linebreak</td>
+</tr>
+<tr>
+<td>\newpage</td>
+<td>starts a new page</td>
+</tr>
+<tr>
+<td>\smallskip</td>
+<td>create small vertical space</td>
+</tr>
+<tr>
+<td>\medskip</td>
+<td>create medium vertical space</td>
+</tr>
+<tr>
+<td>\bigskip</td>
+<td>create big vertical space</td>
+</tr>
+<tr>
+<td>\vspace{4in}</td>
+<td>create vertical space of 4 inches</td>
+</tr>
+</tbody>
+</table>
+<h2 id="horizontal-spacing">Horizontal spacing</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\noindent</td>
+<td>suppresses paragraph indentatio</td>
+</tr>
+<tr>
+<td>\enskip</td>
+<td>horizontal space of half of the size of letter  M</td>
+</tr>
+<tr>
+<td>\quad</td>
+<td>horizontal space of one of the size of letter M</td>
+</tr>
+<tr>
+<td>\qquad</td>
+<td>horizontal space of two of the size of letter M</td>
+</tr>
+<tr>
+<td>\hspace{2cm}</td>
+<td>horizontal space 2cm</td>
+</tr>
+<tr>
+<td>\hfill</td>
+<td>horizontal space to make the line right-aligned</td>
+</tr>
+</tbody>
+</table>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/vswt8DDcMiQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="paragraph-layout">Paragraph Layout</h1>
+<h2 id="line-spacing">Line spacing</h2>
+<p>The <strong>setspace</strong> package allows you to edit the line spacing between each line for overall text, similar to Word’s function. Options include <code>\singlespacing</code>, <code>\onehalfspacing</code>, <code>\doublespacing</code>.</p>
+<pre><code class="language-nohighlight">\usepackage{setspace}
+\singlespacing
+\onehalfspacing
+\doublespacing
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/aMqmt49j9So" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="text-alignment">Text Alignment</h2>
+<p>Default of text is justified.</p>
+<ul>
+<li>For centered text, enclosed <code>\begin{center}</code> and <code>\end{center}</code></li>
+<li>For right-aligned text, enclosed <code>\begin{flushright}</code> and <code>\end{flushright}</code></li>
+<li>For left-aligned text, enclosed <code>\begin{flushleft}</code> and <code>\end{flushleft}</code></li>
+</ul>
+<pre><code class="language-latex">\begin{center}
+	I am centered text.
+\end{center}
+\begin{flushright}
+	I am right-aligned text.
+\end{flushright} 
+\begin{flushleft}
+	I am left-aligned text.
+\end{flushleft}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/6Rv3RFrB6k8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="font-layout">Font Layout</h1>
+<h2 id="global-font-size">Global font Size</h2>
+<p>To change font size of the whole document, we define it the premable:</p>
+<pre><code class="language-latex">\documentclass[12pt]{article}
+</code></pre>
+<p>As shown above, we can change the font size used throughout the paper by changing the number here. In this example, font size is 12, and we can change it by just typing another number to replace the <strong>12</strong>. If you want other size, you can choose 10 or 11.</p>
+<pre><code class="language-latex">\documentclass[10pt]{article}
+\documentclass[11pt]{article}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/RcMbVfnzwxk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="local-font-size">Local font size</h2>
+<p>To change the font size only for some part of the text, we use some relative size commands (from small to big):</p>
+<pre><code class="language-latex">\Huge
+\LARGE
+\Large
+\large
+\normalsize
+\small
+\footnotesize
+\scriptsize
+\tiny
+</code></pre>
+<p>Here is the example:</p>
+<pre><code class="language-latex">\begin{document}
+You know what? 
+I am an honor student of economics of NUS. 
+Our school is the {\Huge  best} in {\tiny Asia}.
+What does that mean? 
+I am {\large Best} of {\LARGE best}.
+Really? 
+{\Huge Yes}.\footnote{Seriously?}
+\end{document}
+</code></pre>
+<p>Technically, it is the mapping of the relative size command:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>10pt</th>
+<th>11pt</th>
+<th>12pt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\tiny</td>
+<td>5pt</td>
+<td>6pt</td>
+<td>6pt</td>
+</tr>
+<tr>
+<td>\scriptsize</td>
+<td>7pt</td>
+<td>8pt</td>
+<td>8pt</td>
+</tr>
+<tr>
+<td>\footnotesize</td>
+<td>8pt</td>
+<td>9pt</td>
+<td>10pt</td>
+</tr>
+<tr>
+<td>\small</td>
+<td>9pt</td>
+<td>10pt</td>
+<td>11pt</td>
+</tr>
+<tr>
+<td>\normalsize</td>
+<td>10pt</td>
+<td>11pt</td>
+<td>12pt</td>
+</tr>
+<tr>
+<td>\large</td>
+<td>12pt</td>
+<td>12pt</td>
+<td>14pt</td>
+</tr>
+<tr>
+<td>\Large</td>
+<td>14pt</td>
+<td>14pt</td>
+<td>17pt</td>
+</tr>
+<tr>
+<td>\LARGE</td>
+<td>17pt</td>
+<td>17pt</td>
+<td>20pt</td>
+</tr>
+<tr>
+<td>\huge</td>
+<td>20pt</td>
+<td>20pt</td>
+<td>25pt</td>
+</tr>
+<tr>
+<td>\Huge</td>
+<td>25pt</td>
+<td>25pt</td>
+<td>25pt</td>
+</tr>
+</tbody>
+</table>
+<p>Sometimes, we want to exactly match directly. We can use <code>\fontsize{size}{leading}\selectfont</code>. For example, <code>\fontsize{10}{12}\selectfont</code> means 10pt type with 12pt leading.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/T9qkinGoPoI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="font-color">Font color</h2>
+<p>To change color, use package <strong>color</strong> and then enclosed the passage with brace.</p>
+<pre><code class="language-latex">\usepackage{color}
+{\color{red} abc is 123.}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/RcMbVfnzwxk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="basic-font-transformation">Basic font transformation</h2>
+<p>For most daily usages, there are six commands (italic, bold, small cap, slant font, typewriter):</p>
+<pre><code class="language-latex">\textit{italic} 
+\textbf{boldface}
+\textsc{small cap}
+\textsl{slant font}
+\textsf{Sans Serif}
+\texttt{typewriter}
+</code></pre>
+<p>For more details, see below discussion on font family, font series, and font shape.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/15J1NK0yAyM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="font-emphasis">Font emphasis</h2>
+<p>Font emaphsis involves underline, italic and upper case:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Emphasis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\underline{&hellip;}</td>
+<td>underline</td>
+</tr>
+<tr>
+<td>\emph{&hellip;}</td>
+<td>Italic</td>
+</tr>
+<tr>
+<td>\uppercase{&hellip;}</td>
+<td>all capital letters</td>
+</tr>
+</tbody>
+</table>
+<p>Highlighting and strikeout are not included in standard package. To use it, we need to use the packages <strong>color</strong> and <strong>soul</strong>:</p>
+<pre><code class="language-latex">\usepackage{color,soul}
+\hl{I am highlighted}
+\sout{haha}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/sS7WE9UkWwI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="font-family">Font Family</h2>
+<p>Under computer modern font family, roman (or serif typeface) font is used. We can use sans serif and typewriter font family.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Switch</th>
+<th>font family</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\texttt{&hellip;}</td>
+<td>{\ttfamily &hellip;}</td>
+<td>typewriter</td>
+</tr>
+<tr>
+<td>\textsf{&hellip;}</td>
+<td>{\sffamily &hellip;}</td>
+<td>san serif font</td>
+</tr>
+<tr>
+<td>\textrm{&hellip;}</td>
+<td>{\rmfamily&hellip;}</td>
+<td>roman font</td>
+</tr>
+</tbody>
+</table>
+<h2 id="font-series">Font Series</h2>
+<p>Font series mean how dark the pen and how width of the pen.</p>
+<table>
+<thead>
+<tr>
+<th>selectfont</th>
+<th>Command</th>
+<th>Switch</th>
+<th>font series</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\fontseries{m}</td>
+<td></td>
+<td></td>
+<td>medium</td>
+</tr>
+<tr>
+<td>\fontseries{b}</td>
+<td>\textbf{&hellip;}</td>
+<td>{\bfseries &hellip;}</td>
+<td>bold</td>
+</tr>
+<tr>
+<td>\fontseries{bx}</td>
+<td></td>
+<td></td>
+<td>bold extended</td>
+</tr>
+<tr>
+<td>\fontseries{sb}</td>
+<td></td>
+<td></td>
+<td>semi-bold</td>
+</tr>
+<tr>
+<td>\fontseries{c}</td>
+<td></td>
+<td></td>
+<td>condensed</td>
+</tr>
+</tbody>
+</table>
+<h2 id="font-shape">Font shape</h2>
+<p>Font shape is the form of letter:</p>
+<table>
+<thead>
+<tr>
+<th>Selectfont</th>
+<th>Command</th>
+<th>Switch</th>
+<th>Shape</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\fontshape{it}</td>
+<td>\textit{&hellip;}</td>
+<td>{\itshape &hellip;}</td>
+<td>italics</td>
+</tr>
+<tr>
+<td>\fontshape{sl}</td>
+<td>\textsl{&hellip;}</td>
+<td>{\textsl &hellip;}</td>
+<td>slant</td>
+</tr>
+<tr>
+<td>\fontshape{sc}</td>
+<td>\textrm{&hellip;}</td>
+<td>{\scshape &hellip;}</td>
+<td>small capital</td>
+</tr>
+<tr>
+<td>\fontshape{ui}</td>
+<td></td>
+<td></td>
+<td>upright italic</td>
+</tr>
+<tr>
+<td>\fontshape{ol}</td>
+<td></td>
+<td></td>
+<td>outline</td>
+</tr>
+</tbody>
+</table>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/tikz/introduction/" rel="next">Introduction to LaTeX and TikZ</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/tikz/beamer/" rel="prev">Beamer</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Sep 9, 2018</p>
+
+          
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses%5ctikz%5cBasicLaTeX.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    2012-2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

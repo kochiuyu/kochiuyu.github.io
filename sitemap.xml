@@ -1,194 +1,120 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/spreadsheetbasic/</loc>
+    <loc>/programming/excel/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/programming/vba/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/jobmarkettips/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/journal/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/programming/latex/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/programming/r-programming/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/seminar/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/advising/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/programming/tikz/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/programming/vba/excel-vba-r/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/latexbasic/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/overview/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/rintro/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/latexadvanced/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/rdata/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/rplotting/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/rprogramming/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/vbabasic/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/rquantmod/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/rcandlestick/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/rquantstrat/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/fundamental/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/vbaprogramming/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/technical/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/factor/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/rmarkdown/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/event/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/spread/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/inventory/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/sequential/</loc>
-    <lastmod>2019-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/behavioral/</loc>
-    <lastmod>2019-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2030-06-01T13:00:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talk/example/</loc>
-    <lastmod>2030-06-01T13:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
-    <lastmod>2030-06-01T13:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
+    <loc>/publication-type/2/</loc>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/chiu-yu-ko/</loc>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/many-to-one-bargaining/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/duozhe-li/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
+    <loc>/author/duozhe-li/</loc>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/game-theory/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
+    <loc>/tag/game-theory/</loc>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/industrial-organization/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
+    <loc>/tag/industrial-organization/</loc>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/innovation/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
+    <loc>/tag/innovation/</loc>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>/publication_types/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-08-17T00:00:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/rjv-transfer/</loc>
     <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -212,106 +138,158 @@
   </url>
   
   <url>
-    <loc>/authors/xuyao-zhang/</loc>
+    <loc>/author/xuyao-zhang/</loc>
     <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2019-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/courses/</loc>
-    <lastmod>2019-08-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/vba/advanced-excel/</loc>
+    <loc>/programming/excel/advanced-excel/</loc>
     <lastmod>2019-05-04T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/vba/advanced-vba/</loc>
+    <loc>/programming/vba/advanced-vba/</loc>
     <lastmod>2019-05-04T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/vba/basic-excel/</loc>
+    <loc>/programming/excel/basic-excel/</loc>
     <lastmod>2019-05-04T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/basictikz/</loc>
+    <loc>/programming/tikz/basictikz/</loc>
     <lastmod>2019-05-04T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/vba/basic-vba/</loc>
+    <loc>/programming/vba/basic-vba/</loc>
     <lastmod>2019-05-04T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/intermediate-tikz/</loc>
+    <loc>/programming/tikz/intermediate-tikz/</loc>
     <lastmod>2019-05-04T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/introduction/</loc>
+    <loc>/programming/latex/introduction/</loc>
     <lastmod>2019-05-04T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/others/bookreview/</loc>
+    <loc>/programming/tikz/introduction/</loc>
+    <lastmod>2019-05-04T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/programming/</loc>
+    <lastmod>2019-05-04T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/seminar/2013/</loc>
     <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/others/tips/</loc>
+    <loc>/others/seminar/2014/</loc>
     <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/others/journalranking/</loc>
+    <loc>/others/seminar/2015/</loc>
     <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/others/journalfee/</loc>
+    <loc>/others/seminar/2016/</loc>
     <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/others/media/</loc>
+    <loc>/others/seminar/2017/</loc>
     <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/others/pedagogy/</loc>
+    <loc>/others/seminar/2018/</loc>
     <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/others/supervision/</loc>
+    <loc>/others/jobmarkettips/december/</loc>
     <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/jupyter/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <loc>/others/jobmarkettips/febapril/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-04-17T00:00:00+08:00</lastmod>
+    <loc>/others/jobmarkettips/january/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/bargaining-theory/</loc>
+    <loc>/others/jobmarkettips/tips/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/journal/journalranking/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/journal/journalfee/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/jobmarkettips/november/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/jobmarkettips/october/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/advising/phd/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/jobmarkettips/reading/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/jobmarkettips/september/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/jobmarkettips/summer/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/others/advising/undegrad/</loc>
+    <lastmod>2019-04-21T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/bargaining-theory/</loc>
     <lastmod>2019-01-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -320,27 +298,23 @@
   </url>
   
   <url>
-    <loc>/tags/fair-sharing/</loc>
+    <loc>/tag/fair-sharing/</loc>
     <lastmod>2019-01-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/fengjiao-chen/</loc>
+    <loc>/author/fengjiao-chen/</loc>
     <lastmod>2019-01-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/jens-gudmundsson/</loc>
+    <loc>/author/jens-gudmundsson/</loc>
     <lastmod>2019-01-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/jens-hougaard/</loc>
+    <loc>/author/jens-hougaard/</loc>
     <lastmod>2019-01-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -349,172 +323,153 @@
   </url>
   
   <url>
-    <loc>/tags/water-sharing/</loc>
+    <loc>/tag/water-sharing/</loc>
     <lastmod>2019-01-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/r-programming/</loc>
+    <loc>/programming/latex/basiclatex/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/</loc>
+    <loc>/programming/latex/beamer/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/vba/</loc>
+    <loc>/programming/tikz/beamer/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/basiclatex/</loc>
+    <loc>/programming/r-programming/package/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/beamer/</loc>
+    <loc>/programming/r-programming/ta-with-r-ch1/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/package/</loc>
+    <loc>/programming/r-programming/ta-with-r-ch2/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/ta-with-r-ch1/</loc>
+    <loc>/programming/r-programming/ta-with-r-ch3/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/ta-with-r-ch2/</loc>
+    <loc>/programming/r-programming/ta-with-r-ch4/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/ta-with-r-ch3/</loc>
+    <loc>/programming/r-programming/ta-with-r-ch5/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/ta-with-r-ch4/</loc>
+    <loc>/programming/r-programming/ta-with-r-ch6/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/ta-with-r-ch5/</loc>
+    <loc>/programming/r-programming/ta-with-r-ch7/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/ta-with-r-ch6/</loc>
+    <loc>/programming/r-programming/ta-with-r-ch8/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/ta-with-r-ch7/</loc>
+    <loc>/programming/tikz/consumer/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/ta-with-r-ch8/</loc>
+    <loc>/programming/tikz/demand-and-supply/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/consumer/</loc>
+    <loc>/programming/r-programming/excel-vba-r/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/demand-and-supply/</loc>
+    <loc>/programming/tikz/game-theory/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/excel-vba-r/</loc>
+    <loc>/programming/r-programming/installation/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/vba/excel-vba-r/</loc>
+    <loc>/programming/tikz/labour-economics/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/game-theory/</loc>
+    <loc>/programming/latex/latexprogramming/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/installation/</loc>
+    <loc>/programming/tikz/latexprogramming/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/latexprogramming/</loc>
+    <loc>/programming/tikz/macroeconomics/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/labour-economics/</loc>
+    <loc>/programming/tikz/producer/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/macroeconomics/</loc>
+    <loc>/programming/r-programming/ta-with-r/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/others/</loc>
+    <loc>/programming/r-programming/technical-analysis-with-r/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tikz/producer/</loc>
+    <loc>/programming/tikz/tikz-cookbook/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/ta-with-r/</loc>
+    <loc>/programming/tikz/tikz-cookbook-companion/</loc>
     <lastmod>2018-09-09T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/r-programming/technical-analysis-with-r/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tikz/tikz-cookbook-companion/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tikz/tikz-cookbook/</loc>
-    <lastmod>2018-09-09T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/jingyi-xue/</loc>
+    <loc>/author/jingyi-xue/</loc>
     <lastmod>2018-09-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/network-sharing/</loc>
+    <loc>/tag/network-sharing/</loc>
     <lastmod>2018-09-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/rube-juarez/</loc>
+    <loc>/author/rube-juarez/</loc>
     <lastmod>2018-09-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -524,17 +479,12 @@
   
   <url>
     <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+08:00</lastmod>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/others/phdconference/</loc>
-    <lastmod>2018-04-21T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/others/readinggroup/</loc>
-    <lastmod>2018-04-21T00:00:00+08:00</lastmod>
+    <loc>/terms/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -543,29 +493,12 @@
   </url>
   
   <url>
-    <loc>/tags/political-economy/</loc>
+    <loc>/tag/political-economy/</loc>
     <lastmod>2017-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/teaching/applied-financial-economics/</loc>
-    <lastmod>2016-04-27T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/demo/</loc>
-    <lastmod>2016-04-27T00:00:00+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/project/external-project/</loc>
-    <lastmod>2016-04-27T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/fair-sharing/</loc>
     <lastmod>2016-04-27T00:00:00+08:00</lastmod>
   </url>
   
@@ -580,62 +513,48 @@
   </url>
   
   <url>
-    <loc>/tags/master/</loc>
+    <loc>/tag/master/</loc>
     <lastmod>2016-04-27T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/phd/</loc>
+    <loc>/tag/phd/</loc>
     <lastmod>2016-04-27T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>/teaching/statistics/</loc>
     <lastmod>2016-04-27T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/teaching/</loc>
     <lastmod>2016-04-27T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/undergraduate/</loc>
+    <loc>/tag/undergraduate/</loc>
     <lastmod>2016-04-27T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/academic/</loc>
-    <lastmod>2019-04-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
+    <loc>/tag/undergradudate/</loc>
+    <lastmod>2016-04-27T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/getting-started/</loc>
-    <lastmod>2019-04-17T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/mak-koyama/</loc>
+    <loc>/author/mak-koyama/</loc>
     <lastmod>2015-09-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/political-history/</loc>
+    <loc>/tag/political-history/</loc>
     <lastmod>2015-09-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/tuan-hwee-sng/</loc>
+    <loc>/author/tuan-hwee-sng/</loc>
     <lastmod>2015-09-01T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -644,44 +563,8 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/2015-07-23-r-rmarkdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/economic-history/</loc>
+    <loc>/tag/economic-history/</loc>
     <lastmod>2013-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -690,9 +573,8 @@
   </url>
   
   <url>
-    <loc>/authors/anthony-creane/</loc>
+    <loc>/author/anthony-creane/</loc>
     <lastmod>2013-07-13T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -701,9 +583,8 @@
   </url>
   
   <url>
-    <loc>/authors/hideo-konishi/</loc>
+    <loc>/author/hideo-konishi/</loc>
     <lastmod>2013-07-13T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -712,9 +593,8 @@
   </url>
   
   <url>
-    <loc>/tags/matching-market/</loc>
+    <loc>/tag/matching-market/</loc>
     <lastmod>2011-08-17T00:00:00+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -723,26 +603,15 @@
   </url>
   
   <url>
-    <loc>/others/service/</loc>
-    <lastmod>2010-04-22T00:00:00+08:00</lastmod>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>/author/admin/</loc>
+    <loc>/post/</loc>
   </url>
   
   <url>
-    <loc>/author/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/slides/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/slides/example/</loc>
+    <loc>/talk/</loc>
   </url>
   
 </urlset>

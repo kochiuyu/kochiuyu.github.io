@@ -1,0 +1,1750 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="noStatistical AnalysisWe first review some basic function of statistics: central tendency and dispersion before going into regression analysis.
+Learning objectives:
+summary statics
+generate random numbers">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/programming/r-programming/ta-with-r-ch4/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/programming/r-programming/ta-with-r-ch4/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/programming/r-programming/ta-with-r-ch4/">
+  <meta property="og:title" content=" | Chiu Yu Ko">
+  <meta property="og:description" content="noStatistical AnalysisWe first review some basic function of statistics: central tendency and dispersion before going into regression analysis.
+Learning objectives:
+summary statics
+generate random numbers"><meta property="og:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-09-09T00:00:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title> | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#book"><span>Book</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/programming/"><span>Programming</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/others/"><span>Others</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/r-programming/">ROverview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r-programming/">R</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/r-programming/installation/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/programming/r-programming/installation/">Installation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/r-programming/technical-analysis-with-r/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/programming/r-programming/technical-analysis-with-r/">Technical analysis with R</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/excel-vba-r/">Financial programming with Excel VBA R</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/r-programming/package/">R-Package</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/programming/r-programming/package/">Candle Sticks</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r-programming/ta-with-r/">Technical Analysis with R</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch1/">Chapter 1 Introduction</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch2/">Chapter 2 Working with Data</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch3/">Chapter 3 Plotting</a>
+      </li>
+      
+      <li class="active">
+        <a href="/programming/r-programming/ta-with-r-ch4/">Chapter 4 Statistics</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch5/">Chapter 5 Programming</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch6/">Chapter 6 Scrapping</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch7/">Chapter 7 Quantmod</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch8/">Chapter 8 Quanstrat</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1></h1>
+
+          <div class="article-style">
+            
+
+<div id="TOC">
+no
+</div>
+
+<div id="statistical-analysis" class="section level1">
+<h1>Statistical Analysis</h1>
+<p>We first review some basic function of statistics: central tendency and dispersion before going into regression analysis.</p>
+<p>Learning objectives:</p>
+<ul>
+<li><p>summary statics</p></li>
+<li><p>generate random numbers</p></li>
+<li><p>estimate OLS</p></li>
+<li><p>estimate time series models (ARIMA using <strong>arima</strong>, GARCH using <strong>rugarch</strong>, VAR using <strong>vars</strong>)</p></li>
+<li><p>estimate panel data (<strong>plm</strong> package)</p></li>
+<li><p>Simulation on random walk model and Roll model</p></li>
+</ul>
+<div id="basic-statistics" class="section level2">
+<h2>Basic Statistics</h2>
+<p>Central Tendency</p>
+<pre class="r"><code>x &lt;- 1:40
+mean(x)   </code></pre>
+<pre><code>## [1] 20.5</code></pre>
+<pre class="r"><code>median(x)</code></pre>
+<pre><code>## [1] 20.5</code></pre>
+<pre class="r"><code>summary(x)  #Five-number summary</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    1.00   10.75   20.50   20.50   30.25   40.00</code></pre>
+<p>Dispersion</p>
+<pre class="r"><code>range(x)     #Get minimum and maximum</code></pre>
+<pre><code>## [1]  1 40</code></pre>
+<pre class="r"><code>IQR(x)       #Inter-quartile range</code></pre>
+<pre><code>## [1] 19.5</code></pre>
+<pre class="r"><code>var(x)       #variance</code></pre>
+<pre><code>## [1] 136.6667</code></pre>
+<pre class="r"><code>sd(x)        #Standard deviation</code></pre>
+<pre><code>## [1] 11.69045</code></pre>
+</div>
+<div id="random-number" class="section level2">
+<h2>Random number</h2>
+<p>To generate random integers, we use the function <strong>sample()</strong>.</p>
+<p>We first generate 8 random integers between 2 and 10 without replacement:</p>
+<pre class="r"><code>sample(2:10,8, replace=F) </code></pre>
+<pre><code>## [1]  4  5  6  9 10  2  3  8</code></pre>
+<p>The next one generate 7 integers between 2 and 10 with replacement:</p>
+<pre class="r"><code>sample(2:10,7, replace=T) </code></pre>
+<pre><code>## [1] 10  6  5  5  2  6  6</code></pre>
+<p>In general, the <strong>sample()</strong> function can also be applied to extract random element from a vector.</p>
+<pre class="r"><code>namelist&lt;-c(&quot;Mary&quot;, &quot;Peter&quot;, &quot;John&quot;, &quot;Susan&quot;)
+sample(namelist,2)  # sample from this list</code></pre>
+<pre><code>## [1] &quot;Susan&quot; &quot;Mary&quot;</code></pre>
+<p>To generate random decimal numbers, we use <strong>runif</strong> to get random uniform distribution. The following generates 2 random decimal numbers between 4.6 and 7.8:</p>
+<pre class="r"><code>runif(2, 4.6, 7.8) </code></pre>
+<pre><code>## [1] 7.169279 4.839000</code></pre>
+<p>To generate normal distribution, we use <strong>rnorm()</strong>. The following generate 4 random number that follows the normal distribution with mean being 0 and standard deviation being 1.</p>
+<pre class="r"><code>x &lt;- rnorm(4, mean=0, sd=1) # standard nromal
+x</code></pre>
+<pre><code>## [1]  1.8976780 -0.2299555  1.2559706 -0.9824391</code></pre>
+</div>
+<div id="regression" class="section level2">
+<h2>Regression</h2>
+<p>We will be using the following data to show the regression. Note that we need to use dataframe.</p>
+<pre class="r"><code>x &lt;- c(1,2,3,5,6,7,10,12,13)
+y &lt;- c(1,4,5,6,7,8,9,10,15)
+z &lt;- c(2,3,7,8,9,12,8,7,6)
+df &lt;-data.frame(x=x,y=y,z=z)</code></pre>
+<div id="simple-linear-regression" class="section level3">
+<h3>Simple linear regression</h3>
+<p>The following code shows simple linear regression. The syntax is <strong>lm(y~x, dataframe)</strong>.</p>
+<pre class="r"><code>SLR &lt;-lm(y~x,df)
+summary(SLR)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = y ~ x, data = df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.9660 -1.2234  0.2618  0.7470  2.1627 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   1.5104     0.8756   1.725 0.128193    
+## x             0.8713     0.1134   7.686 0.000118 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.389 on 7 degrees of freedom
+## Multiple R-squared:  0.8941, Adjusted R-squared:  0.8789 
+## F-statistic: 59.08 on 1 and 7 DF,  p-value: 0.0001175</code></pre>
+</div>
+<div id="muliple-linear-regression" class="section level3">
+<h3>Muliple linear regression</h3>
+<p>The following code shows multiple regression. The syntax is <strong>lm(y~x+z, dataframe)</strong>.</p>
+<pre class="r"><code>MLR &lt;-lm(y~x + z,df)
+summary(MLR)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = y ~ x + z, data = df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.8920 -1.2104  0.1329  0.8179  2.3030 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  1.25034    1.34526   0.929 0.388522    
+## x            0.85666    0.13321   6.431 0.000668 ***
+## z            0.05167    0.19124   0.270 0.796060    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.492 on 6 degrees of freedom
+## Multiple R-squared:  0.8953, Adjusted R-squared:  0.8605 
+## F-statistic: 25.67 on 2 and 6 DF,  p-value: 0.001146</code></pre>
+</div>
+<div id="interaction-terms" class="section level3">
+<h3>Interaction terms</h3>
+<p>The following code shows multiple regression with interaction term. The syntax is <strong>lm(y~x+z+x:z, dataframe)</strong>.</p>
+<pre class="r"><code>MLRDummy &lt;- lm(y ~ x + z + x:z, df)
+summary(MLRDummy)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = y ~ x + z + x:z, data = df)
+## 
+## Residuals:
+##       1       2       3       4       5       6       7       8       9 
+## -0.3080  0.9573 -0.3143 -0.7246 -0.1773  1.1230 -0.5891 -1.6242  1.6572 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)  
+## (Intercept) -1.33212    1.96748  -0.677   0.5284  
+## x            1.59845    0.46581   3.432   0.0186 *
+## z            0.64902    0.40027   1.621   0.1658  
+## x:z         -0.12819    0.07789  -1.646   0.1607  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 1.316 on 5 degrees of freedom
+## Multiple R-squared:  0.9321, Adjusted R-squared:  0.8914 
+## F-statistic: 22.89 on 3 and 5 DF,  p-value: 0.002386</code></pre>
+</div>
+<div id="robust-standard-error" class="section level3">
+<h3>Robust standard error</h3>
+<p>To have robust variance-covariance matrix, we have to use package <strong>sandwich</strong> to get the appropriate error term. Then we do the estimate through the package <strong>lmtest</strong></p>
+<p>First we install and load the packages.</p>
+<pre class="r"><code>install.packages(c(&quot;sandwich&quot;,&quot;lmtest&quot;))
+library(sandwich)
+library(lmtest)</code></pre>
+<p>Then we need to create the variance and covariance matrix: using the <strong>vcovHC()</strong>.</p>
+<p>To match the stata robust command result, we use <strong>HC1()</strong>. Then we perform <strong>coeftest</strong> based on specified variance-covariance matrix.</p>
+<pre class="r"><code>MLR &lt;- lm(y ~ x + z, df)
+coeftest(MLR, vcov = vcovHC(MLR, &quot;HC1&quot;)) </code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##             Estimate Std. Error t value Pr(&gt;|t|)   
+## (Intercept) 1.250343   1.117886  1.1185 0.306129   
+## x           0.856663   0.194468  4.4052 0.004543 **
+## z           0.051674   0.167447  0.3086 0.768062   
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+</div>
+<div id="time-series-analysis" class="section level2">
+<h2>Time Series Analysis</h2>
+<div id="time-series-data" class="section level3">
+<h3>Time Series data</h3>
+<p>Function <strong>ts</strong> convert any vector into time series data.</p>
+<pre class="r"><code>price &lt;- c(2,3,7,8,9,12,8,7)
+price &lt;- ts(price)
+price</code></pre>
+<pre><code>## Time Series:
+## Start = 1 
+## End = 8 
+## Frequency = 1 
+## [1]  2  3  7  8  9 12  8  7</code></pre>
+<p>We first define a time series (<strong>ts</strong>) object for the estimation. Note that <strong>ts</strong> is similar to <strong>xts</strong> but without date and time.</p>
+<pre class="r"><code>df &lt;- data.frame(a = c(3,4,5),
+                 b = c(1,2,4),
+                 d = c(1,2,3))
+df &lt;- ts(df)
+df</code></pre>
+<pre><code>## Time Series:
+## Start = 1 
+## End = 3 
+## Frequency = 1 
+##   a b d
+## 1 3 1 1
+## 2 4 2 2
+## 3 5 4 3</code></pre>
+</div>
+<div id="extensible-time-series-data" class="section level3">
+<h3>Extensible Time Series Data</h3>
+<p>To handle high frequency data (with minute and second), we need the package <strong>xts</strong>. The package allows you to define Extendible Time Series (<strong>xts</strong>) object.</p>
+<p>The following code installs and loads the <strong>xts</strong> package.</p>
+<pre class="r"><code>install.packages(&quot;xts&quot;)
+library(xts) </code></pre>
+<p>Consider the following data for our extendible time series</p>
+<pre class="r"><code>date &lt;- c(&quot;2007-01-03&quot;,&quot;2007-01-04&quot;,
+          &quot;2007-01-05&quot;,&quot;2007-01-06&quot;,
+          &quot;2007-01-07&quot;,&quot;2007-01-08&quot;,
+          &quot;2007-01-09&quot;,&quot;2007-01-10&quot;)
+time &lt;- c(&quot;08:00:01&quot;,&quot;09:00:01&quot;,
+          &quot;11:00:01&quot;,&quot;13:00:01&quot;,
+          &quot;14:00:01&quot;,&quot;15:00:01&quot;,
+          &quot;15:10:01&quot;,&quot;15:20:03&quot;)
+price &lt;- c(2,3,7,8,9,12,8,7)</code></pre>
+<p>Now we are ready to define <strong>xts</strong> object. The code <strong>as.POSIXct()</strong> convert strings into date format with minutes and seconds.</p>
+<pre class="r"><code>df &lt;-data.frame(date=date, time=time, price=price)
+df$datetime &lt;-paste(df$date, df$time)
+df$datetime &lt;-as.POSIXct(df$datetime,
+                         format=&quot;%Y-%m-%d %H:%M:%S&quot;)
+df &lt;- xts(df,order.by=df$datetime) </code></pre>
+<p>For conversion with dates only, we use <strong>POSIXlt()</strong> instead of <strong>POSIXct()</strong>.</p>
+<pre class="r"><code>df &lt;-data.frame(date=date, price=price)
+df$date &lt;- as.POSIXct(df$date,format=&quot;%Y-%m-%d&quot;)
+df$price &lt;-as.numeric(df$price)
+price &lt;-xts(df[,-1],order.by=df$date) </code></pre>
+</div>
+<div id="arma" class="section level3">
+<h3>ARMA</h3>
+<p>Autoregressive moving average model can be estimated using the <strong>arima()</strong> function.</p>
+<p>The following code estimates an AR(1) model:</p>
+<pre class="r"><code>price &lt;- c(2,3,7,8,9,12,8,7)
+AR1 &lt;- arima(price,c(1,0,0))  
+AR1</code></pre>
+<pre><code>## 
+## Call:
+## arima(x = price, order = c(1, 0, 0))
+## 
+## Coefficients:
+##          ar1  intercept
+##       0.6661     6.1682
+## s.e.  0.2680     2.1059
+## 
+## sigma^2 estimated as 5.33:  log likelihood = -18.34,  aic = 42.68</code></pre>
+<p>The following code estimates an AR(2) model:</p>
+<pre class="r"><code>AR2 &lt;- arima(price,c(2,0,0))  
+AR2</code></pre>
+<pre><code>## 
+## Call:
+## arima(x = price, order = c(2, 0, 0))
+## 
+## Coefficients:
+##          ar1      ar2  intercept
+##       0.8301  -0.3026     6.5911
+## s.e.  0.3357   0.3638     1.7241
+## 
+## sigma^2 estimated as 4.831:  log likelihood = -18.01,  aic = 44.02</code></pre>
+<p>The following code estimates an MA(1) model:</p>
+<pre class="r"><code>MA1 &lt;- arima(price,c(0,0,1))  
+MA1</code></pre>
+<pre><code>## 
+## Call:
+## arima(x = price, order = c(0, 0, 1))
+## 
+## Coefficients:
+##          ma1  intercept
+##       0.7945     6.8862
+## s.e.  0.4393     1.3412
+## 
+## sigma^2 estimated as 4.936:  log likelihood = -18.23,  aic = 42.46</code></pre>
+<p>The following code estimates an MA(2) model:</p>
+<pre class="r"><code>MA2 &lt;- arima(price,c(0,0,2)) 
+MA2</code></pre>
+<pre><code>## 
+## Call:
+## arima(x = price, order = c(0, 0, 2))
+## 
+## Coefficients:
+##          ma1     ma2  intercept
+##       0.8292  0.1459     6.8262
+## s.e.  0.3915  0.3245     1.4677
+## 
+## sigma^2 estimated as 4.945:  log likelihood = -18.14,  aic = 44.28</code></pre>
+<p>The following code estimates an ARMA(1,1) model:</p>
+<pre class="r"><code>ARMA11 &lt;- arima(price,c(1,0,1))
+ARMA11</code></pre>
+<pre><code>## 
+## Call:
+## arima(x = price, order = c(1, 0, 1))
+## 
+## Coefficients:
+##          ar1     ma1  intercept
+##       0.3551  0.4889     6.6417
+## s.e.  0.7701  0.9088     1.8799
+## 
+## sigma^2 estimated as 4.911:  log likelihood = -18.08,  aic = 44.16</code></pre>
+<p>Sometimes, we just want to keep the coefficient.</p>
+<pre class="r"><code>coef(ARMA11) #Get coefficient</code></pre>
+<pre><code>##       ar1       ma1 intercept 
+## 0.3551015 0.4889285 6.6417184</code></pre>
+<p>The following code shows the plot of residuals.</p>
+<pre class="r"><code>plot.ts(ARMA11$residuals) </code></pre>
+<p><img src="/programming/r-programming/ta-with-r-Ch4_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p>R has a convenient function to <strong>autofit()</strong> the parameter of ARIMA model. This requires the forecast package. The following code installs and loads the <strong>forecast</strong> package:</p>
+<pre class="r"><code>install.packages(&quot;forecast&quot;) 
+library(forecast)</code></pre>
+<p>Now we are ready to find the best ARIMA model.</p>
+<pre class="r"><code>autoarma &lt;-auto.arima (price) 
+autoarma</code></pre>
+<pre><code>## Series: price 
+## ARIMA(0,1,0) 
+## 
+## sigma^2 estimated as 6.429:  log likelihood=-16.45
+## AIC=34.89   AICc=35.69   BIC=34.84</code></pre>
+<p>One important function of time series model is forecasting. The following code gives the two-step ahead forecast:</p>
+<pre class="r"><code>theForecast &lt;-predict(ARMA11,
+                      n.ahead=2,
+                      se.fit=TRUE) </code></pre>
+<p>The following shows the forecast plot.</p>
+<pre class="r"><code>plot.ts(theForecast$pred) #visualize the forecast</code></pre>
+<p><img src="/programming/r-programming/ta-with-r-Ch4_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+</div>
+<div id="garch" class="section level3">
+<h3>GARCH</h3>
+<p>To estimate ARCH and GARCH model, we need to install and load package <strong>rugarch</strong>.</p>
+<pre class="r"><code>install.packages(&quot;rugarch&quot;)
+library(rugarch)</code></pre>
+<p>We will estimate GARCH(1,1) with ARMA(1,1) on generate random number</p>
+<pre class="r"><code>a &lt;- runif(1000, min=0, max=100) #random number
+
+Spec &lt;-ugarchspec(
+  variance.model=list(model=&quot;sGARCH&quot;,
+                      garchOrder=c(1,1)),
+  mean.model=list(armaOrder=c(1,1)),
+  distribution.model=&quot;std&quot;) 
+Garch &lt;- ugarchfit(spec=Spec, data=a)
+Garch</code></pre>
+<pre><code>## 
+## *---------------------------------*
+## *          GARCH Model Fit        *
+## *---------------------------------*
+## 
+## Conditional Variance Dynamics    
+## -----------------------------------
+## GARCH Model  : sGARCH(1,1)
+## Mean Model   : ARFIMA(1,0,1)
+## Distribution : std 
+## 
+## Optimal Parameters
+## ------------------------------------
+##         Estimate  Std. Error     t value Pr(&gt;|t|)
+## mu      48.87905    0.936035  5.2219e+01 0.000000
+## ar1      0.29967    1.364823  2.1957e-01 0.826209
+## ma1     -0.28485    1.371091 -2.0775e-01 0.835422
+## omega    0.98567    3.255287  3.0279e-01 0.762050
+## alpha1   0.00000    0.004008  3.6000e-05 0.999971
+## beta1    0.99881    0.000064  1.5644e+04 0.000000
+## shape   99.99992   39.755740  2.5154e+00 0.011891
+## 
+## Robust Standard Errors:
+##         Estimate  Std. Error     t value Pr(&gt;|t|)
+## mu      48.87905    0.920402  5.3106e+01  0.00000
+## ar1      0.29967    1.016028  2.9494e-01  0.76804
+## ma1     -0.28485    1.018161 -2.7977e-01  0.77966
+## omega    0.98567    1.645363  5.9906e-01  0.54913
+## alpha1   0.00000    0.002043  7.2000e-05  0.99994
+## beta1    0.99881    0.000027  3.6899e+04  0.00000
+## shape   99.99992    3.800341  2.6313e+01  0.00000
+## 
+## LogLikelihood : -4782.165 
+## 
+## Information Criteria
+## ------------------------------------
+##                    
+## Akaike       9.5783
+## Bayes        9.6127
+## Shibata      9.5782
+## Hannan-Quinn 9.5914
+## 
+## Weighted Ljung-Box Test on Standardized Residuals
+## ------------------------------------
+##                         statistic p-value
+## Lag[1]                  0.0006312   0.980
+## Lag[2*(p+q)+(p+q)-1][5] 0.6316728   1.000
+## Lag[4*(p+q)+(p+q)-1][9] 1.7373604   0.993
+## d.o.f=2
+## H0 : No serial correlation
+## 
+## Weighted Ljung-Box Test on Standardized Squared Residuals
+## ------------------------------------
+##                         statistic p-value
+## Lag[1]                      3.224 0.07255
+## Lag[2*(p+q)+(p+q)-1][5]     3.697 0.29441
+## Lag[4*(p+q)+(p+q)-1][9]     5.372 0.37683
+## d.o.f=2
+## 
+## Weighted ARCH LM Tests
+## ------------------------------------
+##             Statistic Shape Scale P-Value
+## ARCH Lag[3]    0.3156 0.500 2.000  0.5742
+## ARCH Lag[5]    1.0253 1.440 1.667  0.7254
+## ARCH Lag[7]    2.2713 2.315 1.543  0.6600
+## 
+## Nyblom stability test
+## ------------------------------------
+## Joint Statistic:  199.444
+## Individual Statistics:               
+## mu      0.35980
+## ar1     0.87529
+## ma1     0.87357
+## omega   0.04945
+## alpha1  0.04962
+## beta1   0.04946
+## shape  44.27729
+## 
+## Asymptotic Critical Values (10% 5% 1%)
+## Joint Statistic:          1.69 1.9 2.35
+## Individual Statistic:     0.35 0.47 0.75
+## 
+## Sign Bias Test
+## ------------------------------------
+##                    t-value   prob sig
+## Sign Bias           0.9204 0.3576    
+## Negative Sign Bias  1.8706 0.0617   *
+## Positive Sign Bias  0.3632 0.7165    
+## Joint Effect        3.6361 0.3035    
+## 
+## 
+## Adjusted Pearson Goodness-of-Fit Test:
+## ------------------------------------
+##   group statistic p-value(g-1)
+## 1    20     202.1    1.313e-32
+## 2    30     226.2    1.980e-32
+## 3    40     248.6    2.462e-32
+## 4    50     310.7    9.965e-40
+## 
+## 
+## Elapsed time : 0.560498</code></pre>
+<p>To obtain specific result of the GARCH model, we use the following code:</p>
+<pre class="r"><code>coefficient &lt;-coef(Garch)
+volatility &lt;- sigma(Garch)
+long.run.variance &lt;- uncvariance(Garch)</code></pre>
+</div>
+<div id="var" class="section level3">
+<h3>VAR</h3>
+<p>The following data will be used to estimate VAR model.</p>
+<pre class="r"><code>a&lt;- c(3.1,3.4,5.6,7.5,5,6,6,7.5,4.5,
+      6.7,9,10,8.9,7.2,7.5,6.8,9.1)
+b &lt;- c(3.2,3.3,4.6,8.5,6,6.2,5.9,7.3,
+       4,7.2,3,12,9,6.5,5,6,7.5)
+d &lt;-c(4,6.2,5.3,3.6,7.5,6,6.2,6.9,
+      8.2,4,4.2,5,11,3,2.5,3,6)
+df &lt;-data.frame(a,b,d)</code></pre>
+<p>To estimate a VAR model, we need to install and load <strong>vars</strong> packages.</p>
+<pre class="r"><code>install.packages(&quot;vars&quot;)
+library(vars)   </code></pre>
+<p>The following code estimates the VAR(2) model.</p>
+<pre class="r"><code>abvar&lt;-VAR(df,p=2) #run VAR(2)
+coef(abvar)        #coefficient estiamte of VAR</code></pre>
+<pre><code>## $a
+##          Estimate Std. Error    t value  Pr(&gt;|t|)
+## a.l1   0.59366615  0.3776796  1.5718776 0.1546224
+## b.l1  -0.53728016  0.3153665 -1.7036692 0.1268463
+## d.l1   0.06427631  0.2620526  0.2452802 0.8124144
+## a.l2   0.59478214  0.4406631  1.3497434 0.2140455
+## b.l2  -0.49271501  0.3681374 -1.3383999 0.2175550
+## d.l2   0.13247171  0.2139979  0.6190328 0.5531098
+## const  4.55502873  2.5585550  1.7803130 0.1128965
+## 
+## $b
+##          Estimate Std. Error    t value   Pr(&gt;|t|)
+## a.l1   1.03577283  0.4390665  2.3590341 0.04602757
+## b.l1  -0.98047999  0.3666252 -2.6743391 0.02817211
+## d.l1   0.43849071  0.3046458  1.4393458 0.18800763
+## a.l2   0.77048414  0.5122871  1.5040084 0.17098968
+## b.l2  -0.74120465  0.4279733 -1.7318948 0.12153171
+## d.l2  -0.08577585  0.2487804 -0.3447853 0.73914487
+## const  3.30736245  2.9744145  1.1119373 0.29846082
+## 
+## $d
+##          Estimate Std. Error    t value  Pr(&gt;|t|)
+## a.l1   0.09567126  0.4508959  0.2121804 0.8372726
+## b.l1   0.37908977  0.3765028  1.0068710 0.3434765
+## d.l1   0.26703079  0.3128536  0.8535327 0.4181858
+## a.l2   0.23097179  0.5260892  0.4390354 0.6722522
+## b.l2  -0.67987321  0.4395038 -1.5469110 0.1604714
+## d.l2  -0.18657598  0.2554831 -0.7302869 0.4860477
+## const  4.67527066  3.0545515  1.5305915 0.1644018</code></pre>
+<pre class="r"><code>summary(abvar)     #summary of VAR</code></pre>
+<pre><code>## 
+## VAR Estimation Results:
+## ========================= 
+## Endogenous variables: a, b, d 
+## Deterministic variables: const 
+## Sample size: 15 
+## Log Likelihood: -71.865 
+## Roots of the characteristic polynomial:
+## 0.8034 0.8034 0.6583 0.6583 0.4639 0.4639
+## Call:
+## VAR(y = df, p = 2)
+## 
+## 
+## Estimation results for equation a: 
+## ================================== 
+## a = a.l1 + b.l1 + d.l1 + a.l2 + b.l2 + d.l2 + const 
+## 
+##       Estimate Std. Error t value Pr(&gt;|t|)
+## a.l1   0.59367    0.37768   1.572    0.155
+## b.l1  -0.53728    0.31537  -1.704    0.127
+## d.l1   0.06428    0.26205   0.245    0.812
+## a.l2   0.59478    0.44066   1.350    0.214
+## b.l2  -0.49272    0.36814  -1.338    0.218
+## d.l2   0.13247    0.21400   0.619    0.553
+## const  4.55503    2.55856   1.780    0.113
+## 
+## 
+## Residual standard error: 1.552 on 8 degrees of freedom
+## Multiple R-Squared: 0.4615,  Adjusted R-squared: 0.0576 
+## F-statistic: 1.143 on 6 and 8 DF,  p-value: 0.4184 
+## 
+## 
+## Estimation results for equation b: 
+## ================================== 
+## b = a.l1 + b.l1 + d.l1 + a.l2 + b.l2 + d.l2 + const 
+## 
+##       Estimate Std. Error t value Pr(&gt;|t|)  
+## a.l1   1.03577    0.43907   2.359   0.0460 *
+## b.l1  -0.98048    0.36663  -2.674   0.0282 *
+## d.l1   0.43849    0.30465   1.439   0.1880  
+## a.l2   0.77048    0.51229   1.504   0.1710  
+## b.l2  -0.74120    0.42797  -1.732   0.1215  
+## d.l2  -0.08578    0.24878  -0.345   0.7391  
+## const  3.30736    2.97441   1.112   0.2985  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## 
+## Residual standard error: 1.805 on 8 degrees of freedom
+## Multiple R-Squared: 0.616,   Adjusted R-squared: 0.328 
+## F-statistic: 2.139 on 6 and 8 DF,  p-value: 0.1578 
+## 
+## 
+## Estimation results for equation d: 
+## ================================== 
+## d = a.l1 + b.l1 + d.l1 + a.l2 + b.l2 + d.l2 + const 
+## 
+##       Estimate Std. Error t value Pr(&gt;|t|)
+## a.l1   0.09567    0.45090   0.212    0.837
+## b.l1   0.37909    0.37650   1.007    0.343
+## d.l1   0.26703    0.31285   0.854    0.418
+## a.l2   0.23097    0.52609   0.439    0.672
+## b.l2  -0.67987    0.43950  -1.547    0.160
+## d.l2  -0.18658    0.25548  -0.730    0.486
+## const  4.67527    3.05455   1.531    0.164
+## 
+## 
+## Residual standard error: 1.853 on 8 degrees of freedom
+## Multiple R-Squared: 0.6278,  Adjusted R-squared: 0.3487 
+## F-statistic: 2.249 on 6 and 8 DF,  p-value: 0.143 
+## 
+## 
+## 
+## Covariance matrix of residuals:
+##         a      b       d
+## a  2.4097 0.7713 -1.0454
+## b  0.7713 3.2566  0.6701
+## d -1.0454 0.6701  3.4345
+## 
+## Correlation matrix of residuals:
+##         a      b       d
+## a  1.0000 0.2753 -0.3634
+## b  0.2753 1.0000  0.2004
+## d -0.3634 0.2004  1.0000</code></pre>
+<p>To generate coefficient plot, we need to install and load <strong>coefplot</strong> package:</p>
+<pre class="r"><code>install.packages(&quot;coefplot&quot;)
+library(coefplot)</code></pre>
+<p>The following code generates the coefficient plot for the VAR model:</p>
+<pre class="r"><code>coefplot(abvar$varresult$a)</code></pre>
+<p><img src="/programming/r-programming/ta-with-r-Ch4_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
+<pre class="r"><code>coefplot(abvar$varresult$b)</code></pre>
+<p><img src="/programming/r-programming/ta-with-r-Ch4_files/figure-html/unnamed-chunk-38-2.png" width="672" /></p>
+<pre class="r"><code>coefplot(abvar$varresult$d)</code></pre>
+<p><img src="/programming/r-programming/ta-with-r-Ch4_files/figure-html/unnamed-chunk-38-3.png" width="672" /></p>
+</div>
+</div>
+<div id="panel-data" class="section level2">
+<h2>Panel Data</h2>
+<p>To estimate panel data model, we need to install and load package <strong>plm</strong>.</p>
+<pre class="r"><code>install.packages(&quot;plm&quot;)
+library(plm)</code></pre>
+<p>We have the following panel data</p>
+<pre class="r"><code>time &lt;- c(1,2,1,2,1,2,1,2,1,2,1,2)
+firm &lt;-c(1,1,2,2,3,3,4,4,5,5,6,6)
+x &lt;- c(1, 2, 4, 3, 5, 4, 2, 5,5,6,7,8)
+y &lt;- c(2, 3, 5, 4, 3, 2, 4, 7,7,8,5,7)
+p.df &lt;- data.frame(time, firm, x, y)
+p.df &lt;- pdata.frame(p.df, index = c(&quot;firm&quot;, &quot;time&quot;), drop.index = F, row.names = T)</code></pre>
+<div id="clustering" class="section level3">
+<h3>Clustering</h3>
+<p>We first estimate the model based on pooled OLS.</p>
+<pre class="r"><code>pooled.plm &lt;- plm(formula=y~x, data=p.df, model=&quot;pooling&quot;) </code></pre>
+<p>Then we calculate the variance-covariance matrix to be clustered by group.</p>
+<pre class="r"><code>coeftest(pooled.plm, vcov=vcovHC(pooled.plm, 
+                                 type=&quot;sss&quot;, 
+                                 cluster=&quot;group&quot;))  </code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##             Estimate Std. Error t value Pr(&gt;|t|)   
+## (Intercept)  1.81164    0.68521  2.6439 0.024568 * 
+## x            0.67808    0.17151  3.9536 0.002715 **
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Then we calculate the variance-covariance matrix to be clustered by time.</p>
+<pre class="r"><code>coeftest(pooled.plm, vcov=vcovHC(pooled.plm, 
+                                 type=&quot;sss&quot;, 
+                                 cluster=&quot;time&quot;)) </code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##             Estimate Std. Error t value Pr(&gt;|t|)   
+## (Intercept)  1.81164    0.71388  2.5377 0.029478 * 
+## x            0.67808    0.21088  3.2154 0.009246 **
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Two-way clustering of both time and group:</p>
+<pre class="r"><code>coeftest(pooled.plm, vcov=vcovDC(pooled.plm, 
+                                 type=&quot;sss&quot;))</code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##             Estimate Std. Error t value Pr(&gt;|t|)  
+## (Intercept)  1.81164    0.81130  2.2330  0.04959 *
+## x            0.67808    0.22838  2.9691  0.01407 *
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+<div id="fixed-effect-model" class="section level3">
+<h3>Fixed Effect Model</h3>
+<p>We first estimate the model based on pooled OLS.</p>
+<pre class="r"><code>fe.plm &lt;- plm(formula=y~x, data=p.df, model=&quot;within&quot;)</code></pre>
+<p>Then we calculate the variance-covariance matrix to be clustered by group.</p>
+<pre class="r"><code>coeftest(fe.plm, vcov=vcovHC(fe.plm, 
+                             type=&quot;sss&quot;,
+                             cluster=&quot;group&quot;)) </code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##   Estimate Std. Error t value  Pr(&gt;|t|)    
+## x 1.071429   0.089074  12.028 7.008e-05 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>Then we calculate the variance-covariance matrix to be clustered by time.</p>
+<pre class="r"><code>coeftest(fe.plm, vcov=vcovHC(fe.plm, 
+                             type=&quot;sss&quot;, 
+                             cluster=&quot;time&quot;)) </code></pre>
+<pre><code>## 
+## t test of coefficients:
+## 
+##     Estimate Std. Error    t value  Pr(&gt;|t|)    
+## x 1.0714e+00 4.6089e-10 2324719242 &lt; 2.2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+</div>
+<div id="simulation" class="section level2">
+<h2>Simulation</h2>
+<p>We will consider two different simulations:</p>
+<ol style="list-style-type: decimal">
+<li>random walk model, and</li>
+<li>Roll model of security price.</li>
+</ol>
+<div id="random-walk" class="section level3">
+<h3>Random Walk</h3>
+<p>We first construct a random walk function that simulates random walk model. It takes the number of period (N), initial value (x0), drift (mu), and variance. The function use <strong>rnorm()</strong> to generate random normal variable, and then use <strong>cumsum()</strong> to get the random walk. Note that the whole function is based on vector operation, instead of looping over time.</p>
+<pre class="r"><code>RW &lt;- function(N, x0, mu, variance) {
+  z&lt;-cumsum(rnorm(n=N, mean=0, 
+                  sd=sqrt(variance)))
+  t&lt;-1:N
+  x&lt;-x0+t*mu+z
+  return(x)
+  }
+# mu is the drift
+
+P1&lt;-RW(100,10,0,0.0004)
+P2&lt;-RW(100,10,0,0.0004)
+plot(P1, main=&quot;Random Walk without Drift&quot;, 
+     xlab=&quot;t&quot;,ylab=&quot;Price&quot;, ylim=c(9.7,10.3),
+     typ=&#39;l&#39;, col=&quot;red&quot;)
+par(new=T)  #to draw in the same plot
+plot(P2, main=&quot;Random Walk without Drift&quot;, 
+     xlab=&quot;t&quot;,ylab=&quot;Price&quot;, ylim=c(9.7,10.3),
+     typ=&#39;l&#39;, col=&quot;blue&quot;)</code></pre>
+<p><img src="/programming/r-programming/ta-with-r-Ch4_files/figure-html/unnamed-chunk-48-1.png" width="672" /></p>
+<pre class="r"><code>par(new=F)</code></pre>
+</div>
+<div id="roll-model" class="section level3">
+<h3>Roll Model</h3>
+<p>To simulate the Roll model, we first simulate the price series and simulated trade prices. We calculate the first difference of the price and then we can estimate the first and the second orders of autocovariances. Then we can compare the true trading cost with the estimate one.</p>
+<pre class="r"><code>require(zoo)
+
+trial &lt;-1000  #Number of trial
+
+cost &lt;-c() #cost each trial
+sd &lt;-c()   #sd each trial
+
+true.cost = 2
+true.sd = 1
+
+time = 1:trial
+
+for (i in 1:trial) {
+  
+  #Simulated Price Series
+  epsilon = rnorm(time,sd=true.sd)
+  prices = cumsum(epsilon)
+  m_t = zoo(prices)
+  a_t = m_t + true.cost
+  b_t = m_t - true.cost
+  
+  #simulated trade prices 
+  q_t = sign(rnorm(time))
+  p_t = m_t + (true.cost * q_t)
+  
+  #1st difference of prices
+  delta_p &lt;- p_t-lag(p_t)  
+  #omit n.a. entry
+  delta_p &lt;- na.omit(delta_p) 
+
+  gamma_0 &lt;- var(delta_p)
+  gamma_1 &lt;- cov(delta_p[1:length(delta_p)-1], 
+                 delta_p[2:length(delta_p)])
+  sigma_2 &lt;- gamma_0 + 2 * gamma_1
+  
+  if(gamma_1 &gt; 0){
+    print(&quot;Error: Positive Autocovariance!&quot;)
+  } else {
+    cost &lt;- append(cost,sqrt(-1*gamma_1))
+    sd &lt;-append(sd,sigma_2)
+  }
+}
+
+# Stimulated Cost Plot
+
+plot(cost)</code></pre>
+<p><img src="/programming/r-programming/ta-with-r-Ch4_files/figure-html/unnamed-chunk-49-1.png" width="672" /></p>
+<pre class="r"><code>est.cost &lt;- mean(cost)
+
+plot(sd)</code></pre>
+<p><img src="/programming/r-programming/ta-with-r-Ch4_files/figure-html/unnamed-chunk-49-2.png" width="672" /></p>
+<pre class="r"><code>est.sd &lt;- mean(sd)
+
+# Final Result
+cat(&quot;True cost and sd are&quot;, true.cost,&quot; and &quot;, true.sd)</code></pre>
+<pre><code>## True cost and sd are 2  and  1</code></pre>
+<pre class="r"><code>cat(&quot;Estimated cost and sd are&quot;, est.cost,&quot; and &quot;, est.sd)</code></pre>
+<pre><code>## Estimated cost and sd are 2.001182  and  1.003915</code></pre>
+</div>
+</div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/programming/r-programming/ta-with-r-ch3/" rel="next"></a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/programming/r-programming/ta-with-r-ch5/" rel="prev"></a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Sep 9, 2018</p>
+
+          
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/programming%5cr-programming%5cta-with-r-Ch4.html">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    Copyright © 2012-2020. All Rights Reserved.
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

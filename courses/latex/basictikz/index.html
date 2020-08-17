@@ -1,0 +1,1239 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Learning Objectives:
+Basic TikZ technique to draw:
+ Straight Line Node Curve Shape Fill  Setup Loading Package To load the TikZ package, we just need to use the function \usepackage{tikz}">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/latex/basictikz/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/latex/basictikz/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/courses/latex/basictikz/">
+  <meta property="og:title" content="Basic TikZ | Chiu Yu Ko">
+  <meta property="og:description" content="Learning Objectives:
+Basic TikZ technique to draw:
+ Straight Line Node Curve Shape Fill  Setup Loading Package To load the TikZ package, we just need to use the function \usepackage{tikz}"><meta property="og:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-05-04T00:00:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2019-05-04T00:00:00&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Basic TikZ | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#book"><span>Book</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/latex/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/latex/tikz-cookbook/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/latex/tikz-cookbook/">Tikz CookBook</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/tikz-cookbook-companion/">TikZ Cookbook Companion</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/latex/consumer/">Example</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/latex/consumer/">Consumer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/producer/">Producer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/demand-and-supply/">Demand and Supply</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/labour-economics/">Labor Economics</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/game-theory/">Game Theory</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/macroeconomics/">Macroeconomics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/latex/introduction/">Tutorial</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/latex/introduction/">Introduction to LaTeX and TikZ</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/basiclatex/">Basic LaTeX</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/latexprogramming/">LaTeX Programming</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/beamer/">Beamer</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/latex/basictikz/">Basic TikZ</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/intermediate-tikz/">Intermediate TikZ</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#loading-package">Loading Package</a></li>
+    <li><a href="#tikz-environment">TikZ Environment</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#draw-a-line">Draw a line</a></li>
+    <li><a href="#line-pattern">Line Pattern</a></li>
+    <li><a href="#line-thickness">Line Thickness</a></li>
+    <li><a href="#line-color">Line Color</a></li>
+    <li><a href="#line-cap">Line Cap</a></li>
+    <li><a href="#braces">Braces</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#draw-a-node">Draw a node</a></li>
+    <li><a href="#shift-location">Shift location</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#bending-straight-line">Bending straight line</a></li>
+    <li><a href="#in-and-out-degree">In and out degree</a></li>
+    <li><a href="#right-angle-bend">Right angle bend</a></li>
+    <li><a href="#arc">Arc</a></li>
+    <li><a href="#smooth-coordinate">Smooth coordinate</a></li>
+    <li><a href="#beizer-curve">Beizer curve</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#circle">Circle</a></li>
+    <li><a href="#ellipse">Ellipse</a></li>
+    <li><a href="#rectange">Rectange</a></li>
+    <li><a href="#grid">Grid</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#fill-color">Fill Color</a></li>
+    <li><a href="#fill-pattern">Fill pattern</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Basic TikZ</h1>
+
+          <div class="article-style">
+            <p>Learning Objectives:</p>
+<p>Basic TikZ technique to draw:</p>
+<ul>
+<li>Straight Line</li>
+<li>Node</li>
+<li>Curve</li>
+<li>Shape</li>
+<li>Fill</li>
+</ul>
+<h1 id="setup">Setup</h1>
+<h2 id="loading-package">Loading Package</h2>
+<p>To load the TikZ package, we just need to use the function <code>\usepackage{tikz}</code></p>
+<pre><code class="language-latex">\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+...
+\end{document}
+</code></pre>
+<h2 id="tikz-environment">TikZ Environment</h2>
+<p>First, we need to tell which part of code should be included in the drawing by using <code>begin{tikzpicture}</code> and <code>\end{tikzpiture}</code>.</p>
+<pre><code class="language-latex">\begin{tikzpicture}
+...
+\end{tikzpiture}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/J2Oz7cXoIbw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="straight-line">Straight line</h1>
+<p>We first discuss simple straight line and then we discuss its decoration.</p>
+<h2 id="draw-a-line">Draw a line</h2>
+<p>To draw a straight line, use <code>\draw</code>, and specify the coordinates. To end drawing, we must end with a semicolon.</p>
+<pre><code class="language-latex">\draw(0,0)--(3,3);
+</code></pre>
+<p>To draw connected lines, we specify all the coordinates. Below draws a square:</p>
+<pre><code class="language-latex">\draw(0,0)--(4,4)--(4,0)--(0,0);
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/BL667wuLCLM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="line-pattern">Line Pattern</h2>
+<p>To draw a dashed line, we use the option <code>[dashed]</code>:</p>
+<pre><code class="language-latex">\draw[dashed] (0,0)--(4,4);
+</code></pre>
+<p>To draw a dotted line, we use the option <code>[dotted]</code>:</p>
+<pre><code class="language-latex">\draw[dotted] (4,0)--(0,4);
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/0lmbB_OR2AQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="line-thickness">Line Thickness</h2>
+<p>We can specify relative thickness:</p>
+<pre><code class="language-latex">\draw[ultra thin] (0,6)--(4,6);
+\draw[very thin] (0,5)--(4,5);
+\draw[thin] (0,4)--(4,4);
+\draw[semithick] (0,3)--(4,3);
+\draw[thick] (0,2)--(4,2);
+\draw[very thick] (0,1)--(4,1);
+\draw[ultra thick] (0,0)--(4,0);
+</code></pre>
+<p>We can also specify thickness directly:</p>
+<pre><code class="language-latex">\draw[line width=11] (0,1)--(4,1);
+\draw[line width=5mm] (0,0)--(4,0);
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/qtqXIipQrVo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="line-color">Line Color</h2>
+<pre><code class="language-latex">\draw[red] (0,2)--(4,2);
+\draw[blue] (0,1)--(4,1);
+\draw[green] (0,0)--(4,0);
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/mDrZTYYkThg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="line-cap">Line Cap</h2>
+<p>Now we add arrow to the tip.</p>
+<pre><code class="language-latex">\draw[-&gt;] (0,5)--(4,5);
+\draw[&lt;-&gt;] (0,4)--(4,4);
+\draw[|-&gt;] (0,3)--(4,3);
+\draw[&lt;-|] (0,2)--(4,2);
+\draw[|-|] (0,1)--(4,1);
+\draw[|&lt;-&gt;|] (0,0)--(4,0);
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Fbw59sos6vQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="braces">Braces</h2>
+<pre><code class="language-latex">\usetikzlibrary{decorations.pathreplacing}
+\draw [decorate,
+          decoration={brace,amplitude=4pt,         
+          mirror},xshift=0pt,yshift=-3pt]
+          (1.4,0) -- (2.4,0) 
+          node [black,midway,yshift=-.5cm]
+          {abc};
+</code></pre>
+<h1 id="node">Node</h1>
+<p>Node is to add description to the graph.</p>
+<h2 id="draw-a-node">Draw a node</h2>
+<p>To write description, use <code>\node</code> and put the coordinate after <code>at</code>.</p>
+<pre><code class="language-latex">\node at (0,0)  {$\alpha$};
+\node at (1,1)  {$\beta$};
+</code></pre>
+<h2 id="shift-location">Shift location</h2>
+<p>To shift the relative location of the nodes, we use  <code>\node[location]</code> where location can be below/left/right/above/below left.</p>
+<pre><code class="language-latex">\node[above] at (1,1)  {$\gamma$};
+\node[below] at (1,1)  {$\gamma$};
+\node[left] at (1,1)  {$\gamma$};
+\node[right] at (1,1)  {$\gamma$};
+</code></pre>
+<p>To shift the relative location of the nodes, we use <code>\node[xshift=1cm, yshift=3cm]</code>:</p>
+<pre><code class="language-latex">\node[xshift=3mm] at (1,1) {$\gamma$};
+\node[yshift=3mm] at (1,1) {$\gamma$};
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/LTlWeC4mmJY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="curves">Curves</h1>
+<p>There are many ways to draw a curve:</p>
+<ul>
+<li>Bending a straight line</li>
+<li>In and out</li>
+<li>Right angle bend</li>
+<li>Arc</li>
+<li>Smoothing coordinate</li>
+<li>Beizer Curve</li>
+</ul>
+<h2 id="bending-straight-line">Bending straight line</h2>
+<p>One way to do is to bend a straight line</p>
+<pre><code class="language-latex">\draw (0,0) to [bend right] (3,3);
+\draw (1,1) to [bend left] (4,4)
+</code></pre>
+<h2 id="in-and-out-degree">In and out degree</h2>
+<p>To more accurate control the bending, one way to do is to specify outgoing and incoming coordinates to bend a straight line</p>
+<pre><code class="language-latex">\draw (0,0) to [out =90, in =180] (4,4);
+</code></pre>
+<h2 id="right-angle-bend">Right angle bend</h2>
+<p>Very often, we need a 90 degree bend to draw digram:</p>
+<pre><code class="language-latex">\draw (0,0) -| (3,3);
+\draw (1,1) |- (4,4);
+</code></pre>
+<h2 id="arc">Arc</h2>
+<p>Forth method is by drawing an arc.</p>
+<pre><code class="language-latex">\draw (1,0) arc (0:145:2cm);
+</code></pre>
+<h2 id="smooth-coordinate">Smooth coordinate</h2>
+<p>Fifth method is by smoothing over multiple coordinates:</p>
+<pre><code class="language-latex">\draw plot [smooth] coordinates {(0,0) (1,3) (3,2) (4,4)};
+</code></pre>
+<h2 id="beizer-curve">Beizer curve</h2>
+<p>Sixth method is by Beizer curve. It is very common in programming language.</p>
+<pre><code class="language-latex">\draw (0,0) .. controls (1,3) and (3,5) .. (4,4);
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ujNVHi7Jd1Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="basic-shapes">Basic Shapes</h1>
+<h2 id="circle">Circle</h2>
+<p>To draw a circle, we specify the center and the radius.</p>
+<pre><code class="language-latex">\draw (0,0) circle [radius =0.6cm];
+</code></pre>
+<p>If we fill the circle with color, then we have dots:</p>
+<pre><code class="language-latex">\draw[fill] (0,0) circle [radius =0.06];
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/TJbX0iZD9js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="ellipse">Ellipse</h2>
+<pre><code class="language-latex">\draw (0,0) ellipse (2 and 1);
+</code></pre>
+<h2 id="rectange">Rectange</h2>
+<pre><code class="language-latex">\draw (0,0) rectangle (4,4);
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/DHGu9JRhSCg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="grid">Grid</h2>
+<pre><code class="language-latex">\draw[step=1,gray,very thin] (0,0) grid (4,4);
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/cgDJOZWijTM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="fill">Fill</h1>
+<p>To emphasize the area, we often use color and pattern. Color is good for electronic version and pattern is good for printed version.</p>
+<h2 id="fill-color">Fill Color</h2>
+<pre><code class="language-latex">\draw[fill=red] (0,0) rectangle (2,2);
+\draw[fill=blue] (2,2) rectangle (4,4);
+</code></pre>
+<p>To change opacity, use the option <code>fill opacity</code>.</p>
+<pre><code class="language-latex">\draw[fill=red, fill opacity=0.2] (0,0) rectangle (2,2);
+\draw[fill=blue, fill opacity=0.2] (2,2) rectangle (4,4);
+</code></pre>
+<h2 id="fill-pattern">Fill pattern</h2>
+<p>To fill pattern, we need to use a library. To do so we need <code>\usetikzlibrary{patterns}</code></p>
+<pre><code class="language-latex">\usetikzlibrary{patterns}
+\draw[pattern=horizontal lines] (0,0) rectangle (1,1);
+\draw[pattern=vertical lines] (1,1) rectangle (2,2);
+\draw[pattern=north east lines] (2,2) rectangle (3,3);
+\draw[pattern=north west lines] (3,3) rectangle (4,4);
+\draw[pattern=grid] (4,4) rectangle (5,5);
+\draw[pattern=crosshatch] (5,5) rectangle (6,6);
+\draw[pattern=dots] (6,6) rectangle (7,7);
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/68BS2M_BxBY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/latex/intermediate-tikz/" rel="prev">Intermediate TikZ</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on May 4, 2019</p>
+
+          
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses%5clatex%5cBasicTikZ.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    2012-2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

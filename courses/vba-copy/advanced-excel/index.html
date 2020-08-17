@@ -1,0 +1,1983 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Learning Objectives:
+ Add-in Analysis Toolpak Sorting Filtering Pivot Table Freeze plane Charting Conditional Statement  Useful tools Add-in If you see Analysis Toolpak under the Active Application Add-Ins section, you do not need to do anything.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/vba-copy/advanced-excel/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/vba-copy/advanced-excel/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/courses/vba-copy/advanced-excel/">
+  <meta property="og:title" content="Advanced Excel | Chiu Yu Ko">
+  <meta property="og:description" content="Learning Objectives:
+ Add-in Analysis Toolpak Sorting Filtering Pivot Table Freeze plane Charting Conditional Statement  Useful tools Add-in If you see Analysis Toolpak under the Active Application Add-Ins section, you do not need to do anything."><meta property="og:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-05-04T00:00:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2019-05-04T00:00:00&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Advanced Excel | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#book"><span>Book</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/vba-copy/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/vba-copy/basic-excel/">Excel Tutorial</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/vba-copy/basic-excel/">Basic Excel</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/vba-copy/advanced-excel/">Advanced Excel</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/vba-copy/basic-vba/">VBA Tutorial</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/vba-copy/basic-vba/">Basic VBA</a>
+      </li>
+      
+      <li >
+        <a href="/courses/vba-copy/advanced-vba/">Advanced VBA</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/vba-copy/excel-vba-r/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/vba-copy/excel-vba-r/">VBA and R</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#add-in">Add-in</a></li>
+    <li><a href="#analysis-toolpak-regression">Analysis Toolpak: Regression</a></li>
+    <li><a href="#analysis-toolpak-solver">Analysis Toolpak: Solver</a></li>
+    <li><a href="#sorting">Sorting</a></li>
+    <li><a href="#filtering">Filtering</a></li>
+    <li><a href="#subtotal">Subtotal</a></li>
+    <li><a href="#pivot-table">Pivot Table</a></li>
+    <li><a href="#freeze-plane">Freeze Plane</a></li>
+    <li><a href="#split-plane">Split Plane</a></li>
+    <li><a href="#hide-and-unhide">Hide and Unhide</a></li>
+    <li><a href="#charting">Charting</a></li>
+    <li><a href="#conditional">Conditional</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#fundamental-analysis">Fundamental Analysis</a></li>
+    <li><a href="#technical-analysis">Technical analysis</a></li>
+    <li><a href="#time-series-analysis">Time Series Analysis</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Advanced Excel</h1>
+
+          <div class="article-style">
+            <p>Learning Objectives:</p>
+<ul>
+<li>Add-in</li>
+<li>Analysis Toolpak</li>
+<li>Sorting</li>
+<li>Filtering</li>
+<li>Pivot Table</li>
+<li>Freeze plane</li>
+<li>Charting</li>
+<li>Conditional Statement</li>
+</ul>
+<h1 id="useful-tools">Useful tools</h1>
+<h2 id="add-in">Add-in</h2>
+<p>If you see Analysis Toolpak under the Active Application Add-Ins section, you do not need to do anything. Otherwise, you need to activate it.</p>
+<p>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Addin.png" >
+
+
+  <img src="/img/Excel/Excel_Addin.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Addin2.png" >
+
+
+  <img src="/img/Excel/Excel_Addin2.png" alt=""  >
+</a>
+
+
+
+</figure>
+</p>
+<p>If you want to enable Analysis toolpak, go to Options &gt; Add-Ins &gt; Analysis Toolpak. The same goes for Solver.</p>
+<h2 id="analysis-toolpak-regression">Analysis Toolpak: Regression</h2>
+<p>Analysis Toolpak lets you run multiple regressions in Excel.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Klr0RNE90g0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="analysis-toolpak-solver">Analysis Toolpak: Solver</h2>
+<p>Solver lets you solve linear and nonlinear equations, by optimizing the variables. This is extremely useful when you have a regression with multiple variables that you need to estimate. However, one drawback is that it can give you multiple solutions, so you might get a different answer when you re-run it.
+To check if you have enabled it, go to Options &gt; Add-Ins &gt; Solver.</p>
+<p>However, one drawback of using Solver is that it can have multiple solutions, meaning that the solution changes every time you run it.</p>
+<p>We will cover other useful tools such as sorting, filtering, pivot table, freeze plane, split plane, and charting.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/NQ6KqRxqNPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="sorting">Sorting</h2>
+<p>Sometimes, data that you download is in descending order of date, meaning that the most recent data is at the top. If you want to change the dates to be in ascending order(i.e. the latest date is at the bottom), you can use the Sort function in Excel.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Sort_Ribbon.png" >
+
+
+  <img src="/img/Excel/Excel_Sort_Ribbon.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>First, select your data. This step is necessary. If you have corresponding data, for example, prices that correspond to the dates, you have to select them as well. Otherwise, only the dates will be sorted, and the prices will correspond to the wrong dates.</p>
+<p>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Sort.png" >
+
+
+  <img src="/img/Excel/Excel_Sort.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Sort2.png" >
+
+
+  <img src="/img/Excel/Excel_Sort2.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Sort3.png" >
+
+
+  <img src="/img/Excel/Excel_Sort3.png" alt=""  >
+</a>
+
+
+
+</figure>
+</p>
+<h2 id="filtering">Filtering</h2>
+<p>You can also filter data using the Filter option, and this is useful in pinpointing a particular subset of data.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Filter1.png" >
+
+
+  <img src="/img/Excel/Excel_Filter1.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>After selecting the Filter function, you will then see a small button on the top right-hand corner of your selected range. Clicking on it will show you the following figure.</p>
+<p>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Filter2.png" >
+
+
+  <img src="/img/Excel/Excel_Filter2.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Filter3.png" >
+
+
+  <img src="/img/Excel/Excel_Filter3.png" alt=""  >
+</a>
+
+
+
+</figure>
+</p>
+<p>You can then choose how you want to filter the data.</p>
+<h2 id="subtotal">Subtotal</h2>
+<p>After filtering the data, one natural question is how to calculate summarize the filter data. For example, we want to calculate the sum or average of filter data.  For example, we might want to know the sales of product grouped by region. One straightforward way is to produce subtables using <code>SUMIF</code>, <code>COUNTIF</code> or <code>AVERAGEIF</code>.</p>
+<p>We employ the function <code>\subtotal(function, range)</code>. Where function is an integer where 1 is average and 9 is sum.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/pFp2pJPkOJo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="pivot-table">Pivot Table</h2>
+<p>Excel has a one very efficient tools to do subtotal &ndash; Pivot table. It is one of the most powerful tools in Excel. It allows you to calculate subtotal easily.</p>
+<p>First, prepare your data in a table form with header. As shown in Figure below.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_PivotTable.png" >
+
+
+  <img src="/img/Excel/Excel_PivotTable.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>Then go to insert ribbon and then choose pivot table.Then fill in the table range.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_PivotTable_Create.png" >
+
+
+  <img src="/img/Excel/Excel_PivotTable_Create.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<p>Then you can drag variables into four boxes: filters, columns, rows and values.</p>
+<p>The basic elements are rows and values. Rows are the groups needed and values are the summary statistics to be calculated such as sum, average, count, standard deviation.</p>
+<p>If we want to include grouping for values, then we can put the variable into columns. If we want to include grouping for everything, then it will be in filter.</p>
+<p>For example, consider student record data with following columns: year, semester, course, students, assessment (mid-term, assignment or final), and scores. Then row variable can be course, and then values is scores. Then column is assessment. Filter can be year and semester.</p>
+<!-- For a detailed explanation of how to create a pivot table, refer to https://support.office.com/en-us/article/Create-a-PivotTable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576. -->
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/i3VmPzcYnMg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="freeze-plane">Freeze Plane</h2>
+<p>When we have large spreadsheet, it is convenient to keep some parts (especially the row or columns headers) while we are scroll away. To do so, we can use freeze plane.</p>
+<p>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_FreezePlane1.png" >
+
+
+  <img src="/img/Excel/Excel_FreezePlane1.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_FreezePlane2.png" >
+
+
+  <img src="/img/Excel/Excel_FreezePlane2.png" alt=""  >
+</a>
+
+
+
+</figure>
+</p>
+<h2 id="split-plane">Split Plane</h2>
+<p>When we have large spreadsheet, we want to compare some parts with another parts. To do so, we can use split plane function.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Split.png" >
+
+
+  <img src="/img/Excel/Excel_Split.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<h2 id="hide-and-unhide">Hide and Unhide</h2>
+<p>When we have many rows and columns, the screen may be too small to display all. For example, some rows are too bothering to work on. 
+Then we have a row of data we wish to hide. We could do that by simply selecting the row, and pressing the right mouse button, then selecting the hide option.</p>
+<p>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_HideRow1.png" >
+
+
+  <img src="/img/Excel/Excel_HideRow1.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_HideRow2.png" >
+
+
+  <img src="/img/Excel/Excel_HideRow2.png" alt=""  >
+</a>
+
+
+
+</figure>
+</p>
+<p>The result would then look like this. You can also unhide row 1 by selecting the unhide option. See Figure \ref{Excel-Hide-Row2}.</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_HideRow3.png" >
+
+
+  <img src="/img/Excel/Excel_HideRow3.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<h2 id="charting">Charting</h2>
+<p>Excel also allows you to plot charts or graphs easily, to aid in the visualization of data. 
+Simply go to the Insert tab, and there are multiple options available there. See Figure \ref{Excel-Charting}</p>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/Excel/Excel_Charting.png" >
+
+
+  <img src="/img/Excel/Excel_Charting.png" alt=""  >
+</a>
+
+
+
+</figure>
+
+<h2 id="conditional">Conditional</h2>
+<p>Logical statements are either true or false. Very often, we want to compare two numbers. For example, <code>2&gt; 1</code> is true statement but  <code>2 &lt; 1</code> is false statement.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&gt;</code></td>
+<td>Greater than</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>Less than</td>
+</tr>
+<tr>
+<td>=</td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>Greater than or equal to</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>Less than or equal to</td>
+</tr>
+</tbody>
+</table>
+<p>Conditional function is useful for piece-wise function. One common example is absolute function. It returns the same number if the number is positive but change the number to positive if the given number is negative. The following expression takes the absolute value in the cell A1: <code>=IF(A1&gt;0,A1,-A1)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IF (logical, A, B)</td>
+<td>It checks whether the logical is true, and returns A value if TRUE, and B if FALSE.</td>
+</tr>
+</tbody>
+</table>
+<p>Here we provide an example of using conditional statement.</p>
+<p>For a list of scores: 85, 90, 72, 45&hellip;, we want to assign <strong>Pass</strong> if no less than 50, and <strong>Fail</strong> otherwise.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Students</td>
+<td>Score</td>
+<td>Pass?</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Peter</td>
+<td>85</td>
+<td><code>=IF(B2&gt;50,&quot;PASS&quot;,&quot;FAIL&quot;)</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>John</td>
+<td>94</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Mart</td>
+<td>72</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Susan</td>
+<td>45</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Now we have another example of grading: A for scores no less than 80, B for scores no less than 70, and C otherwise.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Students</td>
+<td>Score</td>
+<td>Grade</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Peter</td>
+<td>85</td>
+<td><code>=IF(B2&gt;80,&quot;A&quot;,IF(B2&gt;70,&quot;B&quot;,&quot;C&quot;))</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>John</td>
+<td>94</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Mart</td>
+<td>72</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Susan</td>
+<td>45</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Next example is about the most simplest technical trading rule &ndash; simple filter rule. We calculate the price change P(t)/P(t-1) in column C and then for column D we use conditional statement to set Buy=1 when the price change is greater than $1+\delta$ and Buy=0 otherwise.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Delta</td>
+<td>0.02</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Date</td>
+<td>P(t)</td>
+<td>P(t)/P(t-1)</td>
+<td>Buy</td>
+</tr>
+<tr>
+<td>3</td>
+<td>02-May-16</td>
+<td>10</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>03-May-16</td>
+<td>12</td>
+<td><code>=C4/C3</code></td>
+<td><code>=IF(C4&gt;1+$B$1,1,0)</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>04-May-16</td>
+<td>11</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Then we can add sell variable at column D. It is set to 1 when the price change is less than $1-\delta$ and Buy=0 otherwise. Finally, column E is the trading signal, and it is sum of buy and sell.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Delta</td>
+<td>0.02</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Date</td>
+<td>P(t)</td>
+<td>P(t)/P(t-1)</td>
+<td>Buy</td>
+<td>Sell</td>
+<td>Trade</td>
+</tr>
+<tr>
+<td>3</td>
+<td>02-May-16</td>
+<td>10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>03-May-16</td>
+<td>12</td>
+<td><code>=C4/C3</code></td>
+<td><code>=IF(C4&gt;1+$B$1,1,0)</code></td>
+<td><code>=IF(C4&lt;1-$B$1,-1,0)</code></td>
+<td><code>=D4+E4</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>04-May-16</td>
+<td>11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>There are some conditional functions: <code>COUNTA</code> only counts non-empty cell, and <code>COUNTBLANK</code> counts blank cell. <code>COUNTIF</code> only counts cells with specific criteria. <code>SUMIF</code> and <code>AVERAGEIF</code> only sum and average over cells with specific criteria.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COUNTA(range)</td>
+<td>Counts the number of cells in a range that are not empty</td>
+</tr>
+<tr>
+<td>COUNTBLANK(range)</td>
+<td>Counts the number of empty cells in a specified range of cells</td>
+</tr>
+<tr>
+<td>COUNTIF(range, criteria)</td>
+<td>Counts the number of cells within a range that meet the given condition. For example, <code>COUNTIF(&quot;A1:B2&quot;,&quot;&gt;0&quot;)</code> counts the number of cells with positive number</td>
+</tr>
+<tr>
+<td>SUMIF(range, criteria)</td>
+<td>Adds the cells specified by a given condition or criteria</td>
+</tr>
+<tr>
+<td>AVERAGEIF(range, criteria)</td>
+<td>Finds average(arithmetic mean) for the cells specified by a given condition or criteria</td>
+</tr>
+</tbody>
+</table>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ie4NDK_sROo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Sometimes, we want to combine several logical statements.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AND(logical1, logical2)</td>
+<td>Returns TRUE if both logicals are TRUE</td>
+</tr>
+<tr>
+<td>OR(logical1, logical2)</td>
+<td>Returns TRUE if any of the logicals are TRUE, and  Returns FALSE only if all logicals are FALSE</td>
+</tr>
+<tr>
+<td>NOT(logical)</td>
+<td>Changes FALSE to TRUE, or TRUE to FALSE</td>
+</tr>
+</tbody>
+</table>
+<p>Now we have another example of grading. Grading depends on the sum of test and exam. Similar to the above example, a student will get an A for scores no less than 80, a B for scores no less than 70, and a C otherwise. However, if an A student score more than 60 in final, A+ will be given.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Student</td>
+<td>Test</td>
+<td>Exam</td>
+<td>Grade</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Pert</td>
+<td>30</td>
+<td>55</td>
+<td><code>=IF(AND(B2+C2&gt;80,C2&gt;60),&quot;A&quot;,IF(B2+C2&gt;80,&quot;A&quot;,IF(B2+C2&gt;70,&quot;B&quot;,&quot;C&quot;))</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>John</td>
+<td>28</td>
+<td>62</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Mary</td>
+<td>22</td>
+<td>40</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Susan</td>
+<td>45</td>
+<td>40==30</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>For technical analysis, we usually use more than one signals. To combine two signals, one common method is to take action when both signals agree. It combines two buy signals (columns A and B) into final signal (column C).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Rule1</td>
+<td>Rule2</td>
+<td>Buy?</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td><code>=IF(AND(A1=1,B1=1),1,0)</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/o770VExsSiI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="more-applications">More applications</h1>
+<p>Excel spreadsheet can be used for fundamental analysis, technical analysis and simulation.</p>
+<h2 id="fundamental-analysis">Fundamental Analysis</h2>
+<p>We can construct the spreadsheet of performance ratio analysis from data generated from financial statements of a given year. Vlookup will be useful in this case. 
+We can also use the copy and paste function to replicate the analysis for other years. Relative address will be useful here.</p>
+<h2 id="technical-analysis">Technical analysis</h2>
+<p>We can also perform technical analysis in Excel, by setting up our own spreadsheet and incorporating the formula. 
+Examples include Filter rule, Simple Moving Average (SMA),Exponential Moving Average (EMA), Bollinger Band, Moving Average Convergence Divergence (MACD), Relative Strength Index (RSI).</p>
+<h2 id="time-series-analysis">Time Series Analysis</h2>
+<p>We can also do some basic time series analysis in Excel spreadsheet.
+Examples include, Gaussian White Noise, Moving Average MA1 model, Autoregressive AR1 model, Random Walk.</p>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/vba-copy/excel-vba-r/" rel="next">Financial programming with Excel VBA R</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/vba-copy/advanced-vba/" rel="prev">Advanced VBA</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on May 4, 2019</p>
+
+          
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses%5cvba%20-%20Copy%5cAdvanced-Excel.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    2012-2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

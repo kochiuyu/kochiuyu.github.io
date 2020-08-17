@@ -1,0 +1,2299 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview | Chiu Yu Ko</title>
+    <link>/programming/vba/</link>
+      <atom:link href="/programming/vba/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overview</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2020. All Rights Reserved.</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <title>Overview</title>
+      <link>/programming/vba/</link>
+    </image>
+    
+    <item>
+      <title>Financial programming with Excel VBA R</title>
+      <link>/programming/vba/excel-vba-r/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/programming/vba/excel-vba-r/</guid>
+      <description>&lt;p&gt;In this book, we learn how to do financial programming in two steps. We first cover Excel that requires minimum programming technique, it is desirable to start learning it first. Excel VBA is covered to provide a smooth transition to more complicated R programming. In particular, students first learn how to use Excel to generate a simple trading system and this builds the foundation for the more complicated trading system in R.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-excel-vba-r.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Cover-excel-vba-r.jpg&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Excel VBA is commonly used for computationally less demanding calculations in both academic and business world. Students are prepared to how to use them to do various financial analysis including fundamental analysis, technical analysis and time series analysis. In particular, students will learn how to write an analyst report, and create the computer-aided technical trading system.&lt;/p&gt;
+&lt;p&gt;The book is available through 
+&lt;a href=&#34;https://play.google.com/store/books/details?id=GVxnDwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Play&lt;/a&gt; or 
+&lt;a href=&#34;https://books.google.com.sg/books/about?id=GVxnDwAAQBAJ&amp;amp;redir_esc=y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google book&lt;/a&gt;. You can read the whole book through free sampling and preview. If you think that I have done a good or bad job, please feel free to drop me an email with comments/suggestions. Of course, you are very welcome to consider buying me a cup of coffee through purchasing the ebook.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Google Play, you may download acsm file to be opened by specialized software such as Adobe Digital Edition. The software will download the pdf file to be read offline.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Advanced VBA</title>
+      <link>/programming/vba/advanced-vba/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      <guid>/programming/vba/advanced-vba/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Conditional Statements&lt;/li&gt;
+&lt;li&gt;Iterative Statements&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3LPJHIgowZA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;conditionals&#34;&gt;Conditionals&lt;/h1&gt;
+&lt;p&gt;There are 4 main types of conditionals that we will use in VBA:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If,&lt;/li&gt;
+&lt;li&gt;If-else,&lt;/li&gt;
+&lt;li&gt;If-ElseIf-else, and&lt;/li&gt;
+&lt;li&gt;Select Case.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;relational-operator&#34;&gt;Relational Operator&lt;/h2&gt;
+&lt;p&gt;Conditional statement are executed based on logical statement (true/false). The most basic logical statement is by relational operators. VBA uses the same relational operator as those in Excel spreadsheet.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operator&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;greater than&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;less than&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;=&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;equal to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;greater than or equal to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;=&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;less than or equal to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;if&#34;&gt;If&lt;/h2&gt;
+&lt;p&gt;How do conditionals work? They are usually put at the front of a condition that you want to be met. If that condition is met, then Excel will carry out the specified action or task. The syntax looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;If (condition is True) Then
+   Do action/task 
+End if
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here is an example for if-statement using subroutine.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub SimpleIF()
+Dim a as Integer 
+Dim b as Integer 
+   a = 2
+   b = 1
+   If a &amp;gt; b Then
+      MsgBox( &amp;quot;I like this class!&amp;quot; )
+   End If
+   If a &amp;lt; b Then
+      MsgBox( &amp;quot;I hate this class!&amp;quot; )
+   End If
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_if.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_if.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Here is an example for if-statement using function.&lt;/p&gt;
+&lt;p&gt;For a list of scores: 85, 90, 72, 45…, we want to assign &lt;strong&gt;Pass&lt;/strong&gt; if no less than 50, and &lt;strong&gt;Fail&lt;/strong&gt; otherwise.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Student&lt;/td&gt;
+&lt;td&gt;Score&lt;/td&gt;
+&lt;td&gt;Pass?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Peter&lt;/td&gt;
+&lt;td&gt;85&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=IF(B2&amp;gt;50,&amp;quot;PASS&amp;quot;,&amp;quot;FAIL&amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Mary&lt;/td&gt;
+&lt;td&gt;72&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Susuan&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;We can write the following function.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Function Pass1(Mark As Integer)
+If Mark &amp;gt;= 50 Then
+   Pass1 = &amp;quot;Pass&amp;quot;
+End If
+If Mark &amp;lt; 50 Then
+   Pass1 = &amp;quot;Fail&amp;quot;
+End If
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Student&lt;/td&gt;
+&lt;td&gt;Score&lt;/td&gt;
+&lt;td&gt;Pass?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Peter&lt;/td&gt;
+&lt;td&gt;85&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=Pass1(B2)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Mary&lt;/td&gt;
+&lt;td&gt;72&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Susuan&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;if-else&#34;&gt;If-else&lt;/h2&gt;
+&lt;p&gt;We sometimes have a binary situation that we want to execute task A if condition is true and otherwise task B. We can use the following if-else statement.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;If (condition is True) Then
+   Do action/task A
+Else
+   Do action/task B
+End if
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/XE97Zp6Lfsw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this example, if the 1st condition is met, task A will be carried out. Otherwise, we immediately carry out task B, because no other conditions are specified.&lt;/p&gt;
+&lt;p&gt;Here is an example of routine for if-statement.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub IFElse()
+Dim a as Integer 
+Dim b as Integer 
+   a = 2
+   b = 1
+   If a = b Then
+      MsgBox( &amp;quot;I like this module!&amp;quot; )
+   Else 
+      MsgBox( &amp;quot;I hate this module!&amp;quot; )
+   End If
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_ifelse.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_ifelse.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Here, we are using 2 If conditions. Also note that the code only accounts for the case a &amp;gt; b, and the case a&amp;lt;b. If a=b, then you will not get any result. This is extremely important, because when coding people often tend to neglect one or two cases, and this causes problems in their code. Also note that every If chunk must be ended with the code End If, otherwise VBA will not know that you have ended the If code chunk.&lt;/p&gt;
+&lt;p&gt;Continue with our Pass1, we can use if-else statement.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Function Pass2(Mark As Integer)
+If Mark &amp;gt;= 50 Then
+   Pass2 = &amp;quot;Pass&amp;quot;
+Else
+   Pass2 = &amp;quot;Fail&amp;quot;
+End If
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Student&lt;/td&gt;
+&lt;td&gt;Score&lt;/td&gt;
+&lt;td&gt;Pass?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Peter&lt;/td&gt;
+&lt;td&gt;85&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=Pass2(B2)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Mary&lt;/td&gt;
+&lt;td&gt;72&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Susuan&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DXsGKWHlaO4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;if-elseif-else&#34;&gt;If-elseif-else&lt;/h2&gt;
+&lt;p&gt;The next question would then be, what if we wanted to include another condition? We would then make use of the If-ElseIf-else conditional, as shown below.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;If (condition1 is True) Then 
+   Do action/task A
+ElseIf (condition2 is True) Then
+   Do action/task B
+Else
+   Do action/task C
+End if 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that If-ElseIf-Else conditionals are only evaluated once, in order. The topmost condition is checked, if that isn’t true, the next one is checked, and so on, until you find one that is true and perform that task. Whatever other conditions remaining below the true one are not gone through, because once that true condition’s task has been carried out, the checking stops. In other words, VBA will exit that If-ElseIf-Else chunk. For correctness, none of your conditions should have identical overlapping parts!&lt;/p&gt;
+&lt;p&gt;Here we use a If-Else condition, and now the a=b case is also accounted for, under the Else condition.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub IFElseIF()
+Dim a as Integer 
+Dim b as Integer 
+   a = 2
+   b = 1
+   If a = b Then
+      MsgBox( &amp;quot;I like this module!&amp;quot; )
+   ElseIf a &amp;lt; b Then
+      MsgBox( &amp;quot;I hate this module!&amp;quot; )
+   Else
+      MsgBox( &amp;quot;I am neutral towards this module!&amp;quot; )
+   End If
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_ifelseifelse.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_ifelseifelse.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Here, we have used an ElseIf condition, and this separates the previous &lt;code&gt;a&amp;lt;b&lt;/code&gt; and &lt;code&gt;a=b&lt;/code&gt; cases into 2 different cases now. Previously in &lt;code&gt;confession1()&lt;/code&gt; they were lumped together under the &lt;code&gt;Else&lt;/code&gt; condition.&lt;/p&gt;
+&lt;p&gt;Recall our grading function as follows:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Student&lt;/td&gt;
+&lt;td&gt;Score&lt;/td&gt;
+&lt;td&gt;Pass?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Peter&lt;/td&gt;
+&lt;td&gt;85&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=IF(B2&amp;gt;80,&amp;quot;A&amp;quot;,IF(B2&amp;gt;70,&amp;quot;B&amp;quot;,&amp;quot;C&amp;quot;))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Mary&lt;/td&gt;
+&lt;td&gt;72&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Susuan&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;Function Grade1(Mark As Integer)
+If Mark &amp;gt;= 80 Then
+   Grade1 = &amp;quot;A&amp;quot;
+Elseif Mark &amp;gt;= 70 Then
+   Grade1 = &amp;quot;B&amp;quot;
+Else
+   Grade1 = &amp;quot;C&amp;quot;
+End If
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Student&lt;/td&gt;
+&lt;td&gt;Score&lt;/td&gt;
+&lt;td&gt;Pass?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Peter&lt;/td&gt;
+&lt;td&gt;85&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=Grade1(B2)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Mary&lt;/td&gt;
+&lt;td&gt;72&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Susuan&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/HuI5yLVcQmI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;select-case&#34;&gt;Select Case&lt;/h2&gt;
+&lt;p&gt;How to handle if we have many different cases? We can use the Select function, to create cases that we want to choose between.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub SelectCase()
+Dim a as Integer
+   a = 1
+   Select Case a
+      Case 1 
+         MsgBox (&amp;quot;I like this module!&amp;quot;)
+      Case 2
+         MsgBox (&amp;quot;I hate this module!&amp;quot;)
+      Case 3
+         MsgBox (&amp;quot;I am neutral!&amp;quot;)
+   End Select
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this case, since you have set the value of a to 1, the output will be  &lt;code&gt;I like this module&lt;/code&gt;. If you were to change the value of &lt;code&gt;a&lt;/code&gt; in the code, the corresponding case will then be selected. This is useful if you had a variable with multiple states or values that you might want to switch between.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_SelectCase.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_SelectCase.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Select case can also accommodate cases using relational operator. To do so, we have to use &lt;code&gt;Is&lt;/code&gt; to represent the variable, and &lt;code&gt;Else&lt;/code&gt; to represent all residual cases.&lt;/p&gt;
+&lt;p&gt;The following function returns the grade of a class based on the mark. A student will get an A if the mark is no less than 80, B if the mark is no less than 70 and C otherwise.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Function Grade2(Mark As Integer)
+Select Case Mark
+	Case Is &amp;gt;= 80
+		Grade2 = &amp;quot;A&amp;quot;
+ 	Case Is &amp;gt;= 70
+		 Grade2 = &amp;quot;B&amp;quot;
+	Case Else
+		 Grade2 = &amp;quot;C&amp;quot;
+End Select
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Student&lt;/td&gt;
+&lt;td&gt;Score&lt;/td&gt;
+&lt;td&gt;Pass?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Peter&lt;/td&gt;
+&lt;td&gt;85&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=Grade2(B2)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Mary&lt;/td&gt;
+&lt;td&gt;72&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Susuan&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/J9PM_dtGJwA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;logical-operators&#34;&gt;Logical Operators&lt;/h2&gt;
+&lt;p&gt;Sometimes, we want to combine several logical statements. However, different from Excel spreadsheet, for &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; VBA uses logical operator instead of logical function.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operator&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;logical1 AND logical2&lt;/td&gt;
+&lt;td&gt;Returns TRUE if both logicals are TRUE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;logical1 OR logical2&lt;/td&gt;
+&lt;td&gt;Returns TRUE if any of the logicals are TRUE, and Returns FALSE only if all logicals are FALSE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;NOT logical&lt;/td&gt;
+&lt;td&gt;Changes FALSE to TRUE, or TRUE to FALSE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Recall our A+ grading example.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;th&gt;D&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Student&lt;/td&gt;
+&lt;td&gt;Test&lt;/td&gt;
+&lt;td&gt;Exam&lt;/td&gt;
+&lt;td&gt;Grade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Peter&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;55&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=IF(AND(B2+C2&amp;gt;80,C2&amp;gt;60),&amp;quot;A&amp;quot;,IF(B2+C2&amp;gt;80,&amp;quot;A&amp;quot;,IF(B2+C2&amp;gt;70,&amp;quot;B&amp;quot;,&amp;quot;C&amp;quot;))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;28&lt;/td&gt;
+&lt;td&gt;62&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Mary&lt;/td&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;td&gt;40&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Susuan&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;Function AplusGrade(Test As Integer, Exam As Integer)
+Dim Total As Integer
+Total = Test + Exam
+If Total &amp;gt;= 80 And Exam &amp;gt; 60 Then
+AplusGrade = &amp;quot;A+&amp;quot;
+Elseif Total  &amp;gt;= 80 Then
+AplusGrade = &amp;quot;A&amp;quot;
+Elseif Total &amp;gt;= 70 Then
+AplusGrade= &amp;quot;B&amp;quot;
+Else
+AplusGrade = &amp;quot;C&amp;quot;
+End If
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;th&gt;D&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Student&lt;/td&gt;
+&lt;td&gt;Test&lt;/td&gt;
+&lt;td&gt;Exam&lt;/td&gt;
+&lt;td&gt;Grade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Peter&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;55&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=APlusGrade(B2,C2)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;28&lt;/td&gt;
+&lt;td&gt;62&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Mary&lt;/td&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;td&gt;40&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Susuan&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;example-sma&#34;&gt;Example: SMA&lt;/h2&gt;
+&lt;p&gt;Recall that how we generate SMA as below&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;Price&lt;/td&gt;
+&lt;td&gt;SMA(n)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;02-May-16&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=IF(COUNT($A$3:A3)&amp;gt;=$B$1,average(Offset(B3,0,0,-$B1$)), &amp;quot;&amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;03-May-16&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;04-May-16&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;Function SMA(Price As Range, n As Integer, Price0 As Range)
+Dim day As Integer
+day = WorksheetFunction.Count(Range(Price0,Price))
+If day &amp;gt;= n Then
+SMA = WorksheetFunction.Average(Range(Price.Offset(-n+1,0),Price))
+Else
+SMA = &amp;quot;&amp;quot;
+End If
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;Price&lt;/td&gt;
+&lt;td&gt;SMA(n)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;02-May-16&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=SMA(B3,B$1,B$3)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;03-May-16&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;04-May-16&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bNkwZ43jmnk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;example-sma-trading-rule&#34;&gt;Example: SMA Trading Rule&lt;/h2&gt;
+&lt;p&gt;To generate a trading signal based on SMA, we can use the SMA function above.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;th&gt;D&lt;/th&gt;
+&lt;th&gt;E&lt;/th&gt;
+&lt;th&gt;F&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Delta&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;S&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;L&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;Price&lt;/td&gt;
+&lt;td&gt;SMA(S)&lt;/td&gt;
+&lt;td&gt;SMA(L)&lt;/td&gt;
+&lt;td&gt;r&lt;/td&gt;
+&lt;td&gt;Trade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;02-May-16&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=SMA(B5,$B$2,$B$5)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=SMA(B5,$B$3,$B$5)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=C5/D5-1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=IF(E5&amp;gt;=$B1$,1,IF(E5&amp;lt;=-$B1$,-1,0))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;03-May-16&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;04-May-16&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;SMA(ST, LT, Delta, price, price0)&lt;/code&gt; where price is current price, price0 is initial price, ST is the length of short term SMA, LT is the length of long term SMA, and Delta is threshold parameter.&lt;/p&gt;
+&lt;p&gt;This function assumes the prices are sorted chronologically. Then, using the SMA function above and finally calculate the trading signal using the if condition.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Function SMATrade(ST As Integer, LT As Integer, Delta As Double, Price As Range, Price0 As Range)
+
+Dim smas As Double
+Dim smal As Double
+Dim r As Double
+Dim day As Integer
+
+day = WorksheetFunction.Count(Range(Price0,Price))
+
+If day &amp;gt;= LT Then
+  smaS = SMA(Price, ST, Price0)
+  smaL = SMA(Price, LT, Price0)
+  r = (smaS - smaL) / smaL
+
+  If r &amp;gt; Delta Then
+     SMATrade = 1
+  ElseIf r &amp;lt; -Delta Then
+     SMATrade = -1
+  Else
+     SMATrade= 0
+  End If
+
+End If
+End Function
+
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Delta&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;S&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;L&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;Price&lt;/td&gt;
+&lt;td&gt;Trade&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;02-May-16&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=SMATrade($B$2,$B$3,$B$1,B15,$B$5)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;03-May-16&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;04-May-16&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wAueYfvVz-4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;iteration&#34;&gt;Iteration&lt;/h1&gt;
+&lt;p&gt;Sometimes, when coding certain things we want to check the same conditions multiple times. One way would be to write multiple If-Else chunks, but that would be extremely inefficient and tedious. We can use loops, such that we only need to type the If-Else chunk once and the loop will repeat it multiple times.
+There are 2 types of loops, the while loop and the for loop. They work in a similar way, however you will use them under different circumstances, depending on what your code requires.&lt;/p&gt;
+&lt;h2 id=&#34;while-loop&#34;&gt;While Loop&lt;/h2&gt;
+&lt;p&gt;We first look at an example of a while loop.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub WhileLoop()
+Dim a As Integer
+   a = 0
+   Do While a &amp;lt; 3
+      MsgBox (a &amp;amp; &amp;quot;: I like this class! &amp;quot;)
+      a = a + 1
+   Loop
+   MsgBox (&amp;quot;It is important so I said this &amp;quot; &amp;amp; a &amp;amp; &amp;quot; times!&amp;quot;)
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, a has the initial value of 0. By the time the first loop is finished, a now has the value 1, because of the line &lt;code&gt;a = a + 1&lt;/code&gt;, and the message box has appeared once with the message &lt;code&gt;I like this class!&lt;/code&gt;. VBA then goes back to the top of the while loop, and checks if &lt;code&gt;a&amp;lt;3&lt;/code&gt;. Since &lt;code&gt;a=1&lt;/code&gt;, this condition is satisfied, so the loop runs another iteration. Now &lt;code&gt;a=2&lt;/code&gt;. Since the while condition is still satisfied, the loop runs a 3rd iteration. Now &lt;code&gt;a=3&lt;/code&gt;. The condition &lt;code&gt;a&amp;lt;3&lt;/code&gt; is no longer true, so the loop does not continue running, and VBA exits the loop. We then expect to see a message box with the value &lt;code&gt;a=3&lt;/code&gt; inside.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_DoLoop1.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_DoLoop1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_DoLoop2.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_DoLoop2.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_DoLoop3.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_DoLoop3.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_DoLoop4.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_DoLoop4.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GCg2ZIqYOYQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;for-loop&#34;&gt;For Loop&lt;/h2&gt;
+&lt;p&gt;Another type of loop is the for loop. It works in a similar way to a while loop, but there will be occasions when it is more convenient to use a for loop instead of a while loop, and vice versa.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub ForLoop()
+    Dim a As Integer
+    For a = 1 to 5 Step 1
+        MsgBox (a &amp;amp; &amp;quot;: I like this class!&amp;quot;)
+     Next a
+MsgBox (&amp;quot;OK. I know. You have said this &amp;quot; &amp;amp; a-1 &amp;amp; &amp;quot; times!&amp;quot;)
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Initially, &lt;code&gt;a=1&lt;/code&gt;. Step 1 means that every time the loop completes one iteration, a will increase by 1. The increment happens when you reach the line &lt;code&gt;Next a&lt;/code&gt;.
+Once the for loop finishes running, a will have the value 5. Note that when the 5th iteration finishes running, a will have the value 6. Since 6 is not within the given range of the for loop, VBA exits the for loop. To get the correct number in the next message box, we use &lt;code&gt;a-1&lt;/code&gt; instead of a.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_ForLoop1.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_ForLoop1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_ForLoop2.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_ForLoop2.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_ForLoop3.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_ForLoop3.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_ForLoop4.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_ForLoop4.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_ForLoop5.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_ForLoop5.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_ForLoop6.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_ForLoop6.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;In most cases, the task can be coded using either a for loop or a while loop. It depends on the situation, but using either usually has no difference, more of a preference issue.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Zuqbz7891hA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;for-each-loop&#34;&gt;For each Loop&lt;/h2&gt;
+&lt;p&gt;For collections, which are objects that contain a group of the same object, we can use the &lt;code&gt;For Each&lt;/code&gt; method to iterate through the collection.&lt;/p&gt;
+&lt;p&gt;The following sub display the formula for each cells in the range A1:A3.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub ForEachLoop()
+Dim myCell as Range
+   For Each myCell in Range(&amp;quot;A1:A3&amp;quot;)
+      MsgBox myCell.Formula
+   Next myCell
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following functions returns the product of positive numbers within the range of cells. It will return 1 if none of the cells is positive.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Function ProdPositive(Cells As Range)
+ProdPositive = 1
+For Each cell In Cells
+   If cell.Value &amp;gt; 0 Then
+      ProdPositive = ProdPositive * cell.Value
+   End If
+Next cell
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Another example is to remove all the charts in the activesheet.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub RemoveAllChart()
+Dim mycharts As ChartObject
+For Each mycharts In ActiveSheet.ChartObjects
+    mycharts.Delete
+Next
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;example-relative-strength-index&#34;&gt;Example: Relative Strength Index&lt;/h2&gt;
+&lt;p&gt;Here is a spreadsheet to calculate RSI.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;th&gt;D&lt;/th&gt;
+&lt;th&gt;E&lt;/th&gt;
+&lt;th&gt;F&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;Price&lt;/td&gt;
+&lt;td&gt;U&lt;/td&gt;
+&lt;td&gt;D&lt;/td&gt;
+&lt;td&gt;RS&lt;/td&gt;
+&lt;td&gt;RSI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;02-May-16&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=IF(B4&amp;gt;B3,1,0)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=IF(B4&amp;lt;B3,1,0)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=IF(COUNT($A$4:A4)&amp;gt;=$B$2,SUM(OFFSET(C4,0,0,-$B$1))/SUM(OFFSET(D4,0,0,-$B$1)),&amp;quot;&amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=100*E4/(1+E4)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;03-May-16&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;04-May-16&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;To show a more elaborate example of iteration, we go through the code for the Relative Strength Index(RSI) indicator.
+We know that RSI only requires past price data.&lt;/p&gt;
+&lt;p&gt;Here we are setting Prices as an input, and telling VBA that this input should be a range. We then define &lt;code&gt;up&lt;/code&gt;, &lt;code&gt;down&lt;/code&gt; as long variables for up, down. We also define &lt;code&gt;RS&lt;/code&gt; as double variable as relative strength. For calculation, we define &lt;code&gt;count&lt;/code&gt; as a long variable and &lt;code&gt;day&lt;/code&gt; as a range variable. After which, we assign the initial values of 0 to &lt;code&gt;up_day&lt;/code&gt;, &lt;code&gt;down&lt;/code&gt; and &lt;code&gt;count&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Function RSI(Prices As Range)
+Dim up, down, count As Long
+Dim RS As Double
+Dim day As Range
+   up = 0
+   down= 0
+   count = 1
+
+   For Each day In Prices
+	 If count &amp;gt; 1 Then
+         If day.Value &amp;gt; day.Offset(-1, 0).Value Then
+           up = up+ 1
+         ElseIf day.Value &amp;lt; day.Offset(-1, 0).Value Then
+           down = down + 1
+         End If
+      End if
+      count = count + 1
+   Next day
+   
+   If down &amp;lt;&amp;gt; 0 Then
+     RS = up / down
+     RSI = 100 * (RS / (1 + RS))
+  else 
+     RSI = 100
+  End If
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, the loop just runs through the data, and adds numbers to &lt;code&gt;up&lt;/code&gt; and &lt;code&gt;down&lt;/code&gt; accordingly. When the loop is done, we can then calculate RSI.&lt;/p&gt;
+&lt;p&gt;Now we see how this RSI function applies in spreadsheet as below.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;Price&lt;/td&gt;
+&lt;td&gt;RSI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;02-May-16&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=IF(COUNT($A$3:A3)&amp;gt;=$B$1,RSI(OFFSET(B2,-$B$1-1,0))), &amp;quot;&amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;03-May-16&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;04-May-16&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6f4x3vG3SwI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Basic VBA</title>
+      <link>/programming/vba/basic-vba/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      <guid>/programming/vba/basic-vba/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is VBA? Why VBA?&lt;/li&gt;
+&lt;li&gt;Hello World&lt;/li&gt;
+&lt;li&gt;What is function? What is subroutine?&lt;/li&gt;
+&lt;li&gt;How to define variable?&lt;/li&gt;
+&lt;li&gt;VBA Objects&lt;/li&gt;
+&lt;li&gt;Record Macro&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-is-vba-why-vba&#34;&gt;What is VBA? Why VBA?&lt;/h2&gt;
+&lt;p&gt;VBA stands for Visual Basic Application. It shares the same syntax as Basic language. Every operation you can perform in Excel using keyboard and mouse can be represented by VBA code. Hence, it allows a lot of flexibility and functionality when using Excel.&lt;/p&gt;
+&lt;p&gt;VBA improves your logical thinking skills, and prepares you for other programming languages, since it is quite basic and the thinking processes can be applied to other languages (such as R in the next chapter). It is ideal for repetitive tasks (e.g. code a function that will run the same process each time, instead of typing it out manually)&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oqr-LHptK4M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;vba-basics&#34;&gt;VBA Basics&lt;/h1&gt;
+&lt;h2 id=&#34;visual-basic-editor&#34;&gt;Visual Basic Editor&lt;/h2&gt;
+&lt;p&gt;First, we need to open Visual Basic Editor (VBE). There are two ways to open VBE: (1) Press &lt;strong&gt;ALT+F11&lt;/strong&gt; to open the Visual Basic Editor and (2)  File &amp;gt; Options &amp;gt; Customize Ribbon &amp;gt; Developer(check the box) Developer Tab &amp;gt; Visual Basic&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_Interface1.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_Interface1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;In the toolbar, select Insert \textgreater Module. Make sure you insert the module into the workbook that you are working on.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_InsertModule.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_InsertModule.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Module is the place where you store the code. You can have as many modules as you want. You can put your code into different modules according to the functions they perform.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1yuREZgjbTs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;hello-world&#34;&gt;Hello World&lt;/h2&gt;
+&lt;p&gt;We will use MsgBox function in VBA to create a popup window in Excel to say hello world.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub HelloWorld()
+     MsgBox (&amp;quot;Hello World! I like VBA!&amp;quot;)
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_HelloWorld.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_HelloWorld.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-U_PWB2SljQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;variable&#34;&gt;Variable&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Dim&lt;/code&gt; is used to define variables. The syntax looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Dim a As Integer
+Dim b As Double
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Variable&lt;/th&gt;
+&lt;th&gt;Range&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Integer&lt;/td&gt;
+&lt;td&gt;From –32,768 to 32,767&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Long&lt;/td&gt;
+&lt;td&gt;From –2,147,483,648 to 2,147,486,647&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Single&lt;/td&gt;
+&lt;td&gt;From –3402823E38 to –1.401298E–45 or 1.401298E–45 to 3.402823E38&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Double&lt;/td&gt;
+&lt;td&gt;From –1.79769313486232E308 to –4.94065645841247E–324  or 1.79769313486232E308 to 4.94065645841247E–324&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Boolean&lt;/td&gt;
+&lt;td&gt;Either 1 or 0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;1 to 65,400 characters&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Array&lt;/td&gt;
+&lt;td&gt;An array is a group of variables&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Variant&lt;/td&gt;
+&lt;td&gt;Anything&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The following example display the value of variable.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub DisplayVar()
+Dim a as Integer
+    a = 10
+    Msgbox(&amp;quot;My variable has the value of &amp;quot; &amp;amp; a &amp;amp;&amp;quot;.&amp;quot;)
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;One useful function of MsgBox is to check if certain sections of your code are running properly.&lt;/p&gt;
+&lt;h2 id=&#34;subroutine-and-function&#34;&gt;Subroutine and Function&lt;/h2&gt;
+&lt;p&gt;In terms of the code that you can program inside, a &lt;code&gt;Function&lt;/code&gt; and a &lt;code&gt;Sub&lt;/code&gt; are similar. The main difference is that a Sub performs a task, but returns no output, while a Function takes in input and returns output.&lt;/p&gt;
+&lt;p&gt;Our Hello World is an example of Sub. The structure of sub is that it starts with &lt;code&gt;Sub&lt;/code&gt; together with the name of the Sub, and it ends with &lt;code&gt;End Sub&lt;/code&gt;. The code to run is in between.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub Name()
+        ---Task 1---
+        ---Task 2---
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Inside a subroutine, we can call other subroutine. The following subroutine calls HelloWorld subroutine twice.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub CallAnotherSub()
+	Call HelloWorld
+	Call HelloWorld
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The syntax for a function is similar. The structure of function is that it starts with &lt;code&gt;Function&lt;/code&gt; together with the name of the Sub, and it ends with &lt;code&gt;End Function&lt;/code&gt;. The code to run is in between.&lt;/p&gt;
+&lt;p&gt;However, two key differences: (1) we have to enter the variable to be processed and its variable type, and (2) we have to tell what is the output of the function.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Function Name( Variable As Variable Type)
+    ---Content here---
+    Name = .....
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let us create a simple function that calculate length hypotenuse of a right-angle triangle. To calculate the length hypotenuse, we need to have lengths of the sides. Hence, since sides are number, we use double. Since the formula is square root of sum of squared length of the sides, we will use &lt;code&gt;^&lt;/code&gt; as power and &lt;code&gt;Sqr&lt;/code&gt; as square root function.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Function Hypotenuse(a As Double, b As Double)
+    Hypotenuse = Sqr(a ^ 2 + b ^ 2)
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Go to spreadsheet then type &lt;code&gt;=Hypotenus(3,4)&lt;/code&gt; into formula of any cell. You should get 5.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/g4Bq8QnThxM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We can also call function inside a subroutine. The following subroutine calls the hypotenus function.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub MsgFunction()
+	Msgbox(&amp;quot;Secret is &amp;quot; &amp;amp; ABC(3,4))
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Recall the spreadsheet example of calculation of EMA. S&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;beta&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=2/(A1+1)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;Price&lt;/td&gt;
+&lt;td&gt;EMA(n)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;02-May-16&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;06-May-16&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=AVERAGE(B4:B8)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;07-May-16&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=$B$2*B9+(1-$B$2)*C8&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;Function EMA(EMAYes As Double, price As Double, n As Integer)
+    beta = 2 / (n + 1)
+    EMA = beta * price + (1 - beta) * EMAYes
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can simplify our spreadsheet using the VBA code as shown below.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;beta&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=2/(A1+1)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Date&lt;/td&gt;
+&lt;td&gt;Price&lt;/td&gt;
+&lt;td&gt;EMA(n)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;02-May-16&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;06-May-16&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=AVERAGE(B4:B8)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;07-May-16&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;=EMA(C7,B8,$B$1)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ODH_pvw9GXI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;objects&#34;&gt;Objects&lt;/h1&gt;
+&lt;p&gt;Objects are special type of variables. In particular, they represent elements of Excel. Common used objects include&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;cell,&lt;/li&gt;
+&lt;li&gt;range,&lt;/li&gt;
+&lt;li&gt;workbook,&lt;/li&gt;
+&lt;li&gt;worksheet,&lt;/li&gt;
+&lt;li&gt;active objects,&lt;/li&gt;
+&lt;li&gt;application and&lt;/li&gt;
+&lt;li&gt;chart.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To use object, we can use either method or property.
+&lt;strong&gt;Method&lt;/strong&gt; is an action: activate, select, delete, value, formula, text, clear, copy, paste.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Property&lt;/strong&gt; is description: name, visible
+Using a metaphor: If object is noun, method is verb and property is adjective&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Collections&lt;/strong&gt; is an object that contain a group of the same object. For example, &lt;code&gt;Worksheets&lt;/code&gt; contains all worksheet objects, and &lt;code&gt;Workbooks&lt;/code&gt; contains all workbook objects. To call a particular worksheet, we would call the name of the particular sheet in Worksheets.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/uJj2SvK2PlA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;cells&#34;&gt;Cells&lt;/h2&gt;
+&lt;p&gt;Cells refers to one cell in a range but it is using coordinate instead of R1C1 as cell reference. The syntax is &lt;code&gt;Cells(row, column)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For example, the following sets the second row in the range C2:C5 to value of 3. In the other words, C3 is set to 3.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub RangeAndCell()
+Range(&amp;quot;C2:C5&amp;quot;).Cells(2, 1).Value = 3
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the worksheet name is not explicitly stated, it is assumed that the code works on the active sheet.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub WorkingOnCell()
+Cells(1,1).value = 5
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Offset refers to another cell, taking reference from the current active cell.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub CellOffSet()
+Cells(1,1) = 5
+Cells(1,1).Offset(0,1).Formula = &amp;quot;=A1+1&amp;quot;
+Cells(1,1).Offset(1,0).Formula = &amp;quot;=A1+2&amp;quot;
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then cell A1 is 5, cell B1 is 6 and cell A2 is 7&lt;/p&gt;
+&lt;h2 id=&#34;range&#34;&gt;Range&lt;/h2&gt;
+&lt;p&gt;Range is a collection of cells.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub SheetAndRange()
+Worksheets(&amp;quot;sheet1&amp;quot;).Range(&amp;quot;A1&amp;quot;).Value = 3
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This causes the worksheet named sheet1 to have the value 3 in cell A1. If the worksheet name is not explicitly stated, it is assumed that the code works on the active sheet.&lt;/p&gt;
+&lt;p&gt;The following code shows the formula, value, text property of range.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub WorkingOnRange()
+Range(&amp;quot;A1&amp;quot;).Formula = &amp;quot;=RAND()&amp;quot;
+Range(&amp;quot;B1:E3&amp;quot;).Value = 6
+Range(&amp;quot;A1&amp;quot;).Text=&amp;quot;3+4&amp;quot;
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following code shows how to do copy, paste and paste special (value).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub CopyAndPaste()
+Range(&amp;quot;A1:B5&amp;quot;).Formula = &amp;quot;=RAND()&amp;quot;
+Range(&amp;quot;C1&amp;quot;).Formula = &amp;quot;=A1+B1&amp;quot;
+Range(&amp;quot;C1&amp;quot;).Copy 
+Range(&amp;quot;C2:C5&amp;quot;).PasteSpecial
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following code shows how to obtain input from the spreadsheet.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub GetFromSheet ()
+Dim a as Integer
+Range(&amp;quot;A1&amp;quot;).Formula =&amp;quot;=RANDBETWEEN(1,6)&amp;quot;
+a = Range(&amp;quot;A1&amp;quot;).Value
+Msgbox(a)
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/cvzV-VMOOUE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;worksheets&#34;&gt;Worksheets&lt;/h2&gt;
+&lt;p&gt;Worksheets are what we use in Excel, we can create multiple sheets and give them unique names etc. We can also add new sheets or delete sheets in our VBA code.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub AddSheet()
+   WorkSheets.Add
+   WorkSheets(ActiveSheet.Name).Name = &amp;quot;MySheet&amp;quot;
+End Sub
+
+Sub DelSheet()
+   Application.DisplayAlerts = False
+   WorkSheets(&amp;quot;MySheet&amp;quot;).Delete
+   Application.DisplayAlerts = True
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can also activate, rename or hide/unhide worksheets:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Worksheets(&amp;quot;sheet1&amp;quot;).Activate
+Worksheets(&amp;quot;sheet1&amp;quot;).Delete
+Worksheets(&amp;quot;sheet2&amp;quot;).Select
+Worksheets(&amp;quot;sheet1&amp;quot;).Name=&amp;quot;Me&amp;quot;
+Worksheets(&amp;quot;sheet3&amp;quot;).Visible=False
+Worksheets.Add
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;workbook&#34;&gt;Workbook&lt;/h2&gt;
+&lt;p&gt;Workbook object is essentially one excel file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub WorkBookActiveName()
+Workbooks(&amp;quot;book1&amp;quot;).Activate
+MsgBox (Workbooks(&amp;quot;book1&amp;quot;).ActiveSheet.Name)
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;application&#34;&gt;Application&lt;/h2&gt;
+&lt;p&gt;The following four lines show how to select using application objects. The first line chooses cell A1 in the active 2. The second line chooses the second column (of the active worksheet). The third line chooses the first row (of the active worksheet). The forth line chooses the worksheet with name &lt;code&gt;sheet1&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Application.ActiveSheet.Cells(1,1).Select
+Application.Columns(2).Select
+Application.Rows(1).Select
+Application.Sheets(&amp;quot;sheet1&amp;quot;).Select
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following shows some actions in spreadsheet. The first line asks the program to redo all calculation for the spreadsheet. The second line perform &lt;code&gt;redo&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Application.Calculate
+Application.Undo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Worksheet functions are application objects. They can be used directly. For example, the following three lines of code corresponds to calling &lt;code&gt;COUNT&lt;/code&gt;, &lt;code&gt;SUM&lt;/code&gt; and &lt;code&gt;AVERAGE&lt;/code&gt; functions from the spreadsheet.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Application.WorksheetFunction.Count
+Application.WorksheetFunction.Sum
+Application.WorksheetFunction.Average
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that &lt;code&gt;Application.&lt;/code&gt; can be omitted. The following function SumAvg that calculates sum of two averages of two input ranges.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Function SumAvg(X as Range, Y as Range)
+Dim xavg As Double
+Dim yavg As Double
+xavg = WorksheetFunction.Average(X)
+yavg = WorksheetFunction.Average(Y)
+SumAvg = xavg + yavg
+End Function
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/dz_zVafkoEQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;active-objects&#34;&gt;Active Objects&lt;/h2&gt;
+&lt;p&gt;ActiveCell refers to the currently selected cell in your Excel workbook. From there, you can add or delete data from the cell. For example,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub WorkingActiveCell()
+   ActiveCell.Delete
+   ActiveCell.Value = 11
+   ActiveCell.text = &amp;quot;Helloworld&amp;quot;
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The final value in the ActiveCell will be Helloworld. This is because you first deleted whatever was in the cell, then put the value 11 into the cell. After which, you overrode the previous value and put in the word Helloworld into the active cell.&lt;/p&gt;
+&lt;p&gt;The following shows how to display property of active objects. The first line display a message box that tells the address of the active cell, the second one tells the name of active worksheet, and the second line tells the name of the active workbook (the current file name).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;MsgBox (ActiveCell.Address)
+MsgBox (ActiveSheet.Name)
+MsgBox (ActiveWorkbook.Name)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;with&#34;&gt;With&lt;/h2&gt;
+&lt;p&gt;Using a With statement allows you to code more efficiently, especially if you have to keep referring to the same object. The following example shows different properties are set for the cells(1,1).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub WithExample()
+With Cells(1, 1)
+    .Value = 4
+    .Interior.Color = RGB(255, 255, 0)
+    .Font.Color = RGB(0, 255, 0)
+End With
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The code within the With and End With part is applied to the specified cell, which in this case is Cells(1,1).&lt;/p&gt;
+&lt;h1 id=&#34;charting&#34;&gt;Charting&lt;/h1&gt;
+&lt;p&gt;For charting in Excel, there are two methods:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;chart sheet and&lt;/li&gt;
+&lt;li&gt;embedded chart.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;chart-sheet&#34;&gt;Chart Sheet&lt;/h2&gt;
+&lt;p&gt;Chart sheet is a worksheet that only has chart. It is an object in a workbook.&lt;/p&gt;
+&lt;p&gt;To create a new chart sheet, we use the command &lt;code&gt;Charts.Add&lt;/code&gt;. Note that this is similar to adding new worksheet command &lt;code&gt;Worksheets.Add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then we need to define data source using &lt;code&gt;.SetSourceData Source:=&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, we need to tell what kind of chart is plotting &lt;code&gt;.ChartType =&lt;/code&gt;. For example, line chart is &lt;code&gt;xlLine&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub NewLineChartSheet()
+Dim ChartSheet As Chart
+Dim Data As Range
+Set ChartSheet = Charts.Add
+Set Data = Sheets(&amp;quot;Sheet1&amp;quot;).Range(&amp;quot;A1:B3&amp;quot;)
+With ChartSheet
+    .SetSourceData Source:=Data
+    .ChartType = xlLine
+End With
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It is useful to define a chart with name so that we can refer later.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub NewNamedChartSheet()
+Dim ChartSheet As Chart
+Dim Data As Range
+Set ChartSheet = Charts.Add
+Set Data = Sheets(&amp;quot;Sheet1&amp;quot;).Range(&amp;quot;A1:B30&amp;quot;)
+With ChartSheet
+    .SetSourceData Source:=Data
+    .ChartType = xlLine
+    .Name = &amp;quot;mychart&amp;quot;
+End With
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following code changes a property of an existing chartsheet. The following code changes the chart by including additional data.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub ChangeChartSheet()
+Dim ChartSheet As Chart
+Dim Data As Range
+Set ChartSheet = Charts(&amp;quot;mychart&amp;quot;)
+Set Data = Sheets(&amp;quot;Sheet1&amp;quot;).Range(&amp;quot;A1:B50&amp;quot;)
+With ChartSheet
+    .SetSourceData Source:=Data
+End With
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;embedded-chart&#34;&gt;Embedded Chart&lt;/h2&gt;
+&lt;p&gt;For the chart to be included in a worksheet, we use &lt;code&gt;ChartObjects.Add&lt;/code&gt; instead.&lt;/p&gt;
+&lt;p&gt;We need to tell which worksheet to place the diagram and the distance from the top and left of spreadsheet as well as width and height&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub EmbeddedChart()
+Dim mychart As Object
+Dim Data As Range
+Set mychart = Sheets(&amp;quot;Sheet1&amp;quot;).ChartObjects.Add(Left:=300, Width:=300, Top:=10, Height:=300)
+Set Data = Sheets(&amp;quot;Sheet1&amp;quot;).Range(&amp;quot;A1:B3&amp;quot;)
+With mychart.Chart
+    .ChartType = xlLine
+    .SetSourceData Source:=Data
+End With
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can give name to the object but not the chart.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub EmbeddedNameChart()
+Dim mychart As Object
+Dim Data As Range
+Set mychart = Sheets(&amp;quot;Sheet1&amp;quot;).ChartObjects.Add(Left:=300, Width:=300, Top:=10, Height:=300)
+Sheets(&amp;quot;Sheet1&amp;quot;).ChartObjects(1).Name = &amp;quot;mychart&amp;quot;
+Set Data = Sheets(&amp;quot;Sheet1&amp;quot;).Range(&amp;quot;A1:B3&amp;quot;)
+With mychart.Chart
+    .ChartType = xlLine
+    .SetSourceData Source:=Data
+End With
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following code changes a property of an existing embedded chart. The following code changes the chart by including additional data.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub ChangeEmbeddedChart()
+Dim ChartObj As Object
+Set ChartObj = Sheets(&amp;quot;Sheet1&amp;quot;).ChartObjects(&amp;quot;Hello&amp;quot;)
+With ChartObj.Chart
+    .SetSourceData Source:=Sheets(&amp;quot;Sheet1&amp;quot;).Range(&amp;quot;A1:D3&amp;quot;)
+End With
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;chart-type&#34;&gt;Chart Type&lt;/h2&gt;
+&lt;p&gt;Besides line chart, there are many different types of chart. Here are the common types.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Function&lt;/th&gt;
+&lt;th&gt;Chart Type&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;xlLine&lt;/td&gt;
+&lt;td&gt;line chart&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xlColumnClustered&lt;/td&gt;
+&lt;td&gt;Clustered Column (vertical bar chart)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xlBarClustered&lt;/td&gt;
+&lt;td&gt;Clustered bar (horizontal bar chart)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xlPie&lt;/td&gt;
+&lt;td&gt;Pie&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xlArea&lt;/td&gt;
+&lt;td&gt;Area chart (line chart but colored area)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xlXYScatter&lt;/td&gt;
+&lt;td&gt;Scatter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xlRadar&lt;/td&gt;
+&lt;td&gt;Radar&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xlStockHLC&lt;/td&gt;
+&lt;td&gt;High-Low-Close&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xlStockOHLC&lt;/td&gt;
+&lt;td&gt;Open-High-Low-Close (Candle Stick)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xlStockVHLC&lt;/td&gt;
+&lt;td&gt;Volume-High-Low-Close&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;xlStockVOHLC&lt;/td&gt;
+&lt;td&gt;Volume-Open-High-Low-Close&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;data-series&#34;&gt;Data Series&lt;/h2&gt;
+&lt;p&gt;To allow for multiple graphics to be plotted, we need to use &lt;code&gt;seriescollection&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;First, to add a new data, we need to say &lt;code&gt;.SeriesCollection.NewSeries&lt;/code&gt;. Then, we can define the name, XValues (x) and Values (y).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sub NewChartSheetMultiple()
+Dim ChartSheet As Chart
+Dim Time, Data1, Data2 As Range
+Set ChartSheet = Charts.Add
+Set Time = Sheets(&amp;quot;Sheet1&amp;quot;).Range(&amp;quot;A1:A5&amp;quot;)
+Set Data1 = Sheets(&amp;quot;Sheet1&amp;quot;).Range(&amp;quot;B1:B5&amp;quot;)
+Set Data2 = Sheets(&amp;quot;Sheet1&amp;quot;).Range(&amp;quot;C1:C5&amp;quot;)
+With ChartSheet
+    .ChartType = xlLine
+    
+    .SeriesCollection.NewSeries
+    .SeriesCollection(1).Name = &amp;quot;Stock 1&amp;quot;
+    .SeriesCollection(1).XValues = Time
+    .SeriesCollection(1).Values = Data1
+    
+    .SeriesCollection.NewSeries
+    .SeriesCollection(2).Name = &amp;quot;Stock 2&amp;quot;
+    .SeriesCollection(2).XValues = Time
+    .SeriesCollection(2).Values = Data2
+End With
+End Sub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;record-macro&#34;&gt;Record Macro&lt;/h1&gt;
+&lt;p&gt;Lastly, to see how to code certain actions in Excel, VBA has this useful function called Record Macro. 
+To access it, in the Developer Tab, press the Record Macro button.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_RecordMacro.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_RecordMacro.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Whatever you do in Excel from then on will be recorded in a macro, which you can later access. To stop recording, click the button again, which should now say Stop Recording. 
+Click on the Visual Basic button (access to VBE) to see your recorded actions in code. This is useful if you know what you want to code, and how to do it in Excel, but you do not know how to code it in VBA.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yZsul8ZGr6k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;macro-enable-file&#34;&gt;Macro-enable File&lt;/h1&gt;
+&lt;p&gt;Note that when you save your Excel file, always save it in &lt;strong&gt;xlsm&lt;/strong&gt; format (macro enabled worksheet format), otherwise you will not be able to run your macros when you open the file next time!&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Excel/VBA_savexlam.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Excel/VBA_savexlam.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

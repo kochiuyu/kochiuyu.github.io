@@ -1,0 +1,2422 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX and TikZ | Chiu Yu Ko</title>
+    <link>/courses/tikz/</link>
+      <atom:link href="/courses/tikz/index.xml" rel="self" type="application/rss+xml" />
+    <description>LaTeX and TikZ</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2012-2020</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <title>LaTeX and TikZ</title>
+      <link>/courses/tikz/</link>
+    </image>
+    
+    <item>
+      <title>Basic TikZ</title>
+      <link>/courses/tikz/basictikz/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/basictikz/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;p&gt;Basic TikZ technique to draw:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Straight Line&lt;/li&gt;
+&lt;li&gt;Node&lt;/li&gt;
+&lt;li&gt;Curve&lt;/li&gt;
+&lt;li&gt;Shape&lt;/li&gt;
+&lt;li&gt;Fill&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;setup&#34;&gt;Setup&lt;/h1&gt;
+&lt;h2 id=&#34;loading-package&#34;&gt;Loading Package&lt;/h2&gt;
+&lt;p&gt;To load the TikZ package, we just need to use the function &lt;code&gt;\usepackage{tikz}&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+...
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tikz-environment&#34;&gt;TikZ Environment&lt;/h2&gt;
+&lt;p&gt;First, we need to tell which part of code should be included in the drawing by using &lt;code&gt;begin{tikzpicture}&lt;/code&gt; and &lt;code&gt;\end{tikzpiture}&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}
+...
+\end{tikzpiture}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/J2Oz7cXoIbw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;straight-line&#34;&gt;Straight line&lt;/h1&gt;
+&lt;p&gt;We first discuss simple straight line and then we discuss its decoration.&lt;/p&gt;
+&lt;h2 id=&#34;draw-a-line&#34;&gt;Draw a line&lt;/h2&gt;
+&lt;p&gt;To draw a straight line, use &lt;code&gt;\draw&lt;/code&gt;, and specify the coordinates. To end drawing, we must end with a semicolon.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw(0,0)--(3,3);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To draw connected lines, we specify all the coordinates. Below draws a square:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw(0,0)--(4,4)--(4,0)--(0,0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BL667wuLCLM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;line-pattern&#34;&gt;Line Pattern&lt;/h2&gt;
+&lt;p&gt;To draw a dashed line, we use the option &lt;code&gt;[dashed]&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw[dashed] (0,0)--(4,4);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To draw a dotted line, we use the option &lt;code&gt;[dotted]&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw[dotted] (4,0)--(0,4);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0lmbB_OR2AQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;line-thickness&#34;&gt;Line Thickness&lt;/h2&gt;
+&lt;p&gt;We can specify relative thickness:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw[ultra thin] (0,6)--(4,6);
+\draw[very thin] (0,5)--(4,5);
+\draw[thin] (0,4)--(4,4);
+\draw[semithick] (0,3)--(4,3);
+\draw[thick] (0,2)--(4,2);
+\draw[very thick] (0,1)--(4,1);
+\draw[ultra thick] (0,0)--(4,0);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can also specify thickness directly:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw[line width=11] (0,1)--(4,1);
+\draw[line width=5mm] (0,0)--(4,0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/qtqXIipQrVo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;line-color&#34;&gt;Line Color&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw[red] (0,2)--(4,2);
+\draw[blue] (0,1)--(4,1);
+\draw[green] (0,0)--(4,0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mDrZTYYkThg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;line-cap&#34;&gt;Line Cap&lt;/h2&gt;
+&lt;p&gt;Now we add arrow to the tip.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw[-&amp;gt;] (0,5)--(4,5);
+\draw[&amp;lt;-&amp;gt;] (0,4)--(4,4);
+\draw[|-&amp;gt;] (0,3)--(4,3);
+\draw[&amp;lt;-|] (0,2)--(4,2);
+\draw[|-|] (0,1)--(4,1);
+\draw[|&amp;lt;-&amp;gt;|] (0,0)--(4,0);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Fbw59sos6vQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;braces&#34;&gt;Braces&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usetikzlibrary{decorations.pathreplacing}
+\draw [decorate,
+          decoration={brace,amplitude=4pt,         
+          mirror},xshift=0pt,yshift=-3pt]
+          (1.4,0) -- (2.4,0) 
+          node [black,midway,yshift=-.5cm]
+          {abc};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;node&#34;&gt;Node&lt;/h1&gt;
+&lt;p&gt;Node is to add description to the graph.&lt;/p&gt;
+&lt;h2 id=&#34;draw-a-node&#34;&gt;Draw a node&lt;/h2&gt;
+&lt;p&gt;To write description, use &lt;code&gt;\node&lt;/code&gt; and put the coordinate after &lt;code&gt;at&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\node at (0,0)  {$\alpha$};
+\node at (1,1)  {$\beta$};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;shift-location&#34;&gt;Shift location&lt;/h2&gt;
+&lt;p&gt;To shift the relative location of the nodes, we use  &lt;code&gt;\node[location]&lt;/code&gt; where location can be below/left/right/above/below left.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\node[above] at (1,1)  {$\gamma$};
+\node[below] at (1,1)  {$\gamma$};
+\node[left] at (1,1)  {$\gamma$};
+\node[right] at (1,1)  {$\gamma$};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To shift the relative location of the nodes, we use &lt;code&gt;\node[xshift=1cm, yshift=3cm]&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\node[xshift=3mm] at (1,1) {$\gamma$};
+\node[yshift=3mm] at (1,1) {$\gamma$};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LTlWeC4mmJY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;curves&#34;&gt;Curves&lt;/h1&gt;
+&lt;p&gt;There are many ways to draw a curve:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bending a straight line&lt;/li&gt;
+&lt;li&gt;In and out&lt;/li&gt;
+&lt;li&gt;Right angle bend&lt;/li&gt;
+&lt;li&gt;Arc&lt;/li&gt;
+&lt;li&gt;Smoothing coordinate&lt;/li&gt;
+&lt;li&gt;Beizer Curve&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bending-straight-line&#34;&gt;Bending straight line&lt;/h2&gt;
+&lt;p&gt;One way to do is to bend a straight line&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw (0,0) to [bend right] (3,3);
+\draw (1,1) to [bend left] (4,4)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;in-and-out-degree&#34;&gt;In and out degree&lt;/h2&gt;
+&lt;p&gt;To more accurate control the bending, one way to do is to specify outgoing and incoming coordinates to bend a straight line&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw (0,0) to [out =90, in =180] (4,4);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;right-angle-bend&#34;&gt;Right angle bend&lt;/h2&gt;
+&lt;p&gt;Very often, we need a 90 degree bend to draw digram:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw (0,0) -| (3,3);
+\draw (1,1) |- (4,4);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;arc&#34;&gt;Arc&lt;/h2&gt;
+&lt;p&gt;Forth method is by drawing an arc.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw (1,0) arc (0:145:2cm);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;smooth-coordinate&#34;&gt;Smooth coordinate&lt;/h2&gt;
+&lt;p&gt;Fifth method is by smoothing over multiple coordinates:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw plot [smooth] coordinates {(0,0) (1,3) (3,2) (4,4)};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;beizer-curve&#34;&gt;Beizer curve&lt;/h2&gt;
+&lt;p&gt;Sixth method is by Beizer curve. It is very common in programming language.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw (0,0) .. controls (1,3) and (3,5) .. (4,4);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ujNVHi7Jd1Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;basic-shapes&#34;&gt;Basic Shapes&lt;/h1&gt;
+&lt;h2 id=&#34;circle&#34;&gt;Circle&lt;/h2&gt;
+&lt;p&gt;To draw a circle, we specify the center and the radius.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw (0,0) circle [radius =0.6cm];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If we fill the circle with color, then we have dots:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw[fill] (0,0) circle [radius =0.06];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/TJbX0iZD9js&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ellipse&#34;&gt;Ellipse&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw (0,0) ellipse (2 and 1);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;rectange&#34;&gt;Rectange&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw (0,0) rectangle (4,4);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/DHGu9JRhSCg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;grid&#34;&gt;Grid&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw[step=1,gray,very thin] (0,0) grid (4,4);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/cgDJOZWijTM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;fill&#34;&gt;Fill&lt;/h1&gt;
+&lt;p&gt;To emphasize the area, we often use color and pattern. Color is good for electronic version and pattern is good for printed version.&lt;/p&gt;
+&lt;h2 id=&#34;fill-color&#34;&gt;Fill Color&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw[fill=red] (0,0) rectangle (2,2);
+\draw[fill=blue] (2,2) rectangle (4,4);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To change opacity, use the option &lt;code&gt;fill opacity&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw[fill=red, fill opacity=0.2] (0,0) rectangle (2,2);
+\draw[fill=blue, fill opacity=0.2] (2,2) rectangle (4,4);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;fill-pattern&#34;&gt;Fill pattern&lt;/h2&gt;
+&lt;p&gt;To fill pattern, we need to use a library. To do so we need &lt;code&gt;\usetikzlibrary{patterns}&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usetikzlibrary{patterns}
+\draw[pattern=horizontal lines] (0,0) rectangle (1,1);
+\draw[pattern=vertical lines] (1,1) rectangle (2,2);
+\draw[pattern=north east lines] (2,2) rectangle (3,3);
+\draw[pattern=north west lines] (3,3) rectangle (4,4);
+\draw[pattern=grid] (4,4) rectangle (5,5);
+\draw[pattern=crosshatch] (5,5) rectangle (6,6);
+\draw[pattern=dots] (6,6) rectangle (7,7);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/68BS2M_BxBY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Intermediate TikZ</title>
+      <link>/courses/tikz/intermediate-tikz/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/intermediate-tikz/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;p&gt;Intermediate techniques of TikZ:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tree&lt;/li&gt;
+&lt;li&gt;Grouping&lt;/li&gt;
+&lt;li&gt;Plotting&lt;/li&gt;
+&lt;li&gt;Calculate Coordinates&lt;/li&gt;
+&lt;li&gt;For loop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;tree&#34;&gt;Tree&lt;/h1&gt;
+&lt;h2 id=&#34;general-tree&#34;&gt;General Tree&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}
+	\node(0){a}
+		child{node{b}}
+		child{node{c}
+			child{node{d}}
+			child{node{e}}
+		};
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;game-tree&#34;&gt;Game Tree&lt;/h2&gt;
+&lt;p&gt;Since nodes in game trees are often defined by dots, we need to specify them.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}
+\tikzstyle{hollow node}=[circle,draw,inner sep=1.5]
+\tikzstyle{solid node}=[circle,draw,inner sep=1.5,fill=black]
+\node[hollow node]{}
+	child{node[solid node]{}}
+	child{node[solid node]{}}
+	child{node[solid node]{}}
+;
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;grouping&#34;&gt;Grouping&lt;/h1&gt;
+&lt;p&gt;We can apply decoration to multiple lines.&lt;/p&gt;
+&lt;h2 id=&#34;scope&#34;&gt;Scope&lt;/h2&gt;
+&lt;p&gt;Using scope is to allow decorations to be applied to multiple lines.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}
+\begin{scope} [red, thick]
+	\draw (0,0)--(3,3);
+	\draw (0,3)--(3,0);
+\end{scope}
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;style&#34;&gt;Style&lt;/h2&gt;
+&lt;p&gt;Using style is to allow decorations to be applied with flexibility:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}[marked/.style = {red, very thick}]
+\draw[marked] (0,0)--(3,3);
+\draw[marked] (0,3)--(3,0);
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;tikzset&#34;&gt;tikzset&lt;/h2&gt;
+&lt;p&gt;Using style is to allow decorations to be applied to multiple figures.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\tikzset[marked/.style = {red, very thick}]
+\tikzset[trivial/.style = {blue, thin}]
+\begin{tikzpicture}
+\draw[marked] (0,0)--(3,3);
+\draw[trivial] (0,3)--(3,0);
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;plotting&#34;&gt;Plotting&lt;/h1&gt;
+&lt;h2 id=&#34;mathematical-expression&#34;&gt;Mathematical Expression&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}
+\draw[blue,&amp;lt;-&amp;gt;] (4,0) -| (0,4); 
+\draw[red, domain=0:2] plot (\x,\x*\x);
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;data-plot&#34;&gt;Data plot&lt;/h2&gt;
+&lt;p&gt;For data plot, we need to load the package &lt;code&gt;\usepackage{pgfplots}&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{tikz}
+\usepackage{pgfplots}
+\begin{tikzpicture}
+\begin{axis}[xlabel=x,ylabel=y]
+	\addplot coordinates {(1,1) (2,0) (3,3) (4,2)};
+\end{axis}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;scale&#34;&gt;Scale&lt;/h1&gt;
+&lt;h2 id=&#34;zoom-out&#34;&gt;Zoom out&lt;/h2&gt;
+&lt;p&gt;We can use &lt;code&gt;scale=0.5&lt;/code&gt; to make the zoom out.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}[scale=0.5]
+	\draw (0,0)--(1,1);
+	\draw (0,1)--(1,0);
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;zoom-in&#34;&gt;Zoom in&lt;/h2&gt;
+&lt;p&gt;We can use &lt;code&gt;scale=2&lt;/code&gt; to make the zoom in.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}[scale=2]
+	\draw (0,0)--(1,1);
+	\draw (0,1)--(1,0);
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;find-coordinates&#34;&gt;Find coordinates&lt;/h1&gt;
+&lt;h2 id=&#34;grid&#34;&gt;Grid&lt;/h2&gt;
+&lt;p&gt;One of the main difficulties in using TikZ to draw diagram is to find the appropriate coordinates. One way to see where is should put the coordinate is by using &lt;code&gt;grid&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}
+\draw[step=1,gray,very thin] (0,0) grid (4,4);
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;relative-to-two-points&#34;&gt;Relative to two points&lt;/h2&gt;
+&lt;p&gt;To calculate new coordinates based on $(a,b)$ and $(c,d)$, we can use &lt;code&gt;|-&lt;/code&gt; and &lt;code&gt;-|&lt;/code&gt;. We have $(a,d)$ if we have &lt;code&gt;(a,b|-c,d)&lt;/code&gt; and $(c,b)$ if we have &lt;code&gt;(a,b-|c,d)&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}
+\node[circle, fill=red] at (1,1) {};
+\node[circle, fill=blue] at (3,3){};
+\node[circle, fill=green] at (1,1|- 3,3){};
+\node[circle, fill=purple] at (1,1-| 3,3){};
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;average-of-two-points&#34;&gt;Average of two points&lt;/h2&gt;
+&lt;p&gt;To calculate mid point of based on $(a,b)$ and $(c,d)$, we can use &lt;code&gt;($(a,b)!0.5!(c,d)$)&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}
+\node[circle, fill=red] at (1,1) {};
+\node[circle, fill=blue] at (3,3){};
+\node[circle, fill=green] at ($(1,1)!0.5!(3,3)$){};
+\node[circle, fill=purple] at ($(1,1)!0.25!(3,3)$){};
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;intersection-of-two-named-paths&#34;&gt;Intersection of two named paths&lt;/h2&gt;
+&lt;p&gt;To calculate in intersections, we need to use &lt;code&gt;\usetikzlibrary{intersections}&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usetikzlibrary{intersections}
+\begin{tikzpicture}
+\draw[name path=Demand] (0,3) -- (3,0);
+\draw[name path=Supply] (0,0) -- (3,3);
+\path [name intersections={of=Demand and Supply,by=E}];
+\fill [red] (E) circle (2pt);
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;multiple-intersections-of-two-named-paths&#34;&gt;Multiple intersections of two named paths&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{tikz}
+\usetikzlibrary{intersections}
+\begin{tikzpicture}
+\draw[name path=circle] (0,0) circle (2);
+\draw[name path=line] (-3,-3) -- (3,3);
+\fill [red, name intersections={of = circle and line}] (intersection-1) circle (4pt);
+\fill [blue, name intersections={of =circle and line}] (intersection-2) circle (4pt);
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;example-demand-and-supply&#34;&gt;Example: Demand and Supply&lt;/h2&gt;
+&lt;p&gt;We illustrate how to draw demand and supply curve using the techniques presented above:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{tikz}
+\usetikzlibrary{calc,intersections}
+\begin{tikzpicture}[scale=0.8]
+\draw [thick](0,6) node [left] {P} |- (6,0) node [below] {Q};
+\draw[thick,blue!90, name path =Supply](1,1)--(5,5) node[right]{Supply};
+\draw[thick,blue!90, name path=Demand](1,5)--(5,1) node[right]{Demand};
+\path [name intersections={of=Demand and Supply,by=E}];
+\draw[dashed] (E -| 0,0) node[left]{$P^*$}--(E)--(E |- 0,0) node[below]{$Q^*$};
+\draw[black,fill] (E) circle [radius=0.15];
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YYDVNI1j5CM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;programming&#34;&gt;Programming&lt;/h1&gt;
+&lt;h2 id=&#34;for-loop&#34;&gt;For Loop&lt;/h2&gt;
+&lt;p&gt;The syntax to write a for loop is &lt;code&gt;\foreach&lt;/code&gt; and variable would be &lt;code&gt;\x&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\draw (0,0)--(6,0);
+\foreach \x in {0,...,6}{
+	\draw (\x,-1)--(\x,1);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oOyU1PyVn0k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to LaTeX and TikZ</title>
+      <link>/courses/tikz/introduction/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/introduction/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is LaTeX? Why LaTeX?&lt;/li&gt;
+&lt;li&gt;What is TikZ?&lt;/li&gt;
+&lt;li&gt;Installation of LaTeX&lt;/li&gt;
+&lt;li&gt;Hello world&lt;/li&gt;
+&lt;li&gt;Basic setup of TikZ&lt;/li&gt;
+&lt;li&gt;Demand and Supply Diagram&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-is-latex-why-latex&#34;&gt;What is LaTeX? Why LaTeX?&lt;/h2&gt;
+&lt;p&gt;LaTeX is a markup language to write documents. In a common word processor, we have what you see is what you get (WYSIWYG). Howver, in LaTeX, What you see is what you mean (WYSIWYM). This manes that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No need to bother with formatting, LaTeX will do it for you&lt;/li&gt;
+&lt;li&gt;Easy to include math/graphics/tables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Therefore, it becomes a standard for academic publishing.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-tikz&#34;&gt;What is TikZ?&lt;/h2&gt;
+&lt;p&gt;TikZ is the package in LaTeX that allows drawing of nice diagram. See the following exmaple:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-demand-and-supply&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Tikz-demand-and-supply.png&#34; data-caption=&#34;Demand and Supply&#34;&gt;
+
+
+  &lt;img src=&#34;/img/Tikz-demand-and-supply.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Demand and Supply
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;How to generate this graphic? By the following code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tikzpicture}[scale=0.6]
+\draw [thick,&amp;lt;-&amp;gt;] (0,10) node[above]{$P$}--(0,0)--(10,0) node[right]{$Q$};
+\node [below left] at (0,0) {$0$};
+\node [below] at (5,0) {$Q^*$};
+\node [left] at (0,5) {$P^*$};
+\draw (1,1)--(9,9) node[right]{$S$};
+\draw (1,9)--(9,1) node[right]{$D$};
+\draw[dashed] (0,5)--(5,5)--(5,0);
+\end{tikzpicture}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;installation-of-latex&#34;&gt;Installation of LaTeX&lt;/h2&gt;
+&lt;p&gt;Which software to install depends on your operation system:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you use windows system, you need to install &lt;strong&gt;MikTeX&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;If you use mac system, you need to install &lt;strong&gt;MacTeX&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
+&lt;p&gt;For Windows, go to 
+&lt;a href=&#34;http://miktex.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MikTeX&lt;/a&gt;. You will then see the following at the top of the page.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Install/latex/MikTeX_Download1.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Install/latex/MikTeX_Download1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Clicking the download button will then bring you to this page.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Install/latex/MikTeX_Download2.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Install/latex/MikTeX_Download2.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Download MiKTeX, then install and open TexWork. You are then ready to use LaTeX on your Windows computer.&lt;/p&gt;
+&lt;h3 id=&#34;mac&#34;&gt;Mac&lt;/h3&gt;
+&lt;p&gt;For Mac users, head to 
+&lt;a href=&#34;http://tug.org/mactex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MacTeX&lt;/a&gt;. Click on the download MacTex button, as shown below.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Install/latex/MacTeX_Download1.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Install/latex/MacTeX_Download1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;latex&#34;&gt;LaTeX&lt;/h1&gt;
+&lt;h2 id=&#34;hello-world&#34;&gt;Hello World&lt;/h2&gt;
+&lt;p&gt;Since we are producing a document, we start to tell the program so by using the command &lt;strong&gt;\documentclass{article}&lt;/strong&gt;. Then we need to tell which section should be included in the output file by using &lt;strong&gt;\begin{document}&lt;/strong&gt; and &lt;strong&gt;\end{document}&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, type the words “Hello World!” between the &lt;strong&gt;\begin{document}&lt;/strong&gt; and &lt;strong&gt;\end{document}&lt;/strong&gt;. Whatever text, pictures, or tables is included in between the 2 commands will appear on the document itself, and you can see this on the right-hand side.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
+\begin{document}
+Hello World!
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you compile the file, you should get the following pdf output:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/LaTeX-hello-world.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/LaTeX-hello-world.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;tikz&#34;&gt;TikZ&lt;/h1&gt;
+&lt;h2 id=&#34;loading-package&#34;&gt;Loading Package&lt;/h2&gt;
+&lt;p&gt;To load the TikZ package, we just need to use the function &lt;code&gt;\usepackage{tikz}&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
+\usepacakage{tikz}
+\begin{document}
+Hello World!
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then start the drawing environment that begins with &lt;code&gt;\begin{tikzpicture}&lt;/code&gt; and ends with &lt;code&gt;\end{tikzpicture}&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
+\usepacakage{tikz}
+\begin{document}
+\begin{tikzpicture}
+...TikZ codes to put here...
+\end{tikzpicture}
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To draw a straight line, use &lt;code&gt;\draw&lt;/code&gt;, and specify the coordinates. Remember ending the each line of code by semicolon.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
+\usepacakage{tikz}
+\begin{document}
+\begin{tikzpicture}
+  \draw(0,0)--(6,6);
+\end{tikzpicture}
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To add description, we use &lt;code&gt;\node&lt;/code&gt; and specifiy the coodinates after &lt;code&gt;at&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
+\usepacakage{tikz}
+\begin{document}
+\begin{tikzpicture}
+  \draw(0,0)--(6,6);
+  \node at (2,5) {Hello, this is $\alpha$};
+\end{tikzpicture}
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we can draw the demand and supply diagram above:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\documentclass{article}
+\usepacakage{tikz}
+\begin{document}
+\begin{tikzpicture}
+  \draw [thick,&amp;lt;-&amp;gt;] (0,10) --(0,0)--(10,0);
+  \node [above] at (0,10) {$P$};
+  \node [right] at (10,0) {$Q$};
+  \node [below left] at (0,0) {$0$};
+  \draw (1,1)--(9,9);
+  \node [right] at (9,9) {$S$}
+  \draw (1,9)--(9,1);
+  \node [right] at (9,9) {$D$};
+  \draw [dashed] (0,5)--(5,5)--(5,0);
+  \node [below] at (5,0) {$Q^*$};
+  \node [left] at (0,5) {$P^*$};
+\end{tikzpicture}
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Above we have used some decoration of the lines.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Line pattern&lt;/strong&gt;: For dashed line, use &lt;code&gt;\draw[dashed]&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Arrows&lt;/strong&gt;: For arrows at the tips, use &lt;code&gt;\draw[&amp;lt;-&amp;gt;]&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Thickness&lt;/strong&gt;: For thicker line, use &lt;code&gt;\draw[thick]&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To shift the location of the nodes, we use &lt;code&gt;\node[location]&lt;/code&gt; where location can be below/left/right/above/below left.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Basic LaTeX</title>
+      <link>/courses/tikz/basiclatex/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/basiclatex/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is LaTeX?&lt;/li&gt;
+&lt;li&gt;Hello World&lt;/li&gt;
+&lt;li&gt;Title Page&lt;/li&gt;
+&lt;li&gt;Sectioning/Appendix/List&lt;/li&gt;
+&lt;li&gt;Reference&lt;/li&gt;
+&lt;li&gt;Font/Page Layout/Line Spacing&lt;/li&gt;
+&lt;li&gt;Mathematics&lt;/li&gt;
+&lt;li&gt;Table/Graphics/Figures&lt;/li&gt;
+&lt;li&gt;Page Margin&lt;/li&gt;
+&lt;li&gt;Line spacing&lt;/li&gt;
+&lt;li&gt;Font Size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-is-latex&#34;&gt;What is LaTeX?&lt;/h2&gt;
+&lt;p&gt;LaTeX is a program that writes document using programming. It is What you see is what you mean (WYSIWYM). Hence, you should not need to bother with formatting when you create the content. You write a document by focusing on the content instead of how it looks. The appearance would be taken care by the software.&lt;/p&gt;
+&lt;p&gt;The program will do it for you or you tell how it should be done. It is standard for academic publishing, and it is also very easy to include mathematics, graphics and tables with professional look.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ejGA_ZWiZT4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;basic-setup&#34;&gt;Basic setup&lt;/h1&gt;
+&lt;h2 id=&#34;hello-world&#34;&gt;Hello World&lt;/h2&gt;
+&lt;p&gt;Since we are producing a document, we start to tell the program so by using the command &lt;code&gt;\documentclass{article}&lt;/code&gt;. We need to tell what document we are producing. For our purpose, we are focusing on simple documents so that &lt;strong&gt;article&lt;/strong&gt; would suffice. Other frequently used options for documentclass are &lt;strong&gt;book&lt;/strong&gt; and &lt;strong&gt;beamer&lt;/strong&gt; for producing books and presentation slides.&lt;/p&gt;
+&lt;p&gt;Then we need to tell which section should be included in the output file by using &lt;code&gt;\begin{document}&lt;/code&gt; and &lt;code&gt;\end{document}&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, type the words “Hello World!” between the &lt;code&gt;\begin{document}&lt;/code&gt; and &lt;code&gt;\end{document}&lt;/code&gt;. Whatever text, pictures, or tables is included in between the 2 commands will appear on the document itself, and you can see this on the right-hand side.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
+\begin{document}
+Hello World!
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you compile the file, you should get the following pdf output:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/tikz/LaTeX-hello-world.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/tikz/LaTeX-hello-world.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3bh0LXP427o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;front-matter&#34;&gt;Front Matter&lt;/h2&gt;
+&lt;p&gt;Usually a document would start with a title. We just need to tell the program by &lt;code&gt;\title{}&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Similarly, we will usually have author after title. We only need to say  &lt;code&gt;\author{}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Moreover, we often put a time stamp to the document. To do so, we use &lt;code&gt;\date{}&lt;/code&gt;. Often we use &lt;code&gt;\today&lt;/code&gt; to represent the date to set this up.&lt;/p&gt;
+&lt;p&gt;Finally, we need to tell the program where to put these information by using &lt;code&gt;\maketitle&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;An example is as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LVPHG7Khs-A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;sectioning&#34;&gt;Sectioning&lt;/h2&gt;
+&lt;p&gt;Next, we move on to sections and subsections. This is important if you wish to divide your text into nice, separate sections for readability.&lt;/p&gt;
+&lt;p&gt;When you include sections by using &lt;code&gt;\section{}&lt;/code&gt;, LaTex automatically numbers each section for you. You might have seen this in academic papers, this is why people use LaTex when writing their papers. Subsections will take on that particular section’s number, and then include a second number behind to indicate that it is a subsection. We use &lt;code&gt;\subsection{}&lt;/code&gt; here. You can also use &lt;code&gt;\subsubsection{}&lt;/code&gt; if you wish.&lt;/p&gt;
+&lt;p&gt;You code will look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+
+\section{Introduction}
+This is my best paper
+\section{Model}
+We will have a lot of math.
+\subsection{Basic Model}
+Math here is simplier.
+\subsection{Full Model}
+Math here is crazy.
+\section{Conclusion}
+My paper is great!
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/N1meTnloNNM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;appendix&#34;&gt;Appendix&lt;/h2&gt;
+&lt;p&gt;Appendix is another section that does not following numeric numbering (but alphabetical ordering). We just need to say &lt;code&gt;\appendix&lt;/code&gt; where the appendix starts.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+
+\section{Introduction}
+This is my best paper
+\section{Model}
+We will have a lot of math.
+...
+\section{Conclusion}
+My paper is great!
+
+\appendix
+\section{Data Description}
+Here is the appendix.
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Vl0PjKsdtQc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;Reference is very easy to manage under latex. Use &lt;code&gt;\cite{key}&lt;/code&gt; to cite paper in the bibligrpahy section enclosed by &lt;code&gt;\begin{thebibliography}&lt;/code&gt; and &lt;code&gt;\end{thebibliography}&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\cite{key1} says lalala 
+\cite{key2} says blahblahblah
+\begin{thebibliography}{99}
+\bibitem{key1} Me, My paper, Trash Bin, P1-100.
+\bibitem{key2} You, My paper 2, Trash Bin, P2-200.
+\end{thebibliography}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The argument to &lt;code&gt;\begin{thebibliography}{}&lt;/code&gt; is used for setting the hanging indentation of the bibliography items. If you use numeric labels, then the argument should be a single digit (9 is commonly used) if there are less than ten items; two digits (commonly 99) if there are from 10 to 99 items and so on.&lt;/p&gt;
+&lt;p&gt;To create items in the bibliography, we use &lt;code&gt;\bibitem{}&lt;/code&gt;, where the name in the brackets is what you use when you cite in the main text.
+&lt;code&gt;\bibitem{key}&lt;/code&gt; Name, Year, Journal, Page Number.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;\cite{key}&lt;/code&gt; command will automatically extract information from the bibliography where&lt;br&gt;
+&lt;strong&gt;key&lt;/strong&gt; is the name defined in the &lt;strong&gt;thebibliography&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If there is no such information in the bibliography, the citations will simply show a question mark ?.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Bli8vDHK9sM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
+&lt;p&gt;There are three types of list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Itemize&lt;/strong&gt; is unnumbered list: each item is denoted by a bullet or a dot. Commonly used for unordered items&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enumerate&lt;/strong&gt; is numbered list or ordered list: each item is denoted by number or letter. Commonly used for ordered items&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt; is descriptive list: each item is denoted by customized description.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;unordered-list&#34;&gt;Unordered List&lt;/h2&gt;
+&lt;p&gt;Undered lists are enclosed by &lt;code&gt;\begin{itemize}&lt;/code&gt; and &lt;code&gt;\end{itemize}&lt;/code&gt; and we use &lt;code&gt;\item&lt;/code&gt; to tell it is an item. A typical example is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{itemize}
+  \item I have an apple.
+  \item You have an orange.
+\end{itemize}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ordered-list&#34;&gt;Ordered List&lt;/h2&gt;
+&lt;p&gt;Likewise, the &lt;code&gt;\begin{enumerate}&lt;/code&gt; and &lt;code&gt;\end{enumerate}&lt;/code&gt; also works the same way, and we also use &lt;code&gt;\item&lt;/code&gt; to create items. The only difference is that enumerate uses numbers, and itemize uses bullet points.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{enumerate}
+  \item I have an apple.
+  \item You have an orange.
+\end{enumerate}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;deescription-list&#34;&gt;Deescription List&lt;/h2&gt;
+&lt;p&gt;Likewise, the &lt;code&gt;\begin{decription}&lt;/code&gt; and &lt;code&gt;\end{description}&lt;/code&gt; also works the same way, and we also use &lt;code&gt;\item[name]&lt;/code&gt; to create items. The only difference is that we have to tell the name for each item.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{description}
+  \item[First] I have an apple.
+  \item[Second] You have an apple.
+  \item[Third] We have two. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;nested-list&#34;&gt;Nested List&lt;/h2&gt;
+&lt;p&gt;Nested lists can be easily created by nesting one list over the other. The below show how one numbered list put inside another numbered list. One can also put an unnumbered list insider another unnumbered list. Moreover, one can also cross-over.&lt;/p&gt;
+&lt;p&gt;First, we nest an unordered list inside another unordered list:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{itemize}
+  \item I have an apple.
+  \item You have an orange.
+  \begin{itemize}
+    \item I have an apple.
+    \item You have an orange.
+  \end{itemize}
+\end{itemize}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Second, we nest an ordered list inside another ordered list:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{enumerate}
+  \item I have an apple.
+  \item You have an orange.
+  \begin{enumerate}
+    \item I have an apple.
+    \item You have an orange.
+  \end{enumerate}
+\end{enumerate}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or even mix them together:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{enumerate}
+  \item I have an apple.
+  \item You have an orange.
+  \begin{itemize}
+    \item I have an apple.
+    \item You have an orange.
+  \end{itemize}
+\end{enumerate}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/im-8BWtEKnY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;tables&#34;&gt;Tables&lt;/h1&gt;
+&lt;p&gt;There are two types of table: (1) tabular and (2) table. Tabular environment is to display information in table form while table environment is to allow tabular to float.&lt;/p&gt;
+&lt;h2 id=&#34;tablular&#34;&gt;Tablular&lt;/h2&gt;
+&lt;p&gt;Tables are created using the &lt;code&gt;\begin{tabular}{}&lt;/code&gt; and &lt;code&gt;\end{tabular}&lt;/code&gt; format. We can specify what type of table we want, and LaTex will create it for us.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Input&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;l&lt;/td&gt;
+&lt;td&gt;left-justified column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;c&lt;/td&gt;
+&lt;td&gt;centered column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;r&lt;/td&gt;
+&lt;td&gt;right-justified column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;An example is&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tabular}{l c r}
+   1 &amp;amp; 2 &amp;amp; 3 \\ \hline
+   40 &amp;amp; 50 &amp;amp; 60 \\
+   700 &amp;amp; 800 &amp;amp; 900 \\
+\end{tabular}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the example above, we have used “l c r”, so LaTex creates a table with 3 columns, with the corresponding directional justifications.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/__RJL26KaIg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;table&#34;&gt;Table&lt;/h2&gt;
+&lt;p&gt;LaTeX can help you to determine the location of the table automatically. We start with &lt;code&gt;\begin{table}&lt;/code&gt; and end with &lt;code&gt;\end{table}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;There are several choices for placement options after &lt;code&gt;\begin{table}&lt;/code&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Specifier&lt;/th&gt;
+&lt;th&gt;Location&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;h&lt;/td&gt;
+&lt;td&gt;Place the float here&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;Position at the top of the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;b&lt;/td&gt;
+&lt;td&gt;Position at the bottom of the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7UOJgNtEjnU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;graphics&#34;&gt;Graphics&lt;/h1&gt;
+&lt;p&gt;Similar to table, there are two ways to display graphics: inline or floating.&lt;/p&gt;
+&lt;h2 id=&#34;includegraphics&#34;&gt;Includegraphics&lt;/h2&gt;
+&lt;p&gt;To include graphics files (e.g., jpg and png) in the document, we need to make use of the graphicx package, which is done by using &lt;code&gt;\usepackage{graphicx}&lt;/code&gt;. Note that package has to put before &lt;code&gt;\begin{document}&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To include a graphic file, we use the command &lt;code&gt;\includegraphics{filename}&lt;/code&gt;. Note that the file has to be in the same file as the tex file for this code to work.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mLmHIIqtO-E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;figure&#34;&gt;Figure&lt;/h2&gt;
+&lt;p&gt;To float the graphics, we start with using &lt;code&gt;\begin{figure}[placement option]&lt;/code&gt; and ends with &lt;code&gt;\end{figure}&lt;/code&gt;. You also need to write down the caption. You may use &lt;code&gt;\centering&lt;/code&gt; to center the graphics.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{figure}[htp]
+\centering
+\includegraphics[width=\textwidth]{picture.jpg}
+\caption{I am a figure.}
+\end{figure}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wp-rQEeb9Kc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;mathematics&#34;&gt;Mathematics&lt;/h1&gt;
+&lt;h2 id=&#34;inline-mathmatics&#34;&gt;Inline Mathmatics&lt;/h2&gt;
+&lt;p&gt;Mathematics is one of the main reasons to use LaTeX over other word processors. To let the program know that you are working on math, enclose your expression with dollar sign &lt;code&gt;$&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;$ 3^2 + 4^2 = 5^2$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Why dollar sign? Typesetting with math was expensive in the old days.&lt;/p&gt;
+&lt;p&gt;Alternatively, we can enclose our expression by &lt;code&gt;\(&lt;/code&gt; and &lt;code&gt;\)&lt;/code&gt;. The latter way of writing improves readability if we have a complicated mathematical expression.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/xN_Ce2pnC7w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;greek-letters&#34;&gt;Greek Letters&lt;/h2&gt;
+&lt;p&gt;We can write symbols by using symbol name, for example &lt;code&gt;\alpha&lt;/code&gt; for $\alpha$, &lt;code&gt;\beta&lt;/code&gt; for $\beta$ etc.&lt;/p&gt;
+&lt;h2 id=&#34;displayed-equation&#34;&gt;Displayed equation&lt;/h2&gt;
+&lt;p&gt;If we want a display equation, simply use double dollar sign &lt;code&gt;$$&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;$$ 3^2 + 4^2 = 5^2$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Why dobule dollar sign? Typesetting with displayed math was even expensive in the old days.&lt;/p&gt;
+&lt;p&gt;Alternatively, we can enclose our expression by &lt;code&gt;\[&lt;/code&gt; and &lt;code&gt;\]&lt;/code&gt;. The latter way of writing improves readability if we have a complicated mathematical expression.&lt;/p&gt;
+&lt;h2 id=&#34;numbered-equation&#34;&gt;Numbered equation&lt;/h2&gt;
+&lt;p&gt;If you want the equation to be numbered, enclose it with &lt;code&gt;\begin{equation}&lt;/code&gt; and &lt;code&gt;\end{equation}&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{equation}
+3^2 + 4^2 = 5^2
+\end{equation}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you want it to be referenced, then add an &lt;code&gt;\label{key}&lt;/code&gt; and use &lt;code&gt;\ref{key}&lt;/code&gt; later.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{equation}\label{NiceEq}
+3^2 + 4^2 = 5^2
+\end{equation}
+
+I like Eq (\ref{NiceEq}) very much. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that the bracket has to be manually added.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/TKmLKZPYNdU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;multi-line-equation&#34;&gt;Multi-line equation&lt;/h2&gt;
+&lt;p&gt;To use multi-line equation, we enclose the set of equations by &lt;code&gt;\begin{align}&lt;/code&gt; and &lt;code&gt;\end{align}&lt;/code&gt;. For multi-line equations, we need to separate each line by &lt;code&gt;\\&lt;/code&gt; and specify where equations should align by &lt;code&gt;&amp;amp;&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{align}
+x +y  &amp;amp;= 1 \\
+x - y &amp;amp;= 2  
+\end{align}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;theorem&#34;&gt;Theorem&lt;/h2&gt;
+&lt;p&gt;To write a formal statement, it is convenient to use amsthm package by &lt;code&gt;\usepacakge{amsthm}&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+
+\begin{theorem}\label{NiceThm}
+One plus one is two! $$1+1=2.$$
+\end{theorem}
+I like Theorem \ref{NiceThm} very much. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fITw64ezi3Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;page-layout&#34;&gt;Page Layout&lt;/h1&gt;
+&lt;h2 id=&#34;page-margin&#34;&gt;Page Margin&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;geometry&lt;/strong&gt; package allows you to change the margins of the page, if you wish to.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\usepackage{geometry}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To change the individual sides’ margins, simply use &lt;code&gt;\geometry{margin=1.1in}&lt;/code&gt;. Take note that this should be put before the &lt;code&gt;\begin{document}&lt;/code&gt; since it is for the whole document. For example, we have&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\usepackage{geometry}
+\geometry{maring=1.1in}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To specify margins on four sides, we use &lt;code&gt;\geometry{left=2.5in, right=2.5in, top=2.5in, bottom=2.5in}&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\usepackage{geometry}
+\geometry{left=2.5in, right=2.5in, top=2.5in, bottom=2.5in}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/y-3prHXSA8E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;vertical-spacing&#34;&gt;Vertical spacing&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\&lt;/td&gt;
+&lt;td&gt;linebreak&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\newpage&lt;/td&gt;
+&lt;td&gt;starts a new page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\smallskip&lt;/td&gt;
+&lt;td&gt;create small vertical space&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\medskip&lt;/td&gt;
+&lt;td&gt;create medium vertical space&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\bigskip&lt;/td&gt;
+&lt;td&gt;create big vertical space&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\vspace{4in}&lt;/td&gt;
+&lt;td&gt;create vertical space of 4 inches&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;horizontal-spacing&#34;&gt;Horizontal spacing&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\noindent&lt;/td&gt;
+&lt;td&gt;suppresses paragraph indentatio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\enskip&lt;/td&gt;
+&lt;td&gt;horizontal space of half of the size of letter  M&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\quad&lt;/td&gt;
+&lt;td&gt;horizontal space of one of the size of letter M&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\qquad&lt;/td&gt;
+&lt;td&gt;horizontal space of two of the size of letter M&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\hspace{2cm}&lt;/td&gt;
+&lt;td&gt;horizontal space 2cm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\hfill&lt;/td&gt;
+&lt;td&gt;horizontal space to make the line right-aligned&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/vswt8DDcMiQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;paragraph-layout&#34;&gt;Paragraph Layout&lt;/h1&gt;
+&lt;h2 id=&#34;line-spacing&#34;&gt;Line spacing&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;setspace&lt;/strong&gt; package allows you to edit the line spacing between each line for overall text, similar to Word’s function. Options include &lt;code&gt;\singlespacing&lt;/code&gt;, &lt;code&gt;\onehalfspacing&lt;/code&gt;, &lt;code&gt;\doublespacing&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\usepackage{setspace}
+\singlespacing
+\onehalfspacing
+\doublespacing
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/aMqmt49j9So&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;text-alignment&#34;&gt;Text Alignment&lt;/h2&gt;
+&lt;p&gt;Default of text is justified.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For centered text, enclosed &lt;code&gt;\begin{center}&lt;/code&gt; and &lt;code&gt;\end{center}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;For right-aligned text, enclosed &lt;code&gt;\begin{flushright}&lt;/code&gt; and &lt;code&gt;\end{flushright}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;For left-aligned text, enclosed &lt;code&gt;\begin{flushleft}&lt;/code&gt; and &lt;code&gt;\end{flushleft}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{center}
+	I am centered text.
+\end{center}
+\begin{flushright}
+	I am right-aligned text.
+\end{flushright} 
+\begin{flushleft}
+	I am left-aligned text.
+\end{flushleft}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6Rv3RFrB6k8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;font-layout&#34;&gt;Font Layout&lt;/h1&gt;
+&lt;h2 id=&#34;global-font-size&#34;&gt;Global font Size&lt;/h2&gt;
+&lt;p&gt;To change font size of the whole document, we define it the premable:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass[12pt]{article}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As shown above, we can change the font size used throughout the paper by changing the number here. In this example, font size is 12, and we can change it by just typing another number to replace the &lt;strong&gt;12&lt;/strong&gt;. If you want other size, you can choose 10 or 11.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass[10pt]{article}
+\documentclass[11pt]{article}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RcMbVfnzwxk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;local-font-size&#34;&gt;Local font size&lt;/h2&gt;
+&lt;p&gt;To change the font size only for some part of the text, we use some relative size commands (from small to big):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\Huge
+\LARGE
+\Large
+\large
+\normalsize
+\small
+\footnotesize
+\scriptsize
+\tiny
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here is the example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{document}
+You know what? 
+I am an honor student of economics of NUS. 
+Our school is the {\Huge  best} in {\tiny Asia}.
+What does that mean? 
+I am {\large Best} of {\LARGE best}.
+Really? 
+{\Huge Yes}.\footnote{Seriously?}
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Technically, it is the mapping of the relative size command:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;10pt&lt;/th&gt;
+&lt;th&gt;11pt&lt;/th&gt;
+&lt;th&gt;12pt&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\tiny&lt;/td&gt;
+&lt;td&gt;5pt&lt;/td&gt;
+&lt;td&gt;6pt&lt;/td&gt;
+&lt;td&gt;6pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\scriptsize&lt;/td&gt;
+&lt;td&gt;7pt&lt;/td&gt;
+&lt;td&gt;8pt&lt;/td&gt;
+&lt;td&gt;8pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\footnotesize&lt;/td&gt;
+&lt;td&gt;8pt&lt;/td&gt;
+&lt;td&gt;9pt&lt;/td&gt;
+&lt;td&gt;10pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\small&lt;/td&gt;
+&lt;td&gt;9pt&lt;/td&gt;
+&lt;td&gt;10pt&lt;/td&gt;
+&lt;td&gt;11pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\normalsize&lt;/td&gt;
+&lt;td&gt;10pt&lt;/td&gt;
+&lt;td&gt;11pt&lt;/td&gt;
+&lt;td&gt;12pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\large&lt;/td&gt;
+&lt;td&gt;12pt&lt;/td&gt;
+&lt;td&gt;12pt&lt;/td&gt;
+&lt;td&gt;14pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\Large&lt;/td&gt;
+&lt;td&gt;14pt&lt;/td&gt;
+&lt;td&gt;14pt&lt;/td&gt;
+&lt;td&gt;17pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\LARGE&lt;/td&gt;
+&lt;td&gt;17pt&lt;/td&gt;
+&lt;td&gt;17pt&lt;/td&gt;
+&lt;td&gt;20pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\huge&lt;/td&gt;
+&lt;td&gt;20pt&lt;/td&gt;
+&lt;td&gt;20pt&lt;/td&gt;
+&lt;td&gt;25pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\Huge&lt;/td&gt;
+&lt;td&gt;25pt&lt;/td&gt;
+&lt;td&gt;25pt&lt;/td&gt;
+&lt;td&gt;25pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Sometimes, we want to exactly match directly. We can use &lt;code&gt;\fontsize{size}{leading}\selectfont&lt;/code&gt;. For example, &lt;code&gt;\fontsize{10}{12}\selectfont&lt;/code&gt; means 10pt type with 12pt leading.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/T9qkinGoPoI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;font-color&#34;&gt;Font color&lt;/h2&gt;
+&lt;p&gt;To change color, use package &lt;strong&gt;color&lt;/strong&gt; and then enclosed the passage with brace.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{color}
+{\color{red} abc is 123.}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RcMbVfnzwxk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;basic-font-transformation&#34;&gt;Basic font transformation&lt;/h2&gt;
+&lt;p&gt;For most daily usages, there are six commands (italic, bold, small cap, slant font, typewriter):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\textit{italic} 
+\textbf{boldface}
+\textsc{small cap}
+\textsl{slant font}
+\textsf{Sans Serif}
+\texttt{typewriter}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For more details, see below discussion on font family, font series, and font shape.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/15J1NK0yAyM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;font-emphasis&#34;&gt;Font emphasis&lt;/h2&gt;
+&lt;p&gt;Font emaphsis involves underline, italic and upper case:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Emphasis&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\underline{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;underline&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\emph{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;Italic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\uppercase{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;all capital letters&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Highlighting and strikeout are not included in standard package. To use it, we need to use the packages &lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;soul&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{color,soul}
+\hl{I am highlighted}
+\sout{haha}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sS7WE9UkWwI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;font-family&#34;&gt;Font Family&lt;/h2&gt;
+&lt;p&gt;Under computer modern font family, roman (or serif typeface) font is used. We can use sans serif and typewriter font family.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Switch&lt;/th&gt;
+&lt;th&gt;font family&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\texttt{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\ttfamily &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;typewriter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\textsf{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\sffamily &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;san serif font&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\textrm{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\rmfamily&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;roman font&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;font-series&#34;&gt;Font Series&lt;/h2&gt;
+&lt;p&gt;Font series mean how dark the pen and how width of the pen.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;selectfont&lt;/th&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Switch&lt;/th&gt;
+&lt;th&gt;font series&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontseries{m}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontseries{b}&lt;/td&gt;
+&lt;td&gt;\textbf{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\bfseries &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;bold&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontseries{bx}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;bold extended&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontseries{sb}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;semi-bold&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontseries{c}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;condensed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;font-shape&#34;&gt;Font shape&lt;/h2&gt;
+&lt;p&gt;Font shape is the form of letter:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Selectfont&lt;/th&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Switch&lt;/th&gt;
+&lt;th&gt;Shape&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontshape{it}&lt;/td&gt;
+&lt;td&gt;\textit{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\itshape &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;italics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontshape{sl}&lt;/td&gt;
+&lt;td&gt;\textsl{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\textsl &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;slant&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontshape{sc}&lt;/td&gt;
+&lt;td&gt;\textrm{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\scshape &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;small capital&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontshape{ui}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;upright italic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontshape{ol}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;outline&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Beamer</title>
+      <link>/courses/tikz/beamer/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/beamer/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;p&gt;Beamer package to make slides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Title Page&lt;/li&gt;
+&lt;li&gt;Content Slide&lt;/li&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;li&gt;Figure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;first-page&#34;&gt;First page&lt;/h2&gt;
+&lt;p&gt;Presentation slides can be easily created using documentclass &lt;strong&gt;bemaer&lt;/strong&gt;.
+The first page introduction slides is exactly the same as when we write an article.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{beamer}
+\title{Hello}
+\author{VIP \and VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;content&#34;&gt;Content&lt;/h2&gt;
+&lt;p&gt;For the rest of document, the only difference is to specify from where to where a slide starts and ends. To start, use &lt;code&gt;\begin{frame}&lt;/code&gt; to start slide and &lt;code&gt;\end{frame}&lt;/code&gt; to end slide.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{beamer}
+\begin{document}
+\begin{frame}
+	\frametitle{Happy}
+	Hello World!
+\end{frame}
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;list&#34;&gt;List&lt;/h2&gt;
+&lt;p&gt;Very often, bullet points are used in slides. We can use &lt;strong&gt;itemize&lt;/strong&gt;, &lt;strong&gt;enumerate&lt;/strong&gt;, and &lt;strong&gt;description&lt;/strong&gt; lists.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{frame}
+	\frametitle{Conclusion}
+	\begin{itemize}
+		\item lalala
+		\item hahaha
+	\end{itemize}
+\end{frame}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;picture&#34;&gt;Picture&lt;/h2&gt;
+&lt;p&gt;To include picture, we also use &lt;code&gt;includegraphics{}&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{frame}
+	\frametitle{Visual}
+	\includegraphics{haha.jpg}
+\end{frame}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bhdddw8-eo0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Consumer Theory</title>
+      <link>/courses/tikz/consumer/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/consumer/</guid>
+      <description>
+
+
+
+&lt;div id=&#34;indifference-curve&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Indifference Curve&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/consumer_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=.7]
+% Axis
+\draw [-&amp;gt;] (0,0) node [below] {0} -- (0,0) -- (5.5,0) node [below] {Good 1};
+\draw [-&amp;gt;] (0,0) node [below] {0} -- (0,0) -- (0,5.5) node [above] {Good 2};
+% Indifference curve
+\draw (0.3,5) to [out=280,in=175] (5.5,0.5);
+\draw (1,5) to [out=280,in=175] (5.5,1.2);
+\draw (1.6,5) to [out=280,in=175] (5.5,1.8);
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;utility-maximization&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Utility Maximization&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/consumer_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=.7]
+\draw[thick,&amp;lt;-&amp;gt;] (0,10) node[above]{$y$}--(0,0)--(10,0) node[right]{$x$};
+\node [below left] at (0,0) {$0$};
+\node [below] at (5,0) {$x^{*}$};
+\node [left] at (0,5) {$y^{*}$};
+\draw(1,9)--(9,1) node[right]{$p_xx+p_yy=I$};
+\draw(0,5)--(5,5)--(5,0);
+\draw(2,10) ..controls (3.33,6) and (6,3.33) .. (10,2) node[right]{$U(x,y)=U_0$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;hicks-decomposition&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Hicks Decomposition&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/consumer_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=1.2]
+\draw [thick] (0,0) -- (8,0);
+\draw [thick] (0,0) -- (0,5);
+\node [right] at (8,0) {$x_1$};
+\node [above] at (0,5) {$x_2$};
+\draw [thick] (2.2,3.8) to [out=310,in=170] (5.5,1.8);
+\draw [thick] (0.3,4.5) to [out=290,in=165] (3.1,1.6);
+\node [right] at (6,1.1) {$C$};
+\node [right] at (0.5,4.1) {$\texttt{I}$};
+\draw [thick] (0,4.8) -- (7.5,0);
+\draw [thick] (0,4.8) -- (2.7,0);
+\draw[dashed](0.9,3.2)--(0.9,0);
+\draw[dashed](3.4,2.6)--(3.4,0);
+\draw [thick] (0,3.3) -- (5.3,0);
+\draw[dashed](2.2,1.9)--(2.2,0);
+\node [above] at (2.4,1.9) {$x^B$};
+\draw[fill] (2.22,1.9) circle [radius =0.06];
+\node [above] at (3,1.7) {$\texttt{I}$};
+\node [right] at (0.8,3.5) {$x^A$};
+\draw[fill] (0.9,3.25) circle [radius =0.06];
+\node [right] at (3.4,2.8) {$x^C$};
+\draw[fill] (3.43,2.6) circle [radius =0.06];
+\node [right] at (0.5,4.6) {$C$};
+\node [right] at (-0.1,4.2) {$A$};
+\node [left] at (2.6,0.2) {$A$};
+\node [right] at (5.3,0.2) {$B$};
+\node [right] at (-0.1,3.5) {$B$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;slustsky-decomposition&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slustsky Decomposition&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/consumer_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=1.2]
+\draw [thick] (0,0) -- (8,0);
+\draw [thick] (0,0) -- (0,5);
+\node [right] at (8,0) {$x_1$};
+\node [above] at (0,5) {$x_2$};
+\draw [thick] (1.7,4.2) to [out=310,in=160] (5.4,1.5);
+\draw [thick] (0.6,4) to [out=295,in=165] (3.5,1);
+\draw [thick] (1.4,3.2) to [out=290,in=155] (3.5,1.3);
+\node [right] at (6.5,0.9) {$C$};
+\draw [thick] (0,4.6) -- (7.5,0);
+\draw [thick] (0,4.6) -- (3.15,0);
+\draw[dashed](1.4,2.5)--(1.4,0);
+\draw[dashed](3.4,2.5)--(3.4,0);
+\draw [thick] (0,3.4) -- (5.4,0);
+\draw[dashed](2.4,1.9)--(2.4,0);
+\node [above] at (2.4,2) {$x^B$};
+\draw[fill] (2.4,1.9) circle [radius =0.06];
+\node [left] at (1.3,2.5) {$x^A$};
+\draw[fill] (1.4,2.5) circle [radius =0.06];
+\node [right] at (3.2,3) {$x^C$};
+\draw[fill] (3.4,2.5) circle [radius =0.06];
+\node [right] at (0.5,4.6) {$C$};
+\node [right] at (-0.1,4) {$A$};
+\node [left] at (2.9,0.2) {$A$};
+\node [right] at (4.3,0.2) {$B$};
+\node [right] at (-0.1,3.1) {$B$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;engle-curve&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Engle Curve&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/consumer_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=1]
+\draw [-&amp;gt;] (0,0) node [below] {0} -- (0,0) -- (6.5,0);
+\draw [-&amp;gt;] (0,0) node [below] {0} -- (0,0) -- (0,5.5);
+\node [align=left, left] at (-0.2,5.3) {Expenditure\\ on Good$(v_i)$};
+\node [below] at (5.7,-0.1) {$Income(y)$};
+\draw (0,0) to [out=15,in=255] (4.4,4.8);
+\node [align=left, above] at (4.5,4.8) {luxury\\ $\eta_i&amp;gt;0$};
+\draw (0.5,5) to [out=270,in=175] (4.8,0.7);
+\node [align=left, above] at (5.4,0.4) {inferior\\ $\eta_i&amp;lt;0$};
+\draw (0,0) to [out=40,in=185] (5,2);
+\node [align=left, right] at (5,2) {necessity\\ $0&amp;lt;\eta_i&amp;lt;1$};
+\draw (0,0)--(5,2.6);
+\node [above] at (5,2.6) {$\eta_i=1$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;consumer-surplus&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Consumer Surplus&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/consumer_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=1]
+\draw [-&amp;gt;] (0,0) node [below] {0} -- (0,0) -- (6,0) node [right] {$\texttt{Quantity}$};
+\draw [-&amp;gt;] (0,0) node [below] {0} -- (0,0) -- (0,5.5) node [above] {$\texttt{Price}$};
+\draw (0,5)--(6,1.4);
+\node [right] at (6,1.4) {$D$};
+\draw (0,3.5)--(2.5,3.5);
+\draw (0,2)--(5,2);
+\draw (5,2)--(5,0);
+\draw (2.5,0)--(2.5,3.5);
+\node [right] at (5,2.2) {$B$};
+\node [right] at (2.5,4) {$A$};
+\node [right] at (.2,5.2) {$I$};
+\node [left] at (0,1.5) {$P&amp;#39;$};
+\node [left] at (0,3.5) {$P$};
+\node [below] at (2.2,0) {$Q$};
+\node [below] at (5,0) {$Q&amp;#39;$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Demand and Supply</title>
+      <link>/courses/tikz/demand-and-supply/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/demand-and-supply/</guid>
+      <description>
+
+
+
+&lt;div id=&#34;monopoly&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Monopoly&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/demand-and-supply_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=1]
+\draw (0,5.8) node [left] {$Y$} --(0,0) node [left] {$O$} --(4.8,0) node [right] {$X$};
+\node [below] at (1.5,0) {$A$};
+\node [below] at (2.4,0) {$B$};
+\node [below] at (3.6,0) {$C$};
+\node [left] at (0,2) {$H$};
+\node [left] at (0,3) {$K$};
+\node [right] at (1.5,1.5) {$E$};
+\node [above left] at (0.8,3) {$F$};
+\node [above] at (2.4,2) {$P$};
+\node [above right] at (1.5,3) {$Q$};
+%line M
+\draw (1.53,0)--(1.53,4.8) node [above] {$M$} ;
+% Line GEA
+\draw (0,1.55)--(1.53,1.55)--(1.53,0);
+\node [left] at (0,1.6) {$G$};
+\draw (0,2)--(2.35,2)--(2.35,0);
+\draw (0,3)--(3.6,3)--(3.6,0);
+\draw (0,1) ..controls (2.3,1.6) and (4,3) ..(4.6,4.5) node [above right] {$S&amp;#39;$};
+\draw (0,5.6) ..controls (0.8,3) and (1.5,1.5) ..(2.1,0.5) node [below] {$d&amp;#39;$};
+\draw (0,5.6) ..controls (1.5,2.75) and (2.4,1.6) ..(4.4,0.4) node [above right] {$D&amp;#39;$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;demand-and-supply&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Demand and Supply&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/demand-and-supply_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.6]
+\draw[thick,&amp;lt;-&amp;gt;] (0,10) node[above]{$P$}--(0,0)--(10,0) node[right]{$Q$};
+\node [below left] at (0,0) {$0$};
+\node [below] at (5,0) {$Q^*$};
+\node [left] at (0,5) {$P^*$};
+\draw(1,1)--(9,9) node[right]{$S$};
+\draw(1,9)--(9,1) node[right]{$D$};
+\draw[dashed](0,5)--(5,5)--(5,0);
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Game Theory</title>
+      <link>/courses/tikz/game-theory/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/game-theory/</guid>
+      <description>
+
+
+
+&lt;div id=&#34;best-reply&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Best Reply&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/game-theory_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.7]
+\tiny
+\draw (0,0) -- (6,0) node [below] {$s_B$};
+\draw (0,0) -- (0,6) node [left] {$s_A$};
+\node [below] at (0,0) {$O$};
+\draw(0,0.7) to [out=15,in=230] (5.5,4);
+\node [below] at (5.4,3.3) {$R_A(s_B)$};
+\draw [-&amp;gt;] (3,0.5) -- (3,1.4);
+\draw [xshift=7cm](0,0) -- (6,0) node [below] {$s_B$};
+\draw [xshift=7cm] (0,0) -- (0,6) node [left] {$s_A$};
+\node [xshift=4.7cm][below] at (0,0) {$O$};
+\draw [xshift=7cm] (1,0) to [out=40,in=260] (3.5,3);
+\draw [xshift=7cm] (3.5,3) to [out=85,in=220] (5.5,5);
+\node [xshift=6cm][below] at (4.6,4.4) {$R_B(s_A)$};
+\draw [xshift=7cm][-&amp;gt;] (0.5,2.5) -- (2,2.5);
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;nash-equilibrium&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Nash Equilibrium&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/game-theory_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.7]
+\tiny
+\draw (0,0) -- (6,0) node [below] {$s_B$};
+\draw (0,0) -- (0,6) node [left] {$s_A$};
+\node [below] at (0,0) {$O$};
+\draw (0,0.7) to [out=15,in=230] (5.5,4.6);
+\node [below] at (6,4) {$R_A(s_B)$};
+\node [below] at (4,5) {$R_B(s_A)$};
+\draw (1,0) to [out=40,in=260] (3.5,3);
+\draw (3.5,3) to [out=85,in=220] (5.3,5.3);
+\node [below] at (3.3,0) {$s^*_B$};
+\draw[dotted](3.3,0)--(3.3,2.4);
+\draw[dotted](0,2.4)--(3.3,2.4);
+\node [left] at (0,2.4) {$s^*_A$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;mixed-strategy-nash-equilibrium&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Mixed-strategy Nash equilibrium&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/game-theory_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.8]
+\tiny
+% Left Graph
+\draw (0,0) -- (3.3,0);
+\draw (0,0) -- (0,3.3);
+\draw [thick] (0,0)--(1.5,0)--(1.5,3) -- (3,3);
+\draw [dashed] (0,3)--(1.5,3);
+\draw [dashed] (3,3)--(3,0);
+\node [right] at (3,3) {$R_A(q_B)$};
+\node [below] at (0,0) {$0$};
+\node [below] at (1.5,0) {$1\over 2$};
+\node [below] at (3,0) {$1$};
+\node [right] at (3.3,0) {$q_B$};
+\node [left] at (0,3) {$1$};
+\node [above] at (0,3.3) {$q_A$};
+% Middle Graph
+\draw [xshift=5.1cm] (0,0) -- (3.3,0);
+\draw [xshift=5.1cm] (0,0) -- (0,3.3);
+\draw [xshift=5.1cm,thick] (3,0) -- (3,1.5)--(0,1.5)--(0,3);
+\draw [xshift=5.1cm][dashed] (0,3)--(3,3);
+\draw [xshift=5.1cm][dashed] (0,1.5)--(3,1.5);
+\draw [xshift=5.1cm][dashed] (3,3)--(3,1.5);
+\node [xshift=3.9cm][right] at (3.3,0.4) {$R_B(q_A)$};
+\node [xshift=4.1cm][below] at (0,0) {$0$};
+\node [xshift=4.1cm][left] at (0,1.5) {$1\over 2$};
+\node [xshift=4.1cm][below] at (3,0) {$1$};
+\node [xshift=4.1cm][right] at (3.3,0) {$q_B$};
+\node [xshift=4.1cm][left] at (0,3) {$1$};
+\node [xshift=4.1cm][above] at (0,3.3) {$q_A$};
+% Right Graph
+\draw [xshift=10cm] (0,0) -- (3.3,0);
+\draw [xshift=10cm] (0,0) -- (0,3.3);
+\draw [xshift=10cm] (3,0) -- (3,1.5);
+\draw [xshift=10cm,thick] (0,0)--(1.5,0)--(1.5,3) -- (3,3);
+\draw [xshift=10cm,thick] (3,0) -- (3,1.5)--(0,1.5)--(0,3);
+\draw [xshift=10cm][dashed] (0,3)--(3,3);
+\draw [xshift=10cm][dashed] (0,1.5)--(3,1.5);
+\draw [xshift=10cm][dashed] (3,3)--(3,1.5);
+\node [xshift=8cm][right] at (3,3) {$R_A(q_B)$};
+\node [xshift=8cm][right] at (3,1) {$R_B(q_A)$};
+\node [xshift=8cm][below] at (0,0) {$0$};
+\node [xshift=8cm][left] at (0.1,1.5) {$q^*_A=\frac{1}{2}$};
+\node [xshift=8cm][below] at (3,0) {$1$};
+\node [xshift=8cm][right] at (3.3,0) {$q_B$};
+\node [xshift=8cm][left] at (0,3) {$1$};
+\node [xshift=8cm][above] at (0,3.3) {$q_A$};
+\draw [xshift=10cm] (1.5,0) -- (1.5,3);
+\draw [xshift=10cm] (1.5,3) -- (3,3);
+\node [xshift=8cm][below] at (1.5,0) {$q^*_B=\frac{1}{2}$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Labor Economics</title>
+      <link>/courses/tikz/labour-economics/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/labour-economics/</guid>
+      <description>
+
+
+
+&lt;div id=&#34;labor-supply-decision&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Labor Supply Decision&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/labour-economics_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.7]
+\draw [&amp;lt;-&amp;gt;] (0,10.4) node [above] {\small $Daily\ Income$} --(0,0) node [left] {$O$} --(9,0);
+\node [below] at (8.6, -0.6) {\small $House\ of\ Leisure$};
+\node [left] at (0,3.2) {$A$};
+\node [left] at (0,5.9) {$B$};
+\node [left] at (0,9.1) {$C$};
+\node [below] at (8.6,0) {$D$};
+\node [below] at (6.4,0.8) {$a$};
+\node [above] at (5.5,2.2) {$b$};
+\node [right] at (6.4,2.4) {$c$};
+% Slope OW
+\draw (0,3.2)--(8.6,0);
+\draw (0,5.9)--(8.6,0);
+\draw (0,9.1)--(8.6,0);
+\draw [-&amp;gt;] (0.75,2) node [below] {\footnotesize$Slope = OW_1$}--(0.8,2.7);
+\draw [-&amp;gt;] (0.75,4.5) node [below] {\footnotesize$Slope = OW^*$} --(0.8,5.3);
+\draw [-&amp;gt;] (0.75,7.2) node [below] {\footnotesize$Slope = OW_2$} --(0.8,8.1);
+% ICs
+\draw (1.3,8.7) node [above] {\footnotesize$IC_1$} ..controls (2.6,2.4) and (6,0.1) ..(8.3,0.7);
+\draw (2.2,8.5) node [right] {\footnotesize$IC_2$} ..controls (3.8,3.2) and (5.2,1.8) ..(6.8,1.7);
+\draw (3.2,8.3) node [right] {\footnotesize$IC_3$} ..controls (4.7,3.7) and (6.4,2.1) ..(7.3,1.8);
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;labor-supply-curve&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Labor Supply Curve&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/labour-economics_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.7]
+\draw [&amp;lt;-&amp;gt;] (0,10.2) node [above] {\small $Real\ Wage\ Rate$} --(0,0) node [below left] {$O$}--(9.5,0) node [below left] {\small $House\ of\ Work$};
+\node [left] at (0,3.4) {$W_1$};
+\node [left] at (0,5.6) {$W_*$};
+\node [left] at (0,7.6) {$W_2$};
+\node [right] at (7.3,3.4) {$a$};
+\node [right] at (8.2,5.6) {$b$};
+\node [right] at (7.5,7.6) {$c$};
+\draw [dashed] (0,3.4)--(7.3,3.4);
+\draw [dashed] (0,5.6)--(8.2,5.6);
+\draw [dashed] (0,7.6)--(7.4,7.6);
+\draw (3.8,1.7) node [below] {$S_L$} to [out=20, in=-90] (8.2,5.6) to [out=90, in=-20] (4.3,9.2) node [below left] {$S_L$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;backward-bending-labor-supply-curve&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Backward Bending Labor Supply Curve&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/labour-economics_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.8]
+\draw [&amp;lt;-&amp;gt;] (0,8.3) node [above] {\small $Real \ Wage \ Rate$} --(0,0) node [below] {$O$}--(7.6,0) node [below] {\small $Hours \ of \ Work$};
+\node [left] at (0,4.7){$W_*$};
+\draw (6,8.2)node [below] {$S_L$} to [out=-165, in=90] (2.4, 4.7) to [out=-90, in=180] (6.6,2) node [below] {$S_L$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;labor-demand-and-supply&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Labor Demand and Supply&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/labour-economics_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.8]
+\draw (0,0) -- (6,0) node [right] {$L$};
+\draw (0,0) -- (0,6) node [left] {$P_L$};
+\node at (-0.5,-0.5) {O};
+\draw (0,3)--(5.5,3);
+\node at (5.9,3) {$s_L$};
+\node at (-0.5,3) {$w$};
+\draw (0,5.7)--(5.6,1);
+\node at (6.8,0.8) {$D_L=MP_L$};
+\draw[dashed](3.2,0)--(3.2,3.1);
+\node at (3.2,-0.5) {$L^{*}$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;income-distribution&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Income distribution&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/labour-economics_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.8]
+\tiny
+\draw (0,0) -- (6,0) node [right] {$L$};
+\draw (0,0) -- (0,6) node [left] {$P_L$};
+\node at (-0.3,-0.3) {O};
+\draw (0,3)--(6,3);
+\node at (6.2,3) {$S_L$};
+\node at (-0.5,3) {$W$};
+\draw (0,5.4)--(5.6,1.27);
+\node at (3.4,3.4) {$A$};
+\node at (6.4,0.8) {$MP_L$};
+\draw[dashed](3.2,0)--(3.2,3.85);
+\node at (-0.5,3.85) {$C$};
+\node at (3.2,4.3) {$B$};
+\draw[dashed](0,3.85)--(3.2,3.85);
+\node at (3.2,-0.5) {$L_0$};
+\draw (0,5.4)--(5.5,2.8);
+\node at (5.8,2.5) {$AP_L$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LaTeX Programming</title>
+      <link>/courses/tikz/latexprogramming/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/latexprogramming/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable: &lt;code&gt;\newcommand&lt;/code&gt;, &lt;code&gt;newenvironment&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Conditional: if&lt;/li&gt;
+&lt;li&gt;Iteration: for loop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;newcommand&#34;&gt;Newcommand&lt;/h1&gt;
+&lt;h2 id=&#34;basic-newcommand&#34;&gt;Basic Newcommand&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newcommand\NUS{National University of Singapore}
+
+I like \NUS{}. Do you like \NUS{}?
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;math-newcommand&#34;&gt;Math newcommand&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newcommand\sumx{\ensuremath{x_1+\cdots+x_n}}
+
+I like \sumx{}.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fMinmPAAakY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;newcommand-with-argument&#34;&gt;Newcommand with argument&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newcommand\poem[1]{#1 eats an apple.}
+
+\poem{Peter}
+\poem{Mary}
+
+\newcommand\poems[2]{#1 eats #2.}
+
+\poems{Peter}{apple}
+\poems{John}{banana}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;math-newcommand-with-argument&#34;&gt;Math newcommand with argument&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newcommand\sumint[1]{\ensuremath{1+\cdots+#1}}
+
+I like to do \sumint{3} and \sumint{n}.
+
+\newcommand\sumints[2]{\ensuremath{#1+\cdots+#2}}
+
+ I like to do \sumints{1}{2} and \sumints{3}{n}.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/H40y7LAJexQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;new-environment&#34;&gt;New Environment&lt;/h1&gt;
+&lt;h2 id=&#34;baisc-newenvironment&#34;&gt;Baisc newenvironment&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{important}
+{\begin{center}\color{red}}
+{\end{center}}
+
+I like think the following is important:
+\begin{important}
+I eat an apple.
+\end{important}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;newenvironemt-with-argument&#34;&gt;Newenvironemt with argument&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{important}[1]
+{\begin{center}\color{#1}}
+{\end{center}}
+ 
+I like think the following is important:
+\begin{important}{blue}
+I eat an apple.
+\end{important}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;newenvironment-with-arguments&#34;&gt;Newenvironment with arguments&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{important}[2]
+{\begin{center}\textbf{#2:} \color{#1}}
+{\end{center}}
+
+I like think the following is important:
+\begin{important}{blue}{Peter}
+I eat an apple.
+\end{important}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Pxc0XL0bxpI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;conditional&#34;&gt;Conditional&lt;/h1&gt;
+&lt;h2 id=&#34;conditional-if&#34;&gt;Conditional If&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{important}[2]
+{\begin{center}\textbf{#2:} \color{#1}}
+{\end{center}}
+
+I like think the following is important:
+\begin{important}{blue}{Peter}
+I eat an apple.
+\end{important}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;conditional-if-else&#34;&gt;Conditional If else&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newif\ifcond
+\condfalse % try \condtrue
+\ifcond
+Yes, this is not me. % run if true
+\else 
+No, this is you. % run if false
+\fi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fkm62YCniaU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;iteration&#34;&gt;Iteration&lt;/h1&gt;
+&lt;h2 id=&#34;iteration-for-each-loop&#34;&gt;Iteration for each loop&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{pgffor}
+
+\foreach \person in {Peter, John, Mary}
+{\person{} eats an apple.\par}
+
+\foreach \n in {1,...,10}
+{\n +}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EnyiGDlu7HQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Macroeconomics</title>
+      <link>/courses/tikz/macroeconomics/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/macroeconomics/</guid>
+      <description>
+
+
+
+&lt;div id=&#34;as-ad&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;AS-AD&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/macroeconomics_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.8]
+\draw[thick] (0,9) node[above]{$P$}--(0,0) node[below right]{$0$}--(12,0) node[below]{$Y$};
+\draw(1,1.5) ..controls (5,2) and (8,3) .. (8.5,9) node[above]{$AS$};
+\draw (2,9) node[above]{$AD$}--(8.5,1.3);
+\draw(8,9)--(8,0) node[below]{$Y_f$};
+\draw[dashed](6.53,3.6)--(6.53,0) node[below] {$Y_e$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;keyesnian-cross&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Keyesnian Cross&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/macroeconomics_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.5]
+\scriptsize
+\draw[thick] (0,12) node[above]{$E$}--(0,0) node[below right]{$0$}--(12,0) node[below]{$Y$};
+\draw(0,2)--(12,11) node[right]{$C(Y)+I+G+X-M(Y)$};
+\draw(0,0)--(12,12) node[right]{$E(Y)=Y$};
+\draw[dashed](8,8)--(8,0) node[below]{$Y_e$};
+\draw[dashed](10,9.5)--(10,0) node[below]{$Y_f$};
+\draw (0,0) ++(0:2) arc(0:45:2);
+\node [right] at (0.5,0.5) {45$^{\circ}$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;is-lm&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;IS-LM&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/macroeconomics_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.5]
+\scriptsize
+\draw[thick] (0,9) node[left]{$i$}--(0,0) node[below left]{$0$}--(11,0) node[below]{$Y$};
+\draw(6,9) node[left]{$IS_0$} ..controls (8,8) and (10,7) .. (11,2.5);
+\draw(6,9) node[left]{$IS_0$} ..controls (8,8) and (10,7) .. (11,2.5);
+\draw(3.3,6.5) node[left]{$IS_2$} ..controls (5,5.6) and (6,3.8) .. (6.8,1.2);
+\draw(1.45,4.9) node[left]{$IS_1$} ..controls (2,4.5) and (3.5,4) .. (4,0.65);
+\draw(0.8,1.1) ..controls (3.8,1.2) and (6.5,1.5) .. (8.25,6.2);
+\draw[dashed](3.8,1.45) ..controls (6.2,1.7) and (8,2.5) .. (9.5,6.2);
+\draw(9.5,0) node[below]{$Y_a$}--(9.5,6.2);
+\draw[dashed](9.5,6.2)--(9.5,9);
+\draw(8.25,0) node[below]{$Y_0$}--(8.25,9);
+\node[above] at (8.1,9){$LM_0$};
+\node[above] at (9.7,9){$LM_1$};
+\draw(0,1.47) node[left]{$i_1$}--(3.8,1.47)--(3.8,0) node[below]{$Y_1$};
+\draw(0,2.8) node[left]{$i_2$}--(6.2,2.8)--(6.2,0) node[below]{$Y_2$};
+\draw(0,6.2) node[left]{$i_a$}--(9.5,6.2);
+\draw(0,7.6) node[left]{$i_0$}--(8.25,7.6);
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;solow-growth&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Solow Growth&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/macroeconomics_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.6]
+\draw[thick,&amp;lt;-&amp;gt;] (0,10) node[above]{depreciation,saving}--(0,0)--(10,0) node[right]{$k$};
+\node [below left] at (0,0) {$0$};
+\draw(0,0)--(9,9) node[right]{$\delta k$};
+\draw(0,0) ..controls (1,5) and (5,6) .. (10,7) node[right]{$sf(k)$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;money-demand&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Money Demand&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/macroeconomics_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.5]
+\tiny
+\draw (0,13) node[below left]{$r$} -- (0,0) node[below left]{$0$} -- (14,0) node[below]{$M$};
+\draw(0,11) node[above left]{$r&amp;#39;$} ..controls (0.5,2) and (6,2) .. (8,2);
+\draw[dashed](0,2) node[left]{$r&amp;#39;&amp;#39;$} -- (8,2);
+\draw(8,2) -- (13,2) node[right]{$L_2$} ;
+\draw(2.5,11) node[above]{$M(y=y_4)$} -- (2.5,0);
+\draw(5,11) node[above]{$M(y=y_3)$} -- (5,0);
+\draw(8,11) node[above]{$M(y=y_2)$} -- (8,0);
+\draw(10.5,11) node[above]{$M(y=y_1)$} -- (10.5,0);
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;philips-curves&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Philips Curves&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/macroeconomics_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.5]
+\scriptsize
+\draw[thick] (0,6) node[below left] {$\dot{W}$} -- (0,0) node[below left]{$0$} -- (6,0) node[right]{$U$};
+\node[below] at (3,-0.5) {$(i)$};
+\draw(0.5,6) node[above right]{$PC_W$} ..controls (0.6,0.5) and (0.7,0) .. (5.8,-0.3);
+\draw[thick][xshift=8cm] (0,6) node[below left] {$\dot{P}$} -- (0,0) node[below left]{$0$} -- (6,0) node[right]{$Y$};
+\node[below] at (11,-0.5) {$(ii)$};
+\draw[xshift=8cm](0,-0.6) ..controls (5,-0.5) and (5.5,0) .. (6,5.9) node[above]{$PC_P$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Produer Theory</title>
+      <link>/courses/tikz/producer/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/producer/</guid>
+      <description>
+
+
+
+&lt;div id=&#34;isoquant&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Isoquant&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/producer_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=1.2]
+\draw (0,0) -- (5.5,0);
+\draw (0,0) -- (0,5.5);
+\node [left] at (-0.2,5.3) {$\texttt{K}$};
+\node [below] at (5.3,-0.1) {$\texttt{L}$};
+\draw [thick] (1.7,4.8) to [out=275,in=180] (5,1.3);
+\node [right] at (1.5,5) {$I$};
+\node [right] at (5,1.3) {$I$};
+\draw [thick] (0,0) -- (2.7,4.5);
+\draw [thick] (0,0) -- (4,3.7);
+\draw[dotted, thick](1,4.05)--(4.1,0.95);
+\draw[dotted, thick](1.15,5.1)--(3.35,0.8);
+\node [right] at (0.7,4.4) {$C^1$};
+\node [below] at (4.2,0.9) {$C^1$};
+\node [above] at (1.1,5.2) {$C^2$};
+\node [below] at (3.3,0.8) {$C^2$};
+\node [right] at (2,3.4) {$B$};
+\node [right] at (2.7,2.4) {$A$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cost-minimization&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cost Minimization&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/producer_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=.9]
+\draw (0,7.7) node [left] {$K$} -- (0,0) node [below left] {$0_1$} -- (8.2,0) node [below right] {$L$};
+\node [left] at (0,6.1) {$C/r$};
+\node [below] at (5.75,0) {$C/w$};
+\node [below] at (2.9,0) {$L_1$};
+\node [left] at (0,3) {$K_1$};
+\node [right] at (6,1.4) {$x_1$};
+\node [right] at (2.9,.9) {\tiny $|slope|=w/r$};
+\draw [dotted, thick] (0,3) -- (2.9,3) -- (2.9,0);
+\draw (1.5,6.4) to [out=-90, in=130] (2.9,3) to [out=-50, in=170] (6,1.4);
+\draw (0,6.1) -- (5.75,0);
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;short-run-cost-curves&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Short-run Cost Curves&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/producer_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.8]
+\tiny
+\draw (0,0) -- (8,0) node [below] {Quantity, units};
+\draw (0,-0.5) -- (0,5) node [above] {Cost per unit, \$};
+\draw (0.2,5) to [out=270,in=172] (2.6,0.4);
+\draw (2.6,0.4) to [out=350.5,in=178] (7,0.1);
+\node [right] at (7,0.5) {$AFC$};
+\draw (0.3,5) to [out=280,in=150] (2,2.1);
+\draw (2,2.1) to [out=330,in=200] (7,2);
+\node [right] at (7,2.3) {$ATC$};
+\draw (0,2) to [out=340,in=200] (7,1.8);
+\node [right] at (7,1.8) {$AVC$};
+\draw (0,2) to [out=315,in=240] (7,5);
+\node [right] at (7,5) {$MC$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;long-run-cost-curves&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Long-run Cost Curves&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/producer_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=0.8]
+\tiny
+\draw (-0.3,0)-- (0,0) -- (8,0) node [below] {Quantity, units};
+\draw (0,-0.5)-- (0,0) -- (0,5) node [above] {Average total cost, \$};
+\draw (0.2,3.7) to [out=290,in=180] (3.75,1);
+\draw (3.75,1) to [out=360,in=260] (7.6,3.9);
+\node [above] at (7.5,4) {$LRAC$};
+\draw (0.5,3.3) to [out=280,in=180] (1.5,2.2);
+\draw (1.5,2.2) to [out=360,in=255] (2.8,3.3);
+\draw [fill] (0.75,2.65) circle [radius =0.06];
+\node [below] at (0.75,2.55){$a$};
+\node [left] at (2.8,3.3){$SRAC$};
+\draw (2,2.6) to [out=280,in=180] (3.75,1);
+\draw (3.75,1) to [out=360,in=255] (5.3,2.6);
+\draw [fill] (3.75,1) circle [radius =0.06];
+\node [below] at (3.75,1) {$b$};
+\node [left] at (5.1,2) {$SRAC$};
+\draw (4.8,3.4) to [out=280,in=180] (6,2.3);
+\draw (6,2.3) to [out=360,in=270] (7.4,3.5);
+\draw [fill] (7.32,3) circle [radius =0.06];
+\node [below] at (7.32,3) {$c$};
+\node [left] at (7.22,3.2) {$SRAC$};
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;production-possibility-frontier&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Production Possibility Frontier&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/courses/tikz/producer_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;90%&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;nohighlight&#34;&gt;&lt;code&gt;\begin{tikzpicture}[scale=1.2]
+\draw (0,5.1) node [left] {$Y$} -- (0,0) node [below left] {$0$} -- (4,0) node [below] {$X$};
+\draw (0,4.1) to [out=-15, in=120] (2.8,2) to [out=-60, in=95] (3.4,0);
+\draw [-&amp;gt;] (2.8,2) -- (3.3,2.2);
+\draw [dashed] (1.2,3.6) -- (3.1,1.3);
+\draw [dashed] (1.2,3.6) -- (2.9,3.2);
+\node [right] at (3.3,2.2) {$E$};
+\node [right] at (3.1,1.3) {$B$};
+\node [left] at (0,4.1) {$F$};
+\draw [fill] (0,4.1) circle [radius=.05];
+\node [right] at (0,4.5) {$H$};
+\draw [fill] (0,4.5) circle [radius=.05];
+\node [above left] at (3.4,0) {$G$};
+\draw [fill] (3.4,0) circle [radius=.05];
+\node [right] at (2.5,2.5) {$I$};
+\draw [fill] (2.5,2.5) circle [radius=.05];
+\node [above] at (2.9,2) {$D$};
+\draw [fill] (2.8,2) circle [radius=.05];
+\node [right] at (2.9,3.2) {$C$};
+\draw [fill] (2.9,3.2) circle [radius=.05];
+\node [above right] at (1.2,3.6) {$A$};
+\draw [fill] (1.2,3.6) circle [radius=.05];
+\end{tikzpicture}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tikz CookBook</title>
+      <link>/courses/tikz/tikz-cookbook/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/tikz-cookbook/</guid>
+      <description>&lt;p&gt;TikZ is a drawing package in LaTeX. It is very useful to draw a professional-looking diagram. However, the learning curve is a little bit steep for a beginner. I have recently compiled a 629-page cookbook that provides step-by-step illustrations on how to use TikZ to draw various diagrams in economics:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The book is available through 
+&lt;a href=&#34;https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Play&lt;/a&gt; or 
+&lt;a href=&#34;https://books.google.com.sg/books?id=t3ZZDwAAQBAJ&amp;amp;source=gbs_navlinks_s&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Book&lt;/a&gt;. You can read the whole book through free sampling. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing, you may copy code directly through Google Play (only benefit of spending your money) and you can download a pdf file of the book but the pdf file does not allow search nor copy.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TikZ Cookbook Companion</title>
+      <link>/courses/tikz/tikz-cookbook-companion/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/courses/tikz/tikz-cookbook-companion/</guid>
+      <description>&lt;p&gt;Related to the first book (TikZ Cookbook), I have compiled a companion textbook with more examples. The book shows 100 diagrams that can be found in textbooks of introductory principle classes.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook-Companion.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Cover-TikZ-Cookbook-Companion.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The book is available through 
+&lt;a href=&#34;https://play.google.com/store/books/details?id=WfF5DwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Play&lt;/a&gt; or 
+&lt;a href=&#34;http://books.google.com/books/about?id=WfF5DwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google book&lt;/a&gt;. You can read the whole book through free sampling and preview. If you think that I have done a good or bad job, please feel free to drop me an email with comments/suggestions. Of course, you are very welcome to consider buying me a cup of coffee through purchasing the ebook.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Google Play, you may download acsm file to be opened by specialized software such as Adobe Digital Edition. The software will download the pdf file to be read offline.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

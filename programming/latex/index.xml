@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX | Chiu Yu Ko</title>
+    <link>/programming/latex/</link>
+      <atom:link href="/programming/latex/index.xml" rel="self" type="application/rss+xml" />
+    <description>LaTeX</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2020. All Rights Reserved.</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <title>LaTeX</title>
+      <link>/programming/latex/</link>
+    </image>
+    
+    <item>
+      <title>Introduction to LaTeX</title>
+      <link>/programming/latex/introduction/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0800</pubDate>
+      <guid>/programming/latex/introduction/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is LaTeX?&lt;/li&gt;
+&lt;li&gt;Why LaTeX?&lt;/li&gt;
+&lt;li&gt;Installation of LaTeX&lt;/li&gt;
+&lt;li&gt;Hello world&lt;/li&gt;
+&lt;li&gt;Basic setup of TikZ&lt;/li&gt;
+&lt;li&gt;Demand and Supply Diagram&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-is-latex-why-latex&#34;&gt;What is LaTeX? Why LaTeX?&lt;/h2&gt;
+&lt;p&gt;LaTeX is a markup language to write documents. In a common word processor, we have what you see is what you get (WYSIWYG). Howver, in LaTeX, What you see is what you mean (WYSIWYM). This manes that&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No need to bother with formatting, LaTeX will do it for you&lt;/li&gt;
+&lt;li&gt;Easy to include math/graphics/tables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Therefore, it becomes a standard for academic publishing.&lt;/p&gt;
+&lt;h2 id=&#34;installation-of-latex&#34;&gt;Installation of LaTeX&lt;/h2&gt;
+&lt;p&gt;Which software to install depends on your operation system:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you use windows system, you need to install &lt;strong&gt;MikTeX&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;If you use mac system, you need to install &lt;strong&gt;MacTeX&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
+&lt;p&gt;For Windows, go to 
+&lt;a href=&#34;http://miktex.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MikTeX&lt;/a&gt;. You will then see the following at the top of the page.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Install/latex/MikTeX_Download1.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Install/latex/MikTeX_Download1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Clicking the download button will then bring you to this page.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Install/latex/MikTeX_Download2.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Install/latex/MikTeX_Download2.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Download MiKTeX, then install and open TexWork. You are then ready to use LaTeX on your Windows computer.&lt;/p&gt;
+&lt;h3 id=&#34;mac&#34;&gt;Mac&lt;/h3&gt;
+&lt;p&gt;For Mac users, head to 
+&lt;a href=&#34;http://tug.org/mactex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MacTeX&lt;/a&gt;. Click on the download MacTex button, as shown below.&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Install/latex/MacTeX_Download1.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Install/latex/MacTeX_Download1.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;latex&#34;&gt;LaTeX&lt;/h1&gt;
+&lt;h2 id=&#34;hello-world&#34;&gt;Hello World&lt;/h2&gt;
+&lt;p&gt;Since we are producing a document, we start to tell the program so by using the command &lt;strong&gt;\documentclass{article}&lt;/strong&gt;. Then we need to tell which section should be included in the output file by using &lt;strong&gt;\begin{document}&lt;/strong&gt; and &lt;strong&gt;\end{document}&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, type the words “Hello World!” between the &lt;strong&gt;\begin{document}&lt;/strong&gt; and &lt;strong&gt;\end{document}&lt;/strong&gt;. Whatever text, pictures, or tables is included in between the 2 commands will appear on the document itself, and you can see this on the right-hand side.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
+\begin{document}
+Hello World!
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you compile the file, you should get the following pdf output:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/LaTeX-hello-world.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/LaTeX-hello-world.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Basic LaTeX</title>
+      <link>/programming/latex/basiclatex/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/programming/latex/basiclatex/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is LaTeX?&lt;/li&gt;
+&lt;li&gt;Hello World&lt;/li&gt;
+&lt;li&gt;Title Page&lt;/li&gt;
+&lt;li&gt;Sectioning/Appendix/List&lt;/li&gt;
+&lt;li&gt;Reference&lt;/li&gt;
+&lt;li&gt;Font/Page Layout/Line Spacing&lt;/li&gt;
+&lt;li&gt;Mathematics&lt;/li&gt;
+&lt;li&gt;Table/Graphics/Figures&lt;/li&gt;
+&lt;li&gt;Page Margin&lt;/li&gt;
+&lt;li&gt;Line spacing&lt;/li&gt;
+&lt;li&gt;Font Size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-is-latex&#34;&gt;What is LaTeX?&lt;/h2&gt;
+&lt;p&gt;LaTeX is a program that writes document using programming. It is What you see is what you mean (WYSIWYM). Hence, you should not need to bother with formatting when you create the content. You write a document by focusing on the content instead of how it looks. The appearance would be taken care by the software.&lt;/p&gt;
+&lt;p&gt;The program will do it for you or you tell how it should be done. It is standard for academic publishing, and it is also very easy to include mathematics, graphics and tables with professional look.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ejGA_ZWiZT4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;basic-setup&#34;&gt;Basic setup&lt;/h1&gt;
+&lt;h2 id=&#34;hello-world&#34;&gt;Hello World&lt;/h2&gt;
+&lt;p&gt;Since we are producing a document, we start to tell the program so by using the command &lt;code&gt;\documentclass{article}&lt;/code&gt;. We need to tell what document we are producing. For our purpose, we are focusing on simple documents so that &lt;strong&gt;article&lt;/strong&gt; would suffice. Other frequently used options for documentclass are &lt;strong&gt;book&lt;/strong&gt; and &lt;strong&gt;beamer&lt;/strong&gt; for producing books and presentation slides.&lt;/p&gt;
+&lt;p&gt;Then we need to tell which section should be included in the output file by using &lt;code&gt;\begin{document}&lt;/code&gt; and &lt;code&gt;\end{document}&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, type the words “Hello World!” between the &lt;code&gt;\begin{document}&lt;/code&gt; and &lt;code&gt;\end{document}&lt;/code&gt;. Whatever text, pictures, or tables is included in between the 2 commands will appear on the document itself, and you can see this on the right-hand side.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{article}
+\begin{document}
+Hello World!
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you compile the file, you should get the following pdf output:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/tikz/LaTeX-hello-world.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/tikz/LaTeX-hello-world.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3bh0LXP427o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;front-matter&#34;&gt;Front Matter&lt;/h2&gt;
+&lt;p&gt;Usually a document would start with a title. We just need to tell the program by &lt;code&gt;\title{}&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Similarly, we will usually have author after title. We only need to say  &lt;code&gt;\author{}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Moreover, we often put a time stamp to the document. To do so, we use &lt;code&gt;\date{}&lt;/code&gt;. Often we use &lt;code&gt;\today&lt;/code&gt; to represent the date to set this up.&lt;/p&gt;
+&lt;p&gt;Finally, we need to tell the program where to put these information by using &lt;code&gt;\maketitle&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;An example is as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/LVPHG7Khs-A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;sectioning&#34;&gt;Sectioning&lt;/h2&gt;
+&lt;p&gt;Next, we move on to sections and subsections. This is important if you wish to divide your text into nice, separate sections for readability.&lt;/p&gt;
+&lt;p&gt;When you include sections by using &lt;code&gt;\section{}&lt;/code&gt;, LaTex automatically numbers each section for you. You might have seen this in academic papers, this is why people use LaTex when writing their papers. Subsections will take on that particular section’s number, and then include a second number behind to indicate that it is a subsection. We use &lt;code&gt;\subsection{}&lt;/code&gt; here. You can also use &lt;code&gt;\subsubsection{}&lt;/code&gt; if you wish.&lt;/p&gt;
+&lt;p&gt;You code will look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+
+\section{Introduction}
+This is my best paper
+\section{Model}
+We will have a lot of math.
+\subsection{Basic Model}
+Math here is simplier.
+\subsection{Full Model}
+Math here is crazy.
+\section{Conclusion}
+My paper is great!
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/N1meTnloNNM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;appendix&#34;&gt;Appendix&lt;/h2&gt;
+&lt;p&gt;Appendix is another section that does not following numeric numbering (but alphabetical ordering). We just need to say &lt;code&gt;\appendix&lt;/code&gt; where the appendix starts.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\documentclass{article}
+\title{My important paper}
+\author{VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+Hello World!
+
+\section{Introduction}
+This is my best paper
+\section{Model}
+We will have a lot of math.
+...
+\section{Conclusion}
+My paper is great!
+
+\appendix
+\section{Data Description}
+Here is the appendix.
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Vl0PjKsdtQc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;Reference is very easy to manage under latex. Use &lt;code&gt;\cite{key}&lt;/code&gt; to cite paper in the bibligrpahy section enclosed by &lt;code&gt;\begin{thebibliography}&lt;/code&gt; and &lt;code&gt;\end{thebibliography}&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\cite{key1} says lalala 
+\cite{key2} says blahblahblah
+\begin{thebibliography}{99}
+\bibitem{key1} Me, My paper, Trash Bin, P1-100.
+\bibitem{key2} You, My paper 2, Trash Bin, P2-200.
+\end{thebibliography}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The argument to &lt;code&gt;\begin{thebibliography}{}&lt;/code&gt; is used for setting the hanging indentation of the bibliography items. If you use numeric labels, then the argument should be a single digit (9 is commonly used) if there are less than ten items; two digits (commonly 99) if there are from 10 to 99 items and so on.&lt;/p&gt;
+&lt;p&gt;To create items in the bibliography, we use &lt;code&gt;\bibitem{}&lt;/code&gt;, where the name in the brackets is what you use when you cite in the main text.
+&lt;code&gt;\bibitem{key}&lt;/code&gt; Name, Year, Journal, Page Number.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;\cite{key}&lt;/code&gt; command will automatically extract information from the bibliography where&lt;br&gt;
+&lt;strong&gt;key&lt;/strong&gt; is the name defined in the &lt;strong&gt;thebibliography&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If there is no such information in the bibliography, the citations will simply show a question mark ?.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Bli8vDHK9sM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;lists&#34;&gt;Lists&lt;/h1&gt;
+&lt;p&gt;There are three types of list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Itemize&lt;/strong&gt; is unnumbered list: each item is denoted by a bullet or a dot. Commonly used for unordered items&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enumerate&lt;/strong&gt; is numbered list or ordered list: each item is denoted by number or letter. Commonly used for ordered items&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt; is descriptive list: each item is denoted by customized description.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;unordered-list&#34;&gt;Unordered List&lt;/h2&gt;
+&lt;p&gt;Undered lists are enclosed by &lt;code&gt;\begin{itemize}&lt;/code&gt; and &lt;code&gt;\end{itemize}&lt;/code&gt; and we use &lt;code&gt;\item&lt;/code&gt; to tell it is an item. A typical example is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{itemize}
+  \item I have an apple.
+  \item You have an orange.
+\end{itemize}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ordered-list&#34;&gt;Ordered List&lt;/h2&gt;
+&lt;p&gt;Likewise, the &lt;code&gt;\begin{enumerate}&lt;/code&gt; and &lt;code&gt;\end{enumerate}&lt;/code&gt; also works the same way, and we also use &lt;code&gt;\item&lt;/code&gt; to create items. The only difference is that enumerate uses numbers, and itemize uses bullet points.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{enumerate}
+  \item I have an apple.
+  \item You have an orange.
+\end{enumerate}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;deescription-list&#34;&gt;Deescription List&lt;/h2&gt;
+&lt;p&gt;Likewise, the &lt;code&gt;\begin{decription}&lt;/code&gt; and &lt;code&gt;\end{description}&lt;/code&gt; also works the same way, and we also use &lt;code&gt;\item[name]&lt;/code&gt; to create items. The only difference is that we have to tell the name for each item.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{description}
+  \item[First] I have an apple.
+  \item[Second] You have an apple.
+  \item[Third] We have two. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;nested-list&#34;&gt;Nested List&lt;/h2&gt;
+&lt;p&gt;Nested lists can be easily created by nesting one list over the other. The below show how one numbered list put inside another numbered list. One can also put an unnumbered list insider another unnumbered list. Moreover, one can also cross-over.&lt;/p&gt;
+&lt;p&gt;First, we nest an unordered list inside another unordered list:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{itemize}
+  \item I have an apple.
+  \item You have an orange.
+  \begin{itemize}
+    \item I have an apple.
+    \item You have an orange.
+  \end{itemize}
+\end{itemize}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Second, we nest an ordered list inside another ordered list:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{enumerate}
+  \item I have an apple.
+  \item You have an orange.
+  \begin{enumerate}
+    \item I have an apple.
+    \item You have an orange.
+  \end{enumerate}
+\end{enumerate}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or even mix them together:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{enumerate}
+  \item I have an apple.
+  \item You have an orange.
+  \begin{itemize}
+    \item I have an apple.
+    \item You have an orange.
+  \end{itemize}
+\end{enumerate}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/im-8BWtEKnY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;tables&#34;&gt;Tables&lt;/h1&gt;
+&lt;p&gt;There are two types of table: (1) tabular and (2) table. Tabular environment is to display information in table form while table environment is to allow tabular to float.&lt;/p&gt;
+&lt;h2 id=&#34;tablular&#34;&gt;Tablular&lt;/h2&gt;
+&lt;p&gt;Tables are created using the &lt;code&gt;\begin{tabular}{}&lt;/code&gt; and &lt;code&gt;\end{tabular}&lt;/code&gt; format. We can specify what type of table we want, and LaTex will create it for us.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Input&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;l&lt;/td&gt;
+&lt;td&gt;left-justified column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;c&lt;/td&gt;
+&lt;td&gt;centered column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;r&lt;/td&gt;
+&lt;td&gt;right-justified column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;An example is&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{tabular}{l c r}
+   1 &amp;amp; 2 &amp;amp; 3 \\ \hline
+   40 &amp;amp; 50 &amp;amp; 60 \\
+   700 &amp;amp; 800 &amp;amp; 900 \\
+\end{tabular}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the example above, we have used “l c r”, so LaTex creates a table with 3 columns, with the corresponding directional justifications.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/__RJL26KaIg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;table&#34;&gt;Table&lt;/h2&gt;
+&lt;p&gt;LaTeX can help you to determine the location of the table automatically. We start with &lt;code&gt;\begin{table}&lt;/code&gt; and end with &lt;code&gt;\end{table}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;There are several choices for placement options after &lt;code&gt;\begin{table}&lt;/code&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Specifier&lt;/th&gt;
+&lt;th&gt;Location&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;h&lt;/td&gt;
+&lt;td&gt;Place the float here&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;t&lt;/td&gt;
+&lt;td&gt;Position at the top of the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;b&lt;/td&gt;
+&lt;td&gt;Position at the bottom of the page.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7UOJgNtEjnU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;graphics&#34;&gt;Graphics&lt;/h1&gt;
+&lt;p&gt;Similar to table, there are two ways to display graphics: inline or floating.&lt;/p&gt;
+&lt;h2 id=&#34;includegraphics&#34;&gt;Includegraphics&lt;/h2&gt;
+&lt;p&gt;To include graphics files (e.g., jpg and png) in the document, we need to make use of the graphicx package, which is done by using &lt;code&gt;\usepackage{graphicx}&lt;/code&gt;. Note that package has to put before &lt;code&gt;\begin{document}&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To include a graphic file, we use the command &lt;code&gt;\includegraphics{filename}&lt;/code&gt;. Note that the file has to be in the same file as the tex file for this code to work.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mLmHIIqtO-E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;figure&#34;&gt;Figure&lt;/h2&gt;
+&lt;p&gt;To float the graphics, we start with using &lt;code&gt;\begin{figure}[placement option]&lt;/code&gt; and ends with &lt;code&gt;\end{figure}&lt;/code&gt;. You also need to write down the caption. You may use &lt;code&gt;\centering&lt;/code&gt; to center the graphics.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{figure}[htp]
+\centering
+\includegraphics[width=\textwidth]{picture.jpg}
+\caption{I am a figure.}
+\end{figure}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wp-rQEeb9Kc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;mathematics&#34;&gt;Mathematics&lt;/h1&gt;
+&lt;h2 id=&#34;inline-mathmatics&#34;&gt;Inline Mathmatics&lt;/h2&gt;
+&lt;p&gt;Mathematics is one of the main reasons to use LaTeX over other word processors. To let the program know that you are working on math, enclose your expression with dollar sign &lt;code&gt;$&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;$ 3^2 + 4^2 = 5^2$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Why dollar sign? Typesetting with math was expensive in the old days.&lt;/p&gt;
+&lt;p&gt;Alternatively, we can enclose our expression by &lt;code&gt;\(&lt;/code&gt; and &lt;code&gt;\)&lt;/code&gt;. The latter way of writing improves readability if we have a complicated mathematical expression.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/xN_Ce2pnC7w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;greek-letters&#34;&gt;Greek Letters&lt;/h2&gt;
+&lt;p&gt;We can write symbols by using symbol name, for example &lt;code&gt;\alpha&lt;/code&gt; for $\alpha$, &lt;code&gt;\beta&lt;/code&gt; for $\beta$ etc.&lt;/p&gt;
+&lt;h2 id=&#34;displayed-equation&#34;&gt;Displayed equation&lt;/h2&gt;
+&lt;p&gt;If we want a display equation, simply use double dollar sign &lt;code&gt;$$&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;$$ 3^2 + 4^2 = 5^2$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Why dobule dollar sign? Typesetting with displayed math was even expensive in the old days.&lt;/p&gt;
+&lt;p&gt;Alternatively, we can enclose our expression by &lt;code&gt;\[&lt;/code&gt; and &lt;code&gt;\]&lt;/code&gt;. The latter way of writing improves readability if we have a complicated mathematical expression.&lt;/p&gt;
+&lt;h2 id=&#34;numbered-equation&#34;&gt;Numbered equation&lt;/h2&gt;
+&lt;p&gt;If you want the equation to be numbered, enclose it with &lt;code&gt;\begin{equation}&lt;/code&gt; and &lt;code&gt;\end{equation}&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{equation}
+3^2 + 4^2 = 5^2
+\end{equation}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you want it to be referenced, then add an &lt;code&gt;\label{key}&lt;/code&gt; and use &lt;code&gt;\ref{key}&lt;/code&gt; later.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{equation}\label{NiceEq}
+3^2 + 4^2 = 5^2
+\end{equation}
+
+I like Eq (\ref{NiceEq}) very much. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that the bracket has to be manually added.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/TKmLKZPYNdU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;multi-line-equation&#34;&gt;Multi-line equation&lt;/h2&gt;
+&lt;p&gt;To use multi-line equation, we enclose the set of equations by &lt;code&gt;\begin{align}&lt;/code&gt; and &lt;code&gt;\end{align}&lt;/code&gt;. For multi-line equations, we need to separate each line by &lt;code&gt;\\&lt;/code&gt; and specify where equations should align by &lt;code&gt;&amp;amp;&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{align}
+x +y  &amp;amp;= 1 \\
+x - y &amp;amp;= 2  
+\end{align}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;theorem&#34;&gt;Theorem&lt;/h2&gt;
+&lt;p&gt;To write a formal statement, it is convenient to use amsthm package by &lt;code&gt;\usepacakge{amsthm}&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+
+\begin{theorem}\label{NiceThm}
+One plus one is two! $$1+1=2.$$
+\end{theorem}
+I like Theorem \ref{NiceThm} very much. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fITw64ezi3Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;page-layout&#34;&gt;Page Layout&lt;/h1&gt;
+&lt;h2 id=&#34;page-margin&#34;&gt;Page Margin&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;geometry&lt;/strong&gt; package allows you to change the margins of the page, if you wish to.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\usepackage{geometry}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To change the individual sides’ margins, simply use &lt;code&gt;\geometry{margin=1.1in}&lt;/code&gt;. Take note that this should be put before the &lt;code&gt;\begin{document}&lt;/code&gt; since it is for the whole document. For example, we have&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\usepackage{geometry}
+\geometry{maring=1.1in}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To specify margins on four sides, we use &lt;code&gt;\geometry{left=2.5in, right=2.5in, top=2.5in, bottom=2.5in}&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\usepackage{geometry}
+\geometry{left=2.5in, right=2.5in, top=2.5in, bottom=2.5in}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/y-3prHXSA8E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;vertical-spacing&#34;&gt;Vertical spacing&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\&lt;/td&gt;
+&lt;td&gt;linebreak&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\newpage&lt;/td&gt;
+&lt;td&gt;starts a new page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\smallskip&lt;/td&gt;
+&lt;td&gt;create small vertical space&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\medskip&lt;/td&gt;
+&lt;td&gt;create medium vertical space&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\bigskip&lt;/td&gt;
+&lt;td&gt;create big vertical space&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\vspace{4in}&lt;/td&gt;
+&lt;td&gt;create vertical space of 4 inches&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;horizontal-spacing&#34;&gt;Horizontal spacing&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\noindent&lt;/td&gt;
+&lt;td&gt;suppresses paragraph indentatio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\enskip&lt;/td&gt;
+&lt;td&gt;horizontal space of half of the size of letter  M&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\quad&lt;/td&gt;
+&lt;td&gt;horizontal space of one of the size of letter M&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\qquad&lt;/td&gt;
+&lt;td&gt;horizontal space of two of the size of letter M&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\hspace{2cm}&lt;/td&gt;
+&lt;td&gt;horizontal space 2cm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\hfill&lt;/td&gt;
+&lt;td&gt;horizontal space to make the line right-aligned&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/vswt8DDcMiQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;paragraph-layout&#34;&gt;Paragraph Layout&lt;/h1&gt;
+&lt;h2 id=&#34;line-spacing&#34;&gt;Line spacing&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;setspace&lt;/strong&gt; package allows you to edit the line spacing between each line for overall text, similar to Word’s function. Options include &lt;code&gt;\singlespacing&lt;/code&gt;, &lt;code&gt;\onehalfspacing&lt;/code&gt;, &lt;code&gt;\doublespacing&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;\usepackage{setspace}
+\singlespacing
+\onehalfspacing
+\doublespacing
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/aMqmt49j9So&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;text-alignment&#34;&gt;Text Alignment&lt;/h2&gt;
+&lt;p&gt;Default of text is justified.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For centered text, enclosed &lt;code&gt;\begin{center}&lt;/code&gt; and &lt;code&gt;\end{center}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;For right-aligned text, enclosed &lt;code&gt;\begin{flushright}&lt;/code&gt; and &lt;code&gt;\end{flushright}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;For left-aligned text, enclosed &lt;code&gt;\begin{flushleft}&lt;/code&gt; and &lt;code&gt;\end{flushleft}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{center}
+	I am centered text.
+\end{center}
+\begin{flushright}
+	I am right-aligned text.
+\end{flushright} 
+\begin{flushleft}
+	I am left-aligned text.
+\end{flushleft}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6Rv3RFrB6k8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;font-layout&#34;&gt;Font Layout&lt;/h1&gt;
+&lt;h2 id=&#34;global-font-size&#34;&gt;Global font Size&lt;/h2&gt;
+&lt;p&gt;To change font size of the whole document, we define it the premable:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass[12pt]{article}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As shown above, we can change the font size used throughout the paper by changing the number here. In this example, font size is 12, and we can change it by just typing another number to replace the &lt;strong&gt;12&lt;/strong&gt;. If you want other size, you can choose 10 or 11.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass[10pt]{article}
+\documentclass[11pt]{article}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RcMbVfnzwxk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;local-font-size&#34;&gt;Local font size&lt;/h2&gt;
+&lt;p&gt;To change the font size only for some part of the text, we use some relative size commands (from small to big):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\Huge
+\LARGE
+\Large
+\large
+\normalsize
+\small
+\footnotesize
+\scriptsize
+\tiny
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here is the example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{document}
+You know what? 
+I am an honor student of economics of NUS. 
+Our school is the {\Huge  best} in {\tiny Asia}.
+What does that mean? 
+I am {\large Best} of {\LARGE best}.
+Really? 
+{\Huge Yes}.\footnote{Seriously?}
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Technically, it is the mapping of the relative size command:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;10pt&lt;/th&gt;
+&lt;th&gt;11pt&lt;/th&gt;
+&lt;th&gt;12pt&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\tiny&lt;/td&gt;
+&lt;td&gt;5pt&lt;/td&gt;
+&lt;td&gt;6pt&lt;/td&gt;
+&lt;td&gt;6pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\scriptsize&lt;/td&gt;
+&lt;td&gt;7pt&lt;/td&gt;
+&lt;td&gt;8pt&lt;/td&gt;
+&lt;td&gt;8pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\footnotesize&lt;/td&gt;
+&lt;td&gt;8pt&lt;/td&gt;
+&lt;td&gt;9pt&lt;/td&gt;
+&lt;td&gt;10pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\small&lt;/td&gt;
+&lt;td&gt;9pt&lt;/td&gt;
+&lt;td&gt;10pt&lt;/td&gt;
+&lt;td&gt;11pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\normalsize&lt;/td&gt;
+&lt;td&gt;10pt&lt;/td&gt;
+&lt;td&gt;11pt&lt;/td&gt;
+&lt;td&gt;12pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\large&lt;/td&gt;
+&lt;td&gt;12pt&lt;/td&gt;
+&lt;td&gt;12pt&lt;/td&gt;
+&lt;td&gt;14pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\Large&lt;/td&gt;
+&lt;td&gt;14pt&lt;/td&gt;
+&lt;td&gt;14pt&lt;/td&gt;
+&lt;td&gt;17pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\LARGE&lt;/td&gt;
+&lt;td&gt;17pt&lt;/td&gt;
+&lt;td&gt;17pt&lt;/td&gt;
+&lt;td&gt;20pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\huge&lt;/td&gt;
+&lt;td&gt;20pt&lt;/td&gt;
+&lt;td&gt;20pt&lt;/td&gt;
+&lt;td&gt;25pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\Huge&lt;/td&gt;
+&lt;td&gt;25pt&lt;/td&gt;
+&lt;td&gt;25pt&lt;/td&gt;
+&lt;td&gt;25pt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Sometimes, we want to exactly match directly. We can use &lt;code&gt;\fontsize{size}{leading}\selectfont&lt;/code&gt;. For example, &lt;code&gt;\fontsize{10}{12}\selectfont&lt;/code&gt; means 10pt type with 12pt leading.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/T9qkinGoPoI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;font-color&#34;&gt;Font color&lt;/h2&gt;
+&lt;p&gt;To change color, use package &lt;strong&gt;color&lt;/strong&gt; and then enclosed the passage with brace.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{color}
+{\color{red} abc is 123.}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RcMbVfnzwxk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;basic-font-transformation&#34;&gt;Basic font transformation&lt;/h2&gt;
+&lt;p&gt;For most daily usages, there are six commands (italic, bold, small cap, slant font, typewriter):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\textit{italic} 
+\textbf{boldface}
+\textsc{small cap}
+\textsl{slant font}
+\textsf{Sans Serif}
+\texttt{typewriter}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For more details, see below discussion on font family, font series, and font shape.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/15J1NK0yAyM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;font-emphasis&#34;&gt;Font emphasis&lt;/h2&gt;
+&lt;p&gt;Font emaphsis involves underline, italic and upper case:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Emphasis&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\underline{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;underline&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\emph{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;Italic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\uppercase{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;all capital letters&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Highlighting and strikeout are not included in standard package. To use it, we need to use the packages &lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;soul&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{color,soul}
+\hl{I am highlighted}
+\sout{haha}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sS7WE9UkWwI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;font-family&#34;&gt;Font Family&lt;/h2&gt;
+&lt;p&gt;Under computer modern font family, roman (or serif typeface) font is used. We can use sans serif and typewriter font family.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Switch&lt;/th&gt;
+&lt;th&gt;font family&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\texttt{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\ttfamily &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;typewriter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\textsf{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\sffamily &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;san serif font&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\textrm{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\rmfamily&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;roman font&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;font-series&#34;&gt;Font Series&lt;/h2&gt;
+&lt;p&gt;Font series mean how dark the pen and how width of the pen.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;selectfont&lt;/th&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Switch&lt;/th&gt;
+&lt;th&gt;font series&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontseries{m}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontseries{b}&lt;/td&gt;
+&lt;td&gt;\textbf{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\bfseries &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;bold&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontseries{bx}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;bold extended&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontseries{sb}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;semi-bold&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontseries{c}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;condensed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;font-shape&#34;&gt;Font shape&lt;/h2&gt;
+&lt;p&gt;Font shape is the form of letter:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Selectfont&lt;/th&gt;
+&lt;th&gt;Command&lt;/th&gt;
+&lt;th&gt;Switch&lt;/th&gt;
+&lt;th&gt;Shape&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontshape{it}&lt;/td&gt;
+&lt;td&gt;\textit{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\itshape &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;italics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontshape{sl}&lt;/td&gt;
+&lt;td&gt;\textsl{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\textsl &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;slant&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontshape{sc}&lt;/td&gt;
+&lt;td&gt;\textrm{&amp;hellip;}&lt;/td&gt;
+&lt;td&gt;{\scshape &amp;hellip;}&lt;/td&gt;
+&lt;td&gt;small capital&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontshape{ui}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;upright italic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\fontshape{ol}&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;outline&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Beamer</title>
+      <link>/programming/latex/beamer/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/programming/latex/beamer/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;p&gt;Beamer package to make slides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Title Page&lt;/li&gt;
+&lt;li&gt;Content Slide&lt;/li&gt;
+&lt;li&gt;List&lt;/li&gt;
+&lt;li&gt;Figure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;first-page&#34;&gt;First page&lt;/h2&gt;
+&lt;p&gt;Presentation slides can be easily created using documentclass &lt;strong&gt;bemaer&lt;/strong&gt;.
+The first page introduction slides is exactly the same as when we write an article.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{beamer}
+\title{Hello}
+\author{VIP \and VVIP}
+\date{\today}
+\begin{document}
+\maketitle
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;content&#34;&gt;Content&lt;/h2&gt;
+&lt;p&gt;For the rest of document, the only difference is to specify from where to where a slide starts and ends. To start, use &lt;code&gt;\begin{frame}&lt;/code&gt; to start slide and &lt;code&gt;\end{frame}&lt;/code&gt; to end slide.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\documentclass{beamer}
+\begin{document}
+\begin{frame}
+	\frametitle{Happy}
+	Hello World!
+\end{frame}
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;list&#34;&gt;List&lt;/h2&gt;
+&lt;p&gt;Very often, bullet points are used in slides. We can use &lt;strong&gt;itemize&lt;/strong&gt;, &lt;strong&gt;enumerate&lt;/strong&gt;, and &lt;strong&gt;description&lt;/strong&gt; lists.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{frame}
+	\frametitle{Conclusion}
+	\begin{itemize}
+		\item lalala
+		\item hahaha
+	\end{itemize}
+\end{frame}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;picture&#34;&gt;Picture&lt;/h2&gt;
+&lt;p&gt;To include picture, we also use &lt;code&gt;includegraphics{}&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\begin{frame}
+	\frametitle{Visual}
+	\includegraphics{haha.jpg}
+\end{frame}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bhdddw8-eo0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>LaTeX Programming</title>
+      <link>/programming/latex/latexprogramming/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/programming/latex/latexprogramming/</guid>
+      <description>&lt;p&gt;Learning Objectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable: &lt;code&gt;\newcommand&lt;/code&gt;, &lt;code&gt;newenvironment&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Conditional: if&lt;/li&gt;
+&lt;li&gt;Iteration: for loop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;newcommand&#34;&gt;Newcommand&lt;/h1&gt;
+&lt;h2 id=&#34;basic-newcommand&#34;&gt;Basic Newcommand&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newcommand\NUS{National University of Singapore}
+
+I like \NUS{}. Do you like \NUS{}?
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;math-newcommand&#34;&gt;Math newcommand&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newcommand\sumx{\ensuremath{x_1+\cdots+x_n}}
+
+I like \sumx{}.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fMinmPAAakY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;newcommand-with-argument&#34;&gt;Newcommand with argument&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newcommand\poem[1]{#1 eats an apple.}
+
+\poem{Peter}
+\poem{Mary}
+
+\newcommand\poems[2]{#1 eats #2.}
+
+\poems{Peter}{apple}
+\poems{John}{banana}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;math-newcommand-with-argument&#34;&gt;Math newcommand with argument&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newcommand\sumint[1]{\ensuremath{1+\cdots+#1}}
+
+I like to do \sumint{3} and \sumint{n}.
+
+\newcommand\sumints[2]{\ensuremath{#1+\cdots+#2}}
+
+ I like to do \sumints{1}{2} and \sumints{3}{n}.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/H40y7LAJexQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;new-environment&#34;&gt;New Environment&lt;/h1&gt;
+&lt;h2 id=&#34;baisc-newenvironment&#34;&gt;Baisc newenvironment&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{important}
+{\begin{center}\color{red}}
+{\end{center}}
+
+I like think the following is important:
+\begin{important}
+I eat an apple.
+\end{important}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;newenvironemt-with-argument&#34;&gt;Newenvironemt with argument&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{important}[1]
+{\begin{center}\color{#1}}
+{\end{center}}
+ 
+I like think the following is important:
+\begin{important}{blue}
+I eat an apple.
+\end{important}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;newenvironment-with-arguments&#34;&gt;Newenvironment with arguments&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{important}[2]
+{\begin{center}\textbf{#2:} \color{#1}}
+{\end{center}}
+
+I like think the following is important:
+\begin{important}{blue}{Peter}
+I eat an apple.
+\end{important}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Pxc0XL0bxpI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;conditional&#34;&gt;Conditional&lt;/h1&gt;
+&lt;h2 id=&#34;conditional-if&#34;&gt;Conditional If&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newenvironment{important}[2]
+{\begin{center}\textbf{#2:} \color{#1}}
+{\end{center}}
+
+I like think the following is important:
+\begin{important}{blue}{Peter}
+I eat an apple.
+\end{important}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;conditional-if-else&#34;&gt;Conditional If else&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\newif\ifcond
+\condfalse % try \condtrue
+\ifcond
+Yes, this is not me. % run if true
+\else 
+No, this is you. % run if false
+\fi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fkm62YCniaU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;iteration&#34;&gt;Iteration&lt;/h1&gt;
+&lt;h2 id=&#34;iteration-for-each-loop&#34;&gt;Iteration for each loop&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-latex&#34;&gt;\usepackage{pgffor}
+
+\foreach \person in {Peter, John, Mary}
+{\person{} eats an apple.\par}
+
+\foreach \n in {1,...,10}
+{\n +}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/EnyiGDlu7HQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

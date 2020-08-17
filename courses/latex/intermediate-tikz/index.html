@@ -1,0 +1,1177 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Learning Objectives:
+Intermediate techniques of TikZ:
+ Tree Grouping Plotting Calculate Coordinates For loop  Tree General Tree \begin{tikzpicture}\node(0){a}child{node{b}}child{node{c}child{node{d}}child{node{e}}};\end{tikzpicture} Game Tree Since nodes in game trees are often defined by dots, we need to specify them.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/latex/intermediate-tikz/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/latex/intermediate-tikz/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/courses/latex/intermediate-tikz/">
+  <meta property="og:title" content="Intermediate TikZ | Chiu Yu Ko">
+  <meta property="og:description" content="Learning Objectives:
+Intermediate techniques of TikZ:
+ Tree Grouping Plotting Calculate Coordinates For loop  Tree General Tree \begin{tikzpicture}\node(0){a}child{node{b}}child{node{c}child{node{d}}child{node{e}}};\end{tikzpicture} Game Tree Since nodes in game trees are often defined by dots, we need to specify them."><meta property="og:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-05-04T00:00:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2019-05-04T00:00:00&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Intermediate TikZ | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#book"><span>Book</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/latex/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/latex/tikz-cookbook/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/latex/tikz-cookbook/">Tikz CookBook</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/tikz-cookbook-companion/">TikZ Cookbook Companion</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/latex/consumer/">Example</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/latex/consumer/">Consumer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/producer/">Producer Theory</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/demand-and-supply/">Demand and Supply</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/labour-economics/">Labor Economics</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/game-theory/">Game Theory</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/macroeconomics/">Macroeconomics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/latex/introduction/">Tutorial</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/latex/introduction/">Introduction to LaTeX and TikZ</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/basiclatex/">Basic LaTeX</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/latexprogramming/">LaTeX Programming</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/beamer/">Beamer</a>
+      </li>
+      
+      <li >
+        <a href="/courses/latex/basictikz/">Basic TikZ</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/latex/intermediate-tikz/">Intermediate TikZ</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#general-tree">General Tree</a></li>
+    <li><a href="#game-tree">Game Tree</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#scope">Scope</a></li>
+    <li><a href="#style">Style</a></li>
+    <li><a href="#tikzset">tikzset</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#mathematical-expression">Mathematical Expression</a></li>
+    <li><a href="#data-plot">Data plot</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#zoom-out">Zoom out</a></li>
+    <li><a href="#zoom-in">Zoom in</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#grid">Grid</a></li>
+    <li><a href="#relative-to-two-points">Relative to two points</a></li>
+    <li><a href="#average-of-two-points">Average of two points</a></li>
+    <li><a href="#intersection-of-two-named-paths">Intersection of two named paths</a></li>
+    <li><a href="#multiple-intersections-of-two-named-paths">Multiple intersections of two named paths</a></li>
+    <li><a href="#example-demand-and-supply">Example: Demand and Supply</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#for-loop">For Loop</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Intermediate TikZ</h1>
+
+          <div class="article-style">
+            <p>Learning Objectives:</p>
+<p>Intermediate techniques of TikZ:</p>
+<ul>
+<li>Tree</li>
+<li>Grouping</li>
+<li>Plotting</li>
+<li>Calculate Coordinates</li>
+<li>For loop</li>
+</ul>
+<h1 id="tree">Tree</h1>
+<h2 id="general-tree">General Tree</h2>
+<pre><code class="language-latex">\begin{tikzpicture}
+	\node(0){a}
+		child{node{b}}
+		child{node{c}
+			child{node{d}}
+			child{node{e}}
+		};
+\end{tikzpicture}
+</code></pre>
+<h2 id="game-tree">Game Tree</h2>
+<p>Since nodes in game trees are often defined by dots, we need to specify them.</p>
+<pre><code class="language-latex">\begin{tikzpicture}
+\tikzstyle{hollow node}=[circle,draw,inner sep=1.5]
+\tikzstyle{solid node}=[circle,draw,inner sep=1.5,fill=black]
+\node[hollow node]{}
+	child{node[solid node]{}}
+	child{node[solid node]{}}
+	child{node[solid node]{}}
+;
+\end{tikzpicture}
+</code></pre>
+<h1 id="grouping">Grouping</h1>
+<p>We can apply decoration to multiple lines.</p>
+<h2 id="scope">Scope</h2>
+<p>Using scope is to allow decorations to be applied to multiple lines.</p>
+<pre><code class="language-latex">\begin{tikzpicture}
+\begin{scope} [red, thick]
+	\draw (0,0)--(3,3);
+	\draw (0,3)--(3,0);
+\end{scope}
+\end{tikzpicture}
+</code></pre>
+<h2 id="style">Style</h2>
+<p>Using style is to allow decorations to be applied with flexibility:</p>
+<pre><code class="language-latex">\begin{tikzpicture}[marked/.style = {red, very thick}]
+\draw[marked] (0,0)--(3,3);
+\draw[marked] (0,3)--(3,0);
+\end{tikzpicture}
+</code></pre>
+<h2 id="tikzset">tikzset</h2>
+<p>Using style is to allow decorations to be applied to multiple figures.</p>
+<pre><code class="language-latex">\tikzset[marked/.style = {red, very thick}]
+\tikzset[trivial/.style = {blue, thin}]
+\begin{tikzpicture}
+\draw[marked] (0,0)--(3,3);
+\draw[trivial] (0,3)--(3,0);
+\end{tikzpicture}
+</code></pre>
+<h1 id="plotting">Plotting</h1>
+<h2 id="mathematical-expression">Mathematical Expression</h2>
+<pre><code class="language-latex">\begin{tikzpicture}
+\draw[blue,&lt;-&gt;] (4,0) -| (0,4); 
+\draw[red, domain=0:2] plot (\x,\x*\x);
+\end{tikzpicture}
+</code></pre>
+<h2 id="data-plot">Data plot</h2>
+<p>For data plot, we need to load the package <code>\usepackage{pgfplots}</code>.</p>
+<pre><code class="language-latex">\usepackage{tikz}
+\usepackage{pgfplots}
+\begin{tikzpicture}
+\begin{axis}[xlabel=x,ylabel=y]
+	\addplot coordinates {(1,1) (2,0) (3,3) (4,2)};
+\end{axis}
+</code></pre>
+<h1 id="scale">Scale</h1>
+<h2 id="zoom-out">Zoom out</h2>
+<p>We can use <code>scale=0.5</code> to make the zoom out.</p>
+<pre><code class="language-latex">\begin{tikzpicture}[scale=0.5]
+	\draw (0,0)--(1,1);
+	\draw (0,1)--(1,0);
+\end{tikzpicture}
+</code></pre>
+<h2 id="zoom-in">Zoom in</h2>
+<p>We can use <code>scale=2</code> to make the zoom in.</p>
+<pre><code class="language-latex">\begin{tikzpicture}[scale=2]
+	\draw (0,0)--(1,1);
+	\draw (0,1)--(1,0);
+\end{tikzpicture}
+</code></pre>
+<h1 id="find-coordinates">Find coordinates</h1>
+<h2 id="grid">Grid</h2>
+<p>One of the main difficulties in using TikZ to draw diagram is to find the appropriate coordinates. One way to see where is should put the coordinate is by using <code>grid</code></p>
+<pre><code class="language-latex">\begin{tikzpicture}
+\draw[step=1,gray,very thin] (0,0) grid (4,4);
+\end{tikzpicture}
+</code></pre>
+<h2 id="relative-to-two-points">Relative to two points</h2>
+<p>To calculate new coordinates based on $(a,b)$ and $(c,d)$, we can use <code>|-</code> and <code>-|</code>. We have $(a,d)$ if we have <code>(a,b|-c,d)</code> and $(c,b)$ if we have <code>(a,b-|c,d)</code></p>
+<pre><code class="language-latex">\begin{tikzpicture}
+\node[circle, fill=red] at (1,1) {};
+\node[circle, fill=blue] at (3,3){};
+\node[circle, fill=green] at (1,1|- 3,3){};
+\node[circle, fill=purple] at (1,1-| 3,3){};
+\end{tikzpicture}
+</code></pre>
+<h2 id="average-of-two-points">Average of two points</h2>
+<p>To calculate mid point of based on $(a,b)$ and $(c,d)$, we can use <code>($(a,b)!0.5!(c,d)$)</code>.</p>
+<pre><code class="language-latex">\begin{tikzpicture}
+\node[circle, fill=red] at (1,1) {};
+\node[circle, fill=blue] at (3,3){};
+\node[circle, fill=green] at ($(1,1)!0.5!(3,3)$){};
+\node[circle, fill=purple] at ($(1,1)!0.25!(3,3)$){};
+\end{tikzpicture}
+</code></pre>
+<h2 id="intersection-of-two-named-paths">Intersection of two named paths</h2>
+<p>To calculate in intersections, we need to use <code>\usetikzlibrary{intersections}</code>.</p>
+<pre><code class="language-latex">\usetikzlibrary{intersections}
+\begin{tikzpicture}
+\draw[name path=Demand] (0,3) -- (3,0);
+\draw[name path=Supply] (0,0) -- (3,3);
+\path [name intersections={of=Demand and Supply,by=E}];
+\fill [red] (E) circle (2pt);
+\end{tikzpicture}
+</code></pre>
+<h2 id="multiple-intersections-of-two-named-paths">Multiple intersections of two named paths</h2>
+<pre><code class="language-latex">\usepackage{tikz}
+\usetikzlibrary{intersections}
+\begin{tikzpicture}
+\draw[name path=circle] (0,0) circle (2);
+\draw[name path=line] (-3,-3) -- (3,3);
+\fill [red, name intersections={of = circle and line}] (intersection-1) circle (4pt);
+\fill [blue, name intersections={of =circle and line}] (intersection-2) circle (4pt);
+\end{tikzpicture}
+</code></pre>
+<h2 id="example-demand-and-supply">Example: Demand and Supply</h2>
+<p>We illustrate how to draw demand and supply curve using the techniques presented above:</p>
+<pre><code class="language-latex">\usepackage{tikz}
+\usetikzlibrary{calc,intersections}
+\begin{tikzpicture}[scale=0.8]
+\draw [thick](0,6) node [left] {P} |- (6,0) node [below] {Q};
+\draw[thick,blue!90, name path =Supply](1,1)--(5,5) node[right]{Supply};
+\draw[thick,blue!90, name path=Demand](1,5)--(5,1) node[right]{Demand};
+\path [name intersections={of=Demand and Supply,by=E}];
+\draw[dashed] (E -| 0,0) node[left]{$P^*$}--(E)--(E |- 0,0) node[below]{$Q^*$};
+\draw[black,fill] (E) circle [radius=0.15];
+\end{tikzpicture}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/YYDVNI1j5CM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="programming">Programming</h1>
+<h2 id="for-loop">For Loop</h2>
+<p>The syntax to write a for loop is <code>\foreach</code> and variable would be <code>\x</code>.</p>
+<pre><code class="language-latex">\draw (0,0)--(6,0);
+\foreach \x in {0,...,6}{
+	\draw (\x,-1)--(\x,1);
+}
+</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/oOyU1PyVn0k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/latex/basictikz/" rel="next">Basic TikZ</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/latex/introduction/" rel="prev">Introduction to LaTeX and TikZ</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on May 4, 2019</p>
+
+          
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses%5clatex%5cIntermediate-TikZ.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    2012-2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

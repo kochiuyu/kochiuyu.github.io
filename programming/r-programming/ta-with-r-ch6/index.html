@@ -1,0 +1,1204 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="noScrappingWe will cover two common ways to extract files that is not from database directly:
+pdf files, andhtml files.PDF filesWe will cover how to scrap data from:">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/programming/r-programming/ta-with-r-ch6/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/programming/r-programming/ta-with-r-ch6/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/programming/r-programming/ta-with-r-ch6/">
+  <meta property="og:title" content=" | Chiu Yu Ko">
+  <meta property="og:description" content="noScrappingWe will cover two common ways to extract files that is not from database directly:
+pdf files, andhtml files.PDF filesWe will cover how to scrap data from:"><meta property="og:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-09-09T00:00:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title> | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#book"><span>Book</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/programming/"><span>Programming</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/others/"><span>Others</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/r-programming/">ROverview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r-programming/">R</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/r-programming/installation/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/programming/r-programming/installation/">Installation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/r-programming/technical-analysis-with-r/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/programming/r-programming/technical-analysis-with-r/">Technical analysis with R</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/excel-vba-r/">Financial programming with Excel VBA R</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/programming/r-programming/package/">R-Package</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/programming/r-programming/package/">Candle Sticks</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r-programming/ta-with-r/">Technical Analysis with R</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch1/">Chapter 1 Introduction</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch2/">Chapter 2 Working with Data</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch3/">Chapter 3 Plotting</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch4/">Chapter 4 Statistics</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch5/">Chapter 5 Programming</a>
+      </li>
+      
+      <li class="active">
+        <a href="/programming/r-programming/ta-with-r-ch6/">Chapter 6 Scrapping</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch7/">Chapter 7 Quantmod</a>
+      </li>
+      
+      <li >
+        <a href="/programming/r-programming/ta-with-r-ch8/">Chapter 8 Quanstrat</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1></h1>
+
+          <div class="article-style">
+            
+
+<div id="TOC">
+no
+</div>
+
+<div id="scrapping" class="section level1">
+<h1>Scrapping</h1>
+<p>We will cover two common ways to extract files that is not from database directly:</p>
+<ol style="list-style-type: decimal">
+<li>pdf files, and</li>
+<li>html files.</li>
+</ol>
+<div id="pdf-files" class="section level2">
+<h2>PDF files</h2>
+<p>We will cover how to scrap data from:</p>
+<ol style="list-style-type: decimal">
+<li>extract pdf files stored in offline</li>
+<li>download pdf file and extract</li>
+<li>massive download and extact</li>
+</ol>
+<div id="offline-pdf-file" class="section level3">
+<h3>Offline pdf file</h3>
+<p>We need to install and load <strong>pdftools</strong> package to do the extraction.</p>
+<pre class="r"><code>install.packages(&quot;pdftools&quot;)
+library(pdftools)</code></pre>
+<p>To read pdf as textfile, use <strong>pdf_text()</strong>.</p>
+<pre class="r"><code>txt &lt;- pdf_text(&quot;path/file.pdf&quot;)</code></pre>
+<p>Then we can extract a particular page.</p>
+<pre class="r"><code>test &lt;- txt[49] #page 49</code></pre>
+<p>The pdf file contains a table.</p>
+<p>To extract rows into list, we use the function scan.</p>
+<pre class="r"><code>rows&lt;-scan(textConnection(test), 
+           what=&quot;character&quot;, sep = &quot;\n&quot;)</code></pre>
+<p>Then we can delimit rows into cells.</p>
+<pre class="r"><code>row =unlist(strsplit(rows[1],&quot; \\s+ &quot;))</code></pre>
+</div>
+<div id="online-pdf-file" class="section level3">
+<h3>Online pdf file</h3>
+<p>First we download a pdf file from the web. We use the function <strong>download.file</strong>.</p>
+<p>Import the pdf file and then extract P.49 where it has a table. Then we scan to separate text file into rows.</p>
+<p>Then we loop over the rows (starting from row 7) for the following operations:
+1. split each row that is separated by space <strong>\\s+</strong> using strsplit,
+2. unlist the result to make it a vector, and (3) store the third cells if it is not empty.</p>
+<pre class="r"><code>link &lt;- paste0(
+  &quot;http://www.singstat.gov.sg/docs/&quot;,
+  &quot;default-source/default-document-library/&quot;,
+  &quot;publications/publications_and_papers/&quot;,
+  &quot;cop2010/census_2010_release3/&quot;,
+  &quot;cop2010sr3.pdf&quot;)
+download.file(link, &quot;census2010_3.pdf&quot;, mode = &quot;wb&quot;)
+
+txt &lt;- pdf_text(&quot;census2010_3.pdf&quot;)
+test &lt;- txt[49]  #P.49
+rows&lt;-scan(textConnection(test), what=&quot;character&quot;,
+           sep = &quot;\n&quot;)  
+
+name&lt;-c()
+total&lt;-c()
+
+for (i in 7:length(rows)){
+  row = unlist(strsplit(rows[i],&quot; \\s+ &quot;))
+  if (!is.na(row[3])){
+     name &lt;- c(name, row[2])
+     total&lt;- c(total,
+               as.numeric((gsub(&quot;,&quot;, &quot;&quot;, row[3]))))
+  }
+}</code></pre>
+</div>
+<div id="scrapping-through-massive-download" class="section level3">
+<h3>Scrapping through massive download</h3>
+<p>We will use the <strong>RCurl</strong> package to download a large of csv files. Very often, we need to download a lot of csv files from the website. Luckily csv files are stored on the website with structured url paths.</p>
+<p>For example, suppose that we want to download the all historical weather data of Singapore airport. We go to the website <a href="http://www.weather.gov.sg/climate-historical-daily/" class="uri">http://www.weather.gov.sg/climate-historical-daily/</a>. Then we can see from the bottom that the links for download csv file is
+<a href="http://www.weather.gov.sg/files/dailydata/DAILYDATA_S24_201712.csv" class="uri">http://www.weather.gov.sg/files/dailydata/DAILYDATA_S24_201712.csv</a>.</p>
+<p>Hence, we will use getURL to get the file and the use textConnection to read the csv file directly.</p>
+<pre class="r"><code>install.packages(&quot;RCurl&quot;)
+library(RCurl)
+link&lt;-paste0(&quot;http://www.weather.gov.sg/files/&quot;,
+             &quot;dailydata/DAILYDATA_S24_201712.csv&quot;)
+x &lt;- getURL(URL)
+df&lt;-read.csv(textConnection(x))</code></pre>
+<p>However, very often, we want to download more months. Then we can use loop.
+By guessing and checking, we know that S24 refers to Changi airport, 2017 is the year and 12 is December. To download the whole year of data, then we have to download all 12-month data, and at each time the link dynamically changes and the data is combined each round:</p>
+<pre class="r"><code>site&lt;-&quot;http://www.weather.gov.sg/files/dailydata/&quot;
+months &lt;- c(&quot;01&quot;,&quot;02&quot;,&quot;03&quot;,&quot;04&quot;,&quot;05&quot;,&quot;06&quot;,
+            &quot;07&quot;,&quot;08&quot;,&quot;09&quot;,&quot;10&quot;,&quot;11&quot;,&quot;12&quot;)
+df &lt;-data.frame()
+for (month in months){
+  filename &lt;-paste0(&quot;DAILYDATA_S24_2017&quot;,month,&quot;.csv&quot;)
+  link&lt;-paste0(site,filename)
+  x &lt;- getURL(link)
+  temp&lt;-read.csv(textConnection(x))
+  df &lt;-rbind(df,temp)
+}</code></pre>
+<p>Alternatively, we can download each months as a separate csv file into a single folder and then combine all csv files at the end. This is particularly useful when the csv files are huge.</p>
+<p>The following codes first download all the csv files into a temp folder and then combine all csv files in that folder. To combine all csv files in the folder, we need to obtain the path of all files using <code>list.file'' where the option</code>full.names’’ is set to be TRUE to also get the directory path. Then we need to have a list of csv files by using lapply with the import function fread. Finally, we use ``rbindlist’’ to combine all data in the list.</p>
+<pre class="r"><code>site&lt;-&quot;http://www.weather.gov.sg/files/dailydata/&quot;
+months &lt;- c(&quot;01&quot;,&quot;02&quot;,&quot;03&quot;,&quot;04&quot;,&quot;05&quot;,&quot;06&quot;,
+            &quot;07&quot;,&quot;08&quot;,&quot;09&quot;,&quot;10&quot;,&quot;11&quot;,&quot;12&quot;)
+df &lt;-data.frame()
+# Download data
+for (month in months){
+  filename &lt;-paste0(&quot;DAILYDATA_S24_2017&quot;,month,&quot;.csv&quot;)
+  link&lt;-paste0(site,filename)
+  x &lt;- getURL(link)
+  temp&lt;-read.csv(textConnection(x))
+  write.csv(temp,paste0(&quot;./temp/&quot;,filename), 
+            row.names=FALSE)
+}
+# Combine data
+library(data.table)
+folder&lt;-&quot;./temp/&quot;
+csv.list &lt;- list.files(pattern = &quot;\\.csv$&quot;)
+lst &lt;- lapply(csv.list, fread)
+df &lt;- rbindlist(lst,fill=TRUE)</code></pre>
+</div>
+</div>
+<div id="scrapping-from-web" class="section level2">
+<h2>Scrapping from Web</h2>
+<p>We will use the <strong>rvest</strong> package to scrap directly from the web. However, it is sometimes convenient to know what to extract using some minor tools. We will use <strong>SelectorGadget</strong> from Chrome browser.</p>
+<p>With the keyword SelectorGadget, use internet search engine to download and install the file. The program is easy to use. The first click will select area and then subsequent click will include or exclude elements.</p>
+<p>To install and load the rvest package, we use the following code:</p>
+<pre class="r"><code>install.packages(&quot;rvest&quot;)
+library(rvest)</code></pre>
+<div id="wikipedia-table" class="section level3">
+<h3>Wikipedia Table</h3>
+<p>We will do two scrapping exercises:</p>
+<ol style="list-style-type: decimal">
+<li>scarp from Wikipedia table, and</li>
+<li>scrap from an unfriendly website.</li>
+</ol>
+<p>The following code extracts the student t’s distribution table from Wikipedia. Using the SelectorGadget, we can see that the table is called <strong>.wikitable</strong>. Then we will extract that using <strong>html_nodes()</strong> and then we parse the html data into a dataframe using <strong>html_table()</strong>.</p>
+<pre class="r"><code>link &lt;-paste0(&quot;https://en.wikipedia.org/wiki/&quot;,
+              &quot;Student%27s_t-distribution&quot;)
+webpage &lt;- read_html(link)
+data &lt;- html_nodes(webpage,&quot;.wikitable&quot;)
+table&lt;- html_table(data[[1]],header = FALSE)</code></pre>
+</div>
+<div id="other-websites" class="section level3">
+<h3>Other Websites</h3>
+<p>To scarp from unstructural data, then we need to find what is the selector using the SelectorGadget. Then we can read the data as text.</p>
+<pre class="r"><code>link&lt;-paste0(&quot;http://www.fas.nus.edu.sg/ecs/&quot;,
+             &quot;people/staff.html&quot;)
+webpage &lt;- read_html(link)
+data &lt;- html_nodes(webpage,&quot;br+ table td&quot;)
+content &lt;-html_text(data)</code></pre>
+<p>Then we can transform dataset into dataframe.</p>
+<pre class="r"><code>df = data.frame(matrix(content,ncol=5,byrow=T),
+                stringsAsFactors=FALSE)
+colnames(df)&lt;-df[1,]
+df[-1,]</code></pre>
+<pre><code>##                                      Title                        Name
+## 2  Satoru TAKAHASHI\r\n                                      6516 6259
+## 3                                6516 6020                      ecscnc
+## 4                                   ecszjl Director (Graduate Program)
+## 5                                    Title                        Name
+## 6             Management Assistant Officer  Ms Fatimah AHMAD\r\n\t\t\t\t  
+## 7             Management Assistant Officer            Ms CHEE Lee Kuen
+## 8             Management Assistant Officer             Ms Diana ISMAIL
+## 9                                  Manager               Ms Nicky KHEH
+## 10                       Assistant Manager             Ms NEO Seok Min
+## 11                                 Manager     Ms PAK Ming Foon, Ginny
+## 12            Management Assistant Officer           Mdm TAN Leng Choo
+## 13                               Executive             Ms TAN Pei Ying
+## 14                               Executive              Ms TANG Yuchen
+## 15                                 Manager                 Ms WEI Qing
+## 16                                 Manager           Ms WOON Swee Yoke
+## 17            Management Assistant Officer            Ms Salinah ZUBER
+##                                Tel                              Email
+## 2                            ecsst   Director (Undergraduate Program)
+## 3        Director (Master Program) ZENG Jinli \r\n                   
+## 4  LUO Xiao\r\n                                             6516 6231
+## 5                              Tel                              Email
+## 6                        6516 3950                              ecsfa
+## 7                        6516 3942                             ecsclk
+## 8                        6516 6013                              ecsdi
+## 9                        6516 4878                             ecsklc
+## 10                       6516 3941                             ecssec
+## 11                       6516 3956                            ecspmfg
+## 12                       6516 1304                             ecstlc
+## 13                       6601 3508                           pei.ying
+## 14                       6601 4922                           yuchen07
+## 15                       6516 8909                               weiq
+## 16                       6516 6027                             ecswsy
+## 17                       6516 3958                              ecssz
+##                        Head of Department
+## 2  CHIA Ngee Choon\r\n                   
+## 3                               6516 5177
+## 4                                   ecslx
+## 5                               Main Area
+## 6        Undergraduate (levels 1000-2000)
+## 7                             Timetabling
+## 8                   Graduate (Coursework)
+## 9                                Graduate
+## 10              Head&#39;s Personal Assistant
+## 11                          Undergraduate
+## 12                    Graduate (Research)
+## 13                    Department seminars
+## 14         Graduate (Master of Economics)
+## 15         Graduate (Master of Economics)
+## 16                          Undergraduate
+## 17       Undergraduate (levels 3000-4000)</code></pre>
+<pre class="r"><code>row.names(df) &lt;- NULL
+head(df[2:3], n=3)</code></pre>
+<pre><code>##        Name                       Tel
+## 1      Name                       Tel
+## 2 6516 6259                     ecsst
+## 3    ecscnc Director (Master Program)</code></pre>
+</div>
+</div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/programming/r-programming/ta-with-r-ch5/" rel="next"></a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/programming/r-programming/ta-with-r-ch7/" rel="prev"></a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Sep 9, 2018</p>
+
+          
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/programming%5cr-programming%5cta-with-r-Ch6.html">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    Copyright © 2012-2020. All Rights Reserved.
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

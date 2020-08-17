@@ -1,0 +1,2083 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Chiu Yu Ko">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Working with DataWe always need to clean data before working. Even data downloaded from the database is not perfect. Sometimes there are missing data. Moreover, when data are from database, we need to combine them before using.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/r-programming/ta-with-r-ch2/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/r-programming/ta-with-r-ch2/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Chiu Yu Ko">
+  <meta property="og:url" content="/courses/r-programming/ta-with-r-ch2/">
+  <meta property="og:title" content=" | Chiu Yu Ko">
+  <meta property="og:description" content="Working with DataWe always need to clean data before working. Even data downloaded from the database is not perfect. Sometimes there are missing data. Moreover, when data are from database, we need to combine them before using."><meta property="og:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-09-09T00:00:00&#43;08:00">
+    
+    <meta property="article:modified_time" content="2018-09-09T00:00:00&#43;08:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title> | Chiu Yu Ko</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Chiu Yu Ko</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#book"><span>Book</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r-programming/">R</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/r-programming/installation/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/r-programming/installation/">Installation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/r-programming/technical-analysis-with-r/">Book</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/r-programming/technical-analysis-with-r/">Technical analysis with R</a>
+      </li>
+      
+      <li >
+        <a href="/courses/r-programming/excel-vba-r/">Financial programming with Excel VBA R</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/r-programming/package/">R-Package</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/r-programming/package/">Candle Sticks</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/r-programming/ta-with-r/">Technical Analysis with R</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/r-programming/ta-with-r-ch1/">Chapter 1 Introduction</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/r-programming/ta-with-r-ch2/">Chapter 2 Working with Data</a>
+      </li>
+      
+      <li >
+        <a href="/courses/r-programming/ta-with-r-ch3/">Chapter 3 Plotting</a>
+      </li>
+      
+      <li >
+        <a href="/courses/r-programming/ta-with-r-ch4/">Chapter 4 Statistics</a>
+      </li>
+      
+      <li >
+        <a href="/courses/r-programming/ta-with-r-ch5/">Chapter 5 Programming</a>
+      </li>
+      
+      <li >
+        <a href="/courses/r-programming/ta-with-r-ch6/">Chapter 6 Scrapping</a>
+      </li>
+      
+      <li >
+        <a href="/courses/r-programming/ta-with-r-ch7/">Chapter 7 Quantmod</a>
+      </li>
+      
+      <li >
+        <a href="/courses/r-programming/ta-with-r-ch8/">Chapter 8 Quanstrat</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1></h1>
+
+          <div class="article-style">
+            
+
+
+<div id="working-with-data" class="section level1">
+<h1>Working with Data</h1>
+<p>We always need to clean data before working. Even data downloaded from the database is not perfect. Sometimes there are missing data. Moreover, when data are from database, we need to combine them before using.</p>
+<p>Learning Objectives:</p>
+<ul>
+<li><p>Five basic data types (logical, integer, numeric, complex, character)</p></li>
+<li><p>Two extended data types (date, factor)</p></li>
+<li><p>Five basic data structure (vector, matrix, array, data.frame, list)</p></li>
+<li><p>Basic data management</p></li>
+<li><p>Advanced data management with <strong>dplyr</strong> and <strong>reshape</strong></p></li>
+<li><p>Download world bank data with <strong>wbstats</strong></p></li>
+<li><p>Import and export external data through csv (comma-delimited) files</p></li>
+</ul>
+<div id="data-type" class="section level2">
+<h2>Data Type</h2>
+<p>There are five basic data types:</p>
+<ol style="list-style-type: decimal">
+<li>logical</li>
+<li>integer</li>
+<li>numeric</li>
+<li>complex</li>
+<li>character.</li>
+</ol>
+<div id="logical" class="section level3">
+<h3>Logical</h3>
+<p>Logical data type can either be TRUE and FALSE. It corresponds to integer 0 and 1.</p>
+<pre class="r"><code>x &lt;- TRUE
+x</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<pre class="r"><code>y &lt;- FALSE
+y</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code>class(x)</code></pre>
+<pre><code>## [1] &quot;logical&quot;</code></pre>
+<p>Note that We use the function <strong>class()</strong> to see the data type.</p>
+</div>
+<div id="integer" class="section level3">
+<h3>Integer</h3>
+<p>Integer data type covers all whole numbers. It is represented by number and letter L: 1L, 2L, 3L.</p>
+<pre class="r"><code>x &lt;- 1L
+x</code></pre>
+<pre><code>## [1] 1</code></pre>
+<pre class="r"><code>class(x)</code></pre>
+<pre><code>## [1] &quot;integer&quot;</code></pre>
+</div>
+<div id="numeric" class="section level3">
+<h3>Numeric</h3>
+<p>Numeric data type covers all real numbers.</p>
+<pre class="r"><code>x &lt;- 2.6
+x</code></pre>
+<pre><code>## [1] 2.6</code></pre>
+<pre class="r"><code>class(x)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+</div>
+<div id="complex" class="section level3">
+<h3>Complex</h3>
+<p>Complex data type covers all complex number.</p>
+<pre class="r"><code>x &lt;- 2 +5i
+x</code></pre>
+<pre><code>## [1] 2+5i</code></pre>
+<pre class="r"><code>class(x)</code></pre>
+<pre><code>## [1] &quot;complex&quot;</code></pre>
+</div>
+<div id="character" class="section level3">
+<h3>Character</h3>
+<p>Character data type covers all text strings.</p>
+<pre class="r"><code>x &lt;- &quot;Hello World&quot;
+x</code></pre>
+<pre><code>## [1] &quot;Hello World&quot;</code></pre>
+<pre class="r"><code>class(x)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/lJUYEBiUS8M" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</div>
+</div>
+<div id="data-type-conversion" class="section level2">
+<h2>Data type conversion</h2>
+<p>One common operation on data is to convert from one data type to another.</p>
+<p>One frequently used conversion is between character and numeric. It is because numeric data may contain comma.</p>
+<p>To convert string to number, we use <strong>as.numeric()</strong>:</p>
+<pre class="r"><code>as.numeric(&quot;12000&quot;)</code></pre>
+<pre><code>## [1] 12000</code></pre>
+<pre class="r"><code># When converting ``12,000&#39;&#39;, need to replace comma
+as.numeric(gsub(&quot;,&quot;, &quot;&quot;, &quot;12,000&quot;))</code></pre>
+<pre><code>## [1] 12000</code></pre>
+<p>Here, the function <strong>gsub</strong> is to find the comma and replace with null string where gsub stands for general substitution</p>
+<p>To convert number to character, we may use as.character():</p>
+<pre class="r"><code>as.character(1200)</code></pre>
+<pre><code>## [1] &quot;1200&quot;</code></pre>
+<div id="date" class="section level3">
+<h3>Date</h3>
+<p>Date data type covers standard calendar date. It is converted from character data type. One complication is that we need to specify the format since there are a lot of possible way to express it.</p>
+<p>For day, we use <strong>%d</strong> for day number (01-31).</p>
+<p>For month, we use <strong>%m</strong> for month number (00-12), <strong>%b</strong> for abbreviated month (e.g. Jan), and <strong>%B</strong> for unabbreviated month (e.g. January)</p>
+<p>For year, we use <strong>%y</strong> for two-digit year (e.g., 14) and <strong>%Y</strong> for four-digit year (e.g., 2014)</p>
+<pre class="r"><code>as.Date(&quot;21Jan2004&quot;, &quot;%d%b%Y&quot;)</code></pre>
+<pre><code>## [1] &quot;2004-01-21&quot;</code></pre>
+<pre class="r"><code>as.Date(&quot;21/01/04&quot;, &quot;%d/%m/%y&quot;)</code></pre>
+<pre><code>## [1] &quot;2004-01-21&quot;</code></pre>
+<pre class="r"><code>as.Date(&quot;21-01-04&quot;, &quot;%d-%m-%y&quot;)</code></pre>
+<pre><code>## [1] &quot;2004-01-21&quot;</code></pre>
+</div>
+</div>
+<div id="data-structure" class="section level2">
+<h2>Data Structure</h2>
+<p>In R, you can use different types of data structures, depending on your needs:</p>
+<ol style="list-style-type: decimal">
+<li>Vector,</li>
+<li>Matrix,</li>
+<li>Array,</li>
+<li>Dataframe, and</li>
+<li>List.</li>
+</ol>
+<p>The type of data structure used generally differs by how information is stored and displayed, and also accessed or edited.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/XQggjGHYCyw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<div id="vector" class="section level3">
+<h3>Vector</h3>
+<p>Vector is the most common and basic data structure in R.</p>
+<p>Vector is simply data of the same data type ordered in a list.</p>
+<p>The simplest vector is an integer vector. For a vector of integers from 1 to 5, we just need to use <strong>1:5</strong>.</p>
+<pre class="r"><code>x &lt;- 1:5
+x</code></pre>
+<pre><code>## [1] 1 2 3 4 5</code></pre>
+<p>Sometimes, we want to repeat the same number several times. We use the function <strong>rep()</strong>. The following code repeat 0 five times.</p>
+<pre class="r"><code>x &lt;- rep(0, 5)
+x</code></pre>
+<pre><code>## [1] 0 0 0 0 0</code></pre>
+<p>This is usually a good way to initialize a vector. Slightly more general way to create a vector of integer is to use <strong>seq()</strong>.</p>
+<p>For integers from 4 to 10 with each step being 2, we have ``seq(4,10,by=2)’’. If the step is negative, then it is decreasing.</p>
+<pre class="r"><code>x &lt;- seq(4,10,by=2)
+x</code></pre>
+<pre><code>## [1]  4  6  8 10</code></pre>
+<pre class="r"><code>x &lt;- seq(21,6,by=-3)
+x</code></pre>
+<pre><code>## [1] 21 18 15 12  9  6</code></pre>
+<p>To create a generic vector, we use the function <strong>c()</strong>. We input elements inside are separated by commas.</p>
+<p>We first create a generic integer vector.</p>
+<pre class="r"><code>x &lt;- c(1L, -1L, 3L, 2L)
+x</code></pre>
+<pre><code>## [1]  1 -1  3  2</code></pre>
+<p>Then we create a generic numeric vector.</p>
+<pre class="r"><code>x &lt;- c(1, -1, 3.5, 2)
+x</code></pre>
+<pre><code>## [1]  1.0 -1.0  3.5  2.0</code></pre>
+<p>Finally, we create a generic character vector.</p>
+<pre class="r"><code>x &lt;- c(&quot;Apple&quot;, &quot;Banana&quot;)
+x</code></pre>
+<pre><code>## [1] &quot;Apple&quot;  &quot;Banana&quot;</code></pre>
+<p>We can also create a vector of logical.</p>
+<pre class="r"><code>x &lt;- c(TRUE,FALSE)
+x</code></pre>
+<pre><code>## [1]  TRUE FALSE</code></pre>
+<p>It is easy to add new element to a vector.</p>
+<pre class="r"><code>x &lt;- c(1, -1, 3.5, 2)
+x &lt;-c(x, 5) # add new element
+x</code></pre>
+<pre><code>## [1]  1.0 -1.0  3.5  2.0  5.0</code></pre>
+<p>Since R is a vectorized program, applying mathematical operators to the vector will take effect on all elements inside the vector.</p>
+<pre class="r"><code>x &lt;- c(1, -1, 3.5, 2)
+x + 2   #every element plus 2</code></pre>
+<pre><code>## [1] 3.0 1.0 5.5 4.0</code></pre>
+<pre class="r"><code>x - 2   #every element minus 2</code></pre>
+<pre><code>## [1] -1.0 -3.0  1.5  0.0</code></pre>
+<p>Extracting elements is using the operator <strong>[]</strong>. To get the third element, we have <strong>x[3]</strong>. To get first three elements, we use <strong>x[1:3]</strong>. To get the first, third and forth elements, we use <strong>x[c(1,3,4)]</strong>.</p>
+<pre class="r"><code>x &lt;- c(1, -1, 3.5, 2)
+x[3]  #Pick out the 3rd element</code></pre>
+<pre><code>## [1] 3.5</code></pre>
+<pre class="r"><code>x[1:3] #Pick out the first three elements</code></pre>
+<pre><code>## [1]  1.0 -1.0  3.5</code></pre>
+<pre class="r"><code>x[c(1,3,4)] #Pick out 1st, 3rd and 4th elements</code></pre>
+<pre><code>## [1] 1.0 3.5 2.0</code></pre>
+<p>Size of a vector can be found by using <strong>length()</strong></p>
+<pre class="r"><code>x &lt;- 1:10
+length(x)</code></pre>
+<pre><code>## [1] 10</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ghRXepYtaE0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</div>
+<div id="factor" class="section level3">
+<h3>Factor</h3>
+<p>A factor vector isan integer vector converted from character vectors or numeric vector. It was created to save memory space because long strings converted to numbers, and only mapping is needed.</p>
+<p>A factor vector is created from character vector using <strong>factor()</strong>.</p>
+<pre class="r"><code>x &lt;- c(&quot;Apple&quot;, &quot;Banana&quot;,&quot;Apple&quot;)
+x &lt;- factor(x)
+x</code></pre>
+<pre><code>## [1] Apple  Banana Apple 
+## Levels: Apple Banana</code></pre>
+<p>While memory is usually not an issue these days, factor vector is sometimes converted from numeric vector to construct as categorical variable.</p>
+<p>The following divides data into three groups with the same length.</p>
+<pre class="r"><code>x &lt;- c(1,3,7,10)
+x &lt;- cut(x,3)
+x</code></pre>
+<pre><code>## [1] (0.991,4] (0.991,4] (4,7]     (7,10]   
+## Levels: (0.991,4] (4,7] (7,10]</code></pre>
+<p>Sometimes we want to have label to avoid make it easier.</p>
+<pre class="r"><code>x &lt;- c(1,3,7,10)
+x &lt;- cut(x,2,labels=c(&quot;L&quot;,&quot;H&quot;))
+x</code></pre>
+<pre><code>## [1] L L H H
+## Levels: L H</code></pre>
+<p>Sometimes we may use quartile to cut instead. However, in this case, we need to use the option <strong>include.lowest=TRUE</strong> to avoid data missing.</p>
+<pre class="r"><code>x &lt;- c(1,3,7,10)
+x &lt;- cut(x, quantile(x, c(0, 1/2, 1)),
+         include.lowest = TRUE)
+x</code></pre>
+<pre><code>## [1] [1,5]  [1,5]  (5,10] (5,10]
+## Levels: [1,5] (5,10]</code></pre>
+<p>We can add label to each group.</p>
+<pre class="r"><code>x &lt;- c(1,3,7,10)
+x &lt;- cut(x, quantile(x, c(0, 1/2, 1)),
+         include.lowest = TRUE,
+         labels=c(&quot;L&quot;,&quot;H&quot;))
+x</code></pre>
+<pre><code>## [1] L L H H
+## Levels: L H</code></pre>
+</div>
+<div id="matrix" class="section level3">
+<h3>Matrix</h3>
+<p>Martrix is a two-dimensional array.</p>
+<p>To define a matrix from a vector, the syntax is matrix(vector, nrow, ncol, byrow). byrow is the way we fill the array. It is either TRUE or FALSE.</p>
+<p>The following code fills the matrix by column.</p>
+<pre class="r"><code>x&lt;- matrix(1:20, nrow=5, ncol=4, byrow=FALSE)
+x</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]    1    6   11   16
+## [2,]    2    7   12   17
+## [3,]    3    8   13   18
+## [4,]    4    9   14   19
+## [5,]    5   10   15   20</code></pre>
+<p>The following code fills the matrix by row.</p>
+<pre class="r"><code>x&lt;- matrix(1:20, nrow=5, ncol=4, byrow=TRUE)
+x</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]    1    2    3    4
+## [2,]    5    6    7    8
+## [3,]    9   10   11   12
+## [4,]   13   14   15   16
+## [5,]   17   18   19   20</code></pre>
+<p>Extracting elements from matrix is similar to extraction in vector.</p>
+<pre class="r"><code>x[2,] #the second row</code></pre>
+<pre><code>## [1] 5 6 7 8</code></pre>
+<pre class="r"><code>x[,1] #the first column</code></pre>
+<pre><code>## [1]  1  5  9 13 17</code></pre>
+<pre class="r"><code>x[1,2] #first row, second column</code></pre>
+<pre><code>## [1] 2</code></pre>
+<p>One useful operation on matrix is to swap columns and row by <strong>t()</strong>, which means transpose.</p>
+<pre class="r"><code>y &lt;- t(x)
+y</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    1    5    9   13   17
+## [2,]    2    6   10   14   18
+## [3,]    3    7   11   15   19
+## [4,]    4    8   12   16   20</code></pre>
+<p>Size of matrix is rather complicated since it has two dimensions. There are three basics operations:</p>
+<ul>
+<li><strong>length()</strong>: total number of elements</li>
+<li><strong>ncol()</strong>: total number of columns</li>
+<li><strong>nrow()</strong>: total number of rows</li>
+</ul>
+<pre class="r"><code>z &lt;- matrix(1:6,ncol=2,byrow=T)
+length(z)</code></pre>
+<pre><code>## [1] 6</code></pre>
+<pre class="r"><code>ncol(z)</code></pre>
+<pre><code>## [1] 2</code></pre>
+<pre class="r"><code>nrow(z)</code></pre>
+<pre><code>## [1] 3</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/gP96ooY0qpA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</div>
+<div id="array" class="section level3">
+<h3>Array</h3>
+<p>Array behaves like matrix but it is multi-dimensional (more than 2). To define arrary from vector, the syntax is array(vector/input, c(nrow, ncol, nmatrix))</p>
+<pre class="r"><code>x&lt;- array(1:12, c(2,3,2))
+x</code></pre>
+<pre><code>## , , 1
+## 
+##      [,1] [,2] [,3]
+## [1,]    1    3    5
+## [2,]    2    4    6
+## 
+## , , 2
+## 
+##      [,1] [,2] [,3]
+## [1,]    7    9   11
+## [2,]    8   10   12</code></pre>
+</div>
+<div id="dataframe" class="section level3">
+<h3>Dataframe</h3>
+<p>Dataframe is most useful form of data type in R. It behaves like matrix but can contain strings (letters/words). To visualize a dataframe, one may consider a standard Excel spreadsheet. Each column is a vector. Each spreadsheet is a dataframe – it is a collection of columns of cells.</p>
+<pre class="r"><code>df &lt;- data.frame(c(1,2),
+                 c(&quot;Good&quot;, &quot;Bad&quot;))
+df</code></pre>
+<pre><code>##   c.1..2. c..Good....Bad..
+## 1       1             Good
+## 2       2              Bad</code></pre>
+<p>Note that first rows are the columns names. R will automatically name the column based on the elements inside that vector. However, it looks ugly. We should give names to rows and columns to improve readability of the data.</p>
+<pre class="r"><code>colnames(df) &lt;-c(&quot;GPA&quot;,&quot;outcomes&quot;)
+rownames(df) &lt;-c(&quot;John&quot;, &quot;Mary&quot;)
+df</code></pre>
+<pre><code>##      GPA outcomes
+## John   1     Good
+## Mary   2      Bad</code></pre>
+<p>To skip having to rename the columns, we can simply specify the column name when creating the dataframe.</p>
+<pre class="r"><code>df &lt;- data.frame(GPA = c(1,2), 
+                 outcomes = c(&quot;Good&quot;, &quot;Bad&quot;)) 
+df</code></pre>
+<pre><code>##   GPA outcomes
+## 1   1     Good
+## 2   2      Bad</code></pre>
+<p>One can first define vectors and then define dataframe based on the vectors.</p>
+<pre class="r"><code> x &lt;- c(2,4)
+ y &lt;- c(1,3)
+df &lt;- data.frame(x,y) 
+df</code></pre>
+<pre><code>##   x y
+## 1 2 1
+## 2 4 3</code></pre>
+<p>A more compact code can be done by defining the vectors and the dataframe at the same time.</p>
+<pre class="r"><code>df &lt;- data.frame(x=c(2,4),y=c(1,3))
+df</code></pre>
+<pre><code>##   x y
+## 1 2 1
+## 2 4 3</code></pre>
+<p>Call particular elements in dataframe share the same syntax as in matrix or array.</p>
+<pre class="r"><code>df$x     #vector x</code></pre>
+<pre><code>## [1] 2 4</code></pre>
+<pre class="r"><code>df[1]    #1st column</code></pre>
+<pre><code>##   x
+## 1 2
+## 2 4</code></pre>
+<pre class="r"><code>df[1,]   #1st row</code></pre>
+<pre><code>##   x y
+## 1 2 1</code></pre>
+<pre class="r"><code>df[,1]   #1st column</code></pre>
+<pre><code>## [1] 2 4</code></pre>
+<pre class="r"><code>df[2,1]  #2nd row, 1st column</code></pre>
+<pre><code>## [1] 4</code></pre>
+<p>To remove particular vector from dataframe, simplify assume NULL to it.</p>
+<pre class="r"><code>df$x &lt;- NULL
+df</code></pre>
+<pre><code>##   y
+## 1 1
+## 2 3</code></pre>
+<p>New columns can be created directly.</p>
+<pre class="r"><code>df &lt;- data.frame(x=c(2,4),y=c(1,3))
+df$z &lt;- df$x + df$y
+df</code></pre>
+<pre><code>##   x y z
+## 1 2 1 3
+## 2 4 3 7</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/2xbm6NDQXt0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</div>
+<div id="exercise" class="section level3 unnumbered">
+<h3>Exercise</h3>
+<ul>
+<li>Create two new numeric vectors x and y.</li>
+<li>Create a dataframe from two newly created vectors.</li>
+<li>Create a new column in the dataframe that <span class="math inline">\(w = x - 2 \times y\)</span>.</li>
+</ul>
+</div>
+<div id="list" class="section level3">
+<h3>List</h3>
+<p>List is the most comprehensive data type. It can contain anything: vector, array, matrix and even dataframe.</p>
+<pre class="r"><code>x &lt;- c(2, 3, 5) 
+df &lt;- data.frame(y=c(2,3,4),z=c(1,3,5)) 
+name &lt;- c(&quot;NUS&quot;, &quot;NTU&quot;, &quot;SMU&quot;) 
+x &lt;- list(x,df,name)</code></pre>
+<p>To access the first element in the list x. Use <strong>x[[1]]</strong>. Similarly for [[2]].</p>
+<pre class="r"><code>x[[1]]</code></pre>
+<pre><code>## [1] 2 3 5</code></pre>
+<pre class="r"><code>x[[2]]</code></pre>
+<pre><code>##   y z
+## 1 2 1
+## 2 3 3
+## 3 4 5</code></pre>
+</div>
+</div>
+<div id="functions" class="section level2">
+<h2>Functions</h2>
+<p>Functions take in inputs, execute commands, and return output. They are extremely useful because if we have to make a particular calculation multiple times, we can just program a function and reuse it in the future. For example, sum is a function that takes in inputs of numbers, and returns the value of all the numbers added together.</p>
+<div id="defining-a-function" class="section level3">
+<h3>Defining a function</h3>
+<p>The most basic function is a function that has does not return any value.</p>
+<pre class="r"><code>Hello&lt;- function (...) {
+       cat(&quot;Hello World&quot;)
+}
+Hello()</code></pre>
+<pre><code>## Hello World</code></pre>
+<p>Now, we define a function called myadd that adds 2 input numbers together and returns the total value.</p>
+<pre class="r"><code>myadd &lt;- function (x, y) {
+       return(x+y)
+}
+myadd(3, 4)</code></pre>
+<pre><code>## [1] 7</code></pre>
+<p>From the example, we can see that a function consists of 2 parts, the 1st being the inputs, and the 2nd being the body of the function. When you define a function, you need to specify how many inputs the function requires. How you name them is up to you, but it is likely you will need to use the names of the inputs in the body of the function. The body of the function is where you write the code for what you want the function to do with the inputs. Do not forget to include a return statement, otherwise there will be no output shown in the console for the function.</p>
+<p>We can also set default value of a function:</p>
+<pre class="r"><code>myadd &lt;- function (x, y=1) {
+       return(x+y)
+}
+myadd(3)</code></pre>
+<pre><code>## [1] 4</code></pre>
+<pre class="r"><code>myadd(3, 4)</code></pre>
+<pre><code>## [1] 7</code></pre>
+<p>Now also that since R is a vectorized program, function can take vector as imputs:</p>
+<pre class="r"><code>myadd &lt;- function (x, y) {
+return(x+y)
+}
+myadd(1:3, 3:5)</code></pre>
+<pre><code>## [1] 4 6 8</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/FVYLVbump_E" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</div>
+<div id="exercise-1" class="section level3 unnumbered">
+<h3>Exercise</h3>
+<p>Write the following function:</p>
+<ul>
+<li>take three numerical numbers</li>
+<li>calculate the product of three numerical inputs</li>
+<li>display the value</li>
+<li>return the value as function output</li>
+</ul>
+</div>
+<div id="assignment-of-function-outputs" class="section level3">
+<h3>Assignment of function outputs</h3>
+<p>You can also store the output of a function into another variable, by assigning the output to that variable.</p>
+<p>For example, result stores the value of add(3,4), which is 7. When you call result, you will then get the value 7.</p>
+<pre class="r"><code>result &lt;- myadd(3, 4)
+result </code></pre>
+<pre><code>## [1] 7</code></pre>
+</div>
+<div id="help-on-function" class="section level3">
+<h3>Help on function</h3>
+<p>Type a function’s name at the console, you can see the code behind. If you Type “? function’s name”, you will see its help file as in Figure <a href="#fig:R-Sum-Help">1</a>.</p>
+<pre class="r"><code>? sum</code></pre>
+<div class="figure"><span id="fig:R-Sum-Help"></span>
+<img src="images/Data/SumHelp.png" alt="Help content for sum in RStudio" width="100%" />
+<p class="caption">
+Figure 1: Help content for sum in RStudio
+</p>
+</div>
+</div>
+<div id="source-code-of-a-function" class="section level3">
+<h3>Source code of a function</h3>
+<p>If you type the function name without bracket, then it will show the code of the function.</p>
+<pre class="r"><code>myadd &lt;- function (x, y) {
+       return(x+y)
+}
+myadd</code></pre>
+<pre><code>## function (x, y) {
+##        return(x+y)
+## }</code></pre>
+</div>
+</div>
+<div id="financial-data" class="section level2">
+<h2>Financial Data</h2>
+<p>Financial data are usually time series. Data are often indexed by date and even time. Date are usually converted from character data type using function<strong>as.Date()</strong> whiel date-time data are converted using function <strong>as.POSIXct()</strong>.</p>
+<p>Without time, the program will put in hours.</p>
+<pre class="r"><code>as.POSIXct(&quot;03-12-2014&quot;,format=&quot;%d-%m-%Y&quot;)</code></pre>
+<pre><code>## [1] &quot;2014-12-03 +08&quot;</code></pre>
+<p>The package <em>xts</em> is useful to handle financial data.</p>
+<pre class="r"><code>install.packages(&quot;xts&quot;)
+library(xts)</code></pre>
+<p>Create an xts object using the <strong>xts()</strong> function:</p>
+<pre class="r"><code>dates&lt;-as.Date(c(&quot;2016-01-01&quot;,&quot;2016-01-02&quot;,
+                 &quot;2016-01-03&quot;))
+prices &lt;- c(1.1,2.2,3.3)
+x &lt;- xts(prices, order.by=dates)</code></pre>
+<p>Each observation has time timestamp.</p>
+<pre class="r"><code>x[1]</code></pre>
+<pre><code>##            [,1]
+## 2016-01-01  1.1</code></pre>
+<p>It is often more useful to be more specific about timing instead of number of row. Then we just need to supply the time stamp directly. Note that we will a slash to separate starting time and ending time:</p>
+<pre class="r"><code>x[&#39;2016-01-02/2016-01-03&#39;]</code></pre>
+<pre><code>##            [,1]
+## 2016-01-02  2.2
+## 2016-01-03  3.3</code></pre>
+<p>With timestamp, we can find the first and last times:</p>
+<pre class="r"><code>first(x)</code></pre>
+<pre><code>##            [,1]
+## 2016-01-01  1.1</code></pre>
+<pre class="r"><code>last(x)</code></pre>
+<pre><code>##            [,1]
+## 2016-01-03  3.3</code></pre>
+<p>To get time stamp, we use <strong>time()</strong> and to get the value, we use <strong>as.numeric()</strong>:</p>
+<pre class="r"><code>time(x[1])</code></pre>
+<pre><code>## [1] &quot;2016-01-01&quot;</code></pre>
+<pre class="r"><code>as.numeric(x[1])</code></pre>
+<pre><code>## [1] 1.1</code></pre>
+<p>The most common time series operation is <strong>lag()</strong>. It moves your data ahead.</p>
+<pre class="r"><code>lag1_x &lt;- lag(x,1)
+lag1_x</code></pre>
+<pre><code>##            [,1]
+## 2016-01-01   NA
+## 2016-01-02  1.1
+## 2016-01-03  2.2</code></pre>
+<pre class="r"><code>lag2_x &lt;- lag(x,2)
+lag2_x</code></pre>
+<pre><code>##            [,1]
+## 2016-01-01   NA
+## 2016-01-02   NA
+## 2016-01-03  1.1</code></pre>
+<p>The reason that you need to use lag is that first difference cannot be calculated by <strong>x[i]-x[i-1]</strong>. Instead we need to use <strong>x-lag(x)</strong></p>
+<p>To transfer timestamp to another vector, we use <strong>reclass()</strong>. The following code copy the timestamp from x to y:</p>
+<pre class="r"><code>y &lt;- c(1,0,-1)
+y &lt;- reclass(y,x)
+y</code></pre>
+<pre><code>##            [,1]
+## 2016-01-01    1
+## 2016-01-02    0
+## 2016-01-03   -1</code></pre>
+<p>Two xts objects with the same timestamps can be combined using <strong>cbind()</strong></p>
+<pre class="r"><code>z &lt;- cbind(x,y)
+z</code></pre>
+<pre><code>##              x  y
+## 2016-01-01 1.1  1
+## 2016-01-02 2.2  0
+## 2016-01-03 3.3 -1</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/dayg4HFqXvk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Sometimes, some entries in the data are missing and there will be calculation problems for time series calculation (e.g. lag operator <strong>Lag()</strong>). There are using two ways to deal with the problem:</p>
+<ol style="list-style-type: decimal">
+<li><strong>na.omit()</strong> to take away those data points, and</li>
+<li><strong>na.approx()</strong> to to take linear approximation.</li>
+</ol>
+<p>Note that <strong>na.approx()</strong> is only available (and also only meaningful) for time series data.</p>
+</div>
+<div id="data-management" class="section level2">
+<h2>Data Management</h2>
+<p>We first cover data format conversion since sometimes the data is not in the right format. Second, we will learn how to load a built-in dataset to illustrate how to take a snapshot of the data, sorting the data, selecting observation, selecting variable, subseting the dataset, and merging dataframes. Then we will learn two useful packages: dplyr and reshape. Finally, we apply it to world bank data.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/kkgCh_JK_XQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<div id="loading-built-in-dataset" class="section level3">
+<h3>Loading built-in dataset</h3>
+<p>Load a standard dataset and store it as a dataframe</p>
+<pre class="r"><code>df &lt;- data.frame(mtcars)</code></pre>
+</div>
+<div id="peeping-data" class="section level3">
+<h3>Peeping Data</h3>
+<p>We may use the head to checking the top rows and tail to check bottom rows.</p>
+<pre class="r"><code>x &lt;- 1:5
+y &lt;- seq(5,1,-1)
+z &lt;- c(1,1,2,2,3)
+df &lt;- data.frame(x,y,z)
+head(df, 3) #first 3 row</code></pre>
+<pre><code>##   x y z
+## 1 1 5 1
+## 2 2 4 1
+## 3 3 3 2</code></pre>
+<pre class="r"><code>tail(df, 3) #last 3 row</code></pre>
+<pre><code>##   x y z
+## 3 3 3 2
+## 4 4 2 2
+## 5 5 1 3</code></pre>
+</div>
+<div id="sorting-data" class="section level3">
+<h3>Sorting Data</h3>
+<p>Sorting data by giving multiple criteria using <strong>order</strong>.</p>
+<p>The following code first sort the data by y (in an ascending order) and then break tie using disp if they have the same z.</p>
+<pre class="r"><code>newdf &lt;- df[order(df$y,df$z),]
+newdf</code></pre>
+<pre><code>##   x y z
+## 5 5 1 3
+## 4 4 2 2
+## 3 3 3 2
+## 2 2 4 1
+## 1 1 5 1</code></pre>
+</div>
+<div id="joining-dataframes" class="section level3">
+<h3>Joining dataframes</h3>
+<p>To merge two dataframes horizontally by joining through an unique identifier, one may use <strong>merge()</strong>.</p>
+<pre class="r"><code>df1&lt;-data.frame(ID=c(&quot;a&quot;,&quot;b&quot;), x=c(1,2))
+df2&lt;-data.frame(ID=c(&quot;a&quot;,&quot;b&quot;), y=c(3,4))
+df3 &lt;-merge(df1,df2,by=&quot;ID&quot;)
+df3</code></pre>
+<pre><code>##   ID x y
+## 1  a 1 3
+## 2  b 2 4</code></pre>
+<p>If two dataframes are just to join horizontally without an unique identifier, then use <strong>cbind()</strong>.</p>
+<pre class="r"><code>df1&lt;-data.frame(ID=c(&quot;a&quot;,&quot;b&quot;), x=c(1,2))
+df2&lt;-data.frame(ID=c(&quot;a&quot;,&quot;b&quot;), y=c(3,4))
+df3 &lt;-cbind(df1,df2)
+df3</code></pre>
+<pre><code>##   ID x ID y
+## 1  a 1  a 3
+## 2  b 2  b 4</code></pre>
+</div>
+<div id="stacking-dataframe" class="section level3">
+<h3>Stacking Dataframe</h3>
+<p>If dataframes are just to join vertically, then use <strong>rbind()</strong>. Note that rbind requires dataframes have the same columns names.</p>
+<pre class="r"><code>df1&lt;-data.frame(ID=c(&quot;a&quot;,&quot;b&quot;),
+                x=c(1,2), y=c(1,2))
+df2&lt;-data.frame(ID=c(&quot;c&quot;,&quot;d&quot;), 
+                x=c(3,4), y=c(1,2))
+df3&lt;-data.frame(ID=c(&quot;e&quot;,&quot;f&quot;),
+                x=c(5,6), y=c(1,2))
+df4 &lt;-rbind(df1,df2,df3)
+df4</code></pre>
+<pre><code>##   ID x y
+## 1  a 1 1
+## 2  b 2 2
+## 3  c 3 1
+## 4  d 4 2
+## 5  e 5 1
+## 6  f 6 2</code></pre>
+</div>
+<div id="selecting-variables" class="section level3">
+<h3>Selecting Variables</h3>
+<p>The following code selecting columns 1 to 3.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf &lt;- df[,c(1:3)]
+head(newdf,3)</code></pre>
+<pre><code>##   ID x y
+## 1  a 1 1
+## 2  b 2 2
+## 3  c 3 1</code></pre>
+<p>The following code drops columns 1 to 2.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf &lt;- df[,-c(1:2)]
+head(newdf,3)</code></pre>
+<pre><code>##   y z
+## 1 1 6
+## 2 2 5
+## 3 1 4</code></pre>
+<p>We can delete columns by name.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+df$z&lt;- NULL
+head(df,3)</code></pre>
+<pre><code>##   ID x y
+## 1  a 1 1
+## 2  b 2 2
+## 3  c 3 1</code></pre>
+</div>
+<div id="selecting-observation-based-on-row-number" class="section level3">
+<h3>Selecting Observation based on row number</h3>
+<p>The functions head and tail allows as to directly obtain rows from the top and bottom.</p>
+<p>The following code selects the top 3 observations.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf&lt;-head(df,3)
+newdf</code></pre>
+<pre><code>##   ID x y z
+## 1  a 1 1 6
+## 2  b 2 2 5
+## 3  c 3 1 4</code></pre>
+<p>The following code drops the last 2 observations.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf&lt;-head(df,-2)
+newdf</code></pre>
+<pre><code>##   ID x y z
+## 1  a 1 1 6
+## 2  b 2 2 5
+## 3  c 3 1 4
+## 4  d 4 2 3</code></pre>
+<p>The following code selects the bottom 3 observations.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf &lt;- tail(df,3)
+newdf</code></pre>
+<pre><code>##   ID x y z
+## 4  d 4 2 3
+## 5  e 5 1 2
+## 6  f 6 2 1</code></pre>
+<p>The following code drops the top 2 observations.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf &lt;- tail(df,-2)
+newdf</code></pre>
+<pre><code>##   ID x y z
+## 3  c 3 1 4
+## 4  d 4 2 3
+## 5  e 5 1 2
+## 6  f 6 2 1</code></pre>
+<p>The following code selects observations from row 2 to row 4.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf &lt;- df[c(2:4),]
+head(newdf,3)</code></pre>
+<pre><code>##   ID x y z
+## 2  b 2 2 5
+## 3  c 3 1 4
+## 4  d 4 2 3</code></pre>
+<p>The following code excludes observations from row 2 to row 4.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf &lt;- df[-c(2:4),]
+head(newdf,3)</code></pre>
+<pre><code>##   ID x y z
+## 1  a 1 1 6
+## 5  e 5 1 2
+## 6  f 6 2 1</code></pre>
+</div>
+<div id="selecting-observation-based-on-condition" class="section level3">
+<h3>Selecting Observation based on condition</h3>
+<p>To select observations based on conditions, we may use ``which’’. The following code selects observations such that <span class="math inline">\(y=1\)</span>.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf &lt;- df[which(df$y==1), ]
+newdf</code></pre>
+<pre><code>##   ID x y z
+## 1  a 1 1 6
+## 3  c 3 1 4
+## 5  e 5 1 2</code></pre>
+<p>The following code chooses observation that <span class="math inline">\(y=1\)</span> and <span class="math inline">\(x&gt;1\)</span>.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf &lt;- df[which(df$y==1 &amp; df$x&gt;1), ]
+newdf</code></pre>
+<pre><code>##   ID x y z
+## 3  c 3 1 4
+## 5  e 5 1 2</code></pre>
+</div>
+<div id="selecting-observation-and-columns" class="section level3">
+<h3>Selecting Observation and Columns</h3>
+<p>To select observations based on conditions restricting to some columns, we use subset. To choose which column to include, we use ``select’’.</p>
+<p>The following code selects columns of y and z when <span class="math inline">\(y=1\)</span> and <span class="math inline">\(x&gt;1\)</span>.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+newdf &lt;- subset(df, y== 2 &amp; x&gt;1, select= c(y,z))
+newdf</code></pre>
+<pre><code>##   y z
+## 2 2 5
+## 4 2 3
+## 6 2 1</code></pre>
+</div>
+<div id="create-new-column" class="section level3">
+<h3>Create New Column</h3>
+<p>If a new column is simple transformation of existing column, then we can just write the expression directly because R is vectorized.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+df$a &lt;- 2*df$x + 3*df$y -df$z
+df</code></pre>
+<pre><code>##   ID x y z  a
+## 1  a 1 1 6 -1
+## 2  b 2 2 5  5
+## 3  c 3 1 4  5
+## 4  d 4 2 3 11
+## 5  e 5 1 2 11
+## 6  f 6 2 1 17</code></pre>
+<pre class="r"><code>df</code></pre>
+<pre><code>##   ID x y z  a
+## 1  a 1 1 6 -1
+## 2  b 2 2 5  5
+## 3  c 3 1 4  5
+## 4  d 4 2 3 11
+## 5  e 5 1 2 11
+## 6  f 6 2 1 17</code></pre>
+<p>When we want to create a new column where each row depends on values of existing column, we can use <strong>ifelse()</strong>.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+df$a &lt;- ifelse(df$x&gt;3, 1,0)
+df</code></pre>
+<pre><code>##   ID x y z a
+## 1  a 1 1 6 0
+## 2  b 2 2 5 0
+## 3  c 3 1 4 0
+## 4  d 4 2 3 1
+## 5  e 5 1 2 1
+## 6  f 6 2 1 1</code></pre>
+</div>
+<div id="remove-duplicated-observation" class="section level3">
+<h3>Remove Duplicated Observation</h3>
+<p>To remove duplicate, the function is <strong>unique()</strong>.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;,&quot;b&quot;), 
+                 x=c(1,2,3,4,1,2), 
+                 y=c(1,2,1,2,1,2))
+newdf &lt;- unique(df)
+newdf</code></pre>
+<pre><code>##   ID x y
+## 1  a 1 1
+## 2  b 2 2
+## 3  a 3 1
+## 4  b 4 2</code></pre>
+</div>
+<div id="collapse-data-by-group" class="section level3">
+<h3>Collapse Data by Group</h3>
+<p>There are two ways to collapse data by applying function to group: (1) aggregate and (2) by.</p>
+<p>The following calculate the mean of data by group.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;,&quot;b&quot;), 
+                 x=c(1,2,3,4,1,2), 
+                 y=c(1,2,1,2,1,2))
+newdf &lt;- aggregate(df$x, by=data.frame(df$ID), mean)
+newdf</code></pre>
+<pre><code>##   df.ID        x
+## 1     a 1.666667
+## 2     b 2.666667</code></pre>
+<p>The following is similar by use <strong>by()</strong></p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;,&quot;b&quot;), 
+                 x=c(1,2,3,4,1,2), 
+                 y=c(1,2,1,2,1,2))
+newdf &lt;-by(df$x, df$ID, mean)
+newdf</code></pre>
+<pre><code>## df$ID: a
+## [1] 1.666667
+## -------------------------------------------------------- 
+## df$ID: b
+## [1] 2.666667</code></pre>
+</div>
+</div>
+<div id="packages" class="section level2">
+<h2>Packages</h2>
+<p>Everything which is done in R is done by functions. Commonly used functions are grouped in packages. Installing different packages expand the functionality of R.</p>
+<p>To install a package, say dplyr, for the first time, type</p>
+<pre class="r"><code>install.packages(&quot;dplyr&quot;)</code></pre>
+<p>To load the package, type the package name without quotation</p>
+<pre class="r"><code>library(dplyr)</code></pre>
+<p>Note that we only need to install each package once but we need to load the package each time to access the functions inside the package.</p>
+<div id="dplyr-package" class="section level3">
+<h3>dplyr package</h3>
+<p>It is very convenient data management package. It can filter data, sort data, select data and generate new columns.</p>
+<p>The <strong>filter()</strong> function is similar to Excel filter function.</p>
+<pre class="r"><code>df &lt;- data.frame(Price=c(1.2,2.4,3.6,4.8), 
+                 month=c(1,2,1,2), 
+                 day=c(1,2,3,4))
+dplyr::filter(df, month ==1 , day ==3)</code></pre>
+<pre><code>##   Price month day
+## 1   3.6     1   3</code></pre>
+<p>Note that we have added ``dplyr::’’ is to avoid name conflict of filter</p>
+<p>The <strong>arrange()</strong> is like Excel sorting function. The syntax is <strong>arrange(dataframe, variables)</strong>:</p>
+<pre class="r"><code>df &lt;- data.frame(school=c(&quot;NTU&quot;,&quot;SMU&quot;,&quot;NUS&quot;), 
+                 rank=c(2,1,3), 
+                 size=c(1,3,2))
+dplyr::arrange(df, rank, size) </code></pre>
+<pre><code>##   school rank size
+## 1    SMU    1    3
+## 2    NTU    2    1
+## 3    NUS    3    2</code></pre>
+<p>The default order is ascending. To sort by a descending order, one can simply use <strong>desc()</strong>:</p>
+<pre class="r"><code>df &lt;- data.frame(school=c(&quot;NTU&quot;,&quot;SMU&quot;,&quot;NUS&quot;),
+                 rank=c(2,1,3),
+                 size=c(1,3,2))
+dplyr::arrange(df, desc(rank), size) </code></pre>
+<pre><code>##   school rank size
+## 1    NUS    3    2
+## 2    NTU    2    1
+## 3    SMU    1    3</code></pre>
+<p>The <strong>select()</strong> is to select columns. It behaves as if Excel hide column function or delete column function.</p>
+<pre class="r"><code>df &lt;- data.frame(x=c(&quot;NTU&quot;,&quot;SMU&quot;,&quot;NUS&quot;),
+                 rank=c(2,1,3),
+                 size=c(1,3,2))
+dplyr::select(df, x, rank)</code></pre>
+<pre><code>##     x rank
+## 1 NTU    2
+## 2 SMU    1
+## 3 NUS    3</code></pre>
+<p>The <strong>mutate()</strong> function add new columns in the dataframe. It works like *``<strong>gen</strong> function in Stata.</p>
+<pre class="r"><code>df &lt;- data.frame(product=c(&quot;chicken rice&quot;, &quot;laska&quot;),
+                 revenue=c(10,5), 
+                 cost=c(5,4))
+mutate(df, profit = revenue-cost, 
+                 profit_margin = profit/revenue)</code></pre>
+<pre><code>##        product revenue cost profit profit_margin
+## 1 chicken rice      10    5      5           0.5
+## 2        laska       5    4      1           0.2</code></pre>
+<p>To create columns based on some simple condition, we can use <strong>ifelse()</strong></p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+mutate(df, a = ifelse(x&gt;3, 1,0))</code></pre>
+<pre><code>##   ID x y z a
+## 1  a 1 1 6 0
+## 2  b 2 2 5 0
+## 3  c 3 1 4 0
+## 4  d 4 2 3 1
+## 5  e 5 1 2 1
+## 6  f 6 2 1 1</code></pre>
+<p>To create columns based on some simple condition, we can use <strong>case_when</strong>.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,2,1,2,1,2),
+                 z=c(6,5,4,3,2,1))
+mutate(df, a = case_when(x==1 | x==2 ~0,
+                         x==3 | x==4 ~1,
+                         x==5 | x==6 ~2)
+       )</code></pre>
+<pre><code>##   ID x y z a
+## 1  a 1 1 6 0
+## 2  b 2 2 5 0
+## 3  c 3 1 4 1
+## 4  d 4 2 3 1
+## 5  e 5 1 2 2
+## 6  f 6 2 1 2</code></pre>
+<p>To create summary by group, we first use <strong>group_by()</strong> to group the data, and then use <strong>summarize()</strong> to apply functions.</p>
+<pre class="r"><code>df &lt;- data.frame(ID=c(&quot;a&quot;,&quot;b&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;,&quot;b&quot;), 
+                 x=c(1,2,3,4,5,6), 
+                 y=c(1,4,2,3,6,2))
+newdf &lt;- group_by(df, ID)
+summarize(newdf, xbar=mean(x), yvar=var(y))</code></pre>
+<pre><code>## # A tibble: 2 x 3
+##   ID     xbar  yvar
+##   &lt;fct&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 a         3     7
+## 2 b         4     1</code></pre>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/63TIZdfPQic" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</div>
+<div id="reshape-package" class="section level3">
+<h3>reshape package</h3>
+<p><strong>Reshape</strong> package is useful to transform data from long format to wide format. The two main functions for reshape is melt and cast.</p>
+<p>We first install and load the reshape package.</p>
+<pre class="r"><code> install.packages(&quot;reshape&quot;)
+ library(reshape)</code></pre>
+<p>The <strong>melt()</strong> function collapses all columns into rows</p>
+<pre class="r"><code>df1 &lt;- data.frame(id=c(1,1,2,2),
+                  time = c(1,2,1,2),
+                  bid=c(1,2,3,4),
+                  ask=c(5,6,7,8))
+df2 &lt;- melt(df1, id=c(&quot;id&quot;,&quot;time&quot;))
+df2</code></pre>
+<pre><code>##   id time variable value
+## 1  1    1      bid     1
+## 2  1    2      bid     2
+## 3  2    1      bid     3
+## 4  2    2      bid     4
+## 5  1    1      ask     5
+## 6  1    2      ask     6
+## 7  2    1      ask     7
+## 8  2    2      ask     8</code></pre>
+<p>The <strong>cast()</strong> function rebuild new table after it is melt. The casting formula: row variable 1 + row variable 2 ~ column variable 1 + column variable 2.</p>
+<p>The following code will return original table. It is because the original table has id and time as row variables while bid and ask are column variables.</p>
+<pre class="r"><code>df3 &lt;- cast(df2, id+time~variable)
+df3</code></pre>
+<pre><code>##   id time bid ask
+## 1  1    1   1   5
+## 2  1    2   2   6
+## 3  2    1   3   7
+## 4  2    2   4   8</code></pre>
+<p>The following code will make id and variable as row variable and time as column variables.</p>
+<pre class="r"><code>df4 &lt;- cast(df2, id+variable~time)
+df4</code></pre>
+<pre><code>##   id variable 1 2
+## 1  1      bid 1 2
+## 2  1      ask 5 6
+## 3  2      bid 3 4
+## 4  2      ask 7 8</code></pre>
+<p>The following code will make id as row variable, and time and variable as column variables.</p>
+<pre class="r"><code>df5 &lt;- cast(df2, id~variable+time)
+df5</code></pre>
+<pre><code>##   id bid_1 bid_2 ask_1 ask_2
+## 1  1     1     2     5     6
+## 2  2     3     4     7     8</code></pre>
+</div>
+<div id="application-to-world-bank-data" class="section level3">
+<h3>Application to World Bank Data</h3>
+<p>To access on World Bank data in R, we first install the <strong>wbstats</strong> packages:</p>
+<pre class="r"><code>install.packages(&quot;wbstats&quot;)
+library(wbstats,warn.conflicts = FALSE)</code></pre>
+<p>The following code download data description from World bank database. Since it is too large, we just download the description first. Then we will download only the variables we need.</p>
+<pre class="r"><code>new_cache &lt;- wbcache()</code></pre>
+<p>Since the database is huge, we need to search for relevant data. We will need to obtain GDP and population data.</p>
+<pre class="r"><code>gdp &lt;- wbsearch(&quot;gdp.*capita.*US\\$&quot;)
+pop &lt;- wbsearch(&quot;population, total&quot;)</code></pre>
+<p>After checking the gdp and pop, we decide to download two data series: “SP.POP.TOTL” and “NY.GDP.PCAP.KD”.</p>
+<pre class="r"><code>download&lt;- wb(country=c(&quot;US&quot;, &quot;SG&quot;),
+              indicator = c(&quot;SP.POP.TOTL&quot;,
+                            &quot;NY.GDP.PCAP.KD&quot;), 
+              startdate = 2000, enddate = 2017)</code></pre>
+<p>We will use <strong>dplyr</strong> to clean up the data.</p>
+<pre class="r"><code>library(dplyr,warn.conflicts = FALSE)</code></pre>
+<p>Since the data contains a lot of redundant columns, we first clean the data.</p>
+<pre class="r"><code>long &lt;- dplyr::select(download, date, 
+                      indicator, country,value)
+head(long,3)</code></pre>
+<pre><code>##   date         indicator   country   value
+## 1 2017 Population, total Singapore 5612253
+## 2 2016 Population, total Singapore 5607283
+## 3 2015 Population, total Singapore 5535002</code></pre>
+<p>The data is in long format. We need to use <strong>reshape</strong> package to change it to wide format.</p>
+<pre class="r"><code>library(reshape,warn.conflicts = FALSE)</code></pre>
+<p>To start, we first melt it and then cast it to the desired format.</p>
+<pre class="r"><code>temp &lt;- melt(long, id=c(&quot;date&quot;,&quot;indicator&quot;,&quot;country&quot;))
+data &lt;- cast(temp, country + date~indicator)</code></pre>
+<p>Finally, we make some decoration.</p>
+<pre class="r"><code>colnames(data) &lt;- c(&quot;country&quot;, &quot;year&quot;, &quot;gdp&quot;, &quot;pop&quot;)
+data$year &lt;- as.numeric(data$year)
+head(data,3)</code></pre>
+<pre><code>##     country year      gdp     pop
+## 1 Singapore 2000 33850.76 4027887
+## 2 Singapore 2001 32597.62 4138012
+## 3 Singapore 2002 33565.97 4175950</code></pre>
+</div>
+</div>
+<div id="external-datasets" class="section level2">
+<h2>External Datasets</h2>
+<p>We often want to import from CSV, stata data and excel files. Sometimes, we also want to export to CSV and excel files. Finally, we cover how to convert your R code into Word document through knit and export your table using the package <strong>stargazer</strong>.</p>
+<div id="working-directory" class="section level3">
+<h3>Working Directory</h3>
+<p>To work with external file, we need to set the folder containing the file as working directory. Otherwise, we need to write the full path of the file.</p>
+<p>To set working directory, we use <strong>setwd()</strong>.</p>
+<pre class="r"><code>setwd(&quot;C:/user/folder/&quot;)</code></pre>
+</div>
+<div id="import-from-csv" class="section level3">
+<h3>Import from CSV</h3>
+<p>To import csv, we can use <strong>read.csv()</strong>.</p>
+<p>The program will find a file in the working directory. If the file is stored in a sub directory, we will say ``./folder/file.csv’’ instead.</p>
+<p>If the data has header, then set header = TRUE so that the column name is given by the header row. Otherwise, set header to FALSE.</p>
+<pre class="r"><code># If the file has header, then type
+df &lt;- read.csv(&quot;file.csv&quot;, header= TRUE)
+# If the file has no header, then type
+df &lt;- read.csv(&quot;file.csv&quot;, header= FALSE)</code></pre>
+</div>
+<div id="import-from-stata" class="section level3">
+<h3>Import from Stata</h3>
+<p>To import from Stata data file, we need the package <strong>foreign</strong>.</p>
+<pre class="r"><code>library(foreign)
+df &lt;-read.dta(&quot;datafile.dta&quot;)</code></pre>
+</div>
+<div id="import-from-excel" class="section level3">
+<h3>Import from Excel</h3>
+<p>To import from xlsx file, we need the package <strong>xlsx</strong></p>
+<pre class="r"><code>library(xlsx)
+workbook &lt;- &quot;path/file.xlsx&quot;
+df &lt;-read.xlsx(workbook, n)
+# n is n-th worksheet to import</code></pre>
+</div>
+<div id="export-to-csv" class="section level3">
+<h3>Export to CSV</h3>
+<p>To export dataframe to a csve file, we can use <strong>write.csv()</strong>. The file will be saved in your current working directory, which can be changed if you wish.</p>
+<pre class="r"><code>write.csv(df,file=&quot;filename.csv&quot;)</code></pre>
+<p>Note that a csv file that can be directly read by Excel.</p>
+</div>
+<div id="export-to-xlsx" class="section level3">
+<h3>Export to xlsx</h3>
+<p>To export to xlss file, we need to install package <strong>XLConnect</strong>.</p>
+<pre class="r"><code>install.packages(&quot;XLConnect&quot;)
+library(XLConnect)
+# Load and Excel workbook (create if not exist)
+wb = loadWorkbook(&quot;test.xlsx&quot;,create=T)
+# Create Worksheet in the workbook
+createSheet(wb,&quot;AAPL&quot;); createSheet(wb,&quot;IBM&quot;)
+AAPL&lt;-data.frame(P=c(1,2,4),Q=c(2,3,5))
+IBM &lt;-data.frame(P=c(2,4,6),Q=c(7,8,9))  
+# Write things into worksheet
+writeWorksheet(wb, AAPL,sheet = &quot;AAPL&quot;, 
+               startRow = 1, startCol = 1)
+writeWorksheet(wb, IBM,sheet = &quot;IBM&quot;, 
+               startRow = 1, startCol = 1)
+# Save to workbook
+saveWorkbook(wb)</code></pre>
+</div>
+<div id="export-to-word-knitr" class="section level3">
+<h3>Export to Word: Knitr</h3>
+<p>Sometimes, we want to export our working in RStudio as printable or pdf/word format. The easiest way to do it is through the <strong>knitr</strong> package. Install the package and then go to File &gt; Knit document &gt; MS Word in RStudio.</p>
+</div>
+<div id="export-table-stargazer" class="section level3">
+<h3>Export Table: stargazer</h3>
+<p>The package ``stargazer’’ is useful to export table to latex, text or html (open in word and copy and paste). This saves considerable time to get the formatting right.</p>
+<pre class="r"><code>install.packages(&quot;stargazer&quot;);
+library(stargazer);
+stargazer(df)  #latex
+stargazer(df,  type=&quot;text&quot;, out=&quot;test.txt&quot;) 
+stargazer(df,  type=&quot;html&quot;, out=&quot;test.html&quot;) </code></pre>
+</div>
+</div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/r-programming/ta-with-r-ch1/" rel="next"></a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/r-programming/ta-with-r-ch3/" rel="prev"></a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Sep 9, 2018</p>
+
+          
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses%5cr-programming%5cta-with-r-Ch2.html">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    2012-2020
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

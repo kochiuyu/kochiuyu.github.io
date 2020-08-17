@@ -1,51 +1,154 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Teachings on Chiu Yu Ko</title>
+    <title>Teachings | Chiu Yu Ko</title>
     <link>/teaching/</link>
-    <description>Recent content in Teachings on Chiu Yu Ko</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>2019</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0800</lastBuildDate>
-    
-	<atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>Teachings</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2020. All Rights Reserved.</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0800</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <title>Teachings</title>
+      <link>/teaching/</link>
+    </image>
     
     <item>
       <title>Applied Financial Economics</title>
       <link>/teaching/applied-financial-economics/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
-      
       <guid>/teaching/applied-financial-economics/</guid>
-      <description>Master (Spring 2017, Spring 2018, Spring 2019)</description>
+      <description>&lt;p&gt;Overview&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We cover how theoretical models and the associated empirical analysis can be applied in practice&lt;/li&gt;
+&lt;li&gt;We first review classical stock market analysis techniques: fundamental analysis and technical analysis.&lt;/li&gt;
+&lt;li&gt;We investigate various trading strategies adopted by market participants.&lt;/li&gt;
+&lt;li&gt;We continue to study how modern time series models can help to analyze and predict future stock price.&lt;/li&gt;
+&lt;li&gt;Then we examine several market microstructure models. trading models. to understand trading behavior such as bid-ask spread, liquidity, trading volume, and trading behaviors,&lt;/li&gt;
+&lt;li&gt;Finanly, to understand increasingly popular computerized trading, we cover programming and econometric software such as Excel VBA and R.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Equity research&lt;/li&gt;
+&lt;li&gt;Technical trading&lt;/li&gt;
+&lt;li&gt;Investor trading behavior&lt;/li&gt;
+&lt;li&gt;Excel VBA programming&lt;/li&gt;
+&lt;li&gt;R programming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Overview Video:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/O7Cvs2fXISE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
       <title>Financial Market Microsturcture</title>
       <link>/teaching/financial-market-microstructure/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
-      
       <guid>/teaching/financial-market-microstructure/</guid>
-      <description>Undergraduate (Fall 2015, Fall 2016, Fall 2017, Spring 2018, Fall 2018, Spring 2019, Fall 2019)</description>
+      <description>&lt;p&gt;Overview:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Market microstructure studies price movement and how trading takes place in financial markets.&lt;/li&gt;
+&lt;li&gt;First, We analyze the movement of security prices by fundamental analysis, technical analysis, time series, trade price and factor price models.&lt;/li&gt;
+&lt;li&gt;Second, we investigate models of trading: inventory models, sequential trading models, strategic trading and behavioral models.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fundamental analysis&lt;/li&gt;
+&lt;li&gt;Technical analysis&lt;/li&gt;
+&lt;li&gt;Time series analysis&lt;/li&gt;
+&lt;li&gt;Event study methdology&lt;/li&gt;
+&lt;li&gt;Factor pricing models&lt;/li&gt;
+&lt;li&gt;Inventory models&lt;/li&gt;
+&lt;li&gt;Sequential trade models&lt;/li&gt;
+&lt;li&gt;Strategic tarde models&lt;/li&gt;
+&lt;li&gt;Behavorial models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Overview Video:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/O7Cvs2fXISE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
     </item>
     
     <item>
       <title>Industrial Organization</title>
       <link>/teaching/industrial-organization/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
-      
       <guid>/teaching/industrial-organization/</guid>
-      <description>Ph.D. (Fall 2012, Fall 2013, Fall 2014, Fall 2015, Fall 2016)</description>
+      <description>&lt;p&gt;Overview:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Review Basic concepts of the non-cooperative game theory&lt;/li&gt;
+&lt;li&gt;Build foundation to study various applications of game-theoretic models in the field of industrial organization.&lt;/li&gt;
+&lt;li&gt;in-depth analysis and understand various theoretical issues of the modern industrial organization.&lt;/li&gt;
+&lt;li&gt;the approach of this course is game theoretic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Monopoly pricing&lt;/li&gt;
+&lt;li&gt;Monopoly dynamic decision&lt;/li&gt;
+&lt;li&gt;Competition with homogeneous good&lt;/li&gt;
+&lt;li&gt;Competitio with produce differentiation&lt;/li&gt;
+&lt;li&gt;Network externality&lt;/li&gt;
+&lt;li&gt;Consmer Search&lt;/li&gt;
+&lt;li&gt;Innovation and technology&lt;/li&gt;
+&lt;li&gt;Entry deterence&lt;/li&gt;
+&lt;li&gt;Collusion&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>/teaching/statistics/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      <guid>/teaching/statistics/</guid>
+      <description>&lt;p&gt;Overview:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We cover basic statistics in this course.&lt;/li&gt;
+&lt;li&gt;The first part is descriptive statistics, and the second part is inferential statistics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Probability&lt;/li&gt;
+&lt;li&gt;Random variables&lt;/li&gt;
+&lt;li&gt;Sampling distributions&lt;/li&gt;
+&lt;li&gt;Estimation of parameters&lt;/li&gt;
+&lt;li&gt;Tests of hypotheses&lt;/li&gt;
+&lt;li&gt;Regression&lt;/li&gt;
+&lt;li&gt;Forecasting&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Microeconomics Analysis III</title>
       <link>/teaching/microeconomics/</link>
       <pubDate>Fri, 27 Apr 2012 00:00:00 +0800</pubDate>
-      
       <guid>/teaching/microeconomics/</guid>
-      <description>Undergraduate (Fall 2012, Fall 2013, Spring 2015)</description>
+      <description>&lt;p&gt;Overview&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Begin with a normative perspective and ask how consumers derive their choices from preferences and what allocations are efficient&lt;/li&gt;
+&lt;li&gt;Then turn to a positive study focusing on competitive markets and strategic interactions.&lt;/li&gt;
+&lt;li&gt;the development of analytical tools and the understanding of how the theories are constructed and&lt;/li&gt;
+&lt;li&gt;the working and failure cases of the market system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Consumer theory&lt;/li&gt;
+&lt;li&gt;Production theory&lt;/li&gt;
+&lt;li&gt;General equilibrium&lt;/li&gt;
+&lt;li&gt;Uncertainty&lt;/li&gt;
+&lt;li&gt;Game theory&lt;/li&gt;
+&lt;li&gt;Information economics&lt;/li&gt;
+&lt;li&gt;Auction&lt;/li&gt;
+&lt;li&gt;Matching&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

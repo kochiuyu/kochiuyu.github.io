@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Master | Chiu Yu Ko</title>
+    <link>/tag/master/</link>
+      <atom:link href="/tag/master/index.xml" rel="self" type="application/rss+xml" />
+    <description>Master</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2020. All Rights Reserved.</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0800</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <title>Master</title>
+      <link>/tag/master/</link>
+    </image>
+    
+    <item>
+      <title>Applied Financial Economics</title>
+      <link>/teaching/applied-financial-economics/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0800</pubDate>
+      <guid>/teaching/applied-financial-economics/</guid>
+      <description>&lt;p&gt;Overview&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We cover how theoretical models and the associated empirical analysis can be applied in practice&lt;/li&gt;
+&lt;li&gt;We first review classical stock market analysis techniques: fundamental analysis and technical analysis.&lt;/li&gt;
+&lt;li&gt;We investigate various trading strategies adopted by market participants.&lt;/li&gt;
+&lt;li&gt;We continue to study how modern time series models can help to analyze and predict future stock price.&lt;/li&gt;
+&lt;li&gt;Then we examine several market microstructure models. trading models. to understand trading behavior such as bid-ask spread, liquidity, trading volume, and trading behaviors,&lt;/li&gt;
+&lt;li&gt;Finanly, to understand increasingly popular computerized trading, we cover programming and econometric software such as Excel VBA and R.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Equity research&lt;/li&gt;
+&lt;li&gt;Technical trading&lt;/li&gt;
+&lt;li&gt;Investor trading behavior&lt;/li&gt;
+&lt;li&gt;Excel VBA programming&lt;/li&gt;
+&lt;li&gt;R programming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Overview Video:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/O7Cvs2fXISE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>
