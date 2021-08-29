@@ -5,12 +5,37 @@
     <link>/tag/undergraduate/</link>
       <atom:link href="/tag/undergraduate/index.xml" rel="self" type="application/rss+xml" />
     <description>Undergraduate</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2021. All Rights Reserved.</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2021. All Rights Reserved.</copyright><lastBuildDate>Thu, 27 Aug 2020 00:00:00 +0800</lastBuildDate>
     <image>
       <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
       <title>Undergraduate</title>
       <link>/tag/undergraduate/</link>
     </image>
+    
+    <item>
+      <title>Statistical Analysis for Business Decisions</title>
+      <link>/teaching/business-statistics/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0800</pubDate>
+      <guid>/teaching/business-statistics/</guid>
+      <description>&lt;p&gt;Overview:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This course deals with the fundamentals of statistical methods, including descriptive statistics, probability, statistical inference, simple linear regression and basic ANOVA.&lt;/li&gt;
+&lt;li&gt;Application of statistical methods to problems pertaining to business will be emphasized throughout this course.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Descriptive Statistics&lt;/li&gt;
+&lt;li&gt;Probability&lt;/li&gt;
+&lt;li&gt;Discrete Probability Distributions&lt;/li&gt;
+&lt;li&gt;Continuous Probability Distributions&lt;/li&gt;
+&lt;li&gt;Sampling and Sampling Distribution&lt;/li&gt;
+&lt;li&gt;Interval Estimation&lt;/li&gt;
+&lt;li&gt;Hypothesis Tests&lt;/li&gt;
+&lt;li&gt;Simple Linear Regression&lt;/li&gt;
+&lt;li&gt;ANOVA&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Financial Market Microsturcture</title>

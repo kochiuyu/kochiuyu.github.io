@@ -5,12 +5,76 @@
     <link>/teaching/</link>
       <atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
     <description>Teachings</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2021. All Rights Reserved.</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2021. All Rights Reserved.</copyright><lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0800</lastBuildDate>
     <image>
       <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
       <title>Teachings</title>
       <link>/teaching/</link>
     </image>
+    
+    <item>
+      <title>Microeconomic Theory</title>
+      <link>/teaching/microeconomic-theory/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0800</pubDate>
+      <guid>/teaching/microeconomic-theory/</guid>
+      <description>&lt;p&gt;Overview:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This course is on advanced microeconomic theory. Topics include individual decision theory (consumer theory, production theory, choice under uncertainty), game theory (static and dynamic games under complete and incomplete information), and equilibrium and market failure (general equilibrium, principal-agent problems, economics of information, auctions, bargaining, and market design).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Individual Decision Making
+&lt;ul&gt;
+&lt;li&gt;consumer: preference, utility, demand&lt;/li&gt;
+&lt;li&gt;production: profit, cost&lt;/li&gt;
+&lt;li&gt;competitive market and general equilibrium: welfare theorems&lt;/li&gt;
+&lt;li&gt;choice under uncertainty: expected utility, risk aversion, stochastic dominance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Game Theory
+&lt;ul&gt;
+&lt;li&gt;static games of complete information: dominance, Nash equilibrium&lt;/li&gt;
+&lt;li&gt;dynamic games of complete information: backward induction, subgame perfect equilibrium, folk theorem, Markovian refinement&lt;/li&gt;
+&lt;li&gt;static games of incomplete information: Bayesian Nash equilibrium&lt;/li&gt;
+&lt;li&gt;dynamic games of incomplete information: perfect Bayesian equilibrium&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Equilibrium and Market Failure
+&lt;ul&gt;
+&lt;li&gt;market power: monopoly, oligopoly&lt;/li&gt;
+&lt;li&gt;contract theory: screening, moral hazard, adverse selection&lt;/li&gt;
+&lt;li&gt;allocative mechanism: contest, bargaining&lt;/li&gt;
+&lt;li&gt;market design: auction, matching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Analysis for Business Decisions</title>
+      <link>/teaching/business-statistics/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0800</pubDate>
+      <guid>/teaching/business-statistics/</guid>
+      <description>&lt;p&gt;Overview:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This course deals with the fundamentals of statistical methods, including descriptive statistics, probability, statistical inference, simple linear regression and basic ANOVA.&lt;/li&gt;
+&lt;li&gt;Application of statistical methods to problems pertaining to business will be emphasized throughout this course.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Descriptive Statistics&lt;/li&gt;
+&lt;li&gt;Probability&lt;/li&gt;
+&lt;li&gt;Discrete Probability Distributions&lt;/li&gt;
+&lt;li&gt;Continuous Probability Distributions&lt;/li&gt;
+&lt;li&gt;Sampling and Sampling Distribution&lt;/li&gt;
+&lt;li&gt;Interval Estimation&lt;/li&gt;
+&lt;li&gt;Hypothesis Tests&lt;/li&gt;
+&lt;li&gt;Simple Linear Regression&lt;/li&gt;
+&lt;li&gt;ANOVA&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Applied Financial Economics</title>

@@ -5,12 +5,51 @@
     <link>/tag/phd/</link>
       <atom:link href="/tag/phd/index.xml" rel="self" type="application/rss+xml" />
     <description>PhD</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2021. All Rights Reserved.</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2021. All Rights Reserved.</copyright><lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0800</lastBuildDate>
     <image>
       <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
       <title>PhD</title>
       <link>/tag/phd/</link>
     </image>
+    
+    <item>
+      <title>Microeconomic Theory</title>
+      <link>/teaching/microeconomic-theory/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0800</pubDate>
+      <guid>/teaching/microeconomic-theory/</guid>
+      <description>&lt;p&gt;Overview:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This course is on advanced microeconomic theory. Topics include individual decision theory (consumer theory, production theory, choice under uncertainty), game theory (static and dynamic games under complete and incomplete information), and equilibrium and market failure (general equilibrium, principal-agent problems, economics of information, auctions, bargaining, and market design).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Individual Decision Making
+&lt;ul&gt;
+&lt;li&gt;consumer: preference, utility, demand&lt;/li&gt;
+&lt;li&gt;production: profit, cost&lt;/li&gt;
+&lt;li&gt;competitive market and general equilibrium: welfare theorems&lt;/li&gt;
+&lt;li&gt;choice under uncertainty: expected utility, risk aversion, stochastic dominance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Game Theory
+&lt;ul&gt;
+&lt;li&gt;static games of complete information: dominance, Nash equilibrium&lt;/li&gt;
+&lt;li&gt;dynamic games of complete information: backward induction, subgame perfect equilibrium, folk theorem, Markovian refinement&lt;/li&gt;
+&lt;li&gt;static games of incomplete information: Bayesian Nash equilibrium&lt;/li&gt;
+&lt;li&gt;dynamic games of incomplete information: perfect Bayesian equilibrium&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Equilibrium and Market Failure
+&lt;ul&gt;
+&lt;li&gt;market power: monopoly, oligopoly&lt;/li&gt;
+&lt;li&gt;contract theory: screening, moral hazard, adverse selection&lt;/li&gt;
+&lt;li&gt;allocative mechanism: contest, bargaining&lt;/li&gt;
+&lt;li&gt;market design: auction, matching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Industrial Organization</title>
