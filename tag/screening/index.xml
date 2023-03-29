@@ -5,9 +5,9 @@
     <link>/tag/screening/</link>
       <atom:link href="/tag/screening/index.xml" rel="self" type="application/rss+xml" />
     <description>screening</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2021. All Rights Reserved.</copyright><lastBuildDate>Mon, 18 Jan 2021 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2023. All Rights Reserved.</copyright><lastBuildDate>Mon, 18 Jan 2021 00:00:00 +0800</lastBuildDate>
     <image>
-      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_3.png</url>
       <title>screening</title>
       <link>/tag/screening/</link>
     </image>
@@ -19,7 +19,8 @@
       <guid>/publication/competitive-screening/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.
+    Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
