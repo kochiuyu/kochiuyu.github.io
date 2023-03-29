@@ -5,9 +5,9 @@
     <link>/book/</link>
       <atom:link href="/book/index.xml" rel="self" type="application/rss+xml" />
     <description>Working Paper</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2021. All Rights Reserved.</copyright><lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2023. All Rights Reserved.</copyright><lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0800</lastBuildDate>
     <image>
-      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_3.png</url>
       <title>Working Paper</title>
       <link>/book/</link>
     </image>
@@ -17,7 +17,7 @@
       <link>/book/technical-trading-r/</link>
       <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
       <guid>/book/technical-trading-r/</guid>
-      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R&amp;rdquo;&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
+      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R&amp;quot;&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;data manipulation (dyplr package),&lt;/li&gt;
 &lt;li&gt;conduct econometric analysis (regression, time series),&lt;/li&gt;
@@ -27,34 +27,34 @@
 &lt;li&gt;backtest a complex trading strategy and evaluate the performance.&lt;/li&gt;
 &lt;/ul&gt;
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
-
-
-  &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;figure &gt;
+ 
+ 
+   &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
+ 
+ 
+   &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
+ &lt;/a&gt;
+ 
+ 
+ 
+ &lt;/figure&gt;
 
 &lt;p&gt;The book is available through 
 &lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or 
@@ -74,34 +74,34 @@
       <guid>/book/tikz-cookbook/</guid>
       <description>&lt;p&gt;TikZ is a drawing package in LaTeX. It is very useful to draw a professional-looking diagram. However, the learning curve is a little bit steep for a beginner. I have recently compiled a 629-page cookbook that provides step-by-step illustrations on how to use TikZ to draw various diagrams in economics:&lt;/p&gt;
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook.png&#34; &gt;
-
-
-  &lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;figure &gt;
+ 
+ 
+   &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook.png&#34; &gt;
+ 
+ 
+   &lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; alt=&#34;&#34;  &gt;
+ &lt;/a&gt;
+ 
+ 
+ 
+ &lt;/figure&gt;
 
 &lt;p&gt;The book is available through 
 &lt;a href=&#34;https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Play&lt;/a&gt; or 
