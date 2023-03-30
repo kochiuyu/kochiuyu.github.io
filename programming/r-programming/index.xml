@@ -7,7 +7,7 @@
     <description>R Programming</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2023. All Rights Reserved.</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_3.png</url>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
       <title>R Programming</title>
       <link>/programming/r-programming/</link>
     </image>
@@ -4881,8 +4881,7 @@ updateEndEq(account.st)&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
 &lt;p&gt;We first cover how to download R and RStudio. Then we will study the basic interface for RStudio.&lt;/p&gt;
 &lt;h3 id=&#34;download-r&#34;&gt;Download R&lt;/h3&gt;
-&lt;p&gt;Head to 
-&lt;a href=&#34;http://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://cran.r-project.org/&lt;/a&gt; to download R. On the top of the page, you should see this. Choose the option based on your operating system.&lt;/p&gt;
+&lt;p&gt;Head to &lt;a href=&#34;http://cran.r-project.org/&#34;&gt;http://cran.r-project.org/&lt;/a&gt; to download R. On the top of the page, you should see this. Choose the option based on your operating system.&lt;/p&gt;
 
 
 
@@ -5193,62 +5192,6 @@ updateEndEq(account.st)&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
-      <title>Technical analysis with R</title>
-      <link>/programming/r-programming/technical-analysis-with-r/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
-      <guid>/programming/r-programming/technical-analysis-with-r/</guid>
-      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;data manipulation (dyplr package),&lt;/li&gt;
-&lt;li&gt;conduct econometric analysis (regression, time series),&lt;/li&gt;
-&lt;li&gt;plotting (ggplot2 package, dygraphs package),&lt;/li&gt;
-&lt;li&gt;webscrapping (rvest package, wbstat package, quantmod package), and&lt;/li&gt;
-&lt;li&gt;financial analysis (quantmod package, quantstrat package).&lt;/li&gt;
-&lt;li&gt;backtest a complex trading strategy and evaluate the performance.&lt;/li&gt;
-&lt;/ul&gt;
-
- 
- 
- 
- 
-   
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- &lt;figure &gt;
- 
- 
-   &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
- 
- 
-   &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
- &lt;/a&gt;
- 
- 
- 
- &lt;/figure&gt;
-
-&lt;p&gt;The book is available through 
-&lt;a href=&#34;/programming/r-programming/ta-with-r/&#34;&gt;here&lt;/a&gt; (this website), 
-&lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or 
-&lt;a href=&#34;https://gumroad.com/l/R-TA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gumroad&lt;/a&gt; (name-your-own-price offline pdf and epub). You can read the whole book through bookdown. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    After purchasing through Gumroad, you can download pdf and epub.
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Technical Analysis with R</title>
       <link>/programming/r-programming/ta-with-r/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
@@ -5263,34 +5206,90 @@ updateEndEq(account.st)&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;backtest a complex trading strategy and evaluate the performance.&lt;/li&gt;
 &lt;/ul&gt;
 
- 
- 
- 
- 
-   
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- &lt;figure &gt;
- 
- 
-   &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
- 
- 
-   &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
- &lt;/a&gt;
- 
- 
- 
- &lt;/figure&gt;
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The book is available through 
+&lt;a href=&#34;/programming/r-programming/ta-with-r/&#34;&gt;here&lt;/a&gt; (this website), 
+&lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or 
+&lt;a href=&#34;https://gumroad.com/l/R-TA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gumroad&lt;/a&gt; (name-your-own-price offline pdf and epub). You can read the whole book through bookdown. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Gumroad, you can download pdf and epub.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Technical analysis with R</title>
+      <link>/programming/r-programming/technical-analysis-with-r/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/programming/r-programming/technical-analysis-with-r/</guid>
+      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;data manipulation (dyplr package),&lt;/li&gt;
+&lt;li&gt;conduct econometric analysis (regression, time series),&lt;/li&gt;
+&lt;li&gt;plotting (ggplot2 package, dygraphs package),&lt;/li&gt;
+&lt;li&gt;webscrapping (rvest package, wbstat package, quantmod package), and&lt;/li&gt;
+&lt;li&gt;financial analysis (quantmod package, quantstrat package).&lt;/li&gt;
+&lt;li&gt;backtest a complex trading strategy and evaluate the performance.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
+
+
+  &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
 
 &lt;p&gt;The book is available through 
 &lt;a href=&#34;/programming/r-programming/ta-with-r/&#34;&gt;here&lt;/a&gt; (this website), 

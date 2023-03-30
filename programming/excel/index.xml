@@ -7,7 +7,7 @@
     <description>Introduction to Excel</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2023. All Rights Reserved.</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_3.png</url>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
       <title>Introduction to Excel</title>
       <link>/programming/excel/</link>
     </image>
@@ -503,7 +503,7 @@ To check if you have enabled it, go to Options &amp;gt; Add-Ins &amp;gt; Solver.
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;hide-and-unhide&#34;&gt;Hide and Unhide&lt;/h2&gt;
-&lt;p&gt;When we have many rows and columns, the screen may be too small to display all. For example, some rows are too bothering to work on.
+&lt;p&gt;When we have many rows and columns, the screen may be too small to display all. For example, some rows are too bothering to work on. 
 Then we have a row of data we wish to hide. We could do that by simply selecting the row, and pressing the right mouse button, then selecting the hide option.&lt;/p&gt;
 &lt;p&gt;
 
@@ -597,7 +597,7 @@ Then we have a row of data we wish to hide. We could do that by simply selecting
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;charting&#34;&gt;Charting&lt;/h2&gt;
-&lt;p&gt;Excel also allows you to plot charts or graphs easily, to aid in the visualization of data.
+&lt;p&gt;Excel also allows you to plot charts or graphs easily, to aid in the visualization of data. 
 Simply go to the Insert tab, and there are multiple options available there. See Figure \ref{Excel-Charting}&lt;/p&gt;
 
 
@@ -1032,10 +1032,10 @@ Simply go to the Insert tab, and there are multiple options available there. See
 &lt;h1 id=&#34;more-applications&#34;&gt;More applications&lt;/h1&gt;
 &lt;p&gt;Excel spreadsheet can be used for fundamental analysis, technical analysis and simulation.&lt;/p&gt;
 &lt;h2 id=&#34;fundamental-analysis&#34;&gt;Fundamental Analysis&lt;/h2&gt;
-&lt;p&gt;We can construct the spreadsheet of performance ratio analysis from data generated from financial statements of a given year. Vlookup will be useful in this case.
+&lt;p&gt;We can construct the spreadsheet of performance ratio analysis from data generated from financial statements of a given year. Vlookup will be useful in this case. 
 We can also use the copy and paste function to replicate the analysis for other years. Relative address will be useful here.&lt;/p&gt;
 &lt;h2 id=&#34;technical-analysis&#34;&gt;Technical analysis&lt;/h2&gt;
-&lt;p&gt;We can also perform technical analysis in Excel, by setting up our own spreadsheet and incorporating the formula.
+&lt;p&gt;We can also perform technical analysis in Excel, by setting up our own spreadsheet and incorporating the formula. 
 Examples include Filter rule, Simple Moving Average (SMA),Exponential Moving Average (EMA), Bollinger Band, Moving Average Convergence Divergence (MACD), Relative Strength Index (RSI).&lt;/p&gt;
 &lt;h2 id=&#34;time-series-analysis&#34;&gt;Time Series Analysis&lt;/h2&gt;
 &lt;p&gt;We can also do some basic time series analysis in Excel spreadsheet.
@@ -1769,7 +1769,7 @@ where $\beta=2/(n+1)$.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;lookup&#34;&gt;Lookup&lt;/h2&gt;
-&lt;p&gt;Lookup functions allow you to get data from another table. Two basic lookup functions are &lt;code&gt;VLOOKUP&lt;/code&gt; or &lt;code&gt;HLOOKUP&lt;/code&gt;. They help to locate particular cells in table. Using &lt;code&gt;MATCH&lt;/code&gt; and &lt;code&gt;INDEX&lt;/code&gt; together allows us to have a flexible vlookup and hlookup, when we have 2 different types of data.
+&lt;p&gt;Lookup functions allow you to get data from another table. Two basic lookup functions are &lt;code&gt;VLOOKUP&lt;/code&gt; or &lt;code&gt;HLOOKUP&lt;/code&gt;. They help to locate particular cells in table. Using &lt;code&gt;MATCH&lt;/code&gt; and &lt;code&gt;INDEX&lt;/code&gt; together allows us to have a flexible vlookup and hlookup, when we have 2 different types of data. 
 For example, we could use &lt;code&gt;=INDEX(range1, MATCH(key, range2))&lt;/code&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
