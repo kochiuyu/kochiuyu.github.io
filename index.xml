@@ -5,9 +5,9 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Chiu Yu Ko</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2023. All Rights Reserved.</copyright><lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2023. All Rights Reserved.</copyright><lastBuildDate>Thu, 17 Aug 2023 00:00:00 +0800</lastBuildDate>
     <image>
-      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_3.png</url>
       <title>Chiu Yu Ko</title>
       <link>/</link>
     </image>
@@ -61,13 +61,38 @@
     </item>
     
     <item>
+      <title>Automated conflict resolution: Sharing sequentially triggered losses</title>
+      <link>/publication/sharing-sequential/</link>
+      <pubDate>Thu, 17 Aug 2023 00:00:00 +0800</pubDate>
+      <guid>/publication/sharing-sequential/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A conceptual model for FRAND royalty setting</title>
+      <link>/publication/frand-royalty/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0800</pubDate>
+      <guid>/publication/frand-royalty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sleeplessness, distraction and stock market performance: Evidence from the world cup</title>
+      <link>/publication/world-cup/</link>
+      <pubDate>Wed, 17 May 2023 00:00:00 +0800</pubDate>
+      <guid>/publication/world-cup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Partial compatibility in two-sided markets: Equilibrium and welfare analysis</title>
       <link>/publication/corruption-tech-transfer/</link>
       <pubDate>Thu, 18 Aug 2022 00:00:00 +0800</pubDate>
       <guid>/publication/corruption-tech-transfer/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.
+    Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -80,7 +105,8 @@
       <guid>/publication/partial-compatibility/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.
+    Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -140,7 +166,8 @@
       <guid>/publication/dominant-platform/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.
+    Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -153,7 +180,8 @@
       <guid>/publication/competitive-screening/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.
+    Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -166,7 +194,8 @@
       <guid>/publication/production-joint-venture/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.
+    Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -204,7 +233,8 @@
       <guid>/publication/many-to-one-bargaining/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.
+    Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -223,7 +253,7 @@
       <link>/book/technical-trading-r/</link>
       <pubDate>Sat, 17 Aug 2019 00:00:00 +0800</pubDate>
       <guid>/book/technical-trading-r/</guid>
-      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R&amp;rdquo;&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
+      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R&amp;quot;&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;data manipulation (dyplr package),&lt;/li&gt;
 &lt;li&gt;conduct econometric analysis (regression, time series),&lt;/li&gt;
@@ -233,34 +263,34 @@
 &lt;li&gt;backtest a complex trading strategy and evaluate the performance.&lt;/li&gt;
 &lt;/ul&gt;
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
-
-
-  &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;figure &gt;
+ 
+ 
+   &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
+ 
+ 
+   &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
+ &lt;/a&gt;
+ 
+ 
+ 
+ &lt;/figure&gt;
 
 &lt;p&gt;The book is available through 
 &lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or 
@@ -280,34 +310,34 @@
       <guid>/book/tikz-cookbook/</guid>
       <description>&lt;p&gt;TikZ is a drawing package in LaTeX. It is very useful to draw a professional-looking diagram. However, the learning curve is a little bit steep for a beginner. I have recently compiled a 629-page cookbook that provides step-by-step illustrations on how to use TikZ to draw various diagrams in economics:&lt;/p&gt;
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook.png&#34; &gt;
-
-
-  &lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;figure &gt;
+ 
+ 
+   &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook.png&#34; &gt;
+ 
+ 
+   &lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; alt=&#34;&#34;  &gt;
+ &lt;/a&gt;
+ 
+ 
+ 
+ &lt;/figure&gt;
 
 &lt;p&gt;The book is available through 
 &lt;a href=&#34;https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Play&lt;/a&gt; or 
@@ -859,7 +889,7 @@ To check if you have enabled it, go to Options &amp;gt; Add-Ins &amp;gt; Solver.
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;hide-and-unhide&#34;&gt;Hide and Unhide&lt;/h2&gt;
-&lt;p&gt;When we have many rows and columns, the screen may be too small to display all. For example, some rows are too bothering to work on. 
+&lt;p&gt;When we have many rows and columns, the screen may be too small to display all. For example, some rows are too bothering to work on.
 Then we have a row of data we wish to hide. We could do that by simply selecting the row, and pressing the right mouse button, then selecting the hide option.&lt;/p&gt;
 &lt;p&gt;
 
@@ -953,7 +983,7 @@ Then we have a row of data we wish to hide. We could do that by simply selecting
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;charting&#34;&gt;Charting&lt;/h2&gt;
-&lt;p&gt;Excel also allows you to plot charts or graphs easily, to aid in the visualization of data. 
+&lt;p&gt;Excel also allows you to plot charts or graphs easily, to aid in the visualization of data.
 Simply go to the Insert tab, and there are multiple options available there. See Figure \ref{Excel-Charting}&lt;/p&gt;
 
 
@@ -1388,10 +1418,10 @@ Simply go to the Insert tab, and there are multiple options available there. See
 &lt;h1 id=&#34;more-applications&#34;&gt;More applications&lt;/h1&gt;
 &lt;p&gt;Excel spreadsheet can be used for fundamental analysis, technical analysis and simulation.&lt;/p&gt;
 &lt;h2 id=&#34;fundamental-analysis&#34;&gt;Fundamental Analysis&lt;/h2&gt;
-&lt;p&gt;We can construct the spreadsheet of performance ratio analysis from data generated from financial statements of a given year. Vlookup will be useful in this case. 
+&lt;p&gt;We can construct the spreadsheet of performance ratio analysis from data generated from financial statements of a given year. Vlookup will be useful in this case.
 We can also use the copy and paste function to replicate the analysis for other years. Relative address will be useful here.&lt;/p&gt;
 &lt;h2 id=&#34;technical-analysis&#34;&gt;Technical analysis&lt;/h2&gt;
-&lt;p&gt;We can also perform technical analysis in Excel, by setting up our own spreadsheet and incorporating the formula. 
+&lt;p&gt;We can also perform technical analysis in Excel, by setting up our own spreadsheet and incorporating the formula.
 Examples include Filter rule, Simple Moving Average (SMA),Exponential Moving Average (EMA), Bollinger Band, Moving Average Convergence Divergence (MACD), Relative Strength Index (RSI).&lt;/p&gt;
 &lt;h2 id=&#34;time-series-analysis&#34;&gt;Time Series Analysis&lt;/h2&gt;
 &lt;p&gt;We can also do some basic time series analysis in Excel spreadsheet.
@@ -3618,7 +3648,7 @@ where $\beta=2/(n+1)$.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;lookup&#34;&gt;Lookup&lt;/h2&gt;
-&lt;p&gt;Lookup functions allow you to get data from another table. Two basic lookup functions are &lt;code&gt;VLOOKUP&lt;/code&gt; or &lt;code&gt;HLOOKUP&lt;/code&gt;. They help to locate particular cells in table. Using &lt;code&gt;MATCH&lt;/code&gt; and &lt;code&gt;INDEX&lt;/code&gt; together allows us to have a flexible vlookup and hlookup, when we have 2 different types of data. 
+&lt;p&gt;Lookup functions allow you to get data from another table. Two basic lookup functions are &lt;code&gt;VLOOKUP&lt;/code&gt; or &lt;code&gt;HLOOKUP&lt;/code&gt;. They help to locate particular cells in table. Using &lt;code&gt;MATCH&lt;/code&gt; and &lt;code&gt;INDEX&lt;/code&gt; together allows us to have a flexible vlookup and hlookup, when we have 2 different types of data.
 For example, we could use &lt;code&gt;=INDEX(range1, MATCH(key, range2))&lt;/code&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -4951,7 +4981,7 @@ End With
 End Sub
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;record-macro&#34;&gt;Record Macro&lt;/h1&gt;
-&lt;p&gt;Lastly, to see how to code certain actions in Excel, VBA has this useful function called Record Macro. 
+&lt;p&gt;Lastly, to see how to code certain actions in Excel, VBA has this useful function called Record Macro.
 To access it, in the Developer Tab, press the Record Macro button.&lt;/p&gt;
 
 
@@ -4983,7 +5013,7 @@ To access it, in the Developer Tab, press the Record Macro button.&lt;/p&gt;
 
 &lt;/figure&gt;
 
-&lt;p&gt;Whatever you do in Excel from then on will be recorded in a macro, which you can later access. To stop recording, click the button again, which should now say Stop Recording. 
+&lt;p&gt;Whatever you do in Excel from then on will be recorded in a macro, which you can later access. To stop recording, click the button again, which should now say Stop Recording.
 Click on the Visual Basic button (access to VBE) to see your recorded actions in code. This is useful if you know what you want to code, and how to do it in Excel, but you do not know how to code it in VBA.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -6237,7 +6267,8 @@ Hello World!
 &lt;/ul&gt;
 &lt;h2 id=&#34;additional-reading&#34;&gt;Additional Reading:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Cawley (2012) guide (Must read! Can also read earlier version). Available at [AEA](&lt;a href=&#34;http://www.aeaweb.org/joe/articles/2011/job&#34;&gt;http://www.aeaweb.org/joe/articles/2011/job&lt;/a&gt; market guide.pdf)&lt;/li&gt;
+&lt;li&gt;Cawley (2012) guide (Must read! Can also read earlier version). Available at [AEA](
+&lt;a href=&#34;http://www.aeaweb.org/joe/articles/2011/job&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.aeaweb.org/joe/articles/2011/job&lt;/a&gt; market guide.pdf)&lt;/li&gt;
 &lt;li&gt;William Thomson (2012): Being a graduate student in economics published in A Guide for the Young Economist, MIT Press. Available in working paper version&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;supplemetary-information-links-to-job-positing&#34;&gt;Supplemetary information: Links to Job Positing&lt;/h2&gt;
@@ -6246,7 +6277,8 @@ Hello World!
 &lt;a href=&#34;http://www.aeaweb.org/joe/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Econ Job Market: 
 &lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ERN Job: [link](&lt;a href=&#34;http://www.ssrn.com/update/ern/ernjob/ern&#34;&gt;http://www.ssrn.com/update/ern/ernjob/ern&lt;/a&gt; job.html)&lt;/li&gt;
+&lt;li&gt;ERN Job: [link](
+&lt;a href=&#34;http://www.ssrn.com/update/ern/ernjob/ern&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.ssrn.com/update/ern/ernjob/ern&lt;/a&gt; job.html)&lt;/li&gt;
 &lt;li&gt;Chronicle of Higher Education (For teaching jobs): 
 &lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Royal Economic Society (For Europe Jobs): 
@@ -6268,17 +6300,20 @@ Hello World!
 &lt;a href=&#34;http://faculty.haas.berkeley.edu/levine/cheapadvice.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Harvard Job Market Information: 
 &lt;a href=&#34;http://www.economics.harvard.edu/jobmarket&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Stanford Ph.D placement Guide: [link](&lt;a href=&#34;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&#34;&gt;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&lt;/a&gt; 120.pdf)&lt;/li&gt;
+&lt;li&gt;Stanford Ph.D placement Guide: [link](
+&lt;a href=&#34;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&lt;/a&gt; 120.pdf)&lt;/li&gt;
 &lt;li&gt;Chicago Students Econ Job Market Advice: 
 &lt;a href=&#34;http://www.dinhvutrangngan.com/teaching/Advice/JobMarket/Chicago&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Berekely Job Market Packet: 
 &lt;a href=&#34;http://econ.berkeley.edu/sites/default/files/placementinfopacket2011-12.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;University of Pitt Job Market Information: [link](&lt;a href=&#34;http://www.pitt.edu/coen/graduate/job&#34;&gt;http://www.pitt.edu/coen/graduate/job&lt;/a&gt; market guide 2011.pdf)&lt;/li&gt;
+&lt;li&gt;University of Pitt Job Market Information: [link](
+&lt;a href=&#34;http://www.pitt.edu/coen/graduate/job&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.pitt.edu/coen/graduate/job&lt;/a&gt; market guide 2011.pdf)&lt;/li&gt;
 &lt;li&gt;Luigi Pistaferri Job Market Advice: 
 &lt;a href=&#34;http://www.stanford.edu/pista/placement.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;David Laibsons Job Market Note: 
 &lt;a href=&#34;http://www.economics.harvard.edu/files/David%20Laibson%20Tips.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Navin Kartiks Job Market Tips: [link](&lt;a href=&#34;http://econ.ucsd.edu/vramey/placement/nk&#34;&gt;http://econ.ucsd.edu/vramey/placement/nk&lt;/a&gt; tips.doc)&lt;/li&gt;
+&lt;li&gt;Navin Kartiks Job Market Tips: [link](
+&lt;a href=&#34;http://econ.ucsd.edu/vramey/placement/nk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://econ.ucsd.edu/vramey/placement/nk&lt;/a&gt; tips.doc)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -6438,8 +6473,10 @@ Hello World!
 &lt;/ul&gt;
 &lt;h2 id=&#34;september-final-polishing-of-paper&#34;&gt;September: Final Polishing of Paper&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Job Openings for Economists (JOE): &lt;a href=&#34;http://www.aeaweb.org/joe/&#34;&gt;http://www.aeaweb.org/joe/&lt;/a&gt; contains almost all job information for Ph.D. economists&lt;/li&gt;
-&lt;li&gt;EconJobMarket (EJM): &lt;a href=&#34;https://econjobmarket.org/&#34;&gt;https://econjobmarket.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Job Openings for Economists (JOE): 
+&lt;a href=&#34;http://www.aeaweb.org/joe/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.aeaweb.org/joe/&lt;/a&gt; contains almost all job information for Ph.D. economists&lt;/li&gt;
+&lt;li&gt;EconJobMarket (EJM): 
+&lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://econjobmarket.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Final polishing of the JMP, especially your abstract and introduction&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;october-register-for-aea-and-get-ready-for-application&#34;&gt;October: Register for AEA and get ready for application&lt;/h2&gt;
@@ -6702,7 +6739,8 @@ Hello World!
 &lt;/ul&gt;
 &lt;h2 id=&#34;additional-reading&#34;&gt;Additional Reading:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Cawley (2012) guide (Must read! Can also read earlier version). Available at [AEA](&lt;a href=&#34;http://www.aeaweb.org/joe/articles/2011/job&#34;&gt;http://www.aeaweb.org/joe/articles/2011/job&lt;/a&gt; market guide.pdf)&lt;/li&gt;
+&lt;li&gt;Cawley (2012) guide (Must read! Can also read earlier version). Available at [AEA](
+&lt;a href=&#34;http://www.aeaweb.org/joe/articles/2011/job&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.aeaweb.org/joe/articles/2011/job&lt;/a&gt; market guide.pdf)&lt;/li&gt;
 &lt;li&gt;William Thomson (2012): Being a graduate student in economics published in A Guide for the Young Economist, MIT Press. Available in working paper version&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;supplemetary-information-links-to-job-positing&#34;&gt;Supplemetary information: Links to Job Positing&lt;/h2&gt;
@@ -6711,7 +6749,8 @@ Hello World!
 &lt;a href=&#34;http://www.aeaweb.org/joe/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Econ Job Market: 
 &lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ERN Job: [link](&lt;a href=&#34;http://www.ssrn.com/update/ern/ernjob/ern&#34;&gt;http://www.ssrn.com/update/ern/ernjob/ern&lt;/a&gt; job.html)&lt;/li&gt;
+&lt;li&gt;ERN Job: [link](
+&lt;a href=&#34;http://www.ssrn.com/update/ern/ernjob/ern&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.ssrn.com/update/ern/ernjob/ern&lt;/a&gt; job.html)&lt;/li&gt;
 &lt;li&gt;Chronicle of Higher Education (For teaching jobs): 
 &lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Royal Economic Society (For Europe Jobs): 
@@ -6733,17 +6772,20 @@ Hello World!
 &lt;a href=&#34;http://faculty.haas.berkeley.edu/levine/cheapadvice.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Harvard Job Market Information: 
 &lt;a href=&#34;http://www.economics.harvard.edu/jobmarket&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Stanford Ph.D placement Guide: [link](&lt;a href=&#34;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&#34;&gt;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&lt;/a&gt; 120.pdf)&lt;/li&gt;
+&lt;li&gt;Stanford Ph.D placement Guide: [link](
+&lt;a href=&#34;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&lt;/a&gt; 120.pdf)&lt;/li&gt;
 &lt;li&gt;Chicago Students Econ Job Market Advice: 
 &lt;a href=&#34;http://www.dinhvutrangngan.com/teaching/Advice/JobMarket/Chicago&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Berekely Job Market Packet: 
 &lt;a href=&#34;http://econ.berkeley.edu/sites/default/files/placementinfopacket2011-12.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;University of Pitt Job Market Information: [link](&lt;a href=&#34;http://www.pitt.edu/coen/graduate/job&#34;&gt;http://www.pitt.edu/coen/graduate/job&lt;/a&gt; market guide 2011.pdf)&lt;/li&gt;
+&lt;li&gt;University of Pitt Job Market Information: [link](
+&lt;a href=&#34;http://www.pitt.edu/coen/graduate/job&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.pitt.edu/coen/graduate/job&lt;/a&gt; market guide 2011.pdf)&lt;/li&gt;
 &lt;li&gt;Luigi Pistaferri Job Market Advice: 
 &lt;a href=&#34;http://www.stanford.edu/pista/placement.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;David Laibsons Job Market Note: 
 &lt;a href=&#34;http://www.economics.harvard.edu/files/David%20Laibson%20Tips.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Navin Kartiks Job Market Tips: [link](&lt;a href=&#34;http://econ.ucsd.edu/vramey/placement/nk&#34;&gt;http://econ.ucsd.edu/vramey/placement/nk&lt;/a&gt; tips.doc)&lt;/li&gt;
+&lt;li&gt;Navin Kartiks Job Market Tips: [link](
+&lt;a href=&#34;http://econ.ucsd.edu/vramey/placement/nk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://econ.ucsd.edu/vramey/placement/nk&lt;/a&gt; tips.doc)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -9703,7 +9745,8 @@ Hello World!
       <guid>/others/jobmarkettips/reading/</guid>
       <description>&lt;h2 id=&#34;additional-reading&#34;&gt;Additional Reading:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Cawley (2012) guide (Must read! Can also read earlier version). Available at [AEA](&lt;a href=&#34;http://www.aeaweb.org/joe/articles/2011/job&#34;&gt;http://www.aeaweb.org/joe/articles/2011/job&lt;/a&gt; market guide.pdf)&lt;/li&gt;
+&lt;li&gt;Cawley (2012) guide (Must read! Can also read earlier version). Available at [AEA](
+&lt;a href=&#34;http://www.aeaweb.org/joe/articles/2011/job&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.aeaweb.org/joe/articles/2011/job&lt;/a&gt; market guide.pdf)&lt;/li&gt;
 &lt;li&gt;William Thomson (2012): Being a graduate student in economics published in A Guide for the Young Economist, MIT Press. Available in working paper version&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;supplemetary-information-links-to-job-positing&#34;&gt;Supplemetary information: Links to Job Positing&lt;/h2&gt;
@@ -9712,7 +9755,8 @@ Hello World!
 &lt;a href=&#34;http://www.aeaweb.org/joe/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Econ Job Market: 
 &lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ERN Job: [link](&lt;a href=&#34;http://www.ssrn.com/update/ern/ernjob/ern&#34;&gt;http://www.ssrn.com/update/ern/ernjob/ern&lt;/a&gt; job.html)&lt;/li&gt;
+&lt;li&gt;ERN Job: [link](
+&lt;a href=&#34;http://www.ssrn.com/update/ern/ernjob/ern&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.ssrn.com/update/ern/ernjob/ern&lt;/a&gt; job.html)&lt;/li&gt;
 &lt;li&gt;Chronicle of Higher Education (For teaching jobs): 
 &lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Royal Economic Society (For Europe Jobs): 
@@ -9734,17 +9778,20 @@ Hello World!
 &lt;a href=&#34;http://faculty.haas.berkeley.edu/levine/cheapadvice.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Harvard Job Market Information: 
 &lt;a href=&#34;http://www.economics.harvard.edu/jobmarket&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Stanford Ph.D placement Guide: [link](&lt;a href=&#34;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&#34;&gt;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&lt;/a&gt; 120.pdf)&lt;/li&gt;
+&lt;li&gt;Stanford Ph.D placement Guide: [link](
+&lt;a href=&#34;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://economics.stanford.edu/files/Ph.D%20Placement%20Guide%202011-&lt;/a&gt; 120.pdf)&lt;/li&gt;
 &lt;li&gt;Chicago Students Econ Job Market Advice: 
 &lt;a href=&#34;http://www.dinhvutrangngan.com/teaching/Advice/JobMarket/Chicago&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Berekely Job Market Packet: 
 &lt;a href=&#34;http://econ.berkeley.edu/sites/default/files/placementinfopacket2011-12.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;University of Pitt Job Market Information: [link](&lt;a href=&#34;http://www.pitt.edu/coen/graduate/job&#34;&gt;http://www.pitt.edu/coen/graduate/job&lt;/a&gt; market guide 2011.pdf)&lt;/li&gt;
+&lt;li&gt;University of Pitt Job Market Information: [link](
+&lt;a href=&#34;http://www.pitt.edu/coen/graduate/job&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.pitt.edu/coen/graduate/job&lt;/a&gt; market guide 2011.pdf)&lt;/li&gt;
 &lt;li&gt;Luigi Pistaferri Job Market Advice: 
 &lt;a href=&#34;http://www.stanford.edu/pista/placement.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;David Laibsons Job Market Note: 
 &lt;a href=&#34;http://www.economics.harvard.edu/files/David%20Laibson%20Tips.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Navin Kartiks Job Market Tips: [link](&lt;a href=&#34;http://econ.ucsd.edu/vramey/placement/nk&#34;&gt;http://econ.ucsd.edu/vramey/placement/nk&lt;/a&gt; tips.doc)&lt;/li&gt;
+&lt;li&gt;Navin Kartiks Job Market Tips: [link](
+&lt;a href=&#34;http://econ.ucsd.edu/vramey/placement/nk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://econ.ucsd.edu/vramey/placement/nk&lt;/a&gt; tips.doc)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -9756,8 +9803,10 @@ Hello World!
       <guid>/others/jobmarkettips/september/</guid>
       <description>&lt;h2 id=&#34;september-final-polishing-of-paper&#34;&gt;September: Final Polishing of Paper&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Job Openings for Economists (JOE): &lt;a href=&#34;http://www.aeaweb.org/joe/&#34;&gt;http://www.aeaweb.org/joe/&lt;/a&gt; contains almost all job information for Ph.D. economists&lt;/li&gt;
-&lt;li&gt;EconJobMarket (EJM): &lt;a href=&#34;https://econjobmarket.org/&#34;&gt;https://econjobmarket.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Job Openings for Economists (JOE): 
+&lt;a href=&#34;http://www.aeaweb.org/joe/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.aeaweb.org/joe/&lt;/a&gt; contains almost all job information for Ph.D. economists&lt;/li&gt;
+&lt;li&gt;EconJobMarket (EJM): 
+&lt;a href=&#34;https://econjobmarket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://econjobmarket.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Final polishing of the JMP, especially your abstract and introduction&lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -16049,7 +16098,8 @@ updateEndEq(account.st)&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
 &lt;p&gt;We first cover how to download R and RStudio. Then we will study the basic interface for RStudio.&lt;/p&gt;
 &lt;h3 id=&#34;download-r&#34;&gt;Download R&lt;/h3&gt;
-&lt;p&gt;Head to &lt;a href=&#34;http://cran.r-project.org/&#34;&gt;http://cran.r-project.org/&lt;/a&gt; to download R. On the top of the page, you should see this. Choose the option based on your operating system.&lt;/p&gt;
+&lt;p&gt;Head to 
+&lt;a href=&#34;http://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://cran.r-project.org/&lt;/a&gt; to download R. On the top of the page, you should see this. Choose the option based on your operating system.&lt;/p&gt;
 
 
 
@@ -16947,62 +16997,6 @@ No, this is you. % run if false
     </item>
     
     <item>
-      <title>Technical Analysis with R</title>
-      <link>/programming/r-programming/ta-with-r/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
-      <guid>/programming/r-programming/ta-with-r/</guid>
-      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;data manipulation (dyplr package)&lt;/li&gt;
-&lt;li&gt;conduct econometric analysis (regression, time series),&lt;/li&gt;
-&lt;li&gt;plotting (ggplot2 package, dygraphs package),&lt;/li&gt;
-&lt;li&gt;webscrapping (rvest package, wbstat package, quantmod package), and&lt;/li&gt;
-&lt;li&gt;financial analysis (quantmod package, quantstrat package).&lt;/li&gt;
-&lt;li&gt;backtest a complex trading strategy and evaluate the performance.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
-
-
-  &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;The book is available through 
-&lt;a href=&#34;/programming/r-programming/ta-with-r/&#34;&gt;here&lt;/a&gt; (this website), 
-&lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or 
-&lt;a href=&#34;https://gumroad.com/l/R-TA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gumroad&lt;/a&gt; (name-your-own-price offline pdf and epub). You can read the whole book through bookdown. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    After purchasing through Gumroad, you can download pdf and epub.
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Technical analysis with R</title>
       <link>/programming/r-programming/technical-analysis-with-r/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
@@ -17017,34 +17011,90 @@ No, this is you. % run if false
 &lt;li&gt;backtest a complex trading strategy and evaluate the performance.&lt;/li&gt;
 &lt;/ul&gt;
 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;figure &gt;
+ 
+ 
+   &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
+ 
+ 
+   &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
+ &lt;/a&gt;
+ 
+ 
+ 
+ &lt;/figure&gt;
 
+&lt;p&gt;The book is available through 
+&lt;a href=&#34;/programming/r-programming/ta-with-r/&#34;&gt;here&lt;/a&gt; (this website), 
+&lt;a href=&#34;https://bookdown.org/kochiuyu/Technical-Analysis-with-R/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown&lt;/a&gt; (free online gitbook) or 
+&lt;a href=&#34;https://gumroad.com/l/R-TA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gumroad&lt;/a&gt; (name-your-own-price offline pdf and epub). You can read the whole book through bookdown. Of course, you are very welcome to consider buying me a cup of coffee by purchasing the ebook.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    After purchasing through Gumroad, you can download pdf and epub.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Technical Analysis with R</title>
+      <link>/programming/r-programming/ta-with-r/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0800</pubDate>
+      <guid>/programming/r-programming/ta-with-r/</guid>
+      <description>&lt;p&gt;I have written an introductory book with R, titled &lt;strong&gt;Technical Analysis with R&lt;/strong&gt;. Readers are prepared how to do&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;data manipulation (dyplr package)&lt;/li&gt;
+&lt;li&gt;conduct econometric analysis (regression, time series),&lt;/li&gt;
+&lt;li&gt;plotting (ggplot2 package, dygraphs package),&lt;/li&gt;
+&lt;li&gt;webscrapping (rvest package, wbstat package, quantmod package), and&lt;/li&gt;
+&lt;li&gt;financial analysis (quantmod package, quantstrat package).&lt;/li&gt;
+&lt;li&gt;backtest a complex trading strategy and evaluate the performance.&lt;/li&gt;
+&lt;/ul&gt;
 
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
-
-
-  &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;figure &gt;
+ 
+ 
+   &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; &gt;
+ 
+ 
+   &lt;img src=&#34;/img/Cover-Technical-Analysis-with-R.png&#34; alt=&#34;&#34;  &gt;
+ &lt;/a&gt;
+ 
+ 
+ 
+ &lt;/figure&gt;
 
 &lt;p&gt;The book is available through 
 &lt;a href=&#34;/programming/r-programming/ta-with-r/&#34;&gt;here&lt;/a&gt; (this website), 
@@ -17065,34 +17115,34 @@ No, this is you. % run if false
       <guid>/programming/tikz/tikz-cookbook/</guid>
       <description>&lt;p&gt;TikZ is a drawing package in LaTeX. It is very useful to draw a professional-looking diagram. However, the learning curve is a little bit steep for a beginner. I have recently compiled a 629-page cookbook that provides step-by-step illustrations on how to use TikZ to draw various diagrams in economics:&lt;/p&gt;
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook.png&#34; &gt;
-
-
-  &lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;figure &gt;
+ 
+ 
+   &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook.png&#34; &gt;
+ 
+ 
+   &lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; alt=&#34;&#34;  &gt;
+ &lt;/a&gt;
+ 
+ 
+ 
+ &lt;/figure&gt;
 
 &lt;p&gt;The book is available through 
 &lt;a href=&#34;https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Play&lt;/a&gt; or 
@@ -17192,9 +17242,9 @@ No, this is you. % run if false
 &lt;/ul&gt;
 &lt;p&gt;Overview Video:&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/O7Cvs2fXISE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+  &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+    &lt;iframe src=&#34;https://www.youtube.com/embed/O7Cvs2fXISE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
 
 </description>
     </item>
@@ -17224,9 +17274,9 @@ No, this is you. % run if false
 &lt;/ul&gt;
 &lt;p&gt;Overview Video:&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/O7Cvs2fXISE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+  &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+    &lt;iframe src=&#34;https://www.youtube.com/embed/O7Cvs2fXISE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
 
 </description>
     </item>

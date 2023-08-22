@@ -7,7 +7,7 @@
     <description>LaTeX and TikZ</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2023. All Rights Reserved.</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_3.png</url>
       <title>LaTeX and TikZ</title>
       <link>/programming/tikz/</link>
     </image>
@@ -1366,34 +1366,34 @@ No, this is you. % run if false
       <guid>/programming/tikz/tikz-cookbook/</guid>
       <description>&lt;p&gt;TikZ is a drawing package in LaTeX. It is very useful to draw a professional-looking diagram. However, the learning curve is a little bit steep for a beginner. I have recently compiled a 629-page cookbook that provides step-by-step illustrations on how to use TikZ to draw various diagrams in economics:&lt;/p&gt;
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook.png&#34; &gt;
-
-
-  &lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;figure &gt;
+ 
+ 
+   &lt;a data-fancybox=&#34;&#34; href=&#34;/img/Cover-TikZ-Cookbook.png&#34; &gt;
+ 
+ 
+   &lt;img src=&#34;/img/Cover-TikZ-Cookbook.png&#34; alt=&#34;&#34;  &gt;
+ &lt;/a&gt;
+ 
+ 
+ 
+ &lt;/figure&gt;
 
 &lt;p&gt;The book is available through 
 &lt;a href=&#34;https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Play&lt;/a&gt; or 

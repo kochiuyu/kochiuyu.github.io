@@ -7,7 +7,7 @@
     <description>Overview</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2023. All Rights Reserved.</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_3.png</url>
       <title>Overview</title>
       <link>/programming/vba/</link>
     </image>
@@ -2221,7 +2221,7 @@ End With
 End Sub
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;record-macro&#34;&gt;Record Macro&lt;/h1&gt;
-&lt;p&gt;Lastly, to see how to code certain actions in Excel, VBA has this useful function called Record Macro. 
+&lt;p&gt;Lastly, to see how to code certain actions in Excel, VBA has this useful function called Record Macro.
 To access it, in the Developer Tab, press the Record Macro button.&lt;/p&gt;
 
 
@@ -2253,7 +2253,7 @@ To access it, in the Developer Tab, press the Record Macro button.&lt;/p&gt;
 
 &lt;/figure&gt;
 
-&lt;p&gt;Whatever you do in Excel from then on will be recorded in a macro, which you can later access. To stop recording, click the button again, which should now say Stop Recording. 
+&lt;p&gt;Whatever you do in Excel from then on will be recorded in a macro, which you can later access. To stop recording, click the button again, which should now say Stop Recording.
 Click on the Visual Basic button (access to VBE) to see your recorded actions in code. This is useful if you know what you want to code, and how to do it in Excel, but you do not know how to code it in VBA.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
