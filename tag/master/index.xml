@@ -5,12 +5,56 @@
     <link>/tag/master/</link>
       <atom:link href="/tag/master/index.xml" rel="self" type="application/rss+xml" />
     <description>Master</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2023. All Rights Reserved.</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Copyright © 2012-2023. All Rights Reserved.</copyright><lastBuildDate>Thu, 27 Apr 2023 00:00:00 +0800</lastBuildDate>
     <image>
       <url>/images/icon_hu0d0f1c3f4fe2190e7e8ae39cb8f4a753_123445_512x512_fill_lanczos_center_3.png</url>
       <title>Master</title>
       <link>/tag/master/</link>
     </image>
+    
+    <item>
+      <title>Economics for Finance Practice</title>
+      <link>/teaching/economics-for-finance-practice/</link>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0800</pubDate>
+      <guid>/teaching/economics-for-finance-practice/</guid>
+      <description>&lt;p&gt;Overview&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The course covers both micro- and macro-economics fundamental to finance practice.&lt;/li&gt;
+&lt;li&gt;Topics for microeconomics include: game theory and its application in finance, asymmetric information, consumer and producer behaviors, externality, public goods, information technology and network effect, asset markets and investment under uncertainty, mean variance optimization and portfolio theory, and behavioral economics.&lt;/li&gt;
+&lt;li&gt;Topics for macroeconomics include: classical macroeconomics, Keynesian macroeconomics, output, inflation and unemployment, trade and exchange rate, economic policies, and economic growth.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TBA&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Analysis</title>
+      <link>/teaching/statistical-analysis/</link>
+      <pubDate>Thu, 27 Apr 2023 00:00:00 +0800</pubDate>
+      <guid>/teaching/statistical-analysis/</guid>
+      <description>&lt;p&gt;Overview&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This course is intended to equip students with the basic statistical tools required for the quantitative analysis of business problems.&lt;/li&gt;
+&lt;li&gt;Topics include basic sampling and analysis of data, probability distribution functions, estimation of parameters and hypothesis testing,  goodness-of-fit tests, analysis of variance, simple regression, correlation, and basic non-parametric statistical methods.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction &amp;amp; Descriptive Statistics&lt;/li&gt;
+&lt;li&gt;Probability Distributions&lt;/li&gt;
+&lt;li&gt;Sampling Distributions&lt;/li&gt;
+&lt;li&gt;Interval Estimation&lt;/li&gt;
+&lt;li&gt;Hypothesis Testing&lt;/li&gt;
+&lt;li&gt;Simple Linear Regression&lt;/li&gt;
+&lt;li&gt;Multiple Regression Models&lt;/li&gt;
+&lt;li&gt;Regression Model Building&lt;/li&gt;
+&lt;li&gt;Regression Pitfalls&lt;/li&gt;
+&lt;li&gt;Regression Residual Analysis&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Applied Financial Economics</title>
