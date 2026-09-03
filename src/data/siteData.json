@@ -1,0 +1,951 @@
+{
+  "profile": {
+    "name": "Chiu Yu Ko",
+    "chineseName": "高超禹",
+    "title": "Associate Professor",
+    "department": "Department of Decisions, Operations and Technology",
+    "departmentNote": "Formerly Department of Decision Sciences and Managerial Economics",
+    "institution": "The Chinese University of Hong Kong (CUHK) Business School",
+    "courtesyAppointment": "Associate Professor (by courtesy), Department of Economics, CUHK",
+    "email": "chiuyuko@cuhk.edu.hk",
+    "office": "Room 938, 9/F, Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, New Territories, Hong Kong",
+    "avatar": "/author/admin/avatar.jpg",
+    "cvUrl": "/files/cv.pdf",
+    "bio": [
+      "Chiu Yu Ko (高超禹) is an Associate Professor in the Department of Decisions, Operations and Technology at The Chinese University of Hong Kong (CUHK) Business School. He also holds a courtesy appointment as Associate Professor in the Department of Economics, and serves as Associate Director of the Master of Science Programme in Information and Technology Management (MSc in ITM) as well as Associate Director of the Aviation Policy Research Centre.",
+      "He obtained his B.B.A. in Insurance, Financial and Actuarial Analysis (2005) and M.Phil. in Economics (2007) from The Chinese University of Hong Kong. He earned his M.A. in Economics (2009) and Ph.D. in Economics (2012) from Boston College. Upon graduation, he served as an assistant professor in the Department of Economics at the National University of Singapore (NUS) from 2012 to 2020 before joining CUHK.",
+      "His research focuses on game theory, industrial organization, political economy, and financial economics. In game theory, he works on bargaining, principal-agent problems, conflict resolution, and dynamic resource allocation. In industrial organization, he specializes in innovation, standard-setting (FRAND), platform competition, and patent licensing. In political economy, his work explores political centralization, state capacity, and comparative economic history. His research has been published in premier international journals including Management Science, Journal of Economic Theory, International Economic Review, Games and Economic Behavior, Journal of Environmental Economics and Management, Economic Inquiry, Economic Modelling, and Journal of Economics & Management Strategy.",
+      "He subscribes to the philosophy that effective learning requires understanding multiple facets in both depth and breadth. He believes continuous feedback allows students to learn from mistakes, consolidate acquired knowledge, and explore deeper academic and practical frontiers."
+    ],
+    "interests": [
+      "Game Theory",
+      "Industrial Organisation",
+      "Political Economics",
+      "Financial Economics",
+      "Platform Competition & Two-Sided Markets",
+      "Patent Licensing & FRAND Royalties",
+      "Smart Contracts & Conflict Resolution",
+      "Resource Allocation & Market Design"
+    ],
+    "education": [
+      {
+        "degree": "Ph.D. in Economics",
+        "institution": "Boston College",
+        "year": "2012"
+      },
+      {
+        "degree": "M.A. in Economics",
+        "institution": "Boston College",
+        "year": "2009"
+      },
+      {
+        "degree": "M.Phil. in Economics",
+        "institution": "The Chinese University of Hong Kong",
+        "year": "2007"
+      },
+      {
+        "degree": "B.B.A. in Insurance, Financial and Actuarial Analysis",
+        "institution": "The Chinese University of Hong Kong",
+        "year": "2005"
+      }
+    ],
+    "links": [
+      {
+        "label": "CUHK Faculty Profile",
+        "url": "https://www.bschool.cuhk.edu.hk/staff/ko-chiu-yu/",
+        "icon": "Building"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0001-8590-6159",
+        "icon": "IdCard"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=xT-K1ZAAAAAJ",
+        "icon": "GraduationCap"
+      },
+      {
+        "label": "SSRN",
+        "url": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1418876",
+        "icon": "FileText"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/kochiuyu",
+        "icon": "Github"
+      },
+      {
+        "label": "CV (PDF)",
+        "url": "/files/cv.pdf",
+        "icon": "FileDown"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:chiuyuko@cuhk.edu.hk",
+        "icon": "Mail"
+      }
+    ],
+    "administrativeRoles": [
+      "Associate Director, Master of Science Programme in Information and Technology Management",
+      "Associate Director, Aviation Policy Research Centre"
+    ],
+    "officialEmail": "chiuyuko@cuhk.edu.hk",
+    "cuhkProfileUrl": "https://www.bschool.cuhk.edu.hk/staff/ko-chiu-yu/",
+    "orcidUrl": "https://orcid.org/0000-0001-8590-6159"
+  },
+  "books": [
+    {
+      "id": "technical-trading-r",
+      "title": "Technical Analysis with R",
+      "subtitle": "An introductory textbook on testing technical trading strategies",
+      "year": "2019",
+      "coverImage": "/book/technical-trading-r/featured.jpg",
+      "description": "An introductory textbook focusing on how to use R to test technical trading strategies. No prior programming knowledge is needed. Readers learn data manipulation (dplyr), econometric analysis (regression, time series), financial plotting (ggplot2, dygraphs), web scraping (rvest, wbstat, quantmod), and algorithmic strategy backtesting (quantstrat) with comprehensive performance evaluation.",
+      "tags": [
+        "R Programming",
+        "Finance",
+        "Algorithmic Trading",
+        "Time Series"
+      ],
+      "links": [
+        {
+          "label": "Read Free Online (Bookdown)",
+          "url": "https://bookdown.org/kochiuyu/Technical-Analysis-with-R/"
+        },
+        {
+          "label": "Ebook on Gumroad",
+          "url": "https://gumroad.com/l/R-TA"
+        }
+      ]
+    },
+    {
+      "id": "tikz-cookbook",
+      "title": "TikZ Cookbook",
+      "subtitle": "A 629-page comprehensive guide for drawing diagrams in economics",
+      "year": "2018",
+      "coverImage": "/book/tikz-cookbook/featured.jpg",
+      "description": "TikZ is a powerful drawing package in LaTeX. While it creates publication-quality vector diagrams, the learning curve can be steep. This 629-page cookbook provides step-by-step illustrations on using TikZ to draw various economic models, supply-demand shifts, game trees, pay-off matrices, and network graphs.",
+      "tags": [
+        "LaTeX",
+        "TikZ",
+        "Economics Diagrams",
+        "Data Visualization"
+      ],
+      "links": [
+        {
+          "label": "Google Play Books",
+          "url": "https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ"
+        },
+        {
+          "label": "Google Books Preview",
+          "url": "https://books.google.com.sg/books?id=t3ZZDwAAQBAJ"
+        },
+        {
+          "label": "Gumroad PDF & EPUB",
+          "url": "https://gumroad.com/"
+        }
+      ]
+    },
+    {
+      "id": "tikz-cookbook-companion",
+      "title": "TikZ Cookbook Companion",
+      "subtitle": "100 Principles of Economics diagrams ready to use",
+      "year": "2018",
+      "coverImage": "/book/tikz-cookbook-companion/featured.jpg",
+      "description": "A companion textbook with 100 diagrams commonly found in introductory and intermediate economics courses (Microeconomics, Macroeconomics, International Trade). Includes source code and explanations for quick diagram compilation.",
+      "tags": [
+        "LaTeX",
+        "TikZ",
+        "Principles of Economics",
+        "Diagrams"
+      ],
+      "links": [
+        {
+          "label": "Google Play Books",
+          "url": "https://play.google.com/store/books/details?id=WfF5DwAAQBAJ"
+        },
+        {
+          "label": "Google Books Preview",
+          "url": "http://books.google.com/books/about?id=WfF5DwAAQBAJ"
+        }
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "id": "monopsony-employer-2026",
+      "title": "How would a monopsony employer hurt labor? A simple dynamic model",
+      "authors": [
+        "Chiu Yu Ko",
+        "Charles Ka Yui Leung"
+      ],
+      "year": 2026,
+      "date": "October 2026",
+      "venue": "Economic Modelling, Vol. 163, 107716",
+      "type": "Journal Article",
+      "abstract": "This paper develops a dynamic model to investigate the mechanisms through which an employer with monopsony power adversely affects workers. We examine how imperfect competition in the labor market interacts with wage-setting dynamics, labor mobility, and long-term contract formation, demonstrating the welfare loss imposed on workers and offering policy insights regarding minimum wages and labor market concentration.",
+      "tags": [
+        "Labor Economics",
+        "Industrial Organization",
+        "Dynamic Model",
+        "Monopsony"
+      ],
+      "doi": "https://doi.org/10.1016/j.econmod.2026.107716",
+      "pdf": "https://doi.org/10.1016/j.econmod.2026.107716",
+      "bibtex": "@article{ko2026monopsony,\n  title={How would a monopsony employer hurt labor? A simple dynamic model},\n  author={Ko, Chiu Yu and Leung, Charles Ka Yui},\n  journal={Economic Modelling},\n  volume={163},\n  pages={107716},\n  year={2026},\n  publisher={Elsevier}\n}",
+      "featured": true
+    },
+    {
+      "id": "smart-contracts-losses-2024",
+      "title": "Sharing Sequentially Triggered Losses: Automated Conflict Resolution Through Smart Contracts",
+      "authors": [
+        "Jens Gudmundsson",
+        "Jens Leth Hougaard",
+        "Chiu Yu Ko"
+      ],
+      "year": 2024,
+      "date": "August 2024",
+      "venue": "Management Science, 70(8), 5345–5363",
+      "type": "Journal Article",
+      "abstract": "We consider a model of conflict resolution where an initial loss can trigger further losses along an acyclic network. Agents have committed in advance to an automated conflict resolution protocol using smart contracts. We study how to allocate such sequentially triggered losses among involved parties in an incentive-compatible, fair, and decentralized way, providing an axiomatic characterization and practical blockchain implementation principles.",
+      "tags": [
+        "Smart Contracts",
+        "Game Theory",
+        "Conflict Resolution",
+        "Financial Economics"
+      ],
+      "doi": "https://doi.org/10.1287/mnsc.2023.4772",
+      "pdf": "https://doi.org/10.1287/mnsc.2023.4772",
+      "bibtex": "@article{gudmundsson2024sharing,\n  title={Sharing Sequentially Triggered Losses: Automated Conflict Resolution Through Smart Contracts},\n  author={Gudmundsson, Jens and Hougaard, Jens Leth and Ko, Chiu Yu},\n  journal={Management Science},\n  volume={70},\n  number={8},\n  pages={5345--5363},\n  year={2024},\n  publisher={INFORMS}\n}",
+      "featured": true
+    },
+    {
+      "id": "world-cup-stock-2023",
+      "title": "Sleeplessness, distraction and stock market performance: Evidence from the world cup",
+      "authors": [
+        "Jinghan Cai",
+        "Ming-Jen Fan",
+        "Chiu Yu Ko"
+      ],
+      "year": 2023,
+      "date": "April 2023",
+      "venue": "Global Finance Journal, 56, 100823",
+      "type": "Journal Article",
+      "abstract": "We investigate how aggregate psychological distractions and sleep disruptions influence financial asset valuation by utilizing the FIFA World Cup as a natural experiment across international markets. Our empirical findings show that late-night viewing schedules cause measurable decreases in market liquidity and short-term mispricing, underscoring behavioral determinants of trading conduct.",
+      "tags": [
+        "Financial Economics",
+        "Behavioral Finance",
+        "Market Microstructure"
+      ],
+      "doi": "https://doi.org/10.1016/j.gfj.2023.100823",
+      "pdf": "https://doi.org/10.1016/j.gfj.2023.100823",
+      "bibtex": "@article{cai2023sleeplessness,\n  title={Sleeplessness, distraction and stock market performance: Evidence from the world cup},\n  author={Cai, Jinghan and Fan, Ming-Jen and Ko, Chiu Yu},\n  journal={Global Finance Journal},\n  volume={56},\n  pages={100823},\n  year={2023},\n  publisher={Elsevier}\n}",
+      "featured": false
+    },
+    {
+      "id": "corruption-clean-tech-2023",
+      "title": "Can corruption encourage clean technology transfer?",
+      "authors": [
+        "Chiu Yu Ko",
+        "Bo Shen",
+        "Xuewen Zhang"
+      ],
+      "year": 2023,
+      "date": "August 2023",
+      "venue": "Journal of Public Economic Theory, 25(4), 715–738",
+      "type": "Journal Article",
+      "abstract": "We examine the impact of bureaucratic corruption on the transfer of clean technology to developing economies. While corruption is widely recognized as a tax on economic activity and welfare, we demonstrate that when environmental regulations create rigid compliance barriers, intermediary rent-seeking may ironically provide strategic lubrication that facilitates the adoption of energy-saving technologies under specific market conditions, highlighting subtle trade-offs between regulatory rigor and environmental policy enforcement.",
+      "tags": [
+        "Technology Transfer",
+        "Environmental Economics",
+        "Corruption",
+        "Public Economics"
+      ],
+      "doi": "https://doi.org/10.1111/jpet.12627",
+      "pdf": "https://doi.org/10.1111/jpet.12627",
+      "bibtex": "@article{ko2023corruption,\n  title={Can corruption encourage clean technology transfer?},\n  author={Ko, Chiu Yu and Shen, Bo and Zhang, Xuewen},\n  journal={Journal of Public Economic Theory},\n  volume={25},\n  number={4},\n  pages={715--738},\n  year={2023}\n}",
+      "featured": false
+    },
+    {
+      "id": "frand-royalty-2023",
+      "title": "A conceptual model for FRAND royalty setting",
+      "authors": [
+        "Jens Leth Hougaard",
+        "Chiu Yu Ko",
+        "Xuewen Zhang"
+      ],
+      "year": 2023,
+      "date": "May 2023",
+      "venue": "Mathematical Social Sciences, 123, 1–10",
+      "type": "Journal Article",
+      "abstract": "Setting an industry-wide standard is crucial for the interoperability, compatibility, and efficiency of information and communication technologies. To minimize holdup problems, patent holders are often required to ex-ante commit to licensing their technologies under Fair, Reasonable, and Non-Discriminatory (FRAND) terms. Yet, there is little consensus, in both courtrooms and industries, on the exact meaning of FRAND. We propose a new framework that enables a precise distinction: fairness in the distribution of royalty payments among patent users, and reasonableness in setting the size of the compensation to the patent holder, where both the size and the distribution of payments are determined in a non-discriminatory way that ensures similar firms are treated similarly.",
+      "tags": [
+        "FRAND",
+        "Patent Licensing",
+        "Game Theory",
+        "Innovation"
+      ],
+      "doi": "https://doi.org/10.1016/j.mathsocsci.2023.03.005",
+      "pdf": "https://doi.org/10.1016/j.mathsocsci.2023.03.005",
+      "bibtex": "@article{hougaard2023conceptual,\n  title={A conceptual model for FRAND royalty setting},\n  author={Hougaard, Jens Leth and Ko, Chiu Yu and Zhang, Xuewen},\n  journal={Mathematical Social Sciences},\n  volume={123},\n  pages={1--10},\n  year={2023},\n  publisher={Elsevier}\n}",
+      "featured": false
+    },
+    {
+      "id": "partial-compatibility-2022",
+      "title": "Partial compatibility in two-sided markets: Equilibrium and welfare analysis",
+      "authors": [
+        "Rong Ding",
+        "Chiu Yu Ko",
+        "Bo Shen"
+      ],
+      "year": 2022,
+      "date": "November 2022",
+      "venue": "Economic Modelling, 116, 105989",
+      "type": "Journal Article",
+      "abstract": "This paper studies platform compatibility choices in two-sided markets where consumers and developers have heterogeneous preferences across competing systems. We model partial compatibility as a continuous design parameter and solve for subgame perfect equilibrium pricing and compatibility decisions, uncovering how multihoming tendencies govern whether proprietary walled gardens or open standards optimize overall economic surplus.",
+      "tags": [
+        "Two-Sided Markets",
+        "Platform Competition",
+        "Industrial Organization",
+        "Welfare Analysis"
+      ],
+      "doi": "https://doi.org/10.1016/j.econmod.2022.105989",
+      "pdf": "https://doi.org/10.1016/j.econmod.2022.105989",
+      "bibtex": "@article{ding2022partial,\n  title={Partial compatibility in two-sided markets: Equilibrium and welfare analysis},\n  author={Ding, Rong and Ko, Chiu Yu and Shen, Bo},\n  journal={Economic Modelling},\n  volume={116},\n  pages={105989},\n  year={2022},\n  publisher={Elsevier}\n}",
+      "featured": false
+    },
+    {
+      "id": "licensing-rent-dissipation-2021",
+      "title": "Does licensing improve welfare with rent dissipation?",
+      "authors": [
+        "Rong Ding",
+        "Chiu Yu Ko"
+      ],
+      "year": 2021,
+      "date": "December 2021",
+      "venue": "Economic Modelling, 104, 105655",
+      "type": "Journal Article",
+      "abstract": "When downstream patent licensees engage in unproductive contest activities that dissipate economic rents, patent licensing structures undergo fundamental strategic alterations. We analyze royalty and fixed-fee combinations that align licensor incentives with social efficiency, characterizing when rent dissipation causes standard open licensing policies to suboptimally restrict consumer surplus.",
+      "tags": [
+        "Patent Licensing",
+        "Rent Dissipation",
+        "Industrial Organization",
+        "Welfare Economics"
+      ],
+      "doi": "https://doi.org/10.1016/j.econmod.2021.105655",
+      "pdf": "https://doi.org/10.1016/j.econmod.2021.105655",
+      "bibtex": "@article{ding2021licensing,\n  title={Does licensing improve welfare with rent dissipation?},\n  author={Ding, Rong and Ko, Chiu Yu},\n  journal={Economic Modelling},\n  volume={104},\n  pages={105655},\n  year={2021},\n  publisher={Elsevier}\n}",
+      "featured": false
+    },
+    {
+      "id": "competitive-screening-2021",
+      "title": "Competitive screening and information transmission",
+      "authors": [
+        "Inácio Bó",
+        "Chiu Yu Ko"
+      ],
+      "year": 2021,
+      "date": "June 2021",
+      "venue": "Journal of Public Economic Theory, 23(3), 407–437",
+      "type": "Journal Article",
+      "abstract": "This paper studies competing uninformed principals screening privately informed agents who simultaneously convey verifiable signals. We demonstrate how decentralized competition alters signaling equilibrium structure compared to monolithic monopolistic mechanisms, highlighting implications for public credentialing and regulatory oversight.",
+      "tags": [
+        "Mechanism Design",
+        "Information Economics",
+        "Competitive Screening",
+        "Signaling"
+      ],
+      "doi": "https://doi.org/10.1111/jpet.12489",
+      "pdf": "https://doi.org/10.1111/jpet.12489",
+      "bibtex": "@article{bo2021competitive,\n  title={Competitive screening and information transmission},\n  author={Bó, Inácio and Ko, Chiu Yu},\n  journal={Journal of Public Economic Theory},\n  volume={23},\n  number={3},\n  pages={407--437},\n  year={2021}\n}",
+      "featured": false
+    },
+    {
+      "id": "dominant-platform-2021",
+      "title": "Are dominant platforms good for consumers?",
+      "authors": [
+        "Chiu Yu Ko",
+        "Bo Shen"
+      ],
+      "year": 2021,
+      "date": "July 2021",
+      "venue": "Economic Inquiry, 59(3), 1364–1377",
+      "type": "Journal Article",
+      "abstract": "We examine whether dominant platforms inherently degrade consumer welfare when cross-side network externalities are strong. In contrast to conventional antitrust presumption against platform scale, our model identifies conditions under which platform asymmetry leads to larger network participation benefits that exceed monopolistic markup losses, delivering net consumer gains.",
+      "tags": [
+        "Platform Competition",
+        "Consumer Welfare",
+        "Industrial Organization",
+        "Antitrust"
+      ],
+      "doi": "https://doi.org/10.1111/ecin.12966",
+      "pdf": "https://doi.org/10.1111/ecin.12966",
+      "bibtex": "@article{ko2021dominant,\n  title={Are dominant platforms good for consumers?},\n  author={Ko, Chiu Yu and Shen, Bo},\n  journal={Economic Inquiry},\n  volume={59},\n  number={3},\n  pages={1364--1377},\n  year={2021}\n}",
+      "featured": true
+    },
+    {
+      "id": "rjv-tech-transfer-2020",
+      "title": "Research Joint Venture with Technology Transfer",
+      "authors": [
+        "Bo Shen",
+        "Chiu Yu Ko"
+      ],
+      "year": 2020,
+      "date": "February 2020",
+      "venue": "Canadian Journal of Economics, 53(1), 290–312",
+      "type": "Journal Article",
+      "abstract": "This paper models an RJV where research partners are legally permitted to license newly generated innovations to outside rival firms. We demonstrate that allowing post-innovation technology transfer fundamentally improves initial R&D expenditure incentives, enhancing social welfare and softening competitive distortions in downstream product markets.",
+      "tags": [
+        "Technology Transfer",
+        "Research Joint Venture",
+        "Innovation",
+        "Antitrust"
+      ],
+      "doi": "https://doi.org/10.1111/caje.12423",
+      "pdf": "https://doi.org/10.1111/caje.12423",
+      "bibtex": "@article{shen2020research,\n  title={Research Joint Venture with Technology Transfer},\n  author={Shen, Bo and Ko, Chiu Yu},\n  journal={Canadian Journal of Economics},\n  volume={53},\n  number={1},\n  pages={290--312},\n  year={2020}\n}",
+      "featured": false
+    },
+    {
+      "id": "one-to-many-bargaining-2020",
+      "title": "Decentralized One-to-Many Bargaining",
+      "authors": [
+        "Chiu Yu Ko",
+        "Duozhe Li"
+      ],
+      "year": 2020,
+      "date": "August 2020",
+      "venue": "International Economic Review, 61(3), 1139–1172",
+      "type": "Journal Article",
+      "abstract": "We study decentralized bilateral bargaining between one central agent and multiple peripheral agents under alternative informational regimes. We characterize the unique stationary subgame perfect equilibrium and prove that delay vanishes as friction approaches zero. We analyze how outside options, bargaining power, and sequence of interactions determine division of surplus in decentralized supply chains and labor markets.",
+      "tags": [
+        "Bargaining",
+        "Game Theory",
+        "Decentralized Markets",
+        "Network Bargaining"
+      ],
+      "doi": "https://doi.org/10.1111/iere.12452",
+      "pdf": "https://doi.org/10.1111/iere.12452",
+      "bibtex": "@article{ko2020decentralized,\n  title={Decentralized One-to-Many Bargaining},\n  author={Ko, Chiu Yu and Li, Duozhe},\n  journal={International Economic Review},\n  volume={61},\n  number={3},\n  pages={1139--1172},\n  year={2020}\n}",
+      "featured": true
+    },
+    {
+      "id": "production-joint-venture-2020",
+      "title": "Choosing a production joint venture partner",
+      "authors": [
+        "Rong Ding",
+        "Chiu Yu Ko",
+        "Bo Shen"
+      ],
+      "year": 2020,
+      "date": "December 2020",
+      "venue": "Journal of Institutional and Theoretical Economics, 176(4), 665–685",
+      "type": "Journal Article",
+      "abstract": "Firms contemplating joint ventures often face asymmetric candidate partners with complementary capabilities and competing proprietary product lines. We formulate a non-cooperative partnership selection game to characterize equilibrium partner choice, showing how spillover risks and product substitutability interact with equity share allocations.",
+      "tags": [
+        "Joint Venture",
+        "Industrial Organization",
+        "Contract Theory",
+        "R&D"
+      ],
+      "doi": "https://doi.org/10.1628/jite-2020-0039",
+      "pdf": "https://doi.org/10.1628/jite-2020-0039",
+      "bibtex": "@article{ding2020choosing,\n  title={Choosing a production joint venture partner},\n  author={Ding, Rong and Ko, Chiu Yu and Shen, Bo},\n  journal={Journal of Institutional and Theoretical Economics},\n  volume={176},\n  number={4},\n  pages={665--685},\n  year={2020}\n}",
+      "featured": false
+    },
+    {
+      "id": "hide-and-seek-uninformed-traders",
+      "title": "Hide and Seek: Uninformed Traders and the Short-sales Constraints",
+      "authors": [
+        "Jinghan Cai",
+        "Chiu Yu Ko",
+        "Yuming Li",
+        "Le Xia"
+      ],
+      "year": 2019,
+      "type": "Journal Article",
+      "venue": "Annals of Economics and Finance, 20(1), 319-356",
+      "abstract": "This paper studies the impact of short-sales constraints on market efficiency and informational friction in the presence of uninformed and informed traders. We show how constraints distort price discovery and the strategic behavior of traders in equity markets.",
+      "tags": [
+        "Financial Economics",
+        "Short Sales",
+        "Market Microstructure",
+        "Trading Constraints"
+      ],
+      "doi": "",
+      "url": "http://down.aefweb.net/AefArticles/aef200113Cai.pdf",
+      "featured": false,
+      "citeBib": "@article{cai2019hide,\n  title={Hide and seek: Uninformed traders and the short-sales constraints},\n  author={Cai, Jinghan and Ko, Chiu Yu and Li, Yuming and Xia, Le},\n  journal={Annals of Economics and Finance},\n  volume={20},\n  number={1},\n  pages={319--356},\n  year={2019}\n}"
+    },
+    {
+      "id": "river-sharing-2019",
+      "title": "Decentralized mechanisms for river sharing",
+      "authors": [
+        "Jens Gudmundsson",
+        "Jens Leth Hougaard",
+        "Chiu Yu Ko"
+      ],
+      "year": 2019,
+      "date": "March 2019",
+      "venue": "Journal of Environmental Economics and Management, 94, 67–81",
+      "type": "Journal Article",
+      "abstract": "Riparian nations situated along an international river face severe unidirectional externalities in water consumption. We design decentralized, voluntary bargaining mechanisms that implement Pareto-efficient water withdrawals without requiring a central supra-national authority, guaranteeing core stability and historical equity criteria.",
+      "tags": [
+        "Environmental Economics",
+        "Resource Allocation",
+        "Mechanism Design",
+        "Water Economics"
+      ],
+      "doi": "https://doi.org/10.1016/j.jeem.2019.01.004",
+      "pdf": "https://doi.org/10.1016/j.jeem.2019.01.004",
+      "bibtex": "@article{gudmundsson2019decentralized,\n  title={Decentralized mechanisms for river sharing},\n  author={Gudmundsson, Jens and Hougaard, Jens Leth and Ko, Chiu Yu},\n  journal={Journal of Environmental Economics and Management},\n  volume={94},\n  pages={67--81},\n  year={2019},\n  publisher={Elsevier}\n}",
+      "featured": true
+    },
+    {
+      "id": "unified-china-europe-2018",
+      "title": "Unified China and Divided Europe",
+      "authors": [
+        "Chiu Yu Ko",
+        "Mark Koyama",
+        "Tuan-Hwee Sng"
+      ],
+      "year": 2018,
+      "date": "February 2018",
+      "venue": "International Economic Review, 59(1), 285–327",
+      "type": "Journal Article",
+      "abstract": "Why did China historically maintain political unification while Europe remained fragmented into competitive sovereign states? We construct a formal geographical-defense model demonstrating how unidirectional external threats from Eurasian nomads compelled fiscal and administrative centralization in China, whereas multi-directional threats across Europe stabilized polycentric geopolitical competition.",
+      "tags": [
+        "Political Economy",
+        "Economic History",
+        "State Capacity",
+        "Institutional Economics"
+      ],
+      "doi": "https://doi.org/10.1111/iere.12270",
+      "pdf": "https://doi.org/10.1111/iere.12270",
+      "bibtex": "@article{ko2018unified,\n  title={Unified China and Divided Europe},\n  author={Ko, Chiu Yu and Koyama, Mark and Sng, Tuan-Hwee},\n  journal={International Economic Review},\n  volume={59},\n  number={1},\n  pages={285--327},\n  year={2018}\n}",
+      "featured": true
+    },
+    {
+      "id": "network-sharing-2018",
+      "title": "Sharing sequential values in a network",
+      "authors": [
+        "Ruben Juarez",
+        "Chiu Yu Ko",
+        "Jingyi Xue"
+      ],
+      "year": 2018,
+      "date": "September 2018",
+      "venue": "Journal of Economic Theory, 177, 734–779",
+      "type": "Journal Article",
+      "abstract": "We study the problem of sharing values generated sequentially across a directed network structure. When intermediate nodes contribute heterogeneous processing costs and pass-through capacity, standard cooperative solution concepts such as the Shapley value may fail monotonicity or incentive feasibility. We formulate an axiomatic foundation yielding unique, path-independent sharing rules suitable for supply networks, pipeline transport, and digital content distribution.",
+      "tags": [
+        "Network Economics",
+        "Value Sharing",
+        "Game Theory",
+        "Axiomatic Approach"
+      ],
+      "doi": "https://doi.org/10.1016/j.jet.2018.08.004",
+      "pdf": "https://doi.org/10.1016/j.jet.2018.08.004",
+      "bibtex": "@article{juarez2018sharing,\n  title={Sharing sequential values in a network},\n  author={Juarez, Ruben and Ko, Chiu Yu and Xue, Jingyi},\n  journal={Journal of Economic Theory},\n  volume={177},\n  pages={734--779},\n  year={2018},\n  publisher={Elsevier}\n}",
+      "featured": true
+    },
+    {
+      "id": "outside-options-wage-2018",
+      "title": "On the role of outside options in wage renegotiation",
+      "authors": [
+        "Fengjiao Chen",
+        "Chiu Yu Ko",
+        "Duozhe Li"
+      ],
+      "year": 2018,
+      "date": "November 2018",
+      "venue": "Journal of Economics & Management Strategy, 27(4), 792–803",
+      "type": "Journal Article",
+      "abstract": "We investigate continuous labor renegotiation games when workers and employers possess time-varying outside opportunities. We find that outside options exert a discontinuous disciplinary role on wage agreements, explaining empirical stickiness in contractual adjustments during economic downturns.",
+      "tags": [
+        "Wage Bargaining",
+        "Outside Options",
+        "Labor Economics",
+        "Contract Theory"
+      ],
+      "doi": "https://doi.org/10.1111/jems.12245",
+      "pdf": "https://doi.org/10.1111/jems.12245",
+      "bibtex": "@article{chen2018outside,\n  title={On the role of outside options in wage renegotiation},\n  author={Chen, Fengjiao and Ko, Chiu Yu and Li, Duozhe},\n  journal={Journal of Economics & Management Strategy},\n  volume={27},\n  number={4},\n  pages={792--803},\n  year={2018}\n}",
+      "featured": false
+    },
+    {
+      "id": "common-agency-2017",
+      "title": "A note on budget constraints and outside options in common agency",
+      "authors": [
+        "Chiu Yu Ko"
+      ],
+      "year": 2017,
+      "date": "January 2017",
+      "venue": "Theory and Decision, 83(1), 95–106",
+      "type": "Journal Article",
+      "abstract": "This paper analyzes the interplay between principal budget constraints and agent outside options in common agency games with complete information. I establish necessary and sufficient conditions for the existence of pure-strategy equilibria and explore implications for political lobbying and multi-sponsor procurement.",
+      "tags": [
+        "Common Agency",
+        "Principal-Agent",
+        "Microeconomic Theory",
+        "Lobbying"
+      ],
+      "doi": "https://doi.org/10.1007/s11238-017-9587-y",
+      "pdf": "https://doi.org/10.1007/s11238-017-9587-y",
+      "bibtex": "@article{ko2017note,\n  title={A note on budget constraints and outside options in common agency},\n  author={Ko, Chiu Yu},\n  journal={Theory and Decision},\n  volume={83},\n  number={1},\n  pages={95--106},\n  year={2017},\n  publisher={Springer}\n}",
+      "featured": false
+    },
+    {
+      "id": "dependence-centralization-china-2013",
+      "title": "Regional dependence and political centralization in imperial China",
+      "authors": [
+        "Chiu Yu Ko",
+        "Tuan-Hwee Sng"
+      ],
+      "year": 2013,
+      "date": "December 2013",
+      "venue": "Eurasian Geography and Economics, 54(5-6), 470–483",
+      "type": "Journal Article",
+      "abstract": "We explore the geographic and ecological determinants of administrative centralization across imperial Chinese dynasties. Inter-regional grain transfers and hydraulic infrastructure management generated high mutual dependence among provinces, sustaining unified dynastic governance even through acute political crises.",
+      "tags": [
+        "Political Economy",
+        "Fiscal Capacity",
+        "Imperial China",
+        "Economic History"
+      ],
+      "doi": "https://doi.org/10.1080/15387216.2014.902752",
+      "pdf": "https://doi.org/10.1080/15387216.2014.902752",
+      "bibtex": "@article{ko2013regional,\n  title={Regional dependence and political centralization in imperial China},\n  author={Ko, Chiu Yu and Sng, Tuan-Hwee},\n  journal={Eurasian Geography and Economics},\n  volume={54},\n  number={5-6},\n  pages={470--483},\n  year={2013}\n}",
+      "featured": false
+    },
+    {
+      "id": "choosing-licensee-rivals-2013",
+      "title": "Choosing a licensee from heterogeneous rivals",
+      "authors": [
+        "Anthony Creane",
+        "Chiu Yu Ko",
+        "Hideo Konishi"
+      ],
+      "year": 2013,
+      "date": "November 2013",
+      "venue": "Games and Economic Behavior, 82, 389–405",
+      "type": "Journal Article",
+      "abstract": "A patent holder decides which rival firm in an oligopolistic industry should receive an exclusive cost-reducing production license. Because firms possess asymmetric initial cost efficiencies, licensing to a less efficient rival can strategically induce milder price competition in the final product market, altering traditional antitrust expectations.",
+      "tags": [
+        "Patent Licensing",
+        "Heterogeneous Rivals",
+        "Industrial Organization",
+        "Game Theory"
+      ],
+      "doi": "https://doi.org/10.1016/j.geb.2013.07.013",
+      "pdf": "https://doi.org/10.1016/j.geb.2013.07.013",
+      "bibtex": "@article{creane2013choosing,\n  title={Choosing a licensee from heterogeneous rivals},\n  author={Creane, Anthony and Ko, Chiu Yu and Konishi, Hideo},\n  journal={Games and Economic Behavior},\n  volume={82},\n  pages={389--405},\n  year={2013},\n  publisher={Elsevier}\n}",
+      "featured": true
+    },
+    {
+      "id": "profit-maximizing-matchmaker-2012",
+      "title": "Profit-maximizing matchmaker",
+      "authors": [
+        "Chiu Yu Ko",
+        "Hideo Konishi"
+      ],
+      "year": 2012,
+      "date": "May 2012",
+      "venue": "Games and Economic Behavior, 75(1), 217–232",
+      "type": "Journal Article",
+      "abstract": "We analyze a monopolistic matchmaker operating in two-sided matching markets with transferable utility. The intermediary posts registration fees and matching fees to attract participants. We characterize optimal tariff structures that maximize intermediary revenue while satisfying stable matching requirements.",
+      "tags": [
+        "Matching Markets",
+        "Two-Sided Markets",
+        "Platform Economics",
+        "Market Design"
+      ],
+      "doi": "https://doi.org/10.1016/j.geb.2011.08.017",
+      "pdf": "https://doi.org/10.1016/j.geb.2011.08.017",
+      "bibtex": "@article{ko2012profit,\n  title={Profit-maximizing matchmaker},\n  author={Ko, Chiu Yu and Konishi, Hideo},\n  journal={Games and Economic Behavior},\n  volume={75},\n  number={1},\n  pages={217--232},\n  year={2012},\n  publisher={Elsevier}\n}",
+      "featured": true
+    }
+  ],
+  "teaching": [
+    {
+      "id": "microeconomic-theory-phd",
+      "code": "Ph.D. Core",
+      "title": "Microeconomic Theory",
+      "level": "Ph.D.",
+      "semesters": "Fall 2021, Fall 2022, Fall 2023, Fall 2024, Fall 2025, Fall 2026",
+      "overview": "Rigorous doctoral-level introduction to modern microeconomic theory and mathematical economics. Detailed study of consumer theory, producer theory, general equilibrium under uncertainty, non-cooperative game theory, and mechanism design.",
+      "topics": [
+        "Consumer choice & duality theory",
+        "Production sets & profit maximization",
+        "General equilibrium & welfare theorems",
+        "Static & dynamic games of complete/incomplete info",
+        "Mechanism design, matching & auction theory"
+      ]
+    },
+    {
+      "id": "statistical-analysis-master",
+      "code": "MSc Core",
+      "title": "Statistical Analysis",
+      "level": "Master",
+      "semesters": "Fall 2023, Fall 2024, Fall 2025, Fall 2026",
+      "overview": "Advanced statistical foundations for business analytics and empirical decision making. Covering probability theory, estimation, hypothesis testing, multivariate regression, and predictive modeling.",
+      "topics": [
+        "Probability & random variables",
+        "Maximum likelihood & parameter estimation",
+        "Hypothesis testing & confidence intervals",
+        "Multiple regression & causal inference",
+        "Forecasting & business predictive modeling"
+      ]
+    },
+    {
+      "id": "low-altitude-economics-master",
+      "code": "MSc Elective",
+      "title": "Low Altitude Economics",
+      "level": "Master",
+      "semesters": "Fall 2026",
+      "overview": "Explores the emerging economic paradigms of the low-altitude economy, including unmanned aerial vehicle (UAV) logistics, urban air mobility (UAM), airspace resource allocation, regulatory economics, and commercial infrastructure.",
+      "topics": [
+        "Low-altitude airspace economic fundamentals",
+        "Urban air mobility (UAM) & drone logistics networks",
+        "Airspace property rights & allocation mechanisms",
+        "Regulatory policy & aviation safety economics",
+        "Infrastructure investment & platform integration"
+      ]
+    },
+    {
+      "id": "economics-for-finance-practice",
+      "code": "MSc Finance",
+      "title": "Economics for Finance Practice",
+      "level": "Master",
+      "semesters": "Spring 2023",
+      "overview": "The course covers micro- and macro-economics fundamental to finance practice. Topics include game theory and its application in finance, asymmetric information, asset markets, portfolio theory, and macroeconomic monetary policies.",
+      "topics": [
+        "Game theory & financial market applications",
+        "Asymmetric information & contract design",
+        "Asset markets & investment under uncertainty",
+        "Portfolio optimization & behavioral finance",
+        "Macroeconomic policy, inflation & exchange rates"
+      ]
+    },
+    {
+      "id": "game-theory-business-strategy",
+      "code": "BBA Elective",
+      "title": "Game Theory for Business Strategy",
+      "level": "Undergraduate",
+      "semesters": "Fall 2026",
+      "overview": "Applies non-cooperative and cooperative game theory to managerial decision-making and strategic competition. Covers dynamic price competition, entry deterrence, auction and mechanism design, platform ecosystems, and strategic bargaining.",
+      "topics": [
+        "Simultaneous & sequential move games",
+        "Price competition & product differentiation",
+        "Entry deterrence & strategic commitments",
+        "Bargaining & joint ventures",
+        "Platform competition & two-sided markets"
+      ]
+    },
+    {
+      "id": "statistical-analysis-undergrad",
+      "code": "BBA Core",
+      "title": "Statistical Analysis for Business Decision",
+      "level": "Undergraduate",
+      "semesters": "Fall 2020, Fall 2021, Fall 2022, Fall 2023, Fall 2024",
+      "overview": "Introductory and intermediate statistics for undergraduate business students. Practical applications using statistical computing and data analysis to solve complex managerial decisions.",
+      "topics": [
+        "Descriptive statistics & data visualization",
+        "Probability distributions & sampling theory",
+        "Confidence intervals & hypothesis testing",
+        "Multiple regression analysis",
+        "Business forecasting & statistical modeling"
+      ]
+    },
+    {
+      "id": "student-oriented-seminar",
+      "code": "BBA Seminar",
+      "title": "STudent-oriented Teaching and Seminar",
+      "level": "Undergraduate",
+      "semesters": "Spring 2025",
+      "overview": "Interactive, student-centered research seminar exploring real-world economic issues, analytical methodology, and project presentations.",
+      "topics": [
+        "Student research methodology",
+        "Case discussions in applied economics",
+        "Peer review & presentation feedback",
+        "Contemporary business economic debates"
+      ]
+    },
+    {
+      "id": "applied-financial-econ",
+      "code": "MSc Finance (NUS)",
+      "title": "Applied Financial Economics",
+      "level": "Master",
+      "semesters": "Spring 2017, Spring 2018, Spring 2019",
+      "overview": "Equips students with analytical tools to understand security price movements and market microstructure. Covers fundamental analysis, technical trading, investor behavior, and quantitative financial econometrics.",
+      "topics": [
+        "Equity research & valuation",
+        "Technical trading & econometric backtesting in R",
+        "Bid-ask spread & market liquidity models",
+        "Investor trading behavior & behavioral finance"
+      ]
+    },
+    {
+      "id": "financial-market-microstructure",
+      "code": "Econ Honors (NUS)",
+      "title": "Financial Market Microstructure",
+      "level": "Undergraduate",
+      "semesters": "Fall 2015, Fall 2016, Fall 2017, Spring 2017, Fall 2018, Spring 2019, Fall 2019",
+      "overview": "Market microstructure studies price formation and the mechanics of trading in electronic markets. Investigates inventory models, sequential trade models, strategic trader behavior, and limit order book dynamics.",
+      "topics": [
+        "Fundamental & technical analysis",
+        "Inventory control models (Garman, Ho-Stoll)",
+        "Sequential trade models (Glosten-Milgrom)",
+        "Strategic trading (Kyle model)",
+        "Order book dynamics & execution strategies"
+      ]
+    },
+    {
+      "id": "industrial-organization-phd",
+      "code": "Ph.D. Elective (NUS)",
+      "title": "Industrial Organization",
+      "level": "Ph.D.",
+      "semesters": "Fall 2012, Fall 2013, Fall 2014, Fall 2015, Fall 2016",
+      "overview": "Advanced doctoral field course in industrial organization covering monopoly behavior, oligopolistic competition, vertical relationships, network goods, two-sided platforms, and patent licensing.",
+      "topics": [
+        "Static and dynamic oligopoly games",
+        "Patent licensing & innovation policy",
+        "Two-sided platforms & network externalities",
+        "Antitrust economics & merger simulations"
+      ]
+    }
+  ],
+  "advising": {
+    "summary": "Main dissertation advisor for doctoral students at the National University of Singapore (NUS) and The Chinese University of Hong Kong (CUHK).",
+    "phdStudents": [
+      {
+        "name": "Zhang Xuyao",
+        "institution": "National University of Singapore",
+        "role": "Main Advisor",
+        "year": "2017",
+        "currentPlacement": "Ph.D. Graduate, Department of Economics, National University of Singapore",
+        "profileUrl": ""
+      },
+      {
+        "name": "Lu Zhiqi",
+        "institution": "National University of Singapore",
+        "role": "Main Advisor",
+        "year": "2020",
+        "currentPlacement": "Ph.D. Graduate, Department of Economics, National University of Singapore",
+        "profileUrl": ""
+      },
+      {
+        "name": "Liu Xinyan",
+        "institution": "The Chinese University of Hong Kong",
+        "role": "Main Advisor",
+        "year": "2024",
+        "currentPlacement": "Assistant Professor, Department of Economics, Lingnan University",
+        "profileUrl": "https://www.ln.edu.hk/econ/people/faculty-economics/professor-liu-xinyan"
+      },
+      {
+        "name": "Deng Yangyi",
+        "institution": "The Chinese University of Hong Kong",
+        "role": "Main Advisor",
+        "year": "2027",
+        "currentPlacement": "Ph.D. Student in Decision Sciences and Managerial Economics, CUHK Business School",
+        "profileUrl": "https://grad.bschool.cuhk.edu.hk/students/deng-yangyi/"
+      },
+      {
+        "name": "Guohao Li",
+        "institution": "The Chinese University of Hong Kong",
+        "role": "Main Advisor",
+        "year": "2028",
+        "currentPlacement": "Ph.D. Student in Decision Sciences and Managerial Economics, CUHK Business School",
+        "profileUrl": "https://grad.bschool.cuhk.edu.hk/students/li-guohao/"
+      },
+      {
+        "name": "Yinglyu Cao",
+        "institution": "The Chinese University of Hong Kong",
+        "role": "Main Advisor",
+        "year": "2029",
+        "currentPlacement": "Ph.D. Student in Decision Sciences and Managerial Economics, CUHK Business School",
+        "profileUrl": "https://grad.bschool.cuhk.edu.hk/students/cao-yinglyu/"
+      }
+    ],
+    "committeeMembers": [],
+    "visitingStudents": [],
+    "undergradAdviseesCount": 17
+  },
+  "programming": [
+    {
+      "category": "R Programming & Financial Econometrics",
+      "description": "Comprehensive tutorials, package guides, and quantitative finance workflows in R.",
+      "items": [
+        {
+          "title": "Technical Analysis with R (Bookdown)",
+          "url": "https://bookdown.org/kochiuyu/Technical-Analysis-with-R/",
+          "tag": "Online Book"
+        },
+        {
+          "title": "R Programming Installation & Packages Guide",
+          "url": "#",
+          "tag": "Tutorial"
+        },
+        {
+          "title": "Financial Modeling with Quantmod & Quantstrat",
+          "url": "#",
+          "tag": "Quantitative Finance"
+        },
+        {
+          "title": "Data Wrangling with Tidyverse (dplyr, ggplot2)",
+          "url": "#",
+          "tag": "Data Science"
+        }
+      ]
+    },
+    {
+      "category": "LaTeX & TikZ for Economists",
+      "description": "Practical guides and ready-to-use vector diagrams for economic models.",
+      "items": [
+        {
+          "title": "TikZ Cookbook: Step-by-Step Economic Diagrams",
+          "url": "https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ",
+          "tag": "Cookbook"
+        },
+        {
+          "title": "TikZ Cookbook Companion: 100 Principles Diagrams",
+          "url": "https://play.google.com/store/books/details?id=WfF5DwAAQBAJ",
+          "tag": "Reference"
+        },
+        {
+          "title": "Game Trees & Extensive Form Games in TikZ",
+          "url": "#",
+          "tag": "Game Theory"
+        },
+        {
+          "title": "Supply, Demand, and Welfare Equilibrium Charts",
+          "url": "#",
+          "tag": "Microeconomics"
+        }
+      ]
+    },
+    {
+      "category": "Excel & VBA for Finance",
+      "description": "Automated financial modeling, sensitivity analysis, and macro scripting.",
+      "items": [
+        {
+          "title": "Financial Programming with Excel VBA and R",
+          "url": "#",
+          "tag": "Applied Finance"
+        },
+        {
+          "title": "Advanced VBA Macro Automation",
+          "url": "#",
+          "tag": "Automation"
+        },
+        {
+          "title": "Monte Carlo Simulation in Excel",
+          "url": "#",
+          "tag": "Simulation"
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "September 4, 2026"
+}
