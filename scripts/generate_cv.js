@@ -264,7 +264,7 @@ async function generateCV() {
       '9. Competitive Screening and Information Transmission. Journal of Public Economic Theory, 23, (2021): 407–437. (with Inacio Bo)',
       '10. Choosing a Production Joint Venture Partner. Journal of Institutional and Theoretical Economics, 176, (2020): 665–685. (with Rong Ding and Bo Shen)',
       '11. Decentralized One-to-many bargaining. International Economic Review, 61, (2020): 39–72. (with Duozhe Li)',
-      '12. Research Joint Venture with technology transfer. Canadian Journal of Economics, 53, (2020): 341-358. (with Xuyao Zhang)',
+      '12. Research Joint Venture with technology transfer. Canadian Journal of Economics, 53, (2020): 341-358. (with Bo Shen)',
       '13. Decentralized Mechanisms for River Sharing. Journal of Environmental Economics and Management, 94, (2019): 67–81. (with Jens Gudmundsoon and Jens Hougaard)',
       '14. Hide and Seek: Uninformed Traders and the Short-sales Constraints, Annals of Economics and Finance, 20(1), 319-356. (with Jinghan Cai, Yuming Li and Le Xia).',
       '15. Sharing Sequential Value in a Network. Journal of Economic Theory, 177, (2018): 734-799. (with Ruben Juarez and Jingyi Xue)',
@@ -716,8 +716,7 @@ async function generateCV() {
       'Low Altitude Economics (Master): Fall 2026',
       'Economics for Finance Practice (Master): Spring 2023',
       'Game Theory for Business Strategy (Undergraduate): Fall 2026',
-      'Statistical Analysis for Business Decision (Undergraduate): Fall 2020, Fall 2021, Fall 2022, Fall 2023, Fall 2024',
-      'STudent-oriented Teaching and Seminar (Undergraduate): Spring 2025'
+      'Statistical Analysis for Business Decision (Undergraduate): Fall 2020–Fall 2025'
     ];
 
     for (const ct of cuhkTeaching) {

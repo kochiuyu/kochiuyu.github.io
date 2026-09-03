@@ -225,7 +225,7 @@
       "title": "Sleeplessness, distraction and stock market performance: Evidence from the world cup",
       "authors": [
         "Jinghan Cai",
-        "Ming-Jen Fan",
+        "Manyi Fan",
         "Chiu Yu Ko"
       ],
       "year": 2023,
@@ -240,7 +240,7 @@
       ],
       "doi": "https://doi.org/10.1016/j.gfj.2023.100823",
       "pdf": "https://doi.org/10.1016/j.gfj.2023.100823",
-      "bibtex": "@article{cai2023sleeplessness,\n  title={Sleeplessness, distraction and stock market performance: Evidence from the world cup},\n  author={Cai, Jinghan and Fan, Ming-Jen and Ko, Chiu Yu},\n  journal={Global Finance Journal},\n  volume={56},\n  pages={100823},\n  year={2023},\n  publisher={Elsevier}\n}",
+      "bibtex": "@article{cai2023sleeplessness,\n  title={Sleeplessness, distraction and stock market performance: Evidence from the world cup},\n  author={Cai, Jinghan and Fan, Manyi and Ko, Chiu Yu},\n  journal={Global Finance Journal},\n  volume={56},\n  pages={100823},\n  year={2023},\n  publisher={Elsevier}\n}",
       "featured": false
     },
     {
@@ -249,7 +249,7 @@
       "authors": [
         "Chiu Yu Ko",
         "Bo Shen",
-        "Xuewen Zhang"
+        "Xuyao Zhang"
       ],
       "year": 2023,
       "date": "August 2023",
@@ -264,7 +264,7 @@
       ],
       "doi": "https://doi.org/10.1111/jpet.12627",
       "pdf": "https://doi.org/10.1111/jpet.12627",
-      "bibtex": "@article{ko2023corruption,\n  title={Can corruption encourage clean technology transfer?},\n  author={Ko, Chiu Yu and Shen, Bo and Zhang, Xuewen},\n  journal={Journal of Public Economic Theory},\n  volume={25},\n  number={4},\n  pages={715--738},\n  year={2023}\n}",
+      "bibtex": "@article{ko2023corruption,\n  title={Can corruption encourage clean technology transfer?},\n  author={Ko, Chiu Yu and Shen, Bo and Zhang, Xuyao},\n  journal={Journal of Public Economic Theory},\n  volume={25},\n  number={4},\n  pages={715--738},\n  year={2023}\n}",
       "featured": false
     },
     {
@@ -273,7 +273,7 @@
       "authors": [
         "Jens Leth Hougaard",
         "Chiu Yu Ko",
-        "Xuewen Zhang"
+        "Xuyao Zhang"
       ],
       "year": 2023,
       "date": "May 2023",
@@ -288,7 +288,7 @@
       ],
       "doi": "https://doi.org/10.1016/j.mathsocsci.2023.03.005",
       "pdf": "https://doi.org/10.1016/j.mathsocsci.2023.03.005",
-      "bibtex": "@article{hougaard2023conceptual,\n  title={A conceptual model for FRAND royalty setting},\n  author={Hougaard, Jens Leth and Ko, Chiu Yu and Zhang, Xuewen},\n  journal={Mathematical Social Sciences},\n  volume={123},\n  pages={1--10},\n  year={2023},\n  publisher={Elsevier}\n}",
+      "bibtex": "@article{hougaard2023conceptual,\n  title={A conceptual model for FRAND royalty setting},\n  author={Hougaard, Jens Leth and Ko, Chiu Yu and Zhang, Xuyao},\n  journal={Mathematical Social Sciences},\n  volume={123},\n  pages={1--10},\n  year={2023},\n  publisher={Elsevier}\n}",
       "featured": false
     },
     {
@@ -748,7 +748,7 @@
       "code": "BBA Core",
       "title": "Statistical Analysis for Business Decision",
       "level": "Undergraduate",
-      "semesters": "Fall 2020, Fall 2021, Fall 2022, Fall 2023, Fall 2024",
+      "semesters": "Fall 2020–Fall 2025",
       "overview": "Introductory and intermediate statistics for undergraduate business students. Practical applications using statistical computing and data analysis to solve complex managerial decisions.",
       "topics": [
         "Descriptive statistics & data visualization",
@@ -756,20 +756,6 @@
         "Confidence intervals & hypothesis testing",
         "Multiple regression analysis",
         "Business forecasting & statistical modeling"
-      ]
-    },
-    {
-      "id": "student-oriented-seminar",
-      "code": "BBA Seminar",
-      "title": "STudent-oriented Teaching and Seminar",
-      "level": "Undergraduate",
-      "semesters": "Spring 2025",
-      "overview": "Interactive, student-centered research seminar exploring real-world economic issues, analytical methodology, and project presentations.",
-      "topics": [
-        "Student research methodology",
-        "Case discussions in applied economics",
-        "Peer review & presentation feedback",
-        "Contemporary business economic debates"
       ]
     },
     {

@@ -18,59 +18,59 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile }) => {
   const officialEmail = profile.officialEmail || profile.email;
 
   return (
-    <section id="contact" className="py-12 sm:py-16 border-b border-stone-200 bg-stone-100/30">
+    <section id="contact" className="py-12 sm:py-16 border-b border-gray-200 bg-[#f8f9fa]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-stone-500 mb-1">
+          <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#3f51b5] mb-1">
             <Mail className="w-3.5 h-3.5" />
             <span>Get In Touch</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-stone-900">
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
             Contact
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Contact Card */}
-          <div className="md:col-span-6 bg-white p-6 rounded-xl border border-stone-200 shadow-2xs space-y-5">
+          <div className="md:col-span-6 bg-white p-6 rounded-xl border border-gray-200 shadow-xs space-y-5">
             <div>
-              <h3 className="font-serif text-lg font-bold text-stone-900">
+              <h3 className="font-heading text-lg font-bold text-gray-900">
                 Academic Office
               </h3>
-              <p className="text-xs text-stone-500">
+              <p className="text-xs text-gray-500">
                 Department of Decisions, Operations and Technology
               </p>
             </div>
 
-            <div className="space-y-4 text-sm text-stone-700">
+            <div className="space-y-4 text-sm text-gray-700">
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-stone-500 shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-[#3f51b5] shrink-0 mt-0.5" />
                 <div>
-                  <div className="font-semibold text-stone-900">Office Location</div>
-                  <p className="text-xs sm:text-sm text-stone-600 mt-0.5">
+                  <div className="font-semibold text-gray-900">Office Location</div>
+                  <p className="text-xs sm:text-sm text-gray-600 mt-0.5">
                     {profile.office}
                   </p>
-                  <p className="text-xs text-stone-500 mt-0.5">
+                  <p className="text-xs text-gray-500 mt-0.5">
                     CUHK Business School, The Chinese University of Hong Kong
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-stone-500 shrink-0 mt-0.5" />
+                <Mail className="w-5 h-5 text-[#3f51b5] shrink-0 mt-0.5" />
                 <div className="flex-1">
-                  <div className="font-semibold text-stone-900">Official Email</div>
+                  <div className="font-semibold text-gray-900">Official Email</div>
                   
-                  <div className="flex items-center justify-between mt-1.5 py-1.5 px-3 rounded-lg bg-stone-50 border border-stone-200/80">
+                  <div className="flex items-center justify-between mt-1.5 py-1.5 px-3 rounded-lg bg-gray-50 border border-gray-200">
                     <a
                       href={`mailto:${officialEmail}`}
-                      className="text-stone-800 hover:text-stone-950 font-mono text-sm underline font-medium"
+                      className="text-[#3f51b5] hover:text-[#303f9f] font-mono text-sm underline font-medium"
                     >
                       {officialEmail}
                     </a>
                     <button
                       onClick={() => handleCopy(officialEmail)}
-                      className="p-1 rounded text-stone-400 hover:text-stone-700 hover:bg-stone-200 cursor-pointer transition-colors"
+                      className="p-1 rounded text-gray-400 hover:text-[#3f51b5] hover:bg-[#e8eaf6] cursor-pointer transition-colors"
                       title="Copy official email to clipboard"
                       aria-label="Copy official email to clipboard"
                     >
@@ -87,42 +87,42 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile }) => {
           </div>
 
           {/* Department Information */}
-          <div className="md:col-span-6 bg-white p-6 rounded-xl border border-stone-200 shadow-2xs space-y-4 flex flex-col justify-between">
+          <div className="md:col-span-6 bg-white p-6 rounded-xl border border-gray-200 shadow-xs space-y-4 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <Building className="w-5 h-5 text-stone-700" />
-                <h3 className="font-serif text-lg font-bold text-stone-900">
+                <Building className="w-5 h-5 text-[#3f51b5]" />
+                <h3 className="font-heading text-lg font-bold text-gray-900">
                   Institutional Affiliation
                 </h3>
               </div>
-              <p className="text-xs text-stone-500">
+              <p className="text-xs text-gray-500">
                 The Chinese University of Hong Kong (CUHK)
               </p>
 
-              <div className="mt-4 space-y-2 text-xs sm:text-sm text-stone-600 leading-relaxed">
+              <div className="mt-4 space-y-2 text-xs sm:text-sm text-gray-600 leading-relaxed">
                 <p>
-                  <strong className="text-stone-900">Primary Appointment:</strong> Associate Professor, Department of Decisions, Operations and Technology (DOT), CUHK Business School.
+                  <strong className="text-gray-900">Primary Appointment:</strong> Associate Professor, Department of Decisions, Operations and Technology (DOT), CUHK Business School.
                 </p>
                 <p>
-                  <strong className="text-stone-900">Courtesy Appointment:</strong> Associate Professor (by courtesy), Department of Economics, Faculty of Social Science, CUHK.
+                  <strong className="text-gray-900">Courtesy Appointment:</strong> Associate Professor (by courtesy), Department of Economics, Faculty of Social Science, CUHK.
                 </p>
-                <p className="text-stone-500 text-xs pt-1">
+                <p className="text-gray-500 text-xs pt-1">
                   Conveniently situated next to University MTR Station (Exit B) in the Cheng Yu Tung Building (CYT), Shatin.
                 </p>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-stone-100 flex flex-wrap gap-3 items-center">
+            <div className="pt-4 border-t border-gray-100 flex flex-wrap gap-3 items-center">
               <a
                 href={profile.cuhkProfileUrl || "https://www.bschool.cuhk.edu.hk/staff/ko-chiu-yu/"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-xs text-amber-800 hover:text-amber-950 font-semibold underline"
+                className="inline-flex items-center gap-1 text-xs text-[#303f9f] hover:text-[#1a237e] font-semibold underline"
               >
                 <span>CUHK Official Staff Profile</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
-              <span className="text-stone-300">•</span>
+              <span className="text-gray-300">•</span>
               <a
                 href={profile.orcidUrl || "https://orcid.org/0000-0001-8590-6159"}
                 target="_blank"

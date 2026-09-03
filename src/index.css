@@ -1,8 +1,24 @@
 @import "tailwindcss";
 
 @layer base {
+  :root {
+    --primary: #3f51b5;
+    --primary-dark: #303f9f;
+    --primary-light: #8c9eff;
+    --primary-bg: #e8eaf6;
+    --text-main: #212529;
+    --text-muted: #6c757d;
+  }
+
   html {
     scroll-behavior: smooth;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #212529;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.015em;
   }
 }

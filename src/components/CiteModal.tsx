@@ -37,17 +37,17 @@ export const CiteModal: React.FC<CiteModalProps> = ({ publication, onClose }) =>
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="px-5 py-4 border-b border-stone-200 flex items-center justify-between bg-stone-50">
+        <div className="px-5 py-4 border-b border-gray-200 flex items-center justify-between bg-white">
           <div className="flex items-center gap-2">
-            <Quote className="w-4 h-4 text-stone-700" />
-            <h3 className="font-serif font-bold text-stone-900 text-base">
+            <Quote className="w-4 h-4 text-[#3f51b5]" />
+            <h3 className="font-heading font-bold text-gray-900 text-base">
               BibTeX Citation
             </h3>
           </div>
           <button
             id="close-cite-modal-btn"
             onClick={onClose}
-            className="p-1 rounded-md text-stone-400 hover:text-stone-700 hover:bg-stone-200/60 cursor-pointer"
+            className="p-1 rounded-md text-gray-400 hover:text-gray-700 hover:bg-gray-100 cursor-pointer"
             aria-label="Close"
           >
             <X className="w-5 h-5" />
@@ -55,8 +55,8 @@ export const CiteModal: React.FC<CiteModalProps> = ({ publication, onClose }) =>
         </div>
 
         {/* Paper title info */}
-        <div className="px-5 py-3 border-b border-stone-100 text-xs text-stone-600 bg-stone-50/50">
-          <span className="font-medium text-stone-800">{publication.title}</span> ({publication.year})
+        <div className="px-5 py-3 border-b border-gray-100 text-xs text-gray-600 bg-gray-50">
+          <span className="font-medium text-gray-900">{publication.title}</span> ({publication.year})
         </div>
 
         {/* Content */}
@@ -64,7 +64,7 @@ export const CiteModal: React.FC<CiteModalProps> = ({ publication, onClose }) =>
           <div className="relative">
             <pre
               id="bibtex-code-content"
-              className="p-4 bg-stone-900 text-stone-100 font-mono text-xs rounded-lg overflow-x-auto leading-relaxed max-h-72 select-all"
+              className="p-4 bg-gray-900 text-gray-100 font-mono text-xs rounded-lg overflow-x-auto leading-relaxed max-h-72 select-all"
             >
               {bibtex}
             </pre>
@@ -72,17 +72,17 @@ export const CiteModal: React.FC<CiteModalProps> = ({ publication, onClose }) =>
         </div>
 
         {/* Footer */}
-        <div className="px-5 py-3.5 bg-stone-50 border-t border-stone-200 flex items-center justify-between">
-          <span className="text-xs text-stone-500">
+        <div className="px-5 py-3.5 bg-gray-50 border-t border-gray-200 flex items-center justify-between">
+          <span className="text-xs text-gray-500">
             Click copy to add to your bibliography
           </span>
           <button
             id="copy-bibtex-btn"
             onClick={handleCopy}
-            className={`inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-semibold rounded-md shadow-2xs transition-all cursor-pointer ${
+            className={`inline-flex items-center gap-1.5 px-4 py-1.5 text-xs font-semibold rounded-md shadow-xs transition-all cursor-pointer ${
               copied
                 ? 'bg-emerald-600 text-white'
-                : 'bg-stone-900 text-white hover:bg-stone-800'
+                : 'bg-[#3f51b5] text-white hover:bg-[#303f9f]'
             }`}
           >
             {copied ? (

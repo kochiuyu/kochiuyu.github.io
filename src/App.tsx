@@ -70,7 +70,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#faf9f6] text-stone-900 flex flex-col font-sans selection:bg-stone-200">
+    <div className="min-h-screen bg-white text-[#212529] flex flex-col font-sans selection:bg-[#c5cae9] selection:text-[#1a237e]">
       {/* Navigation */}
       <Navbar
         profile={siteData.profile}
@@ -105,34 +105,34 @@ export function App() {
         <ContactSection profile={siteData.profile} />
       </main>
 
-      {/* Academic Footer */}
-      <footer className="bg-stone-950 text-stone-400 py-12 border-t border-stone-800 text-xs">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-stone-800/80 pb-6">
+      {/* Academic Footer - Clean Hugo Academic Style */}
+      <footer className="bg-[#f8f9fa] text-gray-600 py-10 border-t border-gray-200 text-xs">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-gray-200 pb-5">
             <div>
-              <p className="font-serif text-base font-bold text-stone-100">
-                {siteData.profile.name} {siteData.profile.chineseName && <span className="font-normal text-stone-400 text-sm ml-1">({siteData.profile.chineseName})</span>}
+              <p className="font-heading text-sm sm:text-base font-bold text-gray-900">
+                {siteData.profile.name} {siteData.profile.chineseName && <span className="font-normal text-gray-500 text-sm ml-1">({siteData.profile.chineseName})</span>}
               </p>
-              <p className="text-stone-400 text-xs mt-0.5">
+              <p className="text-gray-600 text-xs mt-0.5">
                 {siteData.profile.title} • {siteData.profile.institution}
               </p>
-              <p className="text-stone-500 text-xs mt-0.5">
+              <p className="text-gray-500 text-xs mt-0.5">
                 {siteData.profile.department}
               </p>
             </div>
 
-            <div className="text-stone-400 text-xs text-center sm:text-right">
+            <div className="text-gray-500 text-xs text-center sm:text-right">
               <p>CUHK Business School • Shatin, N.T., Hong Kong</p>
-              <p className="text-stone-500 text-xs mt-0.5">Cheng Yu Tung Building (CYT)</p>
+              <p className="text-gray-400 text-xs mt-0.5">Cheng Yu Tung Building (CYT)</p>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-stone-500">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-gray-500">
             <p>
               © {new Date().getFullYear()} {siteData.profile.name}. All rights reserved.
             </p>
             <p>
-              Last updated: <span className="font-mono text-stone-400">{siteData.lastUpdated}</span>
+              Last updated: <span className="font-mono text-[#3f51b5] font-semibold">{siteData.lastUpdated}</span>
             </p>
           </div>
         </div>
@@ -149,7 +149,7 @@ export function App() {
         <button
           id="back-to-top-btn"
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-2.5 bg-stone-900 text-white rounded-full shadow-lg hover:bg-stone-800 transition-all z-30 cursor-pointer"
+          className="fixed bottom-6 right-6 p-2.5 bg-[#3f51b5] text-white rounded-full shadow-lg hover:bg-[#303f9f] transition-all z-30 cursor-pointer"
           aria-label="Back to top"
         >
           <ArrowUp className="w-4 h-4" />
