@@ -14,14 +14,15 @@ import { ArrowUp } from 'lucide-react';
 
 export function App() {
   const [siteData, setSiteData] = useState<SiteData>(() => {
-    // Clear previous storage keys to ensure new publications & advising data load cleanly
+    // Clear previous storage keys to ensure updated author corrections & publications load cleanly
     try {
       localStorage.removeItem('chiu_yu_ko_site_data');
       localStorage.removeItem('chiu_yu_ko_site_data_v3');
-      const saved = localStorage.getItem('chiu_yu_ko_site_data_v4');
+      localStorage.removeItem('chiu_yu_ko_site_data_v4');
+      const saved = localStorage.getItem('chiu_yu_ko_site_data_v5');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (parsed?.profile?.chineseName === '高超禹' && parsed?.publications?.length === 20) {
+        if (parsed?.profile?.chineseName === '高超禹' && parsed?.publications?.length === 21) {
           return parsed;
         }
       }

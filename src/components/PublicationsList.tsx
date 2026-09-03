@@ -223,20 +223,23 @@ export const PublicationsList: React.FC<PublicationsListProps> = ({
 
                       {/* Authors */}
                       <div className="text-sm text-gray-700 font-sans">
-                        {pub.authors.map((author, i) => (
-                          <React.Fragment key={i}>
-                            <span
-                              className={
-                                author.includes('Chiu Yu Ko') || author.includes('Ko')
-                                  ? 'font-bold text-[#1a237e] underline decoration-[#3f51b5]/40 underline-offset-2'
-                                  : 'text-gray-600'
-                              }
-                            >
-                              {author}
-                            </span>
-                            {i < pub.authors.length - 1 && ', '}
-                          </React.Fragment>
-                        ))}
+                        {pub.authors.map((author, i) => {
+                          const isSelf = /^(chiu\s*yu\s*ko|ko,\s*chiu\s*yu)$/i.test(author.trim());
+                          return (
+                            <React.Fragment key={i}>
+                              <span
+                                className={
+                                  isSelf
+                                    ? 'font-bold text-[#1a237e] underline decoration-[#3f51b5]/40 underline-offset-2'
+                                    : 'text-gray-600'
+                                }
+                              >
+                                {author}
+                              </span>
+                              {i < pub.authors.length - 1 && ', '}
+                            </React.Fragment>
+                          );
+                        })}
                       </div>
 
                       {/* Venue & Date */}
