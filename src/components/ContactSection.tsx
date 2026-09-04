@@ -99,13 +99,23 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile }) => {
                 The Chinese University of Hong Kong (CUHK)
               </p>
 
-              <div className="mt-4 space-y-2 text-xs sm:text-sm text-gray-600 leading-relaxed">
+              <div className="mt-4 space-y-2.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
                 <p>
-                  <strong className="text-gray-900">Primary Appointment:</strong> Associate Professor, Department of Decisions, Operations and Technology (DOT), CUHK Business School.
+                  Associate Professor, Department of Decisions, Operations and Technology (DOT), CUHK Business School.
                 </p>
-                <p>
-                  <strong className="text-gray-900">Past Courtesy Appointment (ended 2024):</strong> Associate Professor (by courtesy), Department of Economics, Faculty of Social Science, CUHK.
-                </p>
+                {profile.administrativeRoles && profile.administrativeRoles.length > 0 && (
+                  <div className="space-y-1 pt-1">
+                    <span className="font-semibold text-gray-900 block">Administrative Appointments:</span>
+                    <ul className="space-y-1 text-gray-700">
+                      {profile.administrativeRoles.map((role, idx) => (
+                        <li key={idx} className="flex items-start gap-1.5">
+                          <span className="text-[#3f51b5] font-bold">•</span>
+                          <span>{role}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 <p className="text-gray-500 text-xs pt-1">
                   Conveniently situated next to University MTR Station (Exit B) in the Cheng Yu Tung Building (CYT), Shatin.
                 </p>
