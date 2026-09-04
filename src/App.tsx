@@ -19,7 +19,8 @@ export function App() {
       localStorage.removeItem('chiu_yu_ko_site_data');
       localStorage.removeItem('chiu_yu_ko_site_data_v3');
       localStorage.removeItem('chiu_yu_ko_site_data_v4');
-      const saved = localStorage.getItem('chiu_yu_ko_site_data_v5');
+      localStorage.removeItem('chiu_yu_ko_site_data_v5');
+      const saved = localStorage.getItem('chiu_yu_ko_site_data_v6');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed?.profile?.chineseName === '高超禹' && parsed?.publications?.length === 21) {

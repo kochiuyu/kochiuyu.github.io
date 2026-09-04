@@ -14,6 +14,44 @@ import {
 } from 'lucide-react';
 import { Profile } from '../types';
 
+const JOURNAL_NAMES = [
+  'Journal of Environmental Economics and Management',
+  'Journal of Economics & Management Strategy',
+  'Journal of Institutional and Theoretical Economics',
+  'Journal of Public Economic Theory',
+  'Annals of Economics and Finance',
+  'Eurasian Geography and Economics',
+  'Mathematical Social Sciences',
+  'Canadian Journal of Economics',
+  'International Economic Review',
+  'Games and Economic Behavior',
+  'Journal of Economic Theory',
+  'Global Finance Journal',
+  'Management Science',
+  'Economic Inquiry',
+  'Economic Modelling',
+  'Theory and Decision',
+];
+
+const JOURNAL_REGEX = new RegExp(
+  `(${JOURNAL_NAMES.map((j) => j.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`,
+  'g'
+);
+
+const renderBioText = (paragraph: string) => {
+  const parts = paragraph.split(JOURNAL_REGEX);
+  if (parts.length === 1) return paragraph;
+  return parts.map((part, i) =>
+    JOURNAL_NAMES.includes(part) ? (
+      <em key={i} className="italic font-medium text-gray-800">
+        {part}
+      </em>
+    ) : (
+      part
+    )
+  );
+};
+
 interface ProfileHeroProps {
   profile: Profile;
 }
@@ -157,7 +195,7 @@ export const ProfileHero: React.FC<ProfileHeroProps> = ({ profile }) => {
               <div className="space-y-3.5 text-gray-700 leading-relaxed text-sm sm:text-base">
                 {profile.bio.map((paragraph, idx) => (
                   <p key={idx} className="text-justify">
-                    {paragraph}
+                    {renderBioText(paragraph)}
                   </p>
                 ))}
               </div>

@@ -2,7 +2,6 @@ import React, { useState, useMemo } from 'react';
 import {
   Search,
   ExternalLink,
-  FileDown,
   Quote,
   ChevronDown,
   ChevronUp,
@@ -274,18 +273,6 @@ export const PublicationsList: React.FC<PublicationsListProps> = ({
                         >
                           <ExternalLink className="w-3 h-3" />
                           <span>DOI</span>
-                        </a>
-                      )}
-                      {pub.pdf && (
-                        <a
-                          id={`pub-pdf-btn-${pub.id}`}
-                          href={pub.pdf}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium text-[#303f9f] bg-[#e8eaf6]/60 hover:bg-[#3f51b5] hover:text-white border border-[#c5cae9]/80 rounded-md transition-colors"
-                        >
-                          <FileDown className="w-3 h-3" />
-                          <span>PDF</span>
                         </a>
                       )}
                       <button

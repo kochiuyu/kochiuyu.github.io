@@ -184,7 +184,7 @@
       "date": "October 2026",
       "venue": "Economic Modelling, Vol. 163, 107716",
       "type": "Journal Article",
-      "abstract": "This paper develops a dynamic model to investigate the mechanisms through which an employer with monopsony power adversely affects workers. We examine how imperfect competition in the labor market interacts with wage-setting dynamics, labor mobility, and long-term contract formation, demonstrating the welfare loss imposed on workers and offering policy insights regarding minimum wages and labor market concentration.",
+      "abstract": "A debate has emerged over the growing market power of large firms and its implications for labor markets. Our simplified model shows that monopsony employers hire fewer workers and set wages below the socially optimal level, generating what is called incentive-driven unemployment. Although this structure encourages worker effort, it also compresses wages, producing smaller differentials among workers — both within and across firms — than their productivity differences would warrant. In equilibrium, income inequality is excessive, labor is misallocated, and the job-finding rate is lower than the social optimum. Our numerical examples demonstrate the economic significance of these effects and illustrate realistic labor-market dynamics and plausible micro wage–productivity elasticities.",
       "tags": [
         "Labor Economics",
         "Industrial Organization",
@@ -208,7 +208,7 @@
       "date": "August 2024",
       "venue": "Management Science, 70(8), 5345–5363",
       "type": "Journal Article",
-      "abstract": "We consider a model of conflict resolution where an initial loss can trigger further losses along an acyclic network. Agents have committed in advance to an automated conflict resolution protocol using smart contracts. We study how to allocate such sequentially triggered losses among involved parties in an incentive-compatible, fair, and decentralized way, providing an axiomatic characterization and practical blockchain implementation principles.",
+      "abstract": "When actions by one agent force another to deviate from their agreements with a third, “victim” turns into “injurer” in the chain’s subsequent steps. Should the chain’s initiator be responsible only for the direct harm they cause or also bear some of the indirect losses they trigger? Through an axiomatic approach, we characterize the class of fixed-fraction rules, which strike a balance between incentives for accident prevention on the one hand and fairness in terms of how liabilities are assigned on the other. Their simple design make the rules ideal for practical implementation through smart contracts, enabling automated conflict resolution.",
       "tags": [
         "Smart Contracts",
         "Game Theory",
@@ -232,7 +232,7 @@
       "date": "April 2023",
       "venue": "Global Finance Journal, 56, 100823",
       "type": "Journal Article",
-      "abstract": "We investigate how aggregate psychological distractions and sleep disruptions influence financial asset valuation by utilizing the FIFA World Cup as a natural experiment across international markets. Our empirical findings show that late-night viewing schedules cause measurable decreases in market liquidity and short-term mispricing, underscoring behavioral determinants of trading conduct.",
+      "abstract": "We study how sleeplessness and distraction impact global stock markets using a novel proxy, the FIFA World Cup games. Using this widely viewed sporting event, we exploit the time zone differences between countries to capture the sleeplessness from staying awake overnight and the distraction from watching matches during trading hours. We find the markets experience a −26 basis-point daily return for a day of sleeplessness and a −22 basis-point return due to distraction. These effects are robust to methodological changes.",
       "tags": [
         "Financial Economics",
         "Behavioral Finance",
@@ -255,7 +255,7 @@
       "date": "August 2023",
       "venue": "Journal of Public Economic Theory, 25(4), 715–738",
       "type": "Journal Article",
-      "abstract": "We examine the impact of bureaucratic corruption on the transfer of clean technology to developing economies. While corruption is widely recognized as a tax on economic activity and welfare, we demonstrate that when environmental regulations create rigid compliance barriers, intermediary rent-seeking may ironically provide strategic lubrication that facilitates the adoption of energy-saving technologies under specific market conditions, highlighting subtle trade-offs between regulatory rigor and environmental policy enforcement.",
+      "abstract": "We study the impact of environmental regulation on the transfer of a clean technology where bureaucrats are needed for government intervention. In the absence of corruption, when environmental taxes are low, a technology transfer always takes place and it increases total outputs, but may lead to higher pollution levels. However, when corruption is possible, a firm with a dirty technology may choose to bribe a corruptible bureaucrat who will underreport the actual level of emissions, thereby hindering the transfer of clean technology. We show that a less strict anticorruption policy may lead to more bribing, but encourage technology transfers. Moreover, an environment-oriented government would set a deterrent environmental tax to reduce pollution, while an output-oriented government would set a minimum tax rate to eliminate corruption and induce technology transfers. However, a balanced government would tolerate corruption when the cost of bribing is low and the clean technology is sufficiently efficient.",
       "tags": [
         "Technology Transfer",
         "Environmental Economics",
@@ -303,7 +303,7 @@
       "date": "November 2022",
       "venue": "Economic Modelling, 116, 105989",
       "type": "Journal Article",
-      "abstract": "This paper studies platform compatibility choices in two-sided markets where consumers and developers have heterogeneous preferences across competing systems. We model partial compatibility as a continuous design parameter and solve for subgame perfect equilibrium pricing and compatibility decisions, uncovering how multihoming tendencies govern whether proprietary walled gardens or open standards optimize overall economic surplus.",
+      "abstract": "We consider platforms’ choices of application compatibility in a two-sided market with single-homing users and multihoming content providers. As the network effect on the user side becomes stronger than on the content provider side, platforms find it more profitable to adopt compatibility. We show that partial compatibility, where some platforms are compatible with each other but not with others, can be a unique coalition-proof market outcome. Still, when the relative network effect is high, the coalition-proof market outcome changes directly from full compatibility to incompatibility as the cost of compatibility technology increases, bypassing partial compatibility. Moreover, consumer and total surpluses can be the highest under partial compatibility, suggesting that promoting compatibility is not always socially optimal.",
       "tags": [
         "Two-Sided Markets",
         "Platform Competition",
@@ -326,7 +326,7 @@
       "date": "December 2021",
       "venue": "Economic Modelling, 104, 105655",
       "type": "Journal Article",
-      "abstract": "When downstream patent licensees engage in unproductive contest activities that dissipate economic rents, patent licensing structures undergo fundamental strategic alterations. We analyze royalty and fixed-fee combinations that align licensor incentives with social efficiency, characterizing when rent dissipation causes standard open licensing policies to suboptimally restrict consumer surplus.",
+      "abstract": "This paper studies how technology transfer changes welfare in a Cournot oligopoly, taking rent dissipation into account. Firms engage in a patent competition for a cost-reducing innovation, and the winner of the competition may license the patent to its rivals. We show that welfare is reduced when innovations are minor under licensing auction, while royalty licensing never changes welfare. In addition, welfare generally fails to improve when the patentee may choose between licensing auction and royalty licensing.",
       "tags": [
         "Patent Licensing",
         "Rent Dissipation",
@@ -349,7 +349,7 @@
       "date": "June 2021",
       "venue": "Journal of Public Economic Theory, 23(3), 407–437",
       "type": "Journal Article",
-      "abstract": "This paper studies competing uninformed principals screening privately informed agents who simultaneously convey verifiable signals. We demonstrate how decentralized competition alters signaling equilibrium structure compared to monolithic monopolistic mechanisms, highlighting implications for public credentialing and regulatory oversight.",
+      "abstract": "We consider a model in which schools and colleges compete for high-ability students, which are independently identified through a costly screening procedure. This independence creates a channel through which students’ preferences affect the strategic interaction between schools: students with competing offers accept the most-preferred one, increasing the screening costs of unpopular schools. When preferences between schools are more heterogeneous, schools screen more, increasing the proportion of students with multiple offers, but paradoxically reducing the extent to which their preferences determine their outcomes. By observing the students’ schools of origin, colleges can free-ride of the fierce competition that occurs during screening.",
       "tags": [
         "Mechanism Design",
         "Information Economics",
@@ -372,7 +372,7 @@
       "date": "July 2021",
       "venue": "Economic Inquiry, 59(3), 1364–1377",
       "type": "Journal Article",
-      "abstract": "We examine whether dominant platforms inherently degrade consumer welfare when cross-side network externalities are strong. In contrast to conventional antitrust presumption against platform scale, our model identifies conditions under which platform asymmetry leads to larger network participation benefits that exceed monopolistic markup losses, delivering net consumer gains.",
+      "abstract": "We develop a two-sided market model where both platforms and sellers charge buyers for access. When network effects are moderate, a dominant platform that attracts more sellers and buyers is more likely to arise. Compared to when platforms split the market equally, a dominant platform always leads to higher consumer surplus and total welfare. Moreover, both of these measures improve as network effects increase. Our results suggest that competition authorities should be cautious regarding complaints related to dominant platforms in two-sided markets, as they may be good for consumers.",
       "tags": [
         "Platform Competition",
         "Consumer Welfare",
@@ -395,7 +395,7 @@
       "date": "February 2020",
       "venue": "Canadian Journal of Economics, 53(1), 290–312",
       "type": "Journal Article",
-      "abstract": "This paper models an RJV where research partners are legally permitted to license newly generated innovations to outside rival firms. We demonstrate that allowing post-innovation technology transfer fundamentally improves initial R&D expenditure incentives, enhancing social welfare and softening competitive distortions in downstream product markets.",
+      "abstract": "Kamien, Muller, and Zang (Am Econ Rev 82:1293-1306, 1992) show that an industry-wide research joint venture (RJV), compared to the case without any RJV, does not lead to better technological development or a higher consumer surplus. In contrast, we show that every non-industry-wide RJV leads to strict improvements in both measures and it also results in higher production efficiency. Furthermore, when technology transfer is possible after making R&D investment, our results continue to hold, and when research efficiency is low, these improvements are further magnified. Governments should encourage innovation through independent collaboration with technology transfer as an alternative to establishing industry-wide research consortiums.",
       "tags": [
         "Technology Transfer",
         "Research Joint Venture",
@@ -418,7 +418,7 @@
       "date": "August 2020",
       "venue": "International Economic Review, 61(3), 1139–1172",
       "type": "Journal Article",
-      "abstract": "We study decentralized bilateral bargaining between one central agent and multiple peripheral agents under alternative informational regimes. We characterize the unique stationary subgame perfect equilibrium and prove that delay vanishes as friction approaches zero. We analyze how outside options, bargaining power, and sequence of interactions determine division of surplus in decentralized supply chains and labor markets.",
+      "abstract": "We study a one-to-many bargaining situation in which one active player seeks to reach an agreement with every passive player on how to share the surplus of a joint project. The order of bargaining is not fixed and the active player decides whom to bargain with in each period. We characterize subgame perfect equilibria satisfying a refinement condition. Our model admits a rich set of equilibria and we identify the upper and lower bounds of each player’s equilibrium payoff. In particular, there is a class of divide-and-conquer equilibria, in which the active player creates an endogenous disparity of bargaining power to her own advantage. We also examine whether two natural ordering protocols often assumed in existing studies can sustain endogenously. The queuing protocol may indeed arise in an equilibrium, but it leads to a highly unequal division of the surplus. In contrast, the rotating protocol yields a plausible equilibrium division, but it is not self-enforcing in generic situations.",
       "tags": [
         "Bargaining",
         "Game Theory",
@@ -442,7 +442,7 @@
       "date": "December 2020",
       "venue": "Journal of Institutional and Theoretical Economics, 176(4), 665–685",
       "type": "Journal Article",
-      "abstract": "Firms contemplating joint ventures often face asymmetric candidate partners with complementary capabilities and competing proprietary product lines. We formulate a non-cooperative partnership selection game to characterize equilibrium partner choice, showing how spillover risks and product substitutability interact with equity share allocations.",
+      "abstract": "We study how a firm inside or outside an industry selects a partner among asymmetric firms to form a production joint venture (PJV), in which technology transfer takes place. We show that the partner selected under a two-part tariff contract is always (weakly) more efficient than the one selected under a first-price auction. Comparing these two schemes, we find that a two-part tariff contract can be superior for the most efficient incumbent firm or for an outside innovator, while a first-price auction is always superior for the least efficient incumbent firm. Moreover, in terms of consumer surplus and welfare, two-part tariff contract is always (weakly) superior.",
       "tags": [
         "Joint Venture",
         "Industrial Organization",
@@ -466,7 +466,7 @@
       "year": 2019,
       "type": "Journal Article",
       "venue": "Annals of Economics and Finance, 20(1), 319-356",
-      "abstract": "This paper studies the impact of short-sales constraints on market efficiency and informational friction in the presence of uninformed and informed traders. We show how constraints distort price discovery and the strategic behavior of traders in equity markets.",
+      "abstract": "We examine the effect of short selling via the unique setting in the Hong Kong stock market and find that, when a stock becomes shortable, its trading activities decrease, liquidities worsen, and information asymmetries increase. This finding contradicts both the existing theoretical models, and recent empirical studies using global financial crisis data. We extend the sequential trading model with short-sales constraints of one asset by Diamond and Verrecchia (1987) to the case of multiple assets. The model predicts that our empirical results are due to uninformed traders quitting from trading the shortable securities.",
       "tags": [
         "Financial Economics",
         "Short Sales",
@@ -490,7 +490,7 @@
       "date": "March 2019",
       "venue": "Journal of Environmental Economics and Management, 94, 67–81",
       "type": "Journal Article",
-      "abstract": "Riparian nations situated along an international river face severe unidirectional externalities in water consumption. We design decentralized, voluntary bargaining mechanisms that implement Pareto-efficient water withdrawals without requiring a central supra-national authority, guaranteeing core stability and historical equity criteria.",
+      "abstract": "We study decentralized implementation of efficient outcomes through multilateral bargaining in the river sharing problem. We introduce a class of mechanisms in the form of two-stage games in which agents first announce consumption levels and then bargain over monetary compensations. The defining characteristic of a mechanism is the way it assigns bargaining power to agents as a consequence of their locations, inflows, and consumption decisions. We first determine which mechanisms give incentives to always allocate the water efficiently, in the sense that, regardless of the agents’ benefit functions, equilibrium play always yields an efficient outcome. Among these, we take an axiomatic approach to single out three mechanisms that guarantee a fair division of the welfare gain obtained through cooperation along the river.",
       "tags": [
         "Environmental Economics",
         "Resource Allocation",
@@ -514,7 +514,7 @@
       "date": "February 2018",
       "venue": "International Economic Review, 59(1), 285–327",
       "type": "Journal Article",
-      "abstract": "Why did China historically maintain political unification while Europe remained fragmented into competitive sovereign states? We construct a formal geographical-defense model demonstrating how unidirectional external threats from Eurasian nomads compelled fiscal and administrative centralization in China, whereas multi-directional threats across Europe stabilized polycentric geopolitical competition.",
+      "abstract": "This article studies the causes and consequences of political centralization and fragmentation in China and Europe. We argue that a severe and unidirectional threat of external invasion fostered centralization in China, whereas Europe faced a wider variety of smaller external threats and remained fragmented. Political centralization in China led to lower taxation and hence faster population growth during peacetime compared to Europe. But it also meant that China was more vulnerable to occasional negative population shocks. Our results are consistent with historical evidence of warfare, capital city location, tax levels, and population growth in both China and Europe.",
       "tags": [
         "Political Economy",
         "Economic History",
@@ -538,7 +538,7 @@
       "date": "September 2018",
       "venue": "Journal of Economic Theory, 177, 734–779",
       "type": "Journal Article",
-      "abstract": "We study the problem of sharing values generated sequentially across a directed network structure. When intermediate nodes contribute heterogeneous processing costs and pass-through capacity, standard cooperative solution concepts such as the Shapley value may fail monotonicity or incentive feasibility. We formulate an axiomatic foundation yielding unique, path-independent sharing rules suitable for supply networks, pipeline transport, and digital content distribution.",
+      "abstract": "Consider a sequential process where agents have individual values at every possible step. A planner is in charge of selecting steps and distributing the accumulated aggregate values among a number of agents. We model this process by a directed network, whereby each edge is associated with a vector of individual values. This model applies to several new and existing problems, e.g. developing a connected public facility and distributing total values received by surrounding districts, selecting a long-term production project and sharing final profits among partners of a firm, or choosing a machine schedule to serve different tasks and distributing total benefits among task owners. Herein, we provide the first axiomatic study on path selection and value-sharing in networks. We consider four sets of axioms from different perspectives, including those related to (1) the sequential consistency of value-sharing; (2) the monotonicity of value-sharing with respect to technology improvements; (3) the independence of value-sharing with respect to certain network transformations; and (4) the robust implementation of the efficient path selection when the planner has no information about network configuration. Surprisingly, these four disparate sets of axioms characterize similar classes of solutions, namely selecting an efficient path(s) and assigning to each agent a share of total values that is independent of individual values. Furthermore, we characterize more general solutions that depend on individual values.",
       "tags": [
         "Network Economics",
         "Value Sharing",
@@ -562,7 +562,7 @@
       "date": "November 2018",
       "venue": "Journal of Economics & Management Strategy, 27(4), 792–803",
       "type": "Journal Article",
-      "abstract": "We investigate continuous labor renegotiation games when workers and employers possess time-varying outside opportunities. We find that outside options exert a discontinuous disciplinary role on wage agreements, explaining empirical stickiness in contractual adjustments during economic downturns.",
+      "abstract": "We study a game-theoretic model of wage renegotiation. A worker, after receiving a superior outside offer, initiates a wage renegotiation with his current employer. During the renegotiation, whenever a proposal is rejected, the worker decides whether to opt out. When the two parties are sufficiently patient, any wage level between the outside offer and the entire net surplus can be sustained in equilibrium. Opting out may also arise in equilibrium. This result is in stark contrast to existing studies, in which the outside option is sometimes a credible threat, but is never exercised in equilibrium.",
       "tags": [
         "Wage Bargaining",
         "Outside Options",
@@ -584,7 +584,7 @@
       "date": "January 2017",
       "venue": "Theory and Decision, 83(1), 95–106",
       "type": "Journal Article",
-      "abstract": "This paper analyzes the interplay between principal budget constraints and agent outside options in common agency games with complete information. I establish necessary and sufficient conditions for the existence of pure-strategy equilibria and explore implications for political lobbying and multi-sponsor procurement.",
+      "abstract": "Bernheim and Whinston (Q J Econ 101:1–31, 1986) show that, in a common agency problem without budget constraints, the set of Nash equilibria with truthful strategies (TNE), the set of coalition-proof Nash equilibria (CPNE), and the principal-optimal core of the underlying coalitional game are non-empty and all equivalent in payoff space. We show that, with budget constraints, none of Bernheim and Whinston’s (Q J Econ 101:1–31, 1986) results hold: (i) a CPNE may not exist, (ii) a TNE may not exist even when a CPNE exists, (iii) a TNE may not be a CPNE, and (iv) both TNE and CPNE payoffs are core allocations but are not necessarily principal-optimal. However, when principals have outside options but no budget constraints, (i), and (iii) continue to hold but not for (ii) and (iv). In particular, a TNE always exists but the core may be empty.",
       "tags": [
         "Common Agency",
         "Principal-Agent",
@@ -607,7 +607,7 @@
       "date": "December 2013",
       "venue": "Eurasian Geography and Economics, 54(5-6), 470–483",
       "type": "Journal Article",
-      "abstract": "We explore the geographic and ecological determinants of administrative centralization across imperial Chinese dynasties. Inter-regional grain transfers and hydraulic infrastructure management generated high mutual dependence among provinces, sustaining unified dynastic governance even through acute political crises.",
+      "abstract": "We apply the concept of externalities to explain China’s long history of political centralization and its placement of the national capital. We argue that Eurasian geography created significant and persistent defense externalities between the Chinese regions. Opportunities to free ride imply that voluntary cooperation could not provide a long-term solution to the problem. A natural solution was to create a centralized state that would use coercion to enforce cooperation. Our model suggests that when an externality is strong, building the national capital in the region where the externality originates could be optimal. This provides a potential explanation as to why China’s capital was usually located in the strategically important north and west instead of the economically productive south and east.",
       "tags": [
         "Political Economy",
         "Fiscal Capacity",
@@ -631,7 +631,7 @@
       "date": "November 2013",
       "venue": "Games and Economic Behavior, 82, 389–405",
       "type": "Journal Article",
-      "abstract": "A patent holder decides which rival firm in an oligopolistic industry should receive an exclusive cost-reducing production license. Because firms possess asymmetric initial cost efficiencies, licensing to a less efficient rival can strategically induce milder price competition in the final product market, altering traditional antitrust expectations.",
+      "abstract": "We examine a firm that can license its production technology to a rival when firms are heterogeneous in production costs. We show that a complete technology transfer from one firm to another always increases joint profit under weakly concave demand when at least three firms remain in the industry. A jointly profitable transfer may reduce social welfare, although a jointly profitable transfer from the most efficient firm always increases welfare. We also consider two auction games under complete information: a standard first-price auction and a menu auction by Bernheim and Whinston (1986). With natural refinement of equilibria, we show that the resulting licensees are ordered by degree of efficiency: menu auction, simple auction, and joint-profit-maximizing licensees, in (weakly) descending order.",
       "tags": [
         "Patent Licensing",
         "Heterogeneous Rivals",
@@ -654,7 +654,7 @@
       "date": "May 2012",
       "venue": "Games and Economic Behavior, 75(1), 217–232",
       "type": "Journal Article",
-      "abstract": "We analyze a monopolistic matchmaker operating in two-sided matching markets with transferable utility. The intermediary posts registration fees and matching fees to attract participants. We characterize optimal tariff structures that maximize intermediary revenue while satisfying stable matching requirements.",
+      "abstract": "This paper considers a resource allocation mechanism that utilizes a profit-maximizing auctioneer/matchmaker in the Kelso–Crawford (1982) (many-to-one) assignment problem. We consider general and simple (individualized price) message spaces for firms’ reports on their demands. We show that in the simple message space: (i) a stable assignment is achieved in every Nash equilibrium, and (ii) the sets of stable assignments and strong Nash equilibria are equivalent. By contrast, in the general message space, the matchmaker may make a positive profit in a Nash equilibrium. This shows that restricting message space not only reduces the information requirement but also improves resource allocation.",
       "tags": [
         "Matching Markets",
         "Two-Sided Markets",
