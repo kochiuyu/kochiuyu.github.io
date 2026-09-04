@@ -6,13 +6,13 @@
     "department": "Department of Decisions, Operations and Technology",
     "departmentNote": "Formerly Department of Decision Sciences and Managerial Economics",
     "institution": "The Chinese University of Hong Kong (CUHK) Business School",
-    "courtesyAppointment": "Associate Professor (by courtesy), Department of Economics, CUHK",
+    "courtesyAppointment": "",
     "email": "chiuyuko@cuhk.edu.hk",
     "office": "Room 938, 9/F, Cheng Yu Tung Building, 12 Chak Cheung Street, Shatin, New Territories, Hong Kong",
     "avatar": "/author/admin/avatar.jpg",
     "cvUrl": "/files/cv.pdf",
     "bio": [
-      "Chiu Yu Ko (高超禹) is an Associate Professor in the Department of Decisions, Operations and Technology at The Chinese University of Hong Kong (CUHK) Business School. He also holds a courtesy appointment as Associate Professor in the Department of Economics, and serves as Associate Director of the Master of Science Programme in Information and Technology Management (MSc in ITM) as well as Associate Director of the Aviation Policy Research Centre.",
+      "Chiu Yu Ko (高超禹) is an Associate Professor in the Department of Decisions, Operations and Technology at The Chinese University of Hong Kong (CUHK) Business School. He previously held a courtesy appointment as Associate Professor in the Department of Economics (ended 2024), and serves as Associate Director of the Master of Science Programme in Information and Technology Management (MSc in ITM) as well as Associate Director of the Aviation Policy Research Centre.",
       "He obtained his B.B.A. in Insurance, Financial and Actuarial Analysis (2005) and M.Phil. in Economics (2007) from The Chinese University of Hong Kong. He earned his M.A. in Economics (2009) and Ph.D. in Economics (2012) from Boston College. Upon graduation, he served as an assistant professor in the Department of Economics at the National University of Singapore (NUS) from 2012 to 2020 before joining CUHK.",
       "His research focuses on game theory, industrial organization, political economy, and financial economics. In game theory, he works on bargaining, principal-agent problems, conflict resolution, and dynamic resource allocation. In industrial organization, he specializes in innovation, standard-setting (FRAND), platform competition, and patent licensing. In political economy, his work explores political centralization, state capacity, and comparative economic history. His research has been published in premier international journals including Management Science, Journal of Economic Theory, International Economic Review, Games and Economic Behavior, Journal of Environmental Economics and Management, Economic Inquiry, Economic Modelling, and Journal of Economics & Management Strategy.",
       "He subscribes to the philosophy that effective learning requires understanding multiple facets in both depth and breadth. He believes continuous feedback allows students to learn from mistakes, consolidate acquired knowledge, and explore deeper academic and practical frontiers."
@@ -834,7 +834,7 @@
         "institution": "The Chinese University of Hong Kong",
         "role": "Main Advisor",
         "year": "2027",
-        "currentPlacement": "Ph.D. Student in Decision Sciences and Managerial Economics, CUHK Business School",
+        "currentPlacement": "Ph.D. Student in Decisions, Operations and Technology, CUHK Business School",
         "profileUrl": "https://grad.bschool.cuhk.edu.hk/students/deng-yangyi/"
       },
       {
@@ -842,7 +842,7 @@
         "institution": "The Chinese University of Hong Kong",
         "role": "Main Advisor",
         "year": "2028",
-        "currentPlacement": "Ph.D. Student in Decision Sciences and Managerial Economics, CUHK Business School",
+        "currentPlacement": "Ph.D. Student in Decisions, Operations and Technology, CUHK Business School",
         "profileUrl": "https://grad.bschool.cuhk.edu.hk/students/li-guohao/"
       },
       {
@@ -850,7 +850,7 @@
         "institution": "The Chinese University of Hong Kong",
         "role": "Main Advisor",
         "year": "2029",
-        "currentPlacement": "Ph.D. Student in Decision Sciences and Managerial Economics, CUHK Business School",
+        "currentPlacement": "Ph.D. Student in Decisions, Operations and Technology, CUHK Business School",
         "profileUrl": "https://grad.bschool.cuhk.edu.hk/students/cao-yinglyu/"
       }
     ],

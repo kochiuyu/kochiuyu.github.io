@@ -99,11 +99,6 @@ export const ProfileHero: React.FC<ProfileHeroProps> = ({ profile }) => {
             <p className="text-sm font-medium text-gray-700">
               {profile.institution}
             </p>
-            {profile.courtesyAppointment && (
-              <p className="text-xs text-gray-500 mt-1 italic">
-                {profile.courtesyAppointment}
-              </p>
-            )}
 
             {/* Administrative Roles */}
             {profile.administrativeRoles && profile.administrativeRoles.length > 0 && (

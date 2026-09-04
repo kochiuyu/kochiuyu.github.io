@@ -104,7 +104,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile }) => {
                   <strong className="text-gray-900">Primary Appointment:</strong> Associate Professor, Department of Decisions, Operations and Technology (DOT), CUHK Business School.
                 </p>
                 <p>
-                  <strong className="text-gray-900">Courtesy Appointment:</strong> Associate Professor (by courtesy), Department of Economics, Faculty of Social Science, CUHK.
+                  <strong className="text-gray-900">Past Courtesy Appointment (ended 2024):</strong> Associate Professor (by courtesy), Department of Economics, Faculty of Social Science, CUHK.
                 </p>
                 <p className="text-gray-500 text-xs pt-1">
                   Conveniently situated next to University MTR Station (Exit B) in the Cheng Yu Tung Building (CYT), Shatin.

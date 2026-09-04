@@ -106,7 +106,7 @@ async function generateCV() {
     const positions = [
       'Associate Professor, Department of Decisions, Operations and Technology, Chinese University of Hong Kong, 2023–Present',
       'Associate Professor, Department of Decision Sciences and Managerial Economics, Chinese University of Hong Kong, 2020–2023',
-      'Associate Professor (by courtesy), Department of Economics, Chinese University of Hong Kong, 2023–Present',
+      'Associate Professor (by courtesy), Department of Economics, Chinese University of Hong Kong, 2020–2024',
       'Assistant Professor, Department of Economics, National University of Singapore, 2012–2020.',
       'Member, Institute of Operation Research and Analytics, National University of Singapore, 2017–2020.'
     ];
