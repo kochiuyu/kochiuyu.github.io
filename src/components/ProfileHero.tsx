@@ -199,20 +199,79 @@ export const ProfileHero: React.FC<ProfileHeroProps> = ({ profile }) => {
             {/* Two-Column Grid: Research Interests & Education */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
               {/* Research Interests */}
-              <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-xs">
-                <h3 className="font-heading text-lg font-bold text-gray-900 mb-3.5 flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#3f51b5]"></span>
-                  Research Interests
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {profile.interests.map((interest, idx) => (
-                    <span
-                      key={idx}
-                      className="inline-block px-2.5 py-1 text-xs font-medium text-[#303f9f] bg-[#e8eaf6] border border-[#c5cae9]/70 rounded-md"
-                    >
-                      {interest}
-                    </span>
-                  ))}
+              <div id="research-interests-card" className="bg-white p-5 rounded-xl border border-gray-200 shadow-xs flex flex-col justify-between">
+                <div>
+                  <h3 className="font-heading text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <BookOpen className="w-4 h-4 text-[#3f51b5]" />
+                    Research Interests
+                  </h3>
+
+                  <div className="space-y-3 pt-0.5">
+                    {/* Primary Fields */}
+                    <div>
+                      <div className="flex items-center gap-1.5 mb-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#3f51b5]"></span>
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-[#3f51b5]">
+                          Primary Fields
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {(profile.researchFields?.primary || ['Applied Game Theory', 'Industrial Organization']).map((field, idx) => (
+                          <span
+                            key={idx}
+                            className="inline-flex items-center px-2.5 py-1 text-xs font-semibold text-[#1a237e] bg-[#e8eaf6] border border-[#c5cae9] rounded-md"
+                          >
+                            {field}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Secondary Fields */}
+                    <div>
+                      <div className="flex items-center gap-1.5 mb-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-gray-600">
+                          Secondary Fields
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {(profile.researchFields?.secondary || ['Public Economics', 'Financial Economics']).map((field, idx) => (
+                          <span
+                            key={idx}
+                            className="inline-flex items-center px-2.5 py-1 text-xs font-medium text-gray-800 bg-slate-50 border border-slate-200 rounded-md"
+                          >
+                            {field}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Focus Topics & Applications */}
+                    <div>
+                      <div className="flex items-center gap-1.5 mb-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+                        <span className="text-[11px] font-semibold uppercase tracking-wider text-gray-500">
+                          Focus Topics & Applications
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {(profile.researchFields?.topics || [
+                          'Patent Licensing & FRAND Royalties',
+                          'Platform Economics & Two-Sided Markets',
+                          'Bargaining & Dynamic Contracts',
+                          'Political Economy & State Capacity'
+                        ]).map((topic, idx) => (
+                          <span
+                            key={idx}
+                            className="inline-flex items-center px-2 py-0.5 text-xs text-gray-600 bg-white border border-gray-200 rounded-md"
+                          >
+                            {topic}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 

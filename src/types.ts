@@ -10,6 +10,12 @@ export interface SocialLink {
   icon: string;
 }
 
+export interface ResearchFields {
+  primary: string[];
+  secondary: string[];
+  topics?: string[];
+}
+
 export interface Profile {
   name: string;
   chineseName?: string;
@@ -30,6 +36,7 @@ export interface Profile {
   orcidUrl?: string;
   bio: string[];
   interests: string[];
+  researchFields?: ResearchFields;
   education: Education[];
   links: SocialLink[];
 }

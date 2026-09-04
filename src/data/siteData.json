@@ -18,15 +18,27 @@
       "He subscribes to the philosophy that effective learning requires understanding multiple facets in both depth and breadth. He believes continuous feedback allows students to learn from mistakes, consolidate acquired knowledge, and explore deeper academic and practical frontiers."
     ],
     "interests": [
-      "Game Theory",
-      "Industrial Organisation",
-      "Political Economics",
-      "Financial Economics",
-      "Platform Competition & Two-Sided Markets",
-      "Patent Licensing & FRAND Royalties",
-      "Smart Contracts & Conflict Resolution",
-      "Resource Allocation & Market Design"
+      "Applied Game Theory",
+      "Industrial Organization",
+      "Public Economics",
+      "Financial Economics"
     ],
+    "researchFields": {
+      "primary": [
+        "Applied Game Theory",
+        "Industrial Organization"
+      ],
+      "secondary": [
+        "Public Economics",
+        "Financial Economics"
+      ],
+      "topics": [
+        "Patent Licensing & FRAND Royalties",
+        "Platform Economics & Two-Sided Markets",
+        "Bargaining & Dynamic Contracts",
+        "Political Economy & State Capacity"
+      ]
+    },
     "education": [
       {
         "degree": "Ph.D. in Economics",
