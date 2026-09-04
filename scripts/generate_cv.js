@@ -818,7 +818,7 @@ async function generateCV() {
     });
     y -= 14;
 
-    page.drawText('Xinyan Liu (2024), Yangyi Deng (2027), Guohao Li (2028), Cao Yinglyu (2029)', {
+    page.drawText('Xinyan Liu (2024), Yangyi Deng (2027), Guohao Li (2028), Yinglyu Cao (2029)', {
       x: leftMargin + 28,
       y: y,
       size: 9.5,

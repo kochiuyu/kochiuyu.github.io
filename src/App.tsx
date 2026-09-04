@@ -23,13 +23,15 @@ export function App() {
       localStorage.removeItem('chiu_yu_ko_site_data_v6');
       localStorage.removeItem('chiu_yu_ko_site_data_v7');
       localStorage.removeItem('chiu_yu_ko_site_data_v8');
-      const saved = localStorage.getItem('chiu_yu_ko_site_data_v9');
+      localStorage.removeItem('chiu_yu_ko_site_data_v9');
+      const saved = localStorage.getItem('chiu_yu_ko_site_data_v10');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (
           parsed?.profile?.chineseName === '高超禹' &&
           parsed?.publications?.length === 21 &&
-          !parsed?.profile?.courtesyAppointment
+          parsed?.advising?.phdStudents?.[2]?.name === 'Xinyan Liu' &&
+          parsed?.advising?.phdStudents?.[3]?.name === 'Yangyi Deng'
         ) {
           return parsed;
         }
