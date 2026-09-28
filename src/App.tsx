@@ -28,13 +28,16 @@ export function App() {
       localStorage.removeItem('chiu_yu_ko_site_data_v11');
       localStorage.removeItem('chiu_yu_ko_site_data_v12');
       localStorage.removeItem('chiu_yu_ko_site_data_v13');
-      const saved = localStorage.getItem('chiu_yu_ko_site_data_v14');
+      localStorage.removeItem('chiu_yu_ko_site_data_v14');
+      localStorage.removeItem('chiu_yu_ko_site_data_v15');
+      const saved = localStorage.getItem('chiu_yu_ko_site_data_v16');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (
           parsed?.profile?.chineseName === '高超禹' &&
           parsed?.publications?.length === 21 &&
-          parsed?.profile?.researchFields?.primary
+          parsed?.profile?.researchFields?.primary &&
+          parsed?.teaching?.some((c: { id: string; semesters?: string }) => c.id === 'low-altitude-economics-master' && c.semesters === 'Spring 2026')
         ) {
           return parsed;
         }

@@ -400,12 +400,12 @@
       "id": "rjv-tech-transfer-2020",
       "title": "Research Joint Venture with Technology Transfer",
       "authors": [
-        "Bo Shen",
-        "Chiu Yu Ko"
+        "Chiu Yu Ko",
+        "Xuyao Zhang"
       ],
       "year": 2020,
       "date": "February 2020",
-      "venue": "Canadian Journal of Economics, 53(1), 290–312",
+      "venue": "Canadian Journal of Economics / Revue canadienne d'économique, 53(1), 341–358",
       "type": "Journal Article",
       "abstract": "Kamien, Muller, and Zang (Am Econ Rev 82:1293-1306, 1992) show that an industry-wide research joint venture (RJV), compared to the case without any RJV, does not lead to better technological development or a higher consumer surplus. In contrast, we show that every non-industry-wide RJV leads to strict improvements in both measures and it also results in higher production efficiency. Furthermore, when technology transfer is possible after making R&D investment, our results continue to hold, and when research efficiency is low, these improvements are further magnified. Governments should encourage innovation through independent collaboration with technology transfer as an alternative to establishing industry-wide research consortiums.",
       "tags": [
@@ -416,7 +416,7 @@
       ],
       "doi": "https://doi.org/10.1111/caje.12423",
       "pdf": "https://doi.org/10.1111/caje.12423",
-      "bibtex": "@article{shen2020research,\n  title={Research Joint Venture with Technology Transfer},\n  author={Shen, Bo and Ko, Chiu Yu},\n  journal={Canadian Journal of Economics},\n  volume={53},\n  number={1},\n  pages={290--312},\n  year={2020}\n}",
+      "bibtex": "@article{ko2020research,\n  title={Research joint venture with technology transfer},\n  author={Ko, Chiu Yu and Zhang, Xuyao},\n  journal={Canadian Journal of Economics/Revue canadienne d'{\\'e}conomique},\n  volume={53},\n  number={1},\n  pages={341--358},\n  year={2020},\n  publisher={Wiley Online Library}\n}",
       "featured": false
     },
     {
@@ -715,7 +715,7 @@
       "code": "MSc Elective",
       "title": "Low Altitude Economics",
       "level": "Master",
-      "semesters": "Fall 2026",
+      "semesters": "Spring 2026",
       "overview": "Explores the emerging economic paradigms of the low-altitude economy, including unmanned aerial vehicle (UAV) logistics, urban air mobility (UAM), airspace resource allocation, regulatory economics, and commercial infrastructure.",
       "topics": [
         "Low-altitude airspace economic fundamentals",
