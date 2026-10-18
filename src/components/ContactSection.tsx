@@ -100,19 +100,79 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile }) => {
               </p>
 
               <div className="mt-4 space-y-2.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
-                <p>
-                  Associate Professor, Department of Decisions, Operations and Technology (DOT), CUHK Business School.
+                <p className="text-gray-700">
+                  <a
+                    href={profile.cuhkProfileUrl || 'https://www.bschool.cuhk.edu.hk/staff/ko-chiu-yu/'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-gray-900 hover:text-[#3f51b5] inline-flex items-center gap-0.5 group transition-colors"
+                    title="View official Faculty Profile at CUHK (Primary Role: Associate Professor)"
+                  >
+                    <span>{profile.title}</span>
+                    <ExternalLink className="w-3 h-3 text-[#3f51b5]/70 group-hover:text-[#3f51b5] inline ml-0.5" />
+                  </a>
+                  {', '}
+                  <a
+                    href={profile.departmentUrl || 'https://www.bschool.cuhk.edu.hk/departments/decisions-operations-and-technology/'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#3f51b5] inline-flex items-center gap-0.5 group transition-colors"
+                    title="Visit Department of Decisions, Operations and Technology (DOT)"
+                  >
+                    <span>{profile.department} (DOT)</span>
+                    <ExternalLink className="w-3 h-3 text-[#3f51b5]/70 group-hover:text-[#3f51b5] inline ml-0.5" />
+                  </a>
+                  {', '}
+                  <a
+                    href={profile.institutionUrl || 'https://www.bschool.cuhk.edu.hk/'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#3f51b5] inline-flex items-center gap-0.5 group transition-colors"
+                    title="Visit CUHK Business School"
+                  >
+                    <span>CUHK Business School</span>
+                    <ExternalLink className="w-3 h-3 text-[#3f51b5]/70 group-hover:text-[#3f51b5] inline ml-0.5" />
+                  </a>
+                  .
                 </p>
                 {profile.administrativeRoles && profile.administrativeRoles.length > 0 && (
-                  <div className="space-y-1 pt-1">
+                  <div className="space-y-1.5 pt-1">
                     <span className="font-semibold text-gray-900 block">Administrative Appointments:</span>
-                    <ul className="space-y-1 text-gray-700">
-                      {profile.administrativeRoles.map((role, idx) => (
-                        <li key={idx} className="flex items-start gap-1.5">
-                          <span className="text-[#3f51b5] font-bold">•</span>
-                          <span>{role}</span>
-                        </li>
-                      ))}
+                    <ul className="space-y-1.5 text-gray-700">
+                      {profile.administrativeRoles.map((roleItem, idx) => {
+                        const isObj = typeof roleItem === 'object' && roleItem !== null;
+                        const roleTitle = isObj ? roleItem.role : (roleItem.includes(',') ? roleItem.split(',')[0].trim() : 'Associate Director');
+                        const orgName = isObj ? roleItem.organization : (roleItem.includes(',') ? roleItem.split(',').slice(1).join(',').trim() : roleItem);
+                        const url = isObj && roleItem.url
+                          ? roleItem.url
+                          : orgName.includes('Information and Technology Management')
+                          ? 'https://masters.bschool.cuhk.edu.hk/programmes/mscistm/'
+                          : orgName.includes('Aviation Policy')
+                          ? 'https://www.bschool.cuhk.edu.hk/centres/aviation-policy-and-research-centre/'
+                          : undefined;
+
+                        return (
+                          <li key={idx} className="flex items-start gap-1.5">
+                            <span className="text-[#3f51b5] font-bold">•</span>
+                            <span>
+                              <span className="font-medium text-gray-900">{roleTitle},</span>{' '}
+                              {url ? (
+                                <a
+                                  href={url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-[#3f51b5] hover:text-[#303f9f] hover:underline font-medium inline-flex items-center gap-0.5 group"
+                                >
+                                  <span>{orgName}</span>
+                                  <ExternalLink className="w-3 h-3 text-[#3f51b5]/70 group-hover:text-[#303f9f] shrink-0 inline ml-0.5" />
+                                </a>
+                              ) : (
+                                <span>{orgName}</span>
+                              )}
+                            </span>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 )}
@@ -122,14 +182,44 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile }) => {
               </div>
             </div>
 
-            <div className="pt-4 border-t border-gray-100 flex flex-wrap gap-3 items-center">
+            <div className="pt-4 border-t border-gray-100 flex flex-wrap gap-2.5 items-center">
               <a
                 href={profile.cuhkProfileUrl || "https://www.bschool.cuhk.edu.hk/staff/ko-chiu-yu/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-xs text-[#303f9f] hover:text-[#1a237e] font-semibold underline"
               >
-                <span>CUHK Official Staff Profile</span>
+                <span>CUHK Staff Profile</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
+              <span className="text-gray-300">•</span>
+              <a
+                href={profile.departmentUrl || "https://www.bschool.cuhk.edu.hk/departments/decisions-operations-and-technology/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-[#303f9f] hover:text-[#1a237e] font-semibold underline"
+              >
+                <span>DOT Department</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
+              <span className="text-gray-300">•</span>
+              <a
+                href={profile.itmProgrammeUrl || "https://masters.bschool.cuhk.edu.hk/programmes/mscistm/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-[#303f9f] hover:text-[#1a237e] font-semibold underline"
+              >
+                <span>MSc in ITM</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
+              <span className="text-gray-300">•</span>
+              <a
+                href={profile.aprcUrl || "https://www.bschool.cuhk.edu.hk/centres/aviation-policy-and-research-centre/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-[#303f9f] hover:text-[#1a237e] font-semibold underline"
+              >
+                <span>Aviation Policy Centre</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
               <span className="text-gray-300">•</span>
@@ -140,7 +230,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ profile }) => {
                 className="inline-flex items-center gap-1 text-xs text-emerald-800 hover:text-emerald-950 font-semibold underline"
               >
                 <IdCard className="w-3.5 h-3.5 text-emerald-700" />
-                <span>ORCID Profile</span>
+                <span>ORCID</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>

@@ -7,9 +7,11 @@ import {
   ChevronUp,
   Tag,
   Filter,
-  Sparkles
+  Sparkles,
+  Users
 } from 'lucide-react';
 import { Publication } from '../types';
+import { getCoauthorInfo } from '../data/coauthors';
 
 interface PublicationsListProps {
   publications: Publication[];
@@ -87,8 +89,16 @@ export const PublicationsList: React.FC<PublicationsListProps> = ({
               Publications
             </h2>
           </div>
-          <div className="text-xs text-gray-500 font-medium">
-            Showing {filteredPublications.length} of {publications.length} articles
+          <div className="flex flex-wrap items-center gap-2 text-xs text-gray-500 font-medium">
+            <span
+              className="inline-flex items-center gap-1.5 text-[#3f51b5] bg-[#e8eaf6] px-2.5 py-1 rounded-full text-[11px] font-semibold"
+              title="Coauthor names are clickable to view their official university or institutional academic profiles"
+            >
+              <Users className="w-3.5 h-3.5 text-[#3f51b5]" />
+              <span>Coauthors Linked</span>
+            </span>
+            <span className="text-gray-300 hidden sm:inline">•</span>
+            <span>Showing {filteredPublications.length} of {publications.length} articles</span>
           </div>
         </div>
 
@@ -224,17 +234,35 @@ export const PublicationsList: React.FC<PublicationsListProps> = ({
                       <div className="text-sm text-gray-700 font-sans">
                         {pub.authors.map((author, i) => {
                           const isSelf = /^(chiu\s*yu\s*ko|ko,\s*chiu\s*yu)$/i.test(author.trim());
+                          const coauthor = !isSelf ? getCoauthorInfo(author) : null;
+
                           return (
                             <React.Fragment key={i}>
-                              <span
-                                className={
-                                  isSelf
-                                    ? 'font-bold text-[#1a237e] underline decoration-[#3f51b5]/40 underline-offset-2'
-                                    : 'text-gray-600'
-                                }
-                              >
-                                {author}
-                              </span>
+                              {isSelf ? (
+                                <a
+                                  href="https://www.bschool.cuhk.edu.hk/staff/ko-chiu-yu/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="font-bold text-[#1a237e] underline decoration-[#3f51b5]/60 hover:decoration-[#3f51b5] underline-offset-2 hover:text-[#303f9f] transition-colors"
+                                  title="Chiu Yu Ko (Associate Professor, CUHK Business School) - Official Faculty Profile"
+                                >
+                                  {author}
+                                </a>
+                              ) : coauthor?.url ? (
+                                <a
+                                  href={coauthor.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  title={`${coauthor.name} • ${coauthor.affiliation}${coauthor.role ? ` (${coauthor.role})` : ''} — Click to visit official profile`}
+                                  className="text-gray-800 hover:text-[#1a237e] underline decoration-gray-300 hover:decoration-[#1a237e] underline-offset-2 transition-colors"
+                                >
+                                  {author}
+                                </a>
+                              ) : (
+                                <span className="text-gray-600">
+                                  {author}
+                                </span>
+                              )}
                               {i < pub.authors.length - 1 && ', '}
                             </React.Fragment>
                           );

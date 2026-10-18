@@ -329,6 +329,13 @@ export const DataManagerModal: React.FC<DataManagerModalProps> = ({
                     </strong>
                     You can either open <code>src/data/siteData.json</code> in VS Code/AI Studio editor, or use this modal to test changes live and download the updated file.
                   </div>
+
+                  <div className="p-3.5 bg-stone-50 rounded-lg border border-stone-200/80">
+                    <strong className="text-stone-900 block mb-1">
+                      4. Coauthor Profile Links
+                    </strong>
+                    All coauthor names across your publications automatically link to their official university and academic profiles using the centralized registry in <code>src/data/coauthors.ts</code>.
+                  </div>
                 </div>
               </div>
             </div>

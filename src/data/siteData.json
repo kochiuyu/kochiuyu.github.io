@@ -68,6 +68,11 @@
         "icon": "Building"
       },
       {
+        "label": "DOT Department",
+        "url": "https://www.bschool.cuhk.edu.hk/departments/decisions-operations-and-technology/",
+        "icon": "Building"
+      },
+      {
         "label": "ORCID",
         "url": "https://orcid.org/0000-0001-8590-6159",
         "icon": "IdCard"
@@ -88,6 +93,16 @@
         "icon": "Github"
       },
       {
+        "label": "MSc in ITM",
+        "url": "https://masters.bschool.cuhk.edu.hk/programmes/mscistm/",
+        "icon": "Building"
+      },
+      {
+        "label": "Aviation Policy Centre",
+        "url": "https://www.bschool.cuhk.edu.hk/centres/aviation-policy-and-research-centre/",
+        "icon": "Building"
+      },
+      {
         "label": "CV (PDF)",
         "url": "/files/cv.pdf",
         "icon": "FileDown"
@@ -99,12 +114,26 @@
       }
     ],
     "administrativeRoles": [
-      "Associate Director, Master of Science Programme in Information and Technology Management",
-      "Associate Director, Aviation Policy Research Centre"
+      {
+        "role": "Associate Director",
+        "organization": "Master of Science Programme in Information and Technology Management",
+        "shortName": "MSc in ITM",
+        "url": "https://masters.bschool.cuhk.edu.hk/programmes/mscistm/"
+      },
+      {
+        "role": "Associate Director",
+        "organization": "Aviation Policy Research Centre",
+        "shortName": "APRC",
+        "url": "https://www.bschool.cuhk.edu.hk/centres/aviation-policy-and-research-centre/"
+      }
     ],
     "officialEmail": "chiuyuko@cuhk.edu.hk",
     "cuhkProfileUrl": "https://www.bschool.cuhk.edu.hk/staff/ko-chiu-yu/",
-    "orcidUrl": "https://orcid.org/0000-0001-8590-6159"
+    "departmentUrl": "https://www.bschool.cuhk.edu.hk/departments/decisions-operations-and-technology/",
+    "institutionUrl": "https://www.bschool.cuhk.edu.hk/",
+    "orcidUrl": "https://orcid.org/0000-0001-8590-6159",
+    "itmProgrammeUrl": "https://masters.bschool.cuhk.edu.hk/programmes/mscistm/",
+    "aprcUrl": "https://www.bschool.cuhk.edu.hk/centres/aviation-policy-and-research-centre/"
   },
   "books": [
     {

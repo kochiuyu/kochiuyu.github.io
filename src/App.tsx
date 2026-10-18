@@ -31,13 +31,17 @@ export function App() {
       localStorage.removeItem('chiu_yu_ko_site_data_v14');
       localStorage.removeItem('chiu_yu_ko_site_data_v15');
       localStorage.removeItem('chiu_yu_ko_site_data_v16');
-      const saved = localStorage.getItem('chiu_yu_ko_site_data_v17');
+      localStorage.removeItem('chiu_yu_ko_site_data_v18');
+      localStorage.removeItem('chiu_yu_ko_site_data_v19');
+      const saved = localStorage.getItem('chiu_yu_ko_site_data_v20');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (
           parsed?.profile?.chineseName === '高超禹' &&
           parsed?.publications?.length === 22 &&
           parsed?.profile?.researchFields?.primary &&
+          parsed?.profile?.departmentUrl &&
+          parsed?.profile?.itmProgrammeUrl &&
           parsed?.publications?.some((p: { id: string }) => p.id === 'parallel-axiomatizations-integrals-2026') &&
           parsed?.teaching?.some((c: { id: string; semesters?: string }) => c.id === 'low-altitude-economics-master' && c.semesters === 'Spring 2026')
         ) {

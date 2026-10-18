@@ -16,6 +16,13 @@ export interface ResearchFields {
   topics?: string[];
 }
 
+export interface AdministrativeRole {
+  role: string;
+  organization: string;
+  shortName?: string;
+  url?: string;
+}
+
 export interface Profile {
   name: string;
   chineseName?: string;
@@ -24,7 +31,7 @@ export interface Profile {
   departmentNote?: string;
   institution: string;
   courtesyAppointment?: string;
-  administrativeRoles?: string[];
+  administrativeRoles?: (string | AdministrativeRole)[];
   email: string;
   officialEmail?: string;
   personalEmail?: string;
@@ -34,6 +41,10 @@ export interface Profile {
   cvUrl: string;
   cuhkProfileUrl?: string;
   orcidUrl?: string;
+  departmentUrl?: string;
+  institutionUrl?: string;
+  itmProgrammeUrl?: string;
+  aprcUrl?: string;
   bio: string[];
   interests: string[];
   researchFields?: ResearchFields;

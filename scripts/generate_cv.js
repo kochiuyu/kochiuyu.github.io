@@ -946,6 +946,12 @@ async function generateCV() {
     });
   }
 
+  pdfDoc.setTitle('Curriculum Vitae - Chiu Yu Ko');
+  pdfDoc.setAuthor('Chiu Yu Ko');
+  pdfDoc.setSubject('Curriculum Vitae of Chiu Yu Ko, Associate Professor at CUHK Business School');
+  pdfDoc.setProducer('pdf-lib');
+  pdfDoc.setCreator('Chiu Yu Ko Academic Profile');
+
   const pdfBytes = await pdfDoc.save();
 
   // Save to public/files/cv.pdf, files/cv.pdf, and dist/files/cv.pdf
