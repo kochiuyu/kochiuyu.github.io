@@ -14,7 +14,7 @@
     "bio": [
       "Chiu Yu Ko (高超禹) is an Associate Professor in the Department of Decisions, Operations and Technology at The Chinese University of Hong Kong (CUHK) Business School. He serves as Associate Director of the Master of Science Programme in Information and Technology Management (MSc in ITM) as well as Associate Director of the Aviation Policy Research Centre.",
       "He obtained his B.B.A. in Insurance, Financial and Actuarial Analysis (2005) and M.Phil. in Economics (2007) from The Chinese University of Hong Kong. He earned his M.A. in Economics (2009) and Ph.D. in Economics (2012) from Boston College. Upon graduation, he served as an assistant professor in the Department of Economics at the National University of Singapore (NUS) from 2012 to 2020 before joining CUHK.",
-      "His research focuses on game theory, industrial organization, political economy, and financial economics. In game theory, he works on bargaining, principal-agent problems, conflict resolution, and dynamic resource allocation. In industrial organization, he specializes in innovation, standard-setting (FRAND), platform competition, and patent licensing. In political economy, his work explores political centralization, state capacity, and comparative economic history. His research has been published in premier international journals including Management Science, Journal of Economic Theory, International Economic Review, Games and Economic Behavior, Journal of Environmental Economics and Management, Economic Inquiry, Economic Modelling, and Journal of Economics & Management Strategy.",
+      "His research focuses on game theory, industrial organization, political economy, and financial economics. In game theory, he works on bargaining, principal-agent problems, conflict resolution, and dynamic resource allocation. In industrial organization, he specializes in innovation, standard-setting (FRAND), platform competition, and patent licensing. In political economy, his work explores political centralization, state capacity, and comparative economic history. His research has been published in premier international journals including Management Science, Journal of Economic Theory, International Economic Review, Games and Economic Behavior, Journal of Environmental Economics and Management, Economics Letters, Economic Inquiry, Economic Modelling, and Journal of Economics & Management Strategy.",
       "He subscribes to the philosophy that effective learning requires understanding multiple facets in both depth and breadth. He believes continuous feedback allows students to learn from mistakes, consolidate acquired knowledge, and explore deeper academic and practical frontiers."
     ],
     "interests": [
@@ -185,6 +185,30 @@
     }
   ],
   "publications": [
+    {
+      "id": "parallel-axiomatizations-integrals-2026",
+      "title": "Parallel axiomatizations of the concave and convex integrals",
+      "authors": [
+        "Yangyi Deng",
+        "Chiu Yu Ko"
+      ],
+      "year": 2026,
+      "date": "October 2026",
+      "venue": "Economics Letters, 113282",
+      "type": "Journal Article",
+      "abstract": "We investigate decomposition-integrals concerning capacities by decomposing random variables into combinations of indicators. This formulation defines a decomposition-integral as the highest value among allowable decompositions determined by the capacity, unifying well-known integrals such as the Choquet, concave, and Riemann integrals. We study these integrals under economic and decision-theoretic properties including concavity (uncertainty-aversion), monotonicity with respect to stochastic dominance, and translation-covariance, and establish a unified approach to the coincidences of decomposition and superdecomposition integrals.",
+      "tags": [
+        "Axiomatic Decision Theory",
+        "Microeconomic Theory",
+        "Game Theory",
+        "Choquet Integral",
+        "Uncertainty"
+      ],
+      "doi": "https://doi.org/10.1016/j.econlet.2026.113282",
+      "pdf": "https://doi.org/10.1016/j.econlet.2026.113282",
+      "bibtex": "@article{deng2026parallel,\n  title={Parallel axiomatizations of the concave and convex integrals},\n  author={Deng, Yangyi and Ko, Chiu Yu},\n  journal={Economics Letters},\n  pages={113282},\n  year={2026},\n  publisher={Elsevier}\n}",
+      "featured": true
+    },
     {
       "id": "monopsony-employer-2026",
       "title": "How would a monopsony employer hurt labor? A simple dynamic model",
@@ -945,5 +969,5 @@
       ]
     }
   ],
-  "lastUpdated": "September 4, 2026"
+  "lastUpdated": "October 18, 2026"
 }

@@ -253,22 +253,22 @@ async function generateCV() {
     y -= 16;
 
     const publicationsP2 = [
-      '1. How would a monopsony employer hurt labor? A simple dynamic model. Economic Modelling, 2026, 107716. (with Charles Leung)',
-      '2. Automated conflict resolution: Sharing sequentially triggered losses. Management Science, 70(3), 2024: 1773-1786. (with Jens Gudmundsoon and Jens Hougaard).',
-      '3. A conceptual model for FRAND royalty setting. Mathematical Social Science, 123, (2023):167-176. (with Jens Hougaard and Xuyao Zhang).',
-      '4. Sleeplessness, Distraction, and Stock Market Performance: Evidence from the World Cup. Global Finance Journal, 56, (2023): 100823. (with Jinghan Cai and Manyi Fan).',
-      '5. Can corruption encourage clean technology transfer? Journal of Public Economic Theory, 25, (2022): 459-492 (with Bo Shen and Xuyao Zhang).',
-      '6. Partial compatibility in two-sided markets: Equilibrium and welfare analysis. Economic Modelling, 116, (2022): 105989 (with Rong Ding and Bo Shen).',
-      '7. A Welfare Analysis of Licensing under Rent Dissipation. Economic Modelling, 105, (2021): 10565. (with Rong Ding).',
-      '8. Are Dominant Platforms Good for Consumers? Economic Inquiry, 59, (2021): 1364-1377. (with Bo Shen)',
-      '9. Competitive Screening and Information Transmission. Journal of Public Economic Theory, 23, (2021): 407–437. (with Inacio Bo)',
-      '10. Choosing a Production Joint Venture Partner. Journal of Institutional and Theoretical Economics, 176, (2020): 665–685. (with Rong Ding and Bo Shen)',
-      '11. Decentralized One-to-many bargaining. International Economic Review, 61, (2020): 39–72. (with Duozhe Li)',
-      '12. Research Joint Venture with technology transfer. Canadian Journal of Economics, 53, (2020): 341-358. (with Bo Shen)',
-      '13. Decentralized Mechanisms for River Sharing. Journal of Environmental Economics and Management, 94, (2019): 67–81. (with Jens Gudmundsoon and Jens Hougaard)',
-      '14. Hide and Seek: Uninformed Traders and the Short-sales Constraints, Annals of Economics and Finance, 20(1), 319-356. (with Jinghan Cai, Yuming Li and Le Xia).',
-      '15. Sharing Sequential Value in a Network. Journal of Economic Theory, 177, (2018): 734-799. (with Ruben Juarez and Jingyi Xue)',
-      '16. On the Role of Outside Options in Wage Renegotiation. Journal of Economics & Management Strategy, 27(4), 2018: 792-803. (with Fengjiao Chen and Duozhe Li)'
+      '1. Parallel axiomatizations of the concave and convex integrals. Economics Letters, 2026, 113282. (with Yangyi Deng)',
+      '2. How would a monopsony employer hurt labor? A simple dynamic model. Economic Modelling, 2026, 107716. (with Charles Leung)',
+      '3. Automated conflict resolution: Sharing sequentially triggered losses. Management Science, 70(3), 2024: 1773-1786. (with Jens Gudmundsoon and Jens Hougaard).',
+      '4. A conceptual model for FRAND royalty setting. Mathematical Social Science, 123, (2023):167-176. (with Jens Hougaard and Xuyao Zhang).',
+      '5. Sleeplessness, Distraction, and Stock Market Performance: Evidence from the World Cup. Global Finance Journal, 56, (2023): 100823. (with Jinghan Cai and Manyi Fan).',
+      '6. Can corruption encourage clean technology transfer? Journal of Public Economic Theory, 25, (2022): 459-492 (with Bo Shen and Xuyao Zhang).',
+      '7. Partial compatibility in two-sided markets: Equilibrium and welfare analysis. Economic Modelling, 116, (2022): 105989 (with Rong Ding and Bo Shen).',
+      '8. A Welfare Analysis of Licensing under Rent Dissipation. Economic Modelling, 105, (2021): 10565. (with Rong Ding).',
+      '9. Are Dominant Platforms Good for Consumers? Economic Inquiry, 59, (2021): 1364-1377. (with Bo Shen)',
+      '10. Competitive Screening and Information Transmission. Journal of Public Economic Theory, 23, (2021): 407–437. (with Inacio Bo)',
+      '11. Choosing a Production Joint Venture Partner. Journal of Institutional and Theoretical Economics, 176, (2020): 665–685. (with Rong Ding and Bo Shen)',
+      '12. Decentralized One-to-many bargaining. International Economic Review, 61, (2020): 39–72. (with Duozhe Li)',
+      '13. Research Joint Venture with technology transfer. Canadian Journal of Economics, 53(1), (2020): 341-358. (with Xuyao Zhang)',
+      '14. Decentralized Mechanisms for River Sharing. Journal of Environmental Economics and Management, 94, (2019): 67–81. (with Jens Gudmundsoon and Jens Hougaard)',
+      '15. Hide and Seek: Uninformed Traders and the Short-sales Constraints, Annals of Economics and Finance, 20(1), 319-356. (with Jinghan Cai, Yuming Li and Le Xia).',
+      '16. Sharing Sequential Value in a Network. Journal of Economic Theory, 177, (2018): 734-799. (with Ruben Juarez and Jingyi Xue)'
     ];
 
     for (const pub of publicationsP2) {
@@ -294,11 +294,12 @@ async function generateCV() {
     let y = pageHeight - topMargin;
 
     const remainingPubs = [
-      '17. Unified China and Divided Europe. International Economic Review, 59(1), (2018): 285-327. (with Mark Koyama, and Tuan-Hwee Sng)',
-      '18. A Note on Budget Constraints and Outside Option in Common Agency. Theory and Decision, 83(1), (2017): 95-106.',
-      '19. Regional Dependence and Political Centralization in Imperial China. Eurasian Geography and Economics, 54, (2014): 470–483. (with Tuan-Hwee Sng)',
-      '20. Choosing a Licensee from Heterogeneous Rivals. Games and Economic Behavior, 82, (2013): 254–268. (with Anthony Creane and Hideo Konishi)',
-      '21. Profit-maximizing Matchmaker. Games and Economic Behavior, 75, (2012): 217–232. (with Hideo Konishi)'
+      '17. On the Role of Outside Options in Wage Renegotiation. Journal of Economics & Management Strategy, 27(4), 2018: 792-803. (with Fengjiao Chen and Duozhe Li)',
+      '18. Unified China and Divided Europe. International Economic Review, 59(1), (2018): 285-327. (with Mark Koyama, and Tuan-Hwee Sng)',
+      '19. A Note on Budget Constraints and Outside Option in Common Agency. Theory and Decision, 83(1), (2017): 95-106.',
+      '20. Regional Dependence and Political Centralization in Imperial China. Eurasian Geography and Economics, 54, (2014): 470–483. (with Tuan-Hwee Sng)',
+      '21. Choosing a Licensee from Heterogeneous Rivals. Games and Economic Behavior, 82, (2013): 254–268. (with Anthony Creane and Hideo Konishi)',
+      '22. Profit-maximizing Matchmaker. Games and Economic Behavior, 75, (2012): 217–232. (with Hideo Konishi)'
     ];
 
     for (const pub of remainingPubs) {
@@ -327,11 +328,11 @@ async function generateCV() {
     y -= 16;
 
     const workingPapers = [
-      '22. Interaction-Adjusted Concentration: A Quadratic Generalization of the HHI (with Yangyi Deng)',
-      '23. Ranking Scholars When Journals and Citations Matter (with Yangyi Deng)',
-      '24. Incentive-compatible public transport fares with random inspection. (with Inacio Bo)',
-      '25. Vertical cross-licensing. (with Bo Shen and Xuyao Zhang)',
-      '26. Sharing Profit by Ranking Partners (with Lining Han, Ruben Juarez and Jung S. You)'
+      '23. Interaction-Adjusted Concentration: A Quadratic Generalization of the HHI (with Yangyi Deng)',
+      '24. Ranking Scholars When Journals and Citations Matter (with Yangyi Deng)',
+      '25. Incentive-compatible public transport fares with random inspection. (with Inacio Bo)',
+      '26. Vertical cross-licensing. (with Bo Shen and Xuyao Zhang)',
+      '27. Sharing Profit by Ranking Partners (with Lining Han, Ruben Juarez and Jung S. You)'
     ];
 
     for (const wp of workingPapers) {
@@ -360,9 +361,9 @@ async function generateCV() {
     y -= 16;
 
     const others = [
-      '27. Case Study "HKTVmall: Responding to Shortages during the COVID-19 Pandemic," Ivey Business School Case Series, 2023: W33330. (with Nouri Najjar and Adam Fremeth)',
-      '28. Book chapter "Sleep deprivation and stock markets." In Encyclopedia of Monetary Policy, Financial Markets and Banking, edited by Nikolaos Apergis, and published by Elsevier, accepted (with Jinghan Cai and Manyi Fan)',
-      '29. Book review "Market Design: Auction and Matching" by Guillaume Haeringer, MIT Press 2018. In Economic Record, 2019.'
+      '28. Case Study "HKTVmall: Responding to Shortages during the COVID-19 Pandemic," Ivey Business School Case Series, 2023: W33330. (with Nouri Najjar and Adam Fremeth)',
+      '29. Book chapter "Sleep deprivation and stock markets." In Encyclopedia of Monetary Policy, Financial Markets and Banking, edited by Nikolaos Apergis, and published by Elsevier, accepted (with Jinghan Cai and Manyi Fan)',
+      '30. Book review "Market Design: Auction and Matching" by Guillaume Haeringer, MIT Press 2018. In Economic Record, 2019.'
     ];
 
     for (const o of others) {
@@ -713,7 +714,7 @@ async function generateCV() {
     const cuhkTeaching = [
       'Microeconomic Theory (Ph.D.): Fall 2021, Fall 2022, Fall 2023, Fall 2024, Fall 2025, Fall 2026',
       'Statistical Analysis (Master): Fall 2023, Fall 2024, Fall 2025, Fall 2026',
-      'Low Altitude Economics (Master): Fall 2026',
+      'Low Altitude Economics (Master): Spring 2026',
       'Economics for Finance Practice (Master): Spring 2023',
       'Game Theory for Business Strategy (Undergraduate): Fall 2026',
       'Statistical Analysis for Business Decision (Undergraduate): Fall 2020–Fall 2025'
@@ -936,7 +937,7 @@ async function generateCV() {
     });
     y -= 35;
 
-    page.drawText('Last updated: September 4, 2026', {
+    page.drawText('Last updated: October 18, 2026', {
       x: leftMargin,
       y: y,
       size: 9.5,
