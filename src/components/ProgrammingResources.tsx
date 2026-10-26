@@ -22,11 +22,11 @@ export const ProgrammingResources: React.FC<ProgrammingResourcesProps> = ({
             Programming & Tutorials
           </h2>
           <p className="mt-2 text-sm text-gray-600 max-w-2xl leading-relaxed">
-            Hands-on tutorials, packages, and code snippets for economists and researchers working in R, LaTeX/TikZ, and Excel VBA.
+            Hands-on tutorials, interactive web tools, packages, and code snippets for economists and researchers working in LaTeX/TikZ, R econometrics, presentation facilitation, and Excel VBA.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {categories.map((cat, idx) => (
             <div
               key={idx}

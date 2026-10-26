@@ -33,7 +33,8 @@ export function App() {
       localStorage.removeItem('chiu_yu_ko_site_data_v16');
       localStorage.removeItem('chiu_yu_ko_site_data_v18');
       localStorage.removeItem('chiu_yu_ko_site_data_v19');
-      const saved = localStorage.getItem('chiu_yu_ko_site_data_v20');
+      localStorage.removeItem('chiu_yu_ko_site_data_v20');
+      const saved = localStorage.getItem('chiu_yu_ko_site_data_v21');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (
@@ -43,7 +44,8 @@ export function App() {
           parsed?.profile?.departmentUrl &&
           parsed?.profile?.itmProgrammeUrl &&
           parsed?.publications?.some((p: { id: string }) => p.id === 'parallel-axiomatizations-integrals-2026') &&
-          parsed?.teaching?.some((c: { id: string; semesters?: string }) => c.id === 'low-altitude-economics-master' && c.semesters === 'Spring 2026')
+          parsed?.teaching?.some((c: { id: string; semesters?: string }) => c.id === 'low-altitude-economics-master' && c.semesters === 'Spring 2026') &&
+          parsed?.teachingTools?.length >= 2
         ) {
           return parsed;
         }
@@ -116,7 +118,10 @@ export function App() {
         <BooksList books={siteData.books} />
 
         {/* Teaching & Pedagogy */}
-        <TeachingList courses={siteData.teaching} />
+        <TeachingList
+          courses={siteData.teaching}
+          tools={siteData.teachingTools}
+        />
 
         {/* Student Advising */}
         <AdvisingSection advising={siteData.advising} />

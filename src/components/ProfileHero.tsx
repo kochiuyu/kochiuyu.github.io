@@ -94,10 +94,10 @@ const renderBioText = (paragraph: string) => {
           href={matched.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#3f51b5] hover:text-[#303f9f] hover:underline font-semibold inline-flex items-center gap-0.5 group"
+          className="text-[#3f51b5] hover:text-[#303f9f] hover:underline font-semibold group"
         >
           <span>{part}</span>
-          <ExternalLink className="w-3.5 h-3.5 text-[#3f51b5]/70 group-hover:text-[#303f9f] inline-block shrink-0 ml-0.5" />
+          <ExternalLink className="w-3.5 h-3.5 text-[#3f51b5]/70 group-hover:text-[#303f9f] inline-block shrink-0 ml-1 align-[-1.5px]" />
         </a>
       );
     }
@@ -338,7 +338,7 @@ export const ProfileHero: React.FC<ProfileHeroProps> = ({ profile }) => {
               </h2>
               <div className="space-y-3.5 text-gray-700 leading-relaxed text-sm sm:text-base">
                 {profile.bio.map((paragraph, idx) => (
-                  <p key={idx} className="text-justify">
+                  <p key={idx} className="text-left">
                     {renderBioText(paragraph)}
                   </p>
                 ))}

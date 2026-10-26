@@ -769,6 +769,7 @@
       "title": "Low Altitude Economics",
       "level": "Master",
       "semesters": "Spring 2026",
+      "url": "https://kochiuyu.github.io/lae-companion/",
       "overview": "Explores the emerging economic paradigms of the low-altitude economy, including unmanned aerial vehicle (UAV) logistics, urban air mobility (UAM), airspace resource allocation, regulatory economics, and commercial infrastructure.",
       "topics": [
         "Low-altitude airspace economic fundamentals",
@@ -799,6 +800,7 @@
       "title": "Game Theory for Business Strategy",
       "level": "Undergraduate",
       "semesters": "Fall 2026",
+      "url": "https://kochiuyu.github.io/IntroBusinessGame/",
       "overview": "Applies non-cooperative and cooperative game theory to managerial decision-making and strategic competition. Covers dynamic price competition, entry deterrence, auction and mechanism design, platform ecosystems, and strategic bargaining.",
       "topics": [
         "Simultaneous & sequential move games",
@@ -867,6 +869,46 @@
       ]
     }
   ],
+  "teachingTools": [
+    {
+      "id": "game-tikz-studio",
+      "title": "TikZ Studio",
+      "subtitle": "Interactive Game Tree & LaTeX Diagram Generator",
+      "url": "https://kochiuyu.github.io/GameTikzStudio/",
+      "badge": "Interactive Web App",
+      "description": "An interactive web studio for constructing extensive-form game trees, decision trees, and economic diagrams in the browser. Features real-time visual canvas editing and instant export to clean LaTeX/TikZ code ready for lecture slides, problem sets, and research manuscripts.",
+      "tags": [
+        "Game Theory",
+        "LaTeX & TikZ",
+        "Extensive Form Trees",
+        "Open Educational Tool"
+      ],
+      "features": [
+        "Visual node & branch tree constructor for extensive form games",
+        "Instant one-click LaTeX/TikZ code export for Beamer and Overleaf",
+        "Customizable information sets, nature moves, payoffs, and subgame branches"
+      ]
+    },
+    {
+      "id": "presentation-facilitator",
+      "title": "Presentation Facilitator",
+      "subtitle": "Interactive Lecture Flow & Pacing Facilitator",
+      "url": "https://kochiuyu.github.io/Presentation/",
+      "badge": "Teaching Utility",
+      "description": "A web-based presentation facilitator and pacing controller built for interactive university classrooms and seminar presentations. Helps instructors maintain lecture rhythm, monitor discussion timing, manage slide flow, and promote active student participation.",
+      "tags": [
+        "Interactive Lectures",
+        "Classroom Management",
+        "Lecture Pacing",
+        "Teaching Utility"
+      ],
+      "features": [
+        "Adaptive pacing and section progress tracker for lecture delivery",
+        "Clean, high-contrast presenter display optimized for podiums and lecture halls",
+        "Facilitates student engagement, interactive pauses, and discussion timing"
+      ]
+    }
+  ],
   "advising": {
     "summary": "Main dissertation advisor for doctoral students at the National University of Singapore (NUS) and The Chinese University of Hong Kong (CUHK).",
     "phdStudents": [
@@ -925,6 +967,48 @@
   },
   "programming": [
     {
+      "category": "Interactive Teaching & Presentation Tools",
+      "description": "Custom-built web applications and browser utilities designed for interactive lecture pacing, classroom engagement, and game theoretic diagram generation.",
+      "items": [
+        {
+          "title": "TikZ Studio: Game Tree & LaTeX Diagram Builder",
+          "url": "https://kochiuyu.github.io/GameTikzStudio/",
+          "tag": "Web App"
+        },
+        {
+          "title": "Presentation Facilitator for Interactive Lectures",
+          "url": "https://kochiuyu.github.io/Presentation/",
+          "tag": "Teaching Utility"
+        }
+      ]
+    },
+    {
+      "category": "LaTeX & TikZ for Economists",
+      "description": "Practical guides and ready-to-use vector diagrams for economic models.",
+      "items": [
+        {
+          "title": "TikZ Studio: Game Tree & Diagram Generator",
+          "url": "https://kochiuyu.github.io/GameTikzStudio/",
+          "tag": "Web App"
+        },
+        {
+          "title": "TikZ Cookbook: Step-by-Step Economic Diagrams",
+          "url": "https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ",
+          "tag": "Cookbook"
+        },
+        {
+          "title": "TikZ Cookbook Companion: 100 Principles Diagrams",
+          "url": "https://play.google.com/store/books/details?id=WfF5DwAAQBAJ",
+          "tag": "Reference"
+        },
+        {
+          "title": "Supply, Demand, and Welfare Equilibrium Charts",
+          "url": "#",
+          "tag": "Microeconomics"
+        }
+      ]
+    },
+    {
       "category": "R Programming & Financial Econometrics",
       "description": "Comprehensive tutorials, package guides, and quantitative finance workflows in R.",
       "items": [
@@ -947,32 +1031,6 @@
           "title": "Data Wrangling with Tidyverse (dplyr, ggplot2)",
           "url": "#",
           "tag": "Data Science"
-        }
-      ]
-    },
-    {
-      "category": "LaTeX & TikZ for Economists",
-      "description": "Practical guides and ready-to-use vector diagrams for economic models.",
-      "items": [
-        {
-          "title": "TikZ Cookbook: Step-by-Step Economic Diagrams",
-          "url": "https://play.google.com/store/books/details?id=t3ZZDwAAQBAJ",
-          "tag": "Cookbook"
-        },
-        {
-          "title": "TikZ Cookbook Companion: 100 Principles Diagrams",
-          "url": "https://play.google.com/store/books/details?id=WfF5DwAAQBAJ",
-          "tag": "Reference"
-        },
-        {
-          "title": "Game Trees & Extensive Form Games in TikZ",
-          "url": "#",
-          "tag": "Game Theory"
-        },
-        {
-          "title": "Supply, Demand, and Welfare Equilibrium Charts",
-          "url": "#",
-          "tag": "Microeconomics"
         }
       ]
     },

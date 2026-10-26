@@ -93,6 +93,18 @@ export interface TeachingCourse {
   semesters: string;
   overview: string;
   topics: string[];
+  url?: string;
+}
+
+export interface TeachingTool {
+  id: string;
+  title: string;
+  subtitle: string;
+  url: string;
+  description: string;
+  tags: string[];
+  features?: string[];
+  badge?: string;
 }
 
 export interface Advisee {
@@ -135,6 +147,7 @@ export interface SiteData {
   books: Book[];
   publications: Publication[];
   teaching: TeachingCourse[];
+  teachingTools?: TeachingTool[];
   advising: Advising;
   programming: ProgrammingCategory[];
   lastUpdated: string;
