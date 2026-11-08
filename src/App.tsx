@@ -34,7 +34,8 @@ export function App() {
       localStorage.removeItem('chiu_yu_ko_site_data_v18');
       localStorage.removeItem('chiu_yu_ko_site_data_v19');
       localStorage.removeItem('chiu_yu_ko_site_data_v20');
-      const saved = localStorage.getItem('chiu_yu_ko_site_data_v21');
+      localStorage.removeItem('chiu_yu_ko_site_data_v21');
+      const saved = localStorage.getItem('chiu_yu_ko_site_data_v22');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (
@@ -44,7 +45,7 @@ export function App() {
           parsed?.profile?.departmentUrl &&
           parsed?.profile?.itmProgrammeUrl &&
           parsed?.publications?.some((p: { id: string }) => p.id === 'parallel-axiomatizations-integrals-2026') &&
-          parsed?.teaching?.some((c: { id: string; semesters?: string }) => c.id === 'low-altitude-economics-master' && c.semesters === 'Spring 2026') &&
+          parsed?.teaching?.some((c: { id: string; url?: string }) => c.id === 'statistical-analysis-undergrad' && c.url === 'https://kochiuyu.github.io/business-in-numbers/') &&
           parsed?.teachingTools?.length >= 2
         ) {
           return parsed;
