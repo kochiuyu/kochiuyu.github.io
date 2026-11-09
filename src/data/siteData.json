@@ -12,7 +12,7 @@
     "avatar": "/author/admin/avatar.jpg",
     "cvUrl": "/files/cv.pdf",
     "bio": [
-      "Chiu Yu Ko (高超禹) is an Associate Professor in the Department of Decisions, Operations and Technology at The Chinese University of Hong Kong (CUHK) Business School. He serves as Associate Director of the Master of Science Programme in Information and Technology Management (MSc in ITM) as well as Associate Director of the Aviation Policy Research Centre.",
+      "Chiu Yu Ko (高超禹) is an Associate Professor in the Department of Decisions, Operations and Technology at The Chinese University of Hong Kong (CUHK) Business School. He is a member of Theorists at CUHK (Economic Theory Group). He serves as Associate Director of the Master of Science Programme in Information and Technology Management (MSc in ITM) as well as Associate Director of the Aviation Policy Research Centre.",
       "He obtained his B.B.A. in Insurance, Financial and Actuarial Analysis (2005) and M.Phil. in Economics (2007) from The Chinese University of Hong Kong. He earned his M.A. in Economics (2009) and Ph.D. in Economics (2012) from Boston College. Upon graduation, he served as an assistant professor in the Department of Economics at the National University of Singapore (NUS) from 2012 to 2020 before joining CUHK.",
       "His research focuses on game theory, industrial organization, political economy, and financial economics. In game theory, he works on bargaining, principal-agent problems, conflict resolution, and dynamic resource allocation. In industrial organization, he specializes in innovation, standard-setting (FRAND), platform competition, and patent licensing. In political economy, his work explores political centralization, state capacity, and comparative economic history. His research has been published in premier international journals including Management Science, Journal of Economic Theory, International Economic Review, Games and Economic Behavior, Journal of Environmental Economics and Management, Economics Letters, Economic Inquiry, Economic Modelling, and Journal of Economics & Management Strategy.",
       "He subscribes to the philosophy that effective learning requires understanding multiple facets in both depth and breadth. He believes continuous feedback allows students to learn from mistakes, consolidate acquired knowledge, and explore deeper academic and practical frontiers."
@@ -71,6 +71,11 @@
         "label": "DOT Department",
         "url": "https://www.bschool.cuhk.edu.hk/departments/decisions-operations-and-technology/",
         "icon": "Building"
+      },
+      {
+        "label": "Theorists at CUHK",
+        "url": "https://econtheory.cuhk.edu.hk/",
+        "icon": "Users"
       },
       {
         "label": "ORCID",
@@ -754,6 +759,7 @@
       "title": "Statistical Analysis",
       "level": "Master",
       "semesters": "Fall 2023, Fall 2024, Fall 2025, Fall 2026",
+      "url": "https://kochiuyu.github.io/data-to-decisions/",
       "overview": "Advanced statistical foundations for business analytics and empirical decision making. Covering probability theory, estimation, hypothesis testing, multivariate regression, and predictive modeling.",
       "topics": [
         "Probability & random variables",
@@ -908,6 +914,25 @@
         "Clean, high-contrast presenter display optimized for podiums and lecture halls",
         "Facilitates student engagement, interactive pauses, and discussion timing"
       ]
+    },
+    {
+      "id": "interactive-minigames",
+      "title": "Interactive Minigames",
+      "subtitle": "Classroom Game Theory & Economic Experiments",
+      "url": "https://kochiuyu.github.io/minigame/",
+      "badge": "Classroom Experiment",
+      "description": "A suite of interactive web-based economic minigames and experimental simulations designed for classroom demonstrations. Allows students and participants to engage directly with strategic interactions, market decisions, and game-theoretic scenarios.",
+      "tags": [
+        "Game Theory",
+        "Interactive Experiments",
+        "Classroom Games",
+        "Pedagogy"
+      ],
+      "features": [
+        "Web-based experimental mini-games for real-time student participation",
+        "Hands-on exploration of strategic choices, incentives, and equilibrium concepts",
+        "Lightweight and instantly accessible across mobile devices, tablets, and laptops"
+      ]
     }
   ],
   "advising": {
@@ -980,6 +1005,11 @@
           "title": "Presentation Facilitator for Interactive Lectures",
           "url": "https://kochiuyu.github.io/Presentation/",
           "tag": "Teaching Utility"
+        },
+        {
+          "title": "Interactive Minigames for Classroom Experiments",
+          "url": "https://kochiuyu.github.io/minigame/",
+          "tag": "Classroom Game"
         }
       ]
     },

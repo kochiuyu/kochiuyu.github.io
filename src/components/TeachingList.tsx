@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GraduationCap, BookOpen, Layers, CheckCircle2, ExternalLink, Sparkles, Laptop, MonitorPlay, Wrench } from 'lucide-react';
+import { GraduationCap, BookOpen, Layers, CheckCircle2, ExternalLink, Sparkles, Laptop, MonitorPlay, Gamepad2, Wrench } from 'lucide-react';
 import { TeachingCourse, TeachingTool } from '../types';
 
 interface TeachingListProps {
@@ -34,6 +34,20 @@ const defaultTools: TeachingTool[] = [
       'Adaptive pacing and section progress tracker for lecture delivery',
       'Clean, high-contrast presenter display optimized for podiums and lecture halls',
       'Facilitates student engagement, interactive pauses, and discussion timing'
+    ]
+  },
+  {
+    id: 'interactive-minigames',
+    title: 'Interactive Minigames',
+    subtitle: 'Classroom Game Theory & Economic Experiments',
+    url: 'https://kochiuyu.github.io/minigame/',
+    badge: 'Classroom Experiment',
+    description: 'A suite of interactive web-based economic minigames and experimental simulations designed for classroom demonstrations. Allows students and participants to engage directly with strategic interactions, market decisions, and game-theoretic scenarios.',
+    tags: ['Game Theory', 'Interactive Experiments', 'Classroom Games', 'Pedagogy'],
+    features: [
+      'Web-based experimental mini-games for real-time student participation',
+      'Hands-on exploration of strategic choices, incentives, and equilibrium concepts',
+      'Lightweight and instantly accessible across mobile devices, tablets, and laptops'
     ]
   }
 ];
@@ -203,7 +217,7 @@ export const TeachingList: React.FC<TeachingListProps> = ({ courses, tools = def
               </span>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {displayTools.map((tool) => (
                 <div
                   key={tool.id}
@@ -213,40 +227,42 @@ export const TeachingList: React.FC<TeachingListProps> = ({ courses, tools = def
                   <div className="space-y-4">
                     {/* Header info */}
                     <div className="flex items-start justify-between gap-3">
-                      <div className="flex items-start gap-3">
+                      <div className="flex items-start gap-3 min-w-0 flex-1">
                         <div className="w-10 h-10 rounded-lg bg-[#e8eaf6] text-[#1a237e] flex items-center justify-center shrink-0 border border-[#c5cae9]/60 group-hover:bg-[#3f51b5] group-hover:text-white transition-colors">
                           {tool.id.includes('tikz') ? (
                             <Laptop className="w-5 h-5" />
+                          ) : tool.id.includes('game') || tool.id.includes('minigame') ? (
+                            <Gamepad2 className="w-5 h-5" />
                           ) : (
                             <MonitorPlay className="w-5 h-5" />
                           )}
                         </div>
-                        <div>
-                          <h4 className="font-heading text-lg font-bold text-gray-900 group-hover:text-[#3f51b5] transition-colors">
+                        <div className="min-w-0 flex-1">
+                          <h4 className="font-heading text-lg font-bold text-gray-900 group-hover:text-[#3f51b5] transition-colors leading-snug">
                             <a
                               href={tool.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5"
+                              className="inline-flex items-center gap-1.5 hover:underline"
                             >
                               <span>{tool.title}</span>
                               <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-[#3f51b5] shrink-0" />
                             </a>
                           </h4>
-                          <p className="text-xs text-[#3f51b5] font-medium mt-0.5">
+                          <p className="text-xs text-[#3f51b5] font-medium mt-0.5 leading-snug">
                             {tool.subtitle}
                           </p>
                         </div>
                       </div>
                       {tool.badge && (
-                        <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-indigo-50 text-[#1a237e] border border-indigo-200 shrink-0">
+                        <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-indigo-50 text-[#1a237e] border border-indigo-200 shrink-0 whitespace-nowrap self-start">
                           {tool.badge}
                         </span>
                       )}
                     </div>
 
                     {/* Description */}
-                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed text-justify">
+                    <p className="text-xs sm:text-sm text-gray-600 leading-relaxed text-left">
                       {tool.description}
                     </p>
 

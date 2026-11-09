@@ -10,7 +10,8 @@ import {
   BookOpen,
   CheckCircle2,
   IdCard,
-  Code2
+  Code2,
+  Users
 } from 'lucide-react';
 import { Profile } from '../types';
 
@@ -64,6 +65,10 @@ const OFFICIAL_ENTITIES = [
   {
     phrase: 'Aviation Policy Research Centre',
     url: 'https://www.bschool.cuhk.edu.hk/centres/aviation-policy-and-research-centre/',
+  },
+  {
+    phrase: 'Theorists at CUHK',
+    url: 'https://econtheory.cuhk.edu.hk/',
   },
   {
     phrase: 'Associate Professor',
@@ -277,6 +282,7 @@ export const ProfileHero: React.FC<ProfileHeroProps> = ({ profile }) => {
                 const isCv = link.label.includes('CV');
                 const isItm = link.label.includes('ITM');
                 const isAviation = link.label.includes('Aviation');
+                const isTheorists = link.label.includes('Theorist') || link.label.includes('Theory');
 
                 return (
                   <a
@@ -290,6 +296,8 @@ export const ProfileHero: React.FC<ProfileHeroProps> = ({ profile }) => {
                         ? 'bg-[#3f51b5] text-white hover:bg-[#303f9f] font-semibold'
                         : isCuhk
                         ? 'bg-[#e8eaf6] text-[#303f9f] border border-[#c5cae9] hover:bg-[#c5cae9]/50 font-semibold'
+                        : isTheorists
+                        ? 'bg-purple-50 text-purple-900 border border-purple-200 hover:bg-purple-100 font-semibold'
                         : isDot
                         ? 'bg-blue-50 text-blue-900 border border-blue-200 hover:bg-blue-100 font-semibold'
                         : isItm
@@ -305,6 +313,8 @@ export const ProfileHero: React.FC<ProfileHeroProps> = ({ profile }) => {
                       <FileDown className="w-3.5 h-3.5" />
                     ) : isCuhk ? (
                       <Building className="w-3.5 h-3.5 text-[#3f51b5]" />
+                    ) : isTheorists ? (
+                      <Users className="w-3.5 h-3.5 text-purple-700" />
                     ) : isDot ? (
                       <Building className="w-3.5 h-3.5 text-blue-700" />
                     ) : isItm ? (

@@ -35,7 +35,11 @@ export function App() {
       localStorage.removeItem('chiu_yu_ko_site_data_v19');
       localStorage.removeItem('chiu_yu_ko_site_data_v20');
       localStorage.removeItem('chiu_yu_ko_site_data_v21');
-      const saved = localStorage.getItem('chiu_yu_ko_site_data_v22');
+      localStorage.removeItem('chiu_yu_ko_site_data_v22');
+      localStorage.removeItem('chiu_yu_ko_site_data_v23');
+      localStorage.removeItem('chiu_yu_ko_site_data_v24');
+      localStorage.removeItem('chiu_yu_ko_site_data_v25');
+      const saved = localStorage.getItem('chiu_yu_ko_site_data_v26');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (
@@ -44,9 +48,12 @@ export function App() {
           parsed?.profile?.researchFields?.primary &&
           parsed?.profile?.departmentUrl &&
           parsed?.profile?.itmProgrammeUrl &&
+          parsed?.profile?.bio?.[0]?.includes('He is a member of Theorists at CUHK (Economic Theory Group).') &&
+          parsed?.profile?.links?.some((l: { label: string }) => l.label === 'Theorists at CUHK') &&
           parsed?.publications?.some((p: { id: string }) => p.id === 'parallel-axiomatizations-integrals-2026') &&
-          parsed?.teaching?.some((c: { id: string; url?: string }) => c.id === 'statistical-analysis-undergrad' && c.url === 'https://kochiuyu.github.io/business-in-numbers/') &&
-          parsed?.teachingTools?.length >= 2
+          parsed?.teaching?.some((c: { id: string; url?: string }) => c.id === 'statistical-analysis-master' && c.url === 'https://kochiuyu.github.io/data-to-decisions/') &&
+          parsed?.teachingTools?.some((t: { id: string; url?: string }) => t.url === 'https://kochiuyu.github.io/minigame/') &&
+          parsed?.teachingTools?.length >= 3
         ) {
           return parsed;
         }
