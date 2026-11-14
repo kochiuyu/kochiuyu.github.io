@@ -933,6 +933,25 @@
         "Hands-on exploration of strategic choices, incentives, and equilibrium concepts",
         "Lightweight and instantly accessible across mobile devices, tablets, and laptops"
       ]
+    },
+    {
+      "id": "micro-cases",
+      "title": "Micro Cases",
+      "subtitle": "Economics & Business Case Studies",
+      "url": "https://kochiuyu.github.io/micro-cases/",
+      "badge": "Case Studies",
+      "description": "An interactive collection of economics and business case studies bridging microeconomic theory with real-world corporate strategy, market dynamics, and managerial decision-making for classroom discussion and self-study.",
+      "tags": [
+        "Economics & Business",
+        "Business Strategy",
+        "Case Studies",
+        "Microeconomics"
+      ],
+      "features": [
+        "Real-world corporate strategy, pricing, and market competition case studies",
+        "Connects microeconomic frameworks to managerial and business decision-making",
+        "Structured for interactive classroom discussion and active case analysis"
+      ]
     }
   ],
   "advising": {

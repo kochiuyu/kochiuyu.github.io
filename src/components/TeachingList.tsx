@@ -49,6 +49,20 @@ const defaultTools: TeachingTool[] = [
       'Hands-on exploration of strategic choices, incentives, and equilibrium concepts',
       'Lightweight and instantly accessible across mobile devices, tablets, and laptops'
     ]
+  },
+  {
+    id: 'micro-cases',
+    title: 'Micro Cases',
+    subtitle: 'Economics & Business Case Studies',
+    url: 'https://kochiuyu.github.io/micro-cases/',
+    badge: 'Case Studies',
+    description: 'An interactive collection of economics and business case studies bridging microeconomic theory with real-world corporate strategy, market dynamics, and managerial decision-making for classroom discussion and self-study.',
+    tags: ['Economics & Business', 'Business Strategy', 'Case Studies', 'Microeconomics'],
+    features: [
+      'Real-world corporate strategy, pricing, and market competition case studies',
+      'Connects microeconomic frameworks to managerial and business decision-making',
+      'Structured for interactive classroom discussion and active case analysis'
+    ]
   }
 ];
 
@@ -199,7 +213,7 @@ export const TeachingList: React.FC<TeachingListProps> = ({ courses, tools = def
         {/* Interactive Teaching & Learning Tools Showcase */}
         {displayTools && displayTools.length > 0 && (
           <div id="teaching-tools" className="mt-14 pt-12 border-t border-gray-200">
-            <div className="mb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+            <div className="mb-6">
               <div>
                 <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#3f51b5] mb-1">
                   <Sparkles className="w-3.5 h-3.5" />
@@ -209,12 +223,9 @@ export const TeachingList: React.FC<TeachingListProps> = ({ courses, tools = def
                   Teaching & Learning Tools
                 </h3>
                 <p className="mt-1 text-xs sm:text-sm text-gray-600 max-w-2xl">
-                  Interactive browser-based tools developed by Chiu Yu Ko to empower students, instructors, and researchers with visual game tree modeling, TikZ code generation, and interactive presentation facilitation.
+                  Interactive browser-based tools developed by Chiu Yu Ko to empower students, instructors, and researchers with visual game tree modeling, TikZ code generation, interactive presentation facilitation, classroom experiments, and microeconomics case studies.
                 </p>
               </div>
-              <span className="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full bg-[#e8eaf6] text-[#303f9f] border border-[#c5cae9] font-medium self-start sm:self-auto">
-                <span>Free & Open Access</span>
-              </span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -233,6 +244,8 @@ export const TeachingList: React.FC<TeachingListProps> = ({ courses, tools = def
                             <Laptop className="w-5 h-5" />
                           ) : tool.id.includes('game') || tool.id.includes('minigame') ? (
                             <Gamepad2 className="w-5 h-5" />
+                          ) : tool.id.includes('case') ? (
+                            <BookOpen className="w-5 h-5" />
                           ) : (
                             <MonitorPlay className="w-5 h-5" />
                           )}

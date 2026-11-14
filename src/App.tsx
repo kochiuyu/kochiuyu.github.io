@@ -39,7 +39,9 @@ export function App() {
       localStorage.removeItem('chiu_yu_ko_site_data_v23');
       localStorage.removeItem('chiu_yu_ko_site_data_v24');
       localStorage.removeItem('chiu_yu_ko_site_data_v25');
-      const saved = localStorage.getItem('chiu_yu_ko_site_data_v26');
+      localStorage.removeItem('chiu_yu_ko_site_data_v26');
+      localStorage.removeItem('chiu_yu_ko_site_data_v27');
+      const saved = localStorage.getItem('chiu_yu_ko_site_data_v28');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (
@@ -52,8 +54,8 @@ export function App() {
           parsed?.profile?.links?.some((l: { label: string }) => l.label === 'Theorists at CUHK') &&
           parsed?.publications?.some((p: { id: string }) => p.id === 'parallel-axiomatizations-integrals-2026') &&
           parsed?.teaching?.some((c: { id: string; url?: string }) => c.id === 'statistical-analysis-master' && c.url === 'https://kochiuyu.github.io/data-to-decisions/') &&
-          parsed?.teachingTools?.some((t: { id: string; url?: string }) => t.url === 'https://kochiuyu.github.io/minigame/') &&
-          parsed?.teachingTools?.length >= 3
+          parsed?.teachingTools?.some((t: { id: string; subtitle?: string }) => t.id === 'micro-cases' && t.subtitle === 'Economics & Business Case Studies') &&
+          parsed?.teachingTools?.length >= 4
         ) {
           return parsed;
         }
